@@ -7,7 +7,7 @@ const article={
   approvedForPublish:true,
   post:{
     title:'시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상',
-    content:'<article data-ncp-article="shibarpg-pickup-202610"><ul class="ncp-help-list"><li>새본문</li></ul></article>',
+    content:'<article data-ncp-article="shibarpg-pickup-202610"><button data-ncp-copy="pick7p2y">복사</button><ul class="ncp-help-list"><li>새본문</li></ul></article>',
     labels:['게임','시바 모험단']
   }
 };
