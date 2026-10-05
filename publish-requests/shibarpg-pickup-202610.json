@@ -1,9 +1,9 @@
 {
   "articleKey": "shibarpg-pickup-202610",
   "approved": true,
-  "requestedAt": "2026-10-05T13:03:00.000Z",
-  "reason": "Benchmark rewrite: remove internal verification prose and update existing live post in place",
+  "requestedAt": "2026-10-05T13:25:00.000Z",
+  "reason": "R1 benchmark redesign: coupon-card, copy feedback, responsive steps, related links and FAQ; preserve existing postId/URL",
   "retry": 1,
   "retryReason": "Initial request returned HTTP 405 before article route; D1 article state/attempts confirmed empty. Trailing-slash route normalization deployed successfully.",
-  "revision": 1
+  "revision": 2
 }
