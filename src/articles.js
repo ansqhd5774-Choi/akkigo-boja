@@ -1,4 +1,4 @@
-import {createDraft,findArticlePosts,publishDraft,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
+import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
 
 function configured(env) {
   if (env.PUBLISH_ENABLED!=='true') throw new Error('PUBLISH_DISABLED');
@@ -37,8 +37,29 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   validatePost(article.post);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
-  if (stored?.status==='LIVE' && stored.public_url) {
-    return {postId:stored.post_id,status:'LIVE',url:stored.public_url,alreadyLive:true,publicVerified:await publicCheck(stored.public_url,articleKey,transport)};
+  if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
+    const matches=await findArticlePosts(env,articleKey,transport);
+    if (matches.length!==1 || matches[0].postId!==stored.post_id) throw new Error('ARTICLE_STATE_MISMATCH');
+    const current=matches[0];
+    const same=current.title===article.post.title && current.content===article.post.content;
+    if (same) {
+      return {postId:stored.post_id,status:'LIVE',url:stored.public_url,alreadyLive:true,updated:false,publicVerified:await publicCheck(stored.public_url,articleKey,transport)};
+    }
+    const attempt=crypto.randomUUID();
+    await env.DB.prepare("INSERT INTO article_publish_attempts(attempt_id,article_key,operation,status,started_at) VALUES(?,?,'UPDATE','RUNNING',?)")
+      .bind(attempt,articleKey,new Date().toISOString()).run();
+    try {
+      const updated=await updateExistingHub(env,stored.post_id,article.post,transport);
+      await upsertState(env,articleKey,{postId:updated.postId,url:updated.url,status:'LIVE'});
+      const publicVerified=await publicCheck(updated.url,articleKey,transport);
+      await env.DB.prepare("UPDATE article_publish_attempts SET status='SUCCEEDED',finished_at=?,error_code=NULL WHERE attempt_id=?")
+        .bind(new Date().toISOString(),attempt).run();
+      return {postId:updated.postId,status:'LIVE',url:updated.url,alreadyLive:true,updated:true,publicVerified};
+    } catch (error) {
+      await env.DB.prepare("UPDATE article_publish_attempts SET status='UNKNOWN',finished_at=?,error_code=? WHERE attempt_id=?")
+        .bind(new Date().toISOString(),String(error?.message || 'ARTICLE_UPDATE_FAILED').slice(0,120),attempt).run();
+      throw error;
+    }
   }
 
   const attempt=crypto.randomUUID();
