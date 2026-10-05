@@ -78,3 +78,10 @@
 - Verify 37342278067 SUCCESS: tests 50/50, build, theme regeneration clean diff, XML 3개, detail 390/1440, feed preview 390/1440 PASS.
 - 게임 쿠폰 공통 템플릿 `akkigo_blogger_r1_bundle/article/game-coupon-article-r1.html` 추가.
 - 남은 핵심: 최신 `akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml`의 Blogger 관리자 실제 저장과 저장 후 목록 공개 확인.
+
+
+## 2026-10-06 공개 재검증
+- 게임 라벨 페이지: 구 안전 문구형 미리보기 유지.
+- 시바 검색 결과: 구 안전 문구형 미리보기 유지.
+- 시바 상세 페이지: 최신 상세 본문 정상.
+- 결론: 최신 정보형 목록 테마 공개 반영 안 됨. 저장 시도 결과는 STATE_UNKNOWN이 아니라 NOT_APPLIED로 정정.
