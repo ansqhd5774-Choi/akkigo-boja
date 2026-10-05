@@ -41,9 +41,9 @@ function uniqueCandidates(items) {
 
 function extractAgoda(text, now) {
   const offers=[];
-  const fixedRe=/(?:Up\\s+to\\s+)?([₩￦$])\\s*([\\d,]+)\\s+Off\\s+Hotels?/ig;
+  const fixedRe=/(?:Up\s+to\s+)?([₩￦$])\s*([\d,]+)\s+Off\s+Hotels?/ig;
   for (const match of text.matchAll(fixedRe)) offers.push({index:match.index,end:match.index+match[0].length,kind:'FIXED',match});
-  const percentRe=/(?:Up\\s+to\\s+)?(\\d{1,2})%\\s+off(?:\\s+Hotels?)?/ig;
+  const percentRe=/(?:Up\s+to\s+)?(\d{1,2})%\s+off(?:\s+Hotels?)?/ig;
   for (const match of text.matchAll(percentRe)) offers.push({index:match.index,end:match.index+match[0].length,kind:'PERCENT',match});
   offers.sort((a,b)=>a.index-b.index);
   const candidates=[];
@@ -51,10 +51,10 @@ function extractAgoda(text, now) {
     const offer=offers[i];
     const next=offers[i+1]?.index ?? Math.min(text.length,offer.index+320);
     const context=text.slice(offer.index,next);
-    const minimum=numberFromText(context.match(/(?:minimum|min\\.?)\\s*(?:spend)?(?:\\s+of)?\\s*[₩￦]\\s*([\\d,]+)/i)?.[1]);
-    const relativeDays=Number(context.match(/Expires?\\s+in\\s+(\\d+)\\s+days?/i)?.[1] || NaN);
+    const minimum=numberFromText(context.match(/(?:minimum|min\.?)\s*(?:spend)?(?:\s+of)?\s*[₩￦]\s*([\d,]+)/i)?.[1]);
+    const relativeDays=Number(context.match(/Expires?\s+in\s+(\d+)\s+days?/i)?.[1] || NaN);
     const expiresAt=Number.isFinite(relativeDays)?new Date(now.getTime()+relativeDays*86400000).toISOString():null;
-    const mechanismHint=/CLAIM\\s+COUPON/i.test(context)?'CLAIM_COUPON':/ACTIVATE\\s+NOW|BOOK\\s+NOW/i.test(context)?'ACTIVATE_OR_BOOK':'UNCONFIRMED';
+    const mechanismHint=/CLAIM\s+COUPON/i.test(context)?'CLAIM_COUPON':/ACTIVATE\s+NOW|BOOK\s+NOW/i.test(context)?'ACTIVATE_OR_BOOK':'UNCONFIRMED';
     const common={offerType:'AUTO_DISCOUNT',currency:'KRW',minimum:minimum ?? null,platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',mechanismHint,endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:context.slice(0,240)};
     if (offer.kind==='FIXED') candidates.push({...common,discountKind:'FIXED',fixedAmount:numberFromText(offer.match[2]),currency:offer.match[1]==='$'?'USD':'KRW',cap:numberFromText(offer.match[2])});
     else candidates.push({...common,discountKind:'PERCENT',rate:Number(offer.match[1]),cap:null});
