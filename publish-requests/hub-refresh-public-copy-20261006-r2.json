@@ -1,0 +1,10 @@
+{
+  "requestId": "hub-refresh-public-copy-20261006-r2",
+  "type": "HUB_REFRESH",
+  "hubKeys": [
+    "zeus",
+    "lineagem",
+    "wuthering"
+  ],
+  "reason": "Apply cleaned public copy to existing game hubs."
+}
