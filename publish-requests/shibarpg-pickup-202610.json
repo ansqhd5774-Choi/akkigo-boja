@@ -1,9 +1,9 @@
 {
   "articleKey": "shibarpg-pickup-202610",
   "approved": true,
-  "requestedAt": "2026-10-05T13:25:00.000Z",
-  "reason": "R1 benchmark redesign: coupon-card, copy feedback, responsive steps, related links and FAQ; preserve existing postId/URL",
+  "requestedAt": "2026-10-05T13:45:00.000Z",
+  "reason": "Apply benchmark step 1 findings: top coupon status navigation and official-channel shortcut while preserving existing card/copy/mobile UI and postId/URL",
   "retry": 1,
   "retryReason": "Initial request returned HTTP 405 before article route; D1 article state/attempts confirmed empty. Trailing-slash route normalization deployed successfully.",
-  "revision": 2
+  "revision": 3
 }
