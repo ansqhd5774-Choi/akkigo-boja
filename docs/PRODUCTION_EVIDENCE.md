@@ -51,3 +51,5 @@ Blogger 안내 페이지 ID 4404238150170891065 공개, 실제 본문 확인. �
 - unresolved publish_attempts(RUNNING/UNKNOWN) 0건. 코드·환경 변경 없음, 이전25개 테스트/GitHub Verify37287660186 성공 증거 재사용. 재배포 불필요.
 - 0 */6 * * *는 UTC 기준으로 한국시간03/09/15/21 실행. 이전 문서의 21시 표기는 잘못된 시간대 변환으로, 당시09UTC는18시KST다. 다음 자연 Cron은10월5일21시KST. 수동 재수집을 자연 Cron 성공으로 보고하지 않는다.
 - 잔여: 자연 Cron 성공 기록 관찰, GitHub CI 자동 배포 credential 설정, 명조 공식 입력 근거. 정상 기반 테마와 공개 운영은 유지. 원본 테마 실패 기록은 대체 테마의 성공과 구분.
+
+수동 운영 도구 tools/manual-operations.ps1 추가. Status/Collect 실제 실행, 원천4개HTTP200 및 MANUAL/SUCCEEDED 저장 확인. Deploy 실제 실행: 테스트25개PASS, 배포081edc99-81e2-4d59-89c9-a66982f74ea3 및 기존Cron설정 확인. Verify workflow_dispatch 지원 추가. GitHub 자동 배포 credential 미연결은 수동 CLI 배포로 대체하며 자연Cron 성공과 구분한다.
