@@ -2793,7 +2793,11 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                 <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
               </div>
             </b:if>
-            <data:post.body/>
+            <b:if cond='data:post.hasJumpLink'>
+              <data:post.body/>
+            <b:else/>
+              <b:include cond='data:post' data='post' name='postSnippet'/>
+            </b:if>
           </div>
         </b:includable>
         <b:includable id='previousPageLink'><b:comment>Don&#39;t show</b:comment></b:includable>
@@ -3563,7 +3567,11 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                 <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
               </div>
             </b:if>
-            <data:post.body/>
+            <b:if cond='data:post.hasJumpLink'>
+              <data:post.body/>
+            <b:else/>
+              <b:include cond='data:post' data='post' name='postSnippet'/>
+            </b:if>
           </div>
         </b:includable>
                     <b:includable id='postCommentsAndAd' var='post'>
