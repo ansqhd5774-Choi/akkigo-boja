@@ -40,27 +40,27 @@ function uniqueCandidates(items) {
 }
 
 function extractAgoda(text, now) {
+  const offers=[];
+  const fixedRe=/(?:Up\\s+to\\s+)?([₩￦$])\\s*([\\d,]+)\\s+Off\\s+Hotels?/ig;
+  for (const match of text.matchAll(fixedRe)) offers.push({index:match.index,end:match.index+match[0].length,kind:'FIXED',match});
+  const percentRe=/(?:Up\\s+to\\s+)?(\\d{1,2})%\\s+off(?:\\s+Hotels?)?/ig;
+  for (const match of text.matchAll(percentRe)) offers.push({index:match.index,end:match.index+match[0].length,kind:'PERCENT',match});
+  offers.sort((a,b)=>a.index-b.index);
   const candidates=[];
-  const relativeDays = Number(text.match(/Expires?\s+in\s+(\d+)\s+days?/i)?.[1] || NaN);
-  const expiresAt = Number.isFinite(relativeDays) ? new Date(now.getTime()+relativeDays*86400000).toISOString() : null;
-  const minimum = numberFromText(text.match(/(?:minimum|min\.?)(?:\s+spend)?(?:\s+of)?\s*[₩￦]\s*([\d,]+)/i)?.[1]);
-  const fixedRe=/(?:Up\s+to\s+)?([₩￦$])\s*([\d,]+)\s+Off\s+Hotels?/ig;
-  for (const match of text.matchAll(fixedRe)) {
-    candidates.push({
-      offerType:'CODE',discountKind:'FIXED',fixedAmount:numberFromText(match[2]),currency:match[1]==='$'?'USD':'KRW',minimum:minimum ?? null,cap:numberFromText(match[2]),platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,
-      travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:match[0].slice(0,200)
-    });
-  }
-  const percentRe=/(?:Up\s+to\s+)?(\d{1,2})%\s+Off(?:\s+Hotels?)?/ig;
-  for (const match of text.matchAll(percentRe)) {
-    candidates.push({
-      offerType:'CODE',discountKind:'PERCENT',rate:Number(match[1]),currency:'KRW',minimum:minimum ?? null,cap:null,platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,
-      travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:match[0].slice(0,200)
-    });
+  for (let i=0;i<offers.length;i++) {
+    const offer=offers[i];
+    const next=offers[i+1]?.index ?? Math.min(text.length,offer.index+320);
+    const context=text.slice(offer.index,next);
+    const minimum=numberFromText(context.match(/(?:minimum|min\\.?)\\s*(?:spend)?(?:\\s+of)?\\s*[₩￦]\\s*([\\d,]+)/i)?.[1]);
+    const relativeDays=Number(context.match(/Expires?\\s+in\\s+(\\d+)\\s+days?/i)?.[1] || NaN);
+    const expiresAt=Number.isFinite(relativeDays)?new Date(now.getTime()+relativeDays*86400000).toISOString():null;
+    const mechanismHint=/CLAIM\\s+COUPON/i.test(context)?'CLAIM_COUPON':/ACTIVATE\\s+NOW|BOOK\\s+NOW/i.test(context)?'ACTIVATE_OR_BOOK':'UNCONFIRMED';
+    const common={offerType:'AUTO_DISCOUNT',currency:'KRW',minimum:minimum ?? null,platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',mechanismHint,endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:context.slice(0,240)};
+    if (offer.kind==='FIXED') candidates.push({...common,discountKind:'FIXED',fixedAmount:numberFromText(offer.match[2]),currency:offer.match[1]==='$'?'USD':'KRW',cap:numberFromText(offer.match[2])});
+    else candidates.push({...common,discountKind:'PERCENT',rate:Number(offer.match[1]),cap:null});
   }
   return uniqueCandidates(candidates).filter(x => (x.fixedAmount ?? x.rate) > 0);
 }
-
 function extractTripCom(text) {
   const candidates=[];
   const period=text.match(/(?:프로모션|이벤트)\s*기간[^0-9]*(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일\s*[~～\-–—]\s*(?:(\d{4})년\s*)?(\d{1,2})월\s*(\d{1,2})일/i);
@@ -73,7 +73,7 @@ function extractTripCom(text) {
   const percentRe=/(\d{1,2})%\s*할인\s*쿠폰/ig;
   for (const match of text.matchAll(percentRe)) {
     candidates.push({
-      offerType:'CODE',discountKind:'PERCENT',rate:Number(match[1]),currency:'KRW',minimum:null,cap:null,platformHint,audienceHint,
+      offerType:'AUTO_DISCOUNT',discountKind:'PERCENT',rate:Number(match[1]),mechanismHint:'COUPON_UNCONFIRMED',currency:'KRW',minimum:null,cap:null,platformHint,audienceHint,
       endMode:endAt?'FIXED_DATE':'UNKNOWN',expiresAt:endAt,
       travel:{kind,regions,...(startAt&&endAt?{bookingStartAt:startAt,bookingEndAt:endAt}:{})},
       evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:match[0].slice(0,200)
