@@ -17,3 +17,5 @@ Worker 직접 배포 버전: 1bee93f7-3c90-48a8-9988-fe8778ce90a6. PUBLISH_ENABL
 기존 docs의 OAuth 미연결/발행 미실행/비활성 관련 내용은 이전 단계 기록이다. 이 증거가 현재 연결·최초 공개 발행 상태를 대체한다. 로컬 테스트 23개 및 a572b1f GitHub Verify 37282493260 성공 증거는 소스가 변경되지 않아 재사용한다. GitHub 자동 배포는 여전히 비활성이고 이번 배포는 Wrangler CLI로 실행했다.
 
 남은 작업: 준비한 테마 적용과 PC/mobile 렌더링 검증, 게임 쿠폰 적용 조건 및 실제 사용 성공 검증, 입력 방법 상세 본문, 자연 Cron 실행 관찰, Google Testing OAuth 만료 정책에 맞춘 운영 연결 정리. 사용 가능한 쿠폰이 확인됐다고 보고하지 않는다.
+
+후속 갱신: 입력 안내 및 검증 기준을 3개 기존 게시물에 PATCH, 원격 UPDATE/SUCCEEDED 3건 확인. 현재 Worker 버전 d48cafbb-fc94-4531-8113-61f2bbe40b22. 상세 잔여 상태는 REMAINING_WORK.md 참고. 사용자의 테마 적용 완료 보고와 현재 Contempo Light 표시는 불일치로 기록하며 사용자 보고를 취소하지 않는다.
