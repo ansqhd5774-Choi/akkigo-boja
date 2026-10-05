@@ -1,0 +1,48 @@
+<!--
+AKKIGO BOJA Game Coupon Article R1 — canonical structure.
+Renderer placeholders use {{TOKEN}} syntax.
+The coupon code must stay after <!--more--> so list previews never expose it.
+-->
+<div class="ncp-feed-preview" data-ncp-feed-preview aria-label="{{GAME_NAME}} 쿠폰 요약">
+  <div class="ncp-feed-stat"><span>확인된 쿠폰</span><strong>{{ACTIVE_COUNT}}개</strong></div>
+  <div class="ncp-feed-stat"><span>보상</span><strong>{{PRIMARY_REWARD}}</strong></div>
+  <div class="ncp-feed-stat"><span>만료</span><strong>{{EXPIRY_DISPLAY}}</strong></div>
+</div>
+<!--more-->
+<article data-ncp-article="{{ARTICLE_KEY}}" class="ncp-coupon-article">
+  <header class="ncp-hero">
+    <div class="ncp-meta"><span class="ncp-meta-badge">{{YEAR_MONTH}}</span><span>마지막 업데이트 {{UPDATED_DATE}}</span></div>
+    <h1>{{GAME_NAME}} 쿠폰 코드 모음 ({{YEAR_MONTH}}) | 입력 방법·보상</h1>
+    <p class="ncp-lead">{{LEAD_TEXT}}</p>
+  </header>
+
+  <nav class="ncp-quickbar" aria-label="쿠폰 빠른 이동">
+    <a class="ncp-quickitem" href="#ncp-active"><span><strong>확인된 코드</strong><br>현재 쿠폰</span><span class="ncp-quicknum">{{ACTIVE_COUNT}}</span></a>
+    <a class="ncp-quickitem" href="#ncp-expired"><span><strong>만료</strong><br>지난 쿠폰</span><span class="ncp-quicknum">{{EXPIRED_COUNT}}</span></a>
+    <a class="ncp-quickitem" href="{{OFFICIAL_COMMUNITY_URL}}" rel="noopener noreferrer"><span><strong>공식 채널</strong><br>새 쿠폰 확인</span><span>열기 →</span></a>
+  </nav>
+
+  <section id="ncp-active">
+    <div class="ncp-section-head"><h2>현재 확인된 쿠폰</h2><span class="ncp-count" aria-label="확인된 쿠폰 {{ACTIVE_COUNT}}개">{{ACTIVE_COUNT}}</span></div>
+    {{ACTIVE_COUPON_CARDS}}
+  </section>
+
+  <section>
+    <h2>쿠폰 입력 방법</h2>
+    <div class="ncp-step-grid">
+      <div class="ncp-step-card"><h3>게임에서 입력</h3>{{GAME_REDEEM_STEPS}}</div>
+      <div class="ncp-step-card"><h3>웹에서 입력</h3>{{WEB_REDEEM_STEPS}}</div>
+    </div>
+  </section>
+
+  <section id="ncp-expired">
+    <div class="ncp-section-head"><h2>만료된 쿠폰</h2><span class="ncp-count ncp-count-muted" aria-label="만료 쿠폰 {{EXPIRED_COUNT}}개">{{EXPIRED_COUNT}}</span></div>
+    {{EXPIRED_COUPON_CONTENT}}
+  </section>
+
+  <section><h2>쿠폰이 안 될 때 확인</h2>{{TROUBLESHOOTING_LIST}}</section>
+  <section><h2>새 쿠폰 확인 방법</h2>{{NEW_COUPON_SOURCE}}</section>
+  <section><h2>관련 게임 쿠폰</h2>{{RELATED_GAME_LINKS}}</section>
+  <section><h2>공식 출처</h2>{{OFFICIAL_SOURCE_LINKS}}</section>
+  <section><h2>자주 묻는 질문</h2>{{FAQ_ITEMS}}</section>
+</article>
