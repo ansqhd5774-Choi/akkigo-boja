@@ -9,5 +9,11 @@
     "BLOGGER_PUBLIC_URL": "https://lsifl.blogspot.com",
     "PUBLISH_ENABLED": "false"
   },
-  "triggers": { "crons": [] }
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "akkigo-boja-state",
+    "database_id": "43e02240-a390-4d8b-bb99-28d329bb72fe",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": { "crons": ["0 */6 * * *"] }
 }

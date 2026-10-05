@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [codex/blogger-worker-r1]
-    paths: [src/**, data/**, wrangler.jsonc, package.json, pnpm-lock.yaml, pnpm-workspace.yaml]
+    paths: [src/**, data/**, migrations/**, wrangler.jsonc, package.json, pnpm-lock.yaml, pnpm-workspace.yaml, .github/workflows/deploy.yml]
 permissions:
   contents: read
 concurrency:
@@ -13,6 +13,9 @@ jobs:
   deploy:
     if: vars.CLOUDFLARE_DEPLOY_ENABLED == 'true'
     runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.0.0
@@ -21,6 +24,7 @@ jobs:
       - run: npm install --global pnpm@11.19.0
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
+      - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
       - run: pnpm deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

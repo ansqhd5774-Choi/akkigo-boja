@@ -2,6 +2,9 @@ node_modules/
 .wrangler/
 .dev.vars*
 .env*
+.admin-token
+client_secret*.json
+oauth-client*.json
 backups/
 blogger-public-before.png
 BLOGGER_STATUS.md
