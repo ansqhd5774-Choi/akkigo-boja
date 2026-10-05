@@ -34,17 +34,16 @@ jobs:
           if [ -z "$token" ]; then echo "OIDC_TOKEN_MISSING"; exit 1; fi
           echo "::add-mask::$token"
           echo "token=$token" >> "$GITHUB_OUTPUT"
-      - name: Publish approved request and verify public page
-        if: ${{ !startsWith(github.event.head_commit.message, 'refresh(hubs):') }}
+      - name: Publish article or refresh game hubs
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
-        run: node tools/publish-approved-requests.mjs
-      - name: Refresh approved game hubs
-        if: ${{ startsWith(github.event.head_commit.message, 'refresh(hubs):') }}
-        env:
-          GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         shell: bash
         run: |
-          request_file="$(git diff --name-only HEAD^ HEAD -- 'publish-requests/hub-refresh-*.json' 'hub-refresh-requests/*.json' | head -n 1)"
-          if [ -z "$request_file" ]; then echo "HUB_REFRESH_REQUEST_MISSING"; exit 1; fi
-          node tools/refresh-approved-hubs.mjs "$request_file"
+          if [[ "$COMMIT_MESSAGE" == refresh(hubs):* ]]; then
+            request_file="$(git diff --name-only HEAD^ HEAD -- 'publish-requests/hub-refresh-*.json' | head -n 1)"
+            if [ -z "$request_file" ]; then echo "HUB_REFRESH_REQUEST_MISSING"; exit 1; fi
+            node tools/refresh-approved-hubs.mjs "$request_file"
+          else
+            node tools/publish-approved-requests.mjs
+          fi
