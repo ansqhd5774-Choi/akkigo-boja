@@ -1,0 +1,40 @@
+name: Publish Approved Article
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - publish-requests/**
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: production-worker
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - run: npm install --global pnpm@11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
+      - run: pnpm deploy
+      - name: Request GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          response="$(curl --fail-with-body --silent --show-error -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=akkigo-boja-publish")"
+          token="$(printf '%s' "$response" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>process.stdout.write(JSON.parse(s).value||''))")"
+          if [ -z "$token" ]; then echo "OIDC_TOKEN_MISSING"; exit 1; fi
+          echo "::add-mask::$token"
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+      - name: Publish approved request and verify public page
+        env:
+          GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: node tools/publish-approved-requests.mjs
