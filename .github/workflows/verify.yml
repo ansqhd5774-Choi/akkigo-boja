@@ -20,7 +20,7 @@ jobs:
       - name: Regenerate Blogger theme and require clean diff
         run: |
           node tools/build-theme.mjs
-          git diff --exit-code -- nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - name: Render Shiba coupon layout at 390 and 1440
         shell: bash
         run: |
@@ -47,8 +47,8 @@ jobs:
           import xml.etree.ElementTree as ET
           for path in [
               'theme/blogger-native-base.xml',
-              'nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',
-              'nutriments_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',
+              'akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+              'akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',
           ]:
               ET.parse(path)
               print('XML_OK', path)
