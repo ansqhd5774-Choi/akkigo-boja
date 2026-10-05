@@ -1,0 +1,19 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+
+const publicFiles=[
+  '../drafts/zeus.html',
+  '../drafts/lineagem.html',
+  '../drafts/wuthering.html',
+  '../drafts/shibarpg-pickup-202610.html',
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
+];
+
+test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
+  for (const path of publicFiles) {
+    const html=readFileSync(new URL(path,import.meta.url),'utf8');
+    assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator 관련|내부 운영 상태|쿠폰 확인 기준|활성 추천에는 포함하지 않음|직접 적용 · 공식 출처 · 미검증|게임 보상은 현금 할인액/);
+  }
+});
