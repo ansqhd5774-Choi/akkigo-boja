@@ -36,7 +36,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-node tools\apply-blogger-theme-patch-via-cdp.mjs --apply
+node tools\apply-blogger-theme-patch-via-cdp.mjs --sync-source --apply
 if errorlevel 1 (
   echo BLOGGER_THEME_APPLY_FAILED
   exit /b 1
