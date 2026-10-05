@@ -53,7 +53,7 @@ export function validateCoupon(coupon, now = Date.now()) {
   }
   const kind = offerType(coupon);
   if (!OFFER_TYPES.includes(kind)) throw new Error('INVALID_OFFER_TYPE');
-  if (['CODE','MEMBER','REFERRAL','GAME_REDEEM'].includes(kind) && (typeof coupon.code !== 'string' || !coupon.code.trim())) throw new Error('MISSING_code');
+  if (['CODE','REFERRAL','GAME_REDEEM'].includes(kind) && (typeof coupon.code !== 'string' || !coupon.code.trim())) throw new Error('MISSING_code');
   if (coupon.code != null && typeof coupon.code !== 'string') throw new Error('INVALID_code');
   if (!['ACTIVE','EXPIRING_SOON','EXPIRED','UNVERIFIED','REMOVED'].includes(coupon.status)) throw new Error('INVALID_STATUS');
 
