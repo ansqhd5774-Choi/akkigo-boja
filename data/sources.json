@@ -1,5 +1,6 @@
 [
-  {"id":"zeus-live-notice","brand":"제우스: 오만의 신","url":"https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961","kind":"OFFICIAL_NOTICE"},
+  {"id":"zeus-live-notice","brand":"제우스: 오만의 신","url":"https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961","kind":"OFFICIAL_NOTICE","requiresImageReview":true},
   {"id":"lineagem-redemption","brand":"리니지M","url":"https://nshop.plaync.com/shop/lms/kr/coupon","kind":"REDEMPTION_HELP"},
+  {"id":"lineagem-channel-notice","brand":"리니지M","url":"https://lounge.plaync.com/feed/80925?country=KR&locale=ko-KR","kind":"INDIVIDUAL_COUPON_NOTICE"},
   {"id":"wuthering-official","brand":"명조:워더링 웨이브","url":"https://wutheringwaves.kurogames.com/en/main","kind":"OFFICIAL_HOME"}
 ]

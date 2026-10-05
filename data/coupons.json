@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id":"zeus-devlive0911",
+    "type":"GAME_REWARD",
+    "brand":"제우스: 오만의 신",
+    "category":"게임",
+    "code":"DEVLIVE0911",
+    "status":"UNVERIFIED",
+    "rewards":[
+      {"name":"영롱한 의상/탈것 11회 소환 선택 상자 (계정)","quantity":2},
+      {"name":"금괴 (계정)","quantity":5},
+      {"name":"실타래 제작 시간 가속권 (계정)","quantity":24},
+      {"name":"영혼의 파편 (계정)","quantity":5},
+      {"name":"무기/방어구 강화 주문서 상자 (계정)","quantity":50},
+      {"name":"특수 신탁 지령서 (계정)","quantity":1},
+      {"name":"[이벤트] 영약 묶음 상자 (계정)","quantity":5}
+    ],
+    "server":"적용 서버 미확인",
+    "redemptionMethod":"공식 쿠폰 등록 페이지 https://coupon.withhive.com/2352",
+    "platform":"WEB",
+    "member":"ALL",
+    "eligibilityConfirmed":false,
+    "expiresAt":null,
+    "sourceUrl":"https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961",
+    "sourceCheckedAt":"2026-10-05T07:59:17Z",
+    "workingVerifiedAt":null,
+    "verificationResult":"NOT_TESTED",
+    "evidenceMethod":"OFFICIAL_NOTICE_IMAGE_MANUAL_REVIEW",
+    "note":"공식 이미지의 코드와 보상을 확인함. 사용 성공, 서버/계정 조건, 만료일은 미확인이며 추천/활성 목록에서 제외."
+  }
+]

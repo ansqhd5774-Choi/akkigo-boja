@@ -19,7 +19,13 @@ test('게임 보상은 현금 절감액 순위에 포함하지 않는다',()=>{
   const game={type:'GAME_REWARD',id:'game',brand:'테스트',category:'게임',code:'FIXTURE',status:'UNVERIFIED',rewards:[{name:'골드',quantity:100}],server:'전체',redemptionMethod:'게임 내 입력',platform:'APP',member:'ALL',sourceUrl:'https://example.com',sourceCheckedAt:'2026-10-04T23:00:00Z'};
   assert.equal(validateCoupon(game,now),game);
   assert.deepEqual(rankCoupons([game],{amount:1000,member:'ALL',platform:'APP'},now),[]);
-  const html=renderHub('테스트',[{...game,status:'ACTIVE',workingVerifiedAt:'2026-10-04T23:00:00Z',verificationResult:'SUCCESS'}],now);
+  const html=renderHub('테스트',[{...game,status:'ACTIVE',eligibilityConfirmed:true,workingVerifiedAt:'2026-10-04T23:00:00Z',verificationResult:'SUCCESS'}],now);
   assert.match(html,/골드 100개/);
   assert.doesNotMatch(html,/undefined|% 할인/);
+});
+test('이미지 공지는 검토 필요로 유지하고 계정 조건 미확인 게임 쿠폰은 활성화하지 않는다',async()=>{
+  const observation=await observeSource({...source,requiresImageReview:true},async()=>new Response('<title>공지</title>',{headers:{'content-type':'text/html'}}));
+  assert.equal(observation.status,'SOURCE_FETCHED_IMAGE_REVIEW_REQUIRED');
+  const game={type:'GAME_REWARD',id:'fixture',brand:'게임',category:'게임',code:'FIXTURE',status:'ACTIVE',rewards:[{name:'골드',quantity:1}],server:'미확인',redemptionMethod:'입력',platform:'APP',member:'ALL',eligibilityConfirmed:false,sourceUrl:'https://example.com',sourceCheckedAt:new Date().toISOString()};
+  assert.throws(()=>validateCoupon(game),/MISSING_ELIGIBILITY_EVIDENCE/);
 });

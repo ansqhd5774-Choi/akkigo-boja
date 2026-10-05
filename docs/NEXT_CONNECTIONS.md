@@ -10,7 +10,10 @@
 - D1 전용 DB와 두 migration 적용, 원천 관찰 Cron과 게임 보상 스키마 구현. 공식 페이지 3곳 HTTP 200, 원격 D1 3행과 64자리 해시 저장 확인.
 - Worker 배포 버전 3132a35b-c722-41bb-b5ae-6446dbc5a751. 공개 health의 D1_BOUND/OAuth false, 비인증 수집 401, 비활성 발행 409 직접 확인.
 - 기존 postId 갱신 체크포인트 및 미확정 결과 재시도 방지 구현. 실제 Blogger PATCH는 인증 미연결로 미실행.
-- 신규 post insert, 코드 추출/사용 검증, 테마 적용과 공개 렌더링 검증은 미완료. 저장된 원천 관찰 3행은 사용 가능한 쿠폰 3개라는 의미가 아니다.
+- 신규 초안 insert·postId 저장·생성 복구 모듈 및 로컬 초안 3개 구현. 실제 Blogger 생성은 미실행. 로컬 테스트는 현재 20개 PASS이며 이전 CI 11개와 구분한다.
+- 공식 원천은 4곳으로 확대했고 실제 Worker 응답과 D1 4행 저장 확인. 제우스는 이미지 공지 검토 필요 상태다. 수집된 공식 후보 1개는 UNVERIFIED이며 공개 활성 목록에서 제외한다.
+- 코드 자동 추출/사용 검증, 테마 적용과 공개 렌더링 검증은 미완료. 원천 관찰 행 수는 사용 가능한 쿠폰 수가 아니다.
+- Google Cloud 전용 프로젝트 akkigo-boja 생성, Blogger API 사용 설정됨, OAuth 앱 및 Desktop 클라이언트 생성됨을 GUI에서 확인. Google 실제 관리 동의·토큰 교환·Worker OAuth Secret 연결은 미완료. JSON 자동 다운로드는 완료 이벤트 timeout 및 기본 다운로드 폴더의 신규 파일 부재로 AUTOMATION_BLOCKED다. 해당 JSON의 실제 저장 경로가 필요하다.
 
 ## 테마 수동 적용
 

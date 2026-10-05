@@ -22,6 +22,7 @@ export function validateCoupon(coupon, now = Date.now()) {
   const checked = Date.parse(coupon.sourceCheckedAt);
   if (!Number.isFinite(checked) || checked > now) throw new Error('INVALID_CHECK_TIME');
   if (['ACTIVE','EXPIRING_SOON'].includes(coupon.status)) {
+    if (type === 'GAME_REWARD' && coupon.eligibilityConfirmed !== true) throw new Error('MISSING_ELIGIBILITY_EVIDENCE');
     const verified = Date.parse(coupon.workingVerifiedAt);
     if (!Number.isFinite(verified) || verified > now || coupon.verificationResult !== 'SUCCESS') throw new Error('MISSING_WORKING_EVIDENCE');
     if (now - verified > 86400000) throw new Error('STALE_WORKING_EVIDENCE');

@@ -1,0 +1,1 @@
+ALTER TABLE publish_attempts ADD COLUMN operation TEXT NOT NULL DEFAULT 'UPDATE';

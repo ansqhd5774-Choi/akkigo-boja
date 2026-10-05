@@ -24,7 +24,7 @@ export async function observeSource(source, transport = fetch, now = new Date())
     const html = new TextDecoder().decode(body);
     observation.title = (html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || '').trim().slice(0,200);
     // 페이지 접근 성공은 쿠폰 코드 발견이나 게임 내 작동 성공이 아니다.
-    observation.status = 'SOURCE_FETCHED_UNPARSED';
+    observation.status = source.requiresImageReview ? 'SOURCE_FETCHED_IMAGE_REVIEW_REQUIRED' : 'SOURCE_FETCHED_UNPARSED';
   } catch { /* 원문 오류나 인증정보를 저장하지 않는다. */ }
   return observation;
 }
