@@ -4,6 +4,7 @@ import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
 import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
+import { buildHubDraft } from './hubs.js';
 import { publishApprovedArticle } from './articles.js';
 import { verifyGitHubOidc } from './github-oidc.js';
 
@@ -24,6 +25,23 @@ export default {
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {
         const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
+        return Response.json({error:code},{status:409});
+      }
+    }
+    if (path === '/internal/hubs/refresh' && request.method === 'POST') {
+      try {
+        await verifyGitHubOidc(request);
+      } catch {
+        return new Response('Unauthorized',{status:401});
+      }
+      if (env.PUBLISH_ENABLED !== 'true') return Response.json({error:'PUBLISH_DISABLED'},{status:409});
+      let input;
+      try {input=await request.json();} catch {return Response.json({error:'INVALID_JSON'},{status:400});}
+      try {
+        const post=buildHubDraft(input.hubKey,coupons);
+        return Response.json(await updateStoredHub(env,input.hubKey,post),{headers:{'Cache-Control':'no-store'}});
+      } catch (error) {
+        const code=String(error?.message || 'HUB_REFRESH_FAILED').slice(0,120);
         return Response.json({error:code},{status:409});
       }
     }
