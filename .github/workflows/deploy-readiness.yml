@@ -11,12 +11,9 @@ jobs:
   readiness:
     runs-on: ubuntu-latest
     steps:
-      - name: Check deployment prerequisites without exposing values
+      - name: Check deployment prerequisite without exposing values
         env:
-          DEPLOY_ENABLED: ${{ vars.CLOUDFLARE_DEPLOY_ENABLED == 'true' }}
-          ACCOUNT_ID_PRESENT: ${{ vars.CLOUDFLARE_ACCOUNT_ID != '' }}
           API_TOKEN_PRESENT: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
         run: |
-          echo "deploy_enabled=$DEPLOY_ENABLED"
-          echo "account_id_present=$ACCOUNT_ID_PRESENT"
           echo "api_token_present=$API_TOKEN_PRESENT"
+          echo "account_selection=WRANGLER_AUTO_SELECT_SINGLE_SCOPED_ACCOUNT"
