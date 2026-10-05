@@ -1,0 +1,13 @@
+{
+  "market": "KR",
+  "platform": "Google Play Android phone",
+  "chart": "Top grossing",
+  "observedDate": "2026-10-05",
+  "evidence": "Google Play 공식 브라우저 최고 매출 선택 후 표시 순위 직접 확인",
+  "chartUrl": "https://play.google.com/store/games?gl=kr&hl=ko&device=phone",
+  "games": [
+    {"rank":1,"name":"제우스: 오만의 신","appId":"com.com2us.es.android.google.kr.normal","officialSource":"https://zeus.com2us.com/p/fd754e3d-ac8d-4726-b5af-142c45b79fef","collectionStatus":"SOURCE_IDENTIFIED","note":"상품 동봉 개별 쿠폰은 공개 공용 코드와 구분"},
+    {"rank":2,"name":"리니지M","appId":"com.ncsoft.lineagem19","officialSource":"https://nshop.plaync.com/shop/lms/kr/coupon","collectionStatus":"REDEMPTION_PAGE_IDENTIFIED","note":"등록 화면은 쿠폰 발견 원천이나 작동 성공 근거가 아님"},
+    {"rank":3,"name":"명조:워더링 웨이브","appId":"com.kurogame.wutheringwaves.global","officialSource":null,"collectionStatus":"OFFICIAL_NOTICE_PENDING","note":"공식 리딤 공지와 적용 방식 확인 전 코드 등록 안 함"}
+  ]
+}
