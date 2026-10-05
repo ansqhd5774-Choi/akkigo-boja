@@ -1,13 +1,32 @@
 import coupons from '../data/coupons.json' with { type: 'json' };
+import articles from '../data/articles.json' with { type: 'json' };
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
 import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
+import { publishApprovedArticle } from './articles.js';
+import { verifyGitHubOidc } from './github-oidc.js';
 
 export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
     const path = requestUrl.pathname;
+    if (path === '/internal/articles/publish' && request.method === 'POST') {
+      try {
+        await verifyGitHubOidc(request);
+      } catch {
+        return new Response('Unauthorized',{status:401});
+      }
+      let input;
+      try { input=await request.json(); } catch { return Response.json({error:'INVALID_JSON'},{status:400}); }
+      try {
+        const result=await publishApprovedArticle(env,input.articleKey,articles);
+        return Response.json(result,{headers:{'Cache-Control':'no-store'}});
+      } catch (error) {
+        const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
+        return Response.json({error:code},{status:409});
+      }
+    }
     if (path === '/internal/candidates' && request.method === 'GET') {
       if (!env.ADMIN_TOKEN || request.headers.get('Authorization') !== `Bearer ${env.ADMIN_TOKEN}`) return new Response('Unauthorized',{status:401});
       try {
