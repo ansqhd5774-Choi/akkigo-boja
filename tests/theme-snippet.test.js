@@ -38,3 +38,15 @@ for (const path of [
     assert.match(xml,/setTimeout\(function\(\)\{button\.textContent=before;button\.disabled=false;\},1400\)/);
   });
 }
+
+for (const path of [
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
+]) {
+  test(`${path} 공개 홈/푸터는 내부 운영 문구를 노출하지 않는다`,()=>{
+    const xml=readFileSync(new URL(path,import.meta.url),'utf8');
+    assert.doesNotMatch(xml,/직접 적용 · 공식 출처 · 미검증|게임 보상은 현금 할인액|공식 출처와 실제 적용 기록을 구분해 안내합니다|직접 적용 확인 기록|확인 기록:/);
+    assert.match(xml,/게임 쿠폰과 입력 방법을 빠르게 확인하세요/);
+    assert.match(xml,/사용 확인 쿠폰/);
+  });
+}
