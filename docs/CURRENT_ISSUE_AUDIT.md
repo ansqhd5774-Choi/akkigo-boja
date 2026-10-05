@@ -13,8 +13,8 @@
 | 8 | DONE: 공개 홈에 근거 없는 신뢰도 비율 없음. 계정별 직접 적용 기록과 미확인 조건 명시 |
 | 9 | PARTIAL: 검색·17메뉴·확인 기록·게임 안내·최신/만료 빈 상태 반영. 실시간 자동 홈 재생성 및 인기 순위 미구현 |
 | 10 | PARTIAL: 홈 코드·보상 펼치기·플랫폼·서버/만료 미확인 표시·복사·입력 안내 링크 구현 |
-| 11 | PARTIAL: 여행 비교 엔진·validator + Agoda/Trip.com 공식 텍스트 후보 추출 + UNVERIFIED D1 저장 구조 구현. 실제 Worker 배포·원격 migration·ACTIVE 검증은 미완료 |
-| 12 | PARTIAL: 쇼핑/배달 정률·정액·자동할인 절감액 비교 엔진 구현. 실제 공식 쇼핑/배달 데이터 연결은 미구현 |
+| 11 | PARTIAL: 여행 비교 엔진·validator + Agoda/Trip.com 공식 텍스트 후보 추출 + UNVERIFIED D1 저장 + 관리자 read-only 후보 조회 API 구현. Agoda 인접 카드 조건 누수 방지까지 PASS. 실제 Worker 배포·원격 migration·ACTIVE 검증은 미완료 |
+| 12 | PARTIAL: 쇼핑/배달 비교 엔진 구현. 올리브영·G마켓·11번가·배달 공개 원천을 검토했으나 쿠폰 조건 완결성이 부족해 자동 원천 추가를 보류. SOURCE_SELECTION_AUDIT.md에 근거 기록 |
 | 13 | DONE: 쿠폰 데이터→일반/여행/커머스 HTML renderer 구현. 기존 게임 허브 renderer와 공존 |
 | 14 | DONE: 상태·출처·날짜·게임 보상 + offerType/endMode + 여행 validator + 후보 저장/중복방지 회귀 구현. 기존 게임 회귀 유지, GitHub Verify PASS |
 | 15 | PARTIAL: 17메뉴 출력 확인, 현재 실제 콘텐츠는 게임 Label 중심. 빈 Label 등록 성공으로 처리하지 않음 |
@@ -41,6 +41,8 @@
   - comparison model/source 변경 PASS
   - collector source count 변경 PASS — Run 37298222331
   - travel candidate persistence 전체 Verify PASS — Run 37299403638
+  - candidate review API Verify PASS — Run 37299721615
+  - Agoda card-local parser fix Verify PASS — Run 37300074756
 - Deploy Worker는 `CLOUDFLARE_DEPLOY_ENABLED` 가드로 skipped. migration 0005와 candidate collector는 아직 production Worker/D1에 반영되지 않았다.
 - GSC Wizard는 현재 `payment_required`로 조회 불가. 유료 구독/결제는 실행하지 않았다.
 - 공개 검색 확인에서 `site:lsifl.blogspot.com` 결과는 아직 확인되지 않았다.
@@ -48,7 +50,7 @@
 ## 별도 남은 작업
 
 - Agoda/Trip.com 실제 원문에서 후보 추출을 production에서 실행하고, 후보별 조건/작동 검증 후에만 ACTIVE 승격.
-- 쇼핑·배달의 허용된 공식 원천 확정 및 실제 데이터 연결.
+- 쇼핑·배달 공식 원천 추가 조사. 현재 검토한 원천은 조건 분리가 불충분해 자동 파서 연결을 보류.
 - 자연 Cron 성공 기록 관찰.
 - Worker 배포 credential/활성화 여부 확정 후 source 변경 운영 반영.
 - 명조 공식 입력 경로 근거 확인.
