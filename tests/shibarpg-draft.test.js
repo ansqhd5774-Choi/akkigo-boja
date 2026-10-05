@@ -28,5 +28,5 @@ test('시바 모험단 신규 글 초안은 공식 정보와 미검증 상태를
   assert.match(html,/2026년 10월 6일 오전 9시/);
   assert.match(html,/공식 발급 정보 · 실사용 미검증/);
   assert.match(html,/coupon\.withhive\.com\/shibarpg/);
-  assert.doesNotMatch(html,/ACTIVE|전체 계정 사용 가능/);
+  assert.doesNotMatch(html,/현재 사용 가능|검증 완료|전체 계정에서 사용 가능/);
 });
