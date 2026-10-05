@@ -40,6 +40,16 @@ jobs:
               exit 1
             fi
             echo "LAYOUT_OK_$width"
+
+            feed_fixture="$RUNNER_TEMP/shiba-feed-$width.html"
+            feed_dump="$RUNNER_TEMP/shiba-feed-$width.dump.html"
+            node tools/check-shiba-feed-layout.mjs "$width" "$feed_fixture"
+            "$CHROME" --headless=new --no-sandbox --disable-gpu --force-device-scale-factor=1 --window-size="$width,900" --virtual-time-budget=800 --dump-dom "file://$feed_fixture" > "$feed_dump"
+            if ! grep -q 'data-feed-result="PASS"' "$feed_dump"; then
+              grep -o 'data-feed-failures="[^"]*"' "$feed_dump" || true
+              exit 1
+            fi
+            echo "FEED_LAYOUT_OK_$width"
           done
       - name: Validate Blogger XML
         run: |
