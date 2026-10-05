@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 
 const BLOG_ID='2339978524893611480';
 const EDITOR_URL_PART='/blog/themes/edit/'+BLOG_ID;
+const DEFAULT_CDP_ENDPOINT='http://127.0.0.1:9231';
 const OLD_BLOCK=`<b:includable id='postBodySnippet' var='post'>
   <div class='container post-body entry-content'>
     <p class='post-snippet-safe'>쿠폰 상세 내용은 자세히 보기에서 확인하세요.</p>
@@ -126,12 +127,24 @@ function setExpr(adapter,html){
   throw new Error('BLOGGER_EDITOR_ADAPTER_NOT_FOUND');
 }
 
+export function classifyCdpTabs(tabs){
+  const tab=tabs.find(x=>String(x.url||'').includes(EDITOR_URL_PART));
+  if(tab?.webSocketDebuggerUrl) return {status:'EDITOR_READY',tab};
+  const loginRequired=tabs.some(x=>{
+    const url=String(x.url||'');
+    return url.includes('accounts.google.com') || url.includes('/ServiceLogin') || url.includes('/signin/');
+  });
+  if(loginRequired) return {status:'BLOGGER_LOGIN_REQUIRED',tab:null};
+  return {status:'BLOGGER_THEME_EDITOR_TAB_NOT_FOUND',tab:null};
+}
+
 async function main(){
   const apply=process.argv.includes('--apply');
-  const endpoint=process.env.BLOGGER_CDP_URL||'http://127.0.0.1:9222';
+  const endpoint=process.env.BLOGGER_CDP_URL||DEFAULT_CDP_ENDPOINT;
   const tabs=await fetch(endpoint.replace(/\/$/,'')+'/json/list').then(r=>{if(!r.ok)throw new Error('CDP_HTTP_'+r.status);return r.json();});
-  const tab=tabs.find(x=>String(x.url||'').includes(EDITOR_URL_PART));
-  if(!tab?.webSocketDebuggerUrl) throw new Error('BLOGGER_THEME_EDITOR_TAB_NOT_FOUND');
+  const classified=classifyCdpTabs(tabs);
+  if(classified.status!=='EDITOR_READY') throw new Error(classified.status);
+  const tab=classified.tab;
 
   const cdp=new Cdp(tab.webSocketDebuggerUrl);
   await cdp.open();
