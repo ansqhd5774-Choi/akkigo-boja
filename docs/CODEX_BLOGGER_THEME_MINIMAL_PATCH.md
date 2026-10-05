@@ -97,3 +97,18 @@ runner 동작:
 9. 저장 결과가 불명확하면 재저장하지 않고 실패 종료.
 
 성공 출력은 `result:DONE`, 이미 반영됐으면 `result:ALREADY_APPLIED`다.
+
+
+## 전용 Blogger Chrome 프로필
+다른 Tistory/프로젝트 Chrome profile과 섞지 않는다.
+
+- 전용 CDP 포트: `9231`
+- 전용 profile: `%LOCALAPPDATA%\akkigo-boja\blogger-theme-profile`
+- 시작/적용 CMD: `tools\BLOGGER_THEME_LOGIN_AND_APPLY.cmd`
+
+Codex는 위 CMD를 실행한다. Google 로그인 화면이 나오면 사용자가 **공식 Chrome 창에서 1회 로그인**하는 것만 필요하다.
+로그인 완료 후 CMD 창에서 아무 키나 누르면 dry-run → 실제 1회 저장까지 자동 진행한다.
+비밀번호/OTP/cookie는 채팅·GitHub·로그에 남기지 않는다.
+
+`tools/apply-blogger-theme-patch-via-cdp.mjs`의 기본 endpoint도 `http://127.0.0.1:9231`이다.
+로그인 화면을 감지하면 `BLOGGER_LOGIN_REQUIRED`로 명확히 중단한다.
