@@ -47,7 +47,7 @@ try {
         child.stdin.end(JSON.stringify({BLOGGER_CLIENT_ID:client.client_id,BLOGGER_CLIENT_SECRET:client.client_secret,BLOGGER_REFRESH_TOKEN:token.refresh_token}));
       });
       res.end('연결 완료. 인증정보는 표시하지 않았습니다. Codex에 연결 완료라고 알려주세요.');
-      console.log('BLOGGER_CONNECTION_STORED; PUBLISHING_REMAINS_DISABLED');
+      console.log('BLOGGER_CONNECTION_STORED; PUBLISH_SETTING_UNCHANGED');
     } catch(error) {
       // allowlisted local codes only; external exception text is never printed.
       const allowed=['CONSENT_NOT_GRANTED','TOKEN_EXCHANGE_FAILED','OFFLINE_TOKEN_MISSING','BLOG_ACCESS_NOT_CONFIRMED','BLOG_TARGET_MISMATCH','SECRET_UPLOAD_FAILED'];
@@ -67,3 +67,4 @@ try {
   console.log('CLIENT_SETUP_FAILED: 다운로드한 Desktop OAuth JSON 경로를 확인하세요.');
   server?.close();process.exitCode=1;
 }
+

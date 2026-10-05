@@ -1,4 +1,4 @@
-import {renderHub} from './coupons.js';
+import {renderHub,escapeHtml} from './coupons.js';
 
 export const hubs = {
   zeus:'제우스: 오만의 신',
@@ -15,9 +15,11 @@ const guides = {
 export function buildHubDraft(hubKey, coupons = []) {
   const brand=hubs[hubKey];
   if (!Object.hasOwn(hubs,hubKey)) throw new Error('UNKNOWN_HUB');
+  const manual=coupons.filter(c=>c.brand===brand && c.status==='UNVERIFIED' && c.verificationResult==='SUCCESS');
+  const observations=manual.length ? `<section><h2>사용자 사용 확인 기록</h2>${manual.map(c=>`<p><code>${escapeHtml(c.code)}</code> · 등록 성공 및 보상 수령 제보 1건 (${escapeHtml(c.workingVerifiedAt)}).</p><p>${escapeHtml(c.note)}</p><p><a href="${escapeHtml(c.sourceUrl)}" rel="noopener noreferrer">공식 쿠폰 공지</a></p>`).join('')}</section>` : '';
   return {
     title:`${brand} 쿠폰·입력 방법`,
-    content:`<div data-ncp-hub="${hubKey}">${renderHub(brand,coupons)}${guides[hubKey]}<section><h2>쿠폰 확인 기준</h2><p>공식 출처, 적용 조건과 실제 사용 성공이 확인된 쿠폰만 표시합니다. 현재 목록에 없다는 것은 해당 게임의 모든 쿠폰이 없다는 뜻은 아닙니다.</p></section><p><a href="https://lsifl.blogspot.com/p/blog-page.html">개인정보 처리 안내</a></p></div>`,
+    content:`<div data-ncp-hub="${hubKey}">${renderHub(brand,coupons)}${observations}${guides[hubKey]}<section><h2>쿠폰 확인 기준</h2><p>활성 목록은 공식 출처, 적용 조건과 실제 사용 성공이 확인된 쿠폰만 표시합니다. 사용자 사용 확인 기록은 특정 계정의 확인 사례이며 모든 계정에 적용된다는 뜻은 아닙니다.</p></section><p><a href="https://lsifl.blogspot.com/p/blog-page.html">개인정보 처리 안내</a></p></div>`,
     labels:['게임',brand]
   };
 }

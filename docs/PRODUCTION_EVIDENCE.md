@@ -27,3 +27,18 @@ Worker 직접 배포 버전: 1bee93f7-3c90-48a8-9988-fe8778ce90a6. PUBLISH_ENABL
 Blogger 안내 페이지 ID 4404238150170891065 공개, 실제 본문 확인. 소스 docs/oauth-privacy.html 보관. 운영 상태의 새 토큰 발급용 로컬 연결을 1회 시작하고 사용자 동의를 요청했다. 완료 전까지 기존 Testing 토큰의 장기 유효성을 보장하지 않는다.
 
 허브 3곳에 개인정보 처리 안내 링크를 추가하고 실제 PATCH 3회 HTTP 200 확인. Worker 배포 버전 43ce8fac-cc7f-48a0-90a1-d2d47a82027b. 로컬 테스트 24개 PASS. 02c4eee의 GitHub Verify 37284960435 성공.
+
+프로덕션 상태 재연결 완료: 사용자 동의 후 BLOGGER_CONNECTION_STORED 종료 코드0, Worker oauthConfigured=true. 새 토큰은 운영 상태에서 발급됐으며 영구 유효성 보장은 하지 않는다. health publishing=ENABLED 유지 확인. 연결 도구의 이전 PUBLISHING_REMAINS_DISABLED 출력은 실제 설정 변경을 의미하지 않는 잘못된 안내여서 PUBLISH_SETTING_UNCHANGED로 정정했다. GitHub 28af3dd Verify 37285815511 성공.
+
+## 최종 실행 점검 2026-10-05 21시 KST
+- DONE: Google OAuth 프로덕션 전환 및 사용자 재동의, Worker Secret 저장. 앱 인증 심사 완료와 구분.
+- DONE: 공개 허브 3개 및 개인정보 안내. 정상 Blogger 기반 테마에 본문 스타일 반영, PC1440/mobile390 제목3개 및 가로 넘침 없음 확인.
+- FAILED: 원본 쿠폰 테마는 저장 후 게시물 출력 실패. 정상 기반 테마로 복원 및 최소 스타일 적용. 원본은 Git 이전 이력에서 복구 가능.
+- MANUAL SUCCESS: 사용자 제우스 DEVLIVE0911 등록 성공 및 보상 수령. 특정 계정 사례이며 서버 범위·전체 계정 조건·만료 미확인, 활성 추천 제외 유지.
+- BLOCKED: Cloudflare D1 계정 전체 무료 일일 읽기 한도 초과(code7500). 21시 자연 Cron 기록 확인 및 자동 게시물 갱신 차단. 수동 원천4개 성공은 앞서 직접 확인된 유효 증거로 유지.
+- DEFERRED: 명조 공식 입력 경로 미확인, GitHub 자동 배포 credential 미설정. CLI 배포 및 GitHub Verify는 완료.
+- NEXT: D1 한도 UTC 자정(한국시간 다음날09시) 초기화 후 기존 checkpoint 확인부터 재개. 유료 전환하지 않음. 자연 Cron 성공은 미확인으로 유지.
+
+제우스 갱신 요청은 오류 응답이었으나 실제 Blogger 편집 화면 및 공개 HTTP200 본문에서 DEVLIVE0911 사용자 성공 기록 반영을 확인했다. API 반영 후 D1 저장 실패 가능성이 확인되므로 반복 PATCH하지 않는다. checkpoint는 한도 초기화 후 조정 필요. 수동 GUI 추가 저장은 실행하지 않았다.
+
+최종 Worker 소스 배포 46c8ebaf-bda4-469c-939c-24e7c1011889, 예약설정 유지. 사용자 성공 사례와 활성 추천을 분리하는 회귀 검사 추가, 로컬25개PASS.
