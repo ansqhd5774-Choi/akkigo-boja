@@ -1,3 +1,5 @@
+현재 연결·공개 발행 상태는 [PRODUCTION_EVIDENCE.md](PRODUCTION_EVIDENCE.md)를 우선한다. 아래 미연결 상태는 이전 단계 기록이다.
+
 # 허브 생성·복구 운영
 
 대상은 Blogger blogId 2339978524893611480 / lsifl.blogspot.com 하나다. 등록된 게임 키는 zeus, lineagem, wuthering이다.
@@ -32,4 +34,5 @@ ADMIN_TOKEN 인증, Blogger OAuth Secret 3개, 고정 BLOGGER_BLOG_ID, PUBLISH_E
 ## 공개 전환
 
 POST /internal/hubs/publish, JSON hubKey를 사용한다. 저장된 postId가 DRAFT일 때만 실행한다. 실제 초안의 블로그 ID, 상태, 제목과 본문이 서버 예상값과 정확히 일치하는지 먼저 확인한다. 불일치하면 발행하지 않는다. 공개 응답의 LIVE 상태 및 lsifl.blogspot.com URL을 확인한 뒤 D1에 저장한다. 실패 결과는 UNKNOWN으로 유지하며 자동 재발행하지 않는다. 로컬 fixture 검증 완료, 실제 계정 공개 발행은 미실행이다.
+
 

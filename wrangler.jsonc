@@ -7,7 +7,7 @@
   "vars": {
     "BLOGGER_BLOG_ID": "2339978524893611480",
     "BLOGGER_PUBLIC_URL": "https://lsifl.blogspot.com",
-    "PUBLISH_ENABLED": "false"
+    "PUBLISH_ENABLED": "true"
   },
   "d1_databases": [{
     "binding": "DB",
@@ -17,3 +17,4 @@
   }],
   "triggers": { "crons": ["0 */6 * * *"] }
 }
+

@@ -1,3 +1,5 @@
+현재 연결·공개 발행 상태는 [PRODUCTION_EVIDENCE.md](PRODUCTION_EVIDENCE.md)를 우선한다. 아래 미연결 상태는 이전 단계 기록이다.
+
 # 연결 상태 · 2026-10-05
 
 ## 실제 완료
@@ -58,4 +60,5 @@ Worker Secrets: BLOGGER_CLIENT_ID, BLOGGER_CLIENT_SECRET, BLOGGER_REFRESH_TOKEN.
 공식 참고: https://developers.google.com/blogger/docs/3.0/using 및 https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/.
 
 공개 전환 API 구현 및 fixture 검증 완료. 실제 초안의 제목·본문·DRAFT 상태를 확인한 뒤 발행하며 UNKNOWN은 자동 재시도하지 않는다. 실제 Blogger 초안 생성/공개 발행은 OAuth 미연결로 미실행이다.
+
 

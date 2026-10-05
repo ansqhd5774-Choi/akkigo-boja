@@ -1,3 +1,5 @@
+현재 연결·공개 발행 상태는 [PRODUCTION_EVIDENCE.md](PRODUCTION_EVIDENCE.md)를 우선한다. 아래 미연결 상태는 이전 단계 기록이다.
+
 # 배포 상태 · 2026-10-05
 
 - GitHub: https://github.com/ansqhd5774-Choi/akkigo-boja (비공개)
@@ -28,4 +30,5 @@ Cron은 원천 관찰만 한국시간 03/09/15/21시에 수행한다. 자연 스
 공식 기준: [Blogger API OAuth 및 게시물 갱신](https://developers.google.com/blogger/docs/3.0/using), [Worker 설정](https://developers.cloudflare.com/workers/wrangler/configuration/).
 
 배포된 공개 전환 경로: 비인증 POST 401, 인증 POST 409 PUBLISH_DISABLED 직접 확인. 실제 Google 발행 요청은 실행하지 않았다.
+
 
