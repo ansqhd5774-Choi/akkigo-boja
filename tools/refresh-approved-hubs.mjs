@@ -1,7 +1,7 @@
 import {readFile} from 'node:fs/promises';
 
 const requestPath=process.argv[2];
-if (!requestPath || !/^hub-refresh-requests\/[a-zA-Z0-9._-]+\.json$/.test(requestPath)) throw new Error('REFRESH_REQUEST_PATH_REQUIRED');
+if (!requestPath || !/^(?:hub-refresh-requests|publish-requests)\/[a-zA-Z0-9._-]+\.json$/.test(requestPath)) throw new Error('REFRESH_REQUEST_PATH_REQUIRED');
 const input=JSON.parse(await readFile(requestPath,'utf8'));
 const allowed=new Set(['zeus','lineagem','wuthering']);
 if (!Array.isArray(input.hubKeys) || !input.hubKeys.length || input.hubKeys.some(key=>!allowed.has(key))) throw new Error('INVALID_HUB_KEYS');
