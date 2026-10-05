@@ -43,8 +43,13 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.match(html,/공식 채널/);
   assert.match(html,/class="ncp-coupon-card"/);
   assert.match(html,/class="ncp-copy"/);
-  assert.match(html,/data-copied="false"/);
-  assert.match(html,/복사됨/);
+  assert.match(html,/data-ncp-copy="pick7p2y"/);
+  assert.match(html,/class="ncp-copy-state" role="status"/);
+  assert.equal(html.includes('onclick='),false);
+  assert.match(html,/<!--more-->/);
+  const jump=html.indexOf('<!--more-->');
+  assert.ok(jump>0);
+  assert.equal(html.slice(0,jump).includes('pick7p2y'),false);
   assert.match(html,/@media \(max-width:640px\)/);
   assert.match(html,/class="ncp-help-list"/);
   assert.equal(html.includes('2713'),false);
