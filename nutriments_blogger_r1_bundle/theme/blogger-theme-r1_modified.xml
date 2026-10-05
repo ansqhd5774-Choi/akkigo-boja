@@ -4122,6 +4122,6 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 
     <b:template-script async='true' name='indie' version='1.0.0'/>
   <footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><strong>아끼고 보자</strong><p class='ncp-r3-muted'>직접 적용 · 공식 출처 · 미검증을 구분합니다. 게임 보상은 현금 할인액으로 환산하지 않습니다.</p><a href='/p/blog-page.html'>개인정보 처리 안내</a></div></footer><script type='text/javascript'>//<![CDATA[
-document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const status=button.closest('article').querySelector('[role="status"]');try{await navigator.clipboard.writeText(button.dataset.ncpCopy);status.textContent='코드를 복사했습니다.';}catch{status.textContent='자동 복사가 제한됩니다. 위 코드를 선택해 복사하세요.';}});
+document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
 //]]></script></body>
 </html>
