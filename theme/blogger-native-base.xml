@@ -2788,7 +2788,15 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
         </b:includable>
         <b:includable id='postBodySnippet' var='post'>
   <div class='container post-body entry-content'>
-    <p class='post-snippet-safe'>쿠폰 상세 내용은 자세히 보기에서 확인하세요.</p>
+    <b:if cond='data:post.hasJumpLink'>
+      <data:post.body/>
+    <b:else/>
+      <div class='ncp-feed-preview ncp-feed-preview-generic'>
+        <div class='ncp-feed-stat'><span>쿠폰 안내</span><strong>최신 정보</strong></div>
+        <div class='ncp-feed-stat'><span>확인 항목</span><strong>코드 · 보상</strong></div>
+        <div class='ncp-feed-stat'><span>이용 방법</span><strong>입력 안내</strong></div>
+      </div>
+    </b:if>
   </div>
 </b:includable>
         <b:includable id='previousPageLink'><b:comment>Don&#39;t show</b:comment></b:includable>
@@ -3553,7 +3561,15 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
 </b:includable>
                     <b:includable id='postBodySnippet' var='post'>
   <div class='container post-body entry-content'>
-    <p class='post-snippet-safe'>쿠폰 상세 내용은 자세히 보기에서 확인하세요.</p>
+    <b:if cond='data:post.hasJumpLink'>
+      <data:post.body/>
+    <b:else/>
+      <div class='ncp-feed-preview ncp-feed-preview-generic'>
+        <div class='ncp-feed-stat'><span>쿠폰 안내</span><strong>최신 정보</strong></div>
+        <div class='ncp-feed-stat'><span>확인 항목</span><strong>코드 · 보상</strong></div>
+        <div class='ncp-feed-stat'><span>이용 방법</span><strong>입력 안내</strong></div>
+      </div>
+    </b:if>
   </div>
 </b:includable>
                     <b:includable id='postCommentsAndAd' var='post'>
