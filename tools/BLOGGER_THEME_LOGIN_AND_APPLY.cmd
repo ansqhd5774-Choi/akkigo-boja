@@ -30,7 +30,7 @@ echo After the Blogger HTML editor is visible, return here and press any key.
 pause >nul
 
 set "BLOGGER_CDP_URL=http://127.0.0.1:%PORT%"
-node tools\apply-blogger-theme-patch-via-cdp.mjs
+node tools\apply-blogger-theme-patch-via-cdp.mjs --sync-source
 if errorlevel 1 (
   echo BLOGGER_THEME_DRY_RUN_FAILED
   exit /b 1
