@@ -7,15 +7,15 @@ for (const path of [
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
 ]) {
-  test(`${path} 목록 미리보기는 Jump Break를 우선하고 기존 snippet fallback을 보존한다`,()=>{
+  test(`${path} 목록 미리보기는 쿠폰 본문과 스크립트를 노출하지 않는다`,()=>{
     const xml=readFileSync(new URL(path,import.meta.url),'utf8');
     const blocks=[...xml.matchAll(/<b:includable id='postBodySnippet' var='post'>([\s\S]*?)<\/b:includable>/g)].map(x=>x[1]);
     assert.equal(blocks.length,2);
     for (const block of blocks) {
-      assert.match(block,/data:post\.hasJumpLink/);
-      assert.match(block,/<data:post\.body\/>/);
-      assert.match(block,/name='postSnippet'/);
-      assert.ok(block.indexOf('<data:post.body/>') < block.indexOf("name='postSnippet'"));
+      assert.match(block,/post-snippet-safe/);
+      assert.match(block,/쿠폰 상세 내용은 자세히 보기에서 확인하세요/);
+      assert.doesNotMatch(block,/data:post\.body/);
+      assert.doesNotMatch(block,/navigator\.clipboard/);
     }
   });
 }
