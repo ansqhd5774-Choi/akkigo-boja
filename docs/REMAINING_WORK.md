@@ -43,14 +43,14 @@
 
 | 항목 | 상태 | 다음 실행 |
 |---|---|---|
-| Agoda/Trip.com 구조화 추출 | SOURCE DONE / PROD PENDING | parser·UNVERIFIED 저장 구현 완료. Worker deploy/migration 가드 해제 후 실제 공식 페이지에서 실행 |
+| Agoda/Trip.com 구조화 추출 | PROD CODE DEPLOYED / DATA REVIEW PENDING | parser·UNVERIFIED 저장 코드와 migration 0005 production 반영 완료. 실제 최신 후보 행을 관리자 read-only 조회로 검토 필요 |
 | 여행 ACTIVE 검증 | PENDING | production candidate를 관리자 read-only `/internal/candidates`로 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
-| 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절과 패션뷰티 페스타 공식 원천을 별도 URL로 분리해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결. 올리브영·G마켓·배달 원천은 기존 보류 유지. production deploy 전 ACTIVE 승격 금지 |
+| 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절과 패션뷰티 페스타 공식 원천을 별도 URL로 분리해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결 및 production 배포 완료. 올리브영·G마켓·배달 원천은 기존 보류 유지. 실제 발급/작동 확인 전 ACTIVE 승격 금지 |
 | 여행/커머스 공개 비교 UI QA | PENDING | 실제 ACTIVE 데이터가 생긴 뒤 기존 테마를 덮지 않고 게시물 본문 renderer 출력으로 검증 |
 | 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
-| 자연 Cron 관찰 | PENDING | 수동 수집과 구분해 collection_runs의 SCHEDULED/SUCCEEDED 증거 확인 |
-| Worker 자동 배포 | BLOCKED | `CLOUDFLARE_DEPLOY_ENABLED`·`CLOUDFLARE_ACCOUNT_ID` 별도 설정 의존성 제거 완료. 최신 Deploy Readiness 37306344065에서 `api_token_present=false` 재확인. API Token 하나만 남은 blocker이며 값은 출력하지 않음. migration 0005/candidate collector는 production 미반영 |
+| 자연 Cron 관찰 | PARTIAL DONE | 2026-10-05 21시 KST 기존4원천 SCHEDULED/SUCCEEDED observed4/fetched4 확인. 최신 추가원천이 포함된 다음 자연 Cron은 별도 확인 필요 |
+| Worker 자동 배포 | DONE | CLOUDFLARE_API_TOKEN Secret 연결 완료. Deploy Worker 37308158968 SUCCESS, tests39/39, migration0005, Worker deploy 완료. 별도 account ID/deploy-enable 변수 불필요 |
 | 검색 노출 운영 | AUTOMATION_BLOCKED/PENDING | GitHub Hosted Runner가 Blogger 접근 시 Google GOOGLE_ANTI_BOT_429로 차단됨(Public SEO Check 37303719852). 사이트 장애로 판정하지 않음. site:lsifl.blogspot.com 공개 검색 결과는 아직 없음. Search Console 무료 공식 화면에서 소유/사이트맵 확인 필요 |
 | 네이버 등록 | PENDING | 소유확인 및 sitemap/RSS 제출 |
 | Tistory 이전 | DEFERRED | 기존 사이트 보존. 별도 이전 정책 승인 전 미실행 |
