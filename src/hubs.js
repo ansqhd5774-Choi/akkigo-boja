@@ -17,7 +17,7 @@ export function buildHubDraft(hubKey, coupons = []) {
   if (!Object.hasOwn(hubs,hubKey)) throw new Error('UNKNOWN_HUB');
   return {
     title:`${brand} 쿠폰·입력 방법`,
-    content:`<div data-ncp-hub="${hubKey}">${renderHub(brand,coupons)}${guides[hubKey]}<section><h2>쿠폰 확인 기준</h2><p>공식 출처, 적용 조건과 실제 사용 성공이 확인된 쿠폰만 표시합니다. 현재 목록에 없다는 것은 해당 게임의 모든 쿠폰이 없다는 뜻은 아닙니다.</p></section></div>`,
+    content:`<div data-ncp-hub="${hubKey}">${renderHub(brand,coupons)}${guides[hubKey]}<section><h2>쿠폰 확인 기준</h2><p>공식 출처, 적용 조건과 실제 사용 성공이 확인된 쿠폰만 표시합니다. 현재 목록에 없다는 것은 해당 게임의 모든 쿠폰이 없다는 뜻은 아닙니다.</p></section><p><a href="https://lsifl.blogspot.com/p/blog-page.html">개인정보 처리 안내</a></p></div>`,
     labels:['게임',brand]
   };
 }
