@@ -14,16 +14,23 @@ test('페이지 읽기 성공은 쿠폰 검증 성공으로 승격하지 않는�
 
 test('Agoda 공식 텍스트는 UNVERIFIED 여행 후보만 추출한다',async()=>{
   const agoda={id:'agoda-deals',brand:'Agoda',category:'여행·숙박',url:'https://www.agoda.com/deals',parserProfile:'TRAVEL_DEALS'};
-  const html='<title>Deals</title><div>Up to ₩60,000 Off Hotels Minimum spend of ₩138,200 Expires in 3 days. Limited time Up to 15% Off Hotels</div>';
+  const html='<title>Deals</title><div>Up to ₩40,000 Off Hotels Expires in 3 days CLAIM COUPON Up to ₩60,000 Off Hotels Min. spend ₩138,200 | Expires in 3 days CLAIM COUPON Limited Time Price Drop - Up to 15% off ACTIVATE NOW</div>';
   const now=new Date('2026-10-05T00:00:00Z');
   const candidates=extractCandidates(agoda,html,now);
-  assert.equal(candidates.length,2);
-  assert.equal(candidates[0].evidenceLevel,'SOURCE_TEXT_ONLY');
-  assert.equal(candidates.find(x=>x.fixedAmount)?.fixedAmount,60000);
-  assert.equal(candidates.find(x=>x.fixedAmount)?.minimum,138200);
+  assert.equal(candidates.length,3);
+  assert.ok(candidates.every(x=>x.evidenceLevel==='SOURCE_TEXT_ONLY'));
+  assert.ok(candidates.every(x=>x.offerType==='AUTO_DISCOUNT'));
+  const c40=candidates.find(x=>x.fixedAmount===40000);
+  const c60=candidates.find(x=>x.fixedAmount===60000);
+  const p15=candidates.find(x=>x.rate===15);
+  assert.equal(c40.minimum,null);
+  assert.equal(c60.minimum,138200);
+  assert.equal(c40.mechanismHint,'CLAIM_COUPON');
+  assert.equal(c60.mechanismHint,'CLAIM_COUPON');
+  assert.equal(p15.mechanismHint,'ACTIVATE_OR_BOOK');
   const result=await observeSource(agoda,async()=>new Response(html,{headers:{'content-type':'text/html'}}),now);
   assert.equal(result.status,'SOURCE_FETCHED_CANDIDATES_UNVERIFIED');
-  assert.equal(result.candidates.length,2);
+  assert.equal(result.candidates.length,3);
 });
 
 test('Trip.com 공식 텍스트는 기간과 액티비티 5% 후보를 추출한다',()=>{
@@ -32,6 +39,10 @@ test('Trip.com 공식 텍스트는 기간과 액티비티 5% 후보를 추출한
   const candidates=extractCandidates(trip,html,new Date('2026-10-05T00:00:00Z'));
   assert.equal(candidates.length,1);
   assert.equal(candidates[0].rate,5);
+  assert.equal(candidates[0].offerType,'AUTO_DISCOUNT');
+  assert.equal(candidates[0].mechanismHint,'COUPON_UNCONFIRMED');
+  assert.equal(candidates[0].minimum,null);
+  assert.equal(candidates[0].cap,null);
   assert.equal(candidates[0].travel.kind,'ACTIVITY');
   assert.deepEqual(candidates[0].travel.regions,['KR']);
   assert.equal(candidates[0].travel.bookingStartAt,'2026-07-01T00:00:00.000Z');
