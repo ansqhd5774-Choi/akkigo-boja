@@ -18,13 +18,15 @@
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:34px 0 14px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-section-head h2{margin:0}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-count{display:inline-flex;min-width:28px;height:28px;align-items:center;justify-content:center;border-radius:999px;background:var(--ok-bg);color:var(--ok);font-size:13px;font-weight:800}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-count-muted{background:#f2f4f7;color:#667085}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-card{border:1px solid #d0d5dd;border-radius:16px;background:#fff;box-shadow:0 6px 18px rgba(16,24,40,.06);overflow:hidden}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:20px 20px 14px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-label{display:block;margin-bottom:5px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-code{display:inline-block;font:800 22px/1.25 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere;color:#101828;background:#f2f4f7;padding:7px 10px;border-radius:8px}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-wrap{display:flex;min-width:112px;flex-direction:column;gap:6px;align-items:stretch}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-copy{min-height:44px;padding:0 17px;border:1px solid #98a2b3;border-radius:10px;background:#fff;color:#344054;font-weight:800;cursor:pointer}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-copy:hover{background:#f9fafb}
-[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-state{display:inline-flex;align-items:center;min-height:24px;color:var(--ok);font-size:13px;font-weight:700}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-state{display:inline-flex;align-items:center;justify-content:center;min-height:24px;color:var(--ok);font-size:13px;font-weight:700;text-align:center}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-info{display:grid;grid-template-columns:1.25fr 1fr;border-top:1px solid var(--line)}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell{padding:15px 20px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell+.ncp-info-cell{border-left:1px solid var(--line)}
@@ -57,7 +59,8 @@
 [data-ncp-article="shibarpg-pickup-202610"] h1{font-size:29px}
 [data-ncp-article="shibarpg-pickup-202610"] h2{font-size:22px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-top{grid-template-columns:1fr;padding:17px}
-[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy{width:100%}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-wrap,[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy{width:100%}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-state{justify-content:flex-start;text-align:left}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-info{grid-template-columns:1fr}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell{padding:13px 17px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell+.ncp-info-cell{border-left:0;border-top:1px solid var(--line)}
@@ -71,20 +74,20 @@
 <header class="ncp-hero">
   <div class="ncp-meta"><span class="ncp-meta-badge">2026년 10월</span><span>마지막 업데이트 2026-10-05</span></div>
   <h1>시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상</h1>
-  <p class="ncp-lead">시바 모험단에서 사용할 수 있는 쿠폰 코드와 보상, 입력 방법을 한눈에 확인할 수 있도록 정리했습니다.</p>
+  <p class="ncp-lead">시바 모험단 공식 안내에서 확인된 쿠폰 코드와 보상, 입력 방법을 한눈에 확인할 수 있도록 정리했습니다.</p>
 </header>
 <!--more-->
 <nav class="ncp-quickbar" aria-label="쿠폰 빠른 이동">
-  <a class="ncp-quickitem" href="#ncp-active"><span><strong>사용 가능</strong><br>현재 쿠폰</span><span class="ncp-quicknum">1</span></a>
+  <a class="ncp-quickitem" href="#ncp-active"><span><strong>확인된 코드</strong><br>현재 쿠폰</span><span class="ncp-quicknum">1</span></a>
   <a class="ncp-quickitem" href="#ncp-expired"><span><strong>만료</strong><br>지난 쿠폰</span><span class="ncp-quicknum">0</span></a>
   <a class="ncp-quickitem" href="https://community.withhive.com/shibarpg" rel="noopener noreferrer"><span><strong>공식 채널</strong><br>새 쿠폰 확인</span><span>열기 →</span></a>
 </nav>
 <section id="ncp-active">
-  <div class="ncp-section-head"><h2>현재 사용 가능한 쿠폰</h2><span class="ncp-count" aria-label="쿠폰 1개">1</span></div>
+  <div class="ncp-section-head"><h2>현재 확인된 쿠폰</h2><span class="ncp-count" aria-label="확인된 쿠폰 1개">1</span></div>
   <div class="ncp-coupon-card">
     <div class="ncp-coupon-top">
       <div><span class="ncp-label">쿠폰 코드</span><code class="ncp-code">pick7p2y</code></div>
-      <button class="ncp-copy" type="button" data-ncp-copy="pick7p2y" aria-label="pick7p2y 쿠폰 코드 복사">복사</button><span class="ncp-copy-state" role="status" aria-live="polite"></span>
+      <div class="ncp-copy-wrap"><button class="ncp-copy" type="button" data-ncp-copy="pick7p2y" aria-label="pick7p2y 쿠폰 코드 복사">복사</button><span class="ncp-copy-state" role="status" aria-live="polite"></span></div>
     </div>
     <div class="ncp-coupon-info">
       <div class="ncp-info-cell"><span class="ncp-label">보상</span><div class="ncp-info-value">시바 코인 10개</div></div>
@@ -110,7 +113,7 @@
     </ol><p class="ncp-note">게임 내 쿠폰 등록 화면으로 접속하면 CS Code가 자동 입력된다고 공식 안내되어 있습니다.</p></div>
   </div>
 </section>
-<section id="ncp-expired"><h2>만료된 쿠폰</h2><div class="ncp-empty">현재 확인된 만료 쿠폰은 없습니다.</div></section>
+<section id="ncp-expired"><div class="ncp-section-head"><h2>만료된 쿠폰</h2><span class="ncp-count ncp-count-muted" aria-label="만료 쿠폰 0개">0</span></div><div class="ncp-empty">현재 확인된 만료 쿠폰은 없습니다.</div></section>
 <section><h2>쿠폰이 안 될 때 확인</h2><ul class="ncp-help-list">
   <li>쿠폰 코드 오타가 없는지 확인하세요.</li><li>이미 사용한 쿠폰인지 확인하세요.</li><li>사용 기한이 지났는지 확인하세요.</li><li>쿠폰 등록 후 보상은 우편함에서 24시간 이내 수령해야 합니다.</li>
 </ul></section>
