@@ -13,7 +13,7 @@ GitHub는 소스를 관리하고 Cloudflare Worker는 운영 실행을 담당하
 - `src/publisher.js`: 최초 초안 생성·postId 저장·기존 갱신. 불명확한 결과는 UNKNOWN으로 보존하고 자동 재시도를 차단. 고유 본문 표식이 정확히 하나인 기존 글만 복구 연결.
 - `migrations/`: 원천 확인, 허브 postId, 갱신 시도와 동시 실행 방지 인덱스.
 - `tools/connect-blogger.mjs`: Desktop OAuth JSON으로 로컬 PKCE 동의를 받고 Worker Secret에 직접 저장. 실계정 OAuth 연결 및 최초 공개 발행·갱신 완료.
-- `data/coupons.json`: 공식 이미지에서 확인한 제우스 후보 1개. 사용·조건·기한 미검증으로 UNVERIFIED이며 활성 허브에서 제외.
+- `data/coupons.json`: 공식 이미지에서 확인한 제우스 후보 1개. 사용자 계정1건 등록·보상 수령 확인. 전체 계정/서버 조건과 기한은 미확인으로 UNVERIFIED 유지.
 - `drafts/`: 게임별 HTML/JSON 초안 3개. `node tools/build-drafts.mjs`로 생성한다. 실제 Blogger 생성과 구분한다.
 
 ## 실행
@@ -32,3 +32,5 @@ Cloudflare 로그인은 `pnpm exec wrangler login`으로 진행한다. 인증정
 
 공식 문서: [Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/configuration/), [Blogger API](https://developers.google.com/blogger/docs/3.0/using).
 
+
+테마 직접 배포: docs/THEME_DEPLOYMENT.md. 현재 문제 대조: docs/CURRENT_ISSUE_AUDIT.md. R3 홈 XML은 tools/build-theme.mjs로 생성하고 관리자 HTML 편집에서 별도 저장한다.
