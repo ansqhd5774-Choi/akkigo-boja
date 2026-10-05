@@ -33,6 +33,8 @@
 - GitHub Verify: PASS.
   - source-count run: 37298222331
   - candidate persistence run: 37299403638
+  - candidate review API run: 37299721615
+  - Agoda card-local parser fix run: 37300074756
 - Blogger 테마 파일 변경: 0건.
 
 ## 실제 운영 데이터가 필요해 남은 작업
@@ -40,8 +42,8 @@
 | 항목 | 상태 | 다음 실행 |
 |---|---|---|
 | Agoda/Trip.com 구조화 추출 | SOURCE DONE / PROD PENDING | parser·UNVERIFIED 저장 구현 완료. Worker deploy/migration 가드 해제 후 실제 공식 페이지에서 실행 |
-| 여행 ACTIVE 검증 | PENDING | production candidate를 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
-| 쇼핑·배달 공식 데이터 연결 | PENDING | 공식 프로모션 원천 확정 후 구조화 데이터 추가 |
+| 여행 ACTIVE 검증 | PENDING | production candidate를 관리자 read-only `/internal/candidates`로 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
+| 쇼핑·배달 공식 데이터 연결 | REVIEWED / PENDING | 올리브영·G마켓·11번가·배달 공개 원천을 감사했으나 조건 완결성이 부족해 자동 후보 원천으로 보류. docs/SOURCE_SELECTION_AUDIT.md 기준으로 추가 조사 |
 | 여행/커머스 공개 비교 UI QA | PENDING | 실제 ACTIVE 데이터가 생긴 뒤 기존 테마를 덮지 않고 게시물 본문 renderer 출력으로 검증 |
 | 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
@@ -56,6 +58,7 @@
 - 완료된 Blogger R3 테마를 재적용하거나 덮어쓰지 않는다.
 - TinyFish는 꼭 필요한 공개 진단 외 사용하지 않는다.
 - 실제 데이터가 없는 기능을 공개 완료로 보고하지 않는다.
+- 쿠폰적용가/세일가의 가격 차이를 개별 쿠폰 할인액으로 역산하지 않는다.
 - 공식 출처 HTTP 200은 쿠폰 작동 성공 증거가 아니다.
 - 외부 사이트에서 발견한 코드는 공식/허용 근거 없이 ACTIVE로 올리지 않는다.
 - 불명확한 publish/update 결과는 중복 재시도하지 않는다.
