@@ -74,3 +74,26 @@
 - navigator.clipboard
 - onclick
 - JavaScript 코드 조각
+
+
+## TinyFish 없이 실행하는 권장 경로
+TinyFish/RDC를 사용하지 않는다. 로그인된 로컬 Chrome이 remote debugging으로 열려 있으면 아래 전용 runner를 사용한다.
+
+- runner: `tools/apply-blogger-theme-patch-via-cdp.mjs`
+- 기본 CDP: `http://127.0.0.1:9222`
+- 다른 포트면 `BLOGGER_CDP_URL` 환경변수로 지정
+- dry-run: `node tools/apply-blogger-theme-patch-via-cdp.mjs`
+- 실제 1회 저장: `node tools/apply-blogger-theme-patch-via-cdp.mjs --apply`
+
+runner 동작:
+1. 로그인된 Blogger 테마 편집 탭만 선택.
+2. 현재 editor 전체를 `backups/`에 비공개 백업.
+3. 구 안전 문구형 snippet 2개만 조건부 snippet으로 교체.
+4. 정보형 미리보기 CSS가 없을 때만 추가.
+5. postBody/home/search/copy 수가 바뀌면 저장 전 차단.
+6. editor round-trip SHA-256이 일치하지 않으면 저장 전 차단.
+7. visible/enabled 저장 버튼이 정확히 1개일 때만 1회 클릭.
+8. 저장 후 페이지 reload, 실제 editor 구조를 다시 읽어 최신 구조가 유지됐는지 확인.
+9. 저장 결과가 불명확하면 재저장하지 않고 실패 종료.
+
+성공 출력은 `result:DONE`, 이미 반영됐으면 `result:ALREADY_APPLIED`다.
