@@ -9,3 +9,4 @@
 - CLOUDFlARE_ACCOUNT_ID 및 CLOUDFLARE_DEPLOY_ENABLED 변수도 저장했으나 현재 최신workflow는 Token만으로 단일계정을 확인한다. 두 변수는 현재workflow의 필수조건이 아니다.
 - 자연Cron 실제 증거: scheduled_at2026-10-05T12:00:25Z(한국21시), SUCCEEDED/observed4/fetched4. 이번 최신소스 배포 이전의 기존4원천 결과이며 신규 추가원천의 자연Cron 검증으로 확대하지 않음.
 - 전체사이트 완료를 의미하지 않는다. 검색등록, 후보별사용/조건검증, 전용비교UI는 최신 CURRENT_ISSUE_AUDIT.md와 실제 공개상태 기준으로 판단.
+최신 Token-only workflow와 일치하도록 이번에 추가했던 불필요 변수2개는 제거했다. 최종 연결 조건은 CLOUDFLARE_API_TOKEN Secret1개이며 이미 해당구조로 배포성공했다. 임시토큰파일은 여전히존재함을 확인했고 이전자동승인검토의 삭제차단을 우회하지않으므로 사용자직접삭제필요.
