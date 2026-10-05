@@ -25,7 +25,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
     const text=await response.text();
     const marker=text.includes(`data-ncp-article="${articleKey}"`);
     if (articleKey==='shibarpg-pickup-202610') {
-      return marker && text.includes('ncp-help-list') && text.includes('ncp-copy-wrap') && text.includes('data-ncp-copy') && text.includes('현재 확인된 쿠폰') && text.includes('확인된 코드') && text.includes('ncp-count-muted') && !text.includes('현재 사용 가능한 쿠폰') && !text.includes('onclick=') && !text.includes('2713') && !text.includes('ncp-checklist');
+      return marker && text.includes('data-ncp-feed-preview') && text.includes('ncp-help-list') && text.includes('ncp-copy-wrap') && text.includes('data-ncp-copy') && text.includes('현재 확인된 쿠폰') && text.includes('확인된 코드') && text.includes('ncp-count-muted') && !text.includes('현재 사용 가능한 쿠폰') && !text.includes('onclick=') && !text.includes('2713') && !text.includes('ncp-checklist');
     }
     return marker;
   } catch {
