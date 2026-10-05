@@ -1,0 +1,10 @@
+{
+  "requestId": "hub-refresh-public-copy-20261006-r1",
+  "type": "HUB_REFRESH",
+  "hubKeys": [
+    "zeus",
+    "lineagem",
+    "wuthering"
+  ],
+  "reason": "Remove internal verification and operations wording from public game hub pages."
+}
