@@ -1,8 +1,51 @@
 [
-  {"id":"zeus-live-notice","brand":"제우스: 오만의 신","url":"https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961","kind":"OFFICIAL_NOTICE","requiresImageReview":true},
-  {"id":"lineagem-redemption","brand":"리니지M","url":"https://nshop.plaync.com/shop/lms/kr/coupon","kind":"REDEMPTION_HELP"},
-  {"id":"lineagem-channel-notice","brand":"리니지M","url":"https://lounge.plaync.com/feed/80925?country=KR&locale=ko-KR","kind":"INDIVIDUAL_COUPON_NOTICE"},
-  {"id":"wuthering-official","brand":"명조:워더링 웨이브","url":"https://wutheringwaves.kurogames.com/en/main","kind":"OFFICIAL_HOME"},
-  {"id":"agoda-deals","brand":"Agoda","category":"여행·숙박","url":"https://www.agoda.com/deals?cid=1752891","kind":"OFFICIAL_PROMOTIONS","parserProfile":"TRAVEL_DEALS"},
-  {"id":"tripcom-domestic-2026","brand":"Trip.com","category":"여행·숙박","url":"https://kr.trip.com/sale/w/9r4ggifsxoj0rgg2/2026krdomestic.html?locale=ko-KR&transparentBar=1&wkp=1","kind":"OFFICIAL_PROMOTIONS","parserProfile":"TRAVEL_DEALS"}
+  {
+    "id": "zeus-live-notice",
+    "brand": "제우스: 오만의 신",
+    "url": "https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961",
+    "kind": "OFFICIAL_NOTICE",
+    "requiresImageReview": true
+  },
+  {
+    "id": "lineagem-redemption",
+    "brand": "리니지M",
+    "url": "https://nshop.plaync.com/shop/lms/kr/coupon",
+    "kind": "REDEMPTION_HELP"
+  },
+  {
+    "id": "lineagem-channel-notice",
+    "brand": "리니지M",
+    "url": "https://lounge.plaync.com/feed/80925?country=KR&locale=ko-KR",
+    "kind": "INDIVIDUAL_COUPON_NOTICE"
+  },
+  {
+    "id": "wuthering-official",
+    "brand": "명조:워더링 웨이브",
+    "url": "https://wutheringwaves.kurogames.com/en/main",
+    "kind": "OFFICIAL_HOME"
+  },
+  {
+    "id": "agoda-deals",
+    "brand": "Agoda",
+    "category": "여행·숙박",
+    "url": "https://www.agoda.com/deals?cid=1752891",
+    "kind": "OFFICIAL_PROMOTIONS",
+    "parserProfile": "TRAVEL_DEALS"
+  },
+  {
+    "id": "tripcom-domestic-2026",
+    "brand": "Trip.com",
+    "category": "여행·숙박",
+    "url": "https://kr.trip.com/sale/w/9r4ggifsxoj0rgg2/2026krdomestic.html?locale=ko-KR&transparentBar=1&wkp=1",
+    "kind": "OFFICIAL_PROMOTIONS",
+    "parserProfile": "TRAVEL_DEALS"
+  },
+  {
+    "id": "11st-october-2026",
+    "brand": "11번가",
+    "category": "쇼핑·오픈마켓",
+    "url": "https://plan.11st.co.kr/plan/front/exhibitions/2236574/detail",
+    "kind": "OFFICIAL_PROMOTIONS",
+    "parserProfile": "ELEVENST_PROMOTIONS"
+  }
 ]
