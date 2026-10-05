@@ -66,3 +66,14 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - CLOUDFLARE_API_TOKEN은 GitHub Secret으로 사용됐고 값은 기록하지 않음.
 - 2026-10-05T12:00:25Z(한국21시) 자연 Cron은 SUCCEEDED/observed4/fetched4. 최신 소스 배포 이전 실행이므로 신규 원천 전체 성공 증거로 확대하지 않음.
 - Blogger R3 테마 변경 0건.
+
+
+## 시바 모험단 신규 게임 글 공개 · 2026-10-05
+- 사용자 명시 승인 후 일반 게시물 전용 idempotent 발행 경로를 추가.
+- 최초 발행 요청은 Worker route 405로 Blogger 단계 진입 전 실패. D1 article_state/article_publish_attempts 모두 빈 상태를 확인한 뒤 route 정규화 후 1회 재시도.
+- Publish Approved Article run 37311517129 SUCCESS, tests43/43 PASS.
+- Blogger postId 4686430079776725627, URL https://lsifl.blogspot.com/2026/10/pick7p2y.html
+- Worker 공개 fetch 검증 publicVerified=true.
+- D1 article_state LIVE 및 article_publish_attempts CREATE_PUBLISH/SUCCEEDED 확인.
+- 쿠폰 pick7p2y는 공식 발급 정보 확인 상태이나 실제 계정 사용 성공은 미확인이라 data/coupons.json에서 UNVERIFIED 유지.
+- Blogger R3 테마 변경 0건.
