@@ -1,0 +1,9 @@
+{
+  "requestId": "public-copy-cleanup-20261006-r1",
+  "reason": "Remove internal verification/operations wording from public game hub pages.",
+  "hubKeys": [
+    "zeus",
+    "lineagem",
+    "wuthering"
+  ]
+}
