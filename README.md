@@ -7,7 +7,7 @@ GitHub는 소스를 관리하고 Cloudflare Worker는 운영 실행을 담당하
 ## 현재 구현
 
 - 공개 Blogger R3 테마: 적용 완료. 현재 공개 테마는 재적용/덮어쓰기 대상이 아니다.
-- `nutriments_blogger_r1_bundle/`: 초기 테마·게시물 템플릿·운영 기준 보존본. 현재 공개 테마를 덮기 위한 배포본으로 사용하지 않는다.
+- `akkigo_blogger_r1_bundle/`: 초기 테마·게시물 템플릿·운영 기준 보존본. 현재 공개 테마를 덮기 위한 배포본으로 사용하지 않는다.
 - `src/coupons.js`: 쿠폰 근거 검증, 정률/정액 절감액 계산, 일반/여행/커머스 HTML renderer. 게임은 기존 GAME_REWARD 하위 호환을 유지한다.
 - 지원 offer type: CODE, AUTO_DISCOUNT, CARD_CHANNEL, MEMBER, CASHBACK, REFERRAL, GAME_REDEEM, FREEBIE.
 - 지원 종료 조건: FIXED_DATE, ONGOING, UNTIL_BUDGET_EXHAUSTED, UNTIL_STOCK_EXHAUSTED, UNKNOWN.

@@ -1,4 +1,4 @@
-NUTRIMENTS BLOGGER R1 BUNDLE
+AKKIGO BOJA BLOGGER R1 BUNDLE
 
 이 패키지는 기존 Tistory용 쿠폰 UI/운영 자료를 Google Blogger용으로 변환한 1차 패키지입니다.
 

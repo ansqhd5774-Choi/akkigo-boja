@@ -21,5 +21,5 @@ const script=`<script type='text/javascript'>//<![CDATA[
 document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
 //]]></script>`;
 const output=base.replace(']]></b:skin>',css+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/>${header}${home}`).replace('</body>',footer+script+'</body>');
-await writeFile(new URL('nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output);
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output);
 console.log('R3 theme generated using native Blogger widget base.');

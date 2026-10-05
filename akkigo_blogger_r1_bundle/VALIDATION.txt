@@ -1,4 +1,4 @@
-NUTRIMENTS BLOGGER R1 VALIDATION
+AKKIGO BOJA BLOGGER R1 VALIDATION
 XML well-formed: PASS
 blogger-theme-r1.xml: Tistory placeholders=PASS, Tistory domain dependency=PASS
 coupon-ui-r3-blogger.css: Tistory placeholders=PASS, Tistory domain dependency=PASS

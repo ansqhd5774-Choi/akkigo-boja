@@ -1,36 +1,36 @@
-NUTRIMENTS TISTORY → BLOGGER 변환 맵 R1
+AKKIGO BOJA TISTORY → BLOGGER 변환 맵 R1
 
 입력 파일 9개를 다음과 같이 정리했다.
 
-1. NUTRIMENTS_COUPON_UI_R2(1).css
+1. AKKIGO BOJA_COUPON_UI_R2(1).css
    → R3가 상위 구현본이므로 참조용으로만 사용. 배포본에서 제외.
 
-2. NUTRIMENTS_COUPON_UI_R2_DEMO(1).html
+2. AKKIGO BOJA_COUPON_UI_R2_DEMO(1).html
    → R3가 상위 구현본이므로 배포본에서 제외.
 
-3. nutriments_coupon_ui_r3(2).css
+3. legacy_coupon_ui_r3(2).css
    → theme/coupon-ui-r3-blogger.css
    → theme/blogger-theme-r1.xml의 <b:skin>에 통합.
 
-4. nutriments_coupon_ui_r3(2).js
+4. legacy_coupon_ui_r3(2).js
    → theme/coupon-ui-r3-blogger.js
    → theme/blogger-theme-r1.xml 하단 script에 통합.
 
-5. nutriments_coupon_ui_r3_demo(2).html
+5. legacy_coupon_ui_r3_demo(2).html
    → article/coupon-article-r3-blogger.html
    → 전역 header/nav/script를 제거하고 게시물 본문 전용 템플릿으로 변환.
 
-6. nutriments_coupon_ui_r3_spec(1).txt
+6. legacy_coupon_ui_r3_spec(1).txt
    → docs/BLOGGER_PLATFORM_STANDARD_R1.txt + README에 R3 기준 통합.
 
-7. NUTRIMENTS_쿠폰UI_재설계_R2(1).txt
+7. AKKIGO BOJA_쿠폰UI_재설계_R2(1).txt
    → 산업별 템플릿, 검증 시각 분리, 쿠폰 타입 개념을 Blogger R1에 유지.
 
-8. NUTRIMENTS_쿠폰사이트_벤치마킹_운영방향_R1(2).txt
+8. AKKIGO BOJA_쿠폰사이트_벤치마킹_운영방향_R1(2).txt
    → docs/BENCHMARK_DIRECTION_R1_BLOGGER.txt
    → Tistory skin 구조만 Blogger Theme XML 구조로 변경.
 
-9. NUTRIMENTS_쿠폰사이트_카테고리_기준1(2).txt
+9. AKKIGO BOJA_쿠폰사이트_카테고리_기준1(2).txt
    → docs/CATEGORY_STANDARD_1_BLOGGER.txt
    → 17개 카테고리 유지, Tistory 숫자 URL 정책을 Blogger postId 장기 유지 정책으로 변경.
 

@@ -1,4 +1,4 @@
-/* NUTRIMENTS Coupon UI R3 — Blogger Edition */
+/* AKKIGO BOJA Coupon UI R3 — Blogger Edition */
 (() => {
   const root = document.querySelector('[data-ncp-page]');
   if (!root) return;

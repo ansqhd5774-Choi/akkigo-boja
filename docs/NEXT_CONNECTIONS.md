@@ -23,7 +23,7 @@
 2. 준비: 기존 테마 백업 backups/blogger-original.xml 확보 및 XML 문법 확인 완료. 새 XML은 원본 패키지의 starter theme이다. 실제 Blogger 업로드 허용 여부는 미검증.
 3. Chrome에서 https://draft.blogger.com/blog/themes/2339978524893611480 를 연다.
 4. 블로그가 '아끼고 보자'인지 확인 → 맞춤설정 옆 ▼ → 복원 → 업로드.
-5. 파일 C:/Users/c06/Documents/ChatGPT/구글 블로거 - 쿠폰 사이트/nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml 을 선택한다.
+5. 파일 C:/Users/c06/Documents/ChatGPT/구글 블로거 - 쿠폰 사이트/akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml 을 선택한다.
 6. 업로드는 정확히 1회 실행한다.
 7. 정상: 복원 완료 안내. https://lsifl.blogspot.com/ 에서 제목, 검색, 카테고리 메뉴를 확인할 수 있다.
 8. 오류/복원 실패/빈 화면이면 STOP. 재업로드하지 말고 표시된 오류 문구만 회신한다.

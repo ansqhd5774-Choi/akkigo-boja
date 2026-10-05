@@ -8,7 +8,7 @@ https://draft.blogger.com/blog/themes/edit/2339978524893611480
 
 - `theme/blogger-native-base.xml`: 실제 게시물 출력이 확인된 Blogger 위젯 기반.
 - `tools/build-theme.mjs`: 쿠폰 JSON, 17개 메뉴, 실제 확인 기록과 게임별 링크로 홈을 생성한다.
-- `nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml`: 관리자에 저장할 최종 XML.
+- `akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml`: 관리자에 저장할 최종 XML.
 - `data/coupons.json`: 확인 기록의 실제 데이터. 특정 계정 사례를 전체 사용 가능으로 승격하지 않는다.
 
 생성: `node tools/build-theme.mjs`. 테마는 Worker deploy로 배포되지 않는다.
