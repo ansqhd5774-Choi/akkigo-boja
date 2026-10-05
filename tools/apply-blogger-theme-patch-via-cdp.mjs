@@ -1,4 +1,4 @@
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import crypto from 'node:crypto';
 
@@ -140,6 +140,7 @@ export function classifyCdpTabs(tabs){
 
 async function main(){
   const apply=process.argv.includes('--apply');
+  const syncSource=process.argv.includes('--sync-source');
   const endpoint=process.env.BLOGGER_CDP_URL||DEFAULT_CDP_ENDPOINT;
   const tabs=await fetch(endpoint.replace(/\/$/,'')+'/json/list').then(r=>{if(!r.ok)throw new Error('CDP_HTTP_'+r.status);return r.json();});
   const classified=classifyCdpTabs(tabs);
@@ -160,11 +161,14 @@ async function main(){
     const backup=`backups/blogger-theme-before-info-preview-${stamp}.xml`;
     writeFileSync(backup,before,'utf8');
 
-    const patched=patchThemeHtml(before);
+    const patched=syncSource
+      ? {html:readFileSync('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml','utf8'),status:'SOURCE_SYNC_READY'}
+      : patchThemeHtml(before);
     const expected=patched.html;
-    console.log(JSON.stringify({phase:'prepared',adapter,backup,beforeLength:before.length,beforeSha256:sha256(before),afterLength:expected.length,afterSha256:sha256(expected),status:patched.status}));
+    const changed=sha256(before)!==sha256(expected);
+    console.log(JSON.stringify({phase:'prepared',mode:syncSource?'SOURCE_SYNC':'MINIMAL_PATCH',adapter,backup,beforeLength:before.length,beforeSha256:sha256(before),afterLength:expected.length,afterSha256:sha256(expected),status:changed?patched.status:'ALREADY_APPLIED'}));
 
-    if(!patched.changed){
+    if(!changed){
       console.log(JSON.stringify({result:'ALREADY_APPLIED',backup}));
       return;
     }
