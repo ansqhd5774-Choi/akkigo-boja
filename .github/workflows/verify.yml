@@ -17,6 +17,30 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - run: pnpm build
+      - name: Regenerate Blogger theme and require clean diff
+        run: |
+          node tools/build-theme.mjs
+          git diff --exit-code -- nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml
+      - name: Render Shiba coupon layout at 390 and 1440
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME" ]; then
+            echo "CHROME_NOT_FOUND"
+            exit 1
+          fi
+          for width in 390 1440; do
+            fixture="$RUNNER_TEMP/shiba-$width.html"
+            dump="$RUNNER_TEMP/shiba-$width.dump.html"
+            node tools/check-shiba-layout.mjs "$width" "$fixture"
+            "$CHROME" --headless=new --no-sandbox --disable-gpu --force-device-scale-factor=1 --window-size="$width,1200" --virtual-time-budget=2500 --dump-dom "file://$fixture" > "$dump"
+            if ! grep -q 'data-layout-result="PASS"' "$dump"; then
+              grep -o 'data-layout-failures="[^"]*"' "$dump" || true
+              exit 1
+            fi
+            echo "LAYOUT_OK_$width"
+          done
       - name: Validate Blogger XML
         run: |
           python3 - <<'PY'
