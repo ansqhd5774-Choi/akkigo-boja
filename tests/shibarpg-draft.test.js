@@ -37,6 +37,10 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.match(html,/관련 게임 쿠폰/);
   assert.match(html,/자주 묻는 질문/);
   assert.match(html,/공식 출처/);
+  assert.match(html,/class="ncp-quickbar"/);
+  assert.match(html,/href="#ncp-active"/);
+  assert.match(html,/href="#ncp-expired"/);
+  assert.match(html,/공식 채널/);
   assert.match(html,/class="ncp-coupon-card"/);
   assert.match(html,/class="ncp-copy"/);
   assert.match(html,/data-copied="false"/);
