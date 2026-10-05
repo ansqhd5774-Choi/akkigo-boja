@@ -34,3 +34,12 @@ https://draft.blogger.com/blog/themes/edit/2339978524893611480
 - Jump Break가 없는 기존 글은 쿠폰 코드/스크립트 대신 일반 쿠폰 안내 카드만 렌더링한다.
 - Verify 37342278067: tests 50/50, theme regeneration clean diff, XML parse PASS, detail/feed 390·1440 PASS.
 - 이 최신 XML은 소스 검증 완료 상태이며, **Blogger 관리자 실제 저장은 아직 별도 확인이 필요하다.** 기존 2026-10-05 관리자 저장 완료 기록을 최신 소스 저장 완료로 확대하지 않는다.
+
+
+## 2026-10-06 관리자 저장 1회 시도 후 공개 대조
+- 관리자에서 최신 정보형 미리보기 적용을 1회 저장 시도했으나 저장 후 editor 원문 갱신 증거를 확보하지 못했다.
+- 중복 저장은 하지 않았다.
+- 공개 라벨 `/search/label/게임`과 검색 `/search?q=시바`를 별도 조회한 결과, 둘 다 여전히 기존 문구 `쿠폰 상세 내용은 자세히 보기에서 확인하세요.`를 출력했다.
+- 따라서 최신 `data:post.hasJumpLink + data:post.body + ncp-feed-preview-generic` 테마는 **공개 미적용**으로 판정한다.
+- 시바 상세 URL은 최신 본문이 정상 노출되고 있으며 postId/URL은 유지된다.
+- 상태: SOURCE/TEST DONE · BLOGGER THEME APPLY NOT_APPLIED.
