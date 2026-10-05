@@ -50,6 +50,34 @@ export async function findHubPosts(env, hubKey, transport = fetch) {
   return [...matches.values()];
 }
 
+export async function findArticlePosts(env, articleKey, transport = fetch) {
+  assertTarget(env);
+  if (!/^[a-z0-9-]{1,100}$/.test(articleKey || '')) throw new Error('INVALID_ARTICLE_KEY');
+  const token = await accessToken(env,transport);
+  const matches = new Map();
+  for (const status of ['draft','live','scheduled']) {
+    let pageToken;
+    for (let page=0;page<5;page++) {
+      const url=new URL(`https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts`);
+      url.search=new URLSearchParams({status,view:'ADMIN',fetchBodies:'true',maxResults:'100',...(pageToken?{pageToken}:{})}).toString();
+      const response=await transport(url.toString(),{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15000)});
+      if (!response.ok) throw new Error('BLOGGER_RECONCILIATION_READ_FAILED');
+      const result=await response.json();
+      if (result.items != null && !Array.isArray(result.items)) throw new Error('BLOGGER_LIST_INVALID');
+      for (const post of result.items || []) {
+        if (post.content?.includes(`data-ncp-article="${articleKey}"`)) {
+          if (!/^\d+$/.test(post.id || '') || post.blog?.id !== BLOG_ID) throw new Error('BLOGGER_TARGET_RESPONSE_MISMATCH');
+          matches.set(post.id,{postId:post.id,status:post.status,url:post.url || null,title:post.title,content:post.content});
+        }
+      }
+      pageToken=result.nextPageToken;
+      if (!pageToken) break;
+      if (page===4) throw new Error('BLOGGER_SCAN_LIMIT');
+    }
+  }
+  return [...matches.values()];
+}
+
 export async function publishDraft(env,postId,expected,transport=fetch) {
   if (env.PUBLISH_ENABLED !== 'true') throw new Error('PUBLISH_DISABLED');
   assertTarget(env);validatePost(expected);
