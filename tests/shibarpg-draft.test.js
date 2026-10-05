@@ -23,8 +23,8 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'4686430079776725627');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/pick7p2y.html');
-  assert.equal(draft.publication.publicVerified,false);
-  assert.equal(draft.publication.workflowRunId,null);
+  assert.equal(draft.publication.publicVerified,true);
+  assert.equal(draft.publication.workflowRunId,37337358759);
   assert.deepEqual(draft.post.labels,['게임','시바 모험단']);
   assert.equal(draft.post.title,'시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상');
   assert.equal(draft.post.content,html.trim());
