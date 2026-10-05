@@ -1,0 +1,19 @@
+name: Public SEO Check
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - tools/check-public-seo.mjs
+      - .github/workflows/public-seo.yml
+permissions:
+  contents: read
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - run: node tools/check-public-seo.mjs
