@@ -68,7 +68,7 @@ function october2026End(section) {
 function uniqueCandidates(items) {
   const seen=new Set();
   return items.filter(item=>{
-    const key=JSON.stringify([item.offerType,item.discountKind,item.rate,item.fixedAmount,item.currency,item.minimum,item.cap,item.platformHint,item.audienceHint,item.mechanismHint,item.endMode,item.expiresAt,item.travel?.kind,item.travel?.regions]);
+    const key=JSON.stringify([item.offerType,item.discountKind,item.rate,item.fixedAmount,item.currency,item.minimum,item.cap,item.platformHint,item.audienceHint,item.mechanismHint,item.endMode,item.expiryHint,item.travel?.kind,item.travel?.regions]);
     if (seen.has(key)) return false;
     seen.add(key);return true;
   });
@@ -90,7 +90,7 @@ function extractAgoda(text, now) {
     const relativeDays=Number(context.match(/Expires?\s+in\s+(\d+)\s+days?/i)?.[1] || NaN);
     const expiresAt=Number.isFinite(relativeDays)?new Date(now.getTime()+relativeDays*86400000).toISOString():null;
     const mechanismHint=/CLAIM\s+COUPON/i.test(context)?'CLAIM_COUPON':/ACTIVATE\s+NOW|BOOK\s+NOW/i.test(context)?'ACTIVATE_OR_BOOK':'UNCONFIRMED';
-    const common={offerType:'AUTO_DISCOUNT',currency:'KRW',minimum:minimum ?? null,platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',mechanismHint,endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:context.slice(0,240)};
+    const common={offerType:'AUTO_DISCOUNT',currency:'KRW',minimum:minimum ?? null,platformHint:'UNCONFIRMED',audienceHint:'UNCONFIRMED',mechanismHint,endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,expiryHint:Number.isFinite(relativeDays)?`RELATIVE_DAYS_${relativeDays}`:null,travel:{kind:'HOTEL',regions:['UNCONFIRMED']},evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:context.slice(0,240)};
     if (offer.kind==='FIXED') candidates.push({...common,discountKind:'FIXED',fixedAmount:numberFromText(offer.match[2]),currency:offer.match[1]==='$'?'USD':'KRW',cap:numberFromText(offer.match[2])});
     else candidates.push({...common,discountKind:'PERCENT',rate:Number(offer.match[1]),cap:null});
   }
@@ -109,7 +109,7 @@ function extractTripCom(text) {
   for (const match of text.matchAll(percentRe)) {
     candidates.push({
       offerType:'AUTO_DISCOUNT',discountKind:'PERCENT',rate:Number(match[1]),mechanismHint:'COUPON_UNCONFIRMED',currency:'KRW',minimum:null,cap:null,platformHint,audienceHint,
-      endMode:endAt?'FIXED_DATE':'UNKNOWN',expiresAt:endAt,
+      endMode:endAt?'FIXED_DATE':'UNKNOWN',expiresAt:endAt,expiryHint:endAt?endAt.slice(0,10):null,
       travel:{kind,regions,...(startAt&&endAt?{bookingStartAt:startAt,bookingEndAt:endAt}:{})},
       evidenceLevel:'SOURCE_TEXT_ONLY',evidenceText:match[0].slice(0,200)
     });
@@ -137,7 +137,7 @@ function extract11st(text) {
     if (Number.isFinite(rate) && minimum!=null && cap!=null) candidates.push(common(plus,{
       offerType:'MEMBER',discountKind:'PERCENT',rate,minimum,cap,
       platformHint:'WEB_APP',audienceHint:'ELEVEN_PLUS',
-      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'CART'
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,expiryHint:expiresAt?expiresAt.slice(0,10):null,scopeHint:'CART'
     }));
   }
 
@@ -150,7 +150,7 @@ function extract11st(text) {
     if (Number.isFinite(rate) && minimum!=null && cap!=null) candidates.push(common(comeback,{
       offerType:'MEMBER',discountKind:'PERCENT',rate,minimum,cap,
       platformHint:'WEB_APP',audienceHint:'RECENT_3_MONTH_NO_PURCHASE',
-      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'CART'
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,expiryHint:expiresAt?expiresAt.slice(0,10):null,scopeHint:'CART'
     }));
   }
 
@@ -164,7 +164,7 @@ function extract11st(text) {
       offerType:'AUTO_DISCOUNT',discountKind:'PERCENT',rate,minimum,cap,
       platformHint:'WEB_APP',audienceHint:'MEMBERS',
       endMode:/선착순|한정수량/.test(beauty)?'UNTIL_STOCK_EXHAUSTED':expiresAt?'FIXED_DATE':'UNKNOWN',
-      expiresAt,scopeHint:'FASHION_BEAUTY_EVENT'
+      expiresAt,expiryHint:expiresAt?expiresAt.slice(0,10):null,scopeHint:'FASHION_BEAUTY_EVENT'
     }));
   }
 
@@ -176,7 +176,7 @@ function extract11st(text) {
     if (fixedAmount!=null && minimum!=null) candidates.push(common(fashion,{
       offerType:'AUTO_DISCOUNT',discountKind:'FIXED',fixedAmount,minimum,cap:fixedAmount,
       platformHint:'APP',audienceHint:'MEMBERS',
-      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'FASHION'
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,expiryHint:expiresAt?expiresAt.slice(0,10):null,scopeHint:'FASHION'
     }));
   }
 
@@ -194,7 +194,7 @@ export function extractCandidates(source, html, now = new Date()) {
 }
 
 async function candidateId(source,candidate) {
-  const identity={sourceId:source.id,offerType:candidate.offerType,discountKind:candidate.discountKind,rate:candidate.rate ?? null,fixedAmount:candidate.fixedAmount ?? null,currency:candidate.currency ?? null,minimum:candidate.minimum ?? null,cap:candidate.cap ?? null,platformHint:candidate.platformHint ?? null,audienceHint:candidate.audienceHint ?? null,mechanismHint:candidate.mechanismHint ?? null,endMode:candidate.endMode ?? null,expiresAt:candidate.expiresAt ?? null,travel:candidate.travel ?? null};
+  const identity={sourceId:source.id,offerType:candidate.offerType,discountKind:candidate.discountKind,rate:candidate.rate ?? null,fixedAmount:candidate.fixedAmount ?? null,currency:candidate.currency ?? null,minimum:candidate.minimum ?? null,cap:candidate.cap ?? null,platformHint:candidate.platformHint ?? null,audienceHint:candidate.audienceHint ?? null,mechanismHint:candidate.mechanismHint ?? null,endMode:candidate.endMode ?? null,expiryHint:candidate.expiryHint ?? null,travel:candidate.travel ?? null};
   const bytes=new TextEncoder().encode(JSON.stringify(identity));
   return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
 }
