@@ -17,3 +17,14 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - run: pnpm build
+      - name: Validate Blogger XML
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          for path in [
+              'theme/blogger-native-base.xml',
+              'nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+          ]:
+              ET.parse(path)
+              print('XML_OK', path)
+          PY
