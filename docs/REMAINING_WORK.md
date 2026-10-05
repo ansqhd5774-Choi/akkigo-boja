@@ -2,7 +2,7 @@
 
 ## 완료 유지 — 재작업 금지
 
-- Blogger R3 공개 테마: DONE. 공개 반영 완료. 재적용/덮어쓰기 금지.
+- 기존 Blogger R3 공개 테마: DONE. 최신 목록 미리보기 후속 XML은 SOURCE/TEST DONE, 관리자 실제 저장 PENDING. 승인된 최신 XML 외 임의 재적용 금지.
 - Blogger OAuth 연결: DONE.
 - 허브 3개 최초 공개 발행 및 기존 postId 유지: DONE.
 - 제우스·리니지M 입력 방법: DONE.
@@ -37,7 +37,7 @@
   - Agoda card-local parser fix run: 37300074756
 - 11st source Verify PASS — Run 37302858196. production 반영은 아직 아님.
 - Deploy workflow 단순화 PASS: `CLOUDFLARE_DEPLOY_ENABLED` 제거, account ID는 단일 계정-scoped token에서 Wrangler 자동 선택. Token 미설정 상태에서 Deploy Worker 37306340225는 실제 배포 단계를 안전하게 모두 skip. Verify 37306340167/37306344141 PASS.
-- Blogger 테마 파일 변경: 0건.
+- Blogger 테마 후속 변경: SOURCE DONE. 안전한 목록 요약, Jump Break 보호, 복사 UX 보존, `akkigo_blogger_r1_bundle` 경로 격리 완료.
 
 ## 실제 운영 데이터가 필요해 남은 작업
 
@@ -65,3 +65,13 @@
 - 외부 사이트에서 발견한 코드는 공식/허용 근거 없이 ACTIVE로 올리지 않는다.
 - 불명확한 publish/update 결과는 중복 재시도하지 않는다.
 - 유료 구독/플랜 전환은 사용자 승인 없이 하지 않는다.
+
+## 2026-10-06 현재 남은 핵심 작업
+| 항목 | 상태 | 다음 실행 |
+|---|---|---|
+| 게임 목록 카드 최신 테마 적용 | SOURCE/TEST DONE · ADMIN APPLY PENDING | 현재 Blogger 테마 백업 후 `akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml`을 공식 HTML 편집기에서 1회 저장 |
+| 목록 공개 확인 | PENDING | 게임 라벨/검색에서 시바 카드가 확인된 쿠폰 1개 · 시바 코인 10개 · 10월6일 오전9시로 표시되고 코드/JS가 노출되지 않는지 확인 |
+| 게임 쿠폰 공통 표준 | SOURCE DONE | `article/game-coupon-article-r1.html`을 신규 게임 renderer 기준으로 재사용. 기존 게시물 URL/postId는 변경하지 않음 |
+| 프로젝트 명칭 격리 | DONE | `nutriments` 경로/코드 잔재 0건 유지 |
+
+시바 상세 글 자체의 안전 요약 마크업 PATCH와 Worker 배포는 완료됐다(Publish 37342377560, publicVerified=true). 테마 관리자 저장 전에는 목록 공개 완료로 보고하지 않는다.
