@@ -23,7 +23,11 @@ async function publicCheck(url,articleKey,transport=fetch) {
     const response=await transport(url,{redirect:'follow',headers:{Accept:'text/html'},signal:AbortSignal.timeout(15000)});
     if (!response.ok) return false;
     const text=await response.text();
-    return text.includes(`data-ncp-article="${articleKey}"`);
+    const marker=text.includes(`data-ncp-article="${articleKey}"`);
+    if (articleKey==='shibarpg-pickup-202610') {
+      return marker && text.includes('ncp-help-list') && !text.includes('2713') && !text.includes('ncp-checklist');
+    }
+    return marker;
   } catch {
     return false;
   }
