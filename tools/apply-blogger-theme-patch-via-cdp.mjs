@@ -38,7 +38,7 @@ export function inspectThemeHtml(html){
     oldSafeText:count(html,'쿠폰 상세 내용은 자세히 보기에서 확인하세요.'),
     snippets:count(html,"<b:includable id='postBodySnippet' var='post'>"),
     hasJumpLink:count(html,'data:post.hasJumpLink'),
-    feedGeneric:count(html,'ncp-feed-preview-generic'),
+    feedGeneric:count(html,"<div class='ncp-feed-preview ncp-feed-preview-generic'>"),
     feedCss:count(html,'.ncp-feed-preview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))'),
     postBody:count(html,"<b:includable id='postBody' var='post'>"),
     home:count(html,'ncp-coupon-home'),
