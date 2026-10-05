@@ -1,10 +1,21 @@
 AKKIGO BOJA BLOGGER R1 VALIDATION
+Project bundle namespace isolation: PASS (nutriments path/code search = 0)
 XML well-formed: PASS
-blogger-theme-r1.xml: Tistory placeholders=PASS, Tistory domain dependency=PASS
-coupon-ui-r3-blogger.css: Tistory placeholders=PASS, Tistory domain dependency=PASS
-coupon-ui-r3-blogger.js: Tistory placeholders=PASS, Tistory domain dependency=PASS
-coupon-article-r3-blogger.html: Tistory placeholders=PASS, Tistory domain dependency=PASS
+theme/blogger-native-base.xml: PASS
+akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml: PASS
+akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml: PASS
+Blogger theme regeneration clean diff: PASS
 Blogger theme contains <b:skin>: PASS
 Blogger theme contains <b:section>: PASS
 Blogger theme contains Blog widget: PASS
-Article template contains data-ncp-page: PASS
+Safe postBodySnippet with Jump Break: PASS
+Legacy no-Jump-Break safe generic preview: PASS
+Game coupon canonical template: PASS
+Shiba detail 390px: PASS
+Shiba detail 1440px: PASS
+Shiba feed preview 390px: PASS
+Shiba feed preview 1440px: PASS
+Tests: 50/50 PASS
+Verify evidence: GitHub Actions run 37342278067
+Publish evidence: run 37342377560 / postId 4686430079776725627 / publicVerified=true
+Blogger admin save of latest theme source: PENDING
