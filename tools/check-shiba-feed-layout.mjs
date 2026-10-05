@@ -42,9 +42,14 @@ const check=`
     if(r.left<-1||r.right>viewport+1) failures.push('preview-overflow');
     const stats=[...root.querySelectorAll('.ncp-feed-stat')];
     if(stats.length!==3) failures.push('stat-count');
-    const cols=getComputedStyle(root).gridTemplateColumns.trim().split(/\s+/).length;
-    if(window.innerWidth<=700 && cols!==1) failures.push('mobile-columns');
-    if(window.innerWidth>700 && cols!==3) failures.push('desktop-columns');
+    const rects=stats.map(x=>x.getBoundingClientRect());
+    if(window.innerWidth<=700 && rects.length===3){
+      if(!(rects[1].top>rects[0].top+2 && rects[2].top>rects[1].top+2)) failures.push('mobile-columns');
+    }
+    if(window.innerWidth>700 && rects.length===3){
+      const tops=rects.map(x=>x.top);
+      if(Math.max(...tops)-Math.min(...tops)>2) failures.push('desktop-columns');
+    }
     if(window.innerWidth<=700 && r.height>260) failures.push('mobile-height');
     if(window.innerWidth>700 && r.height>150) failures.push('desktop-height');
   }
