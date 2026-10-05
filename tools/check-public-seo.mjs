@@ -2,7 +2,12 @@ const BASE='https://lsifl.blogspot.com';
 
 async function get(path) {
   const url=BASE+path;
-  const response=await fetch(url,{redirect:'follow',headers:{'user-agent':'akkigo-boja-seo-check/1.0'}});
+  const response=await fetch(url,{redirect:'follow',headers:{
+    'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36',
+    'accept':'text/html,application/xhtml+xml,application/xml;q=0.9,text/plain;q=0.8,*/*;q=0.5',
+    'accept-language':'ko-KR,ko;q=0.9,en;q=0.8',
+    'cache-control':'no-cache'
+  }});
   const text=await response.text();
   return {url:response.url,status:response.status,contentType:response.headers.get('content-type')||'',text};
 }
@@ -19,6 +24,10 @@ const results={checkedAt:new Date().toISOString(),base:BASE};
 
 try {
   const home=await get('/');
+  if (home.status===429 && /\/sorry\//.test(home.url)) {
+    console.log(JSON.stringify({ok:false,blocked:true,reason:'GOOGLE_ANTI_BOT_429',checkedAt:new Date().toISOString(),base:BASE,status:home.status,url:home.url},null,2));
+    process.exit(2);
+  }
   assert(home.status===200,'HOME_HTTP_FAILED',{status:home.status,url:home.url});
   const canonical=home.text.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1]
     || home.text.match(/<link[^>]+href=["']([^"']+)["'][^>]+rel=["']canonical["']/i)?.[1]
