@@ -24,6 +24,7 @@ jobs:
           for path in [
               'theme/blogger-native-base.xml',
               'nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+              'nutriments_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',
           ]:
               ET.parse(path)
               print('XML_OK', path)
