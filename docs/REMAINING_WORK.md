@@ -44,13 +44,13 @@
 |---|---|---|
 | Agoda/Trip.com 구조화 추출 | SOURCE DONE / PROD PENDING | parser·UNVERIFIED 저장 구현 완료. Worker deploy/migration 가드 해제 후 실제 공식 페이지에서 실행 |
 | 여행 ACTIVE 검증 | PENDING | production candidate를 관리자 read-only `/internal/candidates`로 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
-| 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절 공식 원천은 조건 완결성이 충분해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결. 올리브영·G마켓·배달 원천은 기존 보류 유지. production deploy 전 ACTIVE 승격 금지 |
+| 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절과 패션뷰티 페스타 공식 원천을 별도 URL로 분리해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결. 올리브영·G마켓·배달 원천은 기존 보류 유지. production deploy 전 ACTIVE 승격 금지 |
 | 여행/커머스 공개 비교 UI QA | PENDING | 실제 ACTIVE 데이터가 생긴 뒤 기존 테마를 덮지 않고 게시물 본문 renderer 출력으로 검증 |
 | 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
 | 자연 Cron 관찰 | PENDING | 수동 수집과 구분해 collection_runs의 SCHEDULED/SUCCEEDED 증거 확인 |
-| Worker 자동 배포 | PENDING | Deploy workflow 가드로 migration 0005/candidate collector가 skipped. 기존 운영을 우회하지 말고 credential/활성화 상태 확정 후 적용 |
-| 검색 노출 운영 | BLOCKED/PENDING | GSC Wizard는 payment_required. 유료 결제하지 않고 Blogger/Search Console 무료 경로로 진행 필요 |
+| Worker 자동 배포 | BLOCKED | Deploy Readiness 37303826813에서 deploy_enabled=false, account_id_present=false, api_token_present=false 확인. Secret 값은 출력하지 않음. migration 0005/candidate collector는 production 미반영 |
+| 검색 노출 운영 | AUTOMATION_BLOCKED/PENDING | GitHub Hosted Runner가 Blogger 접근 시 Google GOOGLE_ANTI_BOT_429로 차단됨(Public SEO Check 37303719852). 사이트 장애로 판정하지 않음. site:lsifl.blogspot.com 공개 검색 결과는 아직 없음. Search Console 무료 공식 화면에서 소유/사이트맵 확인 필요 |
 | 네이버 등록 | PENDING | 소유확인 및 sitemap/RSS 제출 |
 | Tistory 이전 | DEFERRED | 기존 사이트 보존. 별도 이전 정책 승인 전 미실행 |
 
