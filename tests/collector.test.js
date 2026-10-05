@@ -71,3 +71,58 @@ test('이미지 공지는 검토 필요로 유지하고 계정 조건 미확인 
   const game={type:'GAME_REWARD',id:'fixture',brand:'게임',category:'게임',code:'FIXTURE',status:'ACTIVE',rewards:[{name:'골드',quantity:1}],server:'미확인',redemptionMethod:'입력',platform:'APP',member:'ALL',eligibilityConfirmed:false,sourceUrl:'https://example.com',sourceCheckedAt:new Date().toISOString()};
   assert.throws(()=>validateCoupon(game),/MISSING_ELIGIBILITY_EVIDENCE/);
 });
+
+
+test('11번가 공식 월간 이벤트는 조건 완결형 쇼핑 후보만 UNVERIFIED로 추출한다',()=>{
+  const source={id:'11st-october-2026',brand:'11번가',category:'쇼핑·오픈마켓',url:'https://plan.11st.co.kr/plan/front/exhibitions/2236574/detail',parserProfile:'ELEVENST_PROMOTIONS'};
+  const html=`<div>
+    [11번가플러스 10월 장바구니 쿠폰]
+    할인조건 : 장바구니 주문금액 기준 2만원 이상 구매 시 최대 7% 장바구니 할인 (최대 5천원)
+    발급대상 : 11번가플러스 가입 고객
+    발급 및 사용 기간 : 2026/10/1 00:00 ~ 10/11 23:59:59
+    사용조건 : 11번가 App, PC 바로가기
+    [10% 컴백 스페셜 쿠폰]
+    발급 및 사용기간 : 2026/10/1 00:00 ~ 10/31 23:59:59
+    발급대상: 최근 3개월 미구매 고객
+    사용조건 : 11번가 APP, PC 바로가기
+    할인조건 : 장바구니 주문 금액 기준 1만원 이상 구매 시 최대 10% 장바구니 할인 (최대 3천원)
+    [패션뷰티 장바구니 쿠폰 유의사항]
+    할인 조건 : 11% 할인 (35,000원 이상 구매 시, 최대 4,000원 할인)
+    발급 기간 : 2026/10/01 00:00 ~ 2026/10/11 23:59
+    발급 수량 : 매일 선착순 한정수량
+    적용 채널 : 11번가 App, 11번가 바로가기
+    [패션 장바구니 쿠폰]
+    할인조건 : 장바구니 주문금액 기준 7만원 이상 구매 시 7천원 할인
+    발급대상 : 11번가 개인회원
+    발급기간 : 2026/10/01 00:00 ~ 10/11 23:59:59
+    사용조건 : 11번가 App
+    [쿠폰 사용 유의사항]
+  </div>`;
+  const candidates=extractCandidates(source,html,new Date('2026-10-05T00:00:00Z'));
+  assert.equal(candidates.length,4);
+  assert.ok(candidates.every(x=>x.evidenceLevel==='SOURCE_TEXT_ONLY'));
+  const plus=candidates.find(x=>x.audienceHint==='ELEVEN_PLUS');
+  assert.equal(plus.rate,7);
+  assert.equal(plus.minimum,20000);
+  assert.equal(plus.cap,5000);
+  assert.equal(plus.platformHint,'WEB_APP');
+  assert.equal(plus.expiresAt,'2026-10-11T14:59:59.000Z');
+  const comeback=candidates.find(x=>x.audienceHint==='RECENT_3_MONTH_NO_PURCHASE');
+  assert.equal(comeback.rate,10);
+  assert.equal(comeback.minimum,10000);
+  assert.equal(comeback.cap,3000);
+  assert.equal(comeback.expiresAt,'2026-10-31T14:59:59.000Z');
+  const beauty=candidates.find(x=>x.rate===11);
+  assert.equal(beauty.minimum,35000);
+  assert.equal(beauty.cap,4000);
+  assert.equal(beauty.endMode,'UNTIL_STOCK_EXHAUSTED');
+  const fashion=candidates.find(x=>x.fixedAmount===7000);
+  assert.equal(fashion.minimum,70000);
+  assert.equal(fashion.platformHint,'APP');
+});
+
+test('회원 할인은 코드 문자열 없이도 데이터 모델상 유효할 수 있다',()=>{
+  const now=Date.parse('2026-10-05T12:00:00Z');
+  const memberOffer={id:'member',brand:'11번가',category:'쇼핑·오픈마켓',offerType:'MEMBER',status:'UNVERIFIED',discountKind:'PERCENT',rate:7,minimum:20000,cap:5000,platform:'ALL',member:'ALL',endMode:'FIXED_DATE',expiresAt:'2026-10-11T14:59:59.000Z',sourceUrl:'https://plan.11st.co.kr/plan/front/exhibitions/2236574/detail',sourceCheckedAt:'2026-10-05T11:00:00Z'};
+  assert.equal(validateCoupon(memberOffer,now),memberOffer);
+});
