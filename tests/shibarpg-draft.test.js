@@ -17,22 +17,31 @@ test('시바 모험단 공식 쿠폰 후보는 UNVERIFIED로 유효하고 ACTIVE
   assert.equal(validateCoupon(coupon,now),coupon);
 });
 
-test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보만 표시한다',()=>{
+test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 UI를 표시한다',()=>{
   const draft=JSON.parse(readFileSync(new URL('../drafts/shibarpg-pickup-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/shibarpg-pickup-202610.html',import.meta.url),'utf8');
   assert.equal(draft.publicationStatus,'LIVE');
+  assert.equal(draft.publication.postId,'4686430079776725627');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/pick7p2y.html');
   assert.equal(draft.publication.publicVerified,true);
   assert.deepEqual(draft.post.labels,['게임','시바 모험단']);
   assert.equal(draft.post.title,'시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상');
+  assert.equal(draft.post.content,html.trim());
   assert.match(html,/pick7p2y/);
   assert.match(html,/시바 코인 10개/);
   assert.match(html,/2026년 10월 6일 오전 9시/);
   assert.match(html,/현재 사용 가능한 쿠폰/);
   assert.match(html,/만료된 쿠폰/);
   assert.match(html,/쿠폰이 안 될 때 확인/);
+  assert.match(html,/새 쿠폰 확인 방법/);
+  assert.match(html,/관련 게임 쿠폰/);
+  assert.match(html,/자주 묻는 질문/);
   assert.match(html,/공식 출처/);
-  assert.match(html,/>복사<\/button>/);
+  assert.match(html,/class="ncp-coupon-card"/);
+  assert.match(html,/class="ncp-copy"/);
+  assert.match(html,/data-copied="false"/);
+  assert.match(html,/복사됨/);
+  assert.match(html,/@media \(max-width:640px\)/);
   assert.match(html,/coupon\.withhive\.com\/shibarpg/);
-  assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|쿠폰 확인 기준|개인정보 처리 안내|검증 완료|전체 계정에서 사용 가능/);
+  assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|내부 운영 상태|개인정보 처리 안내|전체 계정에서 사용 가능/);
 });
