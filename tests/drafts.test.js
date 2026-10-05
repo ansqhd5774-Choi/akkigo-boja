@@ -20,8 +20,9 @@ function fixture() {
 test('3게임 초안은 실제 쿠폰이 없으면 빈 상태이며 고정 복구 표식을 갖는다',()=>{
   for (const key of ['zeus','lineagem','wuthering']) {
     const post=buildHubDraft(key);
-    assert.match(post.content,/현재 검증된 쿠폰이 없습니다/);
+    assert.match(post.content,/현재 확인된 사용 가능 쿠폰이 없습니다/);
     assert.ok(post.content.includes(`data-ncp-hub="${key}"`));
+    assert.doesNotMatch(post.content,/쿠폰 확인 기준|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태|개인정보 처리 안내/);
   }
   assert.throws(()=>buildHubDraft('other'),/UNKNOWN_HUB/);
 });
@@ -68,4 +69,11 @@ test('목록 스캔 예산 소진과 잘못된 초안 응답은 성공으로 간
   const {env}=fixture();
   await assert.rejects(findHubPosts(env,'zeus',async(url)=>Response.json(url.includes('/token')?{access_token:'fixture'}:{items:[],nextPageToken:'more'})),/SCAN_LIMIT/);
   await assert.rejects(createDraft(env,buildHubDraft('zeus'),async(url)=>Response.json(url.includes('/token')?{access_token:'fixture'}:{id:'123',blog:{id:BLOG_ID},status:'LIVE'})),/DRAFT_RESPONSE_MISMATCH/);
+});
+
+test('사용 확인 사례도 내부 검증 필드나 운영 문구를 노출하지 않는다',()=>{
+  const post=buildHubDraft('zeus',[{brand:'제우스: 오만의 신',status:'UNVERIFIED',verificationResult:'SUCCESS',code:'TESTCODE',sourceUrl:'https://example.com'}]);
+  assert.match(post.content,/사용 확인 쿠폰/);
+  assert.match(post.content,/등록 성공 및 보상 수령 사례/);
+  assert.doesNotMatch(post.content,/workingVerifiedAt|verificationResult|evidenceMethod|활성 추천|쿠폰 확인 기준|개인정보 처리 안내/);
 });
