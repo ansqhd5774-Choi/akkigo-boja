@@ -1,11 +1,27 @@
 import coupons from '../data/coupons.json' with { type: 'json' };
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
+import { listUnverifiedCandidates } from './candidates.js';
 import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
 
 export default {
   async fetch(request, env) {
-    const path = new URL(request.url).pathname;
+    const requestUrl = new URL(request.url);
+    const path = requestUrl.pathname;
+    if (path === '/internal/candidates' && request.method === 'GET') {
+      if (!env.ADMIN_TOKEN || request.headers.get('Authorization') !== `Bearer ${env.ADMIN_TOKEN}`) return new Response('Unauthorized',{status:401});
+      try {
+        const candidates=await listUnverifiedCandidates(env,{
+          sourceId:requestUrl.searchParams.get('sourceId') || undefined,
+          limit:requestUrl.searchParams.get('limit') || 50
+        });
+        return Response.json({candidates},{headers:{'Cache-Control':'no-store'}});
+      } catch (error) {
+        const known=['INVALID_CANDIDATE_LIMIT','INVALID_SOURCE_ID'];
+        const code=known.includes(error?.message) ? error.message : 'CANDIDATE_READ_FAILED';
+        return Response.json({error:code},{status:known.includes(code)?400:409});
+      }
+    }
     if (['/internal/hubs/create','/internal/hubs/reconcile','/internal/hubs/publish'].includes(path) && request.method === 'POST') {
       if (!env.ADMIN_TOKEN || request.headers.get('Authorization') !== `Bearer ${env.ADMIN_TOKEN}`) return new Response('Unauthorized',{status:401});
       if (env.PUBLISH_ENABLED !== 'true') return Response.json({error:'PUBLISH_DISABLED'},{status:409});
