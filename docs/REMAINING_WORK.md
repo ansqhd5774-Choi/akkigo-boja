@@ -35,6 +35,7 @@
   - candidate persistence run: 37299403638
   - candidate review API run: 37299721615
   - Agoda card-local parser fix run: 37300074756
+- 11st source Verify PASS — Run 37302858196. Deploy Worker는 가드로 skipped — Run 37302858354. production 반영은 아직 아님.
 - Blogger 테마 파일 변경: 0건.
 
 ## 실제 운영 데이터가 필요해 남은 작업
