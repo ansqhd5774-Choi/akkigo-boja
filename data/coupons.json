@@ -48,5 +48,31 @@
     "verificationResult": "SUCCESS",
     "evidenceMethod": "OFFICIAL_NOTICE_IMAGE_AND_USER_MANUAL_REDEMPTION",
     "note": "2026-10-05 사용자 1명의 등록 성공 및 보상 수령 확인. 서버 범위·전체 계정 조건·만료일은 미확인. 활성 추천에는 포함하지 않음."
+  },
+  {
+    "id": "shibarpg-pick7p2y",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "시바 모험단",
+    "category": "게임",
+    "code": "pick7p2y",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "시바 코인",
+        "quantity": 10
+      }
+    ],
+    "server": "적용 서버 미확인",
+    "redemptionMethod": "인게임 메뉴 더보기 → 옵션 → 커뮤니티 → 좌측 삼단메뉴 → 쿠폰교환소 → 쿠폰입력 또는 https://coupon.withhive.com/shibarpg",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-06T00:00:00.000Z",
+    "sourceUrl": "https://community.withhive.com/shibarpg",
+    "sourceCheckedAt": "2026-10-05T12:18:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티에서 쿠폰 번호·보상·입력 방법·만료 시간을 확인. 실제 계정 사용 성공은 아직 미확인이라 ACTIVE로 승격하지 않음."
   }
 ]
