@@ -29,9 +29,14 @@ export async function observeSource(source, transport = fetch, now = new Date())
   return observation;
 }
 
-export async function collectSources(env, transport = fetch) {
+export async function collectSources(env, transport = fetch, execution = {}) {
   if (!env.DB) throw new Error('STATE_DB_MISSING');
+  const runId=crypto.randomUUID();
+  const trigger=execution.trigger === 'SCHEDULED' ? 'SCHEDULED' : 'MANUAL';
+  await env.DB.prepare("INSERT INTO collection_runs(run_id,trigger_kind,scheduled_at,started_at,status) VALUES(?,?,?,?,'RUNNING')")
+    .bind(runId,trigger,execution.scheduledAt || null,new Date().toISOString()).run();
   const observations = [];
+  try {
   for (const source of sources) {
     const result = await observeSource(source,transport);
     await env.DB.prepare(`INSERT INTO source_observations(source_id,url,checked_at,http_status,status,body_hash,title)
@@ -39,5 +44,13 @@ export async function collectSources(env, transport = fetch) {
       .bind(result.id,result.url,result.checkedAt,result.httpStatus,result.status,result.bodyHash,result.title).run();
     observations.push({id:result.id,httpStatus:result.httpStatus,status:result.status});
   }
+  const fetched=observations.filter(x=>x.status.startsWith('SOURCE_FETCHED')).length;
+  await env.DB.prepare('UPDATE collection_runs SET finished_at=?,status=?,observed_count=?,fetched_count=? WHERE run_id=?')
+    .bind(new Date().toISOString(),fetched===observations.length?'SUCCEEDED':'PARTIAL',observations.length,fetched,runId).run();
   return observations;
+  } catch {
+    await env.DB.prepare("UPDATE collection_runs SET finished_at=?,status='FAILED',observed_count=? WHERE run_id=?")
+      .bind(new Date().toISOString(),observations.length,runId).run();
+    throw new Error('COLLECTION_STORAGE_FAILED');
+  }
 }

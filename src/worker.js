@@ -40,5 +40,5 @@ export default {
       oauthConfigured:bloggerConfigured(env)
     }, {headers:{'Cache-Control':'no-store'}});
   },
-  async scheduled(event, env, ctx) {ctx.waitUntil(collectSources(env));}
+  async scheduled(event, env, ctx) {ctx.waitUntil(collectSources(env,fetch,{trigger:'SCHEDULED',scheduledAt:new Date(event.scheduledTime).toISOString()}));}
 };

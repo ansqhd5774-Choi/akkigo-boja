@@ -21,3 +21,12 @@
 Worker 버전 d48cafbb-fc94-4531-8113-61f2bbe40b22. 로컬 테스트 23개 PASS. 게임별 PATCH HTTP 200, 원격 D1 UPDATE/SUCCEEDED 3건. 공개 제우스 본문에 공식 등록 링크/입력 단계/검증 기준 렌더링 확인. 현재 테마에서 PC1440 및 모바일390 실제 화면 확인. 새 테마 검증과 구분한다.
 
 공식 입력 근거: https://coupon.withhive.com/2352 및 https://nshop.plaync.com/shop/lms/kr/coupon . 명조 비공식 입력 안내는 사용하지 않았다.
+
+## 후속 실행
+
+- 예약/수동 수집 구분을 collection_runs에 저장하도록 구현했다. RUNNING/SUCCEEDED/PARTIAL/FAILED 및 처리 건수를 기록한다. 원천 접근 실패와 DB 실패를 구분한다.
+- migration 0004 실제 원격 적용, Worker 3dea018b-c8aa-4328-bf8f-19f87e0ca4c6 배포. 테스트 24개 PASS, Wrangler dry-run PASS.
+- 실제 수동 수집: 2026-10-05T08:38:02~04Z, MANUAL/SUCCEEDED, observed_count=4, fetched_count=4. 자연 Cron 성공 증거로 대체하지 않는다.
+- 현재 사용자 Blogger 화면은 '테마 복원 중…'이다. 긴 대기만으로 실패를 판정하지 않고 중복 복원을 실행하지 않았다.
+- Google Cloud OAuth 대상 화면은 '테스트 중', '앱 게시' disabled, '브랜딩 페이지에서 구성을 완료해야 합니다'를 직접 확인했다. 장기 운영 완료가 아니다. Google 공식 정책상 이 scope의 Testing refresh token은 7일 만료 대상이다.
+- 명조 공식 홈페이지/공식 계정 대상 검색에서 입력 경로 근거를 확보하지 못했다. 비공식 자료로 성공을 대체하지 않는다.
