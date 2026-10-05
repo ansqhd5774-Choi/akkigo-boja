@@ -62,3 +62,10 @@
 - Public SEO Check 37303719852: GitHub Hosted Runner가 Blogger 요청에서 Google anti-bot 429로 차단. 공개 사이트 장애 증거로 사용하지 않음.
 - 공개 검색 site:lsifl.blogspot.com: 현재 검색 결과 없음. 색인 미확정 상태 유지.
 - 명조 입력 경로: 공식 Kuro Games 검색에서 교환 코드 메뉴 경로 근거를 찾지 못해 기존 DEFERRED 유지. 제3자 가이드는 공식 근거로 승격하지 않음.
+
+## Cloudflare 자동 배포 단순화
+- `CLOUDFLARE_DEPLOY_ENABLED` 별도 가드 제거.
+- `CLOUDFLARE_ACCOUNT_ID` GitHub Variable 의존성 제거. 단일 계정으로 scope된 API Token이면 최신 Wrangler가 계정을 자동 선택하며, 여러 계정이면 배포 중단.
+- 최신 Deploy Readiness 37306344065: `api_token_present=false`.
+- Token 미설정 상태 Deploy Worker 37306340225: credential 확인만 실행, checkout/test/migration/deploy는 모두 skip, 잘못된 production 배포 0건.
+- Verify: 37306340167 및 37306344141 PASS.
