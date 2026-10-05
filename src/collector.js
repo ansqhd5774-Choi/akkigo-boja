@@ -189,7 +189,7 @@ export function extractCandidates(source, html, now = new Date()) {
     if (source.id === 'agoda-deals' || source.brand === 'Agoda') return extractAgoda(text,now);
     if (source.id === 'tripcom-domestic-2026' || source.brand === 'Trip.com') return extractTripCom(text);
   }
-  if (source.parserProfile === 'ELEVENST_PROMOTIONS' && source.id === '11st-october-2026') return extract11st(text);
+  if (source.parserProfile === 'ELEVENST_PROMOTIONS' && source.brand === '11번가') return extract11st(text);
   return [];
 }
 
