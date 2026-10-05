@@ -1,12 +1,12 @@
 import coupons from '../data/coupons.json' with { type: 'json' };
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
-import { updateStoredHub, createStoredDraft, reconcileDraft } from './publisher.js';
+import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
 
 export default {
   async fetch(request, env) {
     const path = new URL(request.url).pathname;
-    if (['/internal/hubs/create','/internal/hubs/reconcile'].includes(path) && request.method === 'POST') {
+    if (['/internal/hubs/create','/internal/hubs/reconcile','/internal/hubs/publish'].includes(path) && request.method === 'POST') {
       if (!env.ADMIN_TOKEN || request.headers.get('Authorization') !== `Bearer ${env.ADMIN_TOKEN}`) return new Response('Unauthorized',{status:401});
       if (env.PUBLISH_ENABLED !== 'true') return Response.json({error:'PUBLISH_DISABLED'},{status:409});
       let input;
@@ -14,6 +14,7 @@ export default {
       try {
         return Response.json(path.endsWith('/create')
           ? await createStoredDraft(env,input.hubKey,coupons)
+          : path.endsWith('/publish') ? await publishStoredHub(env,input.hubKey,coupons)
           : await reconcileDraft(env,input.hubKey));
       } catch {return Response.json({error:'HUB_NOT_COMPLETED_CHECK_STATE'},{status:409});}
     }

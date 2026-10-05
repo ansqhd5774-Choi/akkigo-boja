@@ -1,4 +1,4 @@
-import {updateExistingHub, bloggerConfigured, validatePost, createDraft, findHubPosts, BLOG_ID} from './blogger.js';
+import {updateExistingHub, bloggerConfigured, validatePost, createDraft, findHubPosts, publishDraft, BLOG_ID} from './blogger.js';
 import {buildHubDraft} from './hubs.js';
 
 function configured(env) {
@@ -52,6 +52,29 @@ export async function reconcileDraft(env,hubKey,transport=fetch) {
   if (!['DRAFT','LIVE','SCHEDULED'].includes(matches[0].status)) throw new Error('INVALID_POST_STATUS');
   await storeDraft(env,hubKey,matches[0],attempt.attempt_id);
   return matches[0];
+}
+
+export async function publishStoredHub(env,hubKey,coupons=[],transport=fetch) {
+  configured(env);
+  const expected=buildHubDraft(hubKey,coupons);
+  const hub=await env.DB.prepare('SELECT post_id,status,public_url FROM hub_state WHERE hub_key=?').bind(hubKey).first();
+  if (!hub?.post_id || hub.status!=='DRAFT') throw new Error('REGISTERED_DRAFT_REQUIRED');
+  const attempt=crypto.randomUUID(),started=new Date().toISOString();
+  try {
+    await env.DB.prepare("INSERT INTO publish_attempts(attempt_id,hub_key,status,started_at,operation) VALUES(?,?,'RUNNING',?,'PUBLISH')").bind(attempt,hubKey,started).run();
+  } catch {throw new Error('PUBLISH_CHECKPOINT_UNAVAILABLE');}
+  try {
+    const result=await publishDraft(env,hub.post_id,expected,transport);
+    const finished=new Date().toISOString();
+    await env.DB.batch([
+      env.DB.prepare("UPDATE hub_state SET public_url=?,status='LIVE',updated_at=? WHERE hub_key=? AND post_id=?").bind(result.url,finished,hubKey,hub.post_id),
+      env.DB.prepare("UPDATE publish_attempts SET status='SUCCEEDED',finished_at=? WHERE attempt_id=?").bind(finished,attempt)
+    ]);
+    return result;
+  } catch {
+    await env.DB.prepare("UPDATE publish_attempts SET status='UNKNOWN',finished_at=?,error_code='RECONCILIATION_REQUIRED' WHERE attempt_id=?").bind(new Date().toISOString(),attempt).run();
+    throw new Error('PUBLISH_RECONCILIATION_REQUIRED');
+  }
 }
 
 export async function updateStoredHub(env, hubKey, post, transport = fetch) {

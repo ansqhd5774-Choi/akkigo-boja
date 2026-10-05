@@ -4,12 +4,12 @@
 
 ## 현재 검증 범위
 
-- 최초 생성은 `posts.insert?isDraft=true`로만 실행한다. 공개 발행 API는 아직 미구현이다.
+- 최초 생성은 `posts.insert?isDraft=true`로만 실행한다. 공개 전환은 별도 publish API로 실행한다.
 - DB의 기존 postId가 있으면 신규 생성 없이 반환한다. 미해결 시도는 SQLite 고유 인덱스로 동시 실행을 막는다. 잠금 획득 뒤 기존 postId를 다시 확인해 조회 시점 경합도 방지한다.
 - API 전 체크포인트를 저장한다. API/응답 검증/결과 저장 중 불명확한 실패가 나면 UNKNOWN으로 유지한다. 자동 재시도하지 않는다.
 - `/internal/hubs/reconcile`는 생성 시작 후 5분 이상 지난 CREATE 시도만 대상으로 한다. draft/live/scheduled 각 최대 5페이지를 조회하며 본문 고유 표식이 정확히 하나일 때 postId를 연결한다. 일치 없음, 중복, 목록 예산 초과면 잠금을 유지한다. 게시물 삭제·추가 생성은 하지 않는다.
-- 갱신 UPDATE의 UNKNOWN은 이 생성 복구 API 대상이 아니다. 실제 본문과 요청 결과를 운영자가 대조해야 한다.
-- 로컬 fixture 및 실제 migration SQL 검증이며 실제 Blogger insert/PATCH/복구는 OAuth 미연결로 미실행이다.
+- 갱신 UPDATE 및 공개 전환 PUBLISH의 UNKNOWN은 이 생성 복구 API 대상이 아니다. 실제 본문과 요청 결과를 운영자가 대조해야 한다.
+- 로컬 fixture 및 실제 migration SQL 검증이며 실제 Blogger insert/PATCH/publish/복구는 OAuth 미연결로 미실행이다.
 
 ## 실행 전제
 
@@ -28,3 +28,8 @@ ADMIN_TOKEN 인증, Blogger OAuth Secret 3개, 고정 BLOGGER_BLOG_ID, PUBLISH_E
 원천 HTML의 HTTP 200·변경 해시는 쿠폰 사용 성공 증거가 아니다. 이미지 공지는 SOURCE_FETCHED_IMAGE_REVIEW_REQUIRED로 기록한다. 이미지 OCR/자동 코드 추출과 실제 게임 적용 검증은 미완료다.
 
 공식 API: https://developers.google.com/blogger/docs/3.0/reference/posts/insert 및 https://developers.google.com/blogger/docs/3.0/reference/posts/list
+
+## 공개 전환
+
+POST /internal/hubs/publish, JSON hubKey를 사용한다. 저장된 postId가 DRAFT일 때만 실행한다. 실제 초안의 블로그 ID, 상태, 제목과 본문이 서버 예상값과 정확히 일치하는지 먼저 확인한다. 불일치하면 발행하지 않는다. 공개 응답의 LIVE 상태 및 lsifl.blogspot.com URL을 확인한 뒤 D1에 저장한다. 실패 결과는 UNKNOWN으로 유지하며 자동 재발행하지 않는다. 로컬 fixture 검증 완료, 실제 계정 공개 발행은 미실행이다.
+

@@ -50,6 +50,26 @@ export async function findHubPosts(env, hubKey, transport = fetch) {
   return [...matches.values()];
 }
 
+export async function publishDraft(env,postId,expected,transport=fetch) {
+  if (env.PUBLISH_ENABLED !== 'true') throw new Error('PUBLISH_DISABLED');
+  assertTarget(env);validatePost(expected);
+  if (!/^\d+$/.test(postId || '')) throw new Error('INVALID_POST');
+  const token=await accessToken(env,transport);
+  const endpoint=`https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts/${postId}`;
+  const headers={Authorization:`Bearer ${token}`};
+  const read=await transport(`${endpoint}?view=ADMIN`,{headers,signal:AbortSignal.timeout(15000)});
+  if (!read.ok) throw new Error('BLOGGER_PREFLIGHT_READ_FAILED');
+  const current=await read.json();
+  if (current.id!==postId || current.blog?.id!==BLOG_ID || current.status!=='DRAFT' || current.title!==expected.title || current.content!==expected.content) throw new Error('BLOGGER_DRAFT_CONTENT_MISMATCH');
+  const response=await transport(`${endpoint}/publish`,{method:'POST',headers,signal:AbortSignal.timeout(15000)});
+  if (!response.ok) throw new Error(`BLOGGER_PUBLISH_HTTP_${response.status}`);
+  const result=await response.json();
+  if (result.id!==postId || result.blog?.id!==BLOG_ID || result.status!=='LIVE' || typeof result.url!=='string') throw new Error('BLOGGER_PUBLISH_RESPONSE_MISMATCH');
+  const url=new URL(result.url);
+  if (url.hostname!=='lsifl.blogspot.com' || !['http:','https:'].includes(url.protocol)) throw new Error('BLOGGER_PUBLIC_URL_MISMATCH');
+  return {postId:result.id,status:'LIVE',url:result.url};
+}
+
 export function bloggerConfigured(env) {
   return Boolean(env.BLOGGER_CLIENT_ID && env.BLOGGER_CLIENT_SECRET && env.BLOGGER_REFRESH_TOKEN);
 }
