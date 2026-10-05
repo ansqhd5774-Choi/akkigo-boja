@@ -47,5 +47,13 @@
     "url": "https://plan.11st.co.kr/plan/front/exhibitions/2236574/detail",
     "kind": "OFFICIAL_PROMOTIONS",
     "parserProfile": "ELEVENST_PROMOTIONS"
+  },
+  {
+    "id": "11st-fashion-beauty-202610",
+    "brand": "11번가",
+    "category": "쇼핑·오픈마켓",
+    "url": "https://plan.11st.co.kr/plan/front/exhibitions/2236496/detail",
+    "kind": "OFFICIAL_PROMOTIONS",
+    "parserProfile": "ELEVENST_PROMOTIONS"
   }
 ]
