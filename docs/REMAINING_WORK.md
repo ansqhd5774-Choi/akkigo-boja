@@ -47,7 +47,7 @@
 | 여행 ACTIVE 검증 | PENDING | production candidate를 관리자 read-only `/internal/candidates`로 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
 | 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절과 패션뷰티 페스타 공식 원천을 별도 URL로 분리해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결 및 production 배포 완료. 올리브영·G마켓·배달 원천은 기존 보류 유지. 실제 발급/작동 확인 전 ACTIVE 승격 금지 |
 | 여행/커머스 공개 비교 UI QA | PENDING | 실제 ACTIVE 데이터가 생긴 뒤 기존 테마를 덮지 않고 게시물 본문 renderer 출력으로 검증 |
-| 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
+| 실제 사용 가능한 게임 쿠폰 확대 | PARTIAL | 시바 모험단 pick7p2y 공식 발급 글은 신규 공개 완료. 실제 계정 사용 성공은 미확인이라 UNVERIFIED 유지. 공식 근거+적용범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
 | 자연 Cron 관찰 | PARTIAL DONE | 2026-10-05 21시 KST 기존4원천 SCHEDULED/SUCCEEDED observed4/fetched4 확인. 최신 추가원천이 포함된 다음 자연 Cron은 별도 확인 필요 |
 | Worker 자동 배포 | DONE | CLOUDFLARE_API_TOKEN Secret 연결 완료. Deploy Worker 37308158968 SUCCESS, tests39/39, migration0005, Worker deploy 완료. 별도 account ID/deploy-enable 변수 불필요 |
