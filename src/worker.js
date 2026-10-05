@@ -1,4 +1,5 @@
 import coupons from '../data/coupons.json' with { type: 'json' };
+import { bloggerConfigured } from './blogger.js';
 
 export default {
   async fetch(request, env) {
@@ -8,7 +9,7 @@ export default {
     return Response.json({
       service:'akkigo-boja', status:'READY', blogUrl:env.BLOGGER_PUBLIC_URL,
       couponCount:coupons.length, publishing:'DISABLED', collection:'NOT_CONFIGURED',
-      oauthConfigured:Boolean(env.BLOGGER_CLIENT_ID && env.BLOGGER_CLIENT_SECRET && env.BLOGGER_REFRESH_TOKEN)
+      oauthConfigured:bloggerConfigured(env)
     }, {headers:{'Cache-Control':'no-store'}});
   }
 };
