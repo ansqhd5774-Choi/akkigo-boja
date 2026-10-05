@@ -41,3 +41,12 @@ Worker 버전 d48cafbb-fc94-4531-8113-61f2bbe40b22. 로컬 테스트 23개 PASS.
 - NEXT: D1 한도 UTC 자정(한국시간 다음날09시) 초기화 후 기존 checkpoint 확인부터 재개. 유료 전환하지 않음. 자연 Cron 성공은 미확인으로 유지.
 
 제우스 사용자 확인 기록 공개 반영 DONE(HTTP200 실제 본문). UPDATE 오류와 실제 반영 간 discrepancy는 D1 저장 실패로 분리하며 중복 갱신 금지.
+
+## 결제 후 재개 · 2026-10-05 18:15 KST
+- D1 실제 읽기·쓰기 성공: 무료 한도 차단 해제 확인. 결제 플랜 명칭은 별도 대시보드 조회하지 않음.
+- 제우스 기존 UPDATE attempt 7d92a975-c256-4991-9e5e-08be719ca744의 공개 본문에서 코드·사용자 수령 확인·계정 범위 안내를 재확인한 뒤 SUCCEEDED로 조정. Blogger PATCH 재실행 없음.
+- 실제 MANUAL 수집 2026-10-05T09:14:48.594Z~09:14:52.038Z, SUCCEEDED, observed4/fetched4. 원천별 HTTP200 및 D1 기록 확인.
+- 리니지M·명조 기존 게시물 PATCH 각1회 HTTP200, D1 UPDATE/SUCCEEDED 확인. 공개3곳 모두 HTTP200·최신 확인 기준·개인정보 안내 확인.
+- unresolved publish_attempts(RUNNING/UNKNOWN) 0건. 코드·환경 변경 없음, 이전25개 테스트/GitHub Verify37287660186 성공 증거 재사용. 재배포 불필요.
+- 0 */6 * * *는 UTC 기준으로 한국시간03/09/15/21 실행. 이전 문서의 21시 표기는 잘못된 시간대 변환으로, 당시09UTC는18시KST다. 다음 자연 Cron은10월5일21시KST. 수동 재수집을 자연 Cron 성공으로 보고하지 않는다.
+- 잔여: 자연 Cron 성공 기록 관찰, GitHub CI 자동 배포 credential 설정, 명조 공식 입력 근거. 정상 기반 테마와 공개 운영은 유지. 원본 테마 실패 기록은 대체 테마의 성공과 구분.
