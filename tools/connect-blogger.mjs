@@ -40,7 +40,7 @@ try {
       const blog=await blogResponse.json();
       if (blog.id!=='2339978524893611480' || new URL(blog.url).hostname!=='lsifl.blogspot.com') throw new Error('BLOG_TARGET_MISMATCH');
       await new Promise((resolve,reject)=>{
-        const child=spawn(process.execPath,['node_modules/wrangler/bin/wrangler.js','secret','bulk'],{cwd:root,stdio:['pipe','ignore','ignore']});
+        const child=spawn(process.execPath,['node_modules/wrangler/bin/wrangler.js','secret','bulk'],{cwd:root,stdio:['pipe','ignore','ignore'],timeout:60000});
         child.on('error',()=>reject(new Error('SECRET_UPLOAD_FAILED')));
         child.stdin.on('error',()=>{});
         child.on('exit',exit=>exit===0?resolve():reject(new Error('SECRET_UPLOAD_FAILED')));

@@ -2,7 +2,7 @@
 
 ## 실제 완료
 
-- 로컬 테스트 11개 PASS. 기존 GitHub Verify 6개 성공과 구분하며 최신 CI는 해당 commit 실행 결과로 확인한다.
+- 로컬 테스트 11개 PASS. 최신 GitHub af6d378의 Verify 37278793073 install/test/build 성공.
 - GitHub Verify 실행 37276989970: install/test/build 성공.
 - Blogger OAuth 갱신 및 기존 postId PATCH 어댑터 구현. fixture 검증이며 실제 Google OAuth/API는 미실행.
 - 초기 게임 대상: 한국 Google Play 전화 최고 매출 1~3위. 공식 브라우저에서 제우스: 오만의 신, 리니지M, 명조:워더링 웨이브 순서 확인.
