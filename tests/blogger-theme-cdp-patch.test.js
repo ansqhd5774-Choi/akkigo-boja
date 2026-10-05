@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {inspectThemeHtml,patchThemeHtml} from '../tools/apply-blogger-theme-patch-via-cdp.mjs';
+import {inspectThemeHtml,patchThemeHtml,classifyCdpTabs} from '../tools/apply-blogger-theme-patch-via-cdp.mjs';
 
 const old=`<html><head><b:skin><![CDATA[:root{--ncp-line:#eee}]]></b:skin></head><body>
 <b:includable id='postBody' var='post'><data:post.body/></b:includable>
@@ -42,4 +42,16 @@ test('이미 최신 구조면 저장 대상 변경을 만들지 않는다',()=>{
 
 test('부분 적용이나 예상 밖 snippet 수는 저장 전 차단한다',()=>{
   assert.throws(()=>patchThemeHtml(old.replace('쿠폰 상세 내용은 자세히 보기에서 확인하세요.','다른 문구')),/THEME_OLD_SNIPPET_COUNT_/);
+});
+
+
+test('CDP 탭 분류는 로그인 화면과 실제 Blogger 편집기를 구분한다',()=>{
+  assert.equal(classifyCdpTabs([{url:'https://accounts.google.com/v3/signin/identifier'}]).status,'BLOGGER_LOGIN_REQUIRED');
+  assert.equal(classifyCdpTabs([{url:'https://example.com/'}]).status,'BLOGGER_THEME_EDITOR_TAB_NOT_FOUND');
+  const ready=classifyCdpTabs([{
+    url:'https://draft.blogger.com/blog/themes/edit/2339978524893611480',
+    webSocketDebuggerUrl:'ws://127.0.0.1/devtools/page/1'
+  }]);
+  assert.equal(ready.status,'EDITOR_READY');
+  assert.equal(ready.tab.webSocketDebuggerUrl,'ws://127.0.0.1/devtools/page/1');
 });
