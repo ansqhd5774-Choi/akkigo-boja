@@ -43,7 +43,7 @@
 |---|---|---|
 | Agoda/Trip.com 구조화 추출 | SOURCE DONE / PROD PENDING | parser·UNVERIFIED 저장 구현 완료. Worker deploy/migration 가드 해제 후 실제 공식 페이지에서 실행 |
 | 여행 ACTIVE 검증 | PENDING | production candidate를 관리자 read-only `/internal/candidates`로 검토해 최소금액·한도·대상·지역·플랫폼·작동 근거를 확보한 항목만 ACTIVE 승격 |
-| 쇼핑·배달 공식 데이터 연결 | REVIEWED / PENDING | 올리브영·G마켓·11번가·배달 공개 원천을 감사했으나 조건 완결성이 부족해 자동 후보 원천으로 보류. docs/SOURCE_SELECTION_AUDIT.md 기준으로 추가 조사 |
+| 쇼핑·배달 공식 데이터 연결 | SHOPPING SOURCE DONE / DELIVERY PENDING | 11번가 10월 월간 십일절 공식 원천은 조건 완결성이 충분해 SOURCE_TEXT_ONLY/UNVERIFIED 후보 parser 연결. 올리브영·G마켓·배달 원천은 기존 보류 유지. production deploy 전 ACTIVE 승격 금지 |
 | 여행/커머스 공개 비교 UI QA | PENDING | 실제 ACTIVE 데이터가 생긴 뒤 기존 테마를 덮지 않고 게시물 본문 renderer 출력으로 검증 |
 | 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
