@@ -49,5 +49,5 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.match(html,/content:"\\\\2713"/);
   assert.doesNotMatch(html,/&#10003;|content:"✓"/);
   assert.match(html,/coupon\.withhive\.com\/shibarpg/);
-  assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|내부 운영 상태|개인정보 처리 안내|전체 계정에서 사용 가능/);
+  assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|운영 데이터 상태|내부 운영 상태|내부 검증 정책|게임 보상은 현금 가치로 환산하지 않습니다|개인정보 처리 안내|전체 계정에서 사용 가능|검증 완료/);
 });
