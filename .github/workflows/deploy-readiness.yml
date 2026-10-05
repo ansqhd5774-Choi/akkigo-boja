@@ -1,0 +1,22 @@
+name: Deploy Readiness
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - .github/workflows/deploy-readiness.yml
+permissions:
+  contents: read
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check deployment prerequisites without exposing values
+        env:
+          DEPLOY_ENABLED: ${{ vars.CLOUDFLARE_DEPLOY_ENABLED == 'true' }}
+          ACCOUNT_ID_PRESENT: ${{ vars.CLOUDFLARE_ACCOUNT_ID != '' }}
+          API_TOKEN_PRESENT: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+        run: |
+          echo "deploy_enabled=$DEPLOY_ENABLED"
+          echo "account_id_present=$ACCOUNT_ID_PRESENT"
+          echo "api_token_present=$API_TOKEN_PRESENT"
