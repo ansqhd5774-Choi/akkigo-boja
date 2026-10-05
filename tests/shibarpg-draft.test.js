@@ -26,7 +26,7 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보만 
   assert.deepEqual(draft.post.labels,['게임','시바 모험단']);
   assert.equal(draft.post.title,'시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상');
   assert.match(html,/pick7p2y/);
-  assert.match(html,/시바 코인 × 10/);
+  assert.match(html,/시바 코인 10개/);
   assert.match(html,/2026년 10월 6일 오전 9시/);
   assert.match(html,/현재 사용 가능한 쿠폰/);
   assert.match(html,/만료된 쿠폰/);
