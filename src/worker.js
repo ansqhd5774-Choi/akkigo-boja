@@ -10,7 +10,7 @@ import { verifyGitHubOidc } from './github-oidc.js';
 export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
-    const path = requestUrl.pathname;
+    const path = requestUrl.pathname.length>1 ? requestUrl.pathname.replace(/\/+$/,'') : requestUrl.pathname;
     if (path === '/internal/articles/publish' && request.method === 'POST') {
       try {
         await verifyGitHubOidc(request);
