@@ -55,3 +55,14 @@ Blogger 안내 페이지 ID 4404238150170891065 공개, 실제 본문 확인. �
 수동 운영 도구 tools/manual-operations.ps1 추가. Status/Collect 실제 실행, 원천4개HTTP200 및 MANUAL/SUCCEEDED 저장 확인. Deploy 실제 실행: 테스트25개PASS, 배포081edc99-81e2-4d59-89c9-a66982f74ea3 및 기존Cron설정 확인. Verify workflow_dispatch 지원 추가. GitHub 자동 배포 credential 미연결은 수동 CLI 배포로 대체하며 자연Cron 성공과 구분한다.
 
 R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-home·검색·17카테고리·사용자 확인 코드·보상·게임 링크·최신/만료 빈 상태 확인. 정상 native Blog 위젯 보존, 기존 제우스 본문 유지. PC1440/390 overflow없음, 복사 후 실제 붙여넣기코드일치, 검색 제우스 결과, 보상 펼치기 성공. 로컬 backups/r3-pc-1440.jpg 및 r3-mobile-390.jpg 증거. 전체 문제 해결과 구분.
+
+
+## GitHub Actions 자동 배포 연결 · 2026-10-05
+- Deploy Worker run 37308158968 SUCCESS.
+- 대상 SHA 7ef466f486ccd77029dc8823a670f1675743575c.
+- tests 39/39 PASS, fail 0.
+- remote migration 0005_coupon_candidates.sql 적용 성공.
+- Worker version 8745b13f-a21c-41b8-9ba7-62e682578a95, D1 binding·Blogger vars·cron 0 */6 * * * 확인.
+- CLOUDFLARE_API_TOKEN은 GitHub Secret으로 사용됐고 값은 기록하지 않음.
+- 2026-10-05T12:00:25Z(한국21시) 자연 Cron은 SUCCEEDED/observed4/fetched4. 최신 소스 배포 이전 실행이므로 신규 원천 전체 성공 증거로 확대하지 않음.
+- Blogger R3 테마 변경 0건.
