@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
+import sources from '../data/sources.json' with {type:'json'};
 import {collectSources} from '../src/collector.js';
 
 test('실행 기록은 예약 실행과 수동 실행을 구분하고 일부 원천 실패를 보존한다',async()=>{
@@ -16,9 +17,13 @@ test('실행 기록은 예약 실행과 수동 실행을 구분하고 일부 원
     assert.equal(scheduled.trigger_kind,'SCHEDULED');
     assert.equal(scheduled.scheduled_at,'2026-10-05T09:00:00Z');
     assert.equal(scheduled.status,'PARTIAL');
-    assert.equal(scheduled.observed_count,4);assert.equal(scheduled.fetched_count,3);
+    assert.equal(scheduled.observed_count,sources.length);
+    assert.equal(scheduled.fetched_count,sources.length-1);
     await collectSources(env,async()=>new Response('<title>fixture</title>',{headers:{'content-type':'text/html'}}));
     const manual=db.prepare("SELECT * FROM collection_runs WHERE trigger_kind='MANUAL'").get();
-    assert.equal(manual.status,'SUCCEEDED');assert.equal(manual.scheduled_at,null);
+    assert.equal(manual.status,'SUCCEEDED');
+    assert.equal(manual.scheduled_at,null);
+    assert.equal(manual.observed_count,sources.length);
+    assert.equal(manual.fetched_count,sources.length);
   } finally {db.close();}
 });
