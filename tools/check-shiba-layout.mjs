@@ -8,7 +8,7 @@ if (![390,1440].includes(width) || !output) {
 }
 
 const article=readFileSync(resolve('drafts/shibarpg-pickup-202610.html'),'utf8');
-const theme=readFileSync(resolve('nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml'),'utf8');
+const theme=readFileSync(resolve('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml'),'utf8');
 const scripts=[...theme.matchAll(/<script type='text\/javascript'>\/\/<!\[CDATA\[\n([\s\S]*?)\n\/\/\]\]><\/script>/g)].map(x=>x[1]);
 const copyScript=scripts.find(x=>x.includes('[data-ncp-copy]'));
 if (!copyScript) throw new Error('COPY_SCRIPT_NOT_FOUND');

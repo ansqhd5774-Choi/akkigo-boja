@@ -2787,26 +2787,10 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
           <b:comment>Don&#39;t show feed links.</b:comment>
         </b:includable>
         <b:includable id='postBodySnippet' var='post'>
-<<<<<<< HEAD
-          <div class='container post-body entry-content' expr:id='&quot;post-snippet-&quot; + data:post.id'>
-            <b:if cond='data:post.featuredImage'>
-              <div class='snippet-thumbnail'>
-                <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
-              </div>
-            </b:if>
-            <b:if cond='data:post.hasJumpLink'>
-              <data:post.body/>
-            <b:else/>
-              <b:include cond='data:post' data='post' name='postSnippet'/>
-            </b:if>
-          </div>
-        </b:includable>
-=======
   <div class='container post-body entry-content'>
     <p class='post-snippet-safe'>쿠폰 상세 내용은 자세히 보기에서 확인하세요.</p>
   </div>
 </b:includable>
->>>>>>> ea67005 (chore(blogger): isolate project bundle naming)
         <b:includable id='previousPageLink'><b:comment>Don&#39;t show</b:comment></b:includable>
         <b:includable id='homePageLink'><b:comment>Don&#39;t show</b:comment></b:includable>
         <b:includable id='nextPageLink'>
@@ -3568,26 +3552,10 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
   </div>
 </b:includable>
                     <b:includable id='postBodySnippet' var='post'>
-<<<<<<< HEAD
-          <div class='container post-body entry-content' expr:id='&quot;post-snippet-&quot; + data:post.id'>
-            <b:if cond='data:post.featuredImage'>
-              <div class='snippet-thumbnail'>
-                <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
-              </div>
-            </b:if>
-            <b:if cond='data:post.hasJumpLink'>
-              <data:post.body/>
-            <b:else/>
-              <b:include cond='data:post' data='post' name='postSnippet'/>
-            </b:if>
-          </div>
-        </b:includable>
-=======
   <div class='container post-body entry-content'>
     <p class='post-snippet-safe'>쿠폰 상세 내용은 자세히 보기에서 확인하세요.</p>
   </div>
 </b:includable>
->>>>>>> ea67005 (chore(blogger): isolate project bundle naming)
                     <b:includable id='postCommentsAndAd' var='post'>
   <article class='post-outer-container'>
     <!-- Post title and body -->

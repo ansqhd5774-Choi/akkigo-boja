@@ -4,8 +4,8 @@ import {readFileSync} from 'node:fs';
 
 for (const path of [
   '../theme/blogger-native-base.xml',
-  '../nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',
-  '../nutriments_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
 ]) {
   test(`${path} 목록 미리보기는 Jump Break를 우선하고 기존 snippet fallback을 보존한다`,()=>{
     const xml=readFileSync(new URL(path,import.meta.url),'utf8');
@@ -21,8 +21,8 @@ for (const path of [
 }
 
 for (const path of [
-  '../nutriments_blogger_r1_bundle/theme/blogger-theme-r1.xml',
-  '../nutriments_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
+  '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
 ]) {
   test(`${path} 복사 UX는 성공/실패 피드백 후 버튼 문구를 복구한다`,()=>{
     const xml=readFileSync(new URL(path,import.meta.url),'utf8');
