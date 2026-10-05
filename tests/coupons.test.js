@@ -63,6 +63,11 @@ test('종료 방식은 고정 종료·상시·예산 소진을 구분한다',()=
 
 test('빈 데이터와 HTML 문자를 안전하게 출력한다',()=>{
   assert.match(renderHub('<브랜드>',[],now),/&lt;브랜드&gt;/);
-  assert.match(renderHub('테스트',[],now),/현재 검증된 쿠폰이 없습니다/);
+  assert.match(renderHub('테스트',[],now),/현재 확인된 사용 가능 쿠폰이 없습니다/);
   assert.throws(()=>validateCoupon({...coupon,rate:NaN},now));
+});
+
+test('공개 쿠폰 HTML은 내부 작동확인 필드를 노출하지 않는다',()=>{
+  const html=renderHub('테스트',[coupon],now);
+  assert.doesNotMatch(html,/작동 확인|workingVerifiedAt|verificationResult|evidenceMethod|UNVERIFIED/);
 });
