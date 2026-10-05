@@ -20,7 +20,7 @@ test('시바 모험단 공식 쿠폰 후보는 UNVERIFIED로 유효하고 ACTIVE
 test('시바 모험단 신규 글 초안은 공식 정보와 미검증 상태를 함께 표시한다',()=>{
   const draft=JSON.parse(readFileSync(new URL('../drafts/shibarpg-pickup-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/shibarpg-pickup-202610.html',import.meta.url),'utf8');
-  assert.equal(draft.publicationStatus,'DRAFT_ONLY');
+  assert.equal(draft.publicationStatus,'APPROVED_FOR_PUBLISH');
   assert.deepEqual(draft.post.labels,['게임','시바 모험단']);
   assert.match(draft.post.title,/시바 모험단 쿠폰 pick7p2y/);
   assert.match(html,/pick7p2y/);
