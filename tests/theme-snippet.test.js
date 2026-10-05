@@ -16,3 +16,16 @@ for (const path of [
     }
   });
 }
+
+
+test('blogger-theme-r1_modified.xml 조건부 목록 미리보기는 Jump Break를 우선하고 기존 snippet을 보존한다',()=>{
+  const xml=readFileSync(new URL('../nutriments_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',import.meta.url),'utf8');
+  const blocks=[...xml.matchAll(/<b:includable id='postBodySnippet' var='post'>([\s\S]*?)<\/b:includable>/g)].map(x=>x[1]);
+  assert.equal(blocks.length,2);
+  for (const block of blocks) {
+    assert.match(block,/data:post\.hasJumpLink/);
+    assert.match(block,/<data:post\.body\/>/);
+    assert.match(block,/name='postSnippet'/);
+    assert.ok(block.indexOf('<data:post.body/>') < block.indexOf("name='postSnippet'"));
+  }
+});
