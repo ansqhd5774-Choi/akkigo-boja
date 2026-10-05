@@ -126,3 +126,25 @@ test('회원 할인은 코드 문자열 없이도 데이터 모델상 유효할 
   const memberOffer={id:'member',brand:'11번가',category:'쇼핑·오픈마켓',offerType:'MEMBER',status:'UNVERIFIED',discountKind:'PERCENT',rate:7,minimum:20000,cap:5000,platform:'ALL',member:'ALL',endMode:'FIXED_DATE',expiresAt:'2026-10-11T14:59:59.000Z',sourceUrl:'https://plan.11st.co.kr/plan/front/exhibitions/2236574/detail',sourceCheckedAt:'2026-10-05T11:00:00Z'};
   assert.equal(validateCoupon(memberOffer,now),memberOffer);
 });
+
+
+test('11번가 패션뷰티 공식 페이지는 전용 후보를 분리 추출한다',()=>{
+  const source={id:'11st-fashion-beauty-202610',brand:'11번가',category:'쇼핑·오픈마켓',url:'https://plan.11st.co.kr/plan/front/exhibitions/2236496/detail',parserProfile:'ELEVENST_PROMOTIONS'};
+  const html=`<div>
+    [패션뷰티 장바구니 쿠폰 유의사항]
+    할인 조건 : 11% 할인 (35,000원 이상 구매 시, 최대 4,000원 할인)
+    발급 기간 : 2026/10/01 00:00 ~ 2026/10/11 23:59
+    발급 수량 : 매일 선착순 한정수량
+    적용 채널 : 11번가 App, 11번가 바로가기
+    [패션 장바구니 쿠폰]
+    할인조건 : 장바구니 주문금액 기준 7만원 이상 구매 시 7천원 할인
+    발급대상 : 11번가 개인회원
+    발급기간 : 2026/10/01 00:00 ~ 10/11 23:59:59
+    사용조건 : 11번가 App
+    [쿠폰 사용 유의사항]
+  </div>`;
+  const candidates=extractCandidates(source,html,new Date('2026-10-05T00:00:00Z'));
+  assert.equal(candidates.length,2);
+  assert.equal(candidates.find(x=>x.rate===11).minimum,35000);
+  assert.equal(candidates.find(x=>x.fixedAmount===7000).minimum,70000);
+});
