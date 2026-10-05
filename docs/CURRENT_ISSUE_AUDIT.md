@@ -1,6 +1,6 @@
 # 문제 목록 현재 대조 · 2026-10-05
 
-> 현재 Blogger R3 테마는 공개 반영 완료 상태다. 이후 작업은 테마 재적용 없이 Worker/데이터/검증/콘텐츠 연결만 진행한다.
+> 기존 Blogger R3 공개 테마는 안정 상태다. 다만 2026-10-06 목록 미리보기 개선 소스는 별도 승인된 후속 변경이며, Blogger 관리자에 실제 저장되기 전까지 공개 반영으로 간주하지 않는다.
 
 | 번호 | 현재 판정 |
 |---|---|
@@ -9,7 +9,7 @@
 | 3 | STOPPED: TinyFish는 표준 운영 경로에서 제외. 꼭 필요한 공개 진단 외 추가 사용 금지 |
 | 5 | DONE: OAuth 운영 전환 및 실제 API 생성·공개·갱신 증거 확보 |
 | 6 | DONE: `akkigo-boja`가 Blogger Worker source of truth. 기존 Tistory 저장소는 별도 보존 |
-| 7 | DONE: 현재 최종 XML Blogger 저장 및 공개 홈/게시물 확인. 완료 테마를 덮어쓰지 않음 |
+| 7 | PARTIAL: 기존 R3 테마 공개 저장은 DONE. 최신 안전 목록 미리보기 XML은 SOURCE/TEST DONE, Blogger 관리자 실제 저장은 PENDING |
 | 8 | DONE: 공개 홈에 근거 없는 신뢰도 비율 없음. 계정별 직접 적용 기록과 미확인 조건 명시 |
 | 9 | PARTIAL: 검색·17메뉴·확인 기록·게임 안내·최신/만료 빈 상태 반영. 실시간 자동 홈 재생성 및 인기 순위 미구현 |
 | 10 | PARTIAL: 홈 코드·보상 펼치기·플랫폼·서버/만료 미확인 표시·복사·입력 안내 링크 구현 |
@@ -33,7 +33,7 @@
 - migration `0005_coupon_candidates.sql`: 후보를 별도 D1 테이블에 저장하고 재관찰 시 동일 후보 중복 생성을 방지.
 - 수집 테스트의 원천 건수 하드코딩 제거. 설정된 sources 길이에 자동 대응.
 - 기존 게임 데이터/허브와 하위 호환 유지.
-- Blogger Theme XML 및 `tools/build-theme.mjs` 변경 0건.
+- 2026-10-06 목록 미리보기 개선으로 Blogger Theme XML 및 `tools/build-theme.mjs` 변경이 발생했다. 기존 R3 기능을 보존하며 안전한 Jump Break 미리보기와 게임 쿠폰 요약 카드만 추가했다.
 
 ## 검증
 
@@ -69,3 +69,12 @@
 - 최신 Deploy Readiness 37306344065: `api_token_present=false`.
 - Token 미설정 상태 Deploy Worker 37306340225: credential 확인만 실행, checkout/test/migration/deploy는 모두 skip, 잘못된 production 배포 0건.
 - Verify: 37306340167 및 37306344141 PASS.
+
+## 2026-10-06 게임 쿠폰 목록/표준화 후속
+- 프로젝트 격리: `nutriments_blogger_r1_bundle` 잔재를 `akkigo_blogger_r1_bundle`로 이관 완료. 현재 브랜치 경로/코드 검색에서 nutriments 잔재 0건.
+- 시바 글 본문: 목록 전용 안전 요약(확인된 쿠폰 수·보상·만료) 추가. 쿠폰 코드/JS는 Jump Break 뒤에만 유지.
+- Publish Approved Article 37342377560 SUCCESS. postId `4686430079776725627`, URL 유지, publicVerified=true.
+- Worker version `7e2413d1-b94e-408e-bfb8-668bb9e0a53f`.
+- Verify 37342278067 SUCCESS: tests 50/50, build, theme regeneration clean diff, XML 3개, detail 390/1440, feed preview 390/1440 PASS.
+- 게임 쿠폰 공통 템플릿 `akkigo_blogger_r1_bundle/article/game-coupon-article-r1.html` 추가.
+- 남은 핵심: 최신 `akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml`의 Blogger 관리자 실제 저장과 저장 후 목록 공개 확인.
