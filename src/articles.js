@@ -25,7 +25,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
     const text=await response.text();
     const marker=text.includes(`data-ncp-article="${articleKey}"`);
     if (articleKey==='shibarpg-pickup-202610') {
-      return marker && text.includes('ncp-help-list') && !text.includes('2713') && !text.includes('ncp-checklist');
+      return marker && text.includes('ncp-help-list') && text.includes('data-ncp-copy') && !text.includes('onclick=') && !text.includes('2713') && !text.includes('ncp-checklist');
     }
     return marker;
   } catch {
