@@ -77,3 +77,13 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - D1 article_state LIVE 및 article_publish_attempts CREATE_PUBLISH/SUCCEEDED 확인.
 - 쿠폰 pick7p2y는 공식 발급 정보 확인 상태이나 실제 계정 사용 성공은 미확인이라 data/coupons.json에서 UNVERIFIED 유지.
 - Blogger R3 테마 변경 0건.
+
+
+## 시바 안전 목록 요약 및 Worker 배포 · 2026-10-06
+- Publish Approved Article run 37342377560 SUCCESS.
+- tests 50/50 PASS, D1 migration 단계 PASS, Worker deploy PASS.
+- Worker version: 7e2413d1-b94e-408e-bfb8-668bb9e0a53f.
+- 기존 Blogger postId 4686430079776725627 / URL https://lsifl.blogspot.com/2026/10/pick7p2y.html 유지.
+- 공개 상세 본문에 data-ncp-feed-preview 표식과 최신 상세 UI가 존재하며 publicVerified=true.
+- 목록 요약에는 코드 pick7p2y와 JavaScript를 넣지 않고, 확인된 쿠폰 수·보상·만료만 배치했다.
+- 최신 목록 테마 source는 검증됐지만 Blogger 관리자 저장은 아직 확인되지 않았다. 따라서 공개 라벨/검색 목록의 새 카드 반영은 별도 PENDING이다.
