@@ -157,7 +157,7 @@ export async function collectSources(env, transport = fetch, execution = {}) {
     .bind(new Date().toISOString(),fetched===observations.length?'SUCCEEDED':'PARTIAL',observations.length,fetched,runId).run();
   return observations;
   } catch {
-    await env.DB.prepare("UPDATE collection_runs SET finished_at=?,status='FAILED',observed_count=? WHERE runId=?")
+    await env.DB.prepare("UPDATE collection_runs SET finished_at=?,status='FAILED',observed_count=? WHERE run_id=?")
       .bind(new Date().toISOString(),observations.length,runId).run();
     throw new Error('COLLECTION_STORAGE_FAILED');
   }
