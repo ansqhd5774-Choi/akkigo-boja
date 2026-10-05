@@ -131,7 +131,7 @@ export function rankCoupons(coupons, {amount, member, platform}, now = Date.now(
 
 export function renderHub(brand, coupons, now = Date.now()) {
   const items = coupons.map(c => validateCoupon(c, now)).filter(c => c.brand === brand && ['ACTIVE','EXPIRING_SOON'].includes(c.status) && (endMode(c) !== 'FIXED_DATE' || Date.parse(c.expiresAt) > now));
-  return `<div class="ncp-page" data-ncp-page><div class="ncp-wrap"><h1>${escapeHtml(brand)} 쿠폰</h1>${items.length ? items.map(c => renderOffer(c)).join('') : '<section class="ncp-empty-verified"><h2>현재 검증된 쿠폰이 없습니다.</h2><p>공식 세일·카드/결제 할인·최근 만료 이력을 확인하세요.</p></section>'}</div></div>`;
+  return `<div class="ncp-page" data-ncp-page><div class="ncp-wrap"><h1>${escapeHtml(brand)} 쿠폰</h1>${items.length ? items.map(c => renderOffer(c)).join('') : '<section class="ncp-empty-verified"><h2>현재 확인된 사용 가능 쿠폰이 없습니다.</h2><p>새 쿠폰이 확인되면 이 페이지에 추가됩니다.</p></section>'}</div></div>`;
 }
 
 export function renderTravelComparison(brand, coupons, context, now = Date.now()) {
@@ -170,5 +170,5 @@ function renderOffer(c) {
   const conditions = kind === 'GAME_REDEEM'
     ? `서버: ${escapeHtml(c.server)} · 입력: ${escapeHtml(c.redemptionMethod)}`
     : `최소 ${escapeHtml(c.minimum)}원${c.cap != null?` · 최대 ${escapeHtml(c.cap)}원`:''}`;
-  return `<article class="ncp-offer"><strong>${benefit}</strong>${c.code?`<code>${escapeHtml(c.code)}</code>`:''}<p>${escapeHtml(offerTypeLabel(c))} · ${conditions} · ${escapeHtml(c.platform)} · ${escapeHtml(c.member)}</p><p>종료: ${escapeHtml(endConditionLabel(c))} · 작동 확인: ${escapeHtml(c.workingVerifiedAt)}</p><a href="${escapeHtml(c.sourceUrl)}" rel="noopener noreferrer">공식 출처</a></article>`;
+  return `<article class="ncp-offer"><strong>${benefit}</strong>${c.code?`<code>${escapeHtml(c.code)}</code>`:''}<p>${escapeHtml(offerTypeLabel(c))} · ${conditions} · ${escapeHtml(c.platform)} · ${escapeHtml(c.member)}</p><p>종료: ${escapeHtml(endConditionLabel(c))}</p><a href="${escapeHtml(c.sourceUrl)}" rel="noopener noreferrer">공식 출처</a></article>`;
 }
