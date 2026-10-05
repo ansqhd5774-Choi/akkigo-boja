@@ -30,10 +30,45 @@ function isoDate(year,month,day,endOfDay=false) {
   return dt.toISOString();
 }
 
+function isoDateKst(year,month,day,endOfDay=false) {
+  const y=Number(year),m=Number(month),d=Number(day);
+  if (![y,m,d].every(Number.isInteger)) return null;
+  const check=new Date(Date.UTC(y,m-1,d));
+  if (check.getUTCFullYear()!==y || check.getUTCMonth()!==m-1 || check.getUTCDate()!==d) return null;
+  const hour=(endOfDay?23:0)-9;
+  return new Date(Date.UTC(y,m-1,d,hour,endOfDay?59:0,endOfDay?59:0)).toISOString();
+}
+
+function wonAmount(value) {
+  if (value == null) return null;
+  const text=String(value).replace(/,/g,'').trim();
+  const match=text.match(/(\d+(?:\.\d+)?)\s*(만|천)?\s*원/);
+  if (!match) return null;
+  const scale=match[2]==='만'?10000:match[2]==='천'?1000:1;
+  const amount=Number(match[1])*scale;
+  return Number.isFinite(amount)?amount:null;
+}
+
+function sectionByHeadings(text,start,endings=[]) {
+  const startIndex=text.indexOf(start);
+  if (startIndex < 0) return '';
+  let end=Math.min(text.length,startIndex+2600);
+  for (const heading of endings) {
+    const index=text.indexOf(heading,startIndex+start.length);
+    if (index >= 0 && index < end) end=index;
+  }
+  return text.slice(startIndex,end);
+}
+
+function october2026End(section) {
+  const range=section.match(/2026\s*\/\s*10\s*\/\s*0?1[\s\S]{0,160}?~\s*(?:2026\s*\/\s*)?10\s*\/\s*(11|31)/i);
+  return range?isoDateKst(2026,10,Number(range[1]),true):null;
+}
+
 function uniqueCandidates(items) {
   const seen=new Set();
   return items.filter(item=>{
-    const key=JSON.stringify([item.offerType,item.discountKind,item.rate,item.fixedAmount,item.currency,item.minimum,item.cap,item.travel?.kind,item.travel?.regions]);
+    const key=JSON.stringify([item.offerType,item.discountKind,item.rate,item.fixedAmount,item.currency,item.minimum,item.cap,item.platformHint,item.audienceHint,item.mechanismHint,item.endMode,item.expiresAt,item.travel?.kind,item.travel?.regions]);
     if (seen.has(key)) return false;
     seen.add(key);return true;
   });
@@ -82,16 +117,84 @@ function extractTripCom(text) {
   return uniqueCandidates(candidates).filter(x => x.rate > 0);
 }
 
+
+function extract11st(text) {
+  const candidates=[];
+  const common=(section,extra={})=>({
+    currency:'KRW',
+    mechanismHint:'DOWNLOAD_COUPON',
+    evidenceLevel:'SOURCE_TEXT_ONLY',
+    evidenceText:section.slice(0,360),
+    ...extra
+  });
+
+  const plus=sectionByHeadings(text,'[11번가플러스 10월 장바구니 쿠폰]',['[10% 컴백 스페셜 쿠폰]','[이벤트 문의]']);
+  if (plus) {
+    const rate=Number(plus.match(/최대\s*(\d{1,2})%/)?.[1] || NaN);
+    const minimum=wonAmount(plus.match(/([\d,.]+\s*(?:만|천)?\s*원)\s*이상\s*구매/i)?.[1]);
+    const cap=wonAmount(plus.match(/최대\s*([\d,.]+\s*(?:만|천)?\s*원)/i)?.[1]);
+    const expiresAt=october2026End(plus);
+    if (Number.isFinite(rate) && minimum!=null && cap!=null) candidates.push(common(plus,{
+      offerType:'MEMBER',discountKind:'PERCENT',rate,minimum,cap,
+      platformHint:'WEB_APP',audienceHint:'ELEVEN_PLUS',
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'CART'
+    }));
+  }
+
+  const comeback=sectionByHeadings(text,'[10% 컴백 스페셜 쿠폰]',['[이벤트 문의]','패션뷰티 페스타']);
+  if (comeback) {
+    const rate=Number(comeback.match(/최대\s*(\d{1,2})%/)?.[1] || comeback.match(/(\d{1,2})%\s*컴백/)?.[1] || NaN);
+    const minimum=wonAmount(comeback.match(/([\d,.]+\s*(?:만|천)?\s*원)\s*이상\s*구매/i)?.[1]);
+    const cap=wonAmount(comeback.match(/최대\s*([\d,.]+\s*(?:만|천)?\s*원)/i)?.[1]);
+    const expiresAt=october2026End(comeback);
+    if (Number.isFinite(rate) && minimum!=null && cap!=null) candidates.push(common(comeback,{
+      offerType:'MEMBER',discountKind:'PERCENT',rate,minimum,cap,
+      platformHint:'WEB_APP',audienceHint:'RECENT_3_MONTH_NO_PURCHASE',
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'CART'
+    }));
+  }
+
+  const beauty=sectionByHeadings(text,'[패션뷰티 장바구니 쿠폰 유의사항]',['[패션 장바구니 쿠폰]']);
+  if (beauty) {
+    const rate=Number(beauty.match(/할인\s*조건\s*:\s*(\d{1,2})%/)?.[1] || NaN);
+    const minimum=wonAmount(beauty.match(/\(([\d,.]+\s*원)\s*이상\s*구매/i)?.[1]);
+    const cap=wonAmount(beauty.match(/최대\s*([\d,.]+\s*원)/i)?.[1]);
+    const expiresAt=october2026End(beauty);
+    if (Number.isFinite(rate) && minimum!=null && cap!=null) candidates.push(common(beauty,{
+      offerType:'AUTO_DISCOUNT',discountKind:'PERCENT',rate,minimum,cap,
+      platformHint:'WEB_APP',audienceHint:'MEMBERS',
+      endMode:/선착순|한정수량/.test(beauty)?'UNTIL_STOCK_EXHAUSTED':expiresAt?'FIXED_DATE':'UNKNOWN',
+      expiresAt,scopeHint:'FASHION_BEAUTY_EVENT'
+    }));
+  }
+
+  const fashion=sectionByHeadings(text,'[패션 장바구니 쿠폰]',['[쿠폰 사용 유의사항]']);
+  if (fashion) {
+    const fixedAmount=wonAmount(fashion.match(/이상\s*구매\s*시\s*([\d,.]+\s*(?:만|천)?\s*원)\s*할인/i)?.[1]);
+    const minimum=wonAmount(fashion.match(/([\d,.]+\s*(?:만|천)?\s*원)\s*이상\s*구매/i)?.[1]);
+    const expiresAt=october2026End(fashion);
+    if (fixedAmount!=null && minimum!=null) candidates.push(common(fashion,{
+      offerType:'AUTO_DISCOUNT',discountKind:'FIXED',fixedAmount,minimum,cap:fixedAmount,
+      platformHint:'APP',audienceHint:'MEMBERS',
+      endMode:expiresAt?'FIXED_DATE':'UNKNOWN',expiresAt,scopeHint:'FASHION'
+    }));
+  }
+
+  return uniqueCandidates(candidates).filter(x => (x.fixedAmount ?? x.rate) > 0);
+}
+
 export function extractCandidates(source, html, now = new Date()) {
-  if (source.parserProfile !== 'TRAVEL_DEALS') return [];
   const text=htmlToText(html);
-  if (source.id === 'agoda-deals' || source.brand === 'Agoda') return extractAgoda(text,now);
-  if (source.id === 'tripcom-domestic-2026' || source.brand === 'Trip.com') return extractTripCom(text);
+  if (source.parserProfile === 'TRAVEL_DEALS') {
+    if (source.id === 'agoda-deals' || source.brand === 'Agoda') return extractAgoda(text,now);
+    if (source.id === 'tripcom-domestic-2026' || source.brand === 'Trip.com') return extractTripCom(text);
+  }
+  if (source.parserProfile === 'ELEVENST_PROMOTIONS' && source.id === '11st-october-2026') return extract11st(text);
   return [];
 }
 
 async function candidateId(source,candidate) {
-  const identity={sourceId:source.id,offerType:candidate.offerType,discountKind:candidate.discountKind,rate:candidate.rate ?? null,fixedAmount:candidate.fixedAmount ?? null,currency:candidate.currency ?? null,minimum:candidate.minimum ?? null,cap:candidate.cap ?? null,travel:candidate.travel ?? null};
+  const identity={sourceId:source.id,offerType:candidate.offerType,discountKind:candidate.discountKind,rate:candidate.rate ?? null,fixedAmount:candidate.fixedAmount ?? null,currency:candidate.currency ?? null,minimum:candidate.minimum ?? null,cap:candidate.cap ?? null,platformHint:candidate.platformHint ?? null,audienceHint:candidate.audienceHint ?? null,mechanismHint:candidate.mechanismHint ?? null,endMode:candidate.endMode ?? null,expiresAt:candidate.expiresAt ?? null,travel:candidate.travel ?? null};
   const bytes=new TextEncoder().encode(JSON.stringify(identity));
   return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
 }
