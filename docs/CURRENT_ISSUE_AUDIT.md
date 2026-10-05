@@ -43,6 +43,7 @@
   - travel candidate persistence 전체 Verify PASS — Run 37299403638
   - candidate review API Verify PASS — Run 37299721615
   - Agoda card-local parser fix Verify PASS — Run 37300074756
+- 11st source Verify PASS — Run 37302858196; Deploy Worker skipped by guard — Run 37302858354
 - Deploy Worker는 `CLOUDFLARE_DEPLOY_ENABLED` 가드로 skipped. migration 0005와 candidate collector는 아직 production Worker/D1에 반영되지 않았다.
 - GSC Wizard는 현재 `payment_required`로 조회 불가. 유료 구독/결제는 실행하지 않았다.
 - 공개 검색 확인에서 `site:lsifl.blogspot.com` 결과는 아직 확인되지 않았다.
