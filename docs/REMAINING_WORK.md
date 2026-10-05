@@ -35,7 +35,8 @@
   - candidate persistence run: 37299403638
   - candidate review API run: 37299721615
   - Agoda card-local parser fix run: 37300074756
-- 11st source Verify PASS — Run 37302858196. Deploy Worker는 가드로 skipped — Run 37302858354. production 반영은 아직 아님.
+- 11st source Verify PASS — Run 37302858196. production 반영은 아직 아님.
+- Deploy workflow 단순화 PASS: `CLOUDFLARE_DEPLOY_ENABLED` 제거, account ID는 단일 계정-scoped token에서 Wrangler 자동 선택. Token 미설정 상태에서 Deploy Worker 37306340225는 실제 배포 단계를 안전하게 모두 skip. Verify 37306340167/37306344141 PASS.
 - Blogger 테마 파일 변경: 0건.
 
 ## 실제 운영 데이터가 필요해 남은 작업
@@ -49,7 +50,7 @@
 | 실제 사용 가능한 게임 쿠폰 확대 | PENDING | 공식 근거+적용 범위+실사용 근거 충족 시에만 ACTIVE |
 | 명조 입력 방법 | DEFERRED | 공식 메뉴 안내 근거 확인 전 단정 금지 |
 | 자연 Cron 관찰 | PENDING | 수동 수집과 구분해 collection_runs의 SCHEDULED/SUCCEEDED 증거 확인 |
-| Worker 자동 배포 | BLOCKED | Deploy Readiness 37303826813에서 deploy_enabled=false, account_id_present=false, api_token_present=false 확인. Secret 값은 출력하지 않음. migration 0005/candidate collector는 production 미반영 |
+| Worker 자동 배포 | BLOCKED | `CLOUDFLARE_DEPLOY_ENABLED`·`CLOUDFLARE_ACCOUNT_ID` 별도 설정 의존성 제거 완료. 최신 Deploy Readiness 37306344065에서 `api_token_present=false` 재확인. API Token 하나만 남은 blocker이며 값은 출력하지 않음. migration 0005/candidate collector는 production 미반영 |
 | 검색 노출 운영 | AUTOMATION_BLOCKED/PENDING | GitHub Hosted Runner가 Blogger 접근 시 Google GOOGLE_ANTI_BOT_429로 차단됨(Public SEO Check 37303719852). 사이트 장애로 판정하지 않음. site:lsifl.blogspot.com 공개 검색 결과는 아직 없음. Search Console 무료 공식 화면에서 소유/사이트맵 확인 필요 |
 | 네이버 등록 | PENDING | 소유확인 및 sitemap/RSS 제출 |
 | Tistory 이전 | DEFERRED | 기존 사이트 보존. 별도 이전 정책 승인 전 미실행 |
