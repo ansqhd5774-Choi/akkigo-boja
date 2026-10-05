@@ -1,0 +1,49 @@
+NUTRIMENTS 쿠폰 사이트 벤치마킹 기반 운영 방향 R1 — BLOGGER EDITION
+
+상태: ACTIVE
+플랫폼: Google Blogger
+작성 기준일: 2026-10-05
+
+1. 핵심 목표
+단순 쿠폰 복사 블로그가 아니라
+「검증형 쿠폰 DB + 사용 전 의사결정 도구」를 목표로 한다.
+
+사용자에게 답해야 하는 5가지:
+1) 지금 실제로 작동하는가
+2) 마지막으로 언제 확인했는가
+3) 누가 사용할 수 있는가
+4) 실제로 얼마 절약되는가
+5) 여러 쿠폰 중 무엇이 가장 유리한가
+
+2. 벤치마킹 반영
+- SimplyCodes: 검증 증거, 최근 작동, 성공/실패 이력, 작동 가능성 우선
+- Tripdify: 한국 사용자용 조건 밀도, 앱/웹, 최소금액, 할인한도, 카드채널 비교
+- Slickdeals: 발견 정보와 추천 정보를 분리, 인기만으로 추천하지 않음
+- 게임 코드 사이트: working/expired, 보상, 플랫폼, 서버, 입력방법 분리
+
+3. UI 원칙
+- 첫 화면은 설명보다 현재 추천 답을 먼저 보여준다.
+- BEST는 최대 할인율이 아니라 실제 사용 가능성 + 절감액 + 조건 + 검증 최신성으로 판단한다.
+- 성공뿐 아니라 실패 기록도 공개 가능하게 설계한다.
+- 수집 시각과 실제 작동 확인 시각을 분리한다.
+- 모바일 하단에는 복사 + 사이트 이동 CTA를 유지한다.
+- 검증된 쿠폰이 없으면 없다고 표시하고 죽은 코드를 채워 넣지 않는다.
+
+4. Blogger 테마 구현
+- Tistory skin.html / style.css / images/script.js 구조는 사용하지 않는다.
+- Blogger Theme XML을 source of truth로 둔다.
+- 공통 CSS는 <b:skin>에 포함한다.
+- 레이아웃은 <b:section> / <b:widget> 구조를 따른다.
+- Blogger 기본 Blog widget은 게시물 목록/본문을 담당한다.
+- 쿠폰 인터랙션 JS는 테마 하단 script에서 1회 로드한다.
+- 쿠폰 게시물 본문은 .ncp-page 네임스페이스로 격리한다.
+- 테마 전체 HTML은 Blogger Theme > Edit HTML로 관리한다.
+
+5. 발행 자동화
+Discovery → Normalize → Deduplicate → Validate → Verify → Rank → Render
+→ Blogger API insert/update → Anonymous Public Verification
+
+6. 제휴
+- 제휴 링크는 sponsored/nofollow를 기본값으로 한다.
+- 제휴 여부는 추천 순위의 핵심 기준이 아니다.
+- 사용자가 이해할 수 있는 고지를 제공한다.

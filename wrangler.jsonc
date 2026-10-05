@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "akkigo-boja",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-05",
+  "workers_dev": true,
+  "vars": {
+    "BLOGGER_BLOG_ID": "2339978524893611480",
+    "BLOGGER_PUBLIC_URL": "https://lsifl.blogspot.com",
+    "PUBLISH_ENABLED": "false"
+  },
+  "triggers": { "crons": [] }
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false'
+      b:defaultwidgetversion='2'
+      b:layoutsVersion='3'
+      b:responsive='true'
+      xmlns='http://www.w3.org/1999/xhtml'
+      xmlns:b='http://www.google.com/2005/gml/b'
+      xmlns:data='http://www.google.com/2005/gml/data'
+      xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta content='width=device-width,initial-scale=1,viewport-fit=cover' name='viewport'/>
+  <meta content='ko' http-equiv='content-language'/>
+  <title><data:blog.pageTitle/></title>
+  <b:include data='blog' name='all-head-content'/>
+  <b:skin><![CDATA[
+/*
+NUTRIMENTS Coupon UI R3 — Blogger Edition
+Platform: Google Blogger
+Source: NUTRIMENTS R3 benchmark-grade UI
+Notes:
+- No Tistory selectors or Tistory placeholders.
+- Coupon UI stays under data-ncp-page / ncp-*.
+- Blogger theme shell and coupon article are separated.
+*/
+
+:root{
+  --bg:#f4f6f8;--surface:#fff;--surface2:#f8fafc;--ink:#111827;--muted:#667085;--line:#e4e7ec;
+  --brand:#2457d6;--brand2:#163e9f;--brandsoft:#eef3ff;--success:#067647;--successbg:#ecfdf3;
+  --warn:#b54708;--warnbg:#fffaeb;--danger:#b42318;--dangerbg:#fef3f2;--violet:#6941c6;--violetbg:#f4f3ff;
+  --r8:8px;--r12:12px;--r16:16px;--shadow:0 10px 30px rgba(15,23,42,.06);--max:1180px;
+}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}
+button,input,select{font:inherit}.ncp-wrap{max-width:var(--max);margin:auto;padding:0 24px}
+.ncp-top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.ncp-top__row{height:66px;display:grid;grid-template-columns:auto minmax(280px,560px) auto;gap:24px;align-items:center}
+.ncp-logo{font-weight:900;font-size:20px;letter-spacing:-.04em;text-decoration:none;color:var(--ink)}
+.ncp-search{position:relative}.ncp-search input{width:100%;height:44px;border:1px solid #d0d5dd;border-radius:10px;padding:0 44px 0 14px;background:#fff}
+.ncp-search button{position:absolute;right:4px;top:4px;width:36px;height:36px;border:0;border-radius:8px;background:var(--brand);color:#fff;font-weight:900}
+.ncp-nav{display:flex;gap:16px;font-size:13px;font-weight:800}.ncp-nav a{color:#344054;text-decoration:none}
+.ncp-rail{display:flex;gap:8px;overflow:auto;padding:12px 0 14px;scrollbar-width:none}.ncp-rail::-webkit-scrollbar{display:none}
+.ncp-chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800;color:#344054}
+.ncp-chip.active{background:#111827;color:#fff;border-color:#111827}
+.ncp-breadcrumb{padding:24px 0 10px;color:var(--muted);font-size:12px}.ncp-breadcrumb span{margin:0 6px}
+.ncp-hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:stretch;margin:0 0 18px}
+.ncp-hero__main,.ncp-trustcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 1px 2px rgba(15,23,42,.03)}
+.ncp-hero__main{padding:26px}.ncp-kicker{margin:0 0 7px;color:var(--brand);font-size:12px;font-weight:900}
+.ncp-title{margin:0;font-size:42px;line-height:1.08;letter-spacing:-.045em;font-weight:950}
+.ncp-sub{margin:12px 0 0;color:#475467;font-size:15px;max-width:720px}
+.ncp-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.ncp-meta strong{color:var(--ink)}
+.ncp-trustcard{padding:20px}.ncp-trustcard__label{font-size:11px;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.05em}
+.ncp-trustcard__score{display:flex;align-items:end;gap:8px;margin-top:8px}.ncp-trustcard__score strong{font-size:34px;line-height:1}.ncp-trustcard__score span{font-size:12px;color:var(--muted);padding-bottom:3px}
+.ncp-trustbar{height:8px;background:#eef2f6;border-radius:999px;overflow:hidden;margin:12px 0}.ncp-trustbar i{display:block;height:100%;width:92%;background:var(--success);border-radius:inherit}
+.ncp-trustlist{display:grid;gap:8px;margin-top:12px}.ncp-trustrow{display:grid;grid-template-columns:18px 1fr auto;gap:8px;font-size:12px;align-items:center}
+.ncp-trustrow b{font-size:12px}.ncp-trustrow em{font-style:normal;color:var(--muted)}
+.ncp-layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:18px;align-items:start}
+.ncp-main{min-width:0}.ncp-side{position:sticky;top:92px;display:grid;gap:14px}
+.ncp-answer{border:2px solid var(--violet);border-radius:16px;background:#fff;overflow:hidden;box-shadow:var(--shadow)}
+.ncp-answer__bar{display:flex;justify-content:space-between;align-items:center;background:var(--violetbg);padding:10px 16px;border-bottom:1px solid #ddd6fe}
+.ncp-answer__bar strong{color:var(--violet);font-size:12px}.ncp-answer__bar span{font-size:11px;color:#5d4a9e}
+.ncp-answer__body{padding:24px}.ncp-answer__grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:24px;align-items:start}
+.ncp-benefit{font-size:38px;font-weight:950;letter-spacing:-.04em;line-height:1.05}.ncp-benefit-sub{margin-top:7px;color:#475467;font-size:14px}
+.ncp-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.ncp-tag{border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:6px 9px;font-size:11px;font-weight:800;color:#475467}
+.ncp-codebox{background:#f8fafc;border:1px dashed #98a2b3;border-radius:12px;padding:12px}.ncp-codebox__label{font-size:10px;color:var(--muted);font-weight:900}
+.ncp-code{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px}.ncp-code code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:17px;font-weight:900;letter-spacing:.04em}
+.ncp-btn{height:44px;border-radius:9px;border:0;padding:0 14px;font-weight:900;cursor:pointer}.ncp-btn.dark{background:#111827;color:#fff}.ncp-btn.primary{background:var(--brand);color:#fff}.ncp-btn.soft{background:#fff;border:1px solid #d0d5dd;color:#344054}
+.ncp-answer__foot{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);background:#fcfcfd}.ncp-stat{padding:14px 18px;border-right:1px solid var(--line)}.ncp-stat:last-child{border-right:0}
+.ncp-stat small{display:block;color:var(--muted);font-size:10px;font-weight:800}.ncp-stat strong{display:block;margin-top:3px;font-size:13px}
+.ncp-personal{margin-top:16px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.ncp-personal__head{display:flex;justify-content:space-between;gap:12px;align-items:start}.ncp-personal h2{margin:0;font-size:18px}.ncp-personal p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.ncp-personal__form{display:grid;grid-template-columns:1.1fr .8fr .8fr auto;gap:8px;margin-top:14px}.ncp-field{height:42px;border:1px solid #d0d5dd;border-radius:9px;background:#fff;padding:0 10px;font-size:13px}
+.ncp-result{margin-top:12px;padding:14px;border-radius:10px;background:var(--brandsoft);display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.ncp-result strong{color:var(--brand2);font-size:16px}.ncp-result span{font-size:11px;color:#475467}
+.ncp-filterbar{display:flex;justify-content:space-between;gap:12px;margin:20px 0 12px}.ncp-filters{display:flex;gap:7px;overflow:auto;scrollbar-width:none}.ncp-filter{flex:0 0 auto;height:38px;padding:0 12px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:12px;font-weight:800}
+.ncp-filter.active{background:#111827;color:#fff}.ncp-sort{height:38px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:0 28px 0 10px;font-size:12px}
+.ncp-sectionhead{display:flex;justify-content:space-between;align-items:end;margin:24px 0 10px}.ncp-sectionhead h2{margin:0;font-size:21px;letter-spacing:-.02em}.ncp-sectionhead p{margin:4px 0 0;font-size:12px;color:var(--muted)}
+.ncp-offers{display:grid;gap:10px}.ncp-offer{display:grid;grid-template-columns:130px minmax(0,1fr) 118px;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px}
+.ncp-offer:hover{border-color:#c4cbd4;box-shadow:0 6px 18px rgba(15,23,42,.04)}
+.ncp-offer__value strong{display:block;font-size:25px;line-height:1.05}.ncp-offer__value span{display:block;margin-top:4px;color:var(--muted);font-size:11px}
+.ncp-offer__title{font-size:14px;font-weight:900}.ncp-offer__chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ncp-mini{padding:4px 7px;border-radius:999px;background:#f2f4f7;color:#475467;font-size:10px;font-weight:850}
+.ncp-offer__meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:8px;color:var(--muted);font-size:11px}
+.ncp-offer__actions{display:grid;gap:7px}.ncp-status{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:27px;padding:5px 8px;border-radius:999px;font-size:11px;font-weight:900}
+.ncp-status:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}.ncp-status.ok{background:var(--successbg);color:var(--success)}.ncp-status.warn{background:var(--warnbg);color:var(--warn)}
+.ncp-verify,.ncp-sourcebox,.ncp-quickfacts{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.ncp-panelhead{padding:14px 15px;border-bottom:1px solid var(--line)}.ncp-panelhead h3{margin:0;font-size:14px}.ncp-panelhead p{margin:3px 0 0;color:var(--muted);font-size:11px}
+.ncp-events{list-style:none;margin:0;padding:0}.ncp-event{display:grid;grid-template-columns:22px 1fr;gap:8px;padding:12px 15px;border-bottom:1px solid var(--line)}.ncp-event:last-child{border-bottom:0}
+.ncp-event i{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;font-style:normal;font-size:10px;font-weight:900}.ncp-event.pass i{background:var(--successbg);color:var(--success)}.ncp-event.fail i{background:var(--dangerbg);color:var(--danger)}.ncp-event.info i{background:var(--brandsoft);color:var(--brand)}
+.ncp-event strong{display:block;font-size:11px}.ncp-event span{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+.ncp-facts{padding:14px 15px;display:grid;gap:9px}.ncp-fact{display:grid;grid-template-columns:88px 1fr;gap:8px;font-size:11px}.ncp-fact span{color:var(--muted)}.ncp-fact strong{font-weight:850}
+.ncp-sourcebox{padding:14px 15px}.ncp-sourcebox strong{font-size:12px}.ncp-sourcebox p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.55}
+.ncp-compare{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.ncp-compare table{width:100%;border-collapse:collapse;font-size:12px}.ncp-compare th,.ncp-compare td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}.ncp-compare th{color:var(--muted);font-size:10px;background:#fcfcfd}.ncp-compare tr:last-child td{border-bottom:0}.ncp-win{color:var(--success);font-weight:900}
+.ncp-expired{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.ncp-expired summary{cursor:pointer;font-weight:900;font-size:13px}.ncp-expired p{color:var(--muted);font-size:11px;margin-bottom:0}
+.ncp-disclosure{margin:20px 0 90px;padding:12px 14px;border-left:3px solid #d0d5dd;background:#f8fafc;color:var(--muted);font-size:11px}
+.ncp-mobilebar{display:none}.ncp-toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:100;background:#111827;color:#fff;border-radius:999px;padding:10px 14px;font-size:12px;font-weight:800;box-shadow:var(--shadow)}
+@media(max-width:980px){.ncp-top__row{grid-template-columns:auto 1fr}.ncp-nav{display:none}.ncp-hero{grid-template-columns:1fr}.ncp-layout{grid-template-columns:1fr}.ncp-side{position:static;grid-template-columns:repeat(2,1fr)}.ncp-sourcebox{grid-column:1/-1}}
+@media(max-width:700px){.ncp-wrap{padding:0 12px}.ncp-top{position:static}.ncp-top__row{height:auto;grid-template-columns:1fr;gap:8px;padding:10px 0}.ncp-breadcrumb{padding-top:14px}.ncp-hero__main,.ncp-trustcard{border-radius:12px}.ncp-hero__main{padding:18px}.ncp-title{font-size:31px}.ncp-answer__grid{grid-template-columns:1fr}.ncp-answer__body{padding:18px}.ncp-benefit{font-size:32px}.ncp-answer__foot{grid-template-columns:1fr}.ncp-stat{border-right:0;border-bottom:1px solid var(--line)}.ncp-stat:last-child{border-bottom:0}.ncp-personal__form{grid-template-columns:1fr 1fr}.ncp-personal__form .ncp-btn{grid-column:1/-1}.ncp-filterbar{display:block}.ncp-sort{width:100%;margin-top:8px}.ncp-offer{grid-template-columns:1fr;gap:10px}.ncp-offer__actions{grid-template-columns:1fr auto;align-items:center}.ncp-side{display:grid;grid-template-columns:1fr}.ncp-compare{overflow:auto}.ncp-compare table{min-width:620px}.ncp-disclosure{margin-bottom:96px}.ncp-mobilebar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:7px;align-items:center;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:9px 10px calc(9px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px rgba(15,23,42,.08)}.ncp-mobilebar strong{font-size:12px}.ncp-mobilebar span{display:block;color:var(--muted);font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ncp-mobilebar .ncp-btn{height:44px;padding:0 11px}}
+@media(max-width:390px){.ncp-personal__form{grid-template-columns:1fr}.ncp-code code{font-size:15px}.ncp-mobilebar{grid-template-columns:minmax(0,1fr) auto}.ncp-mobilebar .site{display:none}}
+
+
+/* ===== Blogger theme shell ===== */
+html,body{min-height:100%}
+body.ncp-blogger{background:var(--bg)}
+.ncp-blogger-shell{min-height:100vh}
+.ncp-blogger-main{min-height:60vh}
+.ncp-blogger-section{max-width:var(--max);margin:0 auto;padding:0 24px}
+.ncp-blogger-section .widget{margin:0}
+.ncp-blogger-section .post-outer{margin:0}
+.ncp-blogger-section .post-body{font-size:inherit;line-height:inherit}
+.ncp-blogger-footer{border-top:1px solid var(--line);background:#fff;margin-top:48px}
+.ncp-blogger-footer__row{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
+.ncp-blogger-footer__row strong{color:var(--ink)}
+.ncp-blogger-footer__nav{display:flex;gap:14px;flex-wrap:wrap}
+.ncp-blogger-footer__nav a{color:var(--muted);text-decoration:none}
+.ncp-blogger-footer__nav a:hover{color:var(--ink)}
+.ncp-platform-note{max-width:var(--max);margin:18px auto;padding:0 24px;color:var(--muted);font-size:11px}
+@media(max-width:700px){
+  .ncp-blogger-section{padding:0 12px}
+  .ncp-blogger-footer__row{align-items:flex-start;flex-direction:column;padding:22px 0}
+  .ncp-platform-note{padding:0 12px}
+}
+
+  ]]></b:skin>
+</head>
+<body class='ncp-blogger'>
+  <div class='ncp-blogger-shell'>
+
+    <header class='ncp-top'>
+      <div class='ncp-wrap ncp-top__row'>
+        <a class='ncp-logo' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+
+        <form action='/search' class='ncp-search' method='get' role='search'>
+          <input aria-label='브랜드 또는 게임 이름 검색'
+                 name='q'
+                 placeholder='브랜드 또는 게임 이름 검색'
+                 type='search'/>
+          <button aria-label='검색' type='submit'>⌕</button>
+        </form>
+
+        <nav aria-label='주요 카테고리' class='ncp-nav'>
+          <a href='/search/label/게임'>게임</a>
+          <a href='/search/label/여행·숙박'>여행</a>
+          <a href='/search/label/배달·외식'>배달</a>
+          <a href='/search/label/쇼핑·오픈마켓'>쇼핑</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav aria-label='쿠폰 카테고리' class='ncp-wrap ncp-rail'>
+      <a class='ncp-chip' href='/search/label/게임'>게임</a>
+      <a class='ncp-chip' href='/search/label/여행·숙박'>여행·숙박</a>
+      <a class='ncp-chip' href='/search/label/배달·외식'>배달·외식</a>
+      <a class='ncp-chip' href='/search/label/쇼핑·오픈마켓'>쇼핑·오픈마켓</a>
+      <a class='ncp-chip' href='/search/label/식품·마트·편의점'>식품·마트·편의점</a>
+      <a class='ncp-chip' href='/search/label/뷰티·화장품'>뷰티·화장품</a>
+      <a class='ncp-chip' href='/search/label/패션·신발·잡화'>패션·신발·잡화</a>
+      <a class='ncp-chip' href='/search/label/전자·가전·IT'>전자·가전·IT</a>
+      <a class='ncp-chip' href='/search/label/건강·영양·헬스'>건강·영양·헬스</a>
+      <a class='ncp-chip' href='/search/label/생활·가구·인테리어'>생활·가구·인테리어</a>
+      <a class='ncp-chip' href='/search/label/문화·공연·레저'>문화·공연·레저</a>
+      <a class='ncp-chip' href='/search/label/구독·OTT'>구독·OTT</a>
+      <a class='ncp-chip' href='/search/label/소프트웨어·AI'>소프트웨어·AI</a>
+      <a class='ncp-chip' href='/search/label/반려동물'>반려동물</a>
+      <a class='ncp-chip' href='/search/label/육아·키즈'>육아·키즈</a>
+      <a class='ncp-chip' href='/search/label/교육·강의'>교육·강의</a>
+      <a class='ncp-chip' href='/search/label/자동차·용품'>자동차·용품</a>
+    </nav>
+
+    <main class='ncp-blogger-main'>
+      <div class='ncp-blogger-section'>
+        <b:section class='main' id='main' maxwidgets='1' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+        </b:section>
+      </div>
+    </main>
+
+    <footer class='ncp-blogger-footer'>
+      <div class='ncp-wrap ncp-blogger-footer__row'>
+        <div>
+          <strong><data:blog.title/></strong>
+          <div>검증형 쿠폰 DB · 최신성 · 조건 · 절감액 · 검증 근거 우선</div>
+        </div>
+        <nav aria-label='하단 메뉴' class='ncp-blogger-footer__nav'>
+          <a expr:href='data:blog.homepageUrl'>홈</a>
+          <a href='/search'>검색</a>
+          <a href='/feeds/posts/default'>RSS</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class='ncp-platform-note'>
+      Blogger Theme R1 · 쿠폰 UI는 게시물 HTML의 .ncp-page 내부에서 동작합니다.
+    </div>
+  </div>
+
+  <script><![CDATA[
+(() => {
+  const root = document.querySelector('[data-ncp-page]');
+  if (!root) return;
+
+  const toast = document.querySelector('[data-ncp-toast]');
+  const showToast = (msg) => {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.hidden = false;
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => toast.hidden = true, 1800);
+  };
+
+  document.addEventListener('click', async (e) => {
+    const copy = e.target.closest('[data-copy]');
+    if (copy) {
+      const code = copy.getAttribute('data-copy') || '';
+      try {
+        await navigator.clipboard.writeText(code);
+        showToast(`${code} 복사됨`);
+        const before = copy.textContent;
+        copy.textContent = '복사됨';
+        setTimeout(() => copy.textContent = before, 1200);
+      } catch {
+        showToast('복사에 실패했습니다');
+      }
+    }
+
+    const filter = e.target.closest('[data-filter]');
+    if (filter) {
+      document.querySelectorAll('[data-filter]').forEach(x => x.classList.remove('active'));
+      filter.classList.add('active');
+      const key = filter.dataset.filter;
+      document.querySelectorAll('[data-offer]').forEach(card => {
+        const tags = (card.dataset.tags || '').split(',');
+        card.hidden = key !== 'ALL' && !tags.includes(key);
+      });
+    }
+  });
+
+  const calcBtn = document.querySelector('[data-calc]');
+  if (calcBtn) {
+    calcBtn.addEventListener('click', () => {
+      const amount = Number(document.querySelector('[data-amount]')?.value || 0);
+      const member = document.querySelector('[data-member]')?.value || 'ALL';
+      const platform = document.querySelector('[data-platform]')?.value || 'WEB';
+
+      const candidates = [...document.querySelectorAll('[data-offer]')].map(el => {
+        const min = Number(el.dataset.min || 0);
+        const rate = Number(el.dataset.rate || 0);
+        const cap = Number(el.dataset.cap || 0);
+        const eligibleMember = !el.dataset.member || el.dataset.member === 'ALL' || el.dataset.member === member;
+        const eligiblePlatform = !el.dataset.platform || el.dataset.platform === 'ALL' || el.dataset.platform === platform;
+        const eligible = amount >= min && eligibleMember && eligiblePlatform;
+        const saving = eligible ? Math.min(Math.floor(amount * rate / 100), cap || Infinity) : -1;
+        return { el, saving, eligible };
+      }).filter(x => x.eligible);
+
+      candidates.sort((a,b) => b.saving - a.saving);
+      const best = candidates[0];
+      const out = document.querySelector('[data-result]');
+      if (!out) return;
+
+      if (!best) {
+        out.innerHTML = '<div><strong>현재 조건에서 사용 가능한 쿠폰이 없습니다.</strong><span>회원/플랫폼 조건을 바꿔 확인해보세요.</span></div>';
+        return;
+      }
+
+      const name = best.el.querySelector('[data-offer-name]')?.textContent.trim() || '추천 쿠폰';
+      out.innerHTML = `<div><strong>${best.saving.toLocaleString('ko-KR')}원 절약 예상</strong><span>${name}이 현재 입력 조건에서 가장 유리합니다.</span></div><button class="ncp-btn soft">비교표 보기</button>`;
+    });
+  }
+})();
+
+  ]]></script>
+</body>
+</html>

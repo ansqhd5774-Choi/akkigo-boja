@@ -1,0 +1,10 @@
+NUTRIMENTS BLOGGER R1 VALIDATION
+XML well-formed: PASS
+blogger-theme-r1.xml: Tistory placeholders=PASS, Tistory domain dependency=PASS
+coupon-ui-r3-blogger.css: Tistory placeholders=PASS, Tistory domain dependency=PASS
+coupon-ui-r3-blogger.js: Tistory placeholders=PASS, Tistory domain dependency=PASS
+coupon-article-r3-blogger.html: Tistory placeholders=PASS, Tistory domain dependency=PASS
+Blogger theme contains <b:skin>: PASS
+Blogger theme contains <b:section>: PASS
+Blogger theme contains Blog widget: PASS
+Article template contains data-ncp-page: PASS
