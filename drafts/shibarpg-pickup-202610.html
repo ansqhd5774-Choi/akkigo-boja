@@ -24,7 +24,7 @@
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-code{display:inline-block;font:800 22px/1.25 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere;color:#101828;background:#f2f4f7;padding:7px 10px;border-radius:8px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-copy{min-height:44px;padding:0 17px;border:1px solid #98a2b3;border-radius:10px;background:#fff;color:#344054;font-weight:800;cursor:pointer}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-copy:hover{background:#f9fafb}
-[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy[data-copied="true"]{border-color:#75e0a7;background:var(--ok-bg);color:var(--ok)}
+[data-ncp-article="shibarpg-pickup-202610"] .ncp-copy-state{display:inline-flex;align-items:center;min-height:24px;color:var(--ok);font-size:13px;font-weight:700}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-coupon-info{display:grid;grid-template-columns:1.25fr 1fr;border-top:1px solid var(--line)}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell{padding:15px 20px}
 [data-ncp-article="shibarpg-pickup-202610"] .ncp-info-cell+.ncp-info-cell{border-left:1px solid var(--line)}
@@ -73,6 +73,7 @@
   <h1>시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상</h1>
   <p class="ncp-lead">시바 모험단에서 사용할 수 있는 쿠폰 코드와 보상, 입력 방법을 한눈에 확인할 수 있도록 정리했습니다.</p>
 </header>
+<!--more-->
 <nav class="ncp-quickbar" aria-label="쿠폰 빠른 이동">
   <a class="ncp-quickitem" href="#ncp-active"><span><strong>사용 가능</strong><br>현재 쿠폰</span><span class="ncp-quicknum">1</span></a>
   <a class="ncp-quickitem" href="#ncp-expired"><span><strong>만료</strong><br>지난 쿠폰</span><span class="ncp-quicknum">0</span></a>
@@ -83,7 +84,7 @@
   <div class="ncp-coupon-card">
     <div class="ncp-coupon-top">
       <div><span class="ncp-label">쿠폰 코드</span><code class="ncp-code">pick7p2y</code></div>
-      <button class="ncp-copy" type="button" data-copied="false" aria-label="pick7p2y 쿠폰 코드 복사" onclick="(async(b)=>{try{await navigator.clipboard.writeText('pick7p2y');b.textContent='복사됨';b.dataset.copied='true';setTimeout(()=>{b.textContent='복사';b.dataset.copied='false'},1400)}catch(e){b.textContent='복사 실패';setTimeout(()=>{b.textContent='복사'},1400)}})(this)">복사</button>
+      <button class="ncp-copy" type="button" data-ncp-copy="pick7p2y" aria-label="pick7p2y 쿠폰 코드 복사">복사</button><span class="ncp-copy-state" role="status" aria-live="polite"></span>
     </div>
     <div class="ncp-coupon-info">
       <div class="ncp-info-cell"><span class="ncp-label">보상</span><div class="ncp-info-value">시바 코인 10개</div></div>
