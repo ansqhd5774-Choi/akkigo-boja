@@ -2704,6 +2704,9 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 #ncp-game-hub .ncp-game-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;justify-content:initial}#ncp-game-hub .ncp-game-card{padding:0;border:1px solid #e4eaf4;border-radius:14px;overflow:hidden;background:#fff;transition:transform .15s;align-items:stretch;text-align:left;color:#142346}#ncp-game-hub .ncp-game-card:hover{transform:translateY(-3px)}#ncp-game-hub .ncp-game-icon-wrap{width:100%;height:150px;aspect-ratio:auto;border-radius:0;background:#f3f7fc}#ncp-game-hub .ncp-game-name{margin:14px 14px 5px;font-size:16px;line-height:1.5}#ncp-game-hub .ncp-game-updated{margin:0 14px 16px;font-size:12px;color:#697a92;opacity:1}#ncp-game-hub [role='status']{padding:16px;background:#f5f8fd;border-radius:12px;color:#65738a}#ncp-game-hub [role='status']:empty{display:none}
 @media(max-width:900px){#ncp-game-hub .ncp-game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.ncp-r4-category-header .ncp-r4-top{flex-wrap:wrap}.ncp-r4-category-header .ncp-r4-search{flex-basis:100%}#ncp-game-hub{padding:18px}#ncp-game-hub h1{font-size:25px}#ncp-game-hub .ncp-game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ncp-game-hub .ncp-game-icon-wrap{height:140px}#ncp-game-hub .ncp-game-name{font-size:14px}}
+
+.ncp-category-page .centered{margin:0 auto!important;width:100%!important;box-sizing:border-box}.ncp-category-page .post-filter-message{display:none!important}.ncp-category-page .centered-bottom{padding:0!important}
+
 ]]></b:skin>
 
     <b:template-skin>
