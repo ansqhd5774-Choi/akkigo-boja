@@ -13,7 +13,7 @@ test('브라운더스트2 10월 월간 쿠폰은 공식 코드와 만료 조건�
   assert.equal(item.expiresAt,'2026-10-31T14:59:00.000Z');
   assert.equal(item.rewards[0].name,'1회 뽑기권');
   assert.equal(item.rewards[0].quantity,3);
-  assert.equal(validateCoupon(item,Date.parse('2026-10-06T11:25:00Z')),item);
+  assert.equal(validateCoupon(item,Date.parse('2026-10-06T11:15:00Z')),item);
 });
 
 test('브라운더스트2 공개 글은 코드·보상·만료·복사·플랫폼별 입력 방법을 제공한다',()=>{
