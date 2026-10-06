@@ -4,17 +4,17 @@ import {readFileSync} from 'node:fs';
 import coupons from '../data/coupons.json' with {type:'json'};
 import {validateCoupon} from '../src/coupons.js';
 
-const expectedCodes=['STARTWITHGENIE','TRAININGSTART','V26STARTPACK','CPBVFULLMOON','V26A7K9P3XQ2','CPBVKDYPARTY'];
+const expectedCodes=['STARTWITHGENIE','TRAININGSTART','V26STARTPACK','CPBVFULLMOON','V26A7K9P3XQ2','CPBVKDYPARTY','K8R3V7N2Q9X5'];
 
-test('컴투스프로야구V26 10월 공식 쿠폰 6개는 내부 데이터에 중복 없이 저장된다',()=>{
+test('컴투스프로야구V26 10월 공식 쿠폰 7개는 내부 데이터에 중복 없이 저장된다',()=>{
   const items=coupons.filter(x=>x.brand==='컴투스프로야구V26');
-  assert.equal(items.length,6);
+  assert.equal(items.length,7);
   assert.deepEqual(items.map(x=>x.code).sort(),[...expectedCodes].sort());
-  assert.equal(new Set(items.map(x=>x.id)).size,6);
+  assert.equal(new Set(items.map(x=>x.id)).size,7);
   for (const item of items) {
     assert.equal(item.status,'UNVERIFIED');
     assert.equal(item.sourceUrl,'https://cpbv-community.com2us.com/board/all/44252');
-    assert.equal(validateCoupon(item,Date.parse('2026-10-06T10:45:00Z')),item);
+    assert.equal(validateCoupon(item,Date.parse('2026-10-06T17:08:30Z')),item);
   }
 });
 
@@ -39,6 +39,7 @@ test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입
     assert.match(html,new RegExp('data-ncp-copy="'+code+'"'));
   }
   assert.match(html,/포인트 1,000,000개/);
+  assert.match(html,/스킬변경권 1개 · 라이브 고급 스카우트 티켓 5개/);
   assert.match(html,/2026년 10월 8일 23:59/);
   assert.match(html,/2026년 10월 31일 23:59/);
   assert.match(html,/2026년 11월 30일 23:59/);
@@ -52,6 +53,6 @@ test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입
   for (const code of expectedCodes) assert.equal(preview.includes(code),false);
   assert.equal(preview.includes('navigator.clipboard'),false);
   assert.equal(preview.includes('<script'),false);
-  assert.match(preview,/확인된 쿠폰<\/span><strong>6개/);
+  assert.match(preview,/확인된 쿠폰<\/span><strong>7개/);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|내부 운영 상태|활성 추천/);
 });
