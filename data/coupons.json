@@ -470,5 +470,68 @@
     "sourceCheckedAt": "2026-10-06T14:39:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_CODE_LIST_AND_OFFICIAL_ROBLOX_REDEEM_PAGE",
     "note": "2026년 10월 최신 Roblox 코드 목록에서 SPIDERCOLA와 Spider Cola 어깨 액세서리 보상을 확인했고, Roblox 공식 코드 사용 페이지와 공식 도움말에서 입력 절차를 확인함."
+  },
+  {
+    "id": "pokemongo-adidas-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "Pokémon GO",
+    "category": "게임",
+    "code": "ADIDASxPOKEMON",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "adidas 신발 아바타 아이템",
+        "quantity": 1
+      }
+    ],
+    "server": "글로벌 서비스",
+    "redemptionMethod": "Pokémon GO Web Store Code Redemption",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2027-01-15T14:59:00.000Z",
+    "sourceUrl": "https://pokemongo.com/en/news/pokemon-x-adidas-2026",
+    "sourceCheckedAt": "2026-10-06T14:42:00.000Z",
+    "evidenceMethod": "OFFICIAL_POKEMON_GO_NEWS",
+    "note": "Pokémon GO 공식 adidas 협업 공지에서 코드·보상·2027-01-15 만료일을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "pokemongo-lego-berries-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "Pokémon GO",
+    "category": "게임",
+    "code": "LEGOxPOKEMONGOxBERRIES",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "몬스터볼",
+        "quantity": 10
+      },
+      {
+        "name": "라즈열매",
+        "quantity": 5
+      },
+      {
+        "name": "파인열매",
+        "quantity": 5
+      },
+      {
+        "name": "나나열매",
+        "quantity": 5
+      }
+    ],
+    "server": "글로벌 서비스",
+    "redemptionMethod": "Pokémon GO Web Store Code Redemption",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://store.pokemongo.com/offer-redemption?hl=ko",
+    "sourceCheckedAt": "2026-10-06T14:42:00.000Z",
+    "evidenceMethod": "CURRENT_CODE_TRACKER_AND_OFFICIAL_REDEMPTION_PAGE",
+    "note": "10월 최신 코드 목록과 Pokémon GO 소셜 미러에서 코드·보상을 교차 확인. 공식 종료일은 확인되지 않았고 실제 계정 사용 성공도 별도 확인하지 않음."
   }
 ]
