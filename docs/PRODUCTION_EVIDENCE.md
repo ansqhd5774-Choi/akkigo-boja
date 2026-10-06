@@ -355,3 +355,21 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/pokemon-go-2026-10-adidaslego.html
 - Worker 공개 검증 `publicVerified=true`.
 
+
+
+## 브롤스타즈 10월 QR·무료 보상 글 발행 · 2026-10-07
+- articleKey `brawl-stars-rewards-202610`.
+- 현재 시도 가능한 보상 링크 5개: Candle Spray, Nori Box, Thief Pin, Bolt Box, Bulb Pin.
+- 각 보상 링크는 2026-10-07 점검 시 `link.brawlstars.com` 공식 페이지가 실제로 열리는 것을 확인.
+- 일반 문자열 쿠폰이 아니라 QR/보상 링크 방식으로 안내.
+- 대표 이미지: Google Play 공식 Brawl Stars 앱 페이지의 `og:image`.
+- Source Verify 37489509001 SUCCESS.
+- Deploy Worker 37489421032 SUCCESS.
+- Publish Approved Article 37489646514 SUCCESS.
+- Publish request Verify 37489646347 SUCCESS.
+- Blogger postId `218467175103767457`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/qr-2026-10.html
+- `publicVerified=true`.
+- Worker version `44d6b682-61cb-4b31-b888-bc2c4225edc8`.
+- 공개 검증: 5개 보상명과 공식 보상 링크가 본문에 노출됨.
+- 공개 이미지 검증: Google Play 공식 이미지가 실제 `image_links`에 존재하고 Blogger `og:image`가 동일 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성.
