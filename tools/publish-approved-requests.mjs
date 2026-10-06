@@ -3,7 +3,9 @@ import {readdir,readFile} from 'node:fs/promises';
 const token=process.env.GITHUB_OIDC_TOKEN;
 if (!token) throw new Error('GITHUB_OIDC_TOKEN_MISSING');
 const dir=new URL('../publish-requests/',import.meta.url);
-const names=(await readdir(dir)).filter(x=>x.endsWith('.json')).sort();
+const requested=process.argv.slice(2).map(x=>x.replace(/^publish-requests\//,''));
+if(requested.some(x=>!/^[-a-z0-9]+\.json$/.test(x)))throw Error('INVALID_REQUEST_FILE');
+const names=requested.length?requested:(await readdir(dir)).filter(x=>x.endsWith('.json')).sort();
 if (!names.length) throw new Error('NO_PUBLISH_REQUESTS');
 
 let processed=0;

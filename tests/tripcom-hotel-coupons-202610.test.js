@@ -35,3 +35,9 @@ test('트립닷컴 목록 미리보기는 조건 요약만 포함한다',()=>{
   assert.match(preview,/10월 25일/);
   assert.equal(preview.includes('<script'),false);
 });
+
+test('체크리스트는 Blogger 저장에 안전한 CSS escape를 사용한다',()=>{
+ const html=readFileSync(new URL('../drafts/tripcom-hotel-coupons-202610.html',import.meta.url),'utf8');
+ assert.ok(html.includes('content:"\\2713"'));
+ assert.doesNotMatch(html,/content:["'](?:✓|&#10003;)/);
+});

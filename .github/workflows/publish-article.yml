@@ -47,5 +47,6 @@ jobs:
             if [ -z "$request_file" ]; then echo "HUB_REFRESH_REQUEST_MISSING"; exit 1; fi
             node tools/refresh-approved-hubs.mjs "$request_file"
           else
-            node tools/publish-approved-requests.mjs
+            mapfile -t requests < <(git diff --name-only HEAD^ HEAD -- 'publish-requests/*.json')
+            node tools/publish-approved-requests.mjs "${requests[@]}"
           fi
