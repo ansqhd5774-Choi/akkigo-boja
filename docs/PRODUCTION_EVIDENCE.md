@@ -101,3 +101,18 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/v26-2026-10.html
 - Worker 공개 검증 `publicVerified=true`.
 - 목록 미리보기에는 쿠폰 코드를 넣지 않고 확인된 쿠폰 수·다음 만료·최장 만료만 표시.
+
+
+## 트릭컬 리바이브 신규 쿠폰 글 공개 · 2026-10-06
+- 중복 확인: 저장소 및 공개 검색에서 동일 검색 의도 글 없음.
+- 최근 쿠폰 2개 정리: GOOGLETOP3 / 3RDBOLTHDAY.
+- GOOGLETOP3: 교주의 빛무리 선택권 1개 + 참! 잘했어요 333개, 2026-10-22 10:59까지.
+- 3RDBOLTHDAY: 엘리프 927개 + 영원살이 일곱자매 선택권 1개, 2026-10-22 10:59까지.
+- 공식 네이버 게임 라운지 쿠폰 게시판과 공식 채널을 우선 원천으로 사용. 실제 계정 사용 성공은 별도 확인하지 않아 내부 상태 `UNVERIFIED` 유지.
+- Article source Verify 37454579644 SUCCESS, Deploy Worker 37454579656 SUCCESS.
+- Publish Approved Article 37454686035 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Worker version `e39a1367-dddb-4a12-953a-00c59837d9e0`.
+- Blogger postId `4891814108367830529`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10.html
+- Worker 공개 검증 `publicVerified=true`.
+- 목록 미리보기에는 쿠폰 코드를 넣지 않고 쿠폰 수·대표 보상·만료 정보만 표시.

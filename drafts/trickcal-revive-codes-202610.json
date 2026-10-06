@@ -17,6 +17,12 @@
       "https://coupon.a.prod.service.trickcal.io/"
     ]
   },
-  "publicationStatus": "PENDING",
-  "publication": null
+  "publicationStatus": "LIVE",
+  "publication": {
+    "postId": "4891814108367830529",
+    "url": "https://lsifl.blogspot.com/2026/10/2026-10.html",
+    "publishedAt": "2026-10-06T11:11:21.790Z",
+    "publicVerified": true,
+    "workflowRunId": 37454686035
+  }
 }
