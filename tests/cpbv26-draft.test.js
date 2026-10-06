@@ -37,7 +37,7 @@ test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입
   assert.match(html,/이벤트 쿠폰 교환소/);
   assert.match(html,/설정 → 계정/);
   assert.match(html,/쿠폰 보상은 계정당 1회 수령/);
-  assert.match(html,/https://cpbv-community\.com2us\.com/board/all/44252/);
+  assert.ok(html.includes('https://cpbv-community.com2us.com/board/all/44252'));
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
   for (const code of expectedCodes) assert.equal(preview.includes(code),false);
