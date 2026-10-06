@@ -17,7 +17,7 @@ test('화이트아웃 서바이벌 10월 코드 4개가 저장된다',()=>{
     assert.ok(item,id);
     assert.equal(item.brand,'화이트아웃 서바이벌');
     assert.equal(item.status,'UNVERIFIED');
-    assert.equal(validateCoupon(item,Date.parse('2026-10-06T15:45:00Z')),item);
+    assert.equal(validateCoupon(item,Date.parse('2026-10-06T16:00:00Z')),item);
   }
   const thx=coupons.find(x=>x.id==='whiteout-thxteacher-202610');
   assert.equal(thx.code,'THXTeacher');
