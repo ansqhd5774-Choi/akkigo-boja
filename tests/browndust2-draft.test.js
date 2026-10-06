@@ -19,7 +19,12 @@ test('브라운더스트2 10월 월간 쿠폰은 공식 코드와 만료 조건�
 test('브라운더스트2 공개 글은 코드·보상·만료·복사·플랫폼별 입력 방법을 제공한다',()=>{
   const draft=JSON.parse(readFileSync(new URL('../drafts/browndust2-codes-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/browndust2-codes-202610.html',import.meta.url),'utf8');
+  const imageUrl='https://play-lh.googleusercontent.com/bWgKVWQ2qq0s7CtCTsOevzI4DFCrDJW8C9sIwEjo87sqlOMul8IHSSnfkDPBlznQodYMRBSgkLFRUxjJ70Nx4g=s0-br30';
   assert.equal(draft.articleKey,'browndust2-codes-202610');
+  assert.equal((html.match(/data-ncp-featured-image="browndust2"/g)||[]).length,1);
+  assert.ok(html.includes(imageUrl));
+  assert.ok(html.includes('alt="브라운더스트2 공식 대표 이미지"'));
+  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'1806229069030793005');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2-2026-10.html');
