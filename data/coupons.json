@@ -680,5 +680,165 @@
     "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
     "note": "2026-10-05 갱신 활성 코드 목록에서 2ndYoutubeKR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음."
+  },
+  {
+    "id": "zeus-1002-live",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "제우스: 오만의 신",
+    "category": "게임",
+    "code": "ZEUS1002LIVE",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "골드",
+        "quantity": 250000
+      },
+      {
+        "name": "찬란한 의상/탈것 11회 소환 선택 상자",
+        "quantity": 1
+      },
+      {
+        "name": "축성 결정",
+        "quantity": 20
+      },
+      {
+        "name": "[이벤트] 강화 주문서 상자",
+        "quantity": 10
+      },
+      {
+        "name": "방어의 영약",
+        "quantity": 3
+      },
+      {
+        "name": "몬스터 사냥의 영약",
+        "quantity": 3
+      }
+    ],
+    "server": "서버 조건 미확인",
+    "redemptionMethod": "공식 HIVE 쿠폰 등록",
+    "platform": "WEB",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-04T14:59:00.000Z",
+    "sourceUrl": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
+    "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_NOTICE_AND_NEWS_CROSSCHECK",
+    "references": [
+      "https://www.gamevu.co.kr/news/articleView.html?idxno=61201",
+      "https://gamefixnote.com/"
+    ],
+    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함."
+  },
+  {
+    "id": "zeus-1002-gift",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "제우스: 오만의 신",
+    "category": "게임",
+    "code": "ZEUS1002GIFT",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "골드",
+        "quantity": 250000
+      },
+      {
+        "name": "빛나는 의상/탈것 11회 소환Ⅱ 선택 상자",
+        "quantity": 1
+      },
+      {
+        "name": "오리하르콘",
+        "quantity": 15
+      },
+      {
+        "name": "특수 신탁 지령서",
+        "quantity": 2
+      },
+      {
+        "name": "사망 페널티 복구 물약",
+        "quantity": 5
+      },
+      {
+        "name": "공격의 영약",
+        "quantity": 3
+      },
+      {
+        "name": "보스 도전의 영약",
+        "quantity": 3
+      }
+    ],
+    "server": "서버 조건 미확인",
+    "redemptionMethod": "공식 HIVE 쿠폰 등록",
+    "platform": "WEB",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-04T14:59:00.000Z",
+    "sourceUrl": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
+    "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_NOTICE_AND_NEWS_CROSSCHECK",
+    "references": [
+      "https://www.gamevu.co.kr/news/articleView.html?idxno=61201",
+      "https://gamefixnote.com/"
+    ],
+    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함."
+  },
+  {
+    "id": "zeus-welcome-6ryf-j242",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "제우스: 오만의 신",
+    "category": "게임",
+    "code": "6RYFJ242",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "웰컴 쿠폰 보상",
+        "quantity": 1
+      }
+    ],
+    "server": "지역·서버 조건 원문 확인",
+    "redemptionMethod": "공식 HIVE 쿠폰 등록",
+    "platform": "APP",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-12-31T14:59:00.000Z",
+    "sourceUrl": "https://pacpik.com/coupons/zeus-com2us/",
+    "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
+    "verificationResult": "SOURCE_TEXT_ONLY",
+    "evidenceMethod": "THIRD_PARTY_CURRENT_TRACKER",
+    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급."
+  },
+  {
+    "id": "zeus-welcome-avg768y1",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "제우스: 오만의 신",
+    "category": "게임",
+    "code": "AVG768Y1",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "웰컴 쿠폰 보상",
+        "quantity": 1
+      }
+    ],
+    "server": "지역·서버 조건 원문 확인",
+    "redemptionMethod": "공식 HIVE 쿠폰 등록",
+    "platform": "APP",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-12-31T14:59:00.000Z",
+    "sourceUrl": "https://pacpik.com/coupons/zeus-com2us/",
+    "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
+    "verificationResult": "SOURCE_TEXT_ONLY",
+    "evidenceMethod": "THIRD_PARTY_CURRENT_TRACKER",
+    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급."
   }
 ]
