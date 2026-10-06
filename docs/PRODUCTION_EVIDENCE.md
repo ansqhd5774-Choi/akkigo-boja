@@ -295,3 +295,28 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10-12-20.html
 - Worker 공개 검증 `publicVerified=true`.
 
+
+
+## 블루 아카이브 10월 쿠폰 글 발행 · 2026-10-06
+- 고인지도 게임 우선 정책으로 조사했으며, 니케는 최신 활성 코드의 1차 근거가 분산되어 보류하고 넥슨 공식 근거가 명확한 블루 아카이브를 선정.
+- articleKey `blue-archive-codes-202610`.
+- 현재 쿠폰: `KIRAKIRAERIKA`.
+- 보상: 청휘석 300개.
+- 공식 사용 기한: 2026-10-09 23:59 KST.
+- 공식 조건: 계정당 1회, 보상 우편 보관 7일.
+- 공식 공지: https://forum.nexon.com/bluearchive/board_view?board=1039&thread=3536588
+- 공식 입력 FAQ: https://forum.nexon.com/bluearchive/board_view?board=1072&thread=1595648
+- 공식 쿠폰 페이지: https://mcoupon.nexon.com/bluearchive
+- 대표 이미지: Google Play 공식 블루 아카이브 앱 페이지의 `og:image`.
+- 실제 계정 사용 성공은 별도 확인하지 않았으므로 내부 쿠폰 상태는 `UNVERIFIED` 유지.
+- Source Verify 37475372025 SUCCESS.
+- Deploy Worker 37475371995 SUCCESS.
+- Publish Approved Article 37475524916 SUCCESS.
+- Publish request Verify 37475524864 SUCCESS.
+- Blogger postId `5444005568735339747`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10_0691433567.html
+- `publicVerified=true`.
+- Worker version `427ac6fe-ac45-44b9-a432-635847a0b626`.
+- 공개 검증: 본문에서 코드·청휘석 300개·만료·Android/웹 입력 경로 확인.
+- 공개 이미지 검증: Google Play 공식 이미지가 실제 `image_links`에 존재하고 Blogger `og:image`가 동일 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성.
+- 기존 글 URL/postId 변경 없음. 신규 게임 대표 글 1건만 생성.
