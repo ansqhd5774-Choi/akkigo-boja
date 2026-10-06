@@ -21,7 +21,12 @@ test('컴투스프로야구V26 10월 공식 쿠폰 6개는 내부 데이터에 �
 test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입력 방법을 제공하고 목록 미리보기에는 코드를 숨긴다',()=>{
   const draft=JSON.parse(readFileSync(new URL('../drafts/cpbv26-codes-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/cpbv26-codes-202610.html',import.meta.url),'utf8');
+  const imageUrl='https://play-lh.googleusercontent.com/lFrail_ogSgoETUZcsAgLG7gC4lvjcOdffEURRt5kTAaIbr3pdm7s7hrIQNMl-jTu_Hbw7NDuU9gpJZDRsqY=s0-br30';
   assert.equal(draft.articleKey,'cpbv26-codes-202610');
+  assert.equal((html.match(/data-ncp-featured-image="cpbv26"/g)||[]).length,1);
+  assert.ok(html.includes(imageUrl));
+  assert.ok(html.includes('alt="컴투스프로야구V26 공식 대표 이미지"'));
+  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'4618248412018847849');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/v26-2026-10.html');
