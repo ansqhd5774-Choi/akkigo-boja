@@ -72,7 +72,7 @@ test('목록 스캔 예산 소진과 잘못된 초안 응답은 성공으로 간
 });
 
 test('사용 확인 사례도 내부 검증 필드나 운영 문구를 노출하지 않는다',()=>{
-  const post=buildHubDraft('zeus',[{brand:'제우스: 오만의 신',status:'UNVERIFIED',verificationResult:'SUCCESS',code:'TESTCODE',sourceUrl:'https://example.com'}]);
+  const post=buildHubDraft('zeus',[{id:'fixture-manual',type:'GAME_REWARD',offerType:'GAME_REDEEM',brand:'제우스: 오만의 신',category:'게임',status:'UNVERIFIED',verificationResult:'SUCCESS',code:'TESTCODE',rewards:[{name:'테스트 보상',quantity:1}],server:'테스트',redemptionMethod:'공식 웹',platform:'WEB',member:'ALL',eligibilityConfirmed:false,endMode:'UNKNOWN',sourceUrl:'https://example.com',sourceCheckedAt:'2026-10-05T00:00:00Z'}]);
   assert.match(post.content,/사용 확인 쿠폰/);
   assert.match(post.content,/등록 성공 및 보상 수령 사례/);
   assert.doesNotMatch(post.content,/workingVerifiedAt|verificationResult|evidenceMethod|활성 추천|쿠폰 확인 기준|개인정보 처리 안내/);

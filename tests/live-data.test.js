@@ -18,5 +18,7 @@ test('특정 계정의 성공 기록은 활성 추천과 구분해 본문에 보
   assert.ok(!renderHub(verified.brand,coupons).includes(verified.code));
   const post=buildHubDraft('zeus',coupons);
   assert.ok(post.content.includes(verified.code));
-  assert.ok(post.content.includes('특정 계정의 확인 사례'));
+  assert.ok(post.content.includes('사용 확인 쿠폰'));
+  assert.ok(post.content.includes('서버 범위·전체 계정 조건·만료일은 확인되지 않았습니다.'));
+  assert.doesNotMatch(post.content,/workingVerifiedAt|verificationResult|evidenceMethod|쿠폰 확인 기준|활성 추천/);
 });

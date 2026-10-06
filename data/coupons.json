@@ -74,5 +74,197 @@
     "sourceCheckedAt": "2026-10-05T12:18:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
     "note": "공식 커뮤니티에서 쿠폰 번호·보상·입력 방법·만료 시간을 확인. 실제 계정 사용 성공은 아직 미확인이라 ACTIVE로 승격하지 않음."
+  },
+  {
+    "id": "cpbv26-startwithgenie-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "STARTWITHGENIE",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "고급 스카우트 티켓",
+        "quantity": 50
+      },
+      {
+        "name": "3~5성 시즌 카드 랜덤팩",
+        "quantity": 30
+      },
+      {
+        "name": "4~5성 시즌 카드 랜덤팩",
+        "quantity": 20
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-11-30T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "cpbv26-trainingstart-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "TRAININGSTART",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "훈련 카드 박스",
+        "quantity": 100
+      },
+      {
+        "name": "강화 카드 박스",
+        "quantity": 200
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-11-30T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "cpbv26-v26startpack-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "V26STARTPACK",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "고급 훈련 돌파 박스",
+        "quantity": 30
+      },
+      {
+        "name": "최고급 훈련 돌파 박스",
+        "quantity": 30
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-11-30T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "cpbv26-cpbvfullmoon-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "CPBVFULLMOON",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "팀 고급 확정권",
+        "quantity": 1
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-08T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "cpbv26-v26a7k9p3xq2-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "V26A7K9P3XQ2",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "훈련 성장 재분배권",
+        "quantity": 1
+      },
+      {
+        "name": "볼",
+        "quantity": 100
+      },
+      {
+        "name": "빠른 진행 티켓",
+        "quantity": 100
+      },
+      {
+        "name": "포인트",
+        "quantity": 1000000
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-31T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "cpbv26-cpbvkdyparty-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "컴투스프로야구V26",
+    "category": "게임",
+    "code": "CPBVKDYPARTY",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "시그니처 등급 보호권",
+        "quantity": 1
+      },
+      {
+        "name": "3~5성 시즌 카드 랜덤팩",
+        "quantity": 10
+      },
+      {
+        "name": "볼",
+        "quantity": 100
+      }
+    ],
+    "server": "계정당 쿠폰별 1회 수령",
+    "redemptionMethod": "안드로이드/원스토어: 더보기 → 새소식 → 이벤트 쿠폰 교환소. iOS/PC: 공식 쿠폰 모아보기의 플랫폼별 교환 링크",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-08T14:59:00.000Z",
+    "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
   }
 ]
