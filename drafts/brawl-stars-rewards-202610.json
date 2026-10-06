@@ -19,5 +19,12 @@
       "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ko"
     ]
   },
-  "publicationStatus": "READY"
+  "publicationStatus": "LIVE",
+  "publication": {
+    "postId": "218467175103767457",
+    "url": "https://lsifl.blogspot.com/2026/10/qr-2026-10.html",
+    "publishedAt": "2026-10-06T15:42:04.000Z",
+    "publicVerified": true,
+    "workflowRunId": 37489646514
+  }
 }
