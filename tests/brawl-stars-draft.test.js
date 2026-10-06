@@ -18,8 +18,12 @@ test('브롤스타즈 공개 글은 공식 보상 링크 5개와 대표 이미�
   const draft=JSON.parse(readFileSync(new URL('../drafts/brawl-stars-rewards-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/brawl-stars-rewards-202610.html',import.meta.url),'utf8');
   assert.equal(draft.articleKey,'brawl-stars-rewards-202610');
-  assert.equal(draft.publicationStatus,'READY');
+  assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.approvedForPublish,true);
+  assert.equal(draft.publication.postId,'218467175103767457');
+  assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/qr-2026-10.html');
+  assert.equal(draft.publication.publicVerified,true);
+  assert.equal(draft.publication.workflowRunId,37489646514);
   assert.equal(draft.post.content,html.trim());
   assert.deepEqual(draft.post.labels,['게임','브롤스타즈']);
   assert.equal((html.match(/data-ncp-featured-image="brawl-stars"/g)||[]).length,1);
