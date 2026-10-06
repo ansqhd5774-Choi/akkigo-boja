@@ -1,5 +1,6 @@
 import coupons from '../data/coupons.json' with { type: 'json' };
 import articles from '../data/articles.json' with { type: 'json' };
+import supplementalArticles from '../data/articles-supplemental.json' with { type: 'json' };
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
@@ -21,7 +22,7 @@ export default {
       let input;
       try { input=await request.json(); } catch { return Response.json({error:'INVALID_JSON'},{status:400}); }
       try {
-        const result=await publishApprovedArticle(env,input.articleKey,articles);
+        const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles]);
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {
         const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
