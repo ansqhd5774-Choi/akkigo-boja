@@ -7,6 +7,7 @@ export const hubs = {
 };
 
 const featuredMedia = {
+  wuthering:`<figure data-ncp-featured-image="wuthering" style="margin:0 0 24px"><img src="https://wutheringwaves.kurogames.com/website-preface/video/bg/bg-poster.webp" alt="명조: 워더링 웨이브 공식 대표 이미지" loading="eager" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>`,
   lineagem:`<figure data-ncp-featured-image="lineagem" style="margin:0 0 24px"><img src="https://assets.playnccdn.com/resource/lineagem/meta/sns171017.jpg" alt="리니지M 공식 대표 이미지" loading="eager" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>`,
   zeus:`<figure data-ncp-featured-image="zeus" style="margin:0 0 24px"><img src="https://zeuscommunity-fn.com2us.com/zeuscommunity/public/common/og/og_default.jpg" alt="제우스: 오만의 신 공식 대표 이미지" loading="eager" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>`
 };

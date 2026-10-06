@@ -42,3 +42,13 @@ test('리니지M 허브는 NC 공식 대표 이미지를 첫 이미지로 1장�
   assert.ok(post.content.includes('alt="리니지M 공식 대표 이미지"'));
   assert.ok(post.content.indexOf('<img') < post.content.indexOf('class="ncp-page"'));
 });
+
+
+test('명조 허브는 Kuro Games 공식 대표 이미지를 첫 이미지로 1장만 출력한다',()=>{
+  const post=buildHubDraft('wuthering',coupons);
+  const imageUrl='https://wutheringwaves.kurogames.com/website-preface/video/bg/bg-poster.webp';
+  assert.equal((post.content.match(/data-ncp-featured-image="wuthering"/g)||[]).length,1);
+  assert.ok(post.content.includes(imageUrl));
+  assert.ok(post.content.includes('alt="명조: 워더링 웨이브 공식 대표 이미지"'));
+  assert.ok(post.content.indexOf('<img') < post.content.indexOf('class="ncp-page"'));
+});
