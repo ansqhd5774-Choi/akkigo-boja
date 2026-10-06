@@ -92,7 +92,7 @@ function zeusCouponCard(coupon,{ended=false,extra=false}={}) {
     ? '10월 2일 개발자 라이브에서 공개된 코드입니다. 종료일이 지났지만 기록과 재확인용으로 남겨둡니다.'
     : extra
       ? '외부 쿠폰 추적 페이지에서 1명만 사용 가능한 웰컴 코드로 표시됩니다. 이미 사용됐다면 등록되지 않을 수 있습니다.'
-      : '10월 5일 한 계정에서 등록 성공 및 보상 수령 사례가 있습니다. 공식 종료일은 확인되지 않아 먼저 입력해 보는 코드로 안내합니다.';
+      : '10월 5일 한 계정에서 등록 성공 및 보상 수령 사례가 있습니다. 서버 범위·전체 계정 조건·만료일은 확인되지 않았습니다. 먼저 입력해 보는 코드로 안내합니다.';
   return `<div class="ncp-coupon-card">
     <div class="ncp-coupon-top">
       <div><span class="ncp-label">${ended?'최근 종료 코드':extra?'추가 입력 시도 코드':'사용 확인 쿠폰'}</span><code class="ncp-code">${escapeHtml(coupon.code)}</code></div>
@@ -121,6 +121,7 @@ function buildZeusModern(coupons, manual) {
 <div data-ncp-hub="zeus">
 ${zeusStyles()}
 ${featuredMedia.zeus}
+<div class="ncp-page" data-ncp-page><div class="ncp-wrap">
 <header class="ncp-hero">
   <div class="ncp-meta"><span class="ncp-meta-badge">2026년 10월</span><span>마지막 업데이트 2026-10-07</span></div>
   <h1>제우스: 오만의 신 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상</h1>
