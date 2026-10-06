@@ -1,4 +1,4 @@
-import {homeR4} from '../theme/home-r4.mjs';
+import {homeR4,categoryHeaderR4} from '../theme/home-r4.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {escapeHtml as e} from '../src/coupons.js';
 const root=new URL('../',import.meta.url);
@@ -30,6 +30,6 @@ const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
-const output=base.replace(']]></b:skin>',css+gameCss+homeCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:if cond='!data:view.isHomepage'>${header}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
+const output=base.replace(']]></b:skin>',css+gameCss+homeCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output);
 console.log('R3 theme generated using native Blogger widget base.');

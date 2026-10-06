@@ -19,7 +19,7 @@
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
-      const src=content.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url;
+      const src=content.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
       image.referrerPolicy='no-referrer';
       if(src&&new URL(src,location.href).protocol==='https:'){
         const iconUrl=new URL(src,location.href);
@@ -28,6 +28,7 @@
         image.addEventListener('error',()=>{
           const fallback=entry.media$thumbnail?.url;
           if(fallback&&fallback!==image.src&&new URL(fallback,location.href).protocol==='https:')image.src=fallback;
+          else image.src='https://api.iconify.design/twemoji/video-game.svg';
         },{once:true});
       }
       if(src)wrap.append(image);
