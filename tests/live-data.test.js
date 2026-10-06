@@ -32,3 +32,13 @@ test('제우스 허브는 공식 대표 이미지를 첫 이미지로 1장만 �
   assert.ok(post.content.includes('alt="제우스: 오만의 신 공식 대표 이미지"'));
   assert.ok(post.content.indexOf('<img') < post.content.indexOf('class="ncp-page"'));
 });
+
+
+test('리니지M 허브는 NC 공식 대표 이미지를 첫 이미지로 1장만 출력한다',()=>{
+  const post=buildHubDraft('lineagem',coupons);
+  const imageUrl='https://assets.playnccdn.com/resource/lineagem/meta/sns171017.jpg';
+  assert.equal((post.content.match(/data-ncp-featured-image="lineagem"/g)||[]).length,1);
+  assert.ok(post.content.includes(imageUrl));
+  assert.ok(post.content.includes('alt="리니지M 공식 대표 이미지"'));
+  assert.ok(post.content.indexOf('<img') < post.content.indexOf('class="ncp-page"'));
+});
