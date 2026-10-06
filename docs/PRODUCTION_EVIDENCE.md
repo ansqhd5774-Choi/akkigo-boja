@@ -340,3 +340,18 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 이 글은 공식 프로모션 조건을 정리한 공개 콘텐츠이며 `data/coupons.json`의 배달·외식 항목을 ACTIVE로 승격한 것은 아니다.
 - Firecrawl 현재 크레딧: remainingCredits=-1000 / planCredits=1000. 이번 원천 조사는 Firecrawl 반복 호출 없이 일반 웹 검색의 공식 도미노 페이지로 대체.
 
+## Pokémon GO 10월 프로모션 코드 글 발행 · 2026-10-06
+- articleKey `pokemon-go-codes-202610`.
+- 제목: `Pokémon GO 프로모션 코드 (2026년 10월) | adidas·LEGO 코드·입력 방법`.
+- 공식 Pokémon GO adidas 협업 공지에서 `ADIDASxPOKEMON` 코드, adidas 신발 아바타 아이템, 2027-01-15 만료를 확인.
+- `LEGOxPOKEMONGOxBERRIES`는 10월 최신 코드 추적 원천과 Pokémon GO 소셜 미러에서 몬스터볼 10개·라즈열매 5개·파인열매 5개·나나열매 5개 보상을 교차 확인. 공식 별도 종료일은 확인되지 않아 내부 상태는 UNVERIFIED 유지.
+- 2026-10-24 19:30 PDT Pokémon Night Out Twitch 방송 30분 시청 시 개별 Timed Research 코드를 받는 공식 안내를 별도 예정 섹션으로 분리. 한국시간 2026-10-25 11:30 시작으로 안내.
+- 공용 코드와 아직 발급되지 않은 Twitch Drop 개별 코드를 혼합하지 않음.
+- Source Verify 37481955899 SUCCESS.
+- Publish request Verify 37482126893 SUCCESS.
+- Publish Approved Article 37482126815 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Worker version `fd1ba31a-3d63-45a5-9ec9-c177da64bd0b`.
+- Blogger postId `3738858704861232088`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/pokemon-go-2026-10-adidaslego.html
+- Worker 공개 검증 `publicVerified=true`.
+
