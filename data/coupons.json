@@ -1250,5 +1250,507 @@
       "https://m.dcinside.com/board/onlyluckygame/1156108"
     ],
     "note": "2026-10-05 최신 해외 목록에서 활성 후보로 확인. 한국 커뮤니티에서는 1000다이아 코드로 확인되지만 공식 종료일은 검색에서 확인하지 못함."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-2026happynewyear",
+    "code": "2026HAPPYNEWYEAR",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 2
+      },
+      {
+        "name": "신년 추가 보상",
+        "quantity": 1
+      }
+    ],
+    "note": "2026년 신년 코드. 9월 재확인 목록과 10월 최신 코드 목록에 계속 노출."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-2026eatbetter",
+    "code": "2026EATBETTER",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 2
+      },
+      {
+        "name": "성장 세트 24시간",
+        "quantity": 1
+      }
+    ],
+    "note": "2026년 신년 라이브 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-2026letsdance",
+    "code": "2026LETSDANCE",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 2
+      },
+      {
+        "name": "스킬 매뉴얼 박스",
+        "quantity": 2
+      }
+    ],
+    "note": "2026년 신년 라이브 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-2026workharder",
+    "code": "2026WORKHARDER",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 2
+      },
+      {
+        "name": "울트라 부스트 모듈",
+        "quantity": 50
+      }
+    ],
+    "note": "2026년 신년 라이브 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-2026keeptactical",
+    "code": "2026KEEPTACTICAL",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 2
+      },
+      {
+        "name": "버스트 매뉴얼 박스",
+        "quantity": 2
+      }
+    ],
+    "note": "2026년 신년 라이브 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-christmasparty",
+    "code": "NIKKECHRISTMASPARTY",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 10
+      },
+      {
+        "name": "성장 세트 24시간",
+        "quantity": 1
+      },
+      {
+        "name": "Darling for a Day",
+        "quantity": 3
+      },
+      {
+        "name": "울트라 부스트 모듈",
+        "quantity": 50
+      }
+    ],
+    "note": "장기 사용 보고가 이어지는 크리스마스 코드. 공식 종료일 미확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-3yearswithnikke",
+    "code": "3YEARSWITHNIKKE",
+    "rewards": [
+      {
+        "name": "모집 티켓",
+        "quantity": 10
+      }
+    ],
+    "note": "3주년 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-3yearswithcommander",
+    "code": "3YEARSWITHCOMMANDER",
+    "rewards": [
+      {
+        "name": "쥬얼",
+        "quantity": 900
+      },
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 1
+      }
+    ],
+    "note": "3주년 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-punyqueen",
+    "code": "PUNYQUEEN",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 10
+      }
+    ],
+    "note": "캐릭터 이벤트 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-thxfor990000",
+    "code": "thxfor990000",
+    "rewards": [
+      {
+        "name": "성장 상자 1시간",
+        "quantity": 1
+      }
+    ],
+    "note": "커뮤니티 마일스톤 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-stellarblade",
+    "code": "NIKKESTELLARBLADE",
+    "rewards": [
+      {
+        "name": "고급 모집 티켓",
+        "quantity": 5
+      },
+      {
+        "name": "성장 세트 24시간",
+        "quantity": 1
+      },
+      {
+        "name": "Darling for a Day",
+        "quantity": 3
+      },
+      {
+        "name": "울트라 부스트 모듈",
+        "quantity": 50
+      }
+    ],
+    "note": "스텔라 블레이드 협업 코드. 9월 재확인 목록에서 장기 사용 보고."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-30monthstogether",
+    "code": "30MONTHSTOGETHER",
+    "rewards": [
+      {
+        "name": "성장 세트",
+        "quantity": 6
+      },
+      {
+        "name": "모집 티켓",
+        "quantity": 10
+      },
+      {
+        "name": "울트라 부스트 모듈",
+        "quantity": 10
+      },
+      {
+        "name": "스킬 매뉴얼 박스",
+        "quantity": 5
+      },
+      {
+        "name": "프로필 커스텀 팩",
+        "quantity": 50
+      }
+    ],
+    "note": "30개월 기념 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-concert2025",
+    "code": "NIKKECONCERT2025",
+    "rewards": [
+      {
+        "name": "쥬얼",
+        "quantity": 300
+      },
+      {
+        "name": "스페셜 칭호",
+        "quantity": 1
+      }
+    ],
+    "note": "2025 콘서트 코드. 10월 최신 목록에서 계속 입력 후보로 확인."
+  },
+  {
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "승리의 여신: 니케",
+    "category": "게임",
+    "status": "UNVERIFIED",
+    "server": "글로벌/한국 포함, 지역·사용량 제한 가능",
+    "redemptionMethod": "로비 우측 상단 → 공지 → 이벤트 공지 → CD-Key Redemption Portal",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://nikke.gg/cd-keys-guide/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "evidenceMethod": "CURRENT_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+      "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+      "https://nikke-en.com/index.html",
+      "https://discord.gg/nikke-en"
+    ],
+    "id": "nikke-1104",
+    "code": "NIKKE1104",
+    "rewards": [
+      {
+        "name": "크레디트 상자 2시간",
+        "quantity": 1
+      }
+    ],
+    "note": "출시 초기 장기 코드. 10월 최신 목록에서도 입력 후보로 확인."
   }
 ]
