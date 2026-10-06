@@ -1,0 +1,8 @@
+{
+  "hubKeys": [
+    "zeus"
+  ],
+  "approved": true,
+  "requestedAt": "2026-10-06T11:58:30.000Z",
+  "reason": "Retry after fixing shallow checkout in hub refresh workflow. Previous run failed before calling the hub refresh endpoint, so no Blogger PATCH occurred."
+}
