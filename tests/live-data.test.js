@@ -22,3 +22,13 @@ test('특정 계정의 성공 기록은 활성 추천과 구분해 본문에 보
   assert.ok(post.content.includes('서버 범위·전체 계정 조건·만료일은 확인되지 않았습니다.'));
   assert.doesNotMatch(post.content,/workingVerifiedAt|verificationResult|evidenceMethod|쿠폰 확인 기준|활성 추천/);
 });
+
+
+test('제우스 허브는 공식 대표 이미지를 첫 이미지로 1장만 출력한다',()=>{
+  const post=buildHubDraft('zeus',coupons);
+  const imageUrl='https://zeuscommunity-fn.com2us.com/zeuscommunity/public/common/og/og_default.jpg';
+  assert.equal((post.content.match(/data-ncp-featured-image="zeus"/g)||[]).length,1);
+  assert.ok(post.content.includes(imageUrl));
+  assert.ok(post.content.includes('alt="제우스: 오만의 신 공식 대표 이미지"'));
+  assert.ok(post.content.indexOf('<img') < post.content.indexOf('class="ncp-page"'));
+});
