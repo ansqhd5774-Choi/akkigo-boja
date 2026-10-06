@@ -1752,5 +1752,160 @@
       }
     ],
     "note": "출시 초기 장기 코드. 10월 최신 목록에서도 입력 후보로 확인."
+  },
+  {
+    "id": "wuthering-wutheringgift-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "명조:워더링 웨이브",
+    "category": "게임",
+    "code": "WUTHERINGGIFT",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "별의 소리",
+        "quantity": 50
+      },
+      {
+        "name": "특급 공명 촉진제",
+        "quantity": 2
+      },
+      {
+        "name": "중급 회복 흡입제",
+        "quantity": 2
+      },
+      {
+        "name": "중급 에너지 팩",
+        "quantity": 2
+      },
+      {
+        "name": "셸 코인",
+        "quantity": 15000
+      }
+    ],
+    "server": "글로벌/한국 포함",
+    "redemptionMethod": "연각 레벨 2 달성 → 터미널 → 설정 → 기타 설정 → 리딤 코드",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://mobalytics.gg/gamebase/guides/wuthering-waves-codes",
+    "sourceCheckedAt": "2026-10-06T17:42:00.000Z",
+    "verificationResult": "SOURCE_TEXT_ONLY",
+    "evidenceMethod": "CURRENT_OCTOBER_TRACKER_CROSSCHECK",
+    "references": [
+      "https://www.topuplive.com/news/wuthering-waves-codes.html",
+      "https://www.pcgamesn.com/wuthering-waves/codes",
+      "https://www.ldshop.gg/blog/guide/wuthering-waves-codes.html"
+    ],
+    "note": "2026-10-05 최신 목록에서 유일한 현재 작동 코드로 확인. 셸 코인은 출처별 10,000~15,000 표기 차이가 있어 본문에서 범위로 안내. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "wuthering-fallingsanctum-37",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "명조:워더링 웨이브",
+    "category": "게임",
+    "code": "FALLINGSANCTUM",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "별의 소리",
+        "quantity": 100
+      },
+      {
+        "name": "특급 공명 촉진제",
+        "quantity": 3
+      },
+      {
+        "name": "고급 회복 흡입제",
+        "quantity": 2
+      }
+    ],
+    "server": "글로벌/한국 포함",
+    "redemptionMethod": "터미널 → 설정 → 기타 설정 → 리딤 코드",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-09-21T15:59:00.000Z",
+    "sourceUrl": "https://x.com/Wuthering_Waves/status/2101286790791639133",
+    "sourceCheckedAt": "2026-10-06T17:42:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_X_NOTICE",
+    "sourceAuthority": "OFFICIAL",
+    "note": "3.7 프리뷰 공식 방송 코드. 공식 X 기준 2026-09-21 08:59 PT 종료."
+  },
+  {
+    "id": "wuthering-findsentinel-37",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "명조:워더링 웨이브",
+    "category": "게임",
+    "code": "FINDSENTINEL",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "별의 소리",
+        "quantity": 100
+      },
+      {
+        "name": "셸 코인",
+        "quantity": 20000
+      },
+      {
+        "name": "특급 무기 경험치 재료",
+        "quantity": 3
+      }
+    ],
+    "server": "글로벌/한국 포함",
+    "redemptionMethod": "터미널 → 설정 → 기타 설정 → 리딤 코드",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-09-21T15:59:00.000Z",
+    "sourceUrl": "https://x.com/Wuthering_Waves/status/2101286790791639133",
+    "sourceCheckedAt": "2026-10-06T17:42:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_X_NOTICE",
+    "sourceAuthority": "OFFICIAL",
+    "note": "3.7 프리뷰 공식 방송 코드. 공식 X 기준 2026-09-21 08:59 PT 종료."
+  },
+  {
+    "id": "wuthering-wakingmoon-37",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "명조:워더링 웨이브",
+    "category": "게임",
+    "code": "WAKINGMOON",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "별의 소리",
+        "quantity": 100
+      },
+      {
+        "name": "고급 밀봉 튜브",
+        "quantity": 5
+      },
+      {
+        "name": "특급 튜너",
+        "quantity": 20
+      }
+    ],
+    "server": "글로벌/한국 포함",
+    "redemptionMethod": "터미널 → 설정 → 기타 설정 → 리딤 코드",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-09-21T15:59:00.000Z",
+    "sourceUrl": "https://x.com/Wuthering_Waves/status/2101286790791639133",
+    "sourceCheckedAt": "2026-10-06T17:42:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_X_NOTICE",
+    "sourceAuthority": "OFFICIAL",
+    "note": "3.7 프리뷰 공식 방송 코드. 공식 X 기준 2026-09-21 08:59 PT 종료."
   }
 ]
