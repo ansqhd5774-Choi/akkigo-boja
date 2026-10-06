@@ -3348,7 +3348,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
-<b:if cond='data:blog.searchLabel == &quot;게임&quot;'><section class='ncp-r3' id='ncp-game-hub'><h1>게임 쿠폰</h1><div class='ncp-game-grid'/><p role='status' aria-live='polite'>게임 목록을 불러오는 중입니다.</p></section><b:else/>
+<b:if cond='data:blog.searchLabel'><section class='ncp-r3' id='ncp-game-hub' expr:data-category='data:blog.searchLabel'><h1><data:blog.searchLabel/> 쿠폰</h1><div class='ncp-game-grid'/><p role='status' aria-live='polite'>목록을 불러오는 중입니다.</p></section><b:else/>
           <b:include name='noContentPlaceholder'/>
 
           <b:comment>Cap the total number of ads (widgets and inline ads).</b:comment>
@@ -4154,20 +4154,21 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
     <b:template-script async='true' name='indie' version='1.0.0'/>
   <footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><strong>아끼고 보자</strong><a href='/p/blog-page.html'>개인정보 처리 안내</a></div></footer><script type='text/javascript'>//<![CDATA[
 document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
-//]]></script><b:if cond='data:blog.searchLabel == &quot;게임&quot;'><script type='text/javascript'>//<![CDATA[
-// Only mounted by the Blogger game-label condition.
+//]]></script><b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[
+// Only mounted by the Blogger label condition.
 (async function(){
   const root=document.getElementById('ncp-game-hub');
   if(!root)return;
+  const category=root.dataset.category||'게임';
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
   try{
-    const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent('게임')+'?alt=json&max-results=150');
+    const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150');
     if(!response.ok)throw Error('FEED_HTTP');
     const feed=await response.json();
     const seen=new Set();
     for(const entry of feed.feed.entry||[]){
-      const name=(entry.category||[]).map(x=>x.term).find(x=>x!=='게임');
+      const name=(entry.category||[]).map(x=>x.term).find(x=>x!==category)||entry.title?.$t;
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
       if(!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
       seen.add(name);
@@ -4186,7 +4187,8 @@ document.addEventListener('click',async function(event){const button=event.targe
           if(fallback&&fallback!==image.src&&new URL(fallback,location.href).protocol==='https:')image.src=fallback;
         },{once:true});
       }
-      wrap.append(image);
+      if(src)wrap.append(image);
+      else{wrap.textContent=name.slice(0,2);wrap.setAttribute('aria-hidden','true');}
       const title=document.createElement('strong');title.className='ncp-game-name';title.textContent=name;
       const date=document.createElement('span');date.className='ncp-game-updated';
       const updated=new Date(entry.updated?.$t);
@@ -4196,8 +4198,8 @@ document.addEventListener('click',async function(event){const button=event.targe
       }else date.textContent='업데이트 날짜 미확인';
       card.append(wrap,title,date);grid.append(card);
     }
-    status.textContent=grid.children.length?'':'등록된 게임이 없습니다.';
-  }catch{status.textContent='게임 목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
+    status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
+  }catch{status.textContent='목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
 })();
 
 

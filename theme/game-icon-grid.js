@@ -1,16 +1,17 @@
-// Only mounted by the Blogger game-label condition.
+// Only mounted by the Blogger label condition.
 (async function(){
   const root=document.getElementById('ncp-game-hub');
   if(!root)return;
+  const category=root.dataset.category||'게임';
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
   try{
-    const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent('게임')+'?alt=json&max-results=150');
+    const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150');
     if(!response.ok)throw Error('FEED_HTTP');
     const feed=await response.json();
     const seen=new Set();
     for(const entry of feed.feed.entry||[]){
-      const name=(entry.category||[]).map(x=>x.term).find(x=>x!=='게임');
+      const name=(entry.category||[]).map(x=>x.term).find(x=>x!==category)||entry.title?.$t;
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
       if(!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
       seen.add(name);
@@ -29,7 +30,8 @@
           if(fallback&&fallback!==image.src&&new URL(fallback,location.href).protocol==='https:')image.src=fallback;
         },{once:true});
       }
-      wrap.append(image);
+      if(src)wrap.append(image);
+      else{wrap.textContent=name.slice(0,2);wrap.setAttribute('aria-hidden','true');}
       const title=document.createElement('strong');title.className='ncp-game-name';title.textContent=name;
       const date=document.createElement('span');date.className='ncp-game-updated';
       const updated=new Date(entry.updated?.$t);
@@ -39,7 +41,7 @@
       }else date.textContent='업데이트 날짜 미확인';
       card.append(wrap,title,date);grid.append(card);
     }
-    status.textContent=grid.children.length?'':'등록된 게임이 없습니다.';
-  }catch{status.textContent='게임 목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
+    status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
+  }catch{status.textContent='목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
 })();
 
