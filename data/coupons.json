@@ -326,5 +326,31 @@
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
     "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "browndust2-2026bd2oct-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "브라운더스트2",
+    "category": "게임",
+    "code": "2026BD2OCT",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "1회 뽑기권",
+        "quantity": 3
+      }
+    ],
+    "server": "계정당 쿠폰 1회 사용 가능",
+    "redemptionMethod": "Android: 기타 → 쿠폰 등록 / iOS: 공식 쿠폰 입력 페이지",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-31T14:59:00.000Z",
+    "sourceUrl": "https://game.naver.com/lounge/BROWNDUST2/board/detail/8263310",
+    "sourceCheckedAt": "2026-10-06T11:25:00.000Z",
+    "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
+    "note": "쿠폰 코드·사용 기간·입력 경로·계정당 1회 조건은 공식 라운지 및 공식 영문 채널에서 확인. 보상 수량은 공개 쿠폰 DB 2곳에서 교차 확인했으며 공식 공지 텍스트에는 세부 수량이 직접 표기되지 않음. 실제 계정 사용 성공은 별도 확인하지 않음."
   }
 ]
