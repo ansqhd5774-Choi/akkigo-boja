@@ -924,5 +924,149 @@
     ],
     "note": "2026-10-07 기준 최근 목록과 메이플 키우기 방송 설명에서 코드, 미라클 큐브 50개, 2026-10-07 23:59 KST 만료를 교차 확인. 넥슨 공식 공지 원문은 검색에서 직접 확인하지 못함.",
     "sourceAuthority": "UNOFFICIAL"
+  },
+  {
+    "id": "kingshot-kingshot888-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "킹샷",
+    "category": "게임",
+    "code": "Kingshot888",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 200
+      },
+      {
+        "name": "신화 정복 스킬북",
+        "quantity": 2
+      },
+      {
+        "name": "신화 원정 스킬 매뉴얼",
+        "quantity": 2
+      },
+      {
+        "name": "골드 키",
+        "quantity": 2
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 게임 내 Profile → Settings → Gift Code",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://kingshotintel.com/gift-codes",
+    "sourceCheckedAt": "2026-10-06T16:40:00.000Z",
+    "evidenceMethod": "CURRENT_CODE_TRACKER_AND_REWARD_CROSSCHECK",
+    "references": [
+      "https://www.pockettactics.com/kingshot/codes",
+      "https://www.gamsgo.com/blog/kingshot-gift-code",
+      "https://ks-giftcode.centurygame.com/"
+    ],
+    "note": "2026-10-06 최신 추적에서 활성 코드로 확인. 보상 구성은 최근 독립 출처에서 교차 확인. 공식 종료일은 공개되지 않음."
+  },
+  {
+    "id": "kingshot-ks1005-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "킹샷",
+    "category": "게임",
+    "code": "KS1005",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "게임 내 보상 묶음",
+        "quantity": 1
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 게임 내 Profile → Settings → Gift Code",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-07T23:59:00.000Z",
+    "sourceUrl": "https://kingshotintel.com/gift-codes",
+    "sourceCheckedAt": "2026-10-06T16:40:00.000Z",
+    "evidenceMethod": "CURRENT_CODE_TRACKER_AND_COMMUNITY_CROSSCHECK",
+    "references": [
+      "https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/",
+      "https://ks-giftcode.centurygame.com/"
+    ],
+    "note": "2026-10-06 최신 추적에서 활성, 2026-10-07 23:59 UTC 만료로 확인. 공개 텍스트에서 상세 보상 구성은 확인되지 않음."
+  },
+  {
+    "id": "kingshot-welldone-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "킹샷",
+    "category": "게임",
+    "code": "WELLDONE",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "게임 내 보상 묶음",
+        "quantity": 1
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 게임 내 Profile → Settings → Gift Code",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-10T23:59:00.000Z",
+    "sourceUrl": "https://kingshotintel.com/gift-codes",
+    "sourceCheckedAt": "2026-10-06T16:40:00.000Z",
+    "evidenceMethod": "CURRENT_CODE_TRACKER_AND_SOCIAL_CROSSCHECK",
+    "references": [
+      "https://www.instagram.com/p/DeHKMUMHUe8/",
+      "https://www.facebook.com/61560003321785/posts/122262978884333444/",
+      "https://ks-giftcode.centurygame.com/"
+    ],
+    "note": "2026-10-06 최신 추적에서 활성, 2026-10-10 23:59 UTC 만료로 확인. 소셜 검색 결과에서도 같은 기한을 교차 확인. 상세 보상 구성은 공개 텍스트에서 확인되지 않음."
+  },
+  {
+    "id": "kingshot-vip777-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "킹샷",
+    "category": "게임",
+    "code": "VIP777",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 200
+      },
+      {
+        "name": "신화 정복 스킬북",
+        "quantity": 2
+      },
+      {
+        "name": "신화 원정 스킬 매뉴얼",
+        "quantity": 2
+      },
+      {
+        "name": "골드 키",
+        "quantity": 2
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 게임 내 Profile → Settings → Gift Code",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+    "sourceCheckedAt": "2026-10-06T16:40:00.000Z",
+    "evidenceMethod": "RECENT_OCTOBER_LIST_CROSSCHECK",
+    "references": [
+      "https://www.pockettactics.com/kingshot/codes",
+      "https://www.topuplive.com/news/kingshot-gift-codes-november-2025.html"
+    ],
+    "note": "10월 5일 목록에는 활성으로 확인됐으나 10월 6일 최신 추적에서는 빠짐. 실패 가능성을 감안한 추가 시도 코드로만 안내."
   }
 ]
