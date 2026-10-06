@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [codex/blogger-worker-r1]
-    paths: [src/**, data/**, migrations/**, wrangler.jsonc, package.json, pnpm-lock.yaml, pnpm-workspace.yaml, .github/workflows/deploy.yml]
+    paths: [src/**, data/**, theme/assets/**, migrations/**, wrangler.jsonc, package.json, pnpm-lock.yaml, pnpm-workspace.yaml, .github/workflows/deploy.yml]
 permissions:
   contents: read
 concurrency:

@@ -4,6 +4,7 @@
   "main": "src/worker.js",
   "compatibility_date": "2026-10-05",
   "workers_dev": true,
+  "assets": { "directory": "theme/assets" },
   "vars": {
     "BLOGGER_BLOG_ID": "2339978524893611480",
     "BLOGGER_PUBLIC_URL": "https://lsifl.blogspot.com",
