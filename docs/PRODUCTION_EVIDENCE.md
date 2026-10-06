@@ -279,3 +279,19 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - Worker version `b98345e9-ec70-4b3c-bd56-9e93bda9d1af`.
 - 공개 페이지 직접 검증: Google Play 공식 이미지가 실제 `image_links`에 존재하며 Blogger `og:image`가 `w1200-h630-p-k-no-nu` 형태로 생성됨.
 - 목록 Jump Break 이전에는 리딤코드와 스크립트를 노출하지 않음.
+
+## 트립닷컴 여행·숙박 첫 글 발행 · 2026-10-06
+- 첫 여행·숙박 편집 콘텐츠로 트립닷컴 호텔 할인 글을 발행.
+- articleKey `tripcom-hotel-coupons-202610`.
+- 제목: `트립닷컴 호텔 할인쿠폰 (2026년 10월) | 12%·신한카드 최대 20% 숙박 할인`.
+- 공식 근거를 서로 다른 조건으로 분리: Trip Chance 시크릿 호텔 12%·최대 5만원, 신한카드 회원 전용 최대 20%, 일반 호텔 페이지 최대 10% 및 앱 5%·최대 8,200원 표시.
+- Trip Chance는 최근 15일 이내 항공 예약 고객·매일 11시 선착순·2026-10-25까지·숙박 2027-03-31까지·KRW 결제 조건을 글에 반영.
+- 신한카드 프로모션은 대상 카드·전용 한국어 모바일 웹/앱·온라인 결제 호텔·예약 2026-10-31까지·체크인 2026-12-31까지·다른 할인/트립코인 중복 불가 조건을 반영.
+- 해당 글은 공식 프로모션 조건을 설명하는 공개 콘텐츠이며 `data/coupons.json` 여행 항목을 ACTIVE로 승격하지 않았다. 실제 계정별 발급·결제 성공을 전체 작동 성공으로 일반화하지 않는다.
+- Source Verify 37474248595 SUCCESS. Publish request Verify 37474389907 SUCCESS.
+- Publish Approved Article 37474389929 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Worker version `b15090d3-ec88-4015-88d8-281ae518c961`.
+- Blogger postId `4890842832327492354`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10-12-20.html
+- Worker 공개 검증 `publicVerified=true`.
+
