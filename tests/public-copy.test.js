@@ -29,6 +29,7 @@ const publicFiles=[
   '../drafts/nomad-esim-promo-202610.html',
   '../drafts/jetpac-esim-promo-202610.html',
   '../drafts/yesim-esim-promo-202610.html',
+  '../drafts/maya-mobile-esim-promo-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
