@@ -190,3 +190,18 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - Worker version `f5b828f7-d2f7-4ad3-b8f7-bf16f767f0b9`.
 - 공개 페이지 직접 확인: Kuro Games 공식 이미지 URL이 실제 `image_links`에 존재.
 - Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 외부 이미지를 Blogger `lh3.googleusercontent.com/blogger_img_proxy`로 프록시한 URL로 생성됨. 따라서 본문 첫 이미지와 Blogger 대표/소셜 이미지 인식까지 확인.
+
+
+## 시바 모험단 대표 이미지 1장 적용 · 2026-10-06
+- 대상 기존 글: https://lsifl.blogspot.com/2026/10/pick7p2y.html
+- 기존 Blogger postId `4686430079776725627`와 URL 유지.
+- 최초 WithHive 공식 커뮤니티 `og:image`(`hive-fn.qpyou.cn`) 적용은 Blogger UPDATE 자체는 성공했으나 공개 `image_links`/ `og:image`에 남지 않아 대표 이미지 적용 실패로 판정.
+- 대체 원천: Google Play의 공식 시바 모험단 앱 페이지가 `og:image`로 사용하는 `play-lh.googleusercontent.com` 이미지.
+- 구현: 기존 글 상세 본문의 Jump Break 뒤 첫 이미지로 `data-ncp-featured-image="shibarpg"` 이미지 1장 삽입. 목록 미리보기의 쿠폰 코드 비노출 구조와 Blogger 테마는 변경하지 않음.
+- 초기 소스 Verify는 테스트 정규식 URL 이스케이프 오류 및 변수 누락을 각각 수정한 뒤 Verify 37463118042 SUCCESS.
+- Google Play 이미지 교체 Source Verify 37463536394 SUCCESS, Deploy Worker 37463536545 SUCCESS.
+- 최종 Publish Approved Article 37463654369 SUCCESS. 기존 postId/URL 유지, publicVerified=true.
+- Publish commit Verify 37463654545 SUCCESS.
+- Worker version `c04f4f74-f850-4d03-8055-ca58c2bf1dc0`.
+- 공개 페이지 직접 확인: Google Play 공식 이미지 URL이 실제 `image_links`에 존재.
+- Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 Google Play 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성. 따라서 본문 대표 이미지와 소셜 대표 이미지 인식까지 확인.
