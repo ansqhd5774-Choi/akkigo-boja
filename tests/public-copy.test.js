@@ -15,6 +15,7 @@ const publicFiles=[
   '../drafts/blue-archive-codes-202610.html',
   '../drafts/tripcom-hotel-coupons-202610.html',
   '../drafts/dominos-discounts-202610.html',
+  '../drafts/pokemon-go-codes-202610.html',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
 ];
