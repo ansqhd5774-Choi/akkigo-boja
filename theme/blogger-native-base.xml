@@ -3310,6 +3310,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
+<b:if cond='data:blog.searchLabel == &quot;게임&quot;'><section class='ncp-r3' id='ncp-game-hub'><h1>게임 쿠폰</h1><div class='ncp-game-grid'/><p role='status' aria-live='polite'>게임 목록을 불러오는 중입니다.</p></section><b:else/>
           <b:include name='noContentPlaceholder'/>
 
           <b:comment>Cap the total number of ads (widgets and inline ads).</b:comment>
@@ -3325,7 +3326,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
           </b:with>
           </b:with>
           </b:with>
-        </b:includable>
+        </b:if></b:includable>
                     <b:includable id='aboutPostAuthor'>
   <div class='author-name'>
     <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>

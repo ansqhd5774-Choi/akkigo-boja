@@ -2,6 +2,8 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {escapeHtml as e} from '../src/coupons.js';
 const root=new URL('../',import.meta.url);
 const base=await readFile(new URL('theme/blogger-native-base.xml',root),'utf8');
+const gameCss=await readFile(new URL('theme/game-icon-grid.css',root),'utf8');
+const gameScript=await readFile(new URL('theme/game-icon-grid.js',root),'utf8');
 const categories=['게임','여행·숙박','배달·외식','쇼핑·오픈마켓','식품·마트·편의점','뷰티·화장품','패션·신발·잡화','전자·가전·IT','건강·영양·헬스','생활·가구·인테리어','문화·공연·레저','구독·OTT','소프트웨어·AI','반려동물','육아·키즈','교육·강의','자동차·용품'];
 const coupons=JSON.parse(await readFile(new URL('data/coupons.json',root),'utf8'));
 const manual=coupons.filter(c=>c.verificationResult==='SUCCESS');
@@ -21,6 +23,7 @@ const footer=`<footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><str
 const script=`<script type='text/javascript'>//<![CDATA[
 document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
 //]]></script>`;
-const output=base.replace(']]></b:skin>',css+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/>${header}${home}`).replace('</body>',footer+script+'</body>');
+const gameMount=`<b:if cond='data:blog.searchLabel == &quot;게임&quot;'><script type='text/javascript'>//<![CDATA[\n${gameScript}\n//]]></script></b:if>`;
+const output=base.replace(']]></b:skin>',css+gameCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/>${header}${home}`).replace('</body>',footer+script+gameMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output);
 console.log('R3 theme generated using native Blogger widget base.');
