@@ -87,3 +87,17 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 상세 본문에 data-ncp-feed-preview 표식과 최신 상세 UI가 존재하며 publicVerified=true.
 - 목록 요약에는 코드 pick7p2y와 JavaScript를 넣지 않고, 확인된 쿠폰 수·보상·만료만 배치했다.
 - 최신 목록 테마 source는 검증됐지만 Blogger 관리자 저장은 아직 확인되지 않았다. 따라서 공개 라벨/검색 목록의 새 카드 반영은 별도 PENDING이다.
+
+
+## 컴투스프로야구V26 신규 쿠폰 글 공개 · 2026-10-06
+- 공식 원천: 컴투스프로야구V26 공식 커뮤니티 `쿠폰 모아보기` 2026-10-02 최신화.
+- 중복 확인: 저장소 및 공개 검색에서 동일 검색 의도 글 없음.
+- 쿠폰 6개 저장: STARTWITHGENIE / TRAININGSTART / V26STARTPACK / CPBVFULLMOON / V26A7K9P3XQ2 / CPBVKDYPARTY.
+- 쿠폰 데이터는 공식 코드·보상·사용기한·입력 경로 확인 상태이며, 실제 계정 사용 성공은 별도 확인하지 않아 내부 상태 `UNVERIFIED` 유지.
+- Verify 37452904029 SUCCESS, 후속 Publish commit Verify 37453006019 SUCCESS, 최종 Publish commit Verify 37453216474 SUCCESS.
+- Publish Approved Article 37453216445: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Worker version `1f9afd25-5a2e-46bd-a301-3bc0a4b8c1fb`.
+- Blogger postId `4618248412018847849`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/v26-2026-10.html
+- Worker 공개 검증 `publicVerified=true`.
+- 목록 미리보기에는 쿠폰 코드를 넣지 않고 확인된 쿠폰 수·다음 만료·최장 만료만 표시.
