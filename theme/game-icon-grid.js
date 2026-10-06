@@ -19,7 +19,16 @@
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
       const src=content.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url;
-      if(src&&new URL(src,location.href).protocol==='https:')image.src=src;
+      image.referrerPolicy='no-referrer';
+      if(src&&new URL(src,location.href).protocol==='https:'){
+        const iconUrl=new URL(src,location.href);
+        if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '=w240-h240-rw');
+        image.src=iconUrl.href;
+        image.addEventListener('error',()=>{
+          const fallback=entry.media$thumbnail?.url;
+          if(fallback&&fallback!==image.src&&new URL(fallback,location.href).protocol==='https:')image.src=fallback;
+        },{once:true});
+      }
       wrap.append(image);
       const title=document.createElement('strong');title.className='ncp-game-name';title.textContent=name;
       const date=document.createElement('span');date.className='ncp-game-updated';
@@ -33,3 +42,4 @@
     status.textContent=grid.children.length?'':'등록된 게임이 없습니다.';
   }catch{status.textContent='게임 목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
 })();
+
