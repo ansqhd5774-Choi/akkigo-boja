@@ -11,6 +11,7 @@ const publicFiles=[
   '../drafts/trickcal-revive-codes-202610.html',
   '../drafts/browndust2-codes-202610.html',
   '../drafts/genshin-codes-202610.html',
+  '../drafts/honkai-star-rail-codes-202610.html',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml'
 ];

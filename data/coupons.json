@@ -382,5 +382,42 @@
     "sourceCheckedAt": "2026-10-06T11:20:00.000Z",
     "evidenceMethod": "OFFICIAL_REDEEM_PAGE_AND_SPONSORED_GENSHIN_PROMOTION",
     "note": "원신 제공 프로모션 설명에서 코드·원석20·구현의 수정160·2026-11-04 01:00 만료를 확인. HoYoverse 공식 쿠폰 교환 페이지와 공식 리딤코드 안내에서 등록/우편 수령 구조를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "hsr-starrailgift-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "붕괴: 스타레일",
+    "category": "게임",
+    "code": "STARRAILGIFT",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "성옥",
+        "quantity": 50
+      },
+      {
+        "name": "신용 포인트",
+        "quantity": 10000
+      },
+      {
+        "name": "여행 가이드",
+        "quantity": 2
+      },
+      {
+        "name": "캔 소다",
+        "quantity": 5
+      }
+    ],
+    "server": "글로벌 서버",
+    "redemptionMethod": "HoYoverse 공식 리딤코드 교환 페이지 또는 게임 내 휴대폰 메뉴 → ··· → 리딤코드",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.hoyolab.com/article/46765148",
+    "sourceCheckedAt": "2026-10-06T13:05:00.000Z",
+    "evidenceMethod": "OFFICIAL_REDEEM_PAGE_AND_HOYOLAB_RECENT_CODE_CROSSCHECK",
+    "note": "HoYoLAB의 2026-09-20 리딤코드 정리에서 STARRAILGIFT 보상과 1계정 1회 조건을 확인했고, HoYoverse 공식 교환 페이지에서 로그인·서버 선택·우편 수령 구조를 확인. 2026-10-06 최신 코드 목록에서 계속 사용 가능으로 교차 확인했으나 실제 계정 사용 성공은 별도 확인하지 않았고 운영사 만료일은 공개되지 않음."
   }
 ]
