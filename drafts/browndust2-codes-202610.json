@@ -19,6 +19,12 @@
       "https://browndust2-db.souseha.com/ko/"
     ]
   },
-  "publicationStatus": "PENDING",
-  "publication": null
+  "publicationStatus": "LIVE",
+  "publication": {
+    "postId": "1806229069030793005",
+    "url": "https://lsifl.blogspot.com/2026/10/2-2026-10.html",
+    "publishedAt": "2026-10-06T11:26:25.413Z",
+    "publicVerified": true,
+    "workflowRunId": 37456353584
+  }
 }

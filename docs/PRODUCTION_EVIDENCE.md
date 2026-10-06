@@ -116,3 +116,19 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10.html
 - Worker 공개 검증 `publicVerified=true`.
 - 목록 미리보기에는 쿠폰 코드를 넣지 않고 쿠폰 수·대표 보상·만료 정보만 표시.
+
+
+## 브라운더스트2 신규 쿠폰 글 공개 · 2026-10-06
+- 중복 확인: 저장소 및 공개 검색에서 동일 검색 의도 글 없음.
+- 공식 10월 월간 쿠폰 코드 `2026BD2OCT` 확인. Android 게임 내 [기타] → [쿠폰 등록], 공식 웹 쿠폰 입력 페이지 경로 및 계정당 1회 조건 확인.
+- 보상 `1회 뽑기권 3개`는 공개 쿠폰 DB 2곳에서 교차 확인. 공식 라운지 접근 텍스트에는 보상 수량이 직접 노출되지 않아 실제 계정 사용 성공과 함께 내부 상태는 `UNVERIFIED` 유지.
+- 사용기한: 2026-10-31 23:59 KST.
+- 최초 Publish 37455890507 / Verify 37455890549는 `sourceCheckedAt`이 CI 실행시각보다 미래로 저장되어 `INVALID_CHECK_TIME`에서 실패. Blogger/D1/Worker 변경 단계 진입 전 중단되어 공개 mutation 없음.
+- 확인 시각 정정 후 Verify 37456270052 SUCCESS.
+- 재발행 Publish Approved Article 37456353584 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- 동시 Verify 37456353797 SUCCESS.
+- Worker version `1b080005-d68e-4122-afe2-d3f4706e0b4d`.
+- Blogger postId `1806229069030793005`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2-2026-10.html
+- Worker 공개 검증 `publicVerified=true`.
+- 목록 미리보기에는 쿠폰 코드를 넣지 않고 쿠폰 수·보상·만료 정보만 표시.

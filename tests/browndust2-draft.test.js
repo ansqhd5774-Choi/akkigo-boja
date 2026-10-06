@@ -20,7 +20,11 @@ test('브라운더스트2 공개 글은 코드·보상·만료·복사·플랫�
   const draft=JSON.parse(readFileSync(new URL('../drafts/browndust2-codes-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/browndust2-codes-202610.html',import.meta.url),'utf8');
   assert.equal(draft.articleKey,'browndust2-codes-202610');
-  assert.equal(draft.publicationStatus,'PENDING');
+  assert.equal(draft.publicationStatus,'LIVE');
+  assert.equal(draft.publication.postId,'1806229069030793005');
+  assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2-2026-10.html');
+  assert.equal(draft.publication.publicVerified,true);
+  assert.equal(draft.publication.workflowRunId,37456353584);
   assert.equal(draft.post.content,html.trim());
   assert.deepEqual(draft.post.labels,['게임','브라운더스트2']);
   assert.match(html,/2026BD2OCT/);
