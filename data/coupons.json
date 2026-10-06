@@ -533,5 +533,18 @@
     "sourceCheckedAt": "2026-10-06T14:42:00.000Z",
     "evidenceMethod": "CURRENT_CODE_TRACKER_AND_OFFICIAL_REDEMPTION_PAGE",
     "note": "10월 최신 코드 목록과 Pokémon GO 소셜 미러에서 코드·보상을 교차 확인. 공식 종료일은 확인되지 않았고 실제 계정 사용 성공도 별도 확인하지 않음."
+  },
+  {
+    "id": "brawl-stars-october-freebies-202610",
+    "brand": "브롤스타즈",
+    "category": "게임",
+    "offerType": "FREEBIE",
+    "status": "UNVERIFIED",
+    "platform": "ALL",
+    "member": "ALL",
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.eurogamer.net/brawl-stars-qr-codes",
+    "sourceCheckedAt": "2026-10-06T15:32:00.000Z",
+    "note": "2026-10-07 기준 현재 보상 목록에서 브롤스타즈 공식 link.brawlstars.com 보상 링크 5개를 확인. 실제 계정 수령 성공과 각 링크 만료일은 별도 확인하지 않음."
   }
 ]
