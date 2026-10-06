@@ -1,0 +1,8 @@
+{
+  "hubKeys": [
+    "lineagem"
+  ],
+  "approved": true,
+  "requestedAt": "2026-10-06T12:05:30.000Z",
+  "reason": "User requested the same single representative-image treatment for the existing Lineage M hub post. Preserve the existing postId and URL."
+}
