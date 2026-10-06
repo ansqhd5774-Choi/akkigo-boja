@@ -320,3 +320,23 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 검증: 본문에서 코드·청휘석 300개·만료·Android/웹 입력 경로 확인.
 - 공개 이미지 검증: Google Play 공식 이미지가 실제 `image_links`에 존재하고 Blogger `og:image`가 동일 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성.
 - 기존 글 URL/postId 변경 없음. 신규 게임 대표 글 1건만 생성.
+
+## 도미노피자 배달·외식 첫 글 발행 · 2026-10-06
+- 첫 배달·외식 편집 콘텐츠로 도미노피자 10월 할인 글을 발행.
+- articleKey `dominos-discounts-202610`.
+- 제목: `도미노피자 할인쿠폰 (2026년 10월) | KT 50%·배달 25%·페이코인 20%`.
+- 공식 도미노 원천에서 조건을 분리 확인: KT 달.달.혜택 50%는 웹/앱 방문포장 전용, 유독+Google AI PRO 25%는 자사 배달/포장 가능, 페이코인 앱 결제는 추가 최대 20%.
+- 배달 주문용 유독 25%는 배달비 제외 15,000원 이상, 일부 메뉴 제외, 다른 쿠폰·제휴·배달비 할인과 중복 불가 조건을 반영.
+- KT 50%는 2026-10-01~10-31, 최초 구매금액 25,000원 이상 45,000원까지, 달.달. 초이스 통합 월 1회 조건을 반영.
+- 페이코인 공식 안내는 1일 1회 최대 10,000원 할인, 1회 결제 100,000원 한도, 카드사 선결제 할인 중복 제외 조건을 반영.
+- 목요일 Special Day와 일요일 1+1은 일부 매장 한정 방문포장 혜택으로 별도 표기.
+- Source Verify 37479203246 SUCCESS.
+- Deploy Worker 37479197919 SUCCESS.
+- Publish Approved Article 37479316435 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Worker version `010786a4-bcac-4369-9bde-fdc94746b9c3`.
+- Blogger postId `7405079239530908341`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10-kt-50-25-20.html
+- Worker 공개 검증 `publicVerified=true`.
+- 이 글은 공식 프로모션 조건을 정리한 공개 콘텐츠이며 `data/coupons.json`의 배달·외식 항목을 ACTIVE로 승격한 것은 아니다.
+- Firecrawl 현재 크레딧: remainingCredits=-1000 / planCredits=1000. 이번 원천 조사는 Firecrawl 반복 호출 없이 일반 웹 검색의 공식 도미노 페이지로 대체.
+
