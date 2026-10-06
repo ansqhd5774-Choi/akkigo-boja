@@ -18,7 +18,12 @@ test('원신 10월 프로모션 리딤코드는 코드·보상·만료 조건을
 test('원신 공개 글은 리딤코드·원석 보상·만료·복사·공식 교환 경로를 제공한다',()=>{
   const draft=JSON.parse(readFileSync(new URL('../drafts/genshin-codes-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/genshin-codes-202610.html',import.meta.url),'utf8');
+  const imageUrl='https://play-lh.googleusercontent.com/PQEqjOxr-3uZaNHmWoQinLVQQ9fbSegMKXmqgFm5nGgagqC2REH-1er3BguYStWbH3YStijj5WH1DDlwPh2ehw=s0-br30';
   assert.equal(draft.articleKey,'genshin-codes-202610');
+  assert.equal((html.match(/data-ncp-featured-image="genshin"/g)||[]).length,1);
+  assert.ok(html.includes(imageUrl));
+  assert.ok(html.includes('alt="원신 공식 대표 이미지"'));
+  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'7068598989400675288');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html');
