@@ -18,6 +18,12 @@
       "https://sites.google.com/mihoyo.com/hoyoland2026/"
     ]
   },
-  "publicationStatus": "PENDING",
-  "publication": null
+  "publicationStatus": "LIVE",
+  "publication": {
+    "postId": "7068598989400675288",
+    "url": "https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html",
+    "publishedAt": "2026-10-06T11:41:42.372Z",
+    "publicVerified": true,
+    "workflowRunId": 37458048452
+  }
 }

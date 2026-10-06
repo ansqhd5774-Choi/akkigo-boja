@@ -132,3 +132,20 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/2-2026-10.html
 - Worker 공개 검증 `publicVerified=true`.
 - 목록 미리보기에는 쿠폰 코드를 넣지 않고 쿠폰 수·보상·만료 정보만 표시.
+
+
+## 원신 신규 리딤코드 글 공개 · 2026-10-06
+- 게임 선정 기준을 인지도 우선으로 변경한 뒤 원신을 다음 신규 글 대상으로 선정.
+- 저장소 및 기존 공개 게시물에서 동일 검색 의도 글과 코드 `6LS3F3LS5K87` 중복 없음 확인.
+- 코드 `6LS3F3LS5K87`: 원석 20개 + 구현의 수정 160개.
+- 원신 제공 프로모션 설명에서 코드·보상·유효기간(2026-11-04 01:00 KST)을 확인하고, HoYoverse 공식 쿠폰 교환 페이지 및 공식 리딤코드 안내에서 등록/우편 수령 경로를 대조.
+- 보상/기간 정보가 엇갈리는 다른 10월 코드는 본문에서 제외. 실제 계정 사용 성공은 별도 확인하지 않아 내부 상태 `UNVERIFIED` 유지.
+- Article source Verify 37457962294 SUCCESS.
+- Deploy Worker 37457962104 SUCCESS.
+- Publish Approved Article 37458048452 SUCCESS: tests PASS, D1 migration PASS, Worker deploy PASS, OIDC PASS, Blogger 공개 발행 PASS.
+- Publish commit Verify 37458048435 SUCCESS.
+- Worker version `723757ea-7556-47a9-b849-02817d21d71c`.
+- Blogger postId `7068598989400675288`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html
+- Worker 공개 검증 `publicVerified=true`.
+- 목록 미리보기에는 실제 리딤코드를 넣지 않고 확인된 코드 수·원석 보상·만료 정보만 표시.

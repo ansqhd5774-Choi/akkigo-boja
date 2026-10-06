@@ -19,7 +19,11 @@ test('원신 공개 글은 리딤코드·원석 보상·만료·복사·공식 �
   const draft=JSON.parse(readFileSync(new URL('../drafts/genshin-codes-202610.json',import.meta.url),'utf8'));
   const html=readFileSync(new URL('../drafts/genshin-codes-202610.html',import.meta.url),'utf8');
   assert.equal(draft.articleKey,'genshin-codes-202610');
-  assert.equal(draft.publicationStatus,'PENDING');
+  assert.equal(draft.publicationStatus,'LIVE');
+  assert.equal(draft.publication.postId,'7068598989400675288');
+  assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html');
+  assert.equal(draft.publication.publicVerified,true);
+  assert.equal(draft.publication.workflowRunId,37458048452);
   assert.equal(draft.post.content,html.trim());
   assert.deepEqual(draft.post.labels,['게임','원신']);
   assert.match(html,/6LS3F3LS5K87/);
