@@ -1,0 +1,6 @@
+{
+  "articleKey": "maya-mobile-esim-promo-202610",
+  "approved": true,
+  "requestedAt": "2026-10-06T20:00:00.000Z",
+  "reason": "Retry publish trigger because prior request commit created no workflow run and public article is absent."
+}
