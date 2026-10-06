@@ -149,3 +149,18 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html
 - Worker 공개 검증 `publicVerified=true`.
 - 목록 미리보기에는 실제 리딤코드를 넣지 않고 확인된 코드 수·원석 보상·만료 정보만 표시.
+
+
+## 제우스 대표 이미지 1장 시험 적용 · 2026-10-06
+- 대상 기존 글: https://lsifl.blogspot.com/2026/10/blog-post.html
+- 기존 Blogger postId `3930155855793382902`와 URL 유지.
+- 대표 이미지 원천: 제우스 공식 사이트가 정식 오픈 공지의 `og:image`로 사용하는 `https://zeuscommunity-fn.com2us.com/zeuscommunity/public/common/og/og_default.jpg`.
+- 구현: `src/hubs.js`의 `zeus` 허브에만 `data-ncp-featured-image="zeus"` 이미지 1장을 본문 첫 이미지로 추가. 리니지M·명조·Blogger 테마 변경 없음.
+- Source Verify 37459642624 SUCCESS, Deploy Worker 37459642821 SUCCESS.
+- 최초 hub refresh 37459732029는 Blogger 호출 전 `fatal: bad revision 'HEAD^'`로 실패. 원인은 publish workflow의 checkout depth=1에서 부모 커밋을 조회하려 한 것. 공개 mutation 없음.
+- 재발 방지: `.github/workflows/publish-article.yml` checkout을 `fetch-depth: 2`로 변경하고 `tests/publish-workflow.test.js` 회귀 검사 추가. Verify 37459903495 SUCCESS.
+- 재시도 hub refresh 37459990169 SUCCESS: `status=UPDATED`, postId `3930155855793382902`, 기존 URL 유지.
+- 재시도 커밋 Verify 37459990156 SUCCESS.
+- Worker version `64170430-ff91-4f8b-993d-0f78ce126640`.
+- 공개 페이지 직접 확인: 공식 제우스 이미지 URL이 실제 `image_links`에 존재.
+- Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 외부 이미지를 Blogger `lh3.googleusercontent.com/blogger_img_proxy`로 프록시한 URL로 생성됨. 따라서 본문 첫 이미지뿐 아니라 Blogger 대표/소셜 이미지 인식까지 확인.
