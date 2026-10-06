@@ -1,3 +1,4 @@
+import {couponLifecycle} from './coupon-lifecycle.js';
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 
 export const OFFER_TYPES = ['CODE','AUTO_DISCOUNT','CARD_CHANNEL','MEMBER','CASHBACK','REFERRAL','GAME_REDEEM','FREEBIE'];
@@ -130,8 +131,12 @@ export function rankCoupons(coupons, {amount, member, platform}, now = Date.now(
 }
 
 export function renderHub(brand, coupons, now = Date.now()) {
-  const items = coupons.map(c => validateCoupon(c, now)).filter(c => c.brand === brand && ['ACTIVE','EXPIRING_SOON'].includes(c.status) && (endMode(c) !== 'FIXED_DATE' || Date.parse(c.expiresAt) > now));
-  return `<div class="ncp-page" data-ncp-page><div class="ncp-wrap"><h1>${escapeHtml(brand)} 쿠폰</h1>${items.length ? items.map(c => renderOffer(c)).join('') : '<section class="ncp-empty-verified"><h2>현재 확인된 사용 가능 쿠폰이 없습니다.</h2><p>새 쿠폰이 확인되면 이 페이지에 추가됩니다.</p></section>'}</div></div>`;
+  const selected = coupons.filter(c=>c.brand===brand);
+  const {current,history} = couponLifecycle(selected,now);
+  const currentHtml=current.map(c=>renderOffer(c,now)).join('');
+  const historyHtml=history.map(c=>renderOffer(c,now,true)).join('');
+  return `<div class="ncp-page" data-ncp-page><div class="ncp-wrap"><h1>${escapeHtml(brand)} 쿠폰</h1><section data-ncp-current><h2>현재 쿠폰 ${current.length}개</h2>${currentHtml || '<div class="ncp-empty-verified"><h2>현재 확인된 사용 가능 쿠폰이 없습니다.</h2><p>새 쿠폰이 확인되면 이 페이지에 추가됩니다.</p></div>'}</section><section data-ncp-history><h2>만료 이력 ${history.length}개</h2>${historyHtml || '<p>공식 출처로 확인한 만료 이력이 없습니다.</p>'}</section></div></div>`;
+
 }
 
 export function renderTravelComparison(brand, coupons, context, now = Date.now()) {
@@ -162,7 +167,7 @@ function endConditionLabel(c) {
   return ({ONGOING:'상시',UNTIL_BUDGET_EXHAUSTED:'예산 소진 시 종료',UNTIL_STOCK_EXHAUSTED:'재고 소진 시 종료',UNKNOWN:'종료일 미확인'})[mode] || mode;
 }
 
-function renderOffer(c) {
+function renderOffer(c, now = Date.now(), expired = false) {
   const kind = offerType(c);
   const benefit = kind === 'GAME_REDEEM'
     ? c.rewards.map(r=>`${escapeHtml(r.name)} ${escapeHtml(r.quantity)}개`).join(' · ')
@@ -170,5 +175,7 @@ function renderOffer(c) {
   const conditions = kind === 'GAME_REDEEM'
     ? `서버: ${escapeHtml(c.server)} · 입력: ${escapeHtml(c.redemptionMethod)}`
     : `최소 ${escapeHtml(c.minimum)}원${c.cap != null?` · 최대 ${escapeHtml(c.cap)}원`:''}`;
-  return `<article class="ncp-offer"><strong>${benefit}</strong>${c.code?`<code>${escapeHtml(c.code)}</code>`:''}<p>${escapeHtml(offerTypeLabel(c))} · ${conditions} · ${escapeHtml(c.platform)} · ${escapeHtml(c.member)}</p><p>종료: ${escapeHtml(endConditionLabel(c))}</p><a href="${escapeHtml(c.sourceUrl)}" rel="noopener noreferrer">공식 출처</a></article>`;
+  const verified = c.verificationResult==='SUCCESS' && c.eligibilityConfirmed===true && Number.isFinite(Date.parse(c.workingVerifiedAt)) && Date.parse(c.workingVerifiedAt)<=now && now-Date.parse(c.workingVerifiedAt)<=86400000;
+  const badge=expired?'사용기간 만료':verified?'직접 적용 확인':'미검증';
+  return `<article class="ncp-offer"><p>${badge}</p><strong>${benefit}</strong>${c.code?`<code>${escapeHtml(c.code)}</code>${expired?'':`<button type="button" data-ncp-copy="${escapeHtml(c.code)}">복사</button>`}`:''}<p>${escapeHtml(offerTypeLabel(c))} · ${conditions} · ${escapeHtml(c.platform)} · ${escapeHtml(c.member)}</p><p>종료: ${escapeHtml(endConditionLabel(c))}</p><a href="${escapeHtml(c.sourceUrl)}" rel="noopener noreferrer">${c.sourceAuthority==='OFFICIAL'?'공식 출처':'참고 출처'}</a></article>`;
 }

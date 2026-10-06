@@ -6,6 +6,8 @@
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
   try{
+    let currentBrands=null;
+    if(category==='게임'){const p=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/coupons/catalog',{cache:'no-store'});if(!p.ok)throw Error('POLICY_HTTP');currentBrands=new Map((await p.json()).current.map(x=>[x.brand,x.count]));}
     const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150');
     if(!response.ok)throw Error('FEED_HTTP');
     const feed=await response.json();
@@ -13,7 +15,7 @@
     for(const entry of feed.feed.entry||[]){
       const name=(entry.category||[]).map(x=>x.term).find(x=>x!==category)||entry.title?.$t;
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
-      if(!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
+      if((currentBrands&&!currentBrands.has(name))||!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
       seen.add(name);
       const card=document.createElement('a');card.className='ncp-game-card';card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
@@ -40,6 +42,7 @@
         const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit'}).formatToParts(updated);
         date.textContent=parts.find(x=>x.type==='month').value+'.'+parts.find(x=>x.type==='day').value+' 업데이트';
       }else date.textContent='업데이트 날짜 미확인';
+      if(currentBrands)date.textContent=currentBrands.get(name)+'개 · 미검증 포함';
       card.append(wrap,title,date);grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';

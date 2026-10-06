@@ -60,7 +60,7 @@ test('게임 보상은 현금 절감액 순위에 포함하지 않는다',()=>{
   const game={type:'GAME_REWARD',id:'game',brand:'테스트',category:'게임',code:'FIXTURE',status:'UNVERIFIED',rewards:[{name:'골드',quantity:100}],server:'전체',redemptionMethod:'게임 내 입력',platform:'APP',member:'ALL',sourceUrl:'https://example.com',sourceCheckedAt:'2026-10-04T23:00:00Z'};
   assert.equal(validateCoupon(game,now),game);
   assert.deepEqual(rankCoupons([game],{amount:1000,member:'ALL',platform:'APP'},now),[]);
-  const html=renderHub('테스트',[{...game,status:'ACTIVE',eligibilityConfirmed:true,workingVerifiedAt:'2026-10-04T23:00:00Z',verificationResult:'SUCCESS'}],now);
+  const html=renderHub('테스트',[{...game,expiresAt:'2026-10-06T00:00:00Z',status:'ACTIVE',eligibilityConfirmed:true,workingVerifiedAt:'2026-10-04T23:00:00Z',verificationResult:'SUCCESS'}],now);
   assert.match(html,/골드 100개/);
   assert.doesNotMatch(html,/undefined|% 할인/);
 });

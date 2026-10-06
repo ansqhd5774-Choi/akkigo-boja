@@ -47,7 +47,8 @@
     "workingVerifiedAt": "2026-10-05T09:02:00Z",
     "verificationResult": "SUCCESS",
     "evidenceMethod": "OFFICIAL_NOTICE_IMAGE_AND_USER_MANUAL_REDEMPTION",
-    "note": "2026-10-05 사용자 1명의 등록 성공 및 보상 수령 확인. 서버 범위·전체 계정 조건·만료일은 미확인. 활성 추천에는 포함하지 않음."
+    "note": "2026-10-05 사용자 1명의 등록 성공 및 보상 수령 확인. 서버 범위·전체 계정 조건·만료일은 미확인. 활성 추천에는 포함하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "shibarpg-pick7p2y",
@@ -73,7 +74,8 @@
     "sourceUrl": "https://community.withhive.com/shibarpg",
     "sourceCheckedAt": "2026-10-05T12:18:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티에서 쿠폰 번호·보상·입력 방법·만료 시간을 확인. 실제 계정 사용 성공은 아직 미확인이라 ACTIVE로 승격하지 않음."
+    "note": "공식 커뮤니티에서 쿠폰 번호·보상·입력 방법·만료 시간을 확인. 실제 계정 사용 성공은 아직 미확인이라 ACTIVE로 승격하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-startwithgenie-202610",
@@ -107,7 +109,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-trainingstart-202610",
@@ -137,7 +140,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-v26startpack-202610",
@@ -167,7 +171,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-cpbvfullmoon-202610",
@@ -193,7 +198,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-v26a7k9p3xq2-202610",
@@ -231,7 +237,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "cpbv26-cpbvkdyparty-202610",
@@ -265,7 +272,8 @@
     "sourceUrl": "https://cpbv-community.com2us.com/board/all/44252",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
-    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "trickcal-googletop3-202610",
@@ -295,7 +303,8 @@
     "sourceUrl": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
-    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "trickcal-3rdbolthday-202610",
@@ -325,7 +334,8 @@
     "sourceUrl": "https://game.naver.com/lounge/Trickcal/board/31",
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
-    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "browndust2-2026bd2oct-202610",
@@ -351,7 +361,8 @@
     "sourceUrl": "https://game.naver.com/lounge/BROWNDUST2/board/detail/8263310",
     "sourceCheckedAt": "2026-10-06T11:15:00.000Z",
     "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
-    "note": "쿠폰 코드·사용 기간·입력 경로·계정당 1회 조건은 공식 라운지 및 공식 영문 채널에서 확인. 보상 수량은 공개 쿠폰 DB 2곳에서 교차 확인했으며 공식 공지 텍스트에는 세부 수량이 직접 표기되지 않음. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "쿠폰 코드·사용 기간·입력 경로·계정당 1회 조건은 공식 라운지 및 공식 영문 채널에서 확인. 보상 수량은 공개 쿠폰 DB 2곳에서 교차 확인했으며 공식 공지 텍스트에는 세부 수량이 직접 표기되지 않음. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "genshin-6ls3f3ls5k87-202610",
@@ -381,7 +392,8 @@
     "sourceUrl": "https://ckworks.jp/vinforadar/video/2a3eAC5NvvY",
     "sourceCheckedAt": "2026-10-06T11:20:00.000Z",
     "evidenceMethod": "OFFICIAL_REDEEM_PAGE_AND_SPONSORED_GENSHIN_PROMOTION",
-    "note": "원신 제공 프로모션 설명에서 코드·원석20·구현의 수정160·2026-11-04 01:00 만료를 확인. HoYoverse 공식 쿠폰 교환 페이지와 공식 리딤코드 안내에서 등록/우편 수령 구조를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "원신 제공 프로모션 설명에서 코드·원석20·구현의 수정160·2026-11-04 01:00 만료를 확인. HoYoverse 공식 쿠폰 교환 페이지와 공식 리딤코드 안내에서 등록/우편 수령 구조를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "hsr-starrailgift-202610",
@@ -418,7 +430,8 @@
     "sourceUrl": "https://www.hoyolab.com/article/46765148",
     "sourceCheckedAt": "2026-10-06T13:05:00.000Z",
     "evidenceMethod": "OFFICIAL_REDEEM_PAGE_AND_HOYOLAB_RECENT_CODE_CROSSCHECK",
-    "note": "HoYoLAB의 2026-09-20 리딤코드 정리에서 STARRAILGIFT 보상과 1계정 1회 조건을 확인했고, HoYoverse 공식 교환 페이지에서 로그인·서버 선택·우편 수령 구조를 확인. 2026-10-06 최신 코드 목록에서 계속 사용 가능으로 교차 확인했으나 실제 계정 사용 성공은 별도 확인하지 않았고 운영사 만료일은 공개되지 않음."
+    "note": "HoYoLAB의 2026-09-20 리딤코드 정리에서 STARRAILGIFT 보상과 1계정 1회 조건을 확인했고, HoYoverse 공식 교환 페이지에서 로그인·서버 선택·우편 수령 구조를 확인. 2026-10-06 최신 코드 목록에서 계속 사용 가능으로 교차 확인했으나 실제 계정 사용 성공은 별도 확인하지 않았고 운영사 만료일은 공개되지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "bluearchive-kirakiraerika-202610",
@@ -444,7 +457,8 @@
     "sourceUrl": "https://forum.nexon.com/bluearchive/board_view?board=1039&thread=3536588",
     "sourceCheckedAt": "2026-10-06T13:18:00.000Z",
     "evidenceMethod": "OFFICIAL_NEXON_EVENT_NOTICE_AND_COUPON_FAQ",
-    "note": "넥슨 공식 커뮤니티의 에리카 합류 기념 특별 쿠폰 공지에서 코드 KIRAKIRAERIKA, 청휘석 300개, 계정당 1회, 2026-10-09 23:59 KST 만료를 확인. 공식 FAQ에서 Android 게임 내 입력 및 웹 쿠폰 입력 절차를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "넥슨 공식 커뮤니티의 에리카 합류 기념 특별 쿠폰 공지에서 코드 KIRAKIRAERIKA, 청휘석 300개, 계정당 1회, 2026-10-09 23:59 KST 만료를 확인. 공식 FAQ에서 Android 게임 내 입력 및 웹 쿠폰 입력 절차를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "roblox-spidercola-202610",
@@ -469,7 +483,8 @@
     "sourceUrl": "https://www.gamesradar.com/roblox-promo-codes/",
     "sourceCheckedAt": "2026-10-06T14:39:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_CODE_LIST_AND_OFFICIAL_ROBLOX_REDEEM_PAGE",
-    "note": "2026년 10월 최신 Roblox 코드 목록에서 SPIDERCOLA와 Spider Cola 어깨 액세서리 보상을 확인했고, Roblox 공식 코드 사용 페이지와 공식 도움말에서 입력 절차를 확인함."
+    "note": "2026년 10월 최신 Roblox 코드 목록에서 SPIDERCOLA와 Spider Cola 어깨 액세서리 보상을 확인했고, Roblox 공식 코드 사용 페이지와 공식 도움말에서 입력 절차를 확인함.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "pokemongo-adidas-202610",
@@ -495,7 +510,8 @@
     "sourceUrl": "https://pokemongo.com/en/news/pokemon-x-adidas-2026",
     "sourceCheckedAt": "2026-10-06T14:42:00.000Z",
     "evidenceMethod": "OFFICIAL_POKEMON_GO_NEWS",
-    "note": "Pokémon GO 공식 adidas 협업 공지에서 코드·보상·2027-01-15 만료일을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "Pokémon GO 공식 adidas 협업 공지에서 코드·보상·2027-01-15 만료일을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "pokemongo-lego-berries-202610",
@@ -532,7 +548,8 @@
     "sourceUrl": "https://store.pokemongo.com/offer-redemption?hl=ko",
     "sourceCheckedAt": "2026-10-06T14:42:00.000Z",
     "evidenceMethod": "CURRENT_CODE_TRACKER_AND_OFFICIAL_REDEMPTION_PAGE",
-    "note": "10월 최신 코드 목록과 Pokémon GO 소셜 미러에서 코드·보상을 교차 확인. 공식 종료일은 확인되지 않았고 실제 계정 사용 성공도 별도 확인하지 않음."
+    "note": "10월 최신 코드 목록과 Pokémon GO 소셜 미러에서 코드·보상을 교차 확인. 공식 종료일은 확인되지 않았고 실제 계정 사용 성공도 별도 확인하지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "brawl-stars-october-freebies-202610",
@@ -545,7 +562,8 @@
     "endMode": "UNKNOWN",
     "sourceUrl": "https://www.eurogamer.net/brawl-stars-qr-codes",
     "sourceCheckedAt": "2026-10-06T15:32:00.000Z",
-    "note": "2026-10-07 기준 현재 보상 목록에서 브롤스타즈 공식 link.brawlstars.com 보상 링크 5개를 확인. 실제 계정 수령 성공과 각 링크 만료일은 별도 확인하지 않음."
+    "note": "2026-10-07 기준 현재 보상 목록에서 브롤스타즈 공식 link.brawlstars.com 보상 링크 5개를 확인. 실제 계정 수령 성공과 각 링크 만료일은 별도 확인하지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "whiteout-thxteacher-202610",
@@ -579,7 +597,8 @@
     "sourceUrl": "https://x.com/WOS_Global/status/2107078352842657829",
     "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
     "evidenceMethod": "OFFICIAL_WOS_SOCIAL_AND_CURRENT_CODE_LIST",
-    "note": "공식 Whiteout Survival X/Instagram에서 THXTeacher와 2026-10-08 23:59 UTC 만료, 공식 Gift Code Center를 확인. 보상 세부는 2026-10-05 갱신 활성 코드 목록에서 확인."
+    "note": "공식 Whiteout Survival X/Instagram에서 THXTeacher와 2026-10-08 23:59 UTC 만료, 공식 Gift Code Center를 확인. 보상 세부는 2026-10-05 갱신 활성 코드 목록에서 확인.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "whiteout-gaecheonjeol-202610",
@@ -613,7 +632,8 @@
     "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
     "conditions": "용광로 Lv.7 이상",
-    "note": "2026-10-05 갱신 활성 코드 목록에서 GAECHEONJEOL과 보상, 용광로 Lv.7 이상 조건을 확인. 별도 만료일은 확인되지 않음."
+    "note": "2026-10-05 갱신 활성 코드 목록에서 GAECHEONJEOL과 보상, 용광로 Lv.7 이상 조건을 확인. 별도 만료일은 확인되지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "whiteout-gudokytkor-202610",
@@ -646,7 +666,8 @@
     "sourceUrl": "https://www.gamesradar.com/games/survival/whiteout-survival-codes-gift/",
     "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
-    "note": "2026-10-05 갱신 활성 코드 목록에서 GuDokYTKOR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음."
+    "note": "2026-10-05 갱신 활성 코드 목록에서 GuDokYTKOR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "whiteout-2ndyoutubekr-202610",
@@ -679,7 +700,8 @@
     "sourceUrl": "https://www.gamesradar.com/games/survival/whiteout-survival-codes-gift/",
     "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
     "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
-    "note": "2026-10-05 갱신 활성 코드 목록에서 2ndYoutubeKR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음."
+    "note": "2026-10-05 갱신 활성 코드 목록에서 2ndYoutubeKR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "zeus-1002-live",
@@ -730,7 +752,8 @@
       "https://www.gamevu.co.kr/news/articleView.html?idxno=61201",
       "https://gamefixnote.com/"
     ],
-    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함."
+    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "zeus-1002-gift",
@@ -785,7 +808,8 @@
       "https://www.gamevu.co.kr/news/articleView.html?idxno=61201",
       "https://gamefixnote.com/"
     ],
-    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함."
+    "note": "10월 2일 개발자 라이브 코드. 보도 및 추적 자료에서 2026-10-04 23:59 KST 종료로 교차 확인. 33레벨 이상 사용 조건이 안내된 소환 아이템 포함.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "zeus-welcome-6ryf-j242",
@@ -812,7 +836,8 @@
     "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
     "verificationResult": "SOURCE_TEXT_ONLY",
     "evidenceMethod": "THIRD_PARTY_CURRENT_TRACKER",
-    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급."
+    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "zeus-welcome-avg768y1",
@@ -839,7 +864,8 @@
     "sourceCheckedAt": "2026-10-06T16:15:00.000Z",
     "verificationResult": "SOURCE_TEXT_ONLY",
     "evidenceMethod": "THIRD_PARTY_CURRENT_TRACKER",
-    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급."
+    "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급.",
+    "sourceAuthority": "UNOFFICIAL"
   },
   {
     "id": "maplestory-idle-pinkbeanattack-202610",
@@ -865,7 +891,8 @@
     "sourceUrl": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3536440",
     "sourceCheckedAt": "2026-10-06T16:30:00.000Z",
     "evidenceMethod": "OFFICIAL_NEXON_COMMUNITY_NOTICE",
-    "note": "넥슨 공식 커뮤니티 공지에서 코드, 동료 소환권 300장, 2026-10-14 23:59 KST 만료, 계정당 1회, 플랫폼별 입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+    "note": "넥슨 공식 커뮤니티 공지에서 코드, 동료 소환권 300장, 2026-10-14 23:59 KST 만료, 계정당 1회, 플랫폼별 입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
+    "sourceAuthority": "OFFICIAL"
   },
   {
     "id": "maplestory-idle-50cubecoupon-202610",
@@ -895,6 +922,7 @@
       "https://www.youtube.com/watch?v=D4wU9riDpCw",
       "https://couponquest.net/games/maplestory-idle-rpg"
     ],
-    "note": "2026-10-07 기준 최근 목록과 메이플 키우기 방송 설명에서 코드, 미라클 큐브 50개, 2026-10-07 23:59 KST 만료를 교차 확인. 넥슨 공식 공지 원문은 검색에서 직접 확인하지 못함."
+    "note": "2026-10-07 기준 최근 목록과 메이플 키우기 방송 설명에서 코드, 미라클 큐브 50개, 2026-10-07 23:59 KST 만료를 교차 확인. 넥슨 공식 공지 원문은 검색에서 직접 확인하지 못함.",
+    "sourceAuthority": "UNOFFICIAL"
   }
 ]

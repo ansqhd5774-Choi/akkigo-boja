@@ -24,10 +24,13 @@
     body.append(heading,info,detail);article.append(body);return article;
   }
   try{
+    const policyResponse=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/coupons/catalog',{cache:'no-store'});if(!policyResponse.ok)throw Error('POLICY_HTTP');
+    const policy=await policyResponse.json();const currentBrands=new Set(policy.current.map(x=>x.brand));
+    const eligible=e=>!e.category?.some(c=>c.term==='게임')||e.category.some(c=>currentBrands.has(c.term));
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
-    const entries=(await response.json()).feed.entry||[];const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
+    const entries=((await response.json()).feed.entry||[]).filter(eligible);const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
     const seen=new Set();for(const entry of entries){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')&&seen.size<6){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true);if(item){games.append(item);seen.add(name);}}}}
     for(const entry of entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).slice(0,8)){const item=card(entry,false);if(item)latest.append(item);}
-    status.textContent='';if(!games.children.length)games.textContent='게임 쿠폰 안내를 준비 중입니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';
+    status.textContent='';if(!games.children.length)games.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 카테고리 또는 검색으로 쿠폰을 찾아주세요.';}
 })();

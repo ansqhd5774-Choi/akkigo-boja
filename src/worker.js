@@ -1,3 +1,4 @@
+import {couponCatalog} from './coupon-lifecycle.js';
 import coupons from '../data/coupons.json' with { type: 'json' };
 import articles from '../data/articles.json' with { type: 'json' };
 import supplementalArticles from '../data/articles-supplemental.json' with { type: 'json' };
@@ -13,6 +14,9 @@ export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
     const path = requestUrl.pathname.length>1 ? requestUrl.pathname.replace(/\/+$/,'') : requestUrl.pathname;
+    if (path === '/coupons/catalog' && request.method === 'GET') {
+      return Response.json(couponCatalog(coupons),{headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://lsifl.blogspot.com'}});
+    }
     if (path === '/internal/articles/publish' && request.method === 'POST') {
       try {
         await verifyGitHubOidc(request);
