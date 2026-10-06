@@ -1126,5 +1126,129 @@
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
     "note": "공식 커뮤니티의 2026-10-06 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
     "sourceAuthority": "OFFICIAL"
+  },
+  {
+    "id": "lucky-defense-lucky2ndanniv-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "운빨존많겜",
+    "category": "게임",
+    "code": "LUCKY2NDANNIV",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "다이아",
+        "quantity": 2222
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "게임 우측 상단 메뉴 → 설정 → 쿠폰 입력",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-06-14T14:59:00.000Z",
+    "sourceUrl": "https://constante.tistory.com/entry/%EC%9A%B4%EB%B9%A8%EC%A1%B4%EB%A7%8E%EA%B2%9C-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%BF%A0%ED%8F%B0-%EC%BD%94%EB%93%9C-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "KOREAN_EXPIRY_RECORD_AND_CURRENT_TRACKER_CONFLICT",
+    "references": [
+      "https://9to5gaming.com/lucky-defense-codes/",
+      "https://levelgeeks.net/lucky-defense-codes/"
+    ],
+    "note": "한국 자료에서 2026-06-14 23:59 종료 기록이 확인됨. 해외 2026-10 최신 목록에는 여전히 입력 후보로 남아 있어 본문에서는 추가 시도 코드로만 제공."
+  },
+  {
+    "id": "lucky-defense-thanks2years-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "운빨존많겜",
+    "category": "게임",
+    "code": "THANKS2YEARS",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "다이아",
+        "quantity": 2000
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "게임 우측 상단 메뉴 → 설정 → 쿠폰 입력",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-06-14T14:59:00.000Z",
+    "sourceUrl": "https://constante.tistory.com/entry/%EC%9A%B4%EB%B9%A8%EC%A1%B4%EB%A7%8E%EA%B2%9C-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%BF%A0%ED%8F%B0-%EC%BD%94%EB%93%9C-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "KOREAN_EXPIRY_RECORD_AND_CURRENT_TRACKER_CONFLICT",
+    "references": [
+      "https://9to5gaming.com/lucky-defense-codes/",
+      "https://levelgeeks.net/lucky-defense-codes/",
+      "https://www.threads.com/@s_h_180cm_/post/DdifZLboEuc/"
+    ],
+    "note": "한국 자료에서 2026-06-14 23:59 종료 기록이 확인됨. 9월·10월 외부 목록에는 계속 노출되어 있어 본문에서는 추가 시도 코드로만 제공."
+  },
+  {
+    "id": "lucky-defense-luckydiscord30k-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "운빨존많겜",
+    "category": "게임",
+    "code": "LUCKYDISCORD30K",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "다이아",
+        "quantity": 3000
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "게임 우측 상단 메뉴 → 설정 → 쿠폰 입력",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-04-02T14:59:00.000Z",
+    "sourceUrl": "https://pinkgamesesang.tistory.com/3626",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "KOREAN_EXPIRY_RECORD_AND_CURRENT_TRACKER_CONFLICT",
+    "references": [
+      "https://9to5gaming.com/lucky-defense-codes/",
+      "https://levelgeeks.net/lucky-defense-codes/"
+    ],
+    "note": "한국 자료에서 공식 디스코드 3만 달성 기념 3000다이아 및 2026-04-02 23:59 종료 기록 확인. 해외 10월 목록에는 입력 후보로 남아 있음."
+  },
+  {
+    "id": "lucky-defense-luckydiscord-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "운빨존많겜",
+    "category": "게임",
+    "code": "LUCKYDISCORD",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "다이아",
+        "quantity": 1000
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "게임 우측 상단 메뉴 → 설정 → 쿠폰 입력",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://9to5gaming.com/lucky-defense-codes/",
+    "sourceCheckedAt": "2026-10-06T17:09:00.000Z",
+    "verificationResult": "SOURCE_TEXT_ONLY",
+    "evidenceMethod": "CURRENT_TRACKER_AND_KOREAN_COMMUNITY_CROSSCHECK",
+    "references": [
+      "https://levelgeeks.net/lucky-defense-codes/",
+      "https://m.dcinside.com/board/onlyluckygame/1156108"
+    ],
+    "note": "2026-10-05 최신 해외 목록에서 활성 후보로 확인. 한국 커뮤니티에서는 1000다이아 코드로 확인되지만 공식 종료일은 검색에서 확인하지 못함."
   }
 ]
