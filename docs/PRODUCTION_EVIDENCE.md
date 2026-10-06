@@ -177,3 +177,16 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - Worker version `4a473f26-9b70-4c71-a37c-d8c465b9d660`.
 - 공개 페이지 직접 확인: NC 공식 리니지M 이미지 URL이 실제 `image_links`에 존재.
 - Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 외부 이미지를 Blogger `lh3.googleusercontent.com/blogger_img_proxy`로 프록시한 URL로 생성됨. 따라서 본문 첫 이미지와 Blogger 대표/소셜 이미지 인식까지 확인.
+
+
+## 명조:워더링 웨이브 대표 이미지 1장 적용 · 2026-10-06
+- 대상 기존 글: https://lsifl.blogspot.com/2026/10/blog-post_05.html
+- 기존 Blogger postId `8865924901633921942`와 URL 유지.
+- 대표 이미지 원천: Kuro Games 공식 도메인의 정적 대표 배경 `https://wutheringwaves.kurogames.com/website-preface/video/bg/bg-poster.webp`.
+- 구현: `src/hubs.js`의 `wuthering` 허브에만 `data-ncp-featured-image="wuthering"` 이미지 1장을 본문 첫 이미지로 추가. Blogger 테마 변경 없음.
+- Source Verify 37461581745 SUCCESS, Deploy Worker 37461581964 SUCCESS.
+- Hub refresh 37461676693 SUCCESS: `status=UPDATED`, postId `8865924901633921942`, 기존 URL 유지.
+- Refresh commit Verify 37461676704 SUCCESS.
+- Worker version `f5b828f7-d2f7-4ad3-b8f7-bf16f767f0b9`.
+- 공개 페이지 직접 확인: Kuro Games 공식 이미지 URL이 실제 `image_links`에 존재.
+- Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 외부 이미지를 Blogger `lh3.googleusercontent.com/blogger_img_proxy`로 프록시한 URL로 생성됨. 따라서 본문 첫 이미지와 Blogger 대표/소셜 이미지 인식까지 확인.
