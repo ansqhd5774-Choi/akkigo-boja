@@ -1068,5 +1068,32 @@
       "https://www.topuplive.com/news/kingshot-gift-codes-november-2025.html"
     ],
     "note": "10월 5일 목록에는 활성으로 확인됐으나 10월 6일 최신 추적에서는 빠짐. 실패 가능성을 감안한 추가 시도 코드로만 안내."
+  },
+  {
+    "id": "fc-mobile-260922-ng-token",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "FC 모바일",
+    "category": "게임",
+    "code": "260922알쏭뚝딱방망이NG토큰",
+    "status": "EXPIRED",
+    "rewards": [
+      {
+        "name": "[NG] 진화재료 토큰",
+        "quantity": 1000
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "게임 내 이벤트 센터 → 쿠폰 센터 또는 넥슨 공식 FC 모바일 쿠폰 등록 페이지",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-09-29T14:59:00.000Z",
+    "sourceUrl": "https://forum.nexon.com/fcmobile/board_view?board=441&thread=3550867&stickyBoard=1",
+    "sourceCheckedAt": "2026-10-06T17:02:00.000Z",
+    "verificationResult": "EXPIRED_BY_PUBLISHED_DEADLINE",
+    "evidenceMethod": "OFFICIAL_NEXON_NOTICE",
+    "note": "넥슨 공식 공지에 쿠폰명, 보상, 사용 기한이 명시된 최근 종료 코드."
   }
 ]
