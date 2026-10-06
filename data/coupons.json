@@ -546,5 +546,139 @@
     "sourceUrl": "https://www.eurogamer.net/brawl-stars-qr-codes",
     "sourceCheckedAt": "2026-10-06T15:32:00.000Z",
     "note": "2026-10-07 기준 현재 보상 목록에서 브롤스타즈 공식 link.brawlstars.com 보상 링크 5개를 확인. 실제 계정 수령 성공과 각 링크 만료일은 별도 확인하지 않음."
+  },
+  {
+    "id": "whiteout-thxteacher-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "화이트아웃 서바이벌",
+    "category": "게임",
+    "code": "THXTeacher",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 1000
+      },
+      {
+        "name": "골드 키",
+        "quantity": 2
+      },
+      {
+        "name": "강화 XP",
+        "quantity": 200
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 Android 게임 내 Gift Code 메뉴",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-08T23:59:00.000Z",
+    "sourceUrl": "https://x.com/WOS_Global/status/2107078352842657829",
+    "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
+    "evidenceMethod": "OFFICIAL_WOS_SOCIAL_AND_CURRENT_CODE_LIST",
+    "note": "공식 Whiteout Survival X/Instagram에서 THXTeacher와 2026-10-08 23:59 UTC 만료, 공식 Gift Code Center를 확인. 보상 세부는 2026-10-05 갱신 활성 코드 목록에서 확인."
+  },
+  {
+    "id": "whiteout-gaecheonjeol-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "화이트아웃 서바이벌",
+    "category": "게임",
+    "code": "GAECHEONJEOL",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 1000
+      },
+      {
+        "name": "부대 가속 1시간",
+        "quantity": 8
+      },
+      {
+        "name": "VIP XP 100",
+        "quantity": 2
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 Android 게임 내 Gift Code 메뉴",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.gamesradar.com/games/survival/whiteout-survival-codes-gift/",
+    "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
+    "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
+    "conditions": "용광로 Lv.7 이상",
+    "note": "2026-10-05 갱신 활성 코드 목록에서 GAECHEONJEOL과 보상, 용광로 Lv.7 이상 조건을 확인. 별도 만료일은 확인되지 않음."
+  },
+  {
+    "id": "whiteout-gudokytkor-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "화이트아웃 서바이벌",
+    "category": "게임",
+    "code": "GuDokYTKOR",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 500
+      },
+      {
+        "name": "지휘관 스태미나",
+        "quantity": 100
+      },
+      {
+        "name": "일반 가속 1시간",
+        "quantity": 3
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 Android 게임 내 Gift Code 메뉴",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.gamesradar.com/games/survival/whiteout-survival-codes-gift/",
+    "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
+    "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
+    "note": "2026-10-05 갱신 활성 코드 목록에서 GuDokYTKOR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음."
+  },
+  {
+    "id": "whiteout-2ndyoutubekr-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "화이트아웃 서바이벌",
+    "category": "게임",
+    "code": "2ndYoutubeKR",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "젬",
+        "quantity": 500
+      },
+      {
+        "name": "지휘관 스태미나",
+        "quantity": 100
+      },
+      {
+        "name": "일반 가속 1시간",
+        "quantity": 3
+      }
+    ],
+    "server": "글로벌",
+    "redemptionMethod": "Century Games 공식 Gift Code Center 또는 Android 게임 내 Gift Code 메뉴",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "UNKNOWN",
+    "sourceUrl": "https://www.gamesradar.com/games/survival/whiteout-survival-codes-gift/",
+    "sourceCheckedAt": "2026-10-06T15:50:00.000Z",
+    "evidenceMethod": "RECENT_OCTOBER_ACTIVE_CODE_LIST",
+    "note": "2026-10-05 갱신 활성 코드 목록에서 2ndYoutubeKR를 현재 사용 가능 코드로 확인. 별도 만료일은 확인되지 않음."
   }
 ]
