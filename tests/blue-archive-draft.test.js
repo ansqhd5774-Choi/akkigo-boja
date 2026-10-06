@@ -1,0 +1,47 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import coupons from '../data/coupons.json' with {type:'json'};
+import {validateCoupon} from '../src/coupons.js';
+
+test('블루 아카이브 에리카 합류 쿠폰은 공식 코드·보상·만료 조건을 보존한다',()=>{
+  const item=coupons.find(x=>x.id==='bluearchive-kirakiraerika-202610');
+  assert.ok(item);
+  assert.equal(item.brand,'블루 아카이브');
+  assert.equal(item.code,'KIRAKIRAERIKA');
+  assert.equal(item.status,'UNVERIFIED');
+  assert.equal(item.expiresAt,'2026-10-09T14:59:00.000Z');
+  assert.deepEqual(item.rewards,[{name:'청휘석',quantity:300}]);
+  assert.equal(item.eligibilityConfirmed,true);
+  assert.equal(validateCoupon(item,Date.parse('2026-10-06T13:30:00Z')),item);
+});
+
+test('블루 아카이브 공개 글은 공식 쿠폰·대표 이미지·입력 방법을 제공한다',()=>{
+  const draft=JSON.parse(readFileSync(new URL('../drafts/blue-archive-codes-202610.json',import.meta.url),'utf8'));
+  const html=readFileSync(new URL('../drafts/blue-archive-codes-202610.html',import.meta.url),'utf8');
+  const imageUrl='https://play-lh.googleusercontent.com/vlVAv0UGD-knTIap84gJDkKZlnZjzhgYdAU3W6mRVkzIjc-rxtRcy5EHud3Om2haqzqW9-73AjYnYiuSluy39S4=s0-br30';
+  assert.equal(draft.articleKey,'blue-archive-codes-202610');
+  assert.equal(draft.publicationStatus,'READY');
+  assert.equal(draft.approvedForPublish,true);
+  assert.equal(draft.post.content,html.trim());
+  assert.deepEqual(draft.post.labels,['게임','블루 아카이브']);
+  assert.equal((html.match(/data-ncp-featured-image="blue-archive"/g)||[]).length,1);
+  assert.ok(html.includes(imageUrl));
+  assert.ok(html.includes('alt="블루 아카이브 공식 대표 이미지"'));
+  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assert.match(html,/KIRAKIRAERIKA/);
+  assert.match(html,/data-ncp-copy="KIRAKIRAERIKA"/);
+  assert.match(html,/청휘석 300개/);
+  assert.match(html,/2026년 10월 9일 23:59/);
+  assert.match(html,/mcoupon\.nexon\.com\/bluearchive/);
+  assert.match(html,/메뉴 모음/);
+  assert.match(html,/계정 → 쿠폰/);
+  assert.match(html,/회원코드/);
+  assert.match(html,/<!--more-->/);
+  const preview=html.slice(0,html.indexOf('<!--more-->'));
+  assert.equal(preview.includes('KIRAKIRAERIKA'),false);
+  assert.equal(preview.includes('navigator.clipboard'),false);
+  assert.equal(preview.includes('<script'),false);
+  assert.match(preview,/확인된 쿠폰<\/span><strong>1개/);
+  assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|내부 운영 상태|활성 추천/);
+});

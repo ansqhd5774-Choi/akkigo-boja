@@ -419,5 +419,31 @@
     "sourceCheckedAt": "2026-10-06T13:05:00.000Z",
     "evidenceMethod": "OFFICIAL_REDEEM_PAGE_AND_HOYOLAB_RECENT_CODE_CROSSCHECK",
     "note": "HoYoLAB의 2026-09-20 리딤코드 정리에서 STARRAILGIFT 보상과 1계정 1회 조건을 확인했고, HoYoverse 공식 교환 페이지에서 로그인·서버 선택·우편 수령 구조를 확인. 2026-10-06 최신 코드 목록에서 계속 사용 가능으로 교차 확인했으나 실제 계정 사용 성공은 별도 확인하지 않았고 운영사 만료일은 공개되지 않음."
+  },
+  {
+    "id": "bluearchive-kirakiraerika-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "블루 아카이브",
+    "category": "게임",
+    "code": "KIRAKIRAERIKA",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "청휘석",
+        "quantity": 300
+      }
+    ],
+    "server": "한국",
+    "redemptionMethod": "Android 게임 내 로비 → 메뉴 모음 → 계정 → 쿠폰 또는 넥슨 공식 쿠폰 웹페이지",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-09T14:59:00.000Z",
+    "sourceUrl": "https://forum.nexon.com/bluearchive/board_view?board=1039&thread=3536588",
+    "sourceCheckedAt": "2026-10-06T13:18:00.000Z",
+    "evidenceMethod": "OFFICIAL_NEXON_EVENT_NOTICE_AND_COUPON_FAQ",
+    "note": "넥슨 공식 커뮤니티의 에리카 합류 기념 특별 쿠폰 공지에서 코드 KIRAKIRAERIKA, 청휘석 300개, 계정당 1회, 2026-10-09 23:59 KST 만료를 확인. 공식 FAQ에서 Android 게임 내 입력 및 웹 쿠폰 입력 절차를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
   }
 ]
