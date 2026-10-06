@@ -266,5 +266,65 @@
     "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
     "evidenceMethod": "OFFICIAL_COMMUNITY_NOTICE",
     "note": "공식 커뮤니티의 2026-10-02 사용 가능 쿠폰 최신화 목록에서 코드·보상·사용 기한·입력 방법을 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "trickcal-googletop3-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "트릭컬 리바이브",
+    "category": "게임",
+    "code": "GOOGLETOP3",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "교주의 빛무리 선택권",
+        "quantity": 1
+      },
+      {
+        "name": "참! 잘했어요",
+        "quantity": 333
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "Android: 메뉴 → 설정 → 기타 → 쿠폰 등록 / iOS: https://coupon.a.prod.service.trickcal.io/",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-22T01:59:00.000Z",
+    "sourceUrl": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
+    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "trickcal-3rdbolthday-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "트릭컬 리바이브",
+    "category": "게임",
+    "code": "3RDBOLTHDAY",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "엘리프",
+        "quantity": 927
+      },
+      {
+        "name": "영원살이 일곱자매 선택권",
+        "quantity": 1
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "Android: 메뉴 → 설정 → 기타 → 쿠폰 등록 / iOS: https://coupon.a.prod.service.trickcal.io/",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-22T01:59:00.000Z",
+    "sourceUrl": "https://game.naver.com/lounge/Trickcal/board/31",
+    "sourceCheckedAt": "2026-10-06T10:45:00.000Z",
+    "evidenceMethod": "OFFICIAL_NAVER_GAME_NOTICE_AND_OFFICIAL_SOCIAL_CROSSCHECK",
+    "note": "공식 라운지/공식 채널에서 코드·보상·사용기한·입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
   }
 ]
