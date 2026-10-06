@@ -259,3 +259,23 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - Worker version `26c2b3a0-63e9-4f66-a793-3e022114626b`.
 - 공개 페이지 직접 확인: Google Play 공식 원신 이미지 URL이 실제 `image_links`에 존재.
 - Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 Google Play 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성. 따라서 본문 대표 이미지와 소셜 대표 이미지 인식까지 확인.
+
+
+## 붕괴: 스타레일 10월 리딤코드 글 발행 · 2026-10-06
+- 고인지도 게임 우선 정책에 따라 붕괴: 스타레일을 선정.
+- articleKey `honkai-star-rail-codes-202610`.
+- 현재 코드: `STARRAILGIFT`.
+- 보상: 성옥 50개 · 신용 포인트 10,000 · 여행 가이드 2개 · 캔 소다 5개.
+- 운영사 별도 만료일은 미공개. 내부 상태는 실제 계정 사용 성공을 별도 확인하지 않았으므로 `UNVERIFIED` 유지.
+- 4.6 특별 방송 코드 `KA5SV3FJM7WX`, `7S4AD2X35NE3`, `MALSV2F247FP`는 2026-09-22 00:59(KST) 이전 종료로 만료 섹션에만 표시.
+- 대표 이미지: Google Play 공식 붕괴: 스타레일 앱 페이지의 `og:image`.
+- 공식 교환 경로: https://hsr.hoyoverse.com/gift
+- Source Verify 37469279364 SUCCESS, Deploy Worker 37469279195 SUCCESS.
+- Publish Approved Article 37469425553 SUCCESS.
+- Blogger postId `7527648107530469578`.
+- 공개 URL: https://lsifl.blogspot.com/2026/10/2026-10_01455019682.html
+- `publicVerified=true`.
+- Publish request commit Verify 37469425585 SUCCESS.
+- Worker version `b98345e9-ec70-4b3c-bd56-9e93bda9d1af`.
+- 공개 페이지 직접 검증: Google Play 공식 이미지가 실제 `image_links`에 존재하며 Blogger `og:image`가 `w1200-h630-p-k-no-nu` 형태로 생성됨.
+- 목록 Jump Break 이전에는 리딤코드와 스크립트를 노출하지 않음.

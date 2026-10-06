@@ -19,5 +19,12 @@
       "https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea&hl=ko"
     ]
   },
-  "publicationStatus": "READY"
+  "publicationStatus": "LIVE",
+  "publication": {
+    "postId": "7527648107530469578",
+    "url": "https://lsifl.blogspot.com/2026/10/2026-10_01455019682.html",
+    "publishedAt": "2026-10-06T13:16:00.000Z",
+    "publicVerified": true,
+    "workflowRunId": 37469425553
+  }
 }

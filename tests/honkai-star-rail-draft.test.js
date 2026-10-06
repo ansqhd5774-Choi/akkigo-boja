@@ -26,8 +26,12 @@ test('붕괴 스타레일 공개 글은 활성 코드·대표 이미지·공식 
   const html=readFileSync(new URL('../drafts/honkai-star-rail-codes-202610.html',import.meta.url),'utf8');
   const imageUrl='https://play-lh.googleusercontent.com/aWrGocSA7hEuk1qAPe7L4T57LvLKrwwH26cK2_LOqxRQMQX7j3uHYojC-EKWgYEV2PdrmE0ahqvvhLhXrAGk6Q=s0-br30';
   assert.equal(draft.articleKey,'honkai-star-rail-codes-202610');
-  assert.equal(draft.publicationStatus,'READY');
+  assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.approvedForPublish,true);
+  assert.equal(draft.publication.postId,'7527648107530469578');
+  assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2026-10_01455019682.html');
+  assert.equal(draft.publication.publicVerified,true);
+  assert.equal(draft.publication.workflowRunId,37469425553);
   assert.equal(draft.post.content,html.trim());
   assert.deepEqual(draft.post.labels,['게임','붕괴: 스타레일']);
   assert.equal((html.match(/data-ncp-featured-image="honkai-star-rail"/g)||[]).length,1);
