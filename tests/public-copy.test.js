@@ -34,6 +34,7 @@ const publicFiles=[
   '../drafts/simcorner-promo-202610.html',
   '../drafts/gigago-esim-promo-202610.html',
   '../drafts/eskimo-esim-promo-202610.html',
+  '../drafts/gomoworld-esim-promo-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
