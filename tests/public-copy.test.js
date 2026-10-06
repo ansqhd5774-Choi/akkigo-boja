@@ -19,6 +19,7 @@ const publicFiles=[
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',
   '../akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',
   '../drafts/roblox-promo-codes-202610.html',
+  '../drafts/brawl-stars-rewards-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
