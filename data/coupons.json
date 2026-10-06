@@ -840,5 +840,61 @@
     "verificationResult": "SOURCE_TEXT_ONLY",
     "evidenceMethod": "THIRD_PARTY_CURRENT_TRACKER",
     "note": "외부 추적 페이지에서 1명만 사용 가능한 웰컴 쿠폰으로 표시. 공식 원문 및 현재 미사용 여부는 확인되지 않아 추가 시도 코드로만 취급."
+  },
+  {
+    "id": "maplestory-idle-pinkbeanattack-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "메이플 키우기",
+    "category": "게임",
+    "code": "PINKBEANATTACK",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "동료 소환권",
+        "quantity": 300
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "AOS/PC: 메뉴 → 환경 설정 → 기타 → 쿠폰입력 / iOS·AOS·PC: 넥슨 공식 쿠폰 페이지",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-14T14:59:00.000Z",
+    "sourceUrl": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3536440",
+    "sourceCheckedAt": "2026-10-06T16:30:00.000Z",
+    "evidenceMethod": "OFFICIAL_NEXON_COMMUNITY_NOTICE",
+    "note": "넥슨 공식 커뮤니티 공지에서 코드, 동료 소환권 300장, 2026-10-14 23:59 KST 만료, 계정당 1회, 플랫폼별 입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음."
+  },
+  {
+    "id": "maplestory-idle-50cubecoupon-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "메이플 키우기",
+    "category": "게임",
+    "code": "50CUBECOUPON",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "미라클 큐브",
+        "quantity": 50
+      }
+    ],
+    "server": "한국 서비스",
+    "redemptionMethod": "AOS/PC: 메뉴 → 환경 설정 → 기타 → 쿠폰입력 / iOS·AOS·PC: 넥슨 공식 쿠폰 페이지",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": false,
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-07T14:59:00.000Z",
+    "sourceUrl": "https://tamagotch.tistory.com/1364",
+    "sourceCheckedAt": "2026-10-06T16:30:00.000Z",
+    "evidenceMethod": "RECENT_OCTOBER_CODE_LIST_CROSSCHECK",
+    "references": [
+      "https://www.youtube.com/watch?v=D4wU9riDpCw",
+      "https://couponquest.net/games/maplestory-idle-rpg"
+    ],
+    "note": "2026-10-07 기준 최근 목록과 메이플 키우기 방송 설명에서 코드, 미라클 큐브 50개, 2026-10-07 23:59 KST 만료를 교차 확인. 넥슨 공식 공지 원문은 검색에서 직접 확인하지 못함."
   }
 ]
