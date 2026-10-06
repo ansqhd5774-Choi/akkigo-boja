@@ -21,6 +21,7 @@ const publicFiles=[
   '../drafts/roblox-promo-codes-202610.html',
   '../drafts/brawl-stars-rewards-202610.html',
   '../drafts/whiteout-survival-codes-202610.html',
+  '../drafts/maplestory-idle-codes-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
