@@ -231,3 +231,17 @@ R3 홈 실제 배포: 공식 HTML 편집기 직접 저장, 공개 ncp-coupon-hom
 - Worker version `7ce148f8-e230-4c42-a238-deb3713b8f6c`.
 - 공개 페이지 직접 확인: Google Play 공식 이미지 URL이 실제 `image_links`에 존재.
 - Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 Google Play 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성. 따라서 본문 대표 이미지와 소셜 대표 이미지 인식까지 확인.
+
+
+## 브라운더스트2 대표 이미지 1장 적용 · 2026-10-06
+- 대상 기존 글: https://lsifl.blogspot.com/2026/10/2-2026-10.html
+- 기존 Blogger postId `1806229069030793005`와 URL 유지.
+- 대표 이미지 원천: Google Play의 공식 브라운더스트2 앱 페이지가 `og:image`로 사용하는 `https://play-lh.googleusercontent.com/bWgKVWQ2qq0s7CtCTsOevzI4DFCrDJW8C9sIwEjo87sqlOMul8IHSSnfkDPBlznQodYMRBSgkLFRUxjJ70Nx4g=s0-br30`.
+- 구현: 기존 글 상세 본문의 Jump Break 뒤 첫 이미지로 `data-ncp-featured-image="browndust2"` 이미지 1장 삽입. 쿠폰 데이터·목록 미리보기·Blogger 테마는 변경하지 않음.
+- Source Verify 37466454187 SUCCESS.
+- Deploy Worker 37466454463 SUCCESS.
+- Publish Approved Article 37466589616 SUCCESS. 기존 postId/URL 유지, publicVerified=true.
+- Publish commit Verify 37466589659 SUCCESS.
+- Worker version `d2a4f8ef-9785-4b16-a097-1d5bbf576aab`.
+- 공개 페이지 직접 확인: Google Play 공식 이미지 URL이 실제 `image_links`에 존재.
+- Blogger 메타데이터 확인: 공개 글 `og:image`가 해당 Google Play 이미지를 `w1200-h630-p-k-no-nu` 형태로 생성. 따라서 본문 대표 이미지와 소셜 대표 이미지 인식까지 확인.
