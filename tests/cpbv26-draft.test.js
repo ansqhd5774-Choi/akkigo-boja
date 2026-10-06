@@ -53,6 +53,6 @@ test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입
   for (const code of expectedCodes) assert.equal(preview.includes(code),false);
   assert.equal(preview.includes('navigator.clipboard'),false);
   assert.equal(preview.includes('<script'),false);
-  assert.match(preview,/확인된 쿠폰<\/span><strong>6개/);
+  assert.match(preview,/확인된 쿠폰<\/span><strong>7개/);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|쿠폰 확인 기준|내부 운영 상태|활성 추천/);
 });
