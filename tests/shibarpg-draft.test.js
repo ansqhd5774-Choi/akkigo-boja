@@ -30,7 +30,7 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.equal(draft.post.content,html.trim());
   assert.match(html,/pick7p2y/);
   assert.match(html,/data-ncp-featured-image="shibarpg"/);
-  assert.match(html,/https://hive-fn\.qpyou\.cn/webdev/hive_community/shibarpg/image/2025/10/14/20251014_152024_W6uCcNGgmx\.png/);
+  assert.ok(html.includes(imageUrl));
   assert.match(html,/alt="시바 모험단 공식 대표 이미지"/);
   assert.equal((html.match(/data-ncp-featured-image="shibarpg"/g)||[]).length,1);
   assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
