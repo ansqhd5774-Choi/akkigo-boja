@@ -23,14 +23,15 @@
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar a{border:1px solid var(--line);border-radius:10px;text-align:center;text-decoration:none!important;padding:13px 9px;color:var(--ink)!important;font-weight:800}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar strong{font-size:20px;display:block}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar span{font-size:12px;color:var(--muted);display:block;font-weight:500}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-card-list{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:0 0 20px}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-card{border:1px solid #cad5e6;background:#fff;border-radius:12px;padding:16px}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-head{font-size:12px;color:var(--muted);margin-bottom:7px}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-line{display:flex;gap:8px;align-items:center;justify-content:space-between}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code{padding:8px 6px;font:800 18px/1.35 ui-monospace,Consolas,monospace;color:#14243c;overflow-wrap:anywhere}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-copy{background:#243247;border:0;color:#fff;border-radius:8px;padding:10px 13px;min-width:64px;min-height:42px;font-size:13px;font-weight:800;cursor:pointer}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-copy-state{display:block;min-height:18px;color:#087648;font-size:12px;text-align:right}
-[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-source-small{margin:3px 0 0;font-size:12px;color:var(--muted)}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-card-list{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin:0 0 20px}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-card{position:relative;display:flex;flex-direction:column;justify-content:center;min-width:0;box-sizing:border-box;height:68px;min-height:68px;border:1px solid #cad5e6;background:#fff;border-radius:10px;padding:8px 94px 8px 14px;overflow:hidden}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-head{font-size:11px;line-height:14px;color:var(--muted);margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;flex-shrink:0}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code-line{display:block;min-height:22px;line-height:22px;flex-shrink:0}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code{display:inline-block;max-width:100%;padding:0;font:800 17px/22px ui-monospace,Consolas,monospace;color:#14243c;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;vertical-align:middle}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-copy{position:absolute;right:12px;top:7px;display:block;box-sizing:border-box;width:66px;height:42px;min-width:66px;min-height:42px;padding:0;background:#243247;border:0;border-radius:8px;color:#fff;font-size:13px;line-height:42px;font-weight:800;text-align:center;cursor:pointer}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-copy-state{position:absolute;right:9px;bottom:2px;display:block;width:72px;min-height:12px;font-size:10px;line-height:12px;color:#087648;text-align:center;pointer-events:none}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-source-small{display:block;min-width:0;margin:0!important;font-size:11px;line-height:14px;color:var(--muted);white-space:nowrap;text-overflow:ellipsis;overflow:hidden;flex-shrink:0}
+[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-copy:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-note{padding:14px 16px;border-left:4px solid #f5b64d;background:var(--warm);margin:16px 0 24px}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-table-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] table{width:100%;min-width:520px;border-collapse:collapse;font-size:14px}
@@ -44,7 +45,7 @@
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-faq details{border-bottom:1px solid var(--line);padding:13px 0}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-faq summary{cursor:pointer;font-weight:800}
 [data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-faq p{padding-top:10px}
-@media(max-width:650px){[data-ncp-article="fortblox-mobile-go-codes-202610"]{font-size:15px}[data-ncp-article="fortblox-mobile-go-codes-202610"] h1{font-size:26px}[data-ncp-article="fortblox-mobile-go-codes-202610"] h2{font-size:21px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-lead{font-size:15px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-card-list{grid-template-columns:1fr}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-hero-image{aspect-ratio:1.9}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar{gap:4px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar strong{font-size:18px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar a{padding:10px 3px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code{font-size:19px}}
+@media(max-width:650px){[data-ncp-article="fortblox-mobile-go-codes-202610"]{font-size:15px}[data-ncp-article="fortblox-mobile-go-codes-202610"] h1{font-size:26px}[data-ncp-article="fortblox-mobile-go-codes-202610"] h2{font-size:21px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-lead{font-size:15px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-card-list{grid-template-columns:1fr}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-hero-image{aspect-ratio:1.9}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar{gap:4px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar strong{font-size:18px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-quickbar a{padding:10px 3px}[data-ncp-article="fortblox-mobile-go-codes-202610"] .ncp-code{font-size:17px}}
 </style>
 <figure class="ncp-hero-image" data-ncp-featured-image="fortblox-mobile-go-codes-202610"><img src="https://wimg.mk.co.kr/news/cms/202608/28/news-p.v1.20260828.4ab472b4d0bc41cc95d27fc1ad1ffc84_P1.jpg" alt="하이퍼라이즈 포트블록스 이동요새 GO 공식 게임 홍보 포스터의 게임 로고 및 이동요새" loading="eager" decoding="async"></figure>
 <header class="ncp-hero"><div class="ncp-meta"><span class="ncp-badge">게임</span><span>포트블록스: 이동요새 GO!</span><span>2026년 10월 8일 확인</span></div>
