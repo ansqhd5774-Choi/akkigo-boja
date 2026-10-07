@@ -23,6 +23,13 @@ test('포트블록스 모바일 쿠폰 글의 코드 정확도·초안·게시�
   assert.deepEqual(article.source.unknownSourceCodes,unknown);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,25);
   assert.match(article.post.title,/25개/);
+  // Blogger native post title is the single page heading; body must not repeat it.
+  assert.equal(html.includes('<h1'),false);
+  assert.equal(html.includes(article.post.title),false);
+  assert.ok(html.includes('<header class="ncp-hero"><div class="ncp-meta"><span class="ncp-badge">게임</span></div>'));
+  assert.equal(html.includes('<span>포트블록스: 이동요새 GO!</span>'),false);
+  assert.equal(html.includes('<span>2026년 10월 8일 확인</span>'),false);
+
   assert.match(html,/id="fb-unknown"/);
   assert.match(html,/추가 쿠폰 코드 15개 — 출처 불명/);
   assert.equal((html.match(/class="ncp-col-source" role="cell">출처 불명/g)||[]).length,15);
