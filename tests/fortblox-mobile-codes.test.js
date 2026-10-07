@@ -52,3 +52,19 @@ test('포트블록스의 기존 URL과 기사 키는 유지하고, 출처 불명
   assert.equal(article.publicationStatus,'READY');
   assert.equal(articles.filter(a=>a.articleKey===key).length,1);
 });
+
+test('포트블록스 쿠폰 목록은 PC·모바일 1열, 68px 고정 높이, 동일한 오른쪽 복사 버튼 위치를 사용한다',()=>{
+  const html=readFileSync(new URL('../drafts/'+key+'.html',import.meta.url),'utf8');
+  const scope='[data-ncp-article="'+key+'"] ';
+  assert.ok(html.includes(scope+'.ncp-card-list{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;'));
+  assert.ok(html.includes(scope+'.ncp-code-card{position:relative;display:flex;flex-direction:column;justify-content:center;'));
+  assert.match(html,/height:68px;min-height:68px/);
+  assert.ok(html.includes(scope+'.ncp-copy{position:absolute;right:12px;top:7px;'));
+  assert.ok(html.includes('width:66px;height:42px;min-width:66px;min-height:42px'));
+  assert.ok(html.includes(scope+'.ncp-copy-state{position:absolute;right:9px;bottom:2px;'));
+  assert.ok(html.includes(scope+'.ncp-code{font-size:17px}'));
+  assert.doesNotMatch(html,/\.ncp-card-list\{display:grid;grid-template-columns:1fr 1fr/);
+  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,25);
+  assert.equal((html.match(/class="ncp-code-card"/g)||[]).length,25);
+  assert.deepEqual(articles.find(a=>a.articleKey===key).source.codes.length,25);
+});
