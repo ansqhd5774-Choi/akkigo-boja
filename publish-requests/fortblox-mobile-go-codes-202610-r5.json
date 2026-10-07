@@ -1,0 +1,6 @@
+{
+  "articleKey": "fortblox-mobile-go-codes-202610",
+  "approved": true,
+  "requestedAt": "2026-10-08T00:00:00.000Z",
+  "reason": "PATCH existing post: remove duplicate h1, inline heading CSS and redundant game-name/date header metadata. Preserve Blogger title, original postId and URL, coupon 25 strings, checking notes and copy button layout."
+}
