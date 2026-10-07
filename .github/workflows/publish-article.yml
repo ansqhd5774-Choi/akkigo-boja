@@ -77,11 +77,17 @@ jobs:
 
           deploy_needed=true
           if [ -n "$deploy_sha" ]; then
-            deploy_success="$(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs" -f head_sha="$deploy_sha" -f per_page=5 --jq '[.workflow_runs[] | select(.status=="completed" and .conclusion=="success")] | length' 2>/dev/null || echo 0)"
-            if [ "${deploy_success:-0}" -gt 0 ]; then
-              deploy_needed=false
-              echo "WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW"
-            else
+            mapfile -t deployed_shas < <(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs" -f branch="codex/blogger-worker-r1" -f per_page=30 --jq '.workflow_runs[] | select(.status=="completed" and .conclusion=="success") | .head_sha' 2>/dev/null || true)
+            for deployed_sha in "${deployed_shas[@]}"; do
+              if git cat-file -e "$deployed_sha^{commit}" 2>/dev/null &&
+                 git merge-base --is-ancestor "$deploy_sha" "$deployed_sha" &&
+                 git merge-base --is-ancestor "$deployed_sha" HEAD^; then
+                deploy_needed=false
+                echo "WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW"
+                break
+              fi
+            done
+            if [ "$deploy_needed" = true ]; then
               mapfile -t published_shas < <(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/publish-article.yml/runs" -f branch="codex/blogger-worker-r1" -f per_page=20 --jq '.workflow_runs[] | select(.status=="completed" and .conclusion=="success") | .head_sha' 2>/dev/null || true)
               for published_sha in "${published_shas[@]}"; do
                 if git cat-file -e "$published_sha^{commit}" 2>/dev/null &&
