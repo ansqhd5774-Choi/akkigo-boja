@@ -2760,6 +2760,11 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .ncp-r4 .ncp-r4-pager button:last-child:not(:disabled){background:#2457dc;border-color:#2457dc;color:#fff!important;box-shadow:0 3px 10px #2457dc22}
 .ncp-r4-pager button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 4px 12px #2457dc22}.ncp-r4 .ncp-r4-pager button:disabled{background:#f5f7fa;border-color:#edf0f5;color:#b4bfce!important;opacity:1;box-shadow:none}
 .ncp-r4-pager button:focus-visible,.ncp-r4-view-all:focus-visible{outline:3px solid #8eb5ff;outline-offset:3px}
+
+/* Game heart controls; configured initial values are separate from actual clicks. */
+.ncp-game-heart-shell{position:relative;min-width:0}.ncp-game-heart-shell .ncp-game-card{height:100%;box-sizing:border-box}
+.ncp-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{position:absolute;left:7px;top:117px;z-index:4;display:inline-flex;align-items:center;gap:4px;min-height:24px;padding:3px 7px;border:0;border-radius:999px;background:#ffffffeb;color:#e14b75!important;font-size:11px;font-weight:600;line-height:1;cursor:pointer;box-shadow:0 1px 5px #14234616}.ncp-game-heart span:first-child{font-size:17px}.ncp-game-heart[aria-pressed=true]{background:#ffedf3!important}.ncp-game-heart:disabled{cursor:default}
+@media(max-width:600px){.ncp-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{top:auto;bottom:5px;left:4px;padding:3px 5px;min-height:20px;font-size:9px;gap:2px}.ncp-game-heart span:first-child{font-size:14px}#ncp-game-hub .ncp-game-heart{bottom:37px}}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4231,6 +4236,16 @@ document.addEventListener('click',async function(event){const button=event.targe
   const category=root.dataset.category||'게임';
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
+
+  const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
+  let heartCounts=new Map();try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok)heartCounts=new Map((await response.json()).hearts.map(row=>[row.brand,row.count]));}catch{}
+  function addHeart(host,brand){
+    const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title='운영자 초기 설정값 + 실제 클릭 수';
+    const icon=document.createElement('span'),count=document.createElement('span');icon.textContent='♡';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
+    let visitor,liked=false;try{visitor=localStorage.getItem('ncp-heart-visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('ncp-heart-visitor',visitor);}liked=localStorage.getItem('ncp-heart-'+brand)==='1';}catch{}
+    const update=()=>{button.setAttribute('aria-pressed',String(liked));icon.textContent=liked?'♥':'♡';button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
+    button.addEventListener('click',async event=>{event.preventDefault();event.stopPropagation();if(liked)return;button.disabled=true;try{const response=await fetch(heartEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brand,visitor})});if(!response.ok)throw Error('HEART_WRITE_FAILED');const result=await response.json();count.textContent=String(result.count);heartCounts.set(brand,result.count);liked=true;try{localStorage.setItem('ncp-heart-'+brand,'1');}catch{}}catch{button.title='저장하지 못했습니다. 다시 눌러주세요.';}finally{update();}});host.append(button);
+  }
   try{
     const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150');
     if(!response.ok)throw Error('FEED_HTTP');
@@ -4274,7 +4289,7 @@ document.addEventListener('click',async function(event){const button=event.targe
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
         card.append(wrap,date);
       }else card.append(wrap,title,date);
-      grid.append(card);
+      if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,name);grid.append(shell);}else grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
@@ -4289,6 +4304,16 @@ document.addEventListener('click',async function(event){const button=event.targe
   const status=root.querySelector('[role="status"]');
   // These are published game guides, not proof of currently redeemable coupons.
   const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
+
+  const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
+  let heartCounts=new Map();try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok)heartCounts=new Map((await response.json()).hearts.map(row=>[row.brand,row.count]));}catch{}
+  function addHeart(host,brand){
+    const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title='운영자 초기 설정값 + 실제 클릭 수';
+    const icon=document.createElement('span'),count=document.createElement('span');icon.textContent='♡';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
+    let visitor,liked=false;try{visitor=localStorage.getItem('ncp-heart-visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('ncp-heart-visitor',visitor);}liked=localStorage.getItem('ncp-heart-'+brand)==='1';}catch{}
+    const update=()=>{button.setAttribute('aria-pressed',String(liked));icon.textContent=liked?'♥':'♡';button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
+    button.addEventListener('click',async event=>{event.preventDefault();event.stopPropagation();if(liked)return;button.disabled=true;try{const response=await fetch(heartEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brand,visitor})});if(!response.ok)throw Error('HEART_WRITE_FAILED');const result=await response.json();count.textContent=String(result.count);heartCounts.set(brand,result.count);liked=true;try{localStorage.setItem('ncp-heart-'+brand,'1');}catch{}}catch{button.title='저장하지 못했습니다. 다시 눌러주세요.';}finally{update();}});host.append(button);
+  }
   function card(entry,game,count){
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
@@ -4305,7 +4330,7 @@ document.addEventListener('click',async function(event){const button=event.targe
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
     const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
-    body.append(heading);article.append(body);return article;
+    body.append(heading);article.append(body);if(game)addHeart(article,name);return article;
   }
   function paginate(container,items,label){
     if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;

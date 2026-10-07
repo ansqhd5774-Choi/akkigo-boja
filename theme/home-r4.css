@@ -67,3 +67,8 @@
 .ncp-r4 .ncp-r4-pager button:last-child:not(:disabled){background:#2457dc;border-color:#2457dc;color:#fff!important;box-shadow:0 3px 10px #2457dc22}
 .ncp-r4-pager button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 4px 12px #2457dc22}.ncp-r4 .ncp-r4-pager button:disabled{background:#f5f7fa;border-color:#edf0f5;color:#b4bfce!important;opacity:1;box-shadow:none}
 .ncp-r4-pager button:focus-visible,.ncp-r4-view-all:focus-visible{outline:3px solid #8eb5ff;outline-offset:3px}
+
+/* Game heart controls; configured initial values are separate from actual clicks. */
+.ncp-game-heart-shell{position:relative;min-width:0}.ncp-game-heart-shell .ncp-game-card{height:100%;box-sizing:border-box}
+.ncp-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{position:absolute;left:7px;top:117px;z-index:4;display:inline-flex;align-items:center;gap:4px;min-height:24px;padding:3px 7px;border:0;border-radius:999px;background:#ffffffeb;color:#e14b75!important;font-size:11px;font-weight:600;line-height:1;cursor:pointer;box-shadow:0 1px 5px #14234616}.ncp-game-heart span:first-child{font-size:17px}.ncp-game-heart[aria-pressed=true]{background:#ffedf3!important}.ncp-game-heart:disabled{cursor:default}
+@media(max-width:600px){.ncp-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{top:auto;bottom:5px;left:4px;padding:3px 5px;min-height:20px;font-size:9px;gap:2px}.ncp-game-heart span:first-child{font-size:14px}#ncp-game-hub .ncp-game-heart{bottom:37px}}

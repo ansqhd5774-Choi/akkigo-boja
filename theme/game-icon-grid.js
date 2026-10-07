@@ -5,6 +5,16 @@
   const category=root.dataset.category||'게임';
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
+
+  const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
+  let heartCounts=new Map();try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok)heartCounts=new Map((await response.json()).hearts.map(row=>[row.brand,row.count]));}catch{}
+  function addHeart(host,brand){
+    const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title='운영자 초기 설정값 + 실제 클릭 수';
+    const icon=document.createElement('span'),count=document.createElement('span');icon.textContent='♡';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
+    let visitor,liked=false;try{visitor=localStorage.getItem('ncp-heart-visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('ncp-heart-visitor',visitor);}liked=localStorage.getItem('ncp-heart-'+brand)==='1';}catch{}
+    const update=()=>{button.setAttribute('aria-pressed',String(liked));icon.textContent=liked?'♥':'♡';button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
+    button.addEventListener('click',async event=>{event.preventDefault();event.stopPropagation();if(liked)return;button.disabled=true;try{const response=await fetch(heartEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brand,visitor})});if(!response.ok)throw Error('HEART_WRITE_FAILED');const result=await response.json();count.textContent=String(result.count);heartCounts.set(brand,result.count);liked=true;try{localStorage.setItem('ncp-heart-'+brand,'1');}catch{}}catch{button.title='저장하지 못했습니다. 다시 눌러주세요.';}finally{update();}});host.append(button);
+  }
   try{
     const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150');
     if(!response.ok)throw Error('FEED_HTTP');
@@ -48,7 +58,7 @@
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
         card.append(wrap,date);
       }else card.append(wrap,title,date);
-      grid.append(card);
+      if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,name);grid.append(shell);}else grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}

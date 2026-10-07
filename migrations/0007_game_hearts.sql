@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS game_hearts (brand TEXT NOT NULL, visitor TEXT NOT NULL, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (brand, visitor));
