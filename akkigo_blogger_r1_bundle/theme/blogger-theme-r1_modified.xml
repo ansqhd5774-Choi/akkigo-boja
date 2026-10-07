@@ -2747,6 +2747,9 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .ncp-r4-section-head h2{white-space:nowrap;flex-shrink:0}
 .ncp-r4-section-head p{font-size:11px;text-align:right}
 }
+
+/* Twelve-item coupon pagination. */
+.ncp-r4-pager{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:14px}.ncp-r4-pager span{font-size:12px;color:#65738a}.ncp-r4 .ncp-r4-pager button{width:44px;height:44px;min-height:44px;padding:0;font-size:21px;border-radius:50%;background:#edf3ff;color:#1858e9!important}.ncp-r4-pager button:disabled{opacity:.35;cursor:default}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4287,14 +4290,24 @@ document.addEventListener('click',async function(event){const button=event.targe
     const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
     body.append(heading);article.append(body);return article;
   }
+  function paginate(container,items,label){
+    if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;
+    const controls=document.createElement('div');controls.className='ncp-r4-pager';controls.setAttribute('aria-label',label+' 페이지');
+    const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
+    previous.type=next.type='button';previous.textContent='←';next.textContent='→';previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
+    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;}
+    previous.addEventListener('click',()=>{if(page>0){page--;render();}});next.addEventListener('click',()=>{if(page<total-1){page++;render();}});
+    controls.append(previous,position,next);container.after(controls);render();
+  }
   try{
     const policyResponse=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/coupons/catalog',{cache:'no-store'});if(!policyResponse.ok)throw Error('POLICY_HTTP');
     const policy=await policyResponse.json();const currentBrands=new Map(policy.current.map(x=>[x.brand,x.count]));
     const eligible=e=>!e.category?.some(c=>c.term==='게임')||e.category.some(c=>currentBrands.has(c.term));
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
     const entries=((await response.json()).feed.entry||[]).filter(eligible);const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
-    const seen=new Set();for(const entry of entries){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')&&seen.size<6){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true,currentBrands.get(name));if(item){games.append(item);seen.add(name);}}}}
-    for(const entry of entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).slice(0,8)){const item=card(entry,false);if(item)latest.append(item);}
+    const gameCards=[],seen=new Set();for(const entry of entries){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true,currentBrands.get(name));if(item){gameCards.push(item);seen.add(name);}}}}
+    const latestCards=entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).map(entry=>card(entry,false)).filter(Boolean);
+    paginate(games,gameCards,'게임 쿠폰');paginate(latest,latestCards,'최근 업데이트');
     status.textContent='';if(!games.children.length)games.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 카테고리 또는 검색으로 쿠폰을 찾아주세요.';}
 })();
