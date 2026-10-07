@@ -19,7 +19,7 @@ test('official Pokémon GO app icon and original article are consistent',()=>{
   assert.equal((pokemon.post.content.match(/data-ncp-app-icon="true"/g)||[]).length,1);
 });
 test('new game pages require verified store icon; existing game posts are preserved',()=>{
-  const existing=all.filter(x=>x.post?.labels?.includes('게임')&&x.articleKey!==key).map(x=>x.articleKey);
+  const existing=all.filter(x=>x.post?.labels?.includes('게임')&&LEGACY_GAME_ICON_KEYS.has(x.articleKey)).map(x=>x.articleKey);
   assert.equal(existing.length,16);
   assert.deepEqual([...LEGACY_GAME_ICON_KEYS].sort(),existing.sort());
   for(const article of all)assert.equal(validateGameFeaturedImage(article.articleKey,article.post),true);

@@ -1,0 +1,52 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import supplementary from '../data/articles-supplemental.json' with {type:'json'};
+import iconCatalog from '../data/game-app-icons.json' with {type:'json'};
+import {validateGameCouponLayout} from '../src/game-code-layout-contract.js';
+import {validateGameFeaturedImage} from '../src/game-featured-image-policy.js';
+
+const key='duck-survival-codes-202610';
+const article=supplementary.find(a=>a.articleKey===key);
+const codes=["Welcome","LAUNCH0918","kibangduck","DuckGo","DUCK777","777DUCK","JOY777","kakao1003","MOONDUEL","kakao0926","kakao0919","d9P4gU","T6zY1b","v3H8aQ","w7K2pD","q8N6Rc","T5kL3w","b4Y9Vz","BestDuck","FanGift","ThankYou","HEARDUCK","DUCK2M","DUCK2026","DUCKOP2026","DUCKIE","DUCKOP"];
+test('후더덕 본문·초안·발행 데이터 정합성 및 쿠폰 전체 고유성',()=>{
+  assert.ok(article);
+  assert.equal(article.approvedForPublish,true);
+  assert.ok(article.post.labels.includes('게임'));
+  assert.equal(article.source.officialCodes.length,7);
+  assert.equal(article.source.domesticUnverifiedCodes.length,4);
+  assert.equal(article.source.globalRegionUnverifiedCodes.length,16);
+  const saved=readFileSync(new URL('../drafts/'+key+'.html',import.meta.url),'utf8').trim();
+  const draft=JSON.parse(readFileSync(new URL('../drafts/'+key+'.json',import.meta.url),'utf8'));
+  assert.equal(saved,article.post.content);
+  assert.deepEqual(draft.post,article.post);
+  assert.equal(draft.articleKey,key);
+  assert.equal((saved.match(/data-ncp-copy=/g)||[]).length,27);
+  assert.equal(new Set(codes).size,27);
+  for(const code of codes)assert.equal(saved.split('data-ncp-copy="'+code+'"').length-1,1,code);
+  assert.equal((saved.match(/class="ncp-code-card" role="row"/g)||[]).length,27);
+  assert.equal((saved.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
+  assert.equal((saved.match(/<!--more-->/g)||[]).length,1);
+  assert.equal(saved.includes('<h1'),false);
+  assert.equal(saved.includes(article.post.title),false);
+  assert.equal(validateGameCouponLayout(key,article.post),true);
+});
+test('대표 사진은 앱스토어 공식 512px 아이콘이며 게임명·원천 연결 일치',()=>{
+  const reg=iconCatalog.find(x=>x.articleKey===key);
+  assert.ok(reg);
+  assert.equal(reg.gameName,'후더덕 서바이벌');
+  assert.equal(reg.platform,'apple-app-store');
+  assert.ok(reg.appStoreUrl.includes('id6793854765'));
+  assert.equal(validateGameFeaturedImage(key,article.post),true);
+  assert.equal((article.post.content.match(/data-ncp-featured-image=/g)||[]).length,1);
+  assert.equal((article.post.content.match(/data-ncp-app-icon="true"/g)||[]).length,1);
+});
+test('공식 코드와 해외 후보·개인용 지급 혼동 금지',()=>{
+  const h=article.post.content;
+  assert.ok(h.includes('공식 네이버 게임 라운지'));
+  assert.ok(h.includes('한국판 적용 미확인'));
+  assert.ok(h.includes('공식 카카오톡 채널 친구 추가'));
+  assert.equal(h.includes('38KHNSBJRH8WBY'),false);
+  assert.equal(h.includes('실사용 미검증'),false);
+  assert.ok(h.includes('https://game.naver.com/lounge/Duck_Survival/board/detail/8206212'));
+});
