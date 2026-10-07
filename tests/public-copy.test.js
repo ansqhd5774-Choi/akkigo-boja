@@ -53,6 +53,8 @@ const publicFiles=[
   '../drafts/hostingkr-domain-discount-202610.html',
   '../drafts/dothome-domain-coupon-202610.html',
   '../drafts/whois-nworks-domain-coupon-202610.html',
+  '../drafts/iporter-coupons-202610.html',
+  '../drafts/geniezip-coupons-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
