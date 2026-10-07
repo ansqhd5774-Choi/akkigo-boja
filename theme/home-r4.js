@@ -27,11 +27,13 @@
     if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;
     const controls=document.createElement('div');controls.className='ncp-r4-pager';controls.setAttribute('aria-label',label+' 페이지');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    previous.type=next.type='button';previous.textContent='←';next.textContent='→';previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
-    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;}
-    previous.addEventListener('click',()=>{if(page>0){page--;render();}});next.addEventListener('click',()=>{if(page<total-1){page++;render();}});
+    previous.type=next.type='button';const arrow=direction=>'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="'+(direction==='left'?'M14 6l-6 6 6 6':'M10 6l6 6-6 6')+'" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';previous.innerHTML=arrow('left');next.innerHTML=arrow('right');previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
+    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;position.setAttribute('aria-label',(page+1)+'페이지, 전체 '+total+'페이지');}
+    let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;page=target;render();previous.disabled=next.disabled=true;await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}else{page=target;render();}}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
+    previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
     controls.append(previous,position,next);container.after(controls);render();
   }
+  root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
   try{
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
     const entries=(await response.json()).feed.entry||[];const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');

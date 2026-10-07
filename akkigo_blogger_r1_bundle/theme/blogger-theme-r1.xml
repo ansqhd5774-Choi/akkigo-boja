@@ -2750,6 +2750,16 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 
 /* Twelve-item coupon pagination. */
 .ncp-r4-pager{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:14px}.ncp-r4-pager span{font-size:12px;color:#65738a}.ncp-r4 .ncp-r4-pager button{width:44px;height:44px;min-height:44px;padding:0;font-size:21px;border-radius:50%;background:#edf3ff;color:#1858e9!important}.ncp-r4-pager button:disabled{opacity:.35;cursor:default}
+
+/* Unified browse controls and animated coupon pages. */
+.ncp-r4-section-head .ncp-r4-view-all{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;background:#f0f5ff;border:1px solid #e0e9fb;border-radius:999px;color:#2355c8;font-size:12px;font-weight:600;white-space:nowrap;transition:background .18s,box-shadow .18s}
+.ncp-r4-view-all:after{content:'';width:6px;height:6px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg)}
+.ncp-r4-view-all:hover{background:#e5eeff;box-shadow:0 2px 8px #2355c812}
+.ncp-r4-pager{gap:10px;margin-top:18px;padding:2px 0}.ncp-r4-pager span{min-width:44px;text-align:center;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#67748a}
+.ncp-r4 .ncp-r4-pager button{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;min-height:40px;border:1px solid #dce5f4;background:#fff;color:#254fc2!important;box-shadow:0 2px 5px #14234608;transition:background .18s,transform .18s,box-shadow .18s}
+.ncp-r4 .ncp-r4-pager button:last-child:not(:disabled){background:#2457dc;border-color:#2457dc;color:#fff!important;box-shadow:0 3px 10px #2457dc22}
+.ncp-r4-pager button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 4px 12px #2457dc22}.ncp-r4 .ncp-r4-pager button:disabled{background:#f5f7fa;border-color:#edf0f5;color:#b4bfce!important;opacity:1;box-shadow:none}
+.ncp-r4-pager button:focus-visible,.ncp-r4-view-all:focus-visible{outline:3px solid #8eb5ff;outline-offset:3px}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4300,11 +4310,13 @@ document.addEventListener('click',async function(event){const button=event.targe
     if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;
     const controls=document.createElement('div');controls.className='ncp-r4-pager';controls.setAttribute('aria-label',label+' 페이지');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    previous.type=next.type='button';previous.textContent='←';next.textContent='→';previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
-    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;}
-    previous.addEventListener('click',()=>{if(page>0){page--;render();}});next.addEventListener('click',()=>{if(page<total-1){page++;render();}});
+    previous.type=next.type='button';const arrow=direction=>'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="'+(direction==='left'?'M14 6l-6 6 6 6':'M10 6l6 6-6 6')+'" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';previous.innerHTML=arrow('left');next.innerHTML=arrow('right');previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
+    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;position.setAttribute('aria-label',(page+1)+'페이지, 전체 '+total+'페이지');}
+    let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;page=target;render();previous.disabled=next.disabled=true;await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}else{page=target;render();}}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
+    previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
     controls.append(previous,position,next);container.after(controls);render();
   }
+  root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
   try{
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
     const entries=(await response.json()).feed.entry||[];const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
