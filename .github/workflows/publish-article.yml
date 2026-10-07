@@ -65,6 +65,22 @@ jobs:
             fi
             sleep 3
           done
+      - name: Request GitHub OIDC token
+        if: steps.requests.outputs.has_requests == 'true'
+        id: oidc
+        shell: bash
+        run: |
+          response="$(curl --fail-with-body --silent --show-error -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=akkigo-boja-publish")"
+          token="$(printf '%s' "$response" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>process.stdout.write(JSON.parse(s).value||''))")"
+          if [ -z "$token" ]; then echo "OIDC_TOKEN_MISSING"; exit 1; fi
+          echo "::add-mask::$token"
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+      - name: Read-only Worker source check before repair
+        if: steps.requests.outputs.has_requests == 'true'
+        id: preflight
+        env:
+          GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: node tools/check-article-readiness.mjs --once
       - name: Check Worker deployment readiness
         if: steps.requests.outputs.has_requests == 'true'
         id: worker
@@ -73,6 +89,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [ "${{ steps.preflight.outputs.worker_ready }}" = "true" ]; then
+            echo "WORKER_SNAPSHOT_MATCH_SKIP_DEPLOY"
+            echo "deploy_needed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           deploy_sha="$(git log -1 --format=%H HEAD -- src/ data/ theme/assets/ migrations/ wrangler.jsonc package.json pnpm-lock.yaml pnpm-workspace.yaml .github/workflows/deploy.yml)"
 
           deploy_needed=true
@@ -117,16 +138,11 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: pnpm deploy
-      - name: Request GitHub OIDC token
+      - name: Confirm exact Worker source before any Blogger mutation
         if: steps.requests.outputs.has_requests == 'true'
-        id: oidc
-        shell: bash
-        run: |
-          response="$(curl --fail-with-body --silent --show-error -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=akkigo-boja-publish")"
-          token="$(printf '%s' "$response" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>process.stdout.write(JSON.parse(s).value||''))")"
-          if [ -z "$token" ]; then echo "OIDC_TOKEN_MISSING"; exit 1; fi
-          echo "::add-mask::$token"
-          echo "token=$token" >> "$GITHUB_OUTPUT"
+        env:
+          GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: node tools/check-article-readiness.mjs --wait
       - name: Publish only changed approved requests
         if: steps.requests.outputs.has_requests == 'true'
         env:

@@ -9,6 +9,7 @@ import { listUnverifiedCandidates } from './candidates.js';
 import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
 import { buildHubDraft } from './hubs.js';
 import { publishApprovedArticle } from './articles.js';
+import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
 
 export default {
@@ -19,6 +20,13 @@ export default {
     if (path === '/coupons/catalog' && request.method === 'GET') {
       return Response.json(couponCatalog(coupons),{headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://lsifl.blogspot.com'}});
     }
+    if (path === '/internal/articles/preflight' && request.method === 'POST') {
+      try { await verifyGitHubOidc(request); } catch { return new Response('Unauthorized',{status:401}); }
+      let input;
+      try {input=await request.json();}catch{return Response.json({error:'INVALID_JSON'},{status:400});}
+      try {return Response.json(await articleSnapshot(input.articleKey,[...articles,...supplementalArticles]),{headers:{'Cache-Control':'no-store'}});}
+      catch{return Response.json({error:'INVALID_ARTICLE_KEY'},{status:400});}
+    }
     if (path === '/internal/articles/publish' && request.method === 'POST') {
       try {
         await verifyGitHubOidc(request);
@@ -28,6 +36,8 @@ export default {
       let input;
       try { input=await request.json(); } catch { return Response.json({error:'INVALID_JSON'},{status:400}); }
       try {
+        const source=await articleSnapshot(input.articleKey,[...articles,...supplementalArticles]);
+        if(!source.approved || source.postSha256!==input.postSha256)throw new Error('ARTICLE_SNAPSHOT_MISMATCH');
         const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles]);
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {

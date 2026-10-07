@@ -1,4 +1,7 @@
 import {readFile} from 'node:fs/promises';
+import primary from '../data/articles.json' with {type:'json'};
+import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import {articleSnapshot} from '../src/article-snapshot.js';
 
 const token=process.env.GITHUB_OIDC_TOKEN;
 if (!token) throw new Error('GITHUB_OIDC_TOKEN_MISSING');
@@ -17,10 +20,12 @@ for (const name of names) {
     continue;
   }
   processedKeys.add(request.articleKey);
+  const source=await articleSnapshot(request.articleKey,[...primary,...supplemental]);
+  if(!source.approved)throw new Error('LOCAL_ARTICLE_NOT_APPROVED');
   const response=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish',{
     method:'POST',
     headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},
-    body:JSON.stringify({articleKey:request.articleKey})
+    body:JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256})
   });
   const body=await response.json().catch(()=>({error:'INVALID_RESPONSE'}));
   if (!response.ok) throw new Error(`ARTICLE_PUBLISH_HTTP_${response.status}_${body.error || 'UNKNOWN'}`);
