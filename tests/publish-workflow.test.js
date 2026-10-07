@@ -58,3 +58,13 @@ test('Deploy는 별도 account probe와 cache 복원을 반복하지 않고 테�
   assert.match(yaml,/wrangler d1 migrations apply akkigo-boja-state --remote/);
   assert.match(yaml,/pnpm deploy/);
 });
+
+test('이미 성공한 Worker 배포가 최신 데이터 커밋의 후손이면 중복 재배포하지 않는다',()=>{
+  const yaml=readFileSync(new URL('../.github/workflows/publish-article.yml',import.meta.url),'utf8');
+  assert.match(yaml,/mapfile -t deployed_shas/);
+  assert.match(yaml,/git merge-base --is-ancestor "\$deploy_sha" "\$deployed_sha"/);
+  assert.match(yaml,/git merge-base --is-ancestor "\$deployed_sha" HEAD\^/);
+  assert.match(yaml,/WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW/);
+  assert.doesNotMatch(yaml,/head_sha="\$deploy_sha"/);
+  assert.match(yaml,/if \[ "\$deploy_needed" = true \]; then/);
+});
