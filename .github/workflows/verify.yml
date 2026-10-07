@@ -26,19 +26,6 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - run: npm install --global pnpm@11.19.0
-      - name: Resolve pnpm store path
-        id: pnpm-store
-        shell: bash
-        run: echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
-      - name: Cache pnpm store
-        uses: actions/cache@v5
-        with:
-          path: ${{ steps.pnpm-store.outputs.path }}
-          key: pnpm-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            pnpm-${{ runner.os }}-${{ runner.arch }}-
-      - run: pnpm install --frozen-lockfile --prefer-offline
       - name: Detect Worker build changes
         id: changes
         shell: bash
@@ -63,7 +50,11 @@ jobs:
             echo "worker=false" >> "$GITHUB_OUTPUT"
             echo "WORKER_BUILD_SKIPPED"
           fi
-      - run: pnpm test
+      - run: npm install --global pnpm@11.19.0
+        if: steps.changes.outputs.worker == 'true'
+      - run: pnpm install --frozen-lockfile
+        if: steps.changes.outputs.worker == 'true'
+      - run: node --test
       - run: pnpm build
         if: steps.changes.outputs.worker == 'true'
       - name: Regenerate Blogger theme and require clean diff
