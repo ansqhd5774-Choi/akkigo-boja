@@ -25,8 +25,8 @@ test('포트블록스 모바일 쿠폰 글의 코드 정확도·초안·게시�
   assert.match(article.post.title,/25개/);
   assert.match(html,/id="fb-unknown"/);
   assert.match(html,/추가 쿠폰 코드 15개 — 출처 불명/);
-  assert.equal((html.match(/#(?:1[1-9]|2[0-5]) · 출처 불명/g)||[]).length,15);
-  assert.match(html,/공식 발급·작동·만료 확인 안 됨/);
+  assert.equal((html.match(/class="ncp-col-source" role="cell">출처 불명/g)||[]).length,15);
+  assert.match(html,/실제 입력되는지, 보상이 있는지는 확인되지 않았습니다/);
   for(const code of article.source.codes){
     assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1);
   }
@@ -53,18 +53,25 @@ test('포트블록스의 기존 URL과 기사 키는 유지하고, 출처 불명
   assert.equal(articles.filter(a=>a.articleKey===key).length,1);
 });
 
-test('포트블록스 쿠폰 목록은 PC·모바일 1열, 68px 고정 높이, 동일한 오른쪽 복사 버튼 위치를 사용한다',()=>{
+test('포트블록스 쿠폰 목록은 PC·모바일에서 순서/출처/만료 기간/쿠폰/복사 순으로 고정 정렬된다',()=>{
   const html=readFileSync(new URL('../drafts/'+key+'.html',import.meta.url),'utf8');
   const scope='[data-ncp-article="'+key+'"] ';
-  assert.ok(html.includes(scope+'.ncp-card-list{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;'));
-  assert.ok(html.includes(scope+'.ncp-code-card{position:relative;display:flex;flex-direction:column;justify-content:center;'));
+  assert.ok(html.includes(scope+'.ncp-list-header,'+scope+'.ncp-code-card{display:grid;'));
+  assert.ok(html.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px'));
+  assert.ok(html.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'));
   assert.match(html,/height:68px;min-height:68px/);
-  assert.ok(html.includes(scope+'.ncp-copy{position:absolute;right:12px;top:7px;'));
-  assert.ok(html.includes('width:66px;height:42px;min-width:66px;min-height:42px'));
-  assert.ok(html.includes(scope+'.ncp-copy-state{position:absolute;right:9px;bottom:2px;'));
-  assert.ok(html.includes(scope+'.ncp-code{font-size:17px}'));
-  assert.doesNotMatch(html,/\.ncp-card-list\{display:grid;grid-template-columns:1fr 1fr/);
+  const headings='<span role="columnheader">순서</span><span role="columnheader">출처</span><span role="columnheader">만료 기간</span><span role="columnheader">쿠폰</span><span role="columnheader">복사</span>';
+  assert.equal(html.split(headings).length-1,3);
+  assert.equal((html.match(/class="ncp-code-card ncp-coupon-card"/g)||[]).length,25);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,25);
-  assert.equal((html.match(/class="ncp-code-card"/g)||[]).length,25);
-  assert.deepEqual(articles.find(a=>a.articleKey===key).source.codes.length,25);
+  assert.equal((html.match(/class="ncp-col-expiry" role="cell">미확인/g)||[]).length,25);
+  for(let i=1;i<=25;i++){
+    const label=i<=7?'해외 공개':i<=10?'국내 제보':'출처 불명';
+    assert.ok(html.includes('<span class="ncp-col-order" role="cell">'+String(i).padStart(2,'0')+'</span><span class="ncp-col-source" role="cell">'+label+'</span>'));
+  }
+  for(const code of articles.find(a=>a.articleKey===key).source.codes){
+    assert.ok(html.includes('<code class="ncp-col-code" role="cell">'+code+'</code>'));
+    assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1);
+  }
+  assert.doesNotMatch(html,/class="ncp-code-head"|class="ncp-source-small"|grid-template-columns:1fr 1fr/);
 });
