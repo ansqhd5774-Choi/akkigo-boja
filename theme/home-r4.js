@@ -10,9 +10,9 @@
   let heartCounts=new Map();try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok)heartCounts=new Map((await response.json()).hearts.map(row=>[row.brand,row.count]));}catch{}
   function addHeart(host,brand){
     const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title='운영자 초기 설정값 + 실제 클릭 수';
-    const icon=document.createElement('span'),count=document.createElement('span');icon.textContent='♡';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
+    const icon=document.createElement('span'),count=document.createElement('span');icon.className='ncp-heart-icon';icon.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
     let visitor,liked=false;try{visitor=localStorage.getItem('ncp-heart-visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('ncp-heart-visitor',visitor);}liked=localStorage.getItem('ncp-heart-'+brand)==='1';}catch{}
-    const update=()=>{button.setAttribute('aria-pressed',String(liked));icon.textContent=liked?'♥':'♡';button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
+    const update=()=>{button.setAttribute('aria-pressed',String(liked));button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
     button.addEventListener('click',async event=>{event.preventDefault();event.stopPropagation();if(liked)return;button.disabled=true;try{const response=await fetch(heartEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brand,visitor})});if(!response.ok)throw Error('HEART_WRITE_FAILED');const result=await response.json();count.textContent=String(result.count);heartCounts.set(brand,result.count);liked=true;try{localStorage.setItem('ncp-heart-'+brand,'1');}catch{}}catch{button.title='저장하지 못했습니다. 다시 눌러주세요.';}finally{update();}});host.append(button);
   }
   function card(entry,game,count){
