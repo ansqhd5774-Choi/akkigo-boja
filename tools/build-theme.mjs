@@ -27,9 +27,11 @@ document.addEventListener('click',async function(event){const button=event.targe
 const gameMount=`<b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[\n${gameScript}\n//]]></script></b:if>`;
 const homeCss=await readFile(new URL('theme/home-r4.css',root),'utf8');
 const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');
+const seoLinks=JSON.parse(await readFile(new URL('theme/seo-post-links.json',root),'utf8'));
+const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r4 ncp-r4-wrap' aria-label='쿠폰 안내 글 목록'><h2>쿠폰·할인코드 안내</h2><p>JavaScript를 사용할 수 없어 글 링크를 표시합니다.</p><ul>${seoLinks.map(row=>`<li><a href='${e(row.url)}'>${e(row.title)}</a></li>`).join('')}</ul></nav></noscript></b:if>`;
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
 const output=base.replace(']]></b:skin>',css+gameCss+homeCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output);
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');
