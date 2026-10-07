@@ -45,6 +45,10 @@ const publicFiles=[
   '../drafts/rokebi-promo-202610.html',
 
   '../drafts/dosirakesim-promo-202610.html',
+  '../drafts/hostinger-coupons-202610.html',
+  '../drafts/spaceship-domain-coupons-202610.html',
+  '../drafts/namecheap-birthday-202610.html',
+  '../drafts/cafe24-domain-discount-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
