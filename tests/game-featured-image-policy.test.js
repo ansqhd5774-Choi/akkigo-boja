@@ -11,8 +11,8 @@ test('official Pokémon GO app icon and original article are consistent',()=>{
   const r=registry.find(x=>x.articleKey===key);
   assert.ok(r);assert.equal(r.gameName,'Pokémon GO');
   assert.equal(validateGameFeaturedImage(key,pokemon.post),true);
-  const img=pokemon.post.content.match(/<img\\b[^>]*>/)?.[0];
-  assert.ok(img?.includes(r.iconUrl));
+  const iconTag=pokemon.post.content.slice(pokemon.post.content.indexOf('<img ')).split('>')[0]+'>';
+  assert.ok(iconTag.includes(r.iconUrl));
   assert.ok(pokemon.post.content.includes(r.appStoreUrl));
   assert.ok(pokemon.post.content.includes('aspect-ratio:1/1;object-fit:contain'));
   assert.equal((pokemon.post.content.match(/data-ncp-featured-image=/g)||[]).length,1);
