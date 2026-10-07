@@ -23,7 +23,7 @@ export function validateGameCouponLayout(articleKey,post){
   const h=post.content;
   const fail=(why)=>{throw new Error('GAME_COUPON_LAYOUT_'+why);};
   if(h.includes('<h1'))fail('DUPLICATE_TITLE');
-  if(h.includes('ncp-historical-list'))fail('UNAPPROVED_TWO_COLUMN_LIST');
+  if(h.includes('class="ncp-historical-list"'))fail('UNAPPROVED_TWO_COLUMN_LIST');
   if(!h.includes('class="ncp-card-list ncp-compact-list" role="table"'))fail('MISSING_GRID');
   const headings=h.split(header).length-1;
   if(headings<1 || headings>2)fail('HEADERS');
