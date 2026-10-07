@@ -43,6 +43,15 @@ test('Pokémon GO 공개 글은 현재 코드와 예정 Twitch Drop을 분리한
   assert.match(html,/10월 25일 오전 11시 30분/);
   assert.match(html,/store\.pokemongo\.com\/offer-redemption/);
   assert.match(html,/<!--more-->/);
+  assert.equal((html.match(/<h1/g)||[]).length,0,'Blogger must render the only article title');
+  assert.equal(html.includes(draft.post.title),false);
+  assert.equal((html.match(/data-ncp-featured-image=/g)||[]).length,1);
+  assert.match(html,/FENDIxFRGMTxPOKEMON/);
+  assert.match(html,/공식 만료/);
+  assert.match(html,/과거 이벤트 코드 16개/);
+  assert.match(html,/실제 계정에서의 적용 여부가 불확실/);
+  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,18);
+
   const preview=html.slice(0,html.indexOf('<!--more-->'));
   assert.equal(preview.includes('ADIDASxPOKEMON'),false);
   assert.equal(preview.includes('LEGOxPOKEMONGOxBERRIES'),false);
