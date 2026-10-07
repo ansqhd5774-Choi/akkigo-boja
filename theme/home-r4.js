@@ -18,7 +18,7 @@
       image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
-    const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;heading.append(link);
+    const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
     body.append(heading);article.append(body);return article;
   }
   try{

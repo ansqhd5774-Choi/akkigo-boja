@@ -2740,6 +2740,13 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .ncp-r4-latest-list h3{font-size:11px;line-height:1.45;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 #ncp-game-hub .ncp-game-updated{font-size:10px;margin:6px 5px 8px}
 }
+
+/* Keep game names readable in narrow mobile cards. */
+@media(max-width:600px){
+.ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-game-visual .ncp-game-name{font-size:10px;line-height:1.35;word-break:normal;overflow-wrap:anywhere;-webkit-line-clamp:3;max-width:calc(100% - 6px);padding:4px 3px}
+.ncp-r4-section-head h2{white-space:nowrap;flex-shrink:0}
+.ncp-r4-section-head p{font-size:11px;text-align:right}
+}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4277,7 +4284,7 @@ document.addEventListener('click',async function(event){const button=event.targe
       image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
-    const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;heading.append(link);
+    const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
     body.append(heading);article.append(body);return article;
   }
   try{
