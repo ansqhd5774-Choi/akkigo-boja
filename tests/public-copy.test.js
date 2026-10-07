@@ -39,6 +39,8 @@ const publicFiles=[
   '../drafts/globalyo-esim-promo-202610.html',
   '../drafts/esim4travel-promo-202610.html',
   '../drafts/redteago-esim-promo-202610.html',
+
+  '../drafts/usimsa-promo-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
