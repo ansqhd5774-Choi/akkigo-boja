@@ -1,0 +1,47 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import articles from '../data/articles-supplemental.json' with {type:'json'};
+import icons from '../data/game-app-icons.json' with {type:'json'};
+import {validateGameCouponLayout} from '../src/game-code-layout-contract.js';
+import {validateGameFeaturedImage} from '../src/game-featured-image-policy.js';
+const key='outerplane-codes-202610',article=articles.find(x=>x.articleKey===key);
+const valid=["01MOONPTY","GOLDMOONPTY","MOONPTYEX","OPREG1YPT","OPREG1YTR","MOONPTYGOLD","GGASGIFT","SAMEWAYSECRETCODE","GWOSHI"],expired=["STEAMWISH3","STEAMWISH2","STEAMWISH1","OPLIVE08","LOVEDELTA","OUTERLETTERJUL1","0715LIVETRAN","0715LIVEGOLD","JULY2026LIVE","SUPPLYTICKET","NEWCHAPTER","OUTERLETTERJUN2","24kthankyou","OUTERLETTERJUN","LIVEON0519","OUTERLETTERMAY","OUTERLETTERMAY2","HAPPYNEW2026"];
+test('Outerplane 2026-10 draft matches source and stores all 27 exact redeem values',()=>{
+  assert.ok(article);
+  assert.equal(article.approvedForPublish,true);
+  assert.equal(article.source.status,'UNVERIFIED');
+  const draft=JSON.parse(readFileSync(new URL('../drafts/'+key+'.json',import.meta.url),'utf8'));
+  const html=readFileSync(new URL('../drafts/'+key+'.html',import.meta.url),'utf8').trim();
+  assert.deepEqual(draft.post,article.post);
+  assert.equal(html,article.post.content);
+  assert.deepEqual(article.post.labels,['게임','아우터플레인','쿠폰','OUTERPLANE']);
+  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,27);
+  assert.equal(new Set([...valid,...expired]).size,27);
+  for(const code of [...valid,...expired])assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1,code);
+  assert.equal((html.match(/class="ncp-code-card" role="row"/g)||[]).length,27);
+  assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
+  assert.equal((html.match(/<!--more-->/g)||[]).length,1);
+  assert.equal(html.includes('<h1'),false);
+  assert.equal(html.includes(article.post.title),false);
+  assert.equal(validateGameCouponLayout(key,article.post),true);
+});
+test('verified official square app icon has first-image and store provenance',()=>{
+  const icon=icons.find(x=>x.articleKey===key);
+  assert.equal(icon?.gameName,'아우터플레인');
+  assert.equal(icon?.platform,'apple-app-store');
+  assert.ok(icon.iconUrl.includes('512x512bb.jpg'));
+  assert.ok(icon.appStoreUrl.includes('id1630880836'));
+  assert.equal(validateGameFeaturedImage(key,article.post),true);
+  assert.equal((article.post.content.match(/data-ncp-featured-image=/g)||[]).length,1);
+  assert.equal((article.post.content.match(/data-ncp-app-icon="true"/g)||[]).length,1);
+});
+test('article distinguishes timed promos and registration gifts, cites new coupon portal',()=>{
+  const h=article.post.content;
+  assert.ok(h.includes('2026년 10월 31일'));
+  assert.ok(h.includes('2026년 10월 12일'));
+  assert.ok(h.includes('https://coupon.outerplane.major7.kr/coupon'));
+  assert.ok(h.includes('아우터플레인 공식 쿠폰 등록 페이지')||h.includes('공식 쿠폰 등록 페이지'));
+  assert.ok(h.includes('현재 사용 가능 목록이 아닙니다'));
+  assert.ok(!h.includes('실사용 미검증'));
+});
