@@ -3,13 +3,14 @@
   const root=document.getElementById('ncp-home-r4');if(!root)return;
   const allowed=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육'];
   const status=root.querySelector('[role="status"]');
-  function card(entry,game){
+  function card(entry,game,count){
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
     const category=allowed.find(x=>labels.includes(x));
     const name=game?(labels.find(x=>x!=='게임')||entry.title.$t):entry.title.$t;
-    const article=document.createElement('article');article.className='ncp-r4-card';
+    const article=document.createElement('article');article.className='ncp-r4-card'+(game?' ncp-game-visual':'');
+    if(game){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='쿠폰 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){
@@ -25,11 +26,11 @@
   }
   try{
     const policyResponse=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/coupons/catalog',{cache:'no-store'});if(!policyResponse.ok)throw Error('POLICY_HTTP');
-    const policy=await policyResponse.json();const currentBrands=new Set(policy.current.map(x=>x.brand));
+    const policy=await policyResponse.json();const currentBrands=new Map(policy.current.map(x=>[x.brand,x.count]));
     const eligible=e=>!e.category?.some(c=>c.term==='게임')||e.category.some(c=>currentBrands.has(c.term));
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
     const entries=((await response.json()).feed.entry||[]).filter(eligible);const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
-    const seen=new Set();for(const entry of entries){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')&&seen.size<6){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true);if(item){games.append(item);seen.add(name);}}}}
+    const seen=new Set();for(const entry of entries){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')&&seen.size<6){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true,currentBrands.get(name));if(item){games.append(item);seen.add(name);}}}}
     for(const entry of entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).slice(0,8)){const item=card(entry,false);if(item)latest.append(item);}
     status.textContent='';if(!games.children.length)games.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 카테고리 또는 검색으로 쿠폰을 찾아주세요.';}

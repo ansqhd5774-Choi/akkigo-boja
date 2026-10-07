@@ -17,7 +17,7 @@
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
       if((currentBrands&&!currentBrands.has(name))||!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
       seen.add(name);
-      const card=document.createElement('a');card.className='ncp-game-card';card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
+      const card=document.createElement('a');card.className='ncp-game-card'+(currentBrands?' ncp-game-visual':'');card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
@@ -43,7 +43,7 @@
         date.textContent=parts.find(x=>x.type==='month').value+'.'+parts.find(x=>x.type==='day').value+' 업데이트';
       }else date.textContent='업데이트 날짜 미확인';
       if(currentBrands)date.textContent=currentBrands.get(name)+'개 · 미검증 포함';
-      card.append(wrap,title,date);grid.append(card);
+      if(currentBrands){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='쿠폰 '+currentBrands.get(name)+'개';wrap.append(title,badge);card.append(wrap,date);}else card.append(wrap,title,date);grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 잠시 후 다시 확인해주세요.';}
