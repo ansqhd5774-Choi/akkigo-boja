@@ -76,3 +76,7 @@
 /* Identical heart geometry for selected and unselected states. */
 .ncp-game-heart .ncp-heart-icon{display:flex;align-items:center;justify-content:center;flex:0 0 14px;width:14px;height:14px;font-size:0!important}.ncp-heart-icon svg{display:block;width:14px;height:14px;overflow:visible}.ncp-heart-icon path{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ncp-game-heart[aria-pressed=true] .ncp-heart-icon path{fill:currentColor}.ncp-game-heart span:last-child{font-variant-numeric:tabular-nums;line-height:14px}
 @media(max-width:600px){.ncp-game-heart .ncp-heart-icon{flex-basis:12px;width:12px;height:12px}.ncp-heart-icon svg{width:12px;height:12px}.ncp-game-heart span:last-child{line-height:12px}}
+
+/* Game category image cards without the redundant footer. */
+#ncp-game-hub .ncp-game-heart-shell .ncp-game-card{display:block}#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px}
+@media(max-width:600px){#ncp-game-hub .ncp-game-heart{bottom:5px}}

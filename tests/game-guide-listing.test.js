@@ -35,7 +35,7 @@ test('게임 라벨 목록에서 포트블록스를 카탈로그 부재로 제�
   assert.match(label,/querySelectorAll\('\[data-ncp-copy\]'\)/);
   assert.match(label,/codeCount>0/);
   assert.doesNotMatch(label,/currentBrands|\/coupons\/catalog/);
-  assert.match(label,/card\.append\(wrap,date\)/);
+  assert.match(label,/card\.append\(wrap\)/);
 });
 
 test('테마 생성본에도 동일한 게임 글 목록 수정이 존재한다',()=>{

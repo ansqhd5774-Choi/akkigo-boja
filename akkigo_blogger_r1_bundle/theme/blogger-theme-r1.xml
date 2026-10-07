@@ -2769,6 +2769,10 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 /* Identical heart geometry for selected and unselected states. */
 .ncp-game-heart .ncp-heart-icon{display:flex;align-items:center;justify-content:center;flex:0 0 14px;width:14px;height:14px;font-size:0!important}.ncp-heart-icon svg{display:block;width:14px;height:14px;overflow:visible}.ncp-heart-icon path{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ncp-game-heart[aria-pressed=true] .ncp-heart-icon path{fill:currentColor}.ncp-game-heart span:last-child{font-variant-numeric:tabular-nums;line-height:14px}
 @media(max-width:600px){.ncp-game-heart .ncp-heart-icon{flex-basis:12px;width:12px;height:12px}.ncp-heart-icon svg{width:12px;height:12px}.ncp-game-heart span:last-child{line-height:12px}}
+
+/* Game category image cards without the redundant footer. */
+#ncp-game-hub .ncp-game-heart-shell .ncp-game-card{display:block}#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px}
+@media(max-width:600px){#ncp-game-hub .ncp-game-heart{bottom:5px}}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4291,7 +4295,7 @@ document.addEventListener('click',async function(event){const button=event.targe
         date.textContent=codeCount>0?'코드 '+codeCount+'개 · 사용 여부는 본문 확인':'쿠폰 안내';
         wrap.append(title);
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
-        card.append(wrap,date);
+        card.append(wrap);
       }else card.append(wrap,title,date);
       if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,name);grid.append(shell);}else grid.append(card);
     }

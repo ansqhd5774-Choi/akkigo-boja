@@ -56,7 +56,7 @@
         date.textContent=codeCount>0?'코드 '+codeCount+'개 · 사용 여부는 본문 확인':'쿠폰 안내';
         wrap.append(title);
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
-        card.append(wrap,date);
+        card.append(wrap);
       }else card.append(wrap,title,date);
       if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,name);grid.append(shell);}else grid.append(card);
     }
