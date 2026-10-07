@@ -1,5 +1,6 @@
 import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
 import {validateGameCouponLayout} from './game-code-layout-contract.js';
+import {validateGameFeaturedImage} from './game-featured-image-policy.js';
 
 function configured(env) {
   if (env.PUBLISH_ENABLED!=='true') throw new Error('PUBLISH_DISABLED');
@@ -41,6 +42,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   if (!article || article.approvedForPublish!==true) throw new Error('ARTICLE_NOT_APPROVED');
   validatePost(article.post);
   validateGameCouponLayout(articleKey,article.post);
+  validateGameFeaturedImage(articleKey,article.post);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
   if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
