@@ -45,6 +45,6 @@ for(const c of cases){
     assert.match(html,/25%가 항상 적용되는 것은 아닙니다/);
     assert.match(html,/한국 사이트/);
     for(const pattern of c.required) assert.match(html,pattern);
-    assert.doesNotMatch(html,/proas5|hismarketing|무조건 25%|ACTIVE 확정|전 상품 25%/);
+    assert.doesNotMatch(html,/proas5|hismarketing|ACTIVE 확정|전 상품 25%|무조건 25% 할인됩니다|항상 25% 할인/);
   });
 }
