@@ -57,6 +57,7 @@ const publicFiles=[
   '../drafts/geniezip-coupons-202610.html',
   '../drafts/nygirlz-coupons-202610.html',
   '../drafts/malltail-coupons-202610.html',
+  '../drafts/nutrione-coupons-202610.html',
 ];
 
 test('공개 HTML 자산에 내부 검증/운영 문구가 다시 들어가지 않는다',()=>{
