@@ -1,7 +1,7 @@
 // Home R4: public Blogger feed, no fabricated coupon status or benefit.
 (async function(){
   const root=document.getElementById('ncp-home-r4');if(!root)return;
-  const allowed=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육','취미','포토·굿즈','스포츠·레저'];
+  const allowed=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육'];
   const status=root.querySelector('[role="status"]');
   function card(entry,game){
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;

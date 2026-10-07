@@ -5,7 +5,7 @@ const root=new URL('../',import.meta.url);
 const base=await readFile(new URL('theme/blogger-native-base.xml',root),'utf8');
 const gameCss=await readFile(new URL('theme/game-icon-grid.css',root),'utf8');
 const gameScript=await readFile(new URL('theme/game-icon-grid.js',root),'utf8');
-const categories=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육','취미','포토·굿즈','스포츠·레저'];
+const categories=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육'];
 const coupons=JSON.parse(await readFile(new URL('data/coupons.json',root),'utf8'));
 const manual=coupons.filter(c=>c.verificationResult==='SUCCESS');
 const links=[['제우스: 오만의 신','/2026/10/blog-post.html'],['리니지M','/2026/10/m.html'],['명조:워더링 웨이브','/2026/10/blog-post_05.html']];
