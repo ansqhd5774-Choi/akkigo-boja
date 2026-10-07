@@ -7,7 +7,6 @@
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
-    const category=allowed.find(x=>labels.includes(x));
     const name=game?(labels.find(x=>x!=='게임')||entry.title.$t):entry.title.$t;
     const article=document.createElement('article');article.className='ncp-r4-card'+(game?' ncp-game-visual':'');
     if(game){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='쿠폰 '+count+'개';article.append(badge);}
@@ -16,13 +15,11 @@
     if(src&&new URL(src,location.href).protocol==='https:'){
       const image=document.createElement('img');image.className='ncp-r4-cover';image.alt=name;image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';
       const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');image.src=icon.href;
-      image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});if(game){const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);}else article.append(image);
+      image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
     const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;heading.append(link);
-    const info=document.createElement('p');const updated=new Date(entry.updated?.$t);info.textContent=(category||'쿠폰 안내')+' · '+(!Number.isNaN(updated.getTime())?new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric'}).format(updated)+' 업데이트':'입력 방법');
-    const detail=document.createElement('a');detail.href=url;detail.className='ncp-r4-detail';detail.textContent='쿠폰 · 사용 방법 보기';
-    if(game)body.append(heading);else body.append(heading,info,detail);article.append(body);return article;
+    body.append(heading);article.append(body);return article;
   }
   try{
     const policyResponse=await fetch('https://akkigo-boja.ansqhd5774.workers.dev/coupons/catalog',{cache:'no-store'});if(!policyResponse.ok)throw Error('POLICY_HTTP');
