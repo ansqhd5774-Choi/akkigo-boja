@@ -42,6 +42,6 @@ test('article distinguishes timed promos and registration gifts, cites new coupo
   assert.ok(h.includes('2026년 10월 12일'));
   assert.ok(h.includes('https://coupon.outerplane.major7.kr/coupon'));
   assert.ok(h.includes('아우터플레인 공식 쿠폰 등록 페이지')||h.includes('공식 쿠폰 등록 페이지'));
-  assert.ok(h.includes('현재 사용 가능 목록이 아닙니다'));
+  assert.ok(h.includes('2026년 10월 기준 사용 가능 목록이 아닙니다'));
   assert.ok(!h.includes('실사용 미검증'));
 });
