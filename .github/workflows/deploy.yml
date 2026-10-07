@@ -32,24 +32,11 @@ jobs:
         if: steps.auth.outputs.ready == 'true'
         with:
           node-version: '24'
+      - run: node --test
+        if: steps.auth.outputs.ready == 'true'
       - run: npm install --global pnpm@11.19.0
         if: steps.auth.outputs.ready == 'true'
-      - name: Resolve pnpm store path
-        id: pnpm-store
-        if: steps.auth.outputs.ready == 'true'
-        shell: bash
-        run: echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
-      - name: Cache pnpm store
-        if: steps.auth.outputs.ready == 'true'
-        uses: actions/cache@v5
-        with:
-          path: ${{ steps.pnpm-store.outputs.path }}
-          key: pnpm-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            pnpm-${{ runner.os }}-${{ runner.arch }}-
-      - run: pnpm install --frozen-lockfile --prefer-offline
-        if: steps.auth.outputs.ready == 'true'
-      - run: pnpm test
+      - run: pnpm install --frozen-lockfile
         if: steps.auth.outputs.ready == 'true'
       - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
         if: steps.auth.outputs.ready == 'true'
