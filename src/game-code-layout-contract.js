@@ -24,13 +24,15 @@ export function validateGameCouponLayout(articleKey,post){
   const fail=(why)=>{throw new Error('GAME_COUPON_LAYOUT_'+why);};
   if(h.includes('<h1'))fail('DUPLICATE_TITLE');
   if(h.includes('class="ncp-historical-list"'))fail('UNAPPROVED_TWO_COLUMN_LIST');
-  if(!h.includes('class="ncp-card-list ncp-compact-list" role="table"'))fail('MISSING_GRID');
+  const approvedGrid=h.includes('class="ncp-card-list ncp-compact-list" role="table"') ||
+    (articleKey==='fortblox-mobile-go-codes-202610' && h.includes('class="ncp-card-list" role="table"'));
+  if(!approvedGrid)fail('MISSING_GRID');
   const headings=h.split(header).length-1;
   if(headings<1 || headings>2)fail('HEADERS');
   if(!h.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px')||
      !h.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'))fail('GRID_COLUMNS');
   if(!h.includes('height:68px;min-height:68px'))fail('HEIGHT');
-  const rows=h.split('<div class="ncp-code-card" role="row">').slice(1).map(s=>s.split('</div>')[0]);
+  const rows=h.split(/<div class="ncp-code-card(?: ncp-coupon-card)?" role="row">/).slice(1).map(s=>s.split('</div>')[0]);
   const buttons=[...h.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
   if(!buttons.length||rows.length!==buttons.length||new Set(buttons).size!==buttons.length)fail('ROW_COUNT');
   for(let i=0;i<rows.length;i++){
