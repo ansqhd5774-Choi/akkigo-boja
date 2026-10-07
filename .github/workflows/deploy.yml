@@ -34,27 +34,23 @@ jobs:
           node-version: '24'
       - run: npm install --global pnpm@11.19.0
         if: steps.auth.outputs.ready == 'true'
-      - run: pnpm install --frozen-lockfile
+      - name: Resolve pnpm store path
+        id: pnpm-store
+        if: steps.auth.outputs.ready == 'true'
+        shell: bash
+        run: echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+      - name: Cache pnpm store
+        if: steps.auth.outputs.ready == 'true'
+        uses: actions/cache@v5
+        with:
+          path: ${{ steps.pnpm-store.outputs.path }}
+          key: pnpm-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-${{ runner.os }}-${{ runner.arch }}-
+      - run: pnpm install --frozen-lockfile --prefer-offline
         if: steps.auth.outputs.ready == 'true'
       - run: pnpm test
         if: steps.auth.outputs.ready == 'true'
-      - name: Resolve one Cloudflare account without logging account details
-        if: steps.auth.outputs.ready == 'true'
-        shell: bash
-        run: |
-          set +e
-          pnpm exec wrangler whoami > "$RUNNER_TEMP/wrangler-whoami.txt" 2>&1
-          code=$?
-          set -e
-          if [ "$code" -ne 0 ]; then
-            if grep -qi "More than one account" "$RUNNER_TEMP/wrangler-whoami.txt"; then
-              echo "CLOUDFLARE_ACCOUNT_AMBIGUOUS"
-            else
-              echo "CLOUDFLARE_ACCOUNT_RESOLUTION_FAILED"
-            fi
-            exit "$code"
-          fi
-          echo "CLOUDFLARE_ACCOUNT_RESOLVED"
       - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
         if: steps.auth.outputs.ready == 'true'
       - run: pnpm deploy
