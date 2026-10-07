@@ -2727,6 +2727,19 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body{padding:0}
 .ncp-coupon-count{font-size:11px;font-weight:600;padding:4px 8px;border-radius:999px;box-shadow:none}
 .ncp-game-cover-link{display:block}
+
+/* Dense four-column mobile coupon grids. */
+@media(max-width:600px){
+.ncp-r4-game-list,.ncp-r4-latest-list,#ncp-game-hub .ncp-game-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ncp-r4-game-list .ncp-r4-cover,#ncp-game-hub .ncp-game-icon-wrap{height:auto;aspect-ratio:1}
+.ncp-r4-card,#ncp-game-hub .ncp-game-card{border-radius:10px}
+.ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-game-visual .ncp-game-name{top:56%;font-size:11px;line-height:1.3;max-width:calc(100% - 8px);padding:4px;border-radius:5px;letter-spacing:-.3px}
+.ncp-coupon-count{top:4px;left:4px;font-size:9px;padding:2px 5px}
+.ncp-r4-latest-list .ncp-r4-cover{height:auto;aspect-ratio:1;padding:6px}
+.ncp-r4-latest-list .ncp-r4-card-body{padding:7px 5px}
+.ncp-r4-latest-list h3{font-size:11px;line-height:1.45;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#ncp-game-hub .ncp-game-updated{font-size:10px;margin:6px 5px 8px}
+}
 ]]></b:skin>
 
     <b:template-skin>
