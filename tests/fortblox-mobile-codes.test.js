@@ -25,8 +25,8 @@ test('포트블록스 모바일 쿠폰 글의 코드 정확도·초안·게시�
   assert.match(article.post.title,/25개/);
   assert.match(html,/id="fb-unknown"/);
   assert.match(html,/추가 쿠폰 코드 15개 — 출처 불명/);
-  assert.equal((html.match(/#(?:1[1-9]|2[0-5]) · 출처 불명/g)||[]).length,15);
-  assert.match(html,/공식 발급·작동·만료 확인 안 됨/);
+  assert.equal((html.match(/class="ncp-col-source" role="cell">출처 불명/g)||[]).length,15);
+  assert.match(html,/실제 입력되는지, 보상이 있는지는 확인되지 않았습니다/);
   for(const code of article.source.codes){
     assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1);
   }
