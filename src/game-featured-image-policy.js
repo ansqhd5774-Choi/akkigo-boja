@@ -17,7 +17,6 @@ export function validateGameFeaturedImage(articleKey,post){
     store.hostname!==domains[e.platform][0]||icon.hostname!==domains[e.platform][1])fail('NOT_OFFICIAL_STORE');
   const h=post.content||'';
   if((h.match(/data-ncp-featured-image=/g)||[]).length!==1||!h.includes('data-ncp-featured-image="'+articleKey+'"'))fail('BAD_FEATURED_MARKER');
-  const open='<figure';
   const figures=[...h.matchAll(/<figure\b([^>]*)>([\s\S]*?)<\/figure>/g)];
   const figure=figures.find(x=>x[1].includes('data-ncp-featured-image="'+articleKey+'"'));
   if(!figure||!figure[1].includes('data-ncp-app-icon="true"')||

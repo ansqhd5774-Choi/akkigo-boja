@@ -14,6 +14,13 @@ test('게임 쿠폰 공통 템플릿은 안전한 목록 요약과 표준 상세
   assert.equal(preview.includes('{{CODE}}'),false);
   assert.ok(html.indexOf('data-ncp-article="{{ARTICLE_KEY}}"')>jump);
   assert.match(html,/id="ncp-active"/);
+  assert.ok(html.includes('data-ncp-app-icon="true"'));
+  assert.ok(html.includes('data-ncp-featured-image="{{ARTICLE_KEY}}"'));
+  assert.ok(html.includes('{{OFFICIAL_APP_ICON_URL}}'));
+  assert.ok(html.includes('{{OFFICIAL_APP_STORE_URL}}'));
+  assert.ok(html.includes('aspect-ratio:1/1;object-fit:contain'));
+  assert.equal(html.includes('<h1'),false);
+
   assert.match(html,/현재 확인된 쿠폰/);
   assert.match(html,/id="ncp-expired"/);
   assert.match(html,/쿠폰 입력 방법/);
