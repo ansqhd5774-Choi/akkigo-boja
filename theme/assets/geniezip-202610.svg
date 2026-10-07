@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" rx="40" fill="#eefaff"/><rect x="92" y="96" width="180" height="180" rx="34" fill="#fff"/><path d="M128 160h108v78H128z" fill="#087f8c" opacity=".15"/><path d="M146 145h72l18 15-54 30-54-30z" fill="#087f8c"/><path d="M128 160l54 30v54l-54-28zM236 160l-54 30v54l54-28z" fill="#087f8c" opacity=".82"/><text x="330" y="255" font-family="Arial,'Noto Sans KR',sans-serif" font-size="92" font-weight="800" fill="#087f8c">지니집</text><text x="334" y="325" font-family="Arial,'Noto Sans KR',sans-serif" font-size="34" font-weight="700" fill="#087f8c" opacity=".75">해외직구 배송대행</text><text x="334" y="395" font-family="Arial,'Noto Sans KR',sans-serif" font-size="28" fill="#087f8c" opacity=".60">2026년 10월 쿠폰·배송비 혜택</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2fbff"/><stop offset="1" stop-color="#dff6fb"/></linearGradient></defs>
+<rect width="1200" height="630" rx="40" fill="url(#bg)"/>
+<circle cx="600" cy="188" r="92" fill="#fff" stroke="#b7e6ec" stroke-width="4"/>
+<path d="M548 177h104v67H548z" fill="#087f8c" opacity=".12"/>
+<path d="M562 162h76l21 16-59 31-59-31z" fill="#087f8c"/>
+<path d="M548 178l52 31v49l-52-27zM652 178l-52 31v49l52-27z" fill="#087f8c" opacity=".82"/>
+<path d="M540 130c-37 12-64 34-78 66" fill="none" stroke="#087f8c" stroke-width="8" stroke-linecap="round"/>
+<path d="M469 187l-14 19 24 1z" fill="#087f8c"/>
+<text x="600" y="356" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="94" font-weight="900" fill="#066b76">지니집</text>
+<text x="600" y="410" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="28" font-weight="800" fill="#135c63">GENIEZIP · 해외직구 배송대행</text>
+<rect x="420" y="452" width="360" height="58" rx="29" fill="#087f8c"/>
+<text x="600" y="490" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="25" font-weight="800" fill="#fff">신규가입 쿠폰·배송비 혜택</text>
+</svg>
