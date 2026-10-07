@@ -9,6 +9,7 @@ test('generic labels and reordered labels do not become game names',()=>{
 });
 test('legacy primary keys preserve existing votes',()=>{
  assert.equal(resolveGame({title:'원신 쿠폰',category:['쿠폰','게임','원신']},['원신']).id,'원신');
+ assert.equal(resolveGame({title:'명조: 워더링 웨이브 쿠폰',category:['게임','명조: 워더링 웨이브']},['명조:워더링 웨이브']).id,'명조:워더링 웨이브');
 });
 test('explicit ids survive display-name changes',()=>{
  assert.deepEqual(resolveGame({title:'새 게임 쿠폰',content:'<article data-game-id="stable" data-game-name="새 이름">'}),{id:'stable',name:'새 이름'});

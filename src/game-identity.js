@@ -10,6 +10,7 @@ export function resolveGame(entry,knownNames=[]){
  const explicitId=body.match(/data-game-id=["']([^"']+)["']/)?.[1];
  const articleKey=body.match(/data-ncp-article=["']([^"']+)["']/)?.[1];
  // Existing names are legacy primary keys: retain their votes and browser state.
- const id=knownNames.includes(name)?name:explicitId||articleKey?.replace(/-\d{6}(?:.*)?$/,'')||name;
+ const legacy=knownNames.find(value=>value.replace(/\s/g,'')===name.replace(/\s/g,''));
+ const id=legacy||explicitId||articleKey?.replace(/-\d{6}(?:.*)?$/,'')||name;
  return {id,name};
 }
