@@ -51,6 +51,16 @@ test('Pokémon GO 공개 글은 현재 코드와 예정 Twitch Drop을 분리한
   assert.match(html,/과거 이벤트 코드 16개/);
   assert.match(html,/실제 계정에서의 적용 여부가 불확실/);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,18);
+  assert.doesNotMatch(html,/class="ncp-historical-list"/);
+  assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,2);
+  assert.equal((html.match(/class="ncp-code-card" role="row"/g)||[]).length,18);
+  assert.equal((html.match(/role="columnheader"/g)||[]).length,10);
+  assert.equal((html.match(/class="ncp-col-source" role="cell"/g)||[]).length,18);
+  assert.equal((html.match(/class="ncp-col-expiry" role="cell"/g)||[]).length,18);
+  assert.ok(html.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px'));
+  assert.ok(html.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'));
+  assert.ok(html.includes('height:68px;min-height:68px'));
+
 
   const preview=html.slice(0,html.indexOf('<!--more-->'));
   assert.equal(preview.includes('ADIDASxPOKEMON'),false);
