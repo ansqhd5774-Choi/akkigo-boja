@@ -28,7 +28,8 @@ export function validateGameCouponLayout(articleKey,post){
     (articleKey==='fortblox-mobile-go-codes-202610' && h.includes('class="ncp-card-list" role="table"'));
   if(!approvedGrid)fail('MISSING_GRID');
   const headings=h.split(header).length-1;
-  if(headings<1 || headings>2)fail('HEADERS');
+  const groups=(h.match(/class="ncp-card-list(?: ncp-compact-list)?" role="table"/g)||[]).length;
+  if(headings<1 || headings!==groups)fail('HEADERS');
   if(!h.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px')||
      !h.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'))fail('GRID_COLUMNS');
   if(!h.includes('height:68px;min-height:68px'))fail('HEIGHT');
