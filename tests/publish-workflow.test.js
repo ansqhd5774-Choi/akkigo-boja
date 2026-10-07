@@ -29,28 +29,32 @@ test('publish 요청만 바뀌면 전체 Verify를 재실행하지 않고 화면
   assert.match(layout,/Render Shiba coupon layout at 390 and 1440/);
 });
 
-test('Verify는 오래된 실행을 취소하고 문서 변경을 제외하며 pnpm store를 캐시한다',()=>{
+test('Verify는 오래된 실행을 취소하고 문서 변경을 제외한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
   assert.match(yaml,/cancel-in-progress:\s*true/);
   assert.match(yaml,/docs\/\*\*/);
   assert.match(yaml,/'\*\*\/\*\.md'/);
-  assert.match(yaml,/actions\/cache@v5/);
-  assert.match(yaml,/pnpm install --frozen-lockfile --prefer-offline/);
 });
 
-test('Verify의 Worker dry-run은 Worker 관련 변경에서만 실행하고 불확실한 diff는 안전하게 실행한다',()=>{
+test('Verify는 Worker 관련 변경이 아닐 때 pnpm 설치와 Worker dry-run을 모두 생략한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
   assert.match(yaml,/Detect Worker build changes/);
   assert.match(yaml,/WORKER_BUILD_REQUIRED_UNCERTAIN_DIFF/);
   assert.match(yaml,/WORKER_BUILD_SKIPPED/);
+  assert.match(yaml,/npm install --global pnpm@11\.19\.0\s*\n\s*if: steps\.changes\.outputs\.worker == 'true'/);
+  assert.match(yaml,/pnpm install --frozen-lockfile\s*\n\s*if: steps\.changes\.outputs\.worker == 'true'/);
+  assert.match(yaml,/run: node --test/);
   assert.match(yaml,/pnpm build\s*\n\s*if: steps\.changes\.outputs\.worker == 'true'/);
+  assert.doesNotMatch(yaml,/actions\/cache@/);
 });
 
-test('Deploy는 pnpm store를 캐시하고 별도 wrangler whoami 사전 호출을 반복하지 않는다',()=>{
+test('Deploy는 별도 account probe와 cache 복원을 반복하지 않고 테스트 후 필요한 도구만 설치한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/deploy.yml',import.meta.url),'utf8');
-  assert.match(yaml,/actions\/cache@v5/);
-  assert.match(yaml,/pnpm install --frozen-lockfile --prefer-offline/);
   assert.doesNotMatch(yaml,/wrangler whoami/);
+  assert.doesNotMatch(yaml,/actions\/cache@/);
+  assert.match(yaml,/run: node --test/);
+  assert.match(yaml,/npm install --global pnpm@11\.19\.0/);
+  assert.match(yaml,/pnpm install --frozen-lockfile/);
   assert.match(yaml,/wrangler d1 migrations apply akkigo-boja-state --remote/);
   assert.match(yaml,/pnpm deploy/);
 });
