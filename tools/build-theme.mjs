@@ -1,7 +1,10 @@
 import {homeR4,categoryHeaderR4} from '../theme/home-r4.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {escapeHtml as e} from '../src/coupons.js';
+import {resolveGame} from '../src/game-identity.js';
 const root=new URL('../',import.meta.url);
+const heartSeeds=JSON.parse(await readFile(new URL('data/game-heart-seeds.json',root),'utf8'));
+const identityMount=`<script type='text/javascript'>//<![CDATA[\nwindow.ncpResolveGame=(function(){const known=${JSON.stringify(Object.keys(heartSeeds))};const resolve=${resolveGame.toString()};return entry=>resolve(entry,known);})();\n//]]></script>`;
 const base=await readFile(new URL('theme/blogger-native-base.xml',root),'utf8');
 const gameCss=await readFile(new URL('theme/game-icon-grid.css',root),'utf8');
 const gameScript=await readFile(new URL('theme/game-icon-grid.js',root),'utf8');
@@ -33,5 +36,5 @@ const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript
 ${homeJs}
 //]]></script></b:if>`;
 const output=base.replace(']]></b:skin>',css+gameCss+homeCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</body>',seoFallback+'</body>'));
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');

@@ -7,9 +7,9 @@
   const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
 
   const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
-  let heartCounts=new Map();try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok)heartCounts=new Map((await response.json()).hearts.map(row=>[row.brand,row.count]));}catch{}
+  let heartCounts=new Map();let heartsReady=false;try{const response=await fetch(heartEndpoint,{cache:'no-store'});if(response.ok){heartCounts=new Map((await response.json()).hearts.map(row=>[row.gameId||row.brand,row.count]));heartsReady=true;}}catch{}
   function addHeart(host,brand){
-    const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title='운영자 초기 설정값 + 실제 클릭 수';
+    const button=document.createElement('button');button.type='button';button.className='ncp-game-heart';button.setAttribute('aria-label',brand+' 하트');button.title=heartsReady?'하트 누르기':'집계 불러오기 실패';
     const icon=document.createElement('span'),count=document.createElement('span');icon.className='ncp-heart-icon';icon.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.append(icon,count);
     let visitor,liked=false;try{visitor=localStorage.getItem('ncp-heart-visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('ncp-heart-visitor',visitor);}liked=localStorage.getItem('ncp-heart-'+brand)==='1';}catch{}
     const update=()=>{button.setAttribute('aria-pressed',String(liked));button.disabled=liked||!visitor||!heartCounts.has(brand);};update();
@@ -19,7 +19,7 @@
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
-    const name=game?(labels.find(x=>x!=='게임')||entry.title.$t):entry.title.$t;
+    const identity=game?window.ncpResolveGame(entry):null;const name=game?identity.name:entry.title.$t;
     const article=document.createElement('article');article.className='ncp-r4-card'+(game?' ncp-game-visual':'');
     if(game&&count>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
@@ -31,7 +31,7 @@
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
     const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
-    body.append(heading);article.append(body);if(game)addHeart(article,name);return article;
+    body.append(heading);article.append(body);if(game)addHeart(article,identity.id);return article;
   }
   function paginate(container,items,label){
     if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;
@@ -47,7 +47,7 @@
   try{
     const response=await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated');if(!response.ok)throw Error('FEED_HTTP');
     const entries=((await response.json()).feed.entry||[]).filter(entry=>!entry.category?.some(label=>label.term==='게임')||guideCodeCount(entry)>0);const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
-    const gameCards=[],seen=new Set();for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')){const name=labels.find(x=>x!=='게임')||entry.title.$t;if(!seen.has(name)){const item=card(entry,true,guideCodeCount(entry));if(item){gameCards.push(item);seen.add(name);}}}}
+    const gameCards=[],seen=new Set();for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')){const name=window.ncpResolveGame(entry).id;if(!seen.has(name)){const item=card(entry,true,guideCodeCount(entry));if(item){gameCards.push(item);seen.add(name);}}}}
     const latestCards=entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).map(entry=>card(entry,false)).filter(Boolean);
     games.closest('section')?.querySelector('h2')?.setAttribute('title','최신 등록순');paginate(games,gameCards,'게임 쿠폰');paginate(latest,latestCards,'최근 업데이트');
     status.textContent='';if(!games.children.length)games.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';

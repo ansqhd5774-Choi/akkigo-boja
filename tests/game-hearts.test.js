@@ -4,6 +4,12 @@ import {gameHearts} from '../src/game-hearts.js';
 const visitor='a93e8170-5ed3-4107-b423-f17c7dcb4d10';
 function store(){const votes=new Set();return {prepare(sql){let args=[];return {bind(...values){args=values;return this;},async run(){votes.add(args.join('|'));},async first(){return {clicks:[...votes].filter(v=>v.startsWith(args[0]+'|')).length};},async all(){const grouped=new Map();for(const vote of votes){const brand=vote.split('|')[0];grouped.set(brand,(grouped.get(brand)||0)+1);}return {results:[...grouped].map(([brand,clicks])=>({brand,clicks}))};}};}};}
 function request(brand,who=visitor,origin='https://lsifl.blogspot.com'){return new Request('https://example.test/games/hearts',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify({brand,visitor:who})});}
+test('new approved games start at zero and accept deduplicated votes',async()=>{
+ const env={DB:store()};const all=await (await gameHearts(new Request('https://example.test/games/hearts'),env)).json();
+ const game=all.hearts.find(x=>x.gameName==='후더덕 서바이벌');assert.ok(game);assert.equal(game.count,0);
+ const first=await (await gameHearts(request(game.gameId),env)).json();assert.equal(first.count,1);
+ const again=await (await gameHearts(request(game.gameId),env)).json();assert.equal(again.count,1);
+});
 test('initial values stay separate and same visitor adds only once',async()=>{const env={DB:store()};const first=await (await gameHearts(request('원신'),env)).json();assert.equal(first.clicks,1);assert.equal(first.count,first.initial+1);const second=await (await gameHearts(request('원신'),env)).json();assert.equal(second.clicks,1);const all=await (await gameHearts(new Request('https://example.test/games/hearts'),env)).json();assert.equal(all.hearts.find(x=>x.brand==='원신').clicks,1);});
 test('different visitors add independent votes',async()=>{const env={DB:store()};await gameHearts(request('원신'),env);const next=await (await gameHearts(request('원신','b93e8170-5ed3-4107-b423-f17c7dcb4d10'),env)).json();assert.equal(next.clicks,2);});
 test('other origins and unknown brands cannot write',async()=>{const env={DB:store()};assert.equal((await gameHearts(request('원신',visitor,'https://other.test'),env)).status,403);assert.equal((await gameHearts(request('unknown'),env)).status,400);assert.equal((await gameHearts(request('원신','bad'),env)).status,400);});
