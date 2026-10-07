@@ -6,6 +6,7 @@ on:
       - publish-requests/**
 permissions:
   contents: read
+  actions: read
   id-token: write
 concurrency:
   group: production-worker
@@ -13,20 +14,103 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v7.0.1
         with:
-          fetch-depth: 2
+          fetch-depth: 50
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
+      - name: Require latest source Verify success
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_sha=""
+          while read -r sha; do
+            files="$(git diff-tree --no-commit-id --name-only -r "$sha")"
+            if [ -n "$files" ] && printf '%s\n' "$files" | grep -qv '^publish-requests/'; then
+              source_sha="$sha"
+              break
+            fi
+          done < <(git rev-list --max-count=50 HEAD^)
+          if [ -z "$source_sha" ]; then
+            echo "SOURCE_COMMIT_NOT_FOUND"
+            exit 1
+          fi
+          for attempt in $(seq 1 20); do
+            state="$(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/verify.yml/runs" -f head_sha="$source_sha" -f per_page=5 --jq '.workflow_runs | sort_by(.created_at) | reverse | .[0] | [.status, (.conclusion // "")] | @tsv' 2>/dev/null || true)"
+            if [ -n "$state" ]; then
+              IFS=$'\t' read -r status conclusion <<< "$state"
+              if [ "$status" = "completed" ] && [ "$conclusion" = "success" ]; then
+                echo "SOURCE_VERIFY_SUCCESS"
+                break
+              fi
+              if [ "$status" = "completed" ]; then
+                echo "SOURCE_VERIFY_NOT_SUCCESS"
+                exit 1
+              fi
+            fi
+            if [ "$attempt" -eq 20 ]; then
+              echo "SOURCE_VERIFY_TIMEOUT"
+              exit 1
+            fi
+            sleep 3
+          done
+      - name: Check Worker deployment readiness
+        id: worker
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          deploy_sha=""
+          pattern='^(src/|data/|theme/assets/|migrations/|wrangler\.jsonc$|package\.json$|pnpm-lock\.yaml$|pnpm-workspace\.yaml$|\.github/workflows/deploy\.yml$)'
+          while read -r sha; do
+            files="$(git diff-tree --no-commit-id --name-only -r "$sha")"
+            if printf '%s\n' "$files" | grep -Eq "$pattern"; then
+              deploy_sha="$sha"
+              break
+            fi
+          done < <(git rev-list --max-count=50 HEAD^)
+
+          deploy_needed=true
+          if [ -n "$deploy_sha" ]; then
+            deploy_success="$(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs" -f head_sha="$deploy_sha" -f per_page=5 --jq '[.workflow_runs[] | select(.status=="completed" and .conclusion=="success")] | length' 2>/dev/null || echo 0)"
+            if [ "${deploy_success:-0}" -gt 0 ]; then
+              deploy_needed=false
+              echo "WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW"
+            else
+              mapfile -t published_shas < <(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/publish-article.yml/runs" -f branch="codex/blogger-worker-r1" -f per_page=20 --jq '.workflow_runs[] | select(.status=="completed" and .conclusion=="success") | .head_sha' 2>/dev/null || true)
+              for published_sha in "${published_shas[@]}"; do
+                if git cat-file -e "$published_sha^{commit}" 2>/dev/null &&
+                   git merge-base --is-ancestor "$deploy_sha" "$published_sha" &&
+                   git merge-base --is-ancestor "$published_sha" HEAD^; then
+                  deploy_needed=false
+                  echo "WORKER_ALREADY_DEPLOYED_BY_SUCCESSFUL_PUBLISH"
+                  break
+                fi
+              done
+            fi
+          else
+            echo "DEPLOY_SOURCE_NOT_FOUND_REPAIR_REQUIRED"
+          fi
+          echo "deploy_needed=$deploy_needed" >> "$GITHUB_OUTPUT"
       - run: npm install --global pnpm@11.19.0
+        if: steps.worker.outputs.deploy_needed == 'true'
       - run: pnpm install --frozen-lockfile
-      - run: pnpm test
-      - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
-      - run: pnpm deploy
+        if: steps.worker.outputs.deploy_needed == 'true'
+      - name: Apply pending D1 migrations before repair deploy
+        if: steps.worker.outputs.deploy_needed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
+      - name: Repair Worker deployment when required
+        if: steps.worker.outputs.deploy_needed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: pnpm deploy
       - name: Request GitHub OIDC token
         id: oidc
         shell: bash
