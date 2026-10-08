@@ -1,0 +1,24 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import research from '../data/wuthering-codes-202610.json' with {type:'json'};
+import coupons from '../data/coupons.json' with {type:'json'};
+import {buildHubDraft} from '../src/hubs.js';
+test('명조 기존 허브는 79 문자열 원문 날짜와 복사·공유를 보존한다',()=>{
+ const rows=research.records;
+ assert.equal(rows.length,79);assert.equal(new Set(rows.map(x=>x.code)).size,79);
+ assert.equal(rows.filter(x=>x.group==='archive').length,54);
+ assert.equal(rows.filter(x=>x.group==='suspect').length,2);
+ assert.equal(rows.filter(x=>x.group==='candidate').length,6);
+ assert.equal(rows.find(x=>x.code==='FALLINGSANCTUM').publishedAt,'2026-09-19');
+ assert.equal(rows.find(x=>x.code==='DVME2MOHOQJT').publishedAt,'2026-10-04');
+ assert.equal(rows.find(x=>x.code==='x100').publishedAt,null);
+ const post=buildHubDraft('wuthering',coupons);
+ assert.equal(post.title,'명조:워더링 웨이브');
+ const copies=[...post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
+ const shares=[...post.content.matchAll(/data-ncp-share="([^"]+)"/g)].map(x=>x[1]);
+ assert.equal(copies.length,79);assert.deepEqual(copies,shares);
+ for(const x of rows)assert.ok(copies.includes(x.code),x.code);
+ assert.equal(post.content.includes('<h1'),false);
+ assert.equal((post.content.match(/<!--more-->/g)||[]).length,1);
+ assert.equal(post.content.includes('data-ncp-hub="wuthering"'),true);
+});
