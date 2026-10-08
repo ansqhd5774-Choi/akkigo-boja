@@ -44,6 +44,7 @@ for (const name of names) {
   }
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
   if(requireUnchanged && (body.alreadyLive!==true || body.updated!==false))throw Error('UNCHANGED_PUBLISH_PROBE_RESPONSE_INVALID');
+  if(requireUnchanged && (body.postId!==process.env.UNCHANGED_EXPECTED_POST_ID || body.url!==process.env.UNCHANGED_EXPECTED_URL))throw Error('UNCHANGED_PUBLISH_PROBE_IDENTITY_CHANGED');
   if(requireUnchanged)console.log('UNCHANGED_PUBLISH_CLIENT_PASS',JSON.stringify({postId:body.postId,url:body.url,updated:body.updated}));
   // The Blogger API LIVE response is the publication handoff boundary.
   // The reader performs visual / interactive inspection after receiving the URL.

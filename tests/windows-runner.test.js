@@ -3,6 +3,14 @@ import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {assertVerifiedSource,isSuccessfulDeploymentRun,isWorkerPath} from '../tools/actions-runtime.mjs';
 import {probeExistingArticle} from '../src/articles.js';
+import {selectLiveProbeTarget} from '../tools/live-probe-target.mjs';
+import primary from '../data/articles.json' with {type:'json'};
+import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+
+test('runtime publication probe selects an approved current article that passes all draft checks',()=>{
+  assert.equal(selectLiveProbeTarget([...primary,...supplemental]),'royal-match-codes-202610');
+  assert.throws(()=>selectLiveProbeTarget([]),/ARTICLE_NOT_APPROVED/);
+});
 
 test('publication accepts only the exact SHA that completed prerequisite Verify',()=>{
   const sha='a'.repeat(40);
