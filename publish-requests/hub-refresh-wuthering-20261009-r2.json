@@ -1,0 +1,8 @@
+{
+  "hubKeys": [
+    "wuthering"
+  ],
+  "approved": true,
+  "requestedAt": "2026-10-09T07:50:00+09:00",
+  "reason": "User requested in-place update of the existing Wuthering Waves Blogger hub: preserve existing Blogger postId and public URL, post title game name only, archive 79 deduplicated source-listed strings with original source article dates, expired broadcast/Japan collab, and separate uncorroborated strings. Do not create a duplicate Blogger post or modify other hubs."
+}
