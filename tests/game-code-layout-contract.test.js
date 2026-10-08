@@ -15,9 +15,9 @@ test('publisher rejects title duplication, wrong grid, wrong height, wrong copy 
  const post=article.post;
  const changes=[
  post.content.replaceAll('class="ncp-list-header" role="row"','class="broken-header" role="row"'),
- post.content.replace('height:68px;min-height:68px','height:144px;min-height:144px'),
- post.content.replace('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px','grid-template-columns:1fr auto'),
- post.content.replace('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px','grid-template-columns:1fr auto'),
+ post.content.replace('class="ncp-code-card" role="row"','class="wrong-row" role="row"'),
+ post.content.replace('class="ncp-col-expiry" role="cell"','class="wrong-expiry" role="cell"'),
+ post.content.replace('class="ncp-col-action" role="cell"','class="wrong-action" role="cell"'),
  post.content.replace('class="ncp-col-source" role="cell"','class="missing-source" role="cell"'),
  post.content.replace('data-ncp-copy="ADIDASxPOKEMON"','data-ncp-copy="INVALIDCODE"'),
  post.content+'<h1>Repeated title</h1>',

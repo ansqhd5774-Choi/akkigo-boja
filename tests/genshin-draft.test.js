@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -23,7 +24,7 @@ test('원신 공개 글은 리딤코드·원석 보상·만료·복사·공식 �
   assert.equal((html.match(/data-ncp-featured-image="genshin"/g)||[]).length,1);
   assert.ok(html.includes(imageUrl));
   assert.ok(html.includes('alt="원신 공식 대표 이미지"'));
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'7068598989400675288');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html');

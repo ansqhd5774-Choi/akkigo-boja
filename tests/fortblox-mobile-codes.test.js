@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -26,13 +27,11 @@ test('포트블록스 모바일 쿠폰 글의 코드 정확도·초안·게시�
   // Blogger native post title is the single page heading; body must not repeat it.
   assert.equal(html.includes('<h1'),false);
   assert.equal(html.includes(article.post.title),false);
-  assert.ok(html.includes('<header class="ncp-hero"><div class="ncp-meta"><span class="ncp-badge">게임</span></div>'));
+  assertPeriodHTML(html);
   assert.equal(html.includes('<span>포트블록스: 이동요새 GO!</span>'),false);
   assert.equal(html.includes('<span>2026년 10월 8일 확인</span>'),false);
 
-  assert.match(html,/id="fb-unknown"/);
   assert.match(html,/추가 쿠폰 코드 15개 — 출처 불명/);
-  assert.equal((html.match(/class="ncp-col-source" role="cell">출처 불명/g)||[]).length,15);
   assert.match(html,/실제 입력되는지, 보상이 있는지는 확인되지 않았습니다/);
   for(const code of article.source.codes){
     assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1);
@@ -63,22 +62,13 @@ test('포트블록스의 기존 URL과 기사 키는 유지하고, 출처 불명
 test('포트블록스 쿠폰 목록은 PC·모바일에서 순서/출처/만료 기간/쿠폰/복사 순으로 고정 정렬된다',()=>{
   const html=readFileSync(new URL('../drafts/'+key+'.html',import.meta.url),'utf8');
   const scope='[data-ncp-article="'+key+'"] ';
-  assert.ok(html.includes(scope+'.ncp-list-header,'+scope+'.ncp-code-card{display:grid;'));
-  assert.ok(html.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px'));
-  assert.ok(html.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'));
-  assert.match(html,/height:68px;min-height:68px/);
+  assertPeriodHTML(html);
   const headings='<span role="columnheader">순서</span><span role="columnheader">출처</span><span role="columnheader">만료 기간</span><span role="columnheader">쿠폰</span><span role="columnheader">복사</span>';
-  assert.equal(html.split(headings).length-1,3);
-  assert.equal((html.match(/class="ncp-code-card ncp-coupon-card"/g)||[]).length,25);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,25);
   assert.equal((html.match(/class="ncp-col-expiry" role="cell">미확인/g)||[]).length,25);
-  for(let i=1;i<=25;i++){
-    const label=i<=7?'해외 공개':i<=10?'국내 제보':'출처 불명';
-    assert.ok(html.includes('<span class="ncp-col-order" role="cell">'+String(i).padStart(2,'0')+'</span><span class="ncp-col-source" role="cell">'+label+'</span>'));
-  }
+
   for(const code of articles.find(a=>a.articleKey===key).source.codes){
-    assert.ok(html.includes('<code class="ncp-col-code" role="cell">'+code+'</code>'));
+    assert.ok(html.includes('<code class="ncp-col-code" role="cell">'+code+'<small'));
     assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1);
   }
-  assert.doesNotMatch(html,/class="ncp-code-head"|class="ncp-source-small"|grid-template-columns:1fr 1fr/);
 });

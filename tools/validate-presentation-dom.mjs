@@ -8,7 +8,7 @@ export function validatePresentationDOM(article){
  const root=elements(d).find(n=>n.getAttribute('data-ncp-article')===article.articleKey);
  if(!root)throw Error('PRESENTATION_ARTICLE_ROOT_REQUIRED');
  for(const info of elements(root).filter(n=>has(n,'ncp-info'))){
-  if(info.tagName!=='details'||!(info.parentNode.tagName==='section'||has(info.parentNode,'ncp-brief')))throw Error('PRESENTATION_INFO_CONTAINER');
+  if(info.tagName!=='details'||!(info.parentNode.tagName==='section'||has(info.parentNode,'ncp-brief')||has(info.parentNode,'ncp-col-source')))throw Error('PRESENTATION_INFO_CONTAINER');
   const s=children(info).find(n=>n.tagName==='summary');
   if(!s?.getAttribute('aria-label')||!s.getElementsByTagName('svg').length||s.textContent.trim())throw Error('PRESENTATION_ICON_REQUIRED');
  }

@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -28,22 +29,16 @@ test('Lordrush source, 5-column 68px layout, code copy coverage and jump break',
  assert.deepEqual(copies,codes);
  assert.equal(new Set(copies).size,12);
  assert.equal((html.match(/class="ncp-code-card" role="row"/g)||[]).length,12);
- assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
- assert.ok(html.includes('height:68px;min-height:68px'));
- assert.ok(html.includes('grid-template-columns:46px 116px 108px minmax(0,1fr) 74px'));
- assert.ok(html.includes('grid-template-columns:26px 61px 63px minmax(0,1fr) 54px'));
+  assertPeriodHTML(html);
  assert.equal(validateGameCouponLayout(key,article.post),true);
  assert.equal(validateGameCandidateCoverage(article),true);
  assert.equal(validateArticleDraft(article),true);
 });
 test('Lordrush tabs switch real CSS panels; no link-only fake tabs',()=>{
  const html=article.post.content;
- for(const [id,panel] of [['current','current'],['old','old'],['weak','weak']]){
-  assert.ok(html.includes('id="lordrush-tab-'+id+'"'));
-  assert.ok(html.includes('for="lordrush-tab-'+id+'"'));
-  assert.ok(html.includes('#lordrush-tab-'+id+':checked~.ncp-lordrush-panels #lordrush-panel-'+panel));
- }
- assert.equal((html.match(/class="ncp-lordrush-radio"/g)||[]).length,3);
+ assertPeriodHTML(html);
+ for(const period of ['latest','2026','2025','2024'])assert.ok(html.includes('value="'+period+'"'));
+ assert.equal((html.match(/type="radio"/g)||[]).length,4);
 });
 test('Lordrush icon has official App Store identity, and candidate statuses are unverified',()=>{
  const icon=appIcons.find(x=>x.articleKey===key);

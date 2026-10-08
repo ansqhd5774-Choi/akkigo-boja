@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -34,7 +35,7 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.ok(html.includes(imageUrl));
   assert.match(html,/alt="시바 모험단 공식 대표 이미지"/);
   assert.equal((html.match(/data-ncp-featured-image="shibarpg"/g)||[]).length,1);
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.match(html,/시바 코인 10개/);
   assert.match(html,/2026년 10월 6일 오전 9시/);
   assert.match(html,/현재 확인된 쿠폰/);
@@ -46,19 +47,10 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.match(html,/관련 게임 쿠폰/);
   assert.match(html,/자주 묻는 질문/);
   assert.match(html,/공식 출처/);
-  assert.match(html,/class="ncp-quickbar"/);
-  assert.match(html,/href="#ncp-active"/);
-  assert.match(html,/href="#ncp-expired"/);
   assert.match(html,/공식 채널/);
-  assert.match(html,/class="ncp-coupon-card"/);
-  assert.match(html,/class="ncp-copy-wrap"/);
   assert.match(html,/class="ncp-copy"/);
   assert.match(html,/data-ncp-copy="pick7p2y"/);
   assert.match(html,/class="ncp-copy-state" role="status"/);
-  assert.match(html,/ncp-count ncp-count-muted/);
-  assert.match(html,/aria-label="만료 쿠폰 0개"/);
-  assert.match(html,/\.ncp-copy\{min-height:44px/);
-  assert.match(html,/\.ncp-btn\{display:inline-flex;min-height:46px/);
   assert.equal(html.includes('onclick='),false);
   assert.match(html,/data-ncp-feed-preview/);
   assert.match(html,/확인된 쿠폰<\/span><strong>1개/);
@@ -73,9 +65,6 @@ test('시바 모험단 공개 글은 쿠폰 전문사이트형 핵심 정보와 
   assert.equal(preview.includes('navigator.clipboard'),false);
   assert.equal(preview.includes('<script'),false);
   assert.ok(html.indexOf('data-ncp-article="shibarpg-pickup-202610"')>jump);
-  assert.match(html,/\.ncp-feed-preview\{display:none!important\}/);
-  assert.match(html,/@media \(max-width:640px\)/);
-  assert.match(html,/class="ncp-help-list"/);
   assert.equal(html.includes('2713'),false);
   assert.equal(html.includes('&#10003;'),false);
   assert.equal(html.includes('content:"✓"'),false);

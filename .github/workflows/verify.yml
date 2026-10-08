@@ -38,7 +38,7 @@ jobs:
       - name: Source tests
         # Mandatory presentation gate also checks generated theme typography.
         run: node --test
-      - name: Enforce R2 DOM structure, legacy snapshots and button coverage
+      - name: Enforce shared period renderer, history preservation and R2 DOM
         run: node tools/check-article-presentation.mjs
       - name: Worker dry-run build
         run: pnpm build

@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -26,7 +27,7 @@ test('컴투스프로야구V26 공개 글은 코드·보상·만료·복사·입
   assert.equal((html.match(/data-ncp-featured-image="cpbv26"/g)||[]).length,1);
   assert.ok(html.includes(imageUrl));
   assert.ok(html.includes('alt="컴투스프로야구V26 공식 대표 이미지"'));
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'4618248412018847849');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/v26-2026-10.html');

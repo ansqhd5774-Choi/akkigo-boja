@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -32,7 +33,7 @@ test('블루 아카이브 공개 글은 공식 쿠폰·대표 이미지·입력 
   assert.equal((html.match(/data-ncp-featured-image="blue-archive"/g)||[]).length,1);
   assert.ok(html.includes(imageUrl));
   assert.ok(html.includes('alt="블루 아카이브 공식 대표 이미지"'));
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.match(html,/KIRAKIRAERIKA/);
   assert.match(html,/data-ncp-copy="KIRAKIRAERIKA"/);
   assert.match(html,/청휘석 300개/);

@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -19,7 +20,7 @@ test('Cat Gunner publishes 38 unique source-traced copy codes and 12 ledger cand
  assert.equal(article.source.officiallyVerifiedCodeCount,0);
  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,38);
  assert.equal((html.match(/class="ncp-code-card" role="row"/g)||[]).length,38);
- assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
+  assertPeriodHTML(html);
  const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
  assert.equal(new Set(codes).size,38);
  for(const row of ledger.filter(x=>x.gameName==='총잡이 고양이'))assert.ok(codes.includes(row.code),'missing '+row.code);

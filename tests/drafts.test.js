@@ -20,7 +20,7 @@ function fixture() {
 test('3게임 초안은 실제 쿠폰이 없으면 빈 상태이며 고정 복구 표식을 갖는다',()=>{
   for (const key of ['zeus','lineagem','wuthering']) {
     const post=buildHubDraft(key);
-    assert.match(post.content,/현재 확인된 사용 가능 쿠폰이 없습니다/);
+    assert.match(post.content,/value="latest" checked="checked"/);
     assert.ok(post.content.includes(`data-ncp-hub="${key}"`));
     assert.doesNotMatch(post.content,/쿠폰 확인 기준|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태|개인정보 처리 안내/);
   }
@@ -74,6 +74,6 @@ test('목록 스캔 예산 소진과 잘못된 초안 응답은 성공으로 간
 test('기간 미확인 성공 사례도 현재 쿠폰으로 표시하지 않는다',()=>{
   const post=buildHubDraft('zeus',[{id:'fixture-manual',type:'GAME_REWARD',offerType:'GAME_REDEEM',brand:'제우스: 오만의 신',category:'게임',status:'UNVERIFIED',verificationResult:'SUCCESS',code:'TESTCODE',rewards:[{name:'테스트 보상',quantity:1}],server:'테스트',redemptionMethod:'공식 웹',platform:'WEB',member:'ALL',eligibilityConfirmed:false,endMode:'UNKNOWN',sourceUrl:'https://example.com',sourceCheckedAt:'2026-10-05T00:00:00Z'}]);
   assert.doesNotMatch(post.content,/TESTCODE/);
-  assert.match(post.content,/현재 쿠폰 0개/);
+  assert.match(post.content,/현재 입력 대상으로 분류할 근거가 확인된 코드가 없습니다/);
   assert.doesNotMatch(post.content,/workingVerifiedAt|verificationResult|evidenceMethod|활성 추천|쿠폰 확인 기준|개인정보 처리 안내/);
 });

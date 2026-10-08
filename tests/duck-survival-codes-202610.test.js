@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -25,7 +26,7 @@ test('후더덕 본문·초안·발행 데이터 정합성 및 쿠폰 전체 고
   assert.equal(new Set(codes).size,27);
   for(const code of codes)assert.equal(saved.split('data-ncp-copy="'+code+'"').length-1,1,code);
   assert.equal((saved.match(/class="ncp-code-card" role="row"/g)||[]).length,27);
-  assert.equal((saved.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
+  assertPeriodHTML(saved);
   assert.equal((saved.match(/<!--more-->/g)||[]).length,1);
   assert.equal(saved.includes('<h1'),false);
   assert.equal(saved.includes(article.post.title),false);

@@ -1,5 +1,6 @@
 import {validateMonthlyGameCouponTimeline} from './game-coupon-monthly.js';
 import {validateArticlePresentation} from './article-presentation.js';
+import {validateGamePeriodArticle} from './game-period-article.js';
 import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
 import {validateGameCouponLayout} from './game-code-layout-contract.js';
 import {validateGameFeaturedImage} from './game-featured-image-policy.js';
@@ -45,7 +46,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
     if (!response.ok) return false;
     const text=await response.text();
     const marker=text.includes(`data-ncp-article="${articleKey}"`);
-    if (articleKey==='shibarpg-pickup-202610') {
+    if (articleKey==='shibarpg-pickup-202610'&&!text.includes('data-ncp-template="game-period-tabs-r1"')) {
       return marker && text.includes('data-ncp-feed-preview') && text.includes('ncp-help-list') && text.includes('ncp-copy-wrap') && text.includes('data-ncp-copy') && text.includes('현재 확인된 쿠폰') && text.includes('확인된 코드') && text.includes('ncp-count-muted') && !text.includes('현재 사용 가능한 쿠폰') && !text.includes('onclick=') && !text.includes('2713') && !text.includes('ncp-checklist');
     }
     return marker;
@@ -54,7 +55,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
   }
 }
 
-export async function publishApprovedArticle(env, articleKey, articles, transport=fetch, {requireUnchanged=false}={}) {
+export async function publishApprovedArticle(env, articleKey, articles, transport=fetch, {requireUnchanged=false,existingOnly=false}={}) {
   configured(env);
   if (!validKey(articleKey)) throw new Error('INVALID_ARTICLE_KEY');
   const article=articles.find(x=>x.articleKey===articleKey);
@@ -65,8 +66,10 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   validateGameCandidateCoverage(article);
   validateMonthlyGameCouponTimeline(article);
   validateArticlePresentation(article);
+  if(article.post.labels.includes('게임'))validateGamePeriodArticle(article);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
+  if(existingOnly&&(stored?.status!=='LIVE'||!stored.post_id||!stored.public_url))throw Error('ARTICLE_NOT_LIVE_UPDATE_ONLY');
   if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
     const matches=await findArticlePosts(env,articleKey,transport);
     if (matches.length!==1 || matches[0].postId!==stored.post_id) throw new Error('ARTICLE_STATE_MISMATCH');

@@ -2,15 +2,14 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {publishApprovedArticle} from '../src/articles.js';
 
-const article={
-  articleKey:'shibarpg-pickup-202610',
-  approvedForPublish:true,
-  post:{
-    title:'시바 모험단 쿠폰 코드 모음 (2026년 10월) | 입력 방법·보상',
-    content:'<div data-ncp-feed-preview><span>확인된 쿠폰</span></div><article data-ncp-article="shibarpg-pickup-202610"><div class="ncp-copy-wrap"><button data-ncp-copy="pick7p2y">복사</button></div><strong>확인된 코드</strong><h2>현재 확인된 쿠폰</h2><span class="ncp-count ncp-count-muted">0</span><ul class="ncp-help-list"><li>새본문</li></ul></article>',
-    labels:['게임','시바 모험단']
-  }
-};
+import catalog from '../data/articles.json' with {type:'json'};
+const article=catalog.find(a=>a.articleKey==='shibarpg-pickup-202610');
+test('existing-only layout migration cannot create a missing post or write a checkpoint',async()=>{
+ const {DB,state}=fixtureDb();let calls=0;
+ const env={DB,PUBLISH_ENABLED:'true',BLOGGER_CLIENT_ID:'fixture',BLOGGER_CLIENT_SECRET:'fixture',BLOGGER_REFRESH_TOKEN:'fixture',BLOGGER_BLOG_ID:'2339978524893611480'};
+ await assert.rejects(publishApprovedArticle(env,article.articleKey,[article],async()=>{calls++;throw Error('unexpected');},{existingOnly:true}),/ARTICLE_NOT_LIVE_UPDATE_ONLY/);
+ assert.equal(calls,0);assert.equal(state.attempt,null);assert.equal(state.article,null);
+});
 
 function fixtureDb(initialArticle=null) {
   const state={article:initialArticle,attempt:null};

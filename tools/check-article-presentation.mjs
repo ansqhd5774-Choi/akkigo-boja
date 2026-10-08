@@ -1,13 +1,11 @@
 import {readFile} from 'node:fs/promises';
 import {validateArticlePresentation} from '../src/article-presentation.js';
-import {createHash} from 'node:crypto';
+import {validateGamePeriodArticle,renderGamePeriodArticle} from '../src/game-period-article.js';
 const root=new URL('../',import.meta.url);
-const legacy=JSON.parse(await readFile(new URL('data/article-presentation-legacy.json',root),'utf8'));
 const css=await readFile(new URL('theme/article-typography.css',root),'utf8');
 const compactCss=await readFile(new URL('theme/article-compact.css',root),'utf8');
 const r1=JSON.parse(await readFile(new URL('data/article-presentation-r1-existing.json',root),'utf8'));
 const domCheck=process.argv.includes('--static')?null:(await import('./validate-presentation-dom.mjs')).validatePresentationDOM;
-const frozen=JSON.parse(await readFile(new URL('data/article-presentation-legacy-hashes.json',root),'utf8'));
 for(const selector of ['.ncp-col-order','.ncp-col-source','.ncp-col-source a','.ncp-col-expiry']){
  const rule=css.split('\n').find(line=>line.includes(selector+'{')||line.includes(selector+','));
  if(!rule?.includes('font-weight:600!important'))throw Error('TABLE_METADATA_WEIGHT_MISSING: '+selector);
@@ -22,7 +20,7 @@ let checked=0;
 for(const path of ['data/articles.json','data/articles-supplemental.json']){
  for(const article of JSON.parse(await readFile(new URL(path,root),'utf8'))){
   if(!article.post?.labels?.includes('게임'))continue;
-  if(legacy.includes(article.articleKey)&&frozen[article.articleKey]===createHash('sha256').update(JSON.stringify(article.post)).digest('hex'))continue;
+  validateGamePeriodArticle(article);
   if(article.source?.presentationVersion!=='compact-r2'&&!(article.source?.presentationVersion==='compact-r1'&&r1.includes(article.articleKey)))throw Error('PRESENTATION_R2_REQUIRED: '+article.articleKey);
   validateArticlePresentation(article);
   if(domCheck)domCheck(article);
@@ -33,5 +31,18 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
   if(/content:\s*['"][^'"]*(?:&#|⌄)/.test(html))throw Error('PRESENTATION_ESCAPED_CHEVRON');
   checked++;
  }
+}
+const hubModels=JSON.parse(await readFile(new URL('data/game-period-hubs.json',root),'utf8'));
+const {buildHubDraft}=await import('../src/hubs.js');
+const coupons=JSON.parse(await readFile(new URL('data/coupons.json',root),'utf8'));
+for(const [articleKey,model] of Object.entries(hubModels)){
+ const content=buildHubDraft(articleKey,coupons).content;
+ if(content!==renderGamePeriodArticle(model).replace('<article ','<article data-ncp-hub="'+articleKey+'" '))throw Error('HUB_PERIOD_GENERATED_DRIFT');
+ if(domCheck)domCheck({articleKey,source:{presentationVersion:'compact-r2'},post:{content}});
+}
+const models=JSON.parse(await readFile(new URL('data/game-period-articles.json',root),'utf8'));
+for(const m of models){
+ const articles=[...JSON.parse(await readFile(new URL('data/articles.json',root),'utf8')),...JSON.parse(await readFile(new URL('data/articles-supplemental.json',root),'utf8'))];
+ if(articles.find(a=>a.articleKey===m.articleKey)?.post.content!==renderGamePeriodArticle(m))throw Error('PERIOD_INPUT_CATALOG_DRIFT');
 }
 console.log('PRESENTATION_POLICY_PASS: '+checked+' current-format articles; shared table weights and generated themes match');

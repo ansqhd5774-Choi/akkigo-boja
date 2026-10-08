@@ -16,17 +16,18 @@ export function validateGameFeaturedImage(articleKey,post){
   if(icon.protocol!=='https:'||store.protocol!=='https:'||!domains[e.platform]||
     store.hostname!==domains[e.platform][0]||icon.hostname!==domains[e.platform][1])fail('NOT_OFFICIAL_STORE');
   const h=post.content||'';
+  const attr=value=>value.replaceAll('&','&amp;');
   if((h.match(/data-ncp-featured-image=/g)||[]).length!==1||!h.includes('data-ncp-featured-image="'+articleKey+'"'))fail('BAD_FEATURED_MARKER');
   const figures=[...h.matchAll(/<figure\b([^>]*)>([\s\S]*?)<\/figure>/g)];
   const figure=figures.find(x=>x[1].includes('data-ncp-featured-image="'+articleKey+'"'));
   if(!figure||!figure[1].includes('data-ncp-app-icon="true"')||
-     !figure[1].includes('data-ncp-app-icon-source="'+e.appStoreUrl+'"'))fail('APP_ICON_MARKER_REQUIRED');
+     !(figure[1].includes('data-ncp-app-icon-source="'+e.appStoreUrl+'"')||figure[1].includes('data-ncp-app-icon-source="'+attr(e.appStoreUrl)+'"')))fail('APP_ICON_MARKER_REQUIRED');
   const img=figure[2].match(/<img\b[^>]*>/)?.[0];
   if(!img||!img.includes('src="'+e.iconUrl+'"'))fail('WRONG_FEATURED_IMAGE');
   if(h.match(/<img\b[^>]*>/)?.[0]!==img)fail('NOT_FIRST_IMAGE');
   if(!img.includes('alt="'+e.gameName+' 공식 앱 아이콘"'))fail('BAD_ALT');
   if(!img.includes('width="512"')||!img.includes('height="512"'))fail('BAD_DIMENSIONS');
-  if(!h.includes('aspect-ratio:1/1')||!h.includes('object-fit:contain'))fail('NOT_SQUARE');
-  if(!figure[2].includes('href="'+e.appStoreUrl+'"'))fail('STORE_SOURCE_LINK_REQUIRED');
+  if(!h.includes('data-ncp-template="game-period-tabs-r1"')&&(!h.includes('aspect-ratio:1/1')||!h.includes('object-fit:contain')))fail('NOT_SQUARE');
+  if(!figure[2].includes('href="'+e.appStoreUrl+'"')&&!figure[2].includes('href="'+attr(e.appStoreUrl)+'"'))fail('STORE_SOURCE_LINK_REQUIRED');
   return true;
 }

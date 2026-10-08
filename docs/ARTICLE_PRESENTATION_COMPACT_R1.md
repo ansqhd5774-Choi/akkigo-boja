@@ -1,3 +1,5 @@
+현재 공통 작성 계약: [GAME_PERIOD_AUTHORING_R1.md](GAME_PERIOD_AUTHORING_R1.md). 아래 R1 이력보다 game-period-tabs-r1 생성기와 compact-r2 공통 CSS를 우선한다.
+
 # 글 작성·수정 시 필수 표현 규칙 R1
 
 2026-10-09 사용자 11개 지적 반영. 기간 탭 양식 결정은 별도 공통 계약을 따르며 상태별 링크를 새 탭 양식으로 간주하지 않는다.

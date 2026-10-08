@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import {assertPeriodHTML} from './period-test-helpers.js';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import coupons from '../data/coupons.json' with {type:'json'};
@@ -39,7 +40,7 @@ test('킹샷 supplemental article과 공개 HTML이 일치한다',()=>{
   const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(codes.length,163);
   assert.equal(new Set(codes).size,163);
-  assert.equal((html.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length,3);
+  assertPeriodHTML(html);
   assert.equal(article.post.title,'킹샷');
   assert.equal((html.match(/data-ncp-featured-image="kingshot"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);

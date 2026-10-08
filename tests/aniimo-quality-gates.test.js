@@ -13,10 +13,10 @@ test('Aniimo coupon article passes editorial publication gate',()=>{
  assert.equal(new Set(codes).size,16);
 });
 test('Aniimo tabs must be truly interactive, not just anchor navigation',()=>{
- const broken=original.post.content.replace('#aniimo-tab-current:checked~.ncp-aniimo-panels','.broken-current-tab');
- assert.throws(()=>validateArticleDraft(withContent(broken)),/ANIIMO_TABS_NOT_INTERACTIVE/);
+ const broken=original.post.content.replace('value="latest" checked="checked"','value="latest"');
+ assert.throws(()=>validateArticleDraft(withContent(broken)),/GAME_PERIOD_GENERATED_CONTENT_DRIFT/);
 });
 test('Aniimo source and expiration reward must not silently disappear',()=>{
- assert.throws(()=>validateArticleDraft(withContent(original.post.content.replace('aniimoparty</strong> 안내 보상: 글리머 50개 · 고급 애니팟 5개 · 성장의 꽃 5개','aniimoparty</strong> 안내 보상: 보상 미상'))),/ANIIMO_EXPIRED_REWARD_MISSING/);
- assert.throws(()=>validateArticleDraft(withContent(original.post.content.replaceAll('미국 서버 전용','해외 서버'))),/ANIIMO_PROVENANCE_MISSING/);
+ assert.throws(()=>validateArticleDraft(withContent(original.post.content.replace('aniimoparty</strong> 안내 보상: 글리머 50개 · 고급 애니팟 5개 · 성장의 꽃 5개','aniimoparty</strong> 안내 보상: 보상 미상'))),/GAME_PERIOD_GENERATED_CONTENT_DRIFT/);
+ assert.throws(()=>validateArticleDraft(withContent(original.post.content.replaceAll('미국 서버 전용','해외 서버'))),/GAME_PERIOD_GENERATED_CONTENT_DRIFT/);
 });

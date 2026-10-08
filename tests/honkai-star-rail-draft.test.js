@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -37,7 +38,7 @@ test('붕괴 스타레일 공개 글은 활성 코드·대표 이미지·공식 
   assert.equal((html.match(/data-ncp-featured-image="honkai-star-rail"/g)||[]).length,1);
   assert.ok(html.includes(imageUrl));
   assert.ok(html.includes('alt="붕괴: 스타레일 공식 대표 이미지"'));
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.match(html,/STARRAILGIFT/);
   assert.match(html,/data-ncp-copy="STARRAILGIFT"/);
   assert.match(html,/성옥 50개/);

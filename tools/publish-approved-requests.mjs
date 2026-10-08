@@ -27,7 +27,7 @@ for (const name of names) {
   validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
   const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
-  const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256,...(requireUnchanged?{requireUnchanged:true}:{})});
+  const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256,...(requireUnchanged?{requireUnchanged:true}:{}),...(request.existingOnly===true?{existingOnly:true}:{})});
   let response,body;
   for(let attempt=1;attempt<=2;attempt++){
     response=await fetch(publishUrl,{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:payload});
@@ -40,8 +40,12 @@ for (const name of names) {
       await new Promise(resolve=>setTimeout(resolve,2500));
       continue;
     }
+    if(request.existingOnly===true&&response.status===409&&body.error==='ARTICLE_NOT_LIVE_UPDATE_ONLY'){
+      console.log('EXISTING_ONLY_NOT_LIVE_SKIPPED',request.articleKey);break;
+    }
     throw new Error(`ARTICLE_PUBLISH_HTTP_${response.status}_${body.error || 'UNKNOWN'}`);
   }
+  if(request.existingOnly===true&&body.error==='ARTICLE_NOT_LIVE_UPDATE_ONLY')continue;
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
   if(requireUnchanged && (body.alreadyLive!==true || body.updated!==false))throw Error('UNCHANGED_PUBLISH_PROBE_RESPONSE_INVALID');
   if(requireUnchanged && (body.postId!==process.env.UNCHANGED_EXPECTED_POST_ID || body.url!==process.env.UNCHANGED_EXPECTED_URL))throw Error('UNCHANGED_PUBLISH_PROBE_IDENTITY_CHANGED');

@@ -1,6 +1,7 @@
 // Monthly game-code history: preserve original discovery month when a post is updated.
 // Never infer a code's month from the post's publication/update date.
 import {renderGameCouponTable} from './game-coupon-table.js';
+import {validateGamePeriodArticle} from './game-period-article.js';
 
 const MONTH=/^\d{4}-(0[1-9]|1[0-2])$/;
 // Official Korean-language gift codes must remain case- and Unicode-exact.
@@ -71,6 +72,12 @@ export function renderMonthlyGameCouponSections(rows,{currentMonth}={}){
 // Enforce the history-to-visible-copy mapping for updated game articles that
 // declare source.gameCouponTimeline = {currentMonth, codes:[{code,firstSeenMonth,...}]}.
 export function validateMonthlyGameCouponTimeline(article){
+  if(article.source?.gamePeriodModel){
+    validateGamePeriodArticle(article);
+    const codes=new Set(article.source.gamePeriodModel.records.map(r=>r.code));
+    if(article.source.gameCouponTimeline?.codes.some(r=>!codes.has(r.code)))throw Error('GAME_MONTH_MISSING_CODE');
+    return true;
+  }
   const timeline=article?.source?.gameCouponTimeline;
   if(timeline==null)return true; // legacy articles without source dates are not relabelled.
   if(!article?.post?.labels?.includes('게임'))throw Error('GAME_MONTH_NOT_GAME');

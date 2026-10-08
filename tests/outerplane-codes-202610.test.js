@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -20,7 +21,7 @@ test('Outerplane 2026-10 draft matches source and stores all 27 exact redeem val
   assert.equal(new Set([...valid,...expired]).size,27);
   for(const code of [...valid,...expired])assert.equal(html.split('data-ncp-copy="'+code+'"').length-1,1,code);
   assert.equal((html.match(/class="ncp-code-card" role="row"/g)||[]).length,27);
-  assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
+  assertPeriodHTML(html);
   assert.equal((html.match(/<!--more-->/g)||[]).length,1);
   assert.equal(html.includes('<h1'),false);
   assert.equal(html.includes(article.post.title),false);

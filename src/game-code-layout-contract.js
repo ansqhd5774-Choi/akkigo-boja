@@ -27,6 +27,20 @@ export function validateGameCouponLayout(articleKey,post){
   const approvedGrid=h.includes('class="ncp-card-list ncp-compact-list" role="table"') ||
     (articleKey==='fortblox-mobile-go-codes-202610' && h.includes('class="ncp-card-list" role="table"'));
   if(!approvedGrid)fail('MISSING_GRID');
+  if(h.includes('data-ncp-template="game-period-tabs-r1"')){
+    const codes=[...h.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+    const shares=[...h.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);
+    if(new Set(codes).size!==codes.length||JSON.stringify(codes)!==JSON.stringify(shares))fail('COPY_VALUE');
+    if(h.split(header).length-1!==(h.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length)fail('HEADERS');
+    const rows=h.split('<div class="ncp-code-card" role="row">').slice(1);
+    if(rows.length!==codes.length)fail('ROW_COUNT');
+    for(const [i,r] of rows.entries()){
+      for(const col of ['ncp-col-order','ncp-col-source','ncp-col-expiry','ncp-col-action'])if(!r.includes('class="'+col+'" role="cell"'))fail('MISSING_COLUMN');
+      if(r.split('<code class="ncp-col-code" role="cell">')[1]?.split('<')[0]!==codes[i])fail('COPY_VALUE');
+    }
+    // Exact renderer output is checked separately; CSS is owned by the theme.
+    return true;
+  }
   const headings=h.split(header).length-1;
   const groups=(h.match(/class="ncp-card-list(?: ncp-compact-list)?" role="table"/g)||[]).length;
   if(headings<1 || headings!==groups)fail('HEADERS');

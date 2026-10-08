@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import {assertPeriodHTML} from './period-test-helpers.js';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import coupons from '../data/coupons.json' with {type:'json'};
@@ -42,7 +43,7 @@ test('화이트아웃 서바이벌 supplemental article과 공개 HTML이 일치
   const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
   assert.equal(codes.length,124);
   assert.equal(new Set(codes).size,124);
-  assert.equal((html.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length,4);
+  assertPeriodHTML(html);
   assert.equal(article.post.title,'화이트아웃 서바이벌');
   assert.doesNotMatch(html,/<h1/);
   assert.equal((html.match(/data-ncp-featured-image="whiteout-survival"/g)||[]).length,1);

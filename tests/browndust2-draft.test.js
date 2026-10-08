@@ -1,3 +1,4 @@
+import {assertPeriodHTML} from './period-test-helpers.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -24,7 +25,7 @@ test('브라운더스트2 공개 글은 코드·보상·만료·복사·플랫�
   assert.equal((html.match(/data-ncp-featured-image="browndust2"/g)||[]).length,1);
   assert.ok(html.includes(imageUrl));
   assert.ok(html.includes('alt="브라운더스트2 공식 대표 이미지"'));
-  assert.ok(html.indexOf('<img') < html.indexOf('class="ncp-hero"'));
+  assertPeriodHTML(html);
   assert.equal(draft.publicationStatus,'LIVE');
   assert.equal(draft.publication.postId,'1806229069030793005');
   assert.equal(draft.publication.url,'https://lsifl.blogspot.com/2026/10/2-2026-10.html');
