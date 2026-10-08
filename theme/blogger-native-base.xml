@@ -2735,9 +2735,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
         <b:includable id='snippetedPostByline'>
           <b:include name='headerByline'/>
         </b:includable>
-        <b:includable id='postLabels'>
-          <b:comment>Keep stored Blogger labels for taxonomy; do not render visible chips.</b:comment>
-        </b:includable>        <b:includable id='postShareButtons' var='post'>
+        <b:includable id='postLabels'><b:comment>Keep stored labels; hide visitor-facing label chips.</b:comment></b:includable>        <b:includable id='postShareButtons' var='post'>
           <b:comment>We call super.postShareButtons from the migrated positions.</b:comment>
         </b:includable>
         <b:includable id='postJumpLink'>
@@ -3256,12 +3254,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                     <b:includable id='postJumpLink'>
           <b:comment>Overridden, and migrated to postFooter. Called as postFooterJumpLink.</b:comment>
         </b:includable>
-                    <b:includable id='postLabels'>
-          <b:comment>We don&#39;t display labels on the home page.</b:comment>
-          <b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
-            <b:include name='super.postLabels'/>
-          </b:if>
-        </b:includable>
+                    <b:includable id='postLabels'><b:comment>Keep stored labels; hide visitor-facing label chips.</b:comment></b:includable>
                     <b:includable id='postShareButtons' var='post'>
           <b:comment>We call super.postShareButtons from the migrated positions.</b:comment>
         </b:includable>
@@ -3638,12 +3631,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                     <b:includable id='postJumpLink'>
           <b:comment>Overridden, and migrated to postFooter. Called as postFooterJumpLink.</b:comment>
         </b:includable>
-                    <b:includable id='postLabels'>
-          <b:comment>We don&#39;t display labels on the home page.</b:comment>
-          <b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
-            <b:include name='super.postLabels'/>
-          </b:if>
-        </b:includable>
+                    <b:includable id='postLabels'><b:comment>Keep stored labels; hide visitor-facing label chips.</b:comment></b:includable>
                     <b:includable id='postMeta' var='post'>
   <b:include data='post' name='postMetadataJSON'/>
 </b:includable>
@@ -4039,5 +4027,6 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
     <b:template-script async='true' name='indie' version='1.0.0'/>
   </body>
 </html>
+
 
 
