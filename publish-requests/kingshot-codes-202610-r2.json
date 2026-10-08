@@ -1,0 +1,6 @@
+{
+  "articleKey": "kingshot-codes-202610",
+  "approved": true,
+  "requestedAt": "2026-10-09T05:00:00+09:00",
+  "reason": "Update existing Kingshot Blogger post with October 9 global coupon research, keep existing post ID and URL, use idempotent publish path; user performs final UI inspection."
+}
