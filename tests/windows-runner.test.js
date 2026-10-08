@@ -27,12 +27,17 @@ test('read-only probe and failed runs cannot be treated as Worker deployments',(
   assert.equal(isWorkerPath('src/articles.js'),true);
   assert.equal(isWorkerPath('docs/runner.md'),false);
 });
-test('public repository workflows use standard hosted Ubuntu and Bash without self-hosted or paid runners',()=>{
+test('public workflows use standard hosted Ubuntu except Google-blocked SEO local egress',()=>{
   for(const file of readdirSync('.github/workflows').filter(n=>n.endsWith('.yml'))) {
     const yaml=readFileSync('.github/workflows/'+file,'utf8');
+    assert.match(yaml,/github\.event\.repository\.private == false/,file);
+    if(file === 'public-seo.yml') {
+      assert.match(yaml,/runs-on: \[self-hosted, Windows, X64, akkigo-boja\]/,file);
+      assert.match(yaml,/shell: cmd/,file);
+      continue;
+    }
     assert.match(yaml,/runs-on: ubuntu-24\.04/,file);
     assert.match(yaml,/shell: bash/,file);
-    assert.match(yaml,/github\.event\.repository\.private == false/,file);
     assert.doesNotMatch(yaml,/self-hosted|windows-latest|shell: (cmd|pwsh)|npm install --global|if errorlevel|%PUSH_BEFORE%/,file);
   }
 });

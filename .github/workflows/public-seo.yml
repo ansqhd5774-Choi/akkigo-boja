@@ -10,11 +10,12 @@ permissions:
   contents: read
 defaults:
   run:
-    shell: bash
+    shell: cmd
 jobs:
   seo:
     if: github.event.repository.private == false
-    runs-on: ubuntu-24.04
+    # Google blocks hosted runner IPs (429); this read-only check needs local egress.
+    runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.0.0

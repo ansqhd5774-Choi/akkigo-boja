@@ -1,6 +1,6 @@
 # Actions 검증 재사용 및 아이콘 일괄 검사
 
-- 공개 저장소의 8개 workflow는 표준 GitHub-hosted Ubuntu 24.04 / Node 24에서 실행한다. Verify는 테스트, Worker dry-run build, 테마 재생성 clean diff, XML 검사를 모두 실행한다. 비 Worker 변경에서도 재사용 가능한 빌드 증거를 만든다. Verify의 pnpm store 캐시는 lockfile 기준으로 복원하며 설치는 frozen-lockfile로 수행한다.
+- 공개 저장소의 7개 workflow는 표준 GitHub-hosted Ubuntu 24.04 / Node 24에서 실행한다. Public SEO Check만 Google의 호스팅 러너 IP 차단(429) 때문에 Windows 로컬 러너에서 실행한다. Verify는 테스트, Worker dry-run build, 테마 재생성 clean diff, XML 검사를 모두 실행한다. 비 Worker 변경에서도 재사용 가능한 빌드 증거를 만든다. Verify의 pnpm store 캐시는 lockfile 기준으로 복원하며 설치는 frozen-lockfile로 수행한다.
 - Deploy/Publish는 현재 SHA와 정확히 일치하는 성공한 standalone Verify만 재사용한다. 대상 저장소/브랜치와 실행 종류, 최신 attempt의 모든 필수 step 성공과 검증 인증서(Node 실제 버전, pnpm 버전, lockfile SHA-256, OS/아키텍처, 검사 규칙 버전)를 확인한다. PR 실행, skipped build, 누락된 검사는 재사용하지 않는다.
 - API 조회 실패, 아직 실행 중, 결과 없음은 실패로 위장하지 않고 현재 job에서 전체 검사를 실행한다. 단일 러너를 점유한 채 다른 Verify를 기다리지 않는다.
 - Publish의 별도 source-verify job을 제거했다. 재사용하지 못하면 같은 job에서 검사한 후 발행한다. 복구 배포가 필요하면 의존성 설치는 최대 한 번 수행한다.
@@ -12,4 +12,4 @@
 - 검증 조회는 모든 API 요청에 공유하는 전체 15초 제한을 적용한다. 조회 실패 시 전체 검사로 전환한다. Deploy/Publish summary에는 재사용 사유, 예약한 전체 검사/설치 횟수, 배포 필요 여부, 작업 상태를 기록하며 실제 단계 결과는 job timeline으로 확인한다.
 - Verify의 사용하지 않는 Worker 변경 감지 단계는 제거했다.
 - 다른 SHA 또는 다른 OS/아키텍처/Node 버전의 결과는 재사용하지 않는다. 동일 SHA 재사용 비율과 실제 작업시간에 따라 절감량이 달라진다. 공개 저장소에서만 표준 호스팅 러너를 실행하며 비공개로 돌아가면 job은 생략된다. 유료 larger runner는 사용하지 않는다. LOCAL 검사 표시는 같은 GitHub job에서 검사한다는 뜻이다.
-- 독립된 Verify, 레이아웃, 아이콘, SEO 및 조회는 호스팅 러너에서 병렬 실행할 수 있다. Deploy/Publish는 기존 production-worker 직렬 대기열을 유지한다. Windows 전용 CMD 구문은 Bash로 변경했고 Chrome fixture 검사에는 Linux Chrome 경로를 추가했다. 기존 Windows 러너 서비스와 티스토리는 변경하지 않는다.
+- 독립된 Verify, 레이아웃, 아이콘 및 조회는 호스팅 러너에서 병렬 실행할 수 있다. Deploy/Publish는 기존 production-worker 직렬 대기열을 유지한다. 호스팅 workflow의 Windows 전용 CMD 구문은 Bash로 변경했고 Chrome fixture 검사에는 Linux Chrome 경로를 추가했다. 기존 Windows 러너 서비스와 티스토리는 변경하지 않는다.
