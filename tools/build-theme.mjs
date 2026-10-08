@@ -2,6 +2,7 @@ import {homeR4,categoryHeaderR4} from '../theme/home-r4.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {escapeHtml as e} from '../src/coupons.js';
 import {resolveGame} from '../src/game-identity.js';
+import {icons} from '../theme/site-icons.mjs';
 const root=new URL('../',import.meta.url);
 const heartSeeds=JSON.parse(await readFile(new URL('data/game-heart-seeds.json',root),'utf8'));
 const identityMount=`<script type='text/javascript'>//<![CDATA[\nwindow.ncpResolveGame=(function(){const known=${JSON.stringify(Object.keys(heartSeeds))};const resolve=${resolveGame.toString()};return entry=>resolve(entry,known);})();\n//]]></script>`;
@@ -33,11 +34,15 @@ const script=`<script type='text/javascript'>//<![CDATA[\n${copyJs}\n//]]></scri
 const gameMount=`<b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[\n${gameScript}\n//]]></script></b:if>`;
 const homeCss=await readFile(new URL('theme/home-r4.css',root),'utf8');
 const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');
+const siteCss=await readFile(new URL('theme/site-tools.css',root),'utf8');
+const siteJs=await readFile(new URL('theme/site-tools.js',root),'utf8');
+const license=await readFile(new URL('theme/assets/licenses/lucide.txt',root),'utf8');
+const siteMount=`<script type='text/javascript'>//<![CDATA[\n/* ${license.replace(/\*\//g,'* /')} */\nwindow.ncpIcons=${JSON.stringify(icons)};\n${siteJs}\n//]]></script>`;
 const seoLinks=JSON.parse(await readFile(new URL('theme/seo-post-links.json',root),'utf8'));
 const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r4 ncp-r4-wrap' aria-label='쿠폰 안내 글 목록'><h2>쿠폰·할인코드 안내</h2><p>JavaScript를 사용할 수 없어 글 링크를 표시합니다.</p><ul>${seoLinks.map(row=>`<li><a href='${e(row.url)}'>${e(row.title)}</a></li>`).join('')}</ul></nav></noscript></b:if>`;
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
-const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+detailMount+'</body>');
+const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');

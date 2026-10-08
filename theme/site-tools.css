@@ -1,0 +1,18 @@
+/* Scoped additions preserve the native Blogger article and search form. */
+.ncp-r4,.ncp-r3,#ncp-game-hub{font-family:system-ui,-apple-system,'Segoe UI','Noto Sans KR',sans-serif}
+.ncp-r4-search,.ncp-r3-search{position:relative}
+.ncp-r4-hero picture{display:block;min-width:0}
+.ncp-search-results{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:30;max-height:350px;overflow:auto;padding:6px;background:#fff;border:1px solid #dce5f4;border-radius:12px;box-shadow:0 12px 28px #14234620;text-align:left}
+.ncp-search-results[hidden]{display:none}
+.ncp-search-results a{display:block;padding:12px;border-radius:8px;color:#142346!important;text-decoration:none;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+.ncp-search-results a:hover,.ncp-search-results a[aria-selected=true]{background:#edf3ff}
+.ncp-search-note{display:block;padding:9px 12px;border-top:1px solid #edf1f7;font-size:11px;color:#66758a}
+.ncp-r4-category svg{width:32px;height:32px;stroke-width:1.8}
+.ncp-r4-game-list,.ncp-r4-latest-list{touch-action:pan-y}
+.ncp-r4 .ncp-r4-pager button{min-width:44px;min-height:44px}
+.ncp-r4 .ncp-r4-pager svg{width:20px;height:20px}
+.ncp-game-heart .ncp-heart-icon svg{width:100%;height:100%}
+.ncp-game-heart svg path{fill:none;stroke:currentColor}
+.ncp-game-heart[aria-pressed=true] svg path{fill:currentColor}
+@media(max-width:600px){.ncp-r4-hero picture{grid-row:1}.ncp-r4-category svg{width:28px;height:28px}.ncp-search-results a{font-size:13px}.ncp-r4-section-head>.ncp-r4-sub{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.ncp-r4-card,.ncp-r4-pager button,.ncp-r4-view-all{transition:none!important}.ncp-r4-card:hover{transform:none}}

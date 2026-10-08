@@ -8,6 +8,9 @@ on:
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
       - tools/check-shiba-feed-layout.mjs
+      - tools/check-site-tools-layout.mjs
+      - tools/render-site-fixture.mjs
+      - tools/run-layout-checks.mjs
       - .github/workflows/verify-layout.yml
   pull_request:
     paths:
@@ -15,6 +18,9 @@ on:
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
       - tools/check-shiba-feed-layout.mjs
+      - tools/check-site-tools-layout.mjs
+      - tools/render-site-fixture.mjs
+      - tools/run-layout-checks.mjs
       - .github/workflows/verify-layout.yml
 permissions:
   contents: read
@@ -30,5 +36,5 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Render Shiba coupon layout at 390 and 1440
+      - name: Render coupon and site interaction fixtures at 390 and 1440
         run: node tools/run-layout-checks.mjs

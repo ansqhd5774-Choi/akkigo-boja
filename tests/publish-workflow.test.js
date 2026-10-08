@@ -34,7 +34,8 @@ test('발행은 완전한 소스 검사를 재사용하거나 직접 수행하�
   assert.doesNotMatch(verify,/Render Shiba coupon layout/);
   assert.match(layout,/drafts\/shibarpg-pickup-202610\.html/);
   assert.match(layout,/akkigo_blogger_r1_bundle\/theme\/blogger-theme-r1\.xml/);
-  assert.match(layout,/Render Shiba coupon layout at 390 and 1440/);
+  assert.match(layout,/Render coupon and site interaction fixtures at 390 and 1440/);
+  assert.match(layout,/node tools\/run-layout-checks\.mjs/);
 });
 
 test('Verify는 오래된 실행을 취소하고 문서 변경을 제외한다',()=>{
