@@ -3,7 +3,8 @@
 import {renderGameCouponTable} from './game-coupon-table.js';
 
 const MONTH=/^\d{4}-(0[1-9]|1[0-2])$/;
-const VALID_CODE=/^[A-Za-z0-9_-]{3,80}$/;
+// Official Korean-language gift codes must remain case- and Unicode-exact.
+const VALID_CODE=/^[\p{L}\p{N}_-]{3,80}$/u;
 const escapeHTML=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 function checkMonth(month){
   if(!MONTH.test(month||''))throw Error('GAME_MONTH_INVALID');
