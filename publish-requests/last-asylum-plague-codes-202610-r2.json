@@ -1,0 +1,6 @@
+{
+  "articleKey": "last-asylum-plague-codes-202610",
+  "approved": true,
+  "requestedAt": "2026-10-09T02:00:00+09:00",
+  "reason": "User-requested rerun after publish workflow fix. Publisher must reconcile existing article_state/Blogger post and preserve postId/URL; do not create duplicate when previous request succeeded."
+}
