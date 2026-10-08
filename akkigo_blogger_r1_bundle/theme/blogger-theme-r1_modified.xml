@@ -2832,6 +2832,8 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .post-body [data-ncp-article] .ncp-source-list{font-size:14px!important}
 .post-body [data-ncp-article] .ncp-code-card{height:auto!important;min-height:76px!important;padding:12px 8px!important;font-size:14px!important;box-sizing:border-box}
 .post-body [data-ncp-article] .ncp-list-header{font-size:13px!important}
+.post-body [data-ncp-article] .ncp-col-order,.post-body [data-ncp-article] .ncp-col-source,.post-body [data-ncp-article] .ncp-col-source a,.post-body [data-ncp-article] .ncp-col-expiry{font-weight:600!important;color:#233b60}
+.post-body [data-ncp-article] .ncp-col-code,.post-body [data-ncp-article] .ncp-list-header,.post-body [data-ncp-article] .ncp-col-action button{font-weight:700!important}
 .post-body [data-ncp-article] .ncp-col-source,.post-body [data-ncp-article] .ncp-col-expiry{font-size:14px!important;line-height:1.5!important;min-width:0;overflow-wrap:anywhere}
 .post-body [data-ncp-article] .ncp-col-code{font-size:16px!important;line-height:1.5!important;min-width:0;overflow-wrap:anywhere}
 .post-body [data-ncp-article] .ncp-col-action button{font-size:14px!important;min-height:44px!important;padding:8px 6px!important;border-radius:8px!important;line-height:1.3!important}
