@@ -10,6 +10,12 @@ test('existing-only layout migration cannot create a missing post or write a che
  await assert.rejects(publishApprovedArticle(env,article.articleKey,[article],async()=>{calls++;throw Error('unexpected');},{existingOnly:true}),/ARTICLE_NOT_LIVE_UPDATE_ONLY/);
  assert.equal(calls,0);assert.equal(state.attempt,null);assert.equal(state.article,null);
 });
+test('concurrent duplicate article keys stop before Blogger and D1 writes',async()=>{
+ const {DB,state}=fixtureDb();let calls=0;
+ const env={DB,PUBLISH_ENABLED:'true',BLOGGER_CLIENT_ID:'fixture',BLOGGER_CLIENT_SECRET:'fixture',BLOGGER_REFRESH_TOKEN:'fixture',BLOGGER_BLOG_ID:'2339978524893611480'};
+ await assert.rejects(publishApprovedArticle(env,article.articleKey,[article,article],async()=>{calls++;throw Error('unexpected');},{existingOnly:true}),/ARTICLE_DUPLICATE_KEY/);
+ assert.equal(calls,0);assert.equal(state.attempt,null);
+});
 
 function fixtureDb(initialArticle=null) {
   const state={article:initialArticle,attempt:null};

@@ -58,6 +58,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
 export async function publishApprovedArticle(env, articleKey, articles, transport=fetch, {requireUnchanged=false,existingOnly=false}={}) {
   configured(env);
   if (!validKey(articleKey)) throw new Error('INVALID_ARTICLE_KEY');
+  if(articles.filter(a=>a.articleKey===articleKey).length>1)throw Error('ARTICLE_DUPLICATE_KEY');
   const article=articles.find(x=>x.articleKey===articleKey);
   if (!article || article.approvedForPublish!==true) throw new Error('ARTICLE_NOT_APPROVED');
   validatePost(article.post);

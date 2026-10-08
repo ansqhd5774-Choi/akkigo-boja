@@ -17,9 +17,12 @@ for(const path of ['akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml','akkigo
  for(const line of css.split('\n').filter(line=>line.includes('font-weight:')))if(!xml.includes(line))throw Error('GENERATED_THEME_WEIGHT_DRIFT');
 }
 let checked=0;
+const checkedKeys=new Set();
 for(const path of ['data/articles.json','data/articles-supplemental.json']){
  for(const article of JSON.parse(await readFile(new URL(path,root),'utf8'))){
   if(!article.post?.labels?.includes('게임'))continue;
+  if(checkedKeys.has(article.articleKey))throw Error('PERIOD_DUPLICATE_ARTICLE_KEY');
+  checkedKeys.add(article.articleKey);
   validateGamePeriodArticle(article);
   if(article.source?.presentationVersion!=='compact-r2'&&!(article.source?.presentationVersion==='compact-r1'&&r1.includes(article.articleKey)))throw Error('PRESENTATION_R2_REQUIRED: '+article.articleKey);
   validateArticlePresentation(article);
