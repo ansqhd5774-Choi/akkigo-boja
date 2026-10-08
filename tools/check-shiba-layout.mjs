@@ -8,6 +8,7 @@ if (![390,1440].includes(width) || !output) {
 }
 
 const article=readFileSync(resolve('drafts/shibarpg-pickup-202610.html'),'utf8');
+const copyCss=readFileSync(resolve('theme/coupon-copy.css'),'utf8');
 const theme=readFileSync(resolve('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml'),'utf8');
 const scripts=[...theme.matchAll(/<script type='text\/javascript'>\/\/<!\[CDATA\[\n([\s\S]*?)\n\/\/\]\]><\/script>/g)].map(x=>x[1]);
 const copyScript=scripts.find(x=>x.includes('[data-ncp-copy]'));
@@ -69,6 +70,7 @@ const checkScript=`
 })();
 `;
 
-const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;padding:0}body{font-family:Arial,sans-serif;background:#fff}main{max-width:920px;margin:0 auto;padding:${width<=640?'16':'24'}px;box-sizing:border-box}</style><script>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async function(value){window.__copied=value;}}});</script></head><body><main>${article}</main><script>${copyScript}</script><script>${checkScript}</script></body></html>`;
+const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;padding:0}body{font-family:Arial,sans-serif;background:#fff}main{max-width:920px;margin:0 auto;padding:${width<=640?'16':'24'}px;box-sizing:border-box}</style><script>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async function(value){window.__copied=value;}}});</script></head><body><main>${article}</main><style>${copyCss}</style><script>${copyScript}</script><script>${checkScript}</script></body></html>`;
 writeFileSync(output,html,'utf8');
 console.log('FIXTURE_WRITTEN',width,output);
+
