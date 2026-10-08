@@ -33,17 +33,22 @@ test('화이트아웃 서바이벌 supplemental article과 공개 HTML이 일치
   assert.deepEqual(article.post.labels,['게임','화이트아웃 서바이벌']);
   const html=readFileSync(new URL('../drafts/whiteout-survival-codes-202610.html',import.meta.url),'utf8').trim();
   assert.equal(article.post.content,html);
-  for (const code of ['THXTeacher','GAECHEONJEOL','GuDokYTKOR','2ndYoutubeKR']) {
+  for (const code of ['WOS1007','THXTeacher','GAECHEONJEOL','GuDokYTKOR','2ndYoutubeKR','1stYoutubeKR','gogoWOS']) {
     assert.match(html,new RegExp(code));
   }
-  assert.match(html,/2026년 10월 9일 08:59/);
+  assert.match(html,/2026년 10월 9일 오전 8시 59분/);
   assert.match(html,/용광로 Lv\.7 이상/);
   assert.match(html,/wos-giftcode\.centurygame\.com/);
-  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,4);
+  const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
+  assert.equal(codes.length,13);
+  assert.equal(new Set(codes).size,13);
+  assert.equal((html.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length,2);
+  assert.equal(article.post.title,'화이트아웃 서바이벌');
+  assert.doesNotMatch(html,/<h1/);
   assert.equal((html.match(/data-ncp-featured-image="whiteout-survival"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
-  assert.equal(preview.includes('THXTeacher'),true);
+  assert.equal(preview.includes('WOS1007'),true);
   assert.equal(preview.includes('GAECHEONJEOL'),false);
   assert.equal(preview.includes('<script'),false);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태/);
