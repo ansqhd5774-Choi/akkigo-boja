@@ -3,6 +3,7 @@ import {join} from 'node:path';
 import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
 import {articleSnapshot} from '../src/article-snapshot.js';
+import {validateArticleDraft} from './validate-article-draft.mjs';
 
 const service='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/preflight';
 export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new Promise(r=>setTimeout(r,ms)),attempts=1,delayMs=2500}={}){
@@ -10,6 +11,7 @@ export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new P
   const keysToCheck=[...new Set(keys)];
   const snapshots=await Promise.all(keysToCheck.map(k=>articleSnapshot(k,[...primary,...supplemental])));
   if(snapshots.some(x=>!x.approved))throw Error('LOCAL_ARTICLE_NOT_APPROVED');
+  for(const key of keysToCheck)validateArticleDraft([...primary,...supplemental].find(x=>x.articleKey===key));
   for(let attempt=1;attempt<=attempts;attempt++){
     let matching=0;
     let detail='REMOTE_SNAPSHOT_NOT_READY';
