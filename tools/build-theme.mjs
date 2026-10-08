@@ -51,5 +51,6 @@ const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript
 ${homeJs}
 //]]></script></b:if>`;
 const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+updatedCss+typographyCss+compactCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+updatedMount+'</body>');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
+const brandFavicon="<link rel='icon' type='image/png' href='https://lsifl.blogspot.com/favicon.ico?v=akkigo-20261009-2'/>";
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');
