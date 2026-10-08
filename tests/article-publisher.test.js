@@ -106,3 +106,35 @@ test('승인되지 않은 일반 글은 Blogger 호출 전에 차단한다',asyn
     /ARTICLE_NOT_APPROVED/
   );
 });
+
+test('무변경 발행 검증은 LIVE 본문 차이가 있으면 Blogger PATCH와 D1 기록 전에 중단한다',async()=>{
+  const initial={post_id:'555',public_url:'https://lsifl.blogspot.com/2026/10/shiba-test.html',status:'LIVE'};
+  const {state,DB}=fixtureDb(initial);
+  const env={DB,PUBLISH_ENABLED:'true',BLOGGER_BLOG_ID:'2339978524893611480',BLOGGER_CLIENT_ID:'fixture',BLOGGER_CLIENT_SECRET:'fixture',BLOGGER_REFRESH_TOKEN:'fixture'};
+  const transport=async(url,options={})=>{
+    if(url==='https://oauth2.googleapis.com/token')return Response.json({access_token:'fixture'});
+    assert.equal(options.method,undefined);
+    return Response.json({items:[{id:'555',blog:{id:env.BLOGGER_BLOG_ID},status:'LIVE',url:initial.public_url,title:'different',content:'<article data-ncp-article="shibarpg-pickup-202610">different</article>'}]});
+  };
+  await assert.rejects(publishApprovedArticle(env,article.articleKey,[article],transport,{requireUnchanged:true}),/UNCHANGED_PROBE_WOULD_UPDATE_STOP/);
+  assert.equal(state.attempt,null);assert.deepEqual(state.article,initial);
+});
+test('무변경 발행 검증은 신규 글 생성 없이 중단한다',async()=>{
+  const {state,DB}=fixtureDb();
+  const env={DB,PUBLISH_ENABLED:'true',BLOGGER_BLOG_ID:'2339978524893611480',BLOGGER_CLIENT_ID:'fixture',BLOGGER_CLIENT_SECRET:'fixture',BLOGGER_REFRESH_TOKEN:'fixture'};
+  await assert.rejects(publishApprovedArticle(env,article.articleKey,[article],()=>{throw Error('NETWORK_MUST_NOT_RUN');},{requireUnchanged:true}),/UNCHANGED_PROBE_NOT_LIVE_STOP/);
+  assert.equal(state.attempt,null);assert.equal(state.article,null);
+});
+test('무변경 발행 검증은 동일한 LIVE 글에서 원래 postId와 URL만 반환한다',async()=>{
+  const initial={post_id:'555',public_url:'https://lsifl.blogspot.com/2026/10/shiba-test.html',status:'LIVE'};
+  const {state,DB}=fixtureDb(initial);
+  const env={DB,PUBLISH_ENABLED:'true',BLOGGER_BLOG_ID:'2339978524893611480',BLOGGER_CLIENT_ID:'fixture',BLOGGER_CLIENT_SECRET:'fixture',BLOGGER_REFRESH_TOKEN:'fixture'};
+  const transport=async(url,options={})=>{
+    if(url==='https://oauth2.googleapis.com/token')return Response.json({access_token:'fixture'});
+    assert.equal(options.method,undefined);
+    if(url===initial.public_url)return new Response(article.post.content);
+    return Response.json({items:[{id:'555',blog:{id:env.BLOGGER_BLOG_ID},status:'LIVE',url:initial.public_url,...article.post}]});
+  };
+  const result=await publishApprovedArticle(env,article.articleKey,[article],transport,{requireUnchanged:true});
+  assert.equal(result.postId,'555');assert.equal(result.url,initial.public_url);assert.equal(result.updated,false);assert.equal(result.alreadyLive,true);assert.equal(state.attempt,null);assert.deepEqual(state.article,initial);
+});

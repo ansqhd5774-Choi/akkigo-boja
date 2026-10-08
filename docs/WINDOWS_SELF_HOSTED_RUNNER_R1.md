@@ -44,9 +44,13 @@ setup-node와 pnpm/action-setup을 사용하므로 기존 사용자 전역 Node/
 
 1. Verify workflow를 전용 러너에서 실행한다.
 2. Publish Approved Article를 수동 실행한다. 기본 `readonly_probe=true`이다.
-3. 이 경로는 기존 시바 글의 D1 SELECT와 Blogger API GET만 수행한다.
-   새 글, 수정, 발행 시도 행, Worker 재배포를 만들지 않는다.
-4. 결과는 `OIDC_WORKER_D1_BLOGGER_LIVE_PASS`, postId
+3. 이 경로는 기존 시바 글의 D1 SELECT와 Blogger API GET을 수행한 뒤,
+   실제 발행 클라이언트를 `requireUnchanged` 보호 조건으로 실행한다.
+   본문이 동일한 LIVE 글만 무변경 결과를 반환한다. 본문이 다르거나 LIVE가
+   아니면 변경 전에 중단한다. 새 글, 수정, 발행 시도 행, Worker 재배포를
+   만들지 않는다. 테스트 요청 파일은 실행 후 제거하고 commit하지 않는다.
+4. 결과는 `OIDC_WORKER_D1_BLOGGER_LIVE_PASS`와
+   `UNCHANGED_PUBLISH_CLIENT_PASS` (`updated:false`), postId
    `4686430079776725627`, URL `https://lsifl.blogspot.com/2026/10/pick7p2y.html`이다.
 5. 정상 발행 뒤 추가 브라우저 렌더 검사를 실행하지 않는다. UI 변경/오류의
    별도 Verify Blogger Layout 경로만 격리된 headless 프로필로 검사한다.

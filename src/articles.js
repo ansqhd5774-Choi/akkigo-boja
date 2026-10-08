@@ -53,7 +53,7 @@ async function publicCheck(url,articleKey,transport=fetch) {
   }
 }
 
-export async function publishApprovedArticle(env, articleKey, articles, transport=fetch) {
+export async function publishApprovedArticle(env, articleKey, articles, transport=fetch, {requireUnchanged=false}={}) {
   configured(env);
   if (!validKey(articleKey)) throw new Error('INVALID_ARTICLE_KEY');
   const article=articles.find(x=>x.articleKey===articleKey);
@@ -73,6 +73,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
     if (same) {
       return {postId:stored.post_id,status:'LIVE',url:stored.public_url,alreadyLive:true,updated:false,publicVerified:await publicCheck(stored.public_url,articleKey,transport)};
     }
+    if(requireUnchanged) throw Error('UNCHANGED_PROBE_WOULD_UPDATE_STOP');
     const attempt=crypto.randomUUID();
     await env.DB.prepare("INSERT INTO article_publish_attempts(attempt_id,article_key,operation,status,started_at) VALUES(?,?,'UPDATE','RUNNING',?)")
       .bind(attempt,articleKey,new Date().toISOString()).run();
@@ -90,6 +91,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
     }
   }
 
+  if(requireUnchanged) throw Error('UNCHANGED_PROBE_NOT_LIVE_STOP');
   const attempt=crypto.randomUUID();
   await env.DB.prepare("INSERT INTO article_publish_attempts(attempt_id,article_key,operation,status,started_at) VALUES(?,?,'CREATE_PUBLISH','RUNNING',?)")
     .bind(attempt,articleKey,new Date().toISOString()).run();

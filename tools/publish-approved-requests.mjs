@@ -26,7 +26,8 @@ for (const name of names) {
   const catalog=[...primary,...supplemental];
   validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
-  const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256});
+  const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
+  const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256,...(requireUnchanged?{requireUnchanged:true}:{})});
   let response,body;
   for(let attempt=1;attempt<=2;attempt++){
     response=await fetch(publishUrl,{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:payload});
@@ -42,6 +43,8 @@ for (const name of names) {
     throw new Error(`ARTICLE_PUBLISH_HTTP_${response.status}_${body.error || 'UNKNOWN'}`);
   }
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
+  if(requireUnchanged && (body.alreadyLive!==true || body.updated!==false))throw Error('UNCHANGED_PUBLISH_PROBE_RESPONSE_INVALID');
+  if(requireUnchanged)console.log('UNCHANGED_PUBLISH_CLIENT_PASS',JSON.stringify({postId:body.postId,url:body.url,updated:body.updated}));
   // The Blogger API LIVE response is the publication handoff boundary.
   // The reader performs visual / interactive inspection after receiving the URL.
   // A best-effort public content-marker probe is diagnostic only: it must not

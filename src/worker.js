@@ -43,7 +43,7 @@ export default {
       try {
         const source=await articleSnapshot(input.articleKey,[...articles,...supplementalArticles]);
         if(!source.approved || source.postSha256!==input.postSha256)throw new Error('ARTICLE_SNAPSHOT_MISMATCH');
-        const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles]);
+        const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles],fetch,{requireUnchanged:input.requireUnchanged===true});
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {
         const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
