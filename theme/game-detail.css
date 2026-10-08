@@ -4,6 +4,16 @@
 .ncp-detail-register{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:10px;background:#2457d6;color:#fff!important;text-decoration:none!important;font-size:14px;font-weight:700}
 .ncp-detail-duplicate-heading,.ncp-detail-duplicate-media{display:none!important}
 .ncp-detail-note{padding:14px 16px;background:#f8fafc;border-left:3px solid #94a3b8;font-size:14px!important;line-height:1.7}
-.ncp-detail-related{margin-top:32px;padding-top:24px;border-top:1px solid #e2e8f0}.ncp-detail-related h2{font-size:22px}.ncp-detail-related-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.ncp-detail-related-list a{padding:18px;border:1px solid #dce5f3;border-radius:14px;text-decoration:none!important;background:#fff}.ncp-detail-related-list strong,.ncp-detail-related-list span{display:block}.ncp-detail-related-list strong{font-size:16px;color:#172033}.ncp-detail-related-list span{margin-top:8px;font-size:13px;color:#2457d6}
-@media(max-width:600px){.ncp-detail-overview{padding:16px;gap:12px}.ncp-detail-register{width:100%}.ncp-detail-info{min-width:0}.ncp-detail-info strong{font-size:20px}.ncp-detail-related-list{grid-template-columns:1fr}}
+/* AKKIGO compact related game grid */
+.post-body .ncp-detail-related{margin-top:28px;padding:20px;border:1px solid #e1e8f2;border-radius:16px;background:#f7f9fd;font-family:Arial,'Noto Sans KR',sans-serif}
+.post-body .ncp-detail-related h2{margin:0 0 18px!important;font-size:19px!important;font-weight:800;color:#172033!important}
+.post-body .ncp-detail-related-list{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:12px}
+.post-body .ncp-detail-related-list a{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;padding:0;border:0;border-radius:10px;text-decoration:none!important;background:transparent;text-align:center;transition:transform .18s ease}
+.post-body .ncp-detail-related-list a:hover{transform:translateY(-3px)}.post-body .ncp-detail-related-list a:focus-visible{outline:3px solid #2457d6;outline-offset:4px}
+.post-body .ncp-related-visual{display:block;width:100%;max-width:80px;aspect-ratio:1;overflow:hidden;border-radius:16px;background:#e8eef9;box-shadow:0 3px 9px #17203318}
+.post-body .ncp-related-visual img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;margin:0!important;border-radius:0!important}
+.post-body .ncp-related-placeholder{display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#2457d6}
+.post-body .ncp-detail-related-list strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;min-height:34px;font-size:12px!important;line-height:1.4!important;color:#172033!important;word-break:keep-all;overflow-wrap:anywhere}
+.post-body .ncp-detail-related-list .ncp-related-count{display:block;font-size:12px!important;line-height:1.4;color:#2457d6!important;font-weight:800}
+@media(max-width:700px){.post-body .ncp-detail-related-list{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 10px}.post-body .ncp-detail-related{padding:16px}}
+@media(max-width:600px){.ncp-detail-overview{padding:16px;gap:12px}.ncp-detail-register{width:100%}.ncp-detail-info{min-width:0}.ncp-detail-info strong{font-size:20px}}

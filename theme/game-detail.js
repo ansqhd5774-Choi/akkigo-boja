@@ -25,14 +25,18 @@
     if(document.querySelector('.post-title'))body.querySelectorAll('h1').forEach(h=>h.classList.add('ncp-detail-duplicate-heading'));
     const featured=body.querySelector('[data-ncp-featured-image]');if(featured)featured.classList.add('ncp-detail-duplicate-media');
     const related=document.createElement('section');related.className='ncp-detail-related';
-    const heading=document.createElement('h2');heading.textContent='다른 게임 쿠폰';related.append(heading);
+    const heading=document.createElement('h2');heading.textContent='쿠폰 있는 다른 게임';related.append(heading);
     const list=document.createElement('div');list.className='ncp-detail-related-list';
     const seen=new Set([identity.id]);
     for(const entry of entries){const game=window.ncpResolveGame(entry);if(seen.has(game.id))continue;
       const doc=parse(entry),codes=count(doc),url=urlOf(entry);if(!codes||!url||new URL(url).origin!==location.origin)continue;
       seen.add(game.id);const link=document.createElement('a');link.href=url;
+      link.setAttribute('aria-label',game.name+' 입력 코드 '+codes+'개 보기');
+      const imageUrl=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url;
+      const visual=document.createElement('span');visual.className='ncp-related-visual';
+      if(imageUrl){const icon=document.createElement('img');icon.src=imageUrl;icon.alt='';icon.loading='lazy';icon.decoding='async';visual.append(icon);}else{visual.classList.add('ncp-related-placeholder');visual.textContent=game.name.slice(0,2);}
       const title=document.createElement('strong');title.textContent=game.name;
-      const meta=document.createElement('span');meta.textContent='입력 코드 '+codes+'개 →';link.append(title,meta);list.append(link);if(list.children.length===3)break;
+      const meta=document.createElement('span');meta.className='ncp-related-count';meta.textContent='코드 '+codes+'개';link.append(visual,title,meta);list.append(link);if(list.children.length===8)break;
     }
     if(list.children.length){related.append(list);body.append(related);}
     if(identity.name==='리니지M'){
