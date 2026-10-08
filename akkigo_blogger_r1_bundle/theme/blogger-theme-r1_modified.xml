@@ -2889,6 +2889,8 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .post-body [data-ncp-presentation] .ncp-list-more>summary{display:flex;justify-content:center;align-items:center;gap:10px;min-height:44px;margin-top:8px;border-radius:10px;background:#edf3ff;color:#233b60;font-weight:700;cursor:pointer;list-style:none}
 .post-body [data-ncp-presentation] .ncp-list-more>summary::after{content:'';width:9px;height:9px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:rotate(45deg)}
 .post-body [data-ncp-presentation] .ncp-list-more[open]>summary::after{transform:rotate(225deg)}
+.post-body [data-ncp-presentation] .ncp-list-more[open]{position:relative;padding-bottom:52px!important}
+.post-body [data-ncp-presentation] .ncp-list-more[open]>summary{position:absolute;bottom:0;left:0;right:0;margin-top:8px}
 @media(max-width:600px){.post-body [data-ncp-presentation] .ncp-code-card{grid-template-columns:minmax(0,1fr) 126px!important}}
 
 /* Period R1: one renderer, no per-game CSS or date/source section splitting. */
@@ -4432,6 +4434,15 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
 //]]></script><script type='text/javascript'>//<![CDATA[
 // AKKIGO persistent copy feedback: copying is not redemption confirmation.
 (function(){
+ const moreLabels=new WeakMap();
+ document.addEventListener('toggle',event=>{
+  const details=event.target;if(!details.matches?.('.ncp-list-more'))return;
+  const summary=details.querySelector(':scope>summary');if(!summary)return;
+  if(!moreLabels.has(summary))moreLabels.set(summary,{text:summary.textContent,label:summary.getAttribute('aria-label')});
+  const original=moreLabels.get(summary);
+  summary.textContent=details.open?'접기':original.text;
+  if(original.label)summary.setAttribute('aria-label',details.open?original.label.replace(/나머지 .*개 보기$/,'목록 접기'):original.label);
+ },true);
  const key=button=>'ncp-copied:'+location.pathname+':'+button.dataset.ncpCopy;
  const mark=button=>{delete button.dataset.ncpCopyError;button.dataset.ncpCopied='true';button.textContent='복사 완료';};
  const restore=()=>document.querySelectorAll('[data-ncp-copy]').forEach(button=>{try{if(localStorage.getItem(key(button))==='1')mark(button);}catch{}});

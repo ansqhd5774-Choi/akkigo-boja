@@ -37,8 +37,14 @@ const check=`
    const rows=list.querySelectorAll('.ncp-code-card'),more=list.querySelector(':scope>.ncp-list-more');
    if(rows.length>5){
     if(!more||more.open||list.querySelectorAll(':scope>.ncp-code-card').length!==5)failures.push('five-preview');
-    more.querySelector('summary').click();if(!more.open)failures.push('disclosure-open');
-    more.querySelector('summary').click();if(more.open)failures.push('disclosure-close');
+    more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));if(!more.open)failures.push('disclosure-open');
+    if(shown(list)){
+     const bottom=more.querySelector('summary').getBoundingClientRect(),last=rows[rows.length-1].getBoundingClientRect();
+     if(bottom.top<last.bottom)failures.push('collapse-button-not-last');
+     if(more.querySelector('summary').textContent!=='접기')failures.push('collapse-label');
+    }
+    more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));if(more.open)failures.push('disclosure-close');
+    if(!more.querySelector('summary').textContent.startsWith('더 보기'))failures.push('more-label-restore');
    }
   }
   choices[0].click();

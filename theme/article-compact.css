@@ -37,6 +37,8 @@
 .post-body [data-ncp-presentation] .ncp-list-more>summary{display:flex;justify-content:center;align-items:center;gap:10px;min-height:44px;margin-top:8px;border-radius:10px;background:#edf3ff;color:#233b60;font-weight:700;cursor:pointer;list-style:none}
 .post-body [data-ncp-presentation] .ncp-list-more>summary::after{content:'';width:9px;height:9px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:rotate(45deg)}
 .post-body [data-ncp-presentation] .ncp-list-more[open]>summary::after{transform:rotate(225deg)}
+.post-body [data-ncp-presentation] .ncp-list-more[open]{position:relative;padding-bottom:52px!important}
+.post-body [data-ncp-presentation] .ncp-list-more[open]>summary{position:absolute;bottom:0;left:0;right:0;margin-top:8px}
 @media(max-width:600px){.post-body [data-ncp-presentation] .ncp-code-card{grid-template-columns:minmax(0,1fr) 126px!important}}
 
 /* Period R1: one renderer, no per-game CSS or date/source section splitting. */

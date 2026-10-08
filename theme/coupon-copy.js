@@ -1,5 +1,14 @@
 // AKKIGO persistent copy feedback: copying is not redemption confirmation.
 (function(){
+ const moreLabels=new WeakMap();
+ document.addEventListener('toggle',event=>{
+  const details=event.target;if(!details.matches?.('.ncp-list-more'))return;
+  const summary=details.querySelector(':scope>summary');if(!summary)return;
+  if(!moreLabels.has(summary))moreLabels.set(summary,{text:summary.textContent,label:summary.getAttribute('aria-label')});
+  const original=moreLabels.get(summary);
+  summary.textContent=details.open?'접기':original.text;
+  if(original.label)summary.setAttribute('aria-label',details.open?original.label.replace(/나머지 .*개 보기$/,'목록 접기'):original.label);
+ },true);
  const key=button=>'ncp-copied:'+location.pathname+':'+button.dataset.ncpCopy;
  const mark=button=>{delete button.dataset.ncpCopyError;button.dataset.ncpCopied='true';button.textContent='복사 완료';};
  const restore=()=>document.querySelectorAll('[data-ncp-copy]').forEach(button=>{try{if(localStorage.getItem(key(button))==='1')mark(button);}catch{}});
