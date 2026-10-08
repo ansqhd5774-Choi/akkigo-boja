@@ -1,0 +1,2825 @@
+{
+  "gameName": "킹샷",
+  "gameEnglish": "Kingshot",
+  "articleKey": "kingshot-codes-202610",
+  "researchDate": "2026-10-09",
+  "sourceOfTruth": "GitHub existing LIVE article; this research is NOT an approval or publish request",
+  "note": "All current availability and account success UNVERIFIED. Third-party labels are reported, not direct verification. A previous snapshot from kingshot.net is old/stale, and historical strings are not automatically ACTIVE. Region/case limits may apply. No duplicate posts, no game rewards priced in cash.",
+  "counts": {
+    "recent": 4,
+    "disputed": 3,
+    "historical": 156,
+    "uniqueTotal": 163
+  },
+  "codeCandidates": [
+    {
+      "code": "WELLDONE",
+      "tier": "RECENT",
+      "reportedStatus": "REPORTED_AVAILABLE",
+      "reward": "1,000 Gems; 2x10,000 Hero XP; 50x1,000 Bread; 10x1,000 Stone; 50x1,000 Wood; 5x1,000 Iron; 4x1h General Speedup",
+      "expiryReported": "2026-10-10T23:59:00Z",
+      "sources": [
+        "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+        "https://www.mrguider.org/codes/kingshot-codes/",
+        "https://www.reddit.com/r/KingShot/comments/1wy7qai/new_gift_code_welldone/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Kingshot888",
+      "tier": "LONG_RUNNING",
+      "reportedStatus": "REPORTED_AVAILABLE",
+      "reward": "200 Gems, 2 Mythic Conquest Skill Books, 2 Mythic Expedition Skill Manuals, 2 Gold Keys",
+      "expiryReported": null,
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "VIP777",
+      "tier": "LONG_RUNNING",
+      "reportedStatus": "REPORTED_AVAILABLE",
+      "reward": "200 Gems, 2 Mythic Conquest Skill Books, 2 Mythic Expedition Skill Manuals, 2 Gold Keys",
+      "expiryReported": "2026-12-31 (fan-list; issuer not independently verified)",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS1005",
+      "tier": "RECENT_EXPIRED_REPORT",
+      "reportedStatus": "EXPIRY_REPORTED_2026_10_08",
+      "reward": "500 Gems, 3-day Avatar Frame, 200 Hero XP, 10x5m General Speedup",
+      "expiryReported": "2026-10-08 (reader reported expired)",
+      "sources": [
+        "https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/",
+        "https://trucoman.com/codigos-kingshot/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "AKeYD8gK8",
+      "tier": "DISPUTED_OR_LIMITED",
+      "reportedStatus": "SOURCE_CONFLICT",
+      "note": "Creator-type limited code, Oct 1 third-party list",
+      "sources": [
+        "https://beebom.com/kingshot-codes/amp/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "7VAeANrV7",
+      "tier": "DISPUTED_OR_LIMITED",
+      "reportedStatus": "SOURCE_CONFLICT",
+      "note": "Listed on Spanish TOPUPlive as active Oct 1; source conflicts",
+      "sources": [
+        "https://www.topuplive.com/es/news/kingshot-gift-codes-november-2025.html"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSPRAWNING",
+      "tier": "DISPUTED_OR_LIMITED",
+      "reportedStatus": "SOURCE_CONFLICT",
+      "note": "MrGuider still lists as working; other trackers expired",
+      "sources": [
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "EXPLORETHEWORLD",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "MIDAUTUMN26",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "JPHolidaySEP",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0919",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0909",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0907",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE0904",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "CHILLWEEKEND",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "FB2500KT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "VIP0822",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0822",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "JP26SUMMER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE08011",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0810",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "HAPPYCATDAY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0803",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "JPJULSEA26KS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "HAPPYEMOJIDAY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0715",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0713",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE0709",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0709",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0706",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "0706FORU",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "DC600KTHANKS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "BESTDAD0621",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "PICNIC2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "AJISAI26JP",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0615",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "PROTECTNATURE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "N4rG26aVj",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0603",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "7VAEDbAV7",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "CHILDFUN2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "EIDALADHA0527",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE27",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0524",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "rK9e6vKXu",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Bw8NanVq8",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "X43Q2EKBq",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "n4xeR7VGd",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "eK5B3kw7t",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "847EadKex",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0518",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE516",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "LOVEFAMILY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "BESTMOM2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Childrenday0505",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WORKERPOWER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSGW26JP",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE9",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0426",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "0425FORU",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0425",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "LOVETHEPLANET",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0420",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WEEKENDPLAN",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0408",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "BUNNY405",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "NOFOOLIN",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE04",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0330",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "FIREFRIDAY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "syunnbun26jp",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "EIDMUB2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGSHOTHBD",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "OFFICIALSTORE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0315",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "DC500KWEMADEIT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "CELEBRATEHER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THUR0305",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "0302FORU",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0302",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "ITSFRIDAY227",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS0225",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "RAMADAN",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "SPRINGFES217",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "LOVEKS2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS260213",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THANKSJP26",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGSTORE210",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TGIFBOOST26",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS26TGS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TACODE0127",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WEEKENDJOY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "SAYCHEESE26",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGDOMSTAR",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "ENERGY0112",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "jpseijin26",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THURMADNESS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "SEEYOUIN2026",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "JPX27KFOLLOW",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGSHOTXMAS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THEKINGSTORE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGSHOT13M",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "STORELAUNCH",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TGIFISBACK",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "casualgame25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TOGOVERNOR",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "HELLOWORLD25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSDC400K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "pepero",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TGIF1107",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "JackKaoAndKS",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "HALLOWEEN25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TRICKORTREAT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KS2025award",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TGIF1016",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "BONAPPETIT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Hangul2025",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Gaecheonjeol",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "tgs2025ks1st",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "COFFEEPOWER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "1INAMILLION",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "GIVEUAGIFT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "SORRYIMLATE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "LETSCLEANUP",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "Y4jx5z6Ke",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "54N25Ny4q",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "G4E8Xzzwe",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "9VqM2mMVq",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "dwmjyky44",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "847QgrmKx",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "X43Gxb246",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "v4njPbB4a",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "nwkJ6AXK6",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "N4r9ezWwf",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "ITISFRIDAY",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "DAYANDNIGHT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "TGIFTIME",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THANKUOLIVE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSDC300K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "looking4code",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WEHIT777",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "FRIENDSHIP25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGSHOTGIF",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "COURAGE",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "CHOCOLATE25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSDC200K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSFB500K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "HIDAD25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "UFOUNDIT",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WEHIT400",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "CHILDHOOD25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "ACODEBURGER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSFB300K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "FAMILY25",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "THXMOM",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSDC100K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KINGDOM200",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WORKERS2025",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSFB200K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "EASTER2025",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "KSFB150K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "EASTER",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    },
+    {
+      "code": "WEHIT1K",
+      "tier": "HISTORICAL",
+      "reportedStatus": "EXPIRED_OR_UNVERIFIED_BY_ARCHIVES",
+      "sourceAuthority": "THIRD_PARTY",
+      "sources": [
+        "https://kingshot.net/gift-codes",
+        "https://v2.kingshot.net/gift-codes",
+        "https://www.destructoid.com/kingshot-codes/",
+        "https://www.mrguider.org/codes/kingshot-codes/"
+      ],
+      "status": "UNVERIFIED",
+      "sourceCheckedAt": "2026-10-09",
+      "workingVerifiedAt": null,
+      "server": "UNCONFIRMED",
+      "conditions": "per-account and region eligibility not independently tested"
+    }
+  ],
+  "officialSources": [
+    "https://www.centurygames.com/kingshot-100k-discord-members/",
+    "https://www.centurygames.com/kingshot-top-fans/",
+    "https://www.centurygames.com/games/kingshot/",
+    "https://ks-giftcode.centurygame.com/",
+    "https://discord.gg/kingshot"
+  ],
+  "recentSources": [
+    "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+    "https://www.mrguider.org/codes/kingshot-codes/",
+    "https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/",
+    "https://www.reddit.com/r/KingShot/comments/1wy7qai/new_gift_code_welldone/",
+    "https://tokyogamestation.com/kingshot_giftcode/",
+    "https://www.topuplive.com/es/news/kingshot-gift-codes-november-2025.html",
+    "https://kingshot.net/gift-codes",
+    "https://trucoman.com/codigos-kingshot/"
+  ],
+  "sourceNotes": {
+    "video": "No independently attributable new YouTube coupon code found through current searches",
+    "social": "Facebook/Discord/X reported as code release channels. Specific latest primary post not independently fetched.",
+    "googleSearchConsole": "Connected GSC Wizard returned PAYMENT_REQUIRED. Actual Korean keyword impressions, CTR, and volume not measured."
+  },
+  "seo": {
+    "title": "킹샷",
+    "metaDescription": "킹샷 2026년 10월 쿠폰과 최신 기프트 코드, 무료 보석 보상, 만료 기간, 아이폰·안드로이드 입력 방법을 정리했습니다.",
+    "primaryKeywords": [
+      "킹샷 쿠폰",
+      "킹샷 쿠폰 2026년 10월",
+      "킹샷 최신 쿠폰",
+      "킹샷 기프트코드"
+    ],
+    "secondaryKeywords": [
+      "킹샷 코드 입력",
+      "킹샷 쿠폰 입력 방법",
+      "킹샷 보석 무료",
+      "Kingshot codes October 2026",
+      "キングショット ギフトコード",
+      "Kingshot redeem code"
+    ],
+    "hashtags": [
+      "#킹샷",
+      "#킹샷쿠폰",
+      "#킹샷기프트코드",
+      "#킹샷2026",
+      "#Kingshot",
+      "#KingshotCodes"
+    ],
+    "searchVolumeStatus": "NOT_MEASURED",
+    "impressionsStatus": "NOT_MEASURED"
+  }
+}
