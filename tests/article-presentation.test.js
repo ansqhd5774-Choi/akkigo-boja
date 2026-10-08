@@ -4,6 +4,14 @@ import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
 import legacy from '../data/article-presentation-legacy.json' with {type:'json'};
 import {validateArticlePresentation,renderArticleInfo} from '../src/article-presentation.js';
+import {readFileSync} from 'node:fs';
+test('theme owns aligned heading rows and full-width share actions',()=>{
+ const css=readFileSync(new URL('../theme/article-compact.css',import.meta.url),'utf8');
+ assert.match(css,/section\{display:grid!important/);
+ assert.match(css,/section>\.ncp-info\{position:relative!important/);
+ assert.match(css,/min-width:44px!important;flex:0 0 44px!important/);
+ for(const file of ['blogger-theme-r1.xml','blogger-theme-r1_modified.xml'])assert.ok(readFileSync(new URL('../akkigo_blogger_r1_bundle/theme/'+file,import.meta.url),'utf8').includes(css));
+});
 test('new game drafts require compact presentation version; grandfathered articles stay unchanged',()=>{
  for(const a of [...primary,...supplemental]){
   if(!a.post?.labels?.includes('게임')||legacy.includes(a.articleKey))continue;

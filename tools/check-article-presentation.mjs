@@ -19,7 +19,7 @@ let checked=0;
 for(const path of ['data/articles.json','data/articles-supplemental.json']){
  for(const article of JSON.parse(await readFile(new URL(path,root),'utf8'))){
   if(!article.post?.labels?.includes('게임')||legacy.includes(article.articleKey))continue;
-  if(article.source?.presentationVersion!=='compact-r2'&&!r1.includes(article.articleKey))throw Error('PRESENTATION_R2_REQUIRED: '+article.articleKey);
+  if(article.source?.presentationVersion!=='compact-r2'&&!(article.source?.presentationVersion==='compact-r1'&&r1.includes(article.articleKey)))throw Error('PRESENTATION_R2_REQUIRED: '+article.articleKey);
   validateArticlePresentation(article);
   const html=article.post.content;
   const copies=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
