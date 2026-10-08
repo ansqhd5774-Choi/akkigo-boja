@@ -43,7 +43,10 @@ for (const name of names) {
   }
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
   if (body.publicVerified!==true) throw new Error('PUBLIC_VERIFY_FAILED_AFTER_PUBLISH');
-  console.log(JSON.stringify({articleKey:request.articleKey,status:body.status,url:body.url,postId:body.postId,publicVerified:body.publicVerified,alreadyLive:Boolean(body.alreadyLive)}));
+  // Do not launch additional browser/viewport QA here. The operator reviews
+  // the published Blogger URL; visual QA is run only for an explicit defect.
+  console.log(JSON.stringify({articleKey:request.articleKey,status:body.status,url:body.url,postId:body.postId,publicVerified:body.publicVerified,alreadyLive:Boolean(body.alreadyLive),userReviewRequired:true,visualQa:"USER_REVIEW"}));
+  console.log('BLOGGER_LIVE_USER_REVIEW_URL',body.url);
   processed++;
 }
 if (!processed) throw new Error('NO_APPROVED_REQUESTS');
