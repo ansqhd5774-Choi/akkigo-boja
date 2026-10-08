@@ -6,24 +6,16 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+defaults:
+  run:
+    shell: cmd
 jobs:
   official-icon:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
       - name: Verify Korean App Store icon and developer
-        shell: bash
-        run: |
-          node --input-type=module <<'JS'
-          const r=await fetch('https://itunes.apple.com/lookup?id=1630880836&country=KR',{signal:AbortSignal.timeout(20000)});
-          if(!r.ok)throw Error('OFFICIAL_STORE_HTTP_'+r.status);
-          const list=await r.json();
-          const app=list.results?.find(x=>String(x.trackId)==='1630880836');
-          if(!app||!app.trackName?.includes('아우터플레인'))throw Error('OFFICIAL_APP_NAME_MISMATCH');
-          if(!/(Major Nine|MAJOR9|메이저나인)/i.test(app.artistName||''))throw Error('OFFICIAL_DEVELOPER_MISMATCH_'+app.artistName);
-          const icon=app.artworkUrl512||app.artworkUrl100;
-          if(!icon||!/^is[1-5]-ssl\.mzstatic\.com$/.test(new URL(icon).hostname))throw Error('OFFICIAL_ICON_NOT_FOUND');
-          console.log('OFFICIAL_APP_NAME',app.trackName);
-          console.log('OFFICIAL_APP_ARTIST',app.artistName);
-          console.log('OFFICIAL_APP_URL',app.trackViewUrl);
-          console.log('OFFICIAL_ICON_URL',icon);
-          JS
+        run: node tools/icon-checks/check-outerplane-icon-source.mjs

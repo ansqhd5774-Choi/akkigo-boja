@@ -8,5 +8,8 @@
     "deploy": "wrangler deploy",
     "build": "wrangler deploy --dry-run"
   },
-  "devDependencies": { "wrangler": "^4.0.0" }
+  "devDependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "wrangler": "^4.0.0"
+  }
 }

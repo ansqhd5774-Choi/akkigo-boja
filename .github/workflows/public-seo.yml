@@ -8,9 +8,12 @@ on:
       - .github/workflows/public-seo.yml
 permissions:
   contents: read
+defaults:
+  run:
+    shell: cmd
 jobs:
   seo:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.0.0

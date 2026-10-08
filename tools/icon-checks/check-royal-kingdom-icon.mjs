@@ -1,0 +1,12 @@
+const r=await fetch('https://itunes.apple.com/lookup?id=1606549505&country=KR',{signal:AbortSignal.timeout(20000)});
+if(!r.ok)throw Error('OFFICIAL_STORE_HTTP_'+r.status);
+const d=await r.json();
+const app=d.results?.find(x=>String(x.trackId)==='1606549505');
+if(!app||!/Royal Kingdom|로얄 킹덤/i.test(app.trackName||''))throw Error('APP_NAME_MISMATCH');
+if(!/Dream Games/i.test(app.artistName||''))throw Error('APP_DEVELOPER_MISMATCH');
+const icon=app.artworkUrl512||app.artworkUrl100;
+if(!icon||!/^is[1-5]-ssl\.mzstatic\.com$/.test(new URL(icon).hostname))throw Error('ICON_SOURCE_INVALID');
+console.log('OFFICIAL_APP_NAME',app.trackName);
+console.log('OFFICIAL_APP_DEVELOPER',app.artistName);
+console.log('OFFICIAL_APP_STORE_URL',app.trackViewUrl);
+console.log('OFFICIAL_APP_ICON_URL',icon);

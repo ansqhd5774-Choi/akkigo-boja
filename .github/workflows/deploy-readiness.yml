@@ -7,13 +7,16 @@ on:
       - .github/workflows/deploy-readiness.yml
 permissions:
   contents: read
+defaults:
+  run:
+    shell: cmd
 jobs:
   readiness:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
       - name: Check deployment prerequisite without exposing values
         env:
           API_TOKEN_PRESENT: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
         run: |
-          echo "api_token_present=$API_TOKEN_PRESENT"
+          echo api_token_present=%API_TOKEN_PRESENT%
           echo "account_selection=WRANGLER_AUTO_SELECT_SINGLE_SCOPED_ACCOUNT"

@@ -1,0 +1,8 @@
+# Preserve source/content hashes across Windows checkout and Worker builds.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.zip binary

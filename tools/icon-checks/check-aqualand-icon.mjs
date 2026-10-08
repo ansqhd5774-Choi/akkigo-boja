@@ -1,0 +1,12 @@
+const response=await fetch('https://itunes.apple.com/lookup?id=6780387121&country=KR',{signal:AbortSignal.timeout(20000)});
+if(!response.ok)throw Error('APP_STORE_HTTP_'+response.status);
+const data=await response.json();
+const app=data.results?.find(x=>String(x.trackId)==='6780387121');
+if(!app || !app.trackName?.includes('아쿠아랜드'))throw Error('APP_NAME_MISMATCH');
+if(!/Hong Kong Just Game/i.test(app.artistName||''))throw Error('APP_DEVELOPER_MISMATCH_'+app.artistName);
+const icon=app.artworkUrl512||app.artworkUrl100;
+if(!icon || !/^is[1-5]-ssl\.mzstatic\.com$/.test(new URL(icon).hostname))throw Error('ICON_SOURCE_INVALID');
+console.log('OFFICIAL_APP_NAME',app.trackName);
+console.log('OFFICIAL_APP_DEVELOPER',app.artistName);
+console.log('OFFICIAL_APP_STORE_URL',app.trackViewUrl);
+console.log('OFFICIAL_APP_ICON_URL',icon);

@@ -15,6 +15,22 @@ function validKey(key) {
   return /^[a-z0-9-]{1,100}$/.test(key || '');
 }
 
+// Operational test path: D1 SELECT + Blogger GET only. Never creates attempts
+// or updates a post, even if the stored article differs from the local source.
+export async function probeExistingArticle(env, articleKey, articles, transport=fetch) {
+  configured(env);
+  if (!validKey(articleKey)) throw Error('INVALID_ARTICLE_KEY');
+  const article=articles.find(x=>x.articleKey===articleKey);
+  if (!article || article.approvedForPublish!==true) throw Error('ARTICLE_NOT_APPROVED');
+  const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
+  if (stored?.status!=='LIVE' || !/^\d+$/.test(stored.post_id||'')) throw Error('ARTICLE_NOT_LIVE');
+  const matches=await findArticlePosts(env,articleKey,transport);
+  if (matches.length!==1 || matches[0].postId!==stored.post_id || matches[0].status!=='LIVE' || matches[0].url!==stored.public_url) throw Error('ARTICLE_STATE_MISMATCH');
+  const url=new URL(stored.public_url);
+  if (url.hostname!=='lsifl.blogspot.com' || !['http:','https:'].includes(url.protocol)) throw Error('BLOGGER_PUBLIC_URL_MISMATCH');
+  return {articleKey,postId:stored.post_id,status:'LIVE',url:stored.public_url,readOnly:true,contentMatches:matches[0].title===article.post.title && matches[0].content===article.post.content};
+}
+
 async function upsertState(env,key,{postId,url,status}) {
   await env.DB.prepare(`INSERT INTO article_state(article_key,post_id,public_url,status,updated_at)
     VALUES(?,?,?,?,?)

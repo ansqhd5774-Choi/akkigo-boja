@@ -8,7 +8,7 @@ import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
 import { updateStoredHub, createStoredDraft, reconcileDraft, publishStoredHub } from './publisher.js';
 import { buildHubDraft } from './hubs.js';
-import { publishApprovedArticle } from './articles.js';
+import { publishApprovedArticle, probeExistingArticle } from './articles.js';
 import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
 
@@ -24,8 +24,13 @@ export default {
       try { await verifyGitHubOidc(request); } catch { return new Response('Unauthorized',{status:401}); }
       let input;
       try {input=await request.json();}catch{return Response.json({error:'INVALID_JSON'},{status:400});}
-      try {return Response.json(await articleSnapshot(input.articleKey,[...articles,...supplementalArticles]),{headers:{'Cache-Control':'no-store'}});}
-      catch{return Response.json({error:'INVALID_ARTICLE_KEY'},{status:400});}
+      try {
+        const catalog=[...articles,...supplementalArticles];
+        const snapshot=await articleSnapshot(input.articleKey,catalog);
+        if(input.readOnlyLive===true) snapshot.live=await probeExistingArticle(env,input.articleKey,catalog);
+        return Response.json(snapshot,{headers:{'Cache-Control':'no-store'}});
+      }
+      catch(error){return Response.json({error:input.readOnlyLive===true?'READONLY_LIVE_PROBE_FAILED':'INVALID_ARTICLE_KEY'},{status:400});}
     }
     if (path === '/internal/articles/publish' && request.method === 'POST') {
       try {

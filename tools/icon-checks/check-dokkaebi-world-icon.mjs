@@ -1,0 +1,12 @@
+const response=await fetch('https://itunes.apple.com/lookup?id=6758975161&country=KR',{signal:AbortSignal.timeout(20000)});
+if(!response.ok)throw Error('APPSTORE_HTTP_'+response.status);
+const data=await response.json();
+const app=data.results?.find(x=>String(x.trackId)==='6758975161');
+if(!app||!app.trackName?.includes('도깨비의세계'))throw Error('APP_IDENTITY_FAIL');
+if(!/Kakao Games/i.test(app.artistName||''))throw Error('APP_DEVELOPER_FAIL_'+app.artistName);
+const icon=app.artworkUrl512||app.artworkUrl100;
+if(!icon||!/^is[1-5]-ssl\.mzstatic\.com$/.test(new URL(icon).hostname))throw Error('APP_ICON_FAIL');
+console.log('OFFICIAL_APP_NAME',app.trackName);
+console.log('OFFICIAL_APP_DEVELOPER',app.artistName);
+console.log('OFFICIAL_APP_STORE_URL',app.trackViewUrl);
+console.log('OFFICIAL_APP_ICON_URL',icon);

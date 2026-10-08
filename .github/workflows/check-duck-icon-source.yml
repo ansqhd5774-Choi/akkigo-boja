@@ -6,23 +6,16 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+defaults:
+  run:
+    shell: cmd
 jobs:
   official-icon:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
       - name: Retrieve Apple App Store official icon URL
-        shell: bash
-        run: |
-          node --input-type=module <<'JS'
-          const r=await fetch('https://itunes.apple.com/lookup?id=6793854765&country=KR',{signal:AbortSignal.timeout(20000)});
-          if(!r.ok)throw Error('OFFICIAL_STORE_HTTP_'+r.status);
-          const data=await r.json();
-          const app=data.results?.find(x=>String(x.trackId)==='6793854765');
-          if(!app||!app.trackName?.includes('후더덕 서바이벌'))throw Error('APP_TITLE_MISMATCH');
-          const url=app.artworkUrl512||app.artworkUrl100;
-          if(!url||!new URL(url).hostname.match(/^is[1-5]-ssl\.mzstatic\.com$/))throw Error('OFFICIAL_ICON_NOT_FOUND');
-          console.log('OFFICIAL_APP_NAME',app.trackName);
-          console.log('OFFICIAL_ARTIST',app.artistName);
-          console.log('OFFICIAL_APP_STORE_URL',app.trackViewUrl);
-          console.log('OFFICIAL_ICON_URL',url);
-          JS
+        run: node tools/icon-checks/check-duck-icon-source.mjs
