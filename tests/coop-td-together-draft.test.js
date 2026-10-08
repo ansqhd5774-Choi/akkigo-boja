@@ -1,0 +1,22 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import articles from '../data/articles.json' with {type:'json'};
+import {readFileSync} from 'node:fs';
+import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
+test('협타디 이벤트·캡틴·Reddit 댓글 쿠폰은 출처 날짜와 5열 68px을 보존한다',()=>{
+ const a=articles.find(x=>x.articleKey==='coop-td-together-codes-202610');assert.ok(a);assert.equal(a.post.title,'협타디: 협동 타워 디펜스');assert.equal(validateArticleDraft(a),true);
+ const r=JSON.parse(readFileSync(new URL('../drafts/coop-td-together-global-research-20261009.json',import.meta.url),'utf8'));
+ assert.equal(r.records.length,76);assert.equal(new Set(r.records.map(x=>x.code)).size,76);
+ assert.equal(r.records.filter(x=>x.group==='reddit').length,52);
+ assert.equal(r.records.filter(x=>x.group==='thirdParty').length,18);
+ assert.equal(r.records.find(x=>x.code==='1STCOOPTD').publishedAt,'2025-11-02');
+ assert.equal(r.records.find(x=>x.code==='1STCOOPTD').status,'EXPIRED');
+ assert.equal(r.records.find(x=>x.code==='SAYHQ7MT59').publishedAt,'2026-10-04');
+ assert.equal(r.records.find(x=>x.code==='6Y35TK9GAW').publishedAt,null);
+ assert.equal(r.records.find(x=>x.code==='M6C9MGK6KP').publishedAt,'2026-08-31');
+ const cp=[...a.post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+ const sh=[...a.post.content.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(cp.length,r.records.length);assert.deepEqual(cp,sh);
+ for(const row of r.records)assert.ok(cp.includes(row.code),row.code);
+ assert.equal(a.post.content,readFileSync(new URL('../drafts/coop-td-together-codes-202610.html',import.meta.url),'utf8').trim());
+});
