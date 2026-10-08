@@ -1,0 +1,20 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import articles from '../data/articles.json' with {type:'json'};
+import {readFileSync} from 'node:fs';
+import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
+test('삼국지 제후의 전쟁 완성 코드 11개·원문 게시일·5열 복사 검증',()=>{
+ const a=articles.find(x=>x.articleKey==='samgukji-lords-war-codes-202610');assert.ok(a);assert.equal(a.post.title,'삼국지: 제후의 전쟁');assert.equal(validateArticleDraft(a),true);
+ const r=JSON.parse(readFileSync(new URL('../drafts/samgukji-lords-war-global-research-20261009.json',import.meta.url),'utf8'));
+ assert.equal(r.records.length,11);assert.equal(new Set(r.records.map(x=>x.code)).size,11);
+ assert.equal(r.records.filter(x=>x.publishedAt==='2026-08-30').length,6);
+ assert.equal(r.records.filter(x=>x.publishedAt===null).length,5);
+ assert.equal(r.records.find(x=>x.code==='applejeonsok').foundAt,'2026-09-02');
+ assert.equal(r.records.find(x=>x.code==='SAMGUKJI').publishedAt,null);
+ assert.equal(r.records.find(x=>x.code==='1570-3dea7c816-1').status,'EXPIRED');
+ const c=[...a.post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);assert.equal(c.length,11);
+ const s=[...a.post.content.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);assert.deepEqual(c,s);
+ assert.equal(c.includes('1573-9ceff569(정답1)-1'),false);
+ for(const x of r.records)assert.ok(c.includes(x.code),'missing '+x.code);
+ assert.equal(a.post.content,readFileSync(new URL('../drafts/samgukji-lords-war-codes-202610.html',import.meta.url),'utf8').trim());
+});
