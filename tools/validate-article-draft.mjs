@@ -9,6 +9,13 @@ export function validateArticleDraft(article){
  if(h.includes('<h1'))throw Error('ARTICLE_DUPLICATE_TITLE');
  if((h.match(/<!--more-->/g)||[]).length!==1)throw Error('ARTICLE_JUMP_BREAK_COUNT');
  if(h.includes('data-ncp-copy=')&&new Set([...h.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1])).size!==(h.match(/data-ncp-copy=/g)||[]).length)throw Error('ARTICLE_DUPLICATE_COUPON');
+ if(article.articleKey==='aniimo-codes-202610'){
+  if(!h.includes('id="aniimo-tab-current"')||!h.includes('id="aniimo-tab-expired"')||!h.includes('id="aniimo-tab-guide"'))throw Error('ANIIMO_TABS_MISSING');
+  if(!h.includes('#aniimo-tab-current:checked~.ncp-aniimo-panels')||!h.includes('#aniimo-tab-expired:checked~.ncp-aniimo-panels')||!h.includes('#aniimo-tab-guide:checked~.ncp-aniimo-panels'))throw Error('ANIIMO_TABS_NOT_INTERACTIVE');
+  if(!h.includes('aniimoparty')||!h.includes('고급 애니팟 5개 · 성장의 꽃 5개'))throw Error('ANIIMO_EXPIRED_REWARD_MISSING');
+  if(!h.includes('미국 서버 전용')||!h.includes('Beebom')||!h.includes('GamesRadar+'))throw Error('ANIIMO_PROVENANCE_MISSING');
+  if(!h.includes('data-ncp-featured-image="aniimo-codes-202610"'))throw Error('ANIIMO_ICON_MISSING');
+ }
  validateGameCouponLayout(article.articleKey,article.post);
  validateGameFeaturedImage(article.articleKey,article.post);
  validateGameCandidateCoverage(article);
