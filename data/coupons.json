@@ -892,7 +892,10 @@
     "sourceCheckedAt": "2026-10-06T16:30:00.000Z",
     "evidenceMethod": "OFFICIAL_NEXON_COMMUNITY_NOTICE",
     "note": "넥슨 공식 커뮤니티 공지에서 코드, 동료 소환권 300장, 2026-10-14 23:59 KST 만료, 계정당 1회, 플랫폼별 입력 경로를 확인. 실제 계정 사용 성공은 별도 확인하지 않음.",
-    "sourceAuthority": "OFFICIAL"
+    "sourceAuthority": "OFFICIAL",
+    "publishedAt": "2026-09-03",
+    "sourcePublishedAt": "2026-09-03",
+    "dateBasis": "NEXON_ORIGINAL_NOTICE_PUBLICATION_DATE"
   },
   {
     "id": "maplestory-idle-50cubecoupon-202610",
@@ -923,7 +926,10 @@
       "https://couponquest.net/games/maplestory-idle-rpg"
     ],
     "note": "2026-10-07 기준 최근 목록과 메이플 키우기 방송 설명에서 코드, 미라클 큐브 50개, 2026-10-07 23:59 KST 만료를 교차 확인. 넥슨 공식 공지 원문은 검색에서 직접 확인하지 못함.",
-    "sourceAuthority": "UNOFFICIAL"
+    "sourceAuthority": "UNOFFICIAL",
+    "publishedAt": "2026-09-16",
+    "sourcePublishedAt": "2026-09-16",
+    "dateBasis": "NEXON_ORIGINAL_NOTICE_PUBLICATION_DATE"
   },
   {
     "id": "kingshot-kingshot888-202610",
