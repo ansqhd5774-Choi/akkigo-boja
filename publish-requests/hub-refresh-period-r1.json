@@ -1,0 +1,9 @@
+{
+  "hubKeys": [
+    "zeus",
+    "lineagem",
+    "wuthering"
+  ],
+  "approved": true,
+  "reason": "공통 기간 생성기와 CSS 적용"
+}
