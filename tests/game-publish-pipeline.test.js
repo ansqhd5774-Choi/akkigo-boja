@@ -31,11 +31,12 @@ test('article preflight rejects repeated title and incomplete jump break',()=>{
 });
 
 test('externally listed generic Cat Gunner strings stay as UNVERIFIED research candidates',()=>{
+ const catCandidates=candidates.filter(x=>x.gameName==='총잡이 고양이');
  const expected=['GAMEEDU','VIP111','VIP333','VIP555','VIP666','VIP777','VIP888','VIP999','VIP2024','GO2024','FBGIFT','DCGIFT'];
- assert.deepEqual(candidates.map(x=>x.code),expected);
+ assert.deepEqual(catCandidates.map(x=>x.code),expected);
  assert.equal(validateGameCodeCandidates(),true);
- assert.ok(candidates.every(x=>x.status==='UNVERIFIED' && x.sourceUrl.startsWith('https://')));
- const html=renderGameCouponTable(candidates.map(x=>({code:x.code,source:'제보',expiry:'미확인'})));
+ assert.ok(catCandidates.every(x=>x.status==='UNVERIFIED' && x.sourceUrl.startsWith('https://')));
+ const html=renderGameCouponTable(catCandidates.map(x=>({code:x.code,source:'제보',expiry:'미확인'})));
  const article={post:{labels:['게임','총잡이 고양이'],content:html+'<p>입력 시도 후보입니다.</p>'}};
  assert.equal(validateGameCandidateCoverage(article),true);
  const incomplete={post:{labels:['게임','총잡이 고양이'],content:html.replace('data-ncp-copy="VIP777"','data-ncp-copy="OTHER"')+'<p>입력 시도 후보입니다.</p>'}};

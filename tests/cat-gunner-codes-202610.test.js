@@ -22,7 +22,7 @@ test('Cat Gunner publishes 38 unique source-traced copy codes and 12 ledger cand
  assert.equal((html.match(/class="ncp-list-header" role="row"/g)||[]).length,3);
  const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
  assert.equal(new Set(codes).size,38);
- for(const row of ledger)assert.ok(codes.includes(row.code),'missing '+row.code);
+ for(const row of ledger.filter(x=>x.gameName==='총잡이 고양이'))assert.ok(codes.includes(row.code),'missing '+row.code);
  assert.equal(html.includes('ILOVECAT 쿠폰 복사'),false);
  assert.equal(validateGameCouponLayout(key,article.post),true);
  assert.equal(validateGameCandidateCoverage(article),true);
