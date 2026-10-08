@@ -1,0 +1,8 @@
+{
+  "hubKeys": [
+    "wuthering"
+  ],
+  "approved": true,
+  "requestedAt": "2026-10-09T08:05:00+09:00",
+  "reason": "Retry after pre-mutation CI environment failure: the previous wuthering-r2 publish workflow failed at dependency-free DOM preflight before any Worker/Blogger mutation. New R2 static gate now passes. Refresh ONLY existing wuthering hub using verified 79-string source archive, preserve Blogger postId and URL, never insert duplicate or modify other hubs."
+}
