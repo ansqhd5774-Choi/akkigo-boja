@@ -34,7 +34,7 @@ test('발행은 완전한 소스 검사를 재사용하거나 직접 수행하�
   assert.doesNotMatch(verify,/Render Shiba coupon layout/);
   assert.match(layout,/drafts\/shibarpg-pickup-202610\.html/);
   assert.match(layout,/akkigo_blogger_r1_bundle\/theme\/blogger-theme-r1\.xml/);
-  assert.match(layout,/Render coupon and site interaction fixtures at 390 and 1440/);
+  assert.match(layout,/Render shared period coupon and site fixtures at 390 and 1440/);
   assert.match(layout,/node tools\/run-layout-checks\.mjs/);
 });
 
