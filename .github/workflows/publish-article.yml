@@ -143,7 +143,13 @@ jobs:
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
         run: node tools/check-article-readiness.mjs --wait
-      - name: Publish only changed approved requests
+      # Publication is intentionally the last production step.
+      # Worker returns LIVE + post ID + URL and performs its existing lightweight
+      # content-marker check within the same request; there is no separate
+      # GitHub Actions browser / PC / mobile inspection job.
+      # The user reviews the rendered Blogger page after receiving the link.
+      # Run visual/browser QA separately only for reported defects or UI changes.
+      - name: Publish and return Blogger link for user review
         if: steps.requests.outputs.has_requests == 'true'
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
