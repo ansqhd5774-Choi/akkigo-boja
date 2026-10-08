@@ -1,0 +1,29 @@
+name: Verify Official Top Lords Icon
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths: [.github/workflows/check-top-lords-icon.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  icon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Top Lords official Korean App Store image
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          const r=await fetch('https://itunes.apple.com/lookup?id=6767834940&country=KR',{signal:AbortSignal.timeout(20000)});
+          if(!r.ok)throw Error('OFFICIAL_STORE_HTTP_'+r.status);
+          const data=await r.json();
+          const app=data.results?.find(x=>String(x.trackId)==='6767834940');
+          if(!app||!/(탑 로드|Top Lords)/i.test(app.trackName||''))throw Error('APP_NAME_MISMATCH');
+          if(!/GAME SPARK/i.test(app.artistName||''))throw Error('DEVELOPER_MISMATCH_'+app.artistName);
+          const icon=app.artworkUrl512||app.artworkUrl100;
+          if(!icon||!/^is[1-5]-ssl\.mzstatic\.com$/.test(new URL(icon).hostname))throw Error('ICON_SOURCE_INVALID');
+          console.log('OFFICIAL_APP_NAME',app.trackName);
+          console.log('OFFICIAL_APP_DEVELOPER',app.artistName);
+          console.log('OFFICIAL_APP_STORE_URL',app.trackViewUrl);
+          console.log('OFFICIAL_APP_ICON_URL',icon);
+          JS
