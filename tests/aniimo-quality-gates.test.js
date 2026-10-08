@@ -17,6 +17,6 @@ test('Aniimo tabs must be truly interactive, not just anchor navigation',()=>{
  assert.throws(()=>validateArticleDraft(withContent(broken)),/ANIIMO_TABS_NOT_INTERACTIVE/);
 });
 test('Aniimo source and expiration reward must not silently disappear',()=>{
- assert.throws(()=>validateArticleDraft(withContent(original.post.content.replace('고급 애니팟 5개 · 성장의 꽃 5개','보상 미상'))),/ANIIMO_EXPIRED_REWARD_MISSING/);
+ assert.throws(()=>validateArticleDraft(withContent(original.post.content.replace('aniimoparty</strong> 안내 보상: 글리머 50개 · 고급 애니팟 5개 · 성장의 꽃 5개','aniimoparty</strong> 안내 보상: 보상 미상'))),/ANIIMO_EXPIRED_REWARD_MISSING/);
  assert.throws(()=>validateArticleDraft(withContent(original.post.content.replaceAll('미국 서버 전용','해외 서버'))),/ANIIMO_PROVENANCE_MISSING/);
 });
