@@ -1,0 +1,6 @@
+{
+  "articleKey": "whiteout-survival-codes-202610",
+  "approved": true,
+  "requestedAt": "2026-10-09T06:06:44+09:00",
+  "reason": "User requested update of existing Whiteout Survival Blogger post using expanded October 9 research. Publish 124 separately classified code records through the existing idempotent article publisher; preserve existing Blogger postId and URL; deliver LIVE URL for user UI review."
+}
