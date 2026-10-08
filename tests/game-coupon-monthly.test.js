@@ -56,3 +56,12 @@ test('future, duplicate and invalid month histories fail closed',()=>{
  assert.throws(()=>groupMonthlyGameCodes([{code:'FUTUREX',firstSeenMonth:'2026-12'}],{currentMonth:'2026-10'}),/GAME_MONTH_IN_FUTURE/);
  assert.throws(()=>groupMonthlyGameCodes([{code:'PASTCODE',firstSeenMonth:'2026-13'}],{currentMonth:'2026-10'}),/GAME_MONTH_INVALID/);
 });
+
+test('Korean official coupon codes remain exact and copyable in monthly groups',()=>{
+ const codes=[{code:'애플1위풍악을울려라',source:'카카오게임즈 공식',expiry:'2026-11-11',firstSeenMonth:'2026-10'},{code:'도깨비1008',source:'공식 라이브',expiry:'미확인',firstSeenMonth:'2026-09'}];
+ const html=renderMonthlyGameCouponSections(codes,{currentMonth:'2026-10'});
+ assert.ok(html.includes('data-ncp-copy="애플1위풍악을울려라"'));
+ assert.ok(html.indexOf('2026년 10월 신규 쿠폰')<html.indexOf('2026년 9월 이전 쿠폰'));
+ assert.ok(html.includes('data-ncp-copy="도깨비1008"'));
+ assert.equal(validateMonthlyGameCouponTimeline({post:{labels:['게임'],content:html},source:{gameCouponTimeline:{currentMonth:'2026-10',codes}}}),true);
+});
