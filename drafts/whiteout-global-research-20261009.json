@@ -9,8 +9,8 @@
     "RECENT_REPORTED_WORKING": 5,
     "CONFLICTING_RECENT_REPORTS": 3,
     "HISTORICAL_OR_EXPIRED": 57,
-    "HISTORICAL_ARCHIVE": 60,
-    "uniqueCodes": 125
+    "HISTORICAL_ARCHIVE": 59,
+    "uniqueCodes": 124
   },
   "critical": {
     "officialNewCode": {
@@ -175,7 +175,7 @@
     "impressionRate": "NOT_MEASURED",
     "rationale": "Rank by search intent and code recency only, not measured volume. Search Console access/payment has previously been blocked."
   },
-  "statusRule": "All strings stay UNVERIFIED until actual account use evidence; official origin is not actual redemption success. Historical records never converted to active based on copied SEO articles.",
+  "statusRule": "All strings stay UNVERIFIED until actual account use evidence; official origin is not actual redemption success. Historical records never converted to active based on copied SEO articles. Exclude any cross-game strings or unsupported chronology: TGIFTIME rejected during audit.",
   "codes": [
     {
       "code": "WOS1007",
@@ -1655,18 +1655,6 @@
     },
     {
       "code": "YearofSnake",
-      "status": "UNVERIFIED",
-      "sourceReportedStatus": "HISTORICAL_ARCHIVE",
-      "sourceUrl": "https://www.wosgiftcodes.com/calendar.php",
-      "sourceAuthority": "THIRD_PARTY",
-      "workingVerifiedAt": null,
-      "expiry": null,
-      "eligibility": "지역·계정별 확인 필요",
-      "notes": "Historical string from a fan archive; not intended for operational active code lists.",
-      "firstSeenPeriod": "2025 (archival list, verify each code's original issue date)"
-    },
-    {
-      "code": "TGIFTIME",
       "status": "UNVERIFIED",
       "sourceReportedStatus": "HISTORICAL_ARCHIVE",
       "sourceUrl": "https://www.wosgiftcodes.com/calendar.php",
