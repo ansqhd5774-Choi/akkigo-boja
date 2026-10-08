@@ -2879,12 +2879,8 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
           <b:include name='headerByline'/>
         </b:includable>
         <b:includable id='postLabels'>
-          <b:comment>We don&#39;t display labels on the home page.</b:comment>
-          <b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
-            <b:include name='super.postLabels'/>
-          </b:if>
-        </b:includable>
-        <b:includable id='postShareButtons' var='post'>
+          <b:comment>Keep stored Blogger labels for taxonomy; do not render visible chips.</b:comment>
+        </b:includable>        <b:includable id='postShareButtons' var='post'>
           <b:comment>We call super.postShareButtons from the migrated positions.</b:comment>
         </b:includable>
         <b:includable id='postJumpLink'>
