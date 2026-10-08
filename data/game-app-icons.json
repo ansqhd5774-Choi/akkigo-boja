@@ -178,5 +178,13 @@
     "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/42/f0/b042f081-3b1a-0a82-4efe-7f00c1d501e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
     "iconShape": "square",
     "verifiedDate": "2026-10-09"
+  },
+  {
+    "articleKey": "last-echo-codes-202610",
+    "gameName": "라스트 에코",
+    "platform": "google-play",
+    "appStoreUrl": "https://play.google.com/store/apps/details?id=com.sc.kr.gp",
+    "iconUrl": "https://play-lh.googleusercontent.com/FVF2loA1G3SDxVNYVaIlBWLvk35lWLzewY3_6OW6gm-R_ukw7T9_-bSSBFW4SOsiPzuoi2G82YZjd3xUNAuQyIM=w240-h480",
+    "iconShape": "square"
   }
 ]
