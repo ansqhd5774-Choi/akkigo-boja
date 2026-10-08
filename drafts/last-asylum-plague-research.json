@@ -1,0 +1,201 @@
+{
+  "title": "라스트 어사일럼: 페스트",
+  "game": "Last Asylum: Plague",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "checkedAt": "2026-10-09",
+  "description": "2026년 10월 라스트 어사일럼 페스트 쿠폰·최신 코드·입력 방법·다이아 보상",
+  "note": "아래 코드는 공개 사이트에서 문자열 유통 확인만 한 후보이며 운영자 계정에서 사용 성공을 검증하지 않았다. 공식 발급 여부와 지역·서버·기한 개별 확인 필요. Active 자동 승격 금지.",
+  "redemption": {
+    "officialPortal": "https://gevents.globallap.com/gamecode/index.html?gameId=440",
+    "web": "계정 로그인 → 서버·캐릭터 선택 → 코드 입력 → 확인 → 게임 우편 수령",
+    "android": "프로필 → 설정 → Gift Code → 코드 입력",
+    "ios": "웹 공식 등록 페이지 사용 권장"
+  },
+  "sources": [
+    "https://www.pocketgamer.com/last-asylum-plague/codes/",
+    "https://lastasylum.com/gift-codes",
+    "https://www.lastasylum-guide.jp/latest-codes.html",
+    "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+    "https://kma-alliance.github.io/",
+    "https://lastasylum-plague.com/gift-codes",
+    "https://pacpik.com/events/last-asylum-pest-lakr12k7o-a-b-c-d-%EC%A4%91%EC%97%90-%EC%9E%88%EC%9D%8C/"
+  ],
+  "codes": [
+    {
+      "code": "LAMAU26",
+      "status": "UNVERIFIED",
+      "reportedBy": "2026-09-30 해외 공략에서 공식 Facebook 발표로 소개",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAOKT26",
+      "status": "UNVERIFIED",
+      "reportedBy": "다수 추적 사이트",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA30W7F2M",
+      "status": "UNVERIFIED",
+      "reportedBy": "다수 추적 사이트",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LACAFE26",
+      "status": "UNVERIFIED",
+      "reportedBy": "일본 가이드 2026-09-25",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA25W8CM",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA20WBZ9",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA26ALLY",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LADAD26",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "26CHOCO",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAQIXI26",
+      "status": "UNVERIFIED",
+      "reportedBy": "일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LADOG26",
+      "status": "UNVERIFIED",
+      "reportedBy": "일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA14EBRN",
+      "status": "UNVERIFIED",
+      "reportedBy": "일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAKR10K6L",
+      "status": "UNVERIFIED",
+      "reportedBy": "한국 커뮤니티 추적",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAKR15K9A",
+      "status": "UNVERIFIED",
+      "reportedBy": "한국 커뮤니티 추적",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAKR12K7O",
+      "status": "UNVERIFIED",
+      "reportedBy": "한국 커뮤니티 추적",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA15WPN4D",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 커뮤니티",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA1OW9F7X",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 공략",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LADCEX1223",
+      "status": "UNVERIFIED",
+      "reportedBy": "해외 공략",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "twlap666",
+      "status": "UNVERIFIED",
+      "reportedBy": "대만·일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "twlap888",
+      "status": "UNVERIFIED",
+      "reportedBy": "대만·일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAU15CHG",
+      "status": "UNVERIFIED",
+      "reportedBy": "일본 가이드",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAWTD16F",
+      "status": "UNVERIFIED",
+      "reportedBy": "연합 자동 수집",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    }
+  ]
+}
