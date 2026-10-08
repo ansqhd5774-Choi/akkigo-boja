@@ -1,4 +1,5 @@
 import seeds from '../data/game-heart-seeds.json' with {type:'json'};
+import initials from '../data/game-heart-initials.json' with {type:'json'};
 import articles from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
 import {resolveGame} from './game-identity.js';
@@ -7,6 +8,14 @@ for(const article of [...articles,...supplemental]){
  if(!article.approvedForPublish||!article.post?.labels?.includes('게임'))continue;
  const game=resolveGame({...article.post,category:article.post.labels},Object.keys(seeds));
  if(game.id&&!registry.has(game.id))registry.set(game.id,{name:game.name,initial:0});
+}
+// Persisted editorial initial values; never rename vote keys or rewrite D1 votes.
+for(const [id,game] of registry){
+ if(Object.hasOwn(initials,id)){
+  const initial=initials[id];
+  if(!Number.isInteger(initial)||initial<0||initial>400)throw Error('HEART_INITIAL_INVALID');
+  game.initial=initial;
+ }
 }
 const origin='https://lsifl.blogspot.com';
 const headers={'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Content-Type','Cache-Control':'no-store','Vary':'Origin'};
