@@ -37,7 +37,9 @@ for (const path of [
     assert.match(xml,/localStorage\.setItem\(key\(button\),'1'\)/);
     assert.match(xml,/data-ncp-copied='true'/);
     assert.match(xml,/button\.textContent='복사 실패'/);
-    assert.match(xml,/setTimeout\(function\(\)\{button\.textContent=before;button\.disabled=false;\},1400\)/);
+    assert.match(xml,/finally\{button\.disabled=false;\}/);
+    assert.match(xml,/localStorage\.getItem\(key\(button\)\)==='1'\)mark\(button\)/);
+    assert.doesNotMatch(xml,/setTimeout\(function\(\)\{button\.textContent=before/);
   });
 }
 
