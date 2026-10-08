@@ -33,10 +33,14 @@ test('킹샷 supplemental article과 공개 HTML이 일치한다',()=>{
   for (const code of ['KS1005','WELLDONE','Kingshot888','VIP777']) {
     assert.match(html,new RegExp(code));
   }
-  assert.match(html,/2026년 10월 8일 08:59/);
-  assert.match(html,/2026년 10월 11일 08:59/);
+  assert.match(html,/2026년 10월 8일 만료/);
+  assert.match(html,/2026년 10월 11일 오전 8시 59분/);
   assert.match(html,/ks-giftcode\.centurygame\.com/);
-  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,4);
+  const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+  assert.equal(codes.length,163);
+  assert.equal(new Set(codes).size,163);
+  assert.equal((html.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length,3);
+  assert.equal(article.post.title,'킹샷');
   assert.equal((html.match(/data-ncp-featured-image="kingshot"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
