@@ -1907,5 +1907,45 @@
     "evidenceMethod": "OFFICIAL_X_NOTICE",
     "sourceAuthority": "OFFICIAL",
     "note": "3.7 프리뷰 공식 방송 코드. 공식 X 기준 2026-09-21 08:59 PT 종료."
+  },
+  {
+    "id": "whiteout-wos1007-202610",
+    "type": "GAME_REWARD",
+    "offerType": "GAME_REDEEM",
+    "brand": "화이트아웃 서바이벌",
+    "category": "게임",
+    "code": "WOS1007",
+    "status": "UNVERIFIED",
+    "rewards": [
+      {
+        "name": "3일 아바타 테두리",
+        "quantity": 1
+      },
+      {
+        "name": "젬",
+        "quantity": 500
+      },
+      {
+        "name": "일반 가속 5분",
+        "quantity": 10
+      },
+      {
+        "name": "VIP 경험치",
+        "quantity": 200
+      }
+    ],
+    "server": "적용 서버 미확인",
+    "redemptionMethod": "Century Games 공식 Gift Code Center https://wos-giftcode.centurygame.com/",
+    "platform": "ALL",
+    "member": "ALL",
+    "eligibilityConfirmed": true,
+    "conditions": "용광로 레벨 9 이상",
+    "endMode": "FIXED_DATE",
+    "expiresAt": "2026-10-09T23:59:00.000Z",
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/sneak-peek/100753765kr/",
+    "sourceCheckedAt": "2026-10-09T00:00:00+09:00",
+    "evidenceMethod": "WOS_KOREAN_WIKI_NOTICE_AND_MEDIA_REWARDS",
+    "sourceAuthority": "OFFICIAL",
+    "note": "교환 코드와 용광로 9레벨 이상 조건 및 만료일은 게임 한국어 위키 공지 확인. 보상은 GamesRadar+ 표기 참조. 실제 사용자 계정 입력 성공은 미확인."
   }
 ]
