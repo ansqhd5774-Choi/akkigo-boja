@@ -1,3 +1,4 @@
+import {validateMonthlyGameCouponTimeline} from './game-coupon-monthly.js';
 import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
 import {validateGameCouponLayout} from './game-code-layout-contract.js';
 import {validateGameFeaturedImage} from './game-featured-image-policy.js';
@@ -45,6 +46,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   validateGameCouponLayout(articleKey,article.post);
   validateGameFeaturedImage(articleKey,article.post);
   validateGameCandidateCoverage(article);
+  validateMonthlyGameCouponTimeline(article);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
   if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
