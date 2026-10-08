@@ -46,7 +46,8 @@ test('Verify는 오래된 실행을 취소하고 문서 변경을 제외한다',
 
 test('Verify는 재사용 가능한 완전한 검사 범위를 제공한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
-  assert.match(yaml,/Detect Worker build changes/);
+  assert.doesNotMatch(yaml,/Detect Worker build changes/);
+  assert.match(yaml,/node tools\/verification-certificate.mjs/);
   assert.match(actionRuntime,/WORKER_BUILD_REQUIRED_UNCERTAIN_DIFF/);
   assert.match(actionRuntime,/WORKER_BUILD_SKIPPED/);
   assert.match(yaml,/pnpm\/action-setup@v4/);

@@ -1,9 +1,10 @@
 name: Deploy Worker
 on:
   workflow_dispatch:
-  push:
+  workflow_run:
+    workflows: [Verify]
+    types: [completed]
     branches: [codex/blogger-worker-r1]
-    paths: [src/**, data/**, theme/assets/**, migrations/**, wrangler.jsonc, package.json, pnpm-lock.yaml, pnpm-workspace.yaml, .github/workflows/deploy.yml]
 permissions:
   contents: read
   actions: read
@@ -16,16 +17,21 @@ defaults:
     shell: cmd
 jobs:
   deploy:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository && (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch'))
     runs-on: [self-hosted, Windows, X64, akkigo-boja]
     env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
+      - name: Require current production source
+        run: node tools/check-deploy-target.mjs
       - name: Check Cloudflare API token
         run: node tools/actions-runtime.mjs auth
       - name: Check Worker deployment readiness
@@ -63,3 +69,11 @@ jobs:
         if: steps.worker.outputs.deploy_needed == 'true'
       - run: pnpm deploy
         if: steps.worker.outputs.deploy_needed == 'true'
+      - name: Summarize verification and deployment
+        if: always()
+        env:
+          VERIFY_REUSED: ${{ steps.verification.outputs.reused }}
+          VERIFY_REASON: ${{ steps.verification.outputs.reason }}
+          DEPLOY_NEEDED: ${{ steps.worker.outputs.deploy_needed }}
+          JOB_RESULT: ${{ job.status }}
+        run: node tools/actions-summary.mjs

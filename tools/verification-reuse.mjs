@@ -1,5 +1,6 @@
 import {appendFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
+import {expectedCertificate, matchesCertificate, parseCertificate} from './verification-certificate.mjs';
 
 export const requiredSteps = ['Source tests', 'Worker dry-run build', 'Regenerate Blogger theme and require clean diff', 'Validate Blogger XML', 'Mark exact verified source'];
 export function eligibleRun(run, sha, repository) {
@@ -8,27 +9,35 @@ export function eligibleRun(run, sha, repository) {
 export function completeCoverage(jobs) {
   return jobs.some(job => job.name === 'verify' && job.conclusion === 'success' && requiredSteps.every(name => job.steps?.some(step => step.name === name && step.status === 'completed' && step.conclusion === 'success')));
 }
-export async function findVerification({repository, sha, token, request = fetch}) {
+export async function findVerification({repository, sha, token, request = fetch, expected = expectedCertificate(sha), budgetMs = 15000}) {
   if(repository !== 'ansqhd5774-Choi/akkigo-boja') throw Error('REPOSITORY_TARGET_MISMATCH');
-  const get = async path => {
-    const response = await request(`https://api.github.com/repos/${repository}/${path}`, {headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json'}, signal: AbortSignal.timeout(20000)});
+  const signal = AbortSignal.timeout(budgetMs);
+  const get = async (path, text = false) => {
+    signal.throwIfAborted();
+    const response = await request(`https://api.github.com/repos/${repository}/${path}`, {headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json'}, signal});
     if(!response.ok) throw Error(`VERIFY_LOOKUP_HTTP_${response.status}`);
-    return response.json();
+    return text ? response.text() : response.json();
   };
   const result = await get(`actions/workflows/verify.yml/runs?head_sha=${sha}&per_page=20`);
   for(const run of result.workflow_runs || []) {
     if(!eligibleRun(run, sha, repository)) continue;
     const {jobs} = await get(`actions/runs/${run.id}/jobs?filter=latest&per_page=100`);
-    if(completeCoverage(jobs || [])) return run.id;
+    if(completeCoverage(jobs || [])) {
+      const job = jobs.find(job => completeCoverage([job]));
+      const certificate = parseCertificate(await get(`actions/jobs/${job.id}/logs`, true));
+      if(matchesCertificate(certificate, expected)) return run.id;
+    }
   }
   return null;
 }
 async function main() {
   let id = null;
-  try { id = await findVerification({repository: process.env.GITHUB_REPOSITORY, sha: process.env.GITHUB_SHA, token: process.env.GH_TOKEN}); }
-  catch { console.log('VERIFY_LOOKUP_UNAVAILABLE_LOCAL_CHECKS_REQUIRED'); }
+  let reason = 'NO_COMPLETE_MATCH';
+  const sha = process.env.SOURCE_SHA || process.env.GITHUB_SHA;
+  try { id = await findVerification({repository: process.env.GITHUB_REPOSITORY, sha, token: process.env.GH_TOKEN}); }
+  catch { reason = 'LOOKUP_UNAVAILABLE_OR_TIMEOUT'; console.log('VERIFY_LOOKUP_UNAVAILABLE_LOCAL_CHECKS_REQUIRED'); }
   if(!process.env.GITHUB_OUTPUT) throw Error('GITHUB_OUTPUT_MISSING');
-  appendFileSync(process.env.GITHUB_OUTPUT, `reused=${Boolean(id)}\nverified_sha=${id ? process.env.GITHUB_SHA : ''}\n`);
+  appendFileSync(process.env.GITHUB_OUTPUT, `reused=${Boolean(id)}\nverified_sha=${id ? sha : ''}\nreason=${id ? 'EXACT_SHA_ENVIRONMENT_COVERAGE_MATCH' : reason}\n`);
   console.log(id ? `EXACT_SHA_FULL_VERIFY_REUSED run=${id}` : 'LOCAL_FULL_VERIFY_REQUIRED');
 }
 if(process.argv[1] === fileURLToPath(import.meta.url)) await main();

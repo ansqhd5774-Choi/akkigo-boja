@@ -120,3 +120,11 @@ jobs:
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.publish-oidc.outputs.token }}
         run: node tools/actions-runtime.mjs publish
+      - name: Summarize verification and deployment
+        if: always()
+        env:
+          VERIFY_REUSED: ${{ steps.verification.outputs.reused }}
+          VERIFY_REASON: ${{ steps.verification.outputs.reason }}
+          DEPLOY_NEEDED: ${{ steps.worker.outputs.deploy_needed }}
+          JOB_RESULT: ${{ job.status }}
+        run: node tools/actions-summary.mjs

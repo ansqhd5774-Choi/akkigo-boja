@@ -30,11 +30,6 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Detect Worker build changes
-        id: changes
-        env:
-          PUSH_BEFORE: ${{ github.event.before }}
-        run: node tools/actions-runtime.mjs changes
       - uses: pnpm/action-setup@v4
         with:
           version: '11.19.0'
@@ -52,4 +47,4 @@ jobs:
         run: node tools/validate-theme-xml.mjs
       - name: Mark exact verified source
         id: verified
-        run: echo verified_sha=%GITHUB_SHA%>>"%GITHUB_OUTPUT%"
+        run: node tools/verification-certificate.mjs
