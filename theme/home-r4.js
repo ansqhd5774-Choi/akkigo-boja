@@ -1,7 +1,6 @@
 // Home R4: public Blogger feed, no fabricated coupon status or benefit.
 (async function(){
   const root=document.getElementById('ncp-home-r4');if(!root)return;
-  const allowed=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육'];
   const status=root.querySelector('[role="status"]');
   // These are published game guides, not proof of currently redeemable coupons.
   const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
@@ -53,10 +52,9 @@
   root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
   try{
     const feedEntries=window.ncpFeed?await window.ncpFeed():await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
-    const entries=feedEntries.filter(entry=>!entry.category?.some(label=>label.term==='게임')||guideCodeCount(entry)>0);const games=root.querySelector('.ncp-r4-game-list'),latest=root.querySelector('.ncp-r4-latest-list');
+    const entries=feedEntries.filter(entry=>!entry.category?.some(label=>label.term==='게임')||guideCodeCount(entry)>0);const games=root.querySelector('.ncp-r4-game-list');
     const gameCards=[],seen=new Set();for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')){const name=window.ncpResolveGame(entry).id;if(!seen.has(name)){const item=card(entry,true,guideCodeCount(entry));if(item){gameCards.push(item);seen.add(name);}}}}
-    const latestCards=entries.filter(x=>x.category?.some(c=>allowed.includes(c.term))).map(entry=>card(entry,false)).filter(Boolean);
-    games.closest('section')?.querySelector('h2')?.setAttribute('title','최신 등록순');paginate(games,gameCards,'게임 쿠폰');paginate(latest,latestCards,'최근 업데이트');
-    status.textContent='';if(!games.children.length)games.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';if(!latest.children.length)status.textContent='새 쿠폰 안내를 준비 중입니다.';
+    games.closest('section')?.querySelector('h2')?.setAttribute('title','최신 등록순');paginate(games,gameCards,'게임 쿠폰');
+    status.textContent='';if(!games.children.length)status.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';
   }catch{status.textContent='목록을 불러오지 못했습니다. 카테고리 또는 검색으로 쿠폰을 찾아주세요.';}
 })();

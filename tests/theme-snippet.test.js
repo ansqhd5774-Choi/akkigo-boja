@@ -52,6 +52,7 @@ for (const path of [
     assert.doesNotMatch(xml,/직접 적용 · 공식 출처 · 미검증|게임 보상은 현금 할인액|공식 출처와 실제 적용 기록을 구분해 안내합니다|직접 적용 확인 기록|확인 기록:/);
     assert.match(xml,/필요한 쿠폰,/);
     assert.match(xml,/ncp-r4-game-list/);
-    assert.match(xml,/최근 업데이트/);
+    assert.doesNotMatch(xml,/<h2>최근 업데이트<\/h2>/);
+    assert.match(xml,/게임 쿠폰을 불러오는 중입니다/);
   });
 }
