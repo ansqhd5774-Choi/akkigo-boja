@@ -36,6 +36,11 @@ const homeCss=await readFile(new URL('theme/home-r4.css',root),'utf8');
 const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');
 const siteCss=await readFile(new URL('theme/site-tools.css',root),'utf8');
 const siteJs=await readFile(new URL('theme/site-tools.js',root),'utf8');
+const updatedCss=await readFile(new URL('theme/post-updated.css',root),'utf8');
+const updatedJs=await readFile(new URL('theme/post-updated.js',root),'utf8');
+const updatedMount=`<b:if cond='data:view.isPost'><script type='text/javascript'>//<![CDATA[
+${updatedJs}
+//]]></script></b:if>`;
 const license=await readFile(new URL('theme/assets/licenses/lucide.txt',root),'utf8');
 const siteMount=`<script type='text/javascript'>//<![CDATA[\n/* ${license.replace(/\*\//g,'* /')} */\nwindow.ncpIcons=${JSON.stringify(icons)};\n${siteJs}\n//]]></script>`;
 const seoLinks=JSON.parse(await readFile(new URL('theme/seo-post-links.json',root),'utf8'));
@@ -43,6 +48,6 @@ const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
-const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+'</body>');
+const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+updatedCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+updatedMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');
