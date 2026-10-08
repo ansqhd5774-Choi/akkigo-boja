@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {eligibleRun, completeCoverage, requiredSteps, findVerification} from '../tools/verification-reuse.mjs';
 import {selectGames, checkGames} from '../tools/check-game-icons.mjs';
-import {expectedCertificate, matchesCertificate, parseCertificate} from '../tools/verification-certificate.mjs';
+import {expectedCertificate, matchesCertificate, parseCertificate, validEnvironment} from '../tools/verification-certificate.mjs';
 import {makeSummary} from '../tools/actions-summary.mjs';
 import {readFileSync} from 'node:fs';
 const sha = 'a'.repeat(40);
@@ -35,6 +35,15 @@ test('certificate mismatch never authorizes reuse', () => {
   assert.equal(matchesCertificate(parseCertificate('VERIFY_CERTIFICATE ' + JSON.stringify(expected)), expected), true);
   for(const key of Object.keys(expected)) assert.equal(matchesCertificate({...expected, [key]: 'different'}, expected), false);
   assert.equal(parseCertificate('VERIFY_CERTIFICATE invalid'), null);
+});
+test('hosted Linux and local Windows are supported but certificates cannot cross environments', () => {
+  const common = {pnpm:'11.19.0',node:'v24.15.0',arch:'x64'};
+  assert.equal(validEnvironment({...common,platform:'linux'}), true);
+  assert.equal(validEnvironment({...common,platform:'win32'}), true);
+  assert.equal(validEnvironment({...common,platform:'darwin'}), false);
+  assert.equal(validEnvironment({...common,platform:'linux',pnpm:'other'}), false);
+  const expected = expectedCertificate(sha);
+  assert.equal(matchesCertificate({...expected,platform:expected.platform === 'linux' ? 'win32' : 'linux'}, expected), false);
 });
 test('lookup shares one total deadline across all API requests', async () => {
   let first;

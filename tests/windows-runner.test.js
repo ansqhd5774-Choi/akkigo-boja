@@ -27,12 +27,13 @@ test('read-only probe and failed runs cannot be treated as Worker deployments',(
   assert.equal(isWorkerPath('src/articles.js'),true);
   assert.equal(isWorkerPath('docs/runner.md'),false);
 });
-test('every workflow uses dedicated Windows labels and CMD without hosted fallback',()=>{
+test('public repository workflows use standard hosted Ubuntu and Bash without self-hosted or paid runners',()=>{
   for(const file of readdirSync('.github/workflows').filter(n=>n.endsWith('.yml'))) {
     const yaml=readFileSync('.github/workflows/'+file,'utf8');
-    assert.match(yaml,/runs-on: \[self-hosted, Windows, X64, akkigo-boja\]/,file);
-    assert.match(yaml,/shell: cmd/,file);
-    assert.doesNotMatch(yaml,/ubuntu-latest|windows-latest|shell: (bash|pwsh)|npm install --global|<<'JS'/,file);
+    assert.match(yaml,/runs-on: ubuntu-24\.04/,file);
+    assert.match(yaml,/shell: bash/,file);
+    assert.match(yaml,/github\.event\.repository\.private == false/,file);
+    assert.doesNotMatch(yaml,/self-hosted|windows-latest|shell: (cmd|pwsh)|npm install --global|if errorlevel|%PUSH_BEFORE%/,file);
   }
 });
 test('LIVE probe performs only SELECT and Blogger reads even when source differs',async()=>{

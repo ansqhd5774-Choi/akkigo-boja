@@ -2,7 +2,7 @@ import {execFileSync} from 'node:child_process';
 import {existsSync,writeFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {pathToFileURL} from 'node:url';
-const chrome=[process.env.CHROME_PATH,join(process.env.PROGRAMFILES||'C:\\Program Files','Google/Chrome/Application/chrome.exe'),join(process.env['PROGRAMFILES(X86)']||'C:\\Program Files (x86)','Microsoft/Edge/Application/msedge.exe')].find(p=>p&&existsSync(p));
+const chrome=[process.env.CHROME_PATH,...(process.platform==='linux' ? ['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium','/usr/bin/chromium-browser'] : [join(process.env.PROGRAMFILES||'C:\\Program Files','Google/Chrome/Application/chrome.exe'),join(process.env['PROGRAMFILES(X86)']||'C:\\Program Files (x86)','Microsoft/Edge/Application/msedge.exe')])].find(p=>p&&existsSync(p));
 if(!chrome)throw Error('CHROME_NOT_FOUND');
 if(!process.env.RUNNER_TEMP)throw Error('RUNNER_TEMP_MISSING');
 for(const width of [390,1440])for(const [kind,height,budget,marker,label] of [['layout',1200,2500,'data-layout-result','LAYOUT_OK'],['feed',900,800,'data-feed-result','FEED_LAYOUT_OK']]) {

@@ -9,14 +9,15 @@ permissions:
   contents: read
 defaults:
   run:
-    shell: cmd
+    shell: bash
 jobs:
   readiness:
-    runs-on: [self-hosted, Windows, X64, akkigo-boja]
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
     steps:
       - name: Check deployment prerequisite without exposing values
         env:
           API_TOKEN_PRESENT: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
         run: |
-          echo api_token_present=%API_TOKEN_PRESENT%
+          echo "api_token_present=$API_TOKEN_PRESENT"
           echo "account_selection=WRANGLER_AUTO_SELECT_SINGLE_SCOPED_ACCOUNT"

@@ -8,10 +8,11 @@ permissions:
   contents: read
 defaults:
   run:
-    shell: cmd
+    shell: bash
 jobs:
   probe:
-    runs-on: [self-hosted, Windows, X64, akkigo-boja]
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:

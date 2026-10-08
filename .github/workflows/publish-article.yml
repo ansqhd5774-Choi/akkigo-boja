@@ -19,10 +19,11 @@ concurrency:
   cancel-in-progress: false
 defaults:
   run:
-    shell: cmd
+    shell: bash
 jobs:
   publish:
-    runs-on: [self-hosted, Windows, X64, akkigo-boja]
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -51,7 +52,6 @@ jobs:
         if: steps.verification.outputs.reused != 'true'
         run: |
           node tools/build-theme.mjs
-          if errorlevel 1 exit /b 1
           git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - name: Validate Blogger XML
         if: steps.verification.outputs.reused != 'true'
@@ -66,7 +66,7 @@ jobs:
         env:
           PUSH_BEFORE: ${{ github.event.before }}
           PUSH_AFTER: ${{ github.sha }}
-        run: node tools/select-publish-requests.mjs "%PUSH_BEFORE%" "%PUSH_AFTER%"
+        run: node tools/select-publish-requests.mjs "$PUSH_BEFORE" "$PUSH_AFTER"
       - name: Request GitHub OIDC token
         if: steps.requests.outputs.has_requests == 'true' || inputs.readonly_probe == true
         id: oidc
