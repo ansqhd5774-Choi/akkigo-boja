@@ -40,7 +40,13 @@ test('메이플 키우기 supplemental article과 공개 HTML이 일치한다',(
   assert.match(html,/2026년 10월 14일 23:59/);
   assert.match(html,/2026년 10월 7일 23:59/);
   assert.match(html,/coupon\.nexon\.com\/ko-kr\/maplestoryidle/);
-  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,2);
+  const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
+  assert.equal(codes.length,24);
+  assert.equal(new Set(codes).size,24);
+  assert.equal((html.match(/class="ncp-card-list ncp-compact-list" role="table"/g)||[]).length,4);
+  assert.equal(article.post.title,'메이플 키우기');
+  assert.equal(html.includes('<h1'),false);
+  assert.match(html,/2026년 9월 3일/); // PINKBEANATTACK original notice date
   assert.equal((html.match(/data-ncp-featured-image="maplestory-idle"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
@@ -48,4 +54,22 @@ test('메이플 키우기 supplemental article과 공개 HTML이 일치한다',(
   assert.equal(preview.includes('50CUBECOUPON'),false);
   assert.equal(preview.includes('<script'),false);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태/);
+});
+
+test('쿠폰 출처 글 게시일과 수집일·만료일을 별도로 보존한다',async()=>{
+ const research=JSON.parse(readFileSync(new URL('../drafts/maplestory-idle-global-research-20261009.json',import.meta.url),'utf8'));
+ const official=research.codes.filter(x=>x.sourceAuthority==='OFFICIAL');
+ assert.equal(official.length,21);
+ assert.equal(official.filter(x=>x.status==='EXPIRED').length,20);
+ assert.equal(official.filter(x=>x.status!=='EXPIRED').length,1);
+ const pink=official.find(x=>x.code==='PINKBEANATTACK');
+ assert.equal(pink.publishedAt,'2026-09-03');
+ assert.equal(pink.expiresAtKST,'2026-10-14T23:59:00+09:00');
+ assert.equal(pink.sourceCheckedAt,'2026-10-09');
+ const thirdParty=research.codes.filter(x=>x.sourceAuthority!=='OFFICIAL');
+ assert.equal(thirdParty.length,3);
+ assert.ok(thirdParty.every(x=>x.publishedAt===null&&x.sourcePublishedAt===null));
+ const article=supplementalArticles.find(x=>x.articleKey==='maplestory-idle-codes-202610');
+ const visible=new Set([...article.post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]));
+ for(const record of research.codes)assert.ok(visible.has(record.code),'Missing source-listed code: '+record.code);
 });
