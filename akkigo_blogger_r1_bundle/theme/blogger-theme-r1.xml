@@ -4400,11 +4400,20 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   if(share){
    event.preventDefault();event.stopImmediatePropagation();
    const code=share.dataset.ncpShare;const url=location.origin+location.pathname;
+   const label=code+' 공유';const payload={title:document.title,text:code,url};
+   const fallback=share.dataset.ncpShareFallback==='true';
+   share.setAttribute('aria-label',label);share.title='공유';delete share.dataset.ncpShareError;
+   const shareStatus=share.closest?.('.ncp-code-card')?.querySelector('[role="status"]');if(shareStatus)shareStatus.textContent='';
    share.disabled=true;
    try{
-    if(navigator.share)await navigator.share({title:document.title,text:code,url});
-    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';}
-   }catch(error){if(error.name!=='AbortError'){share.setAttribute('aria-label','공유 실패');share.title='공유 실패';}}
+    if(!fallback&&navigator.share&&(!navigator.canShare||navigator.canShare(payload)))await navigator.share(payload);
+    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';delete share.dataset.ncpShareFallback;}
+   }catch(error){if(error.name!=='AbortError'){
+    share.dataset.ncpShareError=error.name||'Error';share.dataset.ncpShareFallback='true';
+    const message=fallback?'링크 복사 실패 · 다시 시도':'공유 링크 복사 · 다시 누르세요';
+    share.setAttribute('aria-label',message);share.title=message;
+    if(shareStatus)shareStatus.textContent=message;
+   }}
    finally{share.disabled=false;}
    return;
   }

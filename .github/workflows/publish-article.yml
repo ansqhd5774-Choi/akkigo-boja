@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Enforce shared CSS, compact R2 structure and button coverage
+      - name: Enforce R2 DOM structure, legacy snapshots and button coverage
         run: node tools/check-article-presentation.mjs
       - name: Look up exact SHA full verification
         id: verification
