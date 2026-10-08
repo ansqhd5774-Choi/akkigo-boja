@@ -1,12 +1,12 @@
 import {readFile} from 'node:fs/promises';
 import {validateArticlePresentation} from '../src/article-presentation.js';
-import {validatePresentationDOM} from './validate-presentation-dom.mjs';
 import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url);
 const legacy=JSON.parse(await readFile(new URL('data/article-presentation-legacy.json',root),'utf8'));
 const css=await readFile(new URL('theme/article-typography.css',root),'utf8');
 const compactCss=await readFile(new URL('theme/article-compact.css',root),'utf8');
 const r1=JSON.parse(await readFile(new URL('data/article-presentation-r1-existing.json',root),'utf8'));
+const domCheck=process.argv.includes('--static')?null:(await import('./validate-presentation-dom.mjs')).validatePresentationDOM;
 const frozen=JSON.parse(await readFile(new URL('data/article-presentation-legacy-hashes.json',root),'utf8'));
 for(const selector of ['.ncp-col-order','.ncp-col-source','.ncp-col-source a','.ncp-col-expiry']){
  const rule=css.split('\n').find(line=>line.includes(selector+'{')||line.includes(selector+','));
@@ -25,7 +25,7 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
   if(legacy.includes(article.articleKey)&&frozen[article.articleKey]===createHash('sha256').update(JSON.stringify(article.post)).digest('hex'))continue;
   if(article.source?.presentationVersion!=='compact-r2'&&!(article.source?.presentationVersion==='compact-r1'&&r1.includes(article.articleKey)))throw Error('PRESENTATION_R2_REQUIRED: '+article.articleKey);
   validateArticlePresentation(article);
-  validatePresentationDOM(article);
+  if(domCheck)domCheck(article);
   const html=article.post.content;
   const copies=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
   const shares=[...html.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);

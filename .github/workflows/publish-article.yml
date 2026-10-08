@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: '24'
       - name: Enforce R2 DOM structure, legacy snapshots and button coverage
-        run: node tools/check-article-presentation.mjs
+        run: node tools/check-article-presentation.mjs --static
       - name: Look up exact SHA full verification
         id: verification
         env:
@@ -47,6 +47,9 @@ jobs:
       - name: Source tests
         if: steps.verification.outputs.reused != 'true'
         run: node --test
+      - name: Validate full DOM contract when exact SHA verification is unavailable
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/check-article-presentation.mjs
       - name: Worker dry-run build
         if: steps.verification.outputs.reused != 'true'
         run: pnpm build
