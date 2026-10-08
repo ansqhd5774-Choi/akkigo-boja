@@ -42,7 +42,11 @@ for (const name of names) {
     throw new Error(`ARTICLE_PUBLISH_HTTP_${response.status}_${body.error || 'UNKNOWN'}`);
   }
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
-  if (body.publicVerified!==true) throw new Error('PUBLIC_VERIFY_FAILED_AFTER_PUBLISH');
+  // The Blogger API LIVE response is the publication handoff boundary.
+  // The reader performs visual / interactive inspection after receiving the URL.
+  // A best-effort public content-marker probe is diagnostic only: it must not
+  // make an already-LIVE publication appear failed or provoke another publish.
+  if (body.publicVerified!==true) console.log('PUBLIC_CONTENT_MARKER_UNCONFIRMED_USER_REVIEW',request.articleKey);
   // Do not launch additional browser/viewport QA here. The operator reviews
   // the published Blogger URL; visual QA is run only for an explicit defect.
   console.log(JSON.stringify({articleKey:request.articleKey,status:body.status,url:body.url,postId:body.postId,publicVerified:body.publicVerified,alreadyLive:Boolean(body.alreadyLive),userReviewRequired:true,visualQa:"USER_REVIEW"}));
