@@ -2922,6 +2922,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 .post-body [data-ncp-template="game-period-tabs-r1"] figure img{width:64px;height:64px;aspect-ratio:1/1;object-fit:contain;border-radius:14px}
 .post-body [data-ncp-template="game-period-tabs-r1"] figure figcaption{display:none}
 @media(max-width:600px){
+ .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-period-option>label{flex-direction:column;gap:2px;font-size:12px;white-space:nowrap;padding:6px 2px}
  .post-body [data-ncp-template="game-period-tabs-r1"] section{padding:0 12px 12px}
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-header,.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-order{display:none}
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-code{grid-column:1;grid-row:1}
