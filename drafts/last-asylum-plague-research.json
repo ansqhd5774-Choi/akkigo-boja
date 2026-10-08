@@ -4,7 +4,7 @@
   "status": "RESEARCH_DRAFT_ONLY",
   "checkedAt": "2026-10-09",
   "description": "2026년 10월 라스트 어사일럼 페스트 쿠폰·최신 코드·입력 방법·다이아 보상",
-  "note": "아래 코드는 공개 사이트에서 문자열 유통 확인만 한 후보이며 운영자 계정에서 사용 성공을 검증하지 않았다. 공식 발급 여부와 지역·서버·기한 개별 확인 필요. Active 자동 승격 금지.",
+  "note": "공개 출처의 유통 기록만 검증. 공식 발급·현재 유효·한국 서버·실제 사용 성공은 별도 확인이 필요하다. 출처 상충 코드와 일반 문자열은 단정적으로 ACTIVE 처리하지 말 것.",
   "redemption": {
     "officialPortal": "https://gevents.globallap.com/gamecode/index.html?gameId=440",
     "web": "계정 로그인 → 서버·캐릭터 선택 → 코드 입력 → 확인 → 게임 우편 수령",
@@ -18,7 +18,13 @@
     "https://www.topuplive.com/news/last-asylum-plague-codes.html",
     "https://kma-alliance.github.io/",
     "https://lastasylum-plague.com/gift-codes",
-    "https://pacpik.com/events/last-asylum-pest-lakr12k7o-a-b-c-d-%EC%A4%91%EC%97%90-%EC%9E%88%EC%9D%8C/"
+    "https://pacpik.com/events/last-asylum-pest-lakr12k7o-a-b-c-d-%EC%A4%91%EC%97%90-%EC%9E%88%EC%9D%8C/",
+    "https://www.mrguider.org/codes/last-asylum-plague-codes/",
+    "https://buffhub.com/blog/last-asylum-plague/last-asylum-plague-codes.html",
+    "https://constante.tistory.com/m/entry/라스트-어사일럼-사용-가능한-쿠폰-교환-코드-사용법-정리",
+    "https://www.last-asylum.fun/",
+    "https://www.reddit.com/r/LastAsylumPlague/comments/1wq7m0d/greetings_fellow_medical_professionals/",
+    "https://www.aayyy.com/last-asylum-plague/codes/"
   ],
   "codes": [
     {
@@ -196,6 +202,215 @@
       "server": "미확인",
       "expiresAt": null,
       "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LABOR26",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer 2026-10-04",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAEGG26",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer 2026-10-04",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA26FOOL",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer 2026-10-04",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAPGPOFF",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer 2026-10-04 / fan site expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAiOSLA",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer / lastasylum.com expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAVD26",
+      "status": "UNVERIFIED",
+      "reportedBy": "Pocket Gamer / lastasylum.com expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA26PLAY",
+      "status": "UNVERIFIED",
+      "reportedBy": "MrGuider",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA26LOVE",
+      "status": "UNVERIFIED",
+      "reportedBy": "MrGuider",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAPKOR777",
+      "status": "UNVERIFIED",
+      "reportedBy": "constante.tistory.com Korea 2026-06",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LUCK777",
+      "status": "UNVERIFIED",
+      "reportedBy": "constante.tistory.com Korea 2026-06",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAW5HBR",
+      "status": "UNVERIFIED",
+      "reportedBy": "constante.tistory.com ends 2026-06-24",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAW7D4V",
+      "status": "UNVERIFIED",
+      "reportedBy": "last-asylum.fun",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAW83AS",
+      "status": "UNVERIFIED",
+      "reportedBy": "last-asylum.fun",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAFD13GY",
+      "status": "UNVERIFIED",
+      "reportedBy": "Buffhub expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAW12A3K",
+      "status": "UNVERIFIED",
+      "reportedBy": "Buffhub expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "lapno1",
+      "status": "UNVERIFIED",
+      "reportedBy": "Buffhub expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA11WB5Q",
+      "status": "UNVERIFIED",
+      "reportedBy": "Buffhub expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LAW10A7C",
+      "status": "UNVERIFIED",
+      "reportedBy": "Buffhub expired",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "WELCOME",
+      "status": "UNVERIFIED",
+      "reportedBy": "AAYYY generic uncorroborated",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "SURVIVOR",
+      "status": "UNVERIFIED",
+      "reportedBy": "AAYYY generic uncorroborated",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "PLAGUE2024",
+      "status": "UNVERIFIED",
+      "reportedBy": "AAYYY generic uncorroborated",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LA777",
+      "status": "UNVERIFIED",
+      "reportedBy": "AAYYY generic uncorroborated",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
+    },
+    {
+      "code": "LASTASYLUM",
+      "status": "UNVERIFIED",
+      "reportedBy": "AAYYY generic uncorroborated",
+      "server": "미확인",
+      "expiresAt": null,
+      "reward": "개별 보상 확인 필요"
     }
-  ]
+  ],
+  "seo": {
+    "postTitle": "라스트 어사일럼: 페스트",
+    "metaDescription": "라스트 어사일럼 페스트 2026년 10월 최신 쿠폰 코드와 다이아 보상, 한국 서버 사용 조건 및 아이폰·안드로이드 입력 방법을 정리했습니다.",
+    "primaryKeywords": [
+      "라스트 어사일럼 쿠폰",
+      "라스트 어사일럼 페스트 쿠폰",
+      "라스트 어사일럼 교환 코드"
+    ],
+    "secondaryKeywords": [
+      "라스트 어사일럼 2026년 10월 쿠폰",
+      "Last Asylum Plague codes",
+      "ラストアサイラム ギフトコード",
+      "라스트 어사일럼 쿠폰 입력 방법",
+      "라스트 어사일럼 다이아"
+    ],
+    "hashtags": [
+      "#라스트어사일럼",
+      "#라스트어사일럼쿠폰",
+      "#라스트어사일럼페스트",
+      "#게임쿠폰",
+      "#쿠폰코드",
+      "#LastAsylumPlague"
+    ],
+    "searchVolume": "미확인: 검색량·노출률 수치 계측하지 않음"
+  }
 }
