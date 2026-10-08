@@ -1,5 +1,7 @@
 # 아끼고 보자 Blogger 쿠폰 사이트 운영 지침 — ACTIVE R6
 
+> 글 표현 필수 기준: [ARTICLE_PRESENTATION_COMPACT_R1.md](ARTICLE_PRESENTATION_COMPACT_R1.md). 신규 게임 글은 compact-r1 표현 버전을 선언해야 한다. 기존 글 예외는 고정 목록이며 신규 글을 예외 목록에 추가해 검사를 회피하지 않는다.
+
 > 2026-10-09 양식 우선 규칙: 게임 글의 사용자 확정 양식은 기간 탭 `최신 | 2026 | 2025 | 2024`이다. 아래 8B의 모든 월별 목록 펼침 규칙은 새 양식의 작성 지시로 사용하지 않는다. 상세 전환·검사 계획은 [GAME_TEMPLATE_PREVENTION_AND_AUTHORING_R1.md](GAME_TEMPLATE_PREVENTION_AND_AUTHORING_R1.md)를 따른다. 기존 검사 코드와 공개 글은 아직 전환되지 않았으므로 적용 완료로 간주하지 않는다.
 ## 1. 대상과 범위
 - 운영 대상: https://lsifl.blogspot.com/
