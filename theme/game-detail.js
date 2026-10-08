@@ -18,7 +18,7 @@
     const info=document.createElement('div');info.className='ncp-detail-info';
     const name=document.createElement('strong');name.textContent=identity.name;
     const state=document.createElement('p');state.textContent=total?'등록된 입력 코드 '+total+'개 · 적용 조건은 아래에서 확인하세요.':'현재 등록된 사용 가능 코드가 없습니다.';info.append(name,state);overview.append(info);
-    const official=[...body.querySelectorAll('a[href]')].find(a=>/공식.*(쿠폰|등록|입력)/.test(a.textContent)&&/^https:\/\//.test(a.href)&&new URL(a.href).hostname!==location.hostname);
+    const official=[...body.querySelectorAll('a[href]')].find(a=>/공식.*(등록|입력)/.test(a.textContent)&&/^https:\/\//.test(a.href)&&new URL(a.href).hostname!==location.hostname);
     if(official){const link=document.createElement('a');link.href=official.href;link.rel='noopener noreferrer';link.className='ncp-detail-register';link.textContent='공식 쿠폰 등록';overview.append(link);}
     body.classList.add('ncp-game-detail');body.prepend(overview);
     // Preserve the outer Blogger title as the single page heading.
@@ -40,3 +40,4 @@
     }
   }catch{/* The original article and official instructions remain available. */}
 })();
+
