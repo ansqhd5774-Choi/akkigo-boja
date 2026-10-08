@@ -7,6 +7,10 @@ on:
       - drafts/shibarpg-pickup-202610.html
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
+      - theme/article-compact.css
+      - theme/article-typography.css
+      - src/game-period-article.js
+      - data/game-period-articles.json
       - tools/check-shiba-feed-layout.mjs
       - tools/check-site-tools-layout.mjs
       - tools/render-site-fixture.mjs
@@ -17,6 +21,10 @@ on:
       - drafts/shibarpg-pickup-202610.html
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
+      - theme/article-compact.css
+      - theme/article-typography.css
+      - src/game-period-article.js
+      - data/game-period-articles.json
       - tools/check-shiba-feed-layout.mjs
       - tools/check-site-tools-layout.mjs
       - tools/render-site-fixture.mjs
@@ -36,5 +44,5 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Render coupon and site interaction fixtures at 390 and 1440
+      - name: Render shared period coupon and site fixtures at 390 and 1440
         run: node tools/run-layout-checks.mjs

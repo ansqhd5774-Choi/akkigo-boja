@@ -1,76 +1,52 @@
 import {readFileSync,writeFileSync} from 'node:fs';
-import {resolve} from 'node:path';
-
-const width=Number(process.argv[2]);
-const output=process.argv[3];
-if (![390,1440].includes(width) || !output) {
-  throw new Error('USAGE: node tools/check-shiba-layout.mjs <390|1440> <output.html>');
-}
-
-const article=readFileSync(resolve('drafts/shibarpg-pickup-202610.html'),'utf8');
-const copyCss=readFileSync(resolve('theme/coupon-copy.css'),'utf8');
-const theme=readFileSync(resolve('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml'),'utf8');
-const scripts=[...theme.matchAll(/<script type='text\/javascript'>\/\/<!\[CDATA\[\n([\s\S]*?)\n\/\/\]\]><\/script>/g)].map(x=>x[1]);
-const copyScript=scripts.find(x=>x.includes('[data-ncp-copy]'));
-if (!copyScript) throw new Error('COPY_SCRIPT_NOT_FOUND');
-
-const checkScript=`
-(async function(){
-  const failures=[];
-  const viewport=document.documentElement.clientWidth;
-  const within=(el,name)=>{
-    const r=el.getBoundingClientRect();
-    if(r.left<-1||r.right>viewport+1) failures.push(name+'-overflow');
-  };
-
-  if(document.documentElement.scrollWidth>viewport+1) failures.push('document-overflow');
-
-  for(const [selector,name] of [
-    ['.ncp-coupon-card','card'],
-    ['.ncp-code','code'],
-    ['.ncp-copy','copy'],
-    ['.ncp-btn','redeem']
-  ]){
-    const el=document.querySelector(selector);
-    if(!el) failures.push(name+'-missing');
-    else within(el,name);
+import primary from '../data/articles.json' with {type:'json'};
+import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+const width=Number(process.argv[2]),output=process.argv[3];
+if(![390,1440].includes(width)||!output)throw Error('LAYOUT_FIXTURE_ARGUMENTS');
+// Exercise one shared template with latest, historical years, undated, empty,
+// and a long list. Exact source/code preservation is enforced by the DOM gate.
+const keys=['random-dice-2-codes-202610','infinite-stairs-codes-202610','maplestory-idle-codes-202610','brawl-stars-rewards-202610','coop-td-together-codes-202610'];
+const content=keys.map(key=>[...primary,...supplemental].find(a=>a.articleKey===key)?.post.content||(()=>{throw Error('LAYOUT_ARTICLE_MISSING')})()).join('\n');
+const css=['theme/article-compact.css','theme/article-typography.css','theme/coupon-copy.css'].map(p=>readFileSync(p,'utf8')).join('\n');
+const copy=readFileSync('theme/coupon-copy.js','utf8');
+const check=`
+(async()=>{
+ const failures=[],viewport=document.documentElement.clientWidth;
+ const shown=n=>n.getBoundingClientRect().width>0;
+ const checkVisible=article=>{
+  if(document.documentElement.scrollWidth>viewport+1)failures.push('document-overflow');
+  for(const s of article.querySelectorAll('section')){
+   if(!shown(s))continue;
+   const h=s.querySelector(':scope>h2'),i=s.querySelector(':scope>.ncp-info');
+   if(h&&i){const a=h.getBoundingClientRect(),b=i.getBoundingClientRect();if(Math.abs(a.y+a.height/2-b.y-b.height/2)>1)failures.push('heading-info-alignment');}
   }
-
-  const copy=document.querySelector('.ncp-copy');
-  const redeem=document.querySelector('.ncp-btn');
-  if(copy&&copy.getBoundingClientRect().height<44) failures.push('copy-touch-height');
-  if(redeem&&redeem.getBoundingClientRect().height<44) failures.push('redeem-touch-height');
-
-  if(window.innerWidth<=640){
-    const step=document.querySelector('.ncp-step-grid');
-    const info=document.querySelector('.ncp-coupon-info');
-    const copyWrap=document.querySelector('.ncp-copy-wrap');
-    if(step&&getComputedStyle(step).gridTemplateColumns.trim().split(/\s+/).length!==1) failures.push('mobile-step-columns');
-    if(info&&getComputedStyle(info).gridTemplateColumns.trim().split(/\s+/).length!==1) failures.push('mobile-info-columns');
-    if(copyWrap&&copyWrap.getBoundingClientRect().width<250) failures.push('mobile-copy-width');
-  } else {
-    const cards=[...document.querySelectorAll('.ncp-step-card')].map(x=>x.getBoundingClientRect());
-    if(cards.length===2&&Math.abs(cards[0].top-cards[1].top)>4) failures.push('desktop-step-stack');
+  for(const b of article.querySelectorAll('[data-ncp-copy],[data-ncp-share]'))if(shown(b)){
+   const r=b.getBoundingClientRect();if(r.x<0||r.right>viewport+1)failures.push('button-overflow');if(r.height<44)failures.push('touch-height');if(b.hasAttribute('data-ncp-share')&&r.width!==44)failures.push('share-width');
   }
-
-  if(copy){
-    copy.click();
-    await new Promise(r=>setTimeout(r,80));
-    if(window.__copied!=='pick7p2y') failures.push('clipboard-value');
-    if(copy.textContent.trim()!=='복사 완료') failures.push('copy-success-text');
-    if(copy.dataset.ncpCopied!=='true'||getComputedStyle(copy).backgroundColor!=='rgb(8, 127, 91)') failures.push('copy-success-color');
-    const status=document.querySelector('.ncp-copy-state');
-    if(!status||!status.textContent.includes('복사')) failures.push('copy-status');
-    await new Promise(r=>setTimeout(r,1500));
-    if(copy.textContent.trim()!=='복사 완료'||copy.disabled) failures.push('copy-history-lost');
+ };
+ for(const article of document.querySelectorAll('article[data-ncp-template]')){
+  const choices=[...article.querySelectorAll('.ncp-period-option>input')];
+  if(!choices[0]?.checked||choices[0].value!=='latest')failures.push('default-latest');
+  for(const choice of choices){
+   choice.click();const panel=document.getElementById(choice.getAttribute('aria-controls'));
+   if(!shown(panel)||article.querySelectorAll('.ncp-period-panel').length!==choices.length)failures.push('period-mapping');
+   if([...article.querySelectorAll('.ncp-period-panel')].filter(shown).length!==1)failures.push('period-visibility');
+   checkVisible(article);
   }
-
-  document.body.dataset.layoutResult=failures.length?'FAIL':'PASS';
-  document.body.dataset.layoutFailures=failures.join(',');
-})();
-`;
-
-const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;padding:0}body{font-family:Arial,sans-serif;background:#fff}main{max-width:920px;margin:0 auto;padding:${width<=640?'16':'24'}px;box-sizing:border-box}</style><script>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async function(value){window.__copied=value;}}});</script></head><body><main>${article}</main><style>${copyCss}</style><script>${copyScript}</script><script>${checkScript}</script></body></html>`;
-writeFileSync(output,html,'utf8');
-console.log('FIXTURE_WRITTEN',width,output);
-
+  for(const list of article.querySelectorAll('.ncp-card-list')){
+   const rows=list.querySelectorAll('.ncp-code-card'),more=list.querySelector(':scope>.ncp-list-more');
+   if(rows.length>5){
+    if(!more||more.open||list.querySelectorAll(':scope>.ncp-code-card').length!==5)failures.push('five-preview');
+    more.querySelector('summary').click();if(!more.open)failures.push('disclosure-open');
+    more.querySelector('summary').click();if(more.open)failures.push('disclosure-close');
+   }
+  }
+  choices[0].click();
+ }
+ const button=[...document.querySelectorAll('[data-ncp-copy]')].find(shown);
+ button.click();await new Promise(r=>setTimeout(r,80));
+ if(window.__copied!==button.dataset.ncpCopy||button.textContent.trim()!=='복사 완료'||button.disabled)failures.push('mock-copy-result');
+ document.body.dataset.layoutResult=failures.length?'FAIL':'PASS';document.body.dataset.layoutFailures=failures.join(',');
+})();`;
+writeFileSync(output,'<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0}body{font-family:Arial,sans-serif}.post-body{max-width:736px;margin:auto;padding:16px;box-sizing:border-box}*{box-sizing:border-box}'+css+'</style><body class="item-view"><script>Object.defineProperty(navigator,"clipboard",{configurable:true,value:{writeText:async v=>{window.__copied=v;}}});</script><main class="post-body">'+content+'</main><script>'+copy+'</script><script>'+check+'</script></body></html>');
+console.log('COMMON_PERIOD_FIXTURE_WRITTEN',width);

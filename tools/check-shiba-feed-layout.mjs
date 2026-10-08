@@ -15,7 +15,7 @@ for (const forbidden of ['pick7p2y','navigator.clipboard','<script','onclick='])
 }
 
 const theme=readFileSync(resolve('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml'),'utf8');
-const gridRules=[...theme.matchAll(/\.ncp-feed-preview\{([^}]+)\}/g)].map(x=>x[1]);
+const gridRules=[...theme.matchAll(/\.ncp-feed-preview\{([^}]+)\}/g)].map(x=>x[1]).filter(rule=>rule.includes('grid-template-columns'));
 if (gridRules.length<2) throw new Error('FEED_GRID_RULES_MISSING');
 const rule=width<=700?gridRules[gridRules.length-1]:gridRules[0];
 const grab=(re,name)=>{
