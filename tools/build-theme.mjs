@@ -24,9 +24,9 @@ const header=`<div class='ncp-r3'><header class='ncp-r3-header'><div class='ncp-
 const cards=manual.map(c=>`<article class='ncp-r3-card'><span class='ncp-r3-badge'>사용 확인</span><h3>${e(c.brand)}</h3><code>${e(c.code)}</code><p>등록 성공 및 보상 수령 사례가 있습니다.</p><details><summary>보상 보기</summary><ul>${c.rewards.map(r=>`<li>${e(r.name)} ${e(r.quantity)}개</li>`).join('' )}</ul></details><p class='ncp-r3-muted'>서버 범위·전체 계정 조건·만료일은 확인되지 않았습니다.</p><div class='ncp-r3-actions'><button type='button' data-ncp-copy='${e(c.code)}'>코드 복사</button><a class='ncp-r3-link' href='/2026/10/blog-post.html'>보상·입력 방법</a></div><p class='ncp-r3-copy-state' role='status' aria-live='polite'></p></article>`).join('');
 const home=`<b:if cond='data:view.isHomepage'><main class='ncp-r3 ncp-r3-wrap' id='ncp-coupon-home'><h1>쿠폰을 찾고, 확인하고, 사용하세요</h1><p>게임 쿠폰과 입력 방법을 빠르게 확인하세요.</p><h2>사용 확인 쿠폰</h2><div class='ncp-r3-grid'>${cards||'<p>현재 표시할 쿠폰이 없습니다.</p>'}</div><h2>게임 쿠폰 · 입력 안내</h2><div class='ncp-r3-grid'>${links.map(([name,url])=>`<article class='ncp-r3-card'><h3>${e(name)}</h3><p>쿠폰 코드 · 보상 · 입력 방법</p><a class='ncp-r3-link' href='${url}'>확인하기</a></article>`).join('')}</div><h2>최신 코드</h2><p>게임별 최신 쿠폰은 위 목록에서 확인하세요.</p><h2>만료 임박</h2><p>현재 표시할 만료 임박 쿠폰이 없습니다.</p></main></b:if>`;
 const footer=`<footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><strong>아끼고 보자</strong><a href='/p/blog-page.html'>개인정보 처리 안내</a></div></footer>`;
-const script=`<script type='text/javascript'>//<![CDATA[
-document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
-//]]></script>`;
+const copyJs=await readFile(new URL('theme/coupon-copy.js',root),'utf8');
+const copyCss=await readFile(new URL('theme/coupon-copy.css',root),'utf8');
+const script=`<script type='text/javascript'>//<![CDATA[\n${copyJs}\n//]]></script>`;
 const gameMount=`<b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[\n${gameScript}\n//]]></script></b:if>`;
 const homeCss=await readFile(new URL('theme/home-r4.css',root),'utf8');
 const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');
@@ -35,6 +35,6 @@ const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
-const output=base.replace(']]></b:skin>',css+gameCss+homeCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
+const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+script+gameMount+homeMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');

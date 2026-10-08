@@ -33,7 +33,9 @@ for (const path of [
     assert.match(xml,/\.ncp-feed-preview\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
     assert.match(xml,/@media\(max-width:700px\)\{\.ncp-feed-preview\{grid-template-columns:1fr/);
     assert.match(xml,/navigator\.clipboard\.writeText\(button\.dataset\.ncpCopy\|\|''\)/);
-    assert.match(xml,/button\.textContent='복사됨'/);
+    assert.match(xml,/button\.textContent='복사 완료'/);
+    assert.match(xml,/localStorage\.setItem\(key\(button\),'1'\)/);
+    assert.match(xml,/data-ncp-copied='true'/);
     assert.match(xml,/button\.textContent='복사 실패'/);
     assert.match(xml,/setTimeout\(function\(\)\{button\.textContent=before;button\.disabled=false;\},1400\)/);
   });

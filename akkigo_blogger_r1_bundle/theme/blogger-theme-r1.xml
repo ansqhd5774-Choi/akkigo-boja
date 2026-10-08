@@ -2777,6 +2777,10 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 /* Game category image cards without the redundant footer. */
 #ncp-game-hub .ncp-game-heart-shell .ncp-game-card{display:block}#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px}
 @media(max-width:600px){#ncp-game-hub .ncp-game-heart{bottom:5px}}
+/* Keep feedback inside the button without changing coupon row height. */
+[data-ncp-copy][data-ncp-copied='true']{background:#087f5b!important;color:#fff!important;border-color:#087f5b!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+[data-ncp-copy][data-ncp-copy-error='true']{background:#b42318!important;color:#fff!important}
+.ncp-copy-state,.ncp-r3-copy-state{position:absolute!important;width:1px!important;height:1px!important;min-height:0!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
 ]]></b:skin>
 
     <b:template-skin>
@@ -4255,7 +4259,29 @@ window.ncpResolveGame=(function(){const known=["원신","승리의 여신: 니�
 
     <b:template-script async='true' name='indie' version='1.0.0'/>
   <b:if cond='!data:view.isHomepage'><footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><strong>아끼고 보자</strong><a href='/p/blog-page.html'>개인정보 처리 안내</a></div></footer></b:if><script type='text/javascript'>//<![CDATA[
-document.addEventListener('click',async function(event){const button=event.target.closest('[data-ncp-copy]');if(!button)return;const scope=button.closest('.ncp-coupon-card,.ncp-r3-card,article')||document;const status=scope.querySelector('[role="status"]');const before=button.textContent;button.disabled=true;try{await navigator.clipboard.writeText(button.dataset.ncpCopy||'');button.textContent='복사됨';if(status)status.textContent='코드를 복사했습니다.';}catch{button.textContent='복사 실패';if(status)status.textContent='자동 복사가 제한됩니다. 코드를 선택해 복사하세요.';}finally{window.setTimeout(function(){button.textContent=before;button.disabled=false;},1400);}});
+// AKKIGO persistent copy feedback: copying is not redemption confirmation.
+(function(){
+ const key=button=>'ncp-copied:'+location.pathname+':'+button.dataset.ncpCopy;
+ const mark=button=>{delete button.dataset.ncpCopyError;button.dataset.ncpCopied='true';button.textContent='복사 완료';};
+ const restore=()=>document.querySelectorAll('[data-ncp-copy]').forEach(button=>{try{if(localStorage.getItem(key(button))==='1')mark(button);}catch{}});
+ restore();document.addEventListener('DOMContentLoaded',restore,{once:true});
+ document.addEventListener('click',async event=>{
+  const button=event.target.closest('[data-ncp-copy]');if(!button)return;
+  event.preventDefault();event.stopImmediatePropagation();
+  const scope=button.closest('.ncp-code-card,.ncp-coupon-card,.ncp-r3-card')||button.parentElement;
+  const status=scope?.querySelector('.ncp-copy-state,[role="status"]');
+  button.disabled=true;
+  try{
+   await navigator.clipboard.writeText(button.dataset.ncpCopy||'');
+   mark(button);try{localStorage.setItem(key(button),'1');}catch{}
+   if(status)status.textContent='코드를 복사했습니다.';
+  }catch{
+   button.textContent='복사 실패';button.dataset.ncpCopyError='true';
+   if(status)status.textContent='복사하지 못했습니다. 코드를 직접 선택해 복사하세요.';
+  }finally{button.disabled=false;}
+ },true);
+})();
+
 //]]></script><b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[
 // Only mounted by the Blogger label condition.
 (async function(){
