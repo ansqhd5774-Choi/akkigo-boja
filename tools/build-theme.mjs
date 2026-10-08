@@ -38,6 +38,7 @@ const siteCss=await readFile(new URL('theme/site-tools.css',root),'utf8');
 const siteJs=await readFile(new URL('theme/site-tools.js',root),'utf8');
 const updatedCss=await readFile(new URL('theme/post-updated.css',root),'utf8');
 const typographyCss=await readFile(new URL('theme/article-typography.css',root),'utf8');
+const compactCss=await readFile(new URL('theme/article-compact.css',root),'utf8');
 const updatedJs=await readFile(new URL('theme/post-updated.js',root),'utf8');
 const updatedMount=`<b:if cond='data:view.isPost'><script type='text/javascript'>//<![CDATA[
 ${updatedJs}
@@ -49,6 +50,6 @@ const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
 //]]></script></b:if>`;
-const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+updatedCss+typographyCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+updatedMount+'</body>');
+const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+updatedCss+typographyCss+compactCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+updatedMount+'</body>');
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');

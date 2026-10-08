@@ -27,9 +27,16 @@ export const compactArticleCSS=`
 `;
 
 export function validateArticlePresentation(article) {
- if(article.source?.presentationVersion!=='compact-r1')return true;
+ if(!['compact-r1','compact-r2'].includes(article.source?.presentationVersion))return true;
  const html=article.post.content||'';
- if(!html.includes('data-ncp-presentation="compact-r1"'))throw Error('PRESENTATION_MARKER_MISSING');
+ if(!html.includes('data-ncp-presentation="'+article.source.presentationVersion+'"'))throw Error('PRESENTATION_MARKER_MISSING');
+ if(article.source.presentationVersion==='compact-r2'){
+  if(/<\/h2>\s*<p>[\s\S]*?<\/p>\s*<div class="ncp-card-list/.test(html))throw Error('PRESENTATION_SECTION_INFO_REQUIRED');
+  for(const section of html.matchAll(/<section\b[^>]*>([\s\S]*?)<\/section>/g)){
+   const count=(section[1].match(/class="ncp-code-card"/g)||[]).length;
+   if(count>5&&!section[1].includes('class="ncp-list-more"'))throw Error('PRESENTATION_LIST_DISCLOSURE_REQUIRED');
+  }
+ }
  if(/<summary\b[^>]*>[^<]*펼쳐보기/.test(html))throw Error('PRESENTATION_TEXT_TOGGLE');
  if(!html.includes('class="ncp-info"'))throw Error('PRESENTATION_INFO_MISSING');
  for(const match of html.matchAll(/<h2\b[^>]*>(.*?)<\/h2>/gs)){

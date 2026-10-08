@@ -7,9 +7,15 @@ import {validateArticlePresentation,renderArticleInfo} from '../src/article-pres
 test('new game drafts require compact presentation version; grandfathered articles stay unchanged',()=>{
  for(const a of [...primary,...supplemental]){
   if(!a.post?.labels?.includes('게임')||legacy.includes(a.articleKey))continue;
-  assert.equal(a.source?.presentationVersion,'compact-r1',a.articleKey);
+  assert.ok(['compact-r1','compact-r2'].includes(a.source?.presentationVersion),a.articleKey);
   assert.equal(validateArticlePresentation(a),true);
  }
+});
+test('R2 rejects unfolded long lists and visible section provenance',()=>{
+ const make=content=>({source:{presentationVersion:'compact-r2'},post:{content:'<article data-ncp-presentation="compact-r2">'+renderArticleInfo('안내')+content+'</article>'}});
+ assert.throws(()=>validateArticlePresentation(make('<section><h2>기록</h2><p>긴 출처 안내</p><div class="ncp-card-list"></div></section>')),/SECTION_INFO_REQUIRED/);
+ assert.throws(()=>validateArticlePresentation(make('<section>'+('<div class="ncp-code-card"></div>'.repeat(6))+'</section>')),/LIST_DISCLOSURE_REQUIRED/);
+ assert.equal(validateArticlePresentation(make('<section><details class="ncp-list-more">'+('<div class="ncp-code-card"></div>'.repeat(6))+'</details></section>')),true);
 });
 test('compact presentation rejects verbose headings and text-only expansion controls',()=>{
  const base={source:{presentationVersion:'compact-r1'},post:{content:'<article data-ncp-presentation="compact-r1">'+renderArticleInfo('보충 설명')+'</article>'}};
