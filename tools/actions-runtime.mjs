@@ -45,8 +45,7 @@ async function main(command) {
     const needed=git('diff','--name-only',before,process.env.GITHUB_SHA).split(/\r?\n/).some(isWorkerPath);
     output('worker',needed);console.log(needed?'WORKER_BUILD_REQUIRED':'WORKER_BUILD_SKIPPED');
   } else if(command==='verified-source') {
-    // A reusable Verify job finishes before this job acquires the sole runner.
-    // This avoids waiting for another queued job while occupying that runner.
+    // Either exact-SHA complete coverage was reused or local full checks passed.
     console.log('SOURCE_SNAPSHOT_VERIFIED '+assertVerifiedSource(process.env.VERIFIED_SOURCE_SHA,process.env.GITHUB_SHA));
   } else if(command==='worker') {
     if(process.env.WORKER_READY==='true'){output('deploy_needed',false);console.log('WORKER_SNAPSHOT_MATCH_SKIP_DEPLOY');return;}

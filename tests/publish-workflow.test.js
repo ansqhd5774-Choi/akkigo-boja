@@ -15,8 +15,9 @@ test('발행 workflow는 소스 Verify 성공과 Worker 배포 상태를 확인�
   const yaml=readFileSync(new URL('../.github/workflows/publish-article.yml',import.meta.url),'utf8');
   assert.match(yaml,/Require verified source snapshot/);
   assert.match(actionRuntime,/SOURCE_SNAPSHOT_VERIFIED/);
-  assert.match(yaml,/needs: source-verify/);
-  assert.match(yaml,/VERIFIED_SOURCE_SHA:.*needs.source-verify.outputs.verified_sha/);
+  assert.match(yaml,/node tools\/verification-reuse.mjs/);
+  assert.match(yaml,/steps\.verification\.outputs\.reused != 'true'/);
+  assert.match(yaml,/VERIFIED_SOURCE_SHA:.*steps.verification.outputs.verified_sha/);
   assert.match(actionRuntime,/assertVerifiedSource/);
   assert.match(yaml,/Check Worker deployment readiness/);
   assert.match(actionRuntime,/WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW/);
@@ -26,7 +27,7 @@ test('발행 workflow는 소스 Verify 성공과 Worker 배포 상태를 확인�
   assert.match(yaml,/group:\s*production-worker/);
 });
 
-test('발행은 의존 Verify로 소스를 검증하고 화면 렌더 검사는 별도 UI 경로로 제한한다',()=>{
+test('발행은 완전한 소스 검사를 재사용하거나 직접 수행하고 화면 렌더 검사는 별도 UI 경로로 제한한다',()=>{
   const verify=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
   const layout=readFileSync(new URL('../.github/workflows/verify-layout.yml',import.meta.url),'utf8');
   assert.match(verify,/paths-ignore:[\s\S]*publish-requests\/\*\*/);
@@ -43,7 +44,7 @@ test('Verify는 오래된 실행을 취소하고 문서 변경을 제외한다',
   assert.match(yaml,/'\*\*\/\*\.md'/);
 });
 
-test('Verify는 XML 도구를 격리 설치하고 Worker 변경이 아닐 때 build를 생략한다',()=>{
+test('Verify는 재사용 가능한 완전한 검사 범위를 제공한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
   assert.match(yaml,/Detect Worker build changes/);
   assert.match(actionRuntime,/WORKER_BUILD_REQUIRED_UNCERTAIN_DIFF/);
@@ -52,7 +53,8 @@ test('Verify는 XML 도구를 격리 설치하고 Worker 변경이 아닐 때 bu
   assert.doesNotMatch(yaml,/npm install --global/);
   assert.match(yaml,/pnpm install --frozen-lockfile/);
   assert.match(yaml,/run: node --test/);
-  assert.match(yaml,/pnpm build\s*\n\s*if: steps\.changes\.outputs\.worker == 'true'/);
+  assert.match(yaml,/name: Worker dry-run build\s*\n\s*run: pnpm build/);
+  assert.doesNotMatch(yaml,/pnpm build\s*\n\s*if:/);
   assert.doesNotMatch(yaml,/actions\/cache@/);
 });
 

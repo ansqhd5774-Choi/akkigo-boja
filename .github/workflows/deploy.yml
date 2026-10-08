@@ -33,13 +33,32 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: node tools/actions-runtime.mjs worker
+      - name: Look up exact SHA full verification
+        id: verification
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node tools/verification-reuse.mjs
       - uses: pnpm/action-setup@v4
+        if: steps.verification.outputs.reused != 'true' || steps.worker.outputs.deploy_needed == 'true'
         with:
           version: '11.19.0'
       - run: pnpm install --frozen-lockfile
-      - run: node --test
-      - run: pnpm build
-      - run: node tools/validate-theme-xml.mjs
+        if: steps.verification.outputs.reused != 'true' || steps.worker.outputs.deploy_needed == 'true'
+      - name: Source tests
+        if: steps.verification.outputs.reused != 'true'
+        run: node --test
+      - name: Worker dry-run build
+        if: steps.verification.outputs.reused != 'true'
+        run: pnpm build
+      - name: Regenerate Blogger theme and require clean diff
+        if: steps.verification.outputs.reused != 'true'
+        run: |
+          node tools/build-theme.mjs
+          if errorlevel 1 exit /b 1
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+      - name: Validate Blogger XML
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/validate-theme-xml.mjs
       - run: pnpm exec wrangler d1 migrations apply akkigo-boja-state --remote
         if: steps.worker.outputs.deploy_needed == 'true'
       - run: pnpm deploy

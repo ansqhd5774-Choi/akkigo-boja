@@ -21,10 +21,7 @@ defaults:
   run:
     shell: cmd
 jobs:
-  source-verify:
-    uses: ./.github/workflows/verify.yml
   publish:
-    needs: source-verify
     runs-on: [self-hosted, Windows, X64, akkigo-boja]
     steps:
       - uses: actions/checkout@v7.0.1
@@ -33,9 +30,35 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
+      - name: Look up exact SHA full verification
+        id: verification
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node tools/verification-reuse.mjs
+      - uses: pnpm/action-setup@v4
+        if: steps.verification.outputs.reused != 'true'
+        with:
+          version: '11.19.0'
+      - run: pnpm install --frozen-lockfile
+        if: steps.verification.outputs.reused != 'true'
+      - name: Source tests
+        if: steps.verification.outputs.reused != 'true'
+        run: node --test
+      - name: Worker dry-run build
+        if: steps.verification.outputs.reused != 'true'
+        run: pnpm build
+      - name: Regenerate Blogger theme and require clean diff
+        if: steps.verification.outputs.reused != 'true'
+        run: |
+          node tools/build-theme.mjs
+          if errorlevel 1 exit /b 1
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+      - name: Validate Blogger XML
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/validate-theme-xml.mjs
       - name: Require verified source snapshot
         env:
-          VERIFIED_SOURCE_SHA: ${{ needs.source-verify.outputs.verified_sha }}
+          VERIFIED_SOURCE_SHA: ${{ steps.verification.outputs.verified_sha || github.sha }}
         run: node tools/actions-runtime.mjs verified-source
       - name: Select requests in complete push range
         id: requests
@@ -67,11 +90,11 @@ jobs:
           WORKER_READY: ${{ steps.preflight.outputs.worker_ready }}
         run: node tools/actions-runtime.mjs worker
       - uses: pnpm/action-setup@v4
-        if: steps.worker.outputs.deploy_needed == 'true'
+        if: steps.worker.outputs.deploy_needed == 'true' && steps.verification.outputs.reused == 'true'
         with:
           version: '11.19.0'
       - run: pnpm install --frozen-lockfile
-        if: steps.worker.outputs.deploy_needed == 'true'
+        if: steps.worker.outputs.deploy_needed == 'true' && steps.verification.outputs.reused == 'true'
       - name: Apply pending D1 migrations before repair deploy
         if: steps.worker.outputs.deploy_needed == 'true'
         env:

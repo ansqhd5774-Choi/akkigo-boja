@@ -39,9 +39,10 @@ jobs:
         with:
           version: '11.19.0'
       - run: pnpm install --frozen-lockfile
-      - run: node --test
-      - run: pnpm build
-        if: steps.changes.outputs.worker == 'true' || github.workflow == 'Publish Approved Article'
+      - name: Source tests
+        run: node --test
+      - name: Worker dry-run build
+        run: pnpm build
       - name: Regenerate Blogger theme and require clean diff
         run: |
           node tools/build-theme.mjs
