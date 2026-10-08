@@ -56,11 +56,12 @@ const checkScript=`
     copy.click();
     await new Promise(r=>setTimeout(r,80));
     if(window.__copied!=='pick7p2y') failures.push('clipboard-value');
-    if(copy.textContent.trim()!=='복사됨') failures.push('copy-success-text');
+    if(copy.textContent.trim()!=='복사 완료') failures.push('copy-success-text');
+    if(copy.dataset.ncpCopied!=='true'||getComputedStyle(copy).backgroundColor!=='rgb(8, 127, 91)') failures.push('copy-success-color');
     const status=document.querySelector('.ncp-copy-state');
     if(!status||!status.textContent.includes('복사')) failures.push('copy-status');
     await new Promise(r=>setTimeout(r,1500));
-    if(copy.textContent.trim()!=='복사') failures.push('copy-reset-text');
+    if(copy.textContent.trim()!=='복사 완료'||copy.disabled) failures.push('copy-history-lost');
   }
 
   document.body.dataset.layoutResult=failures.length?'FAIL':'PASS';
