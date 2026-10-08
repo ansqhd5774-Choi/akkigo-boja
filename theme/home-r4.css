@@ -84,3 +84,7 @@
 /* Game category image cards without the redundant footer. */
 #ncp-game-hub .ncp-game-heart-shell .ncp-game-card{display:block}#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px}
 @media(max-width:600px){#ncp-game-hub .ncp-game-heart{bottom:5px}}
+
+/* Shared brand mark: readable name plus the registered favicon. */
+.ncp-r4 .ncp-r4-logo{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;white-space:nowrap;font-size:24px;line-height:1.2;letter-spacing:-.6px}.ncp-r4 .ncp-r4-brand-icon{display:block;width:32px;height:32px;flex:0 0 32px;border-radius:8px;object-fit:contain}
+@media(max-width:600px){.ncp-r4 .ncp-r4-logo{font-size:20px}}
