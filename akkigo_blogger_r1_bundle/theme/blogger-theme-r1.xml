@@ -2709,7 +2709,9 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 @media(max-width:900px){#ncp-game-hub .ncp-game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.ncp-r4-category-header .ncp-r4-top{flex-wrap:wrap}.ncp-r4-category-header .ncp-r4-search{flex-basis:100%}#ncp-game-hub{padding:18px}#ncp-game-hub h1{font-size:25px}#ncp-game-hub .ncp-game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ncp-game-hub .ncp-game-icon-wrap{height:140px}#ncp-game-hub .ncp-game-name{font-size:14px}}
 
-.ncp-category-page .centered{margin:0 auto!important;width:100%!important;box-sizing:border-box}.ncp-category-page .post-filter-message{display:none!important}.ncp-category-page .centered-bottom{padding:0!important}
+.ncp-category-page .page_body{margin-left:0!important;margin-right:0!important}
+.ncp-category-page .centered{margin:0 auto!important;width:100%!important;max-width:1288px!important;box-sizing:border-box}.ncp-category-page .post-filter-message{display:none!important}.ncp-category-page .centered-bottom{padding:0!important}
+.ncp-category-page #ncp-game-hub{max-width:none;width:100%;box-sizing:border-box}
 
 
 /* White veil game cards: real current coupon counts. */
