@@ -36,7 +36,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: Source tests
+        # Mandatory presentation gate also checks generated theme typography.
         run: node --test
+      - name: Enforce article presentation and shared table weights
+        run: node tools/check-article-presentation.mjs
       - name: Worker dry-run build
         run: pnpm build
       - name: Regenerate Blogger theme and require clean diff
