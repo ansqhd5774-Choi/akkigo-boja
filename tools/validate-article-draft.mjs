@@ -1,3 +1,4 @@
+import {validateMonthlyGameCouponTimeline} from '../src/game-coupon-monthly.js';
 import {validateGameCouponLayout} from '../src/game-code-layout-contract.js';
 import {validateGameFeaturedImage} from '../src/game-featured-image-policy.js';
 import {validateGameCandidateCoverage} from '../src/game-code-candidate-policy.js';
@@ -11,5 +12,6 @@ export function validateArticleDraft(article){
  validateGameCouponLayout(article.articleKey,article.post);
  validateGameFeaturedImage(article.articleKey,article.post);
  validateGameCandidateCoverage(article);
+ validateMonthlyGameCouponTimeline(article);
  return true;
 }
