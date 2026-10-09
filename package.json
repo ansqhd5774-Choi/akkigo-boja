@@ -9,7 +9,8 @@
     "audit:coupon-sources": "node tools/review-coupon-sources.mjs --resume",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "build": "wrangler deploy --dry-run"
+    "build": "wrangler deploy --dry-run",
+    "audit:search-consistency": "node tools/audit-search-consistency.mjs"
   },
   "devDependencies": {
     "@xmldom/xmldom": "0.9.12",

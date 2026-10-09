@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-09T17:54:30.408Z",
+  "pageAuditCheckedAt": "2026-10-09T17:53:23.514Z",
+  "scope": "PUBLIC_FEED_SITEMAP_AND_STATIC_PAGE_METADATA",
+  "providerLedger": "UNVERIFIED",
+  "googleSelectedCanonical": "UNVERIFIED",
+  "counts": {
+    "sitemap": 77,
+    "feed": 77,
+    "pages": 77
+  },
+  "sitemapVsFeed": {
+    "missing": [],
+    "extra": []
+  },
+  "auditedVsSitemap": {
+    "missing": [],
+    "extra": []
+  },
+  "sitemapVsFeedDateIssues": [],
+  "canonicalIssues": [],
+  "duplicateDescriptions": []
+}

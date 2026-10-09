@@ -45,14 +45,14 @@
 | 12 | 대상 조건 | 서버/국가/계정 조건의 전수 확인 |
 | 13 | 보상/만료 | 최신 후보 보상과 만료 원문 재확인 |
 | 14 | 근거 충돌 | 충돌 근거 실제 기록과 해결 |
-| 19 | lastmod | 플랫폼 lastmod와 실제 내용 수정 이력 대조 |
+| 19 | lastmod | 공개77글 sitemap/feed 수정일 초 단위 일치. 실제 내용 diff와 모든 수정 사건 대조는 남음 |
 | 20 | Google | GSC 기존 등록/사이트맵/실시간 검사/요청 증거 있음; 제외 사유 집계와 색인 결과 추적 필요 |
 | 21 | Naver | 네이버 등록/사이트맵 확인 및 대표 글 수집 요청 접수; 수집/색인 결과 미확인 |
 | 22 | Bing | Bing 정상 사이트 소유 확인 및 sitemap Submitted/Processing; 색인/성과 대기. 입력 오류로 생긴 /ㄴ 미검증 속성은 삭제하지 않음 |
 | 23 | IndexNow | Blogger 호스트의 IndexNow 키 파일 지원과 공식 제출 경로 확인 필요; 실행하지 않음 |
-| 25 | 메타정보 | 76글 description/canonical 개수 검사 통과; 전체 고유성/검색 의도 대조 추가 필요 |
-| 26 | 대표 URL | canonical 존재 확인 완료; 값/선택 canonical/리디렉션 전수 대조 필요 |
-| 28 | 사이트맵 | sitemap76URL 공개 HTTP검사; 발행 원장과 전체 집합 대조 추가 필요 |
+| 25 | 메타정보 | 공개77글 description 개수/고유성 검사 통과, 중복0. 글별 검색 의도 대조는 남음 |
+| 26 | 대표 URL | 공개77글 canonical 값과 sitemap URL 일치. Google 선택 canonical/리디렉션 별도 확인 필요 |
+| 28 | 사이트맵 | 공개 피드77글/sitemap77URL/HTTP 감사77글 집합 일치. Provider DB 발행 원장 대조 미확인 |
 | 29 | 오류 | 76글 HTTP200; 본문 soft404/링크체인 검사는 추가 필요 |
 | 30 | 봇 렌더링 | 기존 GSC 실시간 대표 URL 검사 증거; 전체 핵심 코드/출처 렌더링 범위 미검증 |
 | 31 | JSON-LD | 76글 JSON-LD 문법 오류0; 화면 의미 일치 및 필요한 유형 검토 |
@@ -110,3 +110,10 @@
 - 브라우저 viewport 설정이 실제 innerWidth에 적용되지 않음(390/1440 요청에도1280). 독립390px/1440px 검증은 AUTOMATION_BLOCKED이며 PASS로 계산하지 않음. 발행 CI 반응형 검사는 별도 PASS.
 - 전체 자동 검사285/285 PASS, 표현 검사42글 PASS. 공개 증거: output/warframe-source-public-desktop.png, output/maple-source-public-desktop.png. mobile 이름의 이미지도 실제1280px이므로 모바일 증거로 사용 금지.
 - 발행 기록: https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37968328817
+
+
+## 검색 일관성 후속 검증
+
+2026-10-10 02:54 KST. 공개77글 HTTP200, noindex0, description 누락0/중복0, canonical 누락0/값 오류0, JSON-LD 문법 오류0. 공개 피드와 사이트맵의 누락/초과0, 수정일 초 단위 불일치0. sitemap은 초 단위, feed는 밀리초 단위이므로 타임존 변환 후 초를 비교한다.
+
+재실행: `npm run audit:search` 이후 `npm run audit:search-consistency`. 관련 회귀5/5 PASS. Provider 내부 발행 원장, Google 선택 canonical, 검색 의도와 실제 수정 내용은 이 검사로 확인되지 않는다. 따라서 완료26/미완료37 유지. 이번 변경은 검사 도구이며 공개 테마/글 변경·배포는 하지 않았다. 증거: `data/operations/search-consistency-evidence-20261010.json`.
