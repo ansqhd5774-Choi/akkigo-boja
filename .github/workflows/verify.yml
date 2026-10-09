@@ -40,6 +40,12 @@ jobs:
         run: node --test
       - name: Enforce shared period renderer, history preservation and R2 DOM
         run: node tools/check-article-presentation.mjs
+      - name: Generate publication counts from shared row models
+        run: node tools/game-period-report.mjs > game-period-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: game-period-report
+          path: game-period-report.json
       - name: Worker dry-run build
         run: pnpm build
       - name: Regenerate Blogger theme and require clean diff

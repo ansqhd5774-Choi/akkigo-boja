@@ -22,3 +22,9 @@
 - 기존 글 전환 요청은 existingOnly:true를 사용한다. 공개된 기존 postId/URL만 갱신하며 미발행 원고를 새 게시물로 만들지 않는다.
 
 일반 데이터 갱신은 동일 SHA 검증 결과와 LIVE 응답을 확인한다. 공통 UI 변경·실제 오류·사용자 점검 요청에는 PC·모바일 렌더링과 관련 클릭 검사를 추가한다.
+
+## 발행 보고 집계
+
+- `node tools/game-period-report.mjs` 또는 `node tools/game-period-report.mjs "게임명"`의 결과로 총 코드·복사·공유·게시일 미확인·만료 기록 수를 작성한다. 수동 계산이나 조사 중간 집계를 최종 보고에 사용하지 않는다.
+- Verify가 발행 카탈로그의 source.gamePeriodModel과 허브 모델에서 생성한 `game-period-report` artifact를 보존한다. 본문과 보고는 공통 중복 제거 결과를 사용한다.
+- 만료 기록 수는 statusLabel의 만료·종료 분류 집계다. 실제 사용 성공·공식 발급 여부를 뜻하지 않으며, 그 검증 결과는 별도 증거로 보고한다.
