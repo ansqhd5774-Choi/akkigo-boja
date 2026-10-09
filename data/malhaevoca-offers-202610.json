@@ -83,6 +83,10 @@
     {
       "name": "중개 공유계정 프로모션",
       "reason": "공식 발급사 할인과 구분"
+    },
+    {
+      "name": "피클플러스 문자 제휴 쿠폰 3종",
+      "reason": "문자 코드는 찾았지만 피클플러스 중개 수수료에 사용; 본앱 공식 활성코드와 분리해 relatedVoucherCandidates에 보존"
     }
   ],
   "appStoreUrl": "https://apps.apple.com/kr/app/id1460766549",
@@ -102,7 +106,11 @@
       "말해보카 학생 할인",
       "말해보카 톡학생증",
       "말해보카 가격",
-      "말해보카 1년 가격"
+      "말해보카 1년 가격",
+      "말해보카 7일 무료 체험",
+      "말해보카 피클플러스 쿠폰",
+      "말해보카 무료 쿠폰 등록",
+      "말해보카 학원 30일 무료 체험"
     ],
     "hashtags": [
       "#말해보카",
@@ -125,7 +133,73 @@
     "https://www.kakaocorp.com/page/detail/11098",
     "https://pf.kakao.com/_xhKcxcxj/104610545",
     "https://epop.ai/ko",
-    "https://apps.apple.com/kr/app/id1460766549"
+    "https://apps.apple.com/kr/app/id1460766549",
+    "https://jhbd82.tistory.com/376",
+    "https://pickleplus-coupon.com/sayvoca/",
+    "https://goodmanytips.com/malhae/",
+    "https://epop.ai/b2b/academy"
   ],
-  "datePolicy": "Official first announcement date for a specific offer only; not check date, page modified date, event end or generated Blogger post date."
+  "datePolicy": "Official first announcement date for a specific offer only; not check date, page modified date, event end or generated Blogger post date.",
+  "relatedVoucherCandidates": [
+    {
+      "code": "B8290428",
+      "issuer": "피클플러스 제휴·추천 코드",
+      "appliesTo": "피클플러스 공동구독 중개 수수료",
+      "sourceUrl": "https://jhbd82.tistory.com/376",
+      "sourcePublishedAt": "2026-03-14",
+      "dateBasis": "THIRD_PARTY_BLOG_POST_DATE",
+      "status": "UNVERIFIED",
+      "claim": "첫 달 피클플러스 중개 수수료 무료 주장",
+      "conditions": "말해보카 직접 프리미엄 구독 할인·첫달 구독료 무료 아님. 현재 말해보카 신규 파티 가입은 미확인/중단 안내.",
+      "workingVerifiedAt": null
+    },
+    {
+      "code": "C6AAFEB3",
+      "issuer": "피클플러스 제휴·추천 코드",
+      "appliesTo": "피클플러스 공동구독 중개 수수료",
+      "sourceUrl": "https://pickleplus-coupon.com/sayvoca/",
+      "sourcePublishedAt": null,
+      "dateBasis": "THIRD_PARTY_PAGE_ORIGINAL_DATE_UNKNOWN_UPDATED_2026_08",
+      "status": "UNVERIFIED",
+      "claim": "첫 달 피클플러스 수수료 무료 주장",
+      "conditions": "해당 웹사이트는 말해보카 신규 파티 생성 종료를 명시. 말해보카 직접 쿠폰 아님.",
+      "workingVerifiedAt": null
+    },
+    {
+      "code": "112EBFE1",
+      "issuer": "피클플러스 제휴·추천 코드",
+      "appliesTo": "피클플러스 공동구독 중개 수수료",
+      "sourceUrl": "https://goodmanytips.com/malhae/",
+      "sourcePublishedAt": null,
+      "dateBasis": "THIRD_PARTY_POST_ORIGINAL_DATE_UNKNOWN",
+      "status": "UNVERIFIED",
+      "claim": "첫 달 피클플러스 중개 수수료 무료 주장",
+      "conditions": "말해보카 직접 쿠폰 아님; 원문 게시일·현재 적용 성공 미확인.",
+      "workingVerifiedAt": null
+    }
+  ],
+  "relatedOfficialBenefits": [
+    {
+      "id": "EP0P_APP_7_DAY_TRIAL",
+      "type": "FREE_TRIAL",
+      "name": "말해보카 앱 내 7일 무료 체험",
+      "status": "OFFICIAL_INFO_ACCOUNT_ELIGIBILITY_CHECK",
+      "sourceUrl": "https://epop.ai/ko",
+      "sourcePublishedAt": null,
+      "dateBasis": "OFFICIAL_UNDATED_FAQ",
+      "conditions": "앱에서 제공하는 체험 자격·갱신·결제 조건 확인",
+      "code": null
+    },
+    {
+      "id": "EP0P_ACADEMY_B2B_30_DAY",
+      "type": "B2B_FREE_TRIAL",
+      "name": "학원 전용 30일 무료 체험",
+      "status": "OFFICIAL_B2B_ONLY",
+      "sourceUrl": "https://epop.ai/b2b/academy",
+      "sourcePublishedAt": null,
+      "dateBasis": "OFFICIAL_UNDATED_B2B_PAGE",
+      "conditions": "학원 구매 담당자 전용. 개인 말해보카 구독자용 아님.",
+      "code": null
+    }
+  ]
 }
