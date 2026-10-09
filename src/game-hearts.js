@@ -2,12 +2,20 @@ import seeds from '../data/game-heart-seeds.json' with {type:'json'};
 import initials from '../data/game-heart-initials.json' with {type:'json'};
 import articles from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import logos from '../data/representative-logos.json' with {type:'json'};
 import {resolveGame} from './game-identity.js';
 const registry=new Map(Object.keys(seeds).map(name=>[name,{name,initial:seeds[name]}]));
 for(const article of [...articles,...supplemental]){
  if(!article.approvedForPublish||!article.post?.labels?.includes('게임'))continue;
  const game=resolveGame({...article.post,category:article.post.labels},Object.keys(seeds));
  if(game.id&&!registry.has(game.id))registry.set(game.id,{name:game.name,initial:0});
+}
+// Company cards use the same vote storage, with zero editorial initial votes.
+const companyNames=new Map(logos.map(logo=>[logo.articleKey,logo.brand]));
+for(const article of [...articles,...supplemental]){
+ if(!article.approvedForPublish||article.post?.labels?.includes('게임'))continue;
+ const name=companyNames.get(article.articleKey)||article.post?.labels?.[1];
+ if(name&&!registry.has(name))registry.set(name,{name,initial:0});
 }
 // Persisted editorial initial values; never rename vote keys or rewrite D1 votes.
 for(const [id,game] of registry){

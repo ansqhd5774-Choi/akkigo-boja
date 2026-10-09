@@ -22,7 +22,7 @@
     const identity=game?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
     const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
     if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
-    if(game&&count>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
+    {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){
@@ -32,7 +32,7 @@
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
     const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
-    body.append(heading);article.append(body);if(game)addHeart(article,identity.id);return article;
+    body.append(heading);article.append(body);addHeart(article,game?identity.id:name);return article;
   }
   function paginate(container,items,label){
     if(!items.length)return;const pageSize=()=>innerWidth<=600?4:innerWidth<=900?3:6;let size=pageSize(),total=Math.ceil(items.length/size),page=0;
@@ -68,7 +68,7 @@
         if(!entry.category?.some(label=>label.term===category))continue;
         const key=game?window.ncpResolveGame(entry).id:entry.id?.$t;
         if(seen.has(key))continue;
-        const item=game?card(entry,true,guideCodeCount(entry)):card(entry,false,0);
+        const item=game?card(entry,true,guideCodeCount(entry)):card(entry,false,guideCodeCount(entry));
         if(item){items.push(item);seen.add(key);}
       }
       section.querySelector('h2').setAttribute('title','최근 갱신순');
