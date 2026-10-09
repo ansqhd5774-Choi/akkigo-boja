@@ -1,0 +1,42 @@
+name: Sync Malhaevoca Generated Theme Source
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - .github/workflows/sync-malhaevoca-theme-source.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sync-malhaevoca-theme-source
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  sync:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Regenerate both sources from current Blogger-native base only
+        run: |
+          node tools/build-theme.mjs
+          cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          cmp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          grep -q 'AKKIGO SEO' akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          grep -q 'ncp-coupon-home' akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          grep -q 'postBody' akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+      - name: Commit source-only synchronized theme files without applying Blogger theme
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if git diff --cached --quiet; then echo SOURCE_SNAPSHOTS_ALREADY_MATCH; exit 0; fi
+          git commit -m "fix(theme-source): synchronize generated SEO theme snapshots"
+          git push origin HEAD:codex/blogger-worker-r1
