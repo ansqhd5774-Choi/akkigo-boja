@@ -4886,6 +4886,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   document.head.append(script);
 })();
 //]]></script>
+<div class='ncp-directory-badges' style='display:flex;justify-content:flex-end;max-width:1180px;margin:12px auto 20px;padding:0 24px;box-sizing:border-box'><a aria-label='Twelve Tools 디렉터리' href='https://twelve.tools' rel='noopener' target='_blank' style='display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid #d9e2f1;border-radius:10px;background:#fff;color:#243b60;font:600 14px/1.4 system-ui,sans-serif;text-decoration:none'><span aria-hidden='true' style='color:#2155e8;font-weight:800'>12</span> Twelve Tools</a></div>
 </body>
 </html>
 
