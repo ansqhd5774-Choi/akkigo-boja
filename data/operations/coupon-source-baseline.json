@@ -1,0 +1,489 @@
+{
+  "scope": "SOURCE_MENTION_ONLY_NOT_REDEMPTION",
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=pJ-IRC25qxg",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:50.096Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "91ffe5795d5c00520bd85d17aa30a14c3462f6545fc371d76d3f4db0dbdb4bb4",
+      "changed": null,
+      "codes": [
+        {
+          "code": "ITSSUSHITIME",
+          "state": "MENTION_NOT_FOUND"
+        },
+        {
+          "code": "SAKURASPIKE!",
+          "state": "MENTION_NOT_FOUND"
+        },
+        {
+          "code": "BOBAPARTYYYY",
+          "state": "MENTION_NOT_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.youtube.com/watch?v=pJ-IRC25qxg"
+    },
+    {
+      "url": "https://www.spacemoney.com.br/entretenimento/codigos-brawl-stars-outubro-2026/",
+      "status": 500,
+      "checkedAt": "2026-10-09T17:30:50.148Z",
+      "state": "ACCESS_UNVERIFIED",
+      "changed": null,
+      "fingerprint": null,
+      "codes": [
+        {
+          "code": "ITSSUSHITIME",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "SAKURASPIKE!",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "BOBAPARTYYYY",
+          "state": "UNVERIFIED"
+        }
+      ],
+      "finalUrl": "https://www.spacemoney.com.br/entretenimento/codigos-brawl-stars-outubro-2026/"
+    },
+    {
+      "url": "https://timesaver.gg/blog/brawl-stars-codes-october-2026",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:50.149Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "9986ef8968183ba13259df59bde81a41427f1f98892675aeedc5acac858df74c",
+      "changed": null,
+      "codes": [
+        {
+          "code": "ITSSUSHITIME",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "SAKURASPIKE!",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "BOBAPARTYYYY",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://timesaver.gg/blog/brawl-stars-codes-october-2026"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:50.151Z",
+      "state": "ACCESS_UNVERIFIED",
+      "changed": null,
+      "fingerprint": null,
+      "codes": [
+        {
+          "code": "PINKBEANATTACK",
+          "state": "UNVERIFIED"
+        }
+      ],
+      "finalUrl": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440"
+    },
+    {
+      "url": "https://9to5gaming.com/lucky-defense-codes/",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:51.438Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "c550a45ec7ed59add238db2eafc3f4f118ac704d396079d8ff20eaed14f22afb",
+      "changed": null,
+      "codes": [
+        {
+          "code": "LUCKYDISCORD",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://9to5gaming.com/lucky-defense-codes/"
+    },
+    {
+      "url": "https://www.inven.co.kr/board/sena/6379/1504",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:51.440Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "d7266030bbe994d6164af3d0421148295d3124cb2c67ded33b10d948573aff6f",
+      "changed": null,
+      "codes": [
+        {
+          "code": "7ENMUGEN",
+          "state": "MENTION_NOT_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.inven.co.kr/board/sena/6379/1504"
+    },
+    {
+      "url": "https://gamewith.jp/sevenknights-rebirth/520771",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:51.441Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "5c540e2a3cafc3f5a48b7baf2300db48cbccd0da9c04ec579face3f70a67cd0c",
+      "changed": null,
+      "codes": [
+        {
+          "code": "7ENMUGEN",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "SKRE300BIRTH",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://gamewith.jp/sevenknights-rebirth/520771"
+    },
+    {
+      "url": "https://www.game.guide/seven-knights-rebirth-codes",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:51.442Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "6e402d55d6b9e5a116b60770ef09a864347713285c2192440ddba79823bd2618",
+      "changed": null,
+      "codes": [
+        {
+          "code": "7ENMUGEN",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "SKRE300BIRTH",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.game.guide/seven-knights-rebirth-codes"
+    },
+    {
+      "url": "https://coupon.netmarble.com/tskgb",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.279Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "04ae1d3e0d57d508d3c7143c1b1c5673fe191888d065b7c53aa0841fdbf4ea93",
+      "changed": null,
+      "codes": [
+        {
+          "code": "SKRE300BIRTH",
+          "state": "MENTION_NOT_FOUND"
+        }
+      ],
+      "finalUrl": "https://coupon.netmarble.com/tskgb"
+    },
+    {
+      "url": "https://www.warframe.com/ko/qtcc",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.280Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "674b9373d3c87e0d1f840ea51ca5eb9514e7b34993e43cd173d9637b523f2c91",
+      "changed": null,
+      "codes": [
+        {
+          "code": "CARRYTHEFIRE",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.warframe.com/ko/qtcc"
+    },
+    {
+      "url": "https://www.warframe.com/ko/news/pride-2026",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.281Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "4c851b7d8807dada4286312445179c8bf2e2479c1f87318223558bc9e4d870bd",
+      "changed": null,
+      "codes": [
+        {
+          "code": "PRIDE2026",
+          "state": "MENTION_NOT_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.warframe.com/ko/news/pride-2026"
+    },
+    {
+      "url": "https://timesaver.gg/blog/warframe-promo-codes",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.281Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "2fdc4d05dcf86348895d974ee5602f346ba056ce9825d7232caec81649ae2798",
+      "changed": null,
+      "codes": [
+        {
+          "code": "SPECIALEFFECT",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "GOLDEN",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "PARVOS",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "MISTLETOE2025",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://timesaver.gg/blog/warframe-promo-codes"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.916Z",
+      "state": "ACCESS_UNVERIFIED",
+      "changed": null,
+      "fingerprint": null,
+      "codes": [
+        {
+          "code": "QTCC5KREWARD",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "QTCC10KBUNDLE",
+          "state": "UNVERIFIED"
+        }
+      ],
+      "finalUrl": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/"
+    },
+    {
+      "url": "https://gamesakidori.com/z-route/gift-code/",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.917Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "1fe7fac09d87c1fb236d32547a8f0a26ea25133ebd94f98428703857de90a917",
+      "changed": null,
+      "codes": [
+        {
+          "code": "OKTOBER26",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRTSML09",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "WELCOME26",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRDAD26",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "26CHOCO",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZR26PLAY",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZR26ALLY",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRSURV26",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "LOUNGE619",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRR6666",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRR999",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRR2NX6Q",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRRVJ4YD",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRRFT9BM",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRRLW2AC",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "ZRRKR617",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://gamesakidori.com/z-route/gift-code/"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "status": 403,
+      "checkedAt": "2026-10-09T17:30:52.917Z",
+      "state": "ACCESS_UNVERIFIED",
+      "changed": null,
+      "fingerprint": null,
+      "codes": [
+        {
+          "code": "OKTOBER26",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "ZRTSML09",
+          "state": "UNVERIFIED"
+        }
+      ],
+      "finalUrl": "https://www.mrguider.org/codes/z-route-redemption-codes/"
+    },
+    {
+      "url": "https://elpisoul.site/zroute/zroute-code/",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:52.918Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "ab6972808cbe08bc7b2db6e62b97d9cd71985a570c6d3a467d2248c1b686ddc7",
+      "changed": null,
+      "codes": [
+        {
+          "code": "ZRRVJ4YD",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://elpisoul.site/zroute/zroute-code/"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Immortal_Rising_Awakening/home",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:53.386Z",
+      "state": "ACCESS_UNVERIFIED",
+      "changed": null,
+      "fingerprint": null,
+      "codes": [
+        {
+          "code": "IMNAVER",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "IMMORTAL24",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "LUCKY666",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "VIP777",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "VIP888",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "moon",
+          "state": "UNVERIFIED"
+        },
+        {
+          "code": "GUIDE0924",
+          "state": "UNVERIFIED"
+        }
+      ],
+      "finalUrl": "https://game.naver.com/lounge/Immortal_Rising_Awakening/home"
+    },
+    {
+      "url": "https://gcouponplay.com/immortal-rising-coupon/",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:53.387Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "55a6e7d45ca999623b0010cf8239c1885abc7dfe6a86e0307017d38b818046e1",
+      "changed": null,
+      "codes": [
+        {
+          "code": "IMNAVER",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "IMMORTAL24",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "LUCKY666",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "VIP777",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "VIP888",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "moon",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "GUIDE0924",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://gcouponplay.com/immortal-rising-coupon/"
+    },
+    {
+      "url": "https://www.hiki-trivia.com/2026/09/sss-1.html",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:53.387Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "95639e4a8626aaa775b28a7b0acb66f3f66943190466bb9a47331cf681542c9a",
+      "changed": null,
+      "codes": [
+        {
+          "code": "IMNAVER",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "IMMORTAL24",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "LUCKY666",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "VIP777",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "VIP888",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "moon",
+          "state": "MENTION_FOUND"
+        },
+        {
+          "code": "GUIDE0924",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://www.hiki-trivia.com/2026/09/sss-1.html"
+    },
+    {
+      "url": "https://otahub.asia/en/wuthering-waves-codes",
+      "status": 200,
+      "checkedAt": "2026-10-09T17:30:53.388Z",
+      "state": "SOURCE_READ",
+      "fingerprint": "57aed16e9c98086bba91de9da0d655ce775452bd7ea52960e2e455a49091326f",
+      "changed": null,
+      "codes": [
+        {
+          "code": "WUTHERINGGIFT",
+          "state": "MENTION_FOUND"
+        }
+      ],
+      "finalUrl": "https://otahub.asia/en/wuthering-waves-codes"
+    }
+  ]
+}

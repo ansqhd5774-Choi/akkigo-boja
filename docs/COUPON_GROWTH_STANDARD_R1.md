@@ -76,7 +76,11 @@
 
 공개 정적 점검: `npm run audit:search`. 결과는 `output/search-foundation-audit.json`. 이 도구는 HTTP/HTML 범위이며 계정별 쿠폰 사용, Google 색인, 내부 링크 전체 그래프, 실제 공유·분석 이벤트·라이선스를 보장하지 않는다.
 
-재검토 후보 생성: `npm run audit:coupon-review`. 결과는 `output/coupon-review-queue.json`. 최신 입력 후보 우선, 만료 기록 후순위로 정렬하고 출처·게시일·만료·최신 근거 누락을 표시한다. 생성 시각은 출처 검증 시각이 아니므로 checkedAt/nextReviewAt은 검토자가 근거를 확인하기 전 null이다. sourceFingerprint는 저장된 근거의 비교용이며 외부 원문 변경 감지 완료를 뜻하지 않는다.
+재검토 후보 생성: `npm run audit:coupon-review`. 결과는 `output/coupon-review-queue.json`. 최신 입력 후보 우선, 만료 기록 후순위로 정렬하고 출처·게시일·만료·최신 근거 누락을 표시한다. 생성 시각은 출처 검증 시각이 아니므로 checkedAt은 null이다. nextReviewAt은 최초 검토 기한(HIGH 1일/NORMAL 7일/LOW 30일)이며 재생성해도 기존 기한을 미루지 않는다. sourceFingerprint는 저장된 근거의 비교용이다.
+
+외부 출처 관찰: `npm run audit:coupon-sources`. 명시된 최신 후보의 출처만 병렬4/20초로 읽고 정적 본문 코드 언급과 본문 해시를 기록한다. 24시간 이내 checkpoint는 접근 실패까지 재사용해 같은 차단을 반복하지 않는다. 새 관찰이 필요한 경우 `node tools/review-coupon-sources.mjs`를 실행한다. 본문 변화는 검토 후보이며 자동 만료/발행으로 이어지지 않는다. 코드 언급은 계정 입력 성공을 뜻하지 않는다. 접근 실패 항목은 attemptedAt과 checkedAt을 분리한다. 글 단위 참고 링크는 코드별 출처로 자동 배정하지 않는다.
+
+오류 접수 원장: `data/operations/growth-issues.json`. OPEN → IN_REVIEW → RESOLVED 순서로 근거·대상·다음 조치를 기록하며 종료는 실제 수정/검증 증거가 있는 경우만 한다.
 
 ## 원장 계약
 

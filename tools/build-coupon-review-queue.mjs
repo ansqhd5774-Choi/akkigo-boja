@@ -2,6 +2,9 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const articles=JSON.parse(await readFile('data/game-period-articles.json','utf8'));
 const hubs=JSON.parse(await readFile('data/game-period-hubs.json','utf8'));
+const scheduledAt=new Date();
+const priorQueue=await readFile('output/coupon-review-queue.json','utf8').then(JSON.parse).catch(e=>{if(e.code==='ENOENT')return {items:[]};throw e;});
+const priorByKey=new Map(priorQueue.items.map(row=>[row.key,row]));
 const queue=[];const seen=new Set();
 for(const model of [...articles,...Object.values(hubs)]) for(const row of model.records||[]){
  const key=model.articleKey+'::'+row.code;if(seen.has(key))continue;seen.add(key);
@@ -12,7 +15,9 @@ for(const model of [...articles,...Object.values(hubs)]) for(const row of model.
  if(!row.expiry||/미확인|불명|별도|공지/.test(row.expiry))reasons.push('EXPIRY_REVIEW');
  if(row.latest&&!row.latestEvidence)reasons.push('LATEST_EVIDENCE_REVIEW');
  const expired=/만료|종료/.test(row.statusLabel||'');
- queue.push({key,articleKey:model.articleKey,title:model.title,code:row.code,sourcePublishedAt:row.sourcePublishedAt||null,expiry:row.expiry||null,sources,statusLabel:row.statusLabel||null,priority:row.latest?'HIGH':expired?'LOW':'NORMAL',reasons,status:'REVIEW_PENDING',checkedAt:null,nextReviewAt:null,sourceFingerprint:createHash('sha256').update(JSON.stringify({sources,expiry:row.expiry,status:row.statusLabel,evidence:row.evidenceHTML||null})).digest('hex')});
+ const priority=row.latest?'HIGH':expired?'LOW':'NORMAL';
+ const prior=priorByKey.get(key);
+ queue.push({key,articleKey:model.articleKey,title:model.title,code:row.code,sourcePublishedAt:row.sourcePublishedAt||null,expiry:row.expiry||null,sources,statusLabel:row.statusLabel||null,priority,reasons,status:'REVIEW_PENDING',checkedAt:null,nextReviewAt:prior?.nextReviewAt||new Date(scheduledAt.getTime()+({HIGH:1,NORMAL:7,LOW:30}[priority])*86400000).toISOString(),reviewSchedulePolicy:'HIGH_1D_NORMAL_7D_LOW_30D_FIRST_REVIEW',sourceFingerprint:createHash('sha256').update(JSON.stringify({sources,expiry:row.expiry,status:row.statusLabel,evidence:row.evidenceHTML||null})).digest('hex')});
 }
 queue.sort((a,b)=>({HIGH:0,NORMAL:1,LOW:2}[a.priority]-{HIGH:0,NORMAL:1,LOW:2}[b.priority]));
 await mkdir('output',{recursive:true});

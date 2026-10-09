@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "scope": "coupon-growth-review",
+  "issues": [
+    {"id":"SOURCE-GAPS-501","target":"data/game-period-articles.json + data/game-period-hubs.json","reportedAt":"2026-10-10","status":"IN_REVIEW","summary":"501개 기록의 구조화된 출처 URL 부재. 글 단위 참고 링크는 있으나 코드별 근거 연결은 미완료.","evidence":"output/coupon-source-missing-context.json","nextAction":"코드별 원문 대조 후 URL 보완; 글 단위 링크 자동 배정 금지","resolvedAt":null},
+    {"id":"SOURCE-ACCESS-5","target":"latest coupon source review","reportedAt":"2026-10-10","status":"OPEN","summary":"20개 출처 중5개는 오류/챌린지/정적본문 부족. 쿠폰 만료로 판정하지 않음.","evidence":"output/coupon-source-observations.json","nextAction":"공식 렌더링 또는 다른 직접 근거 확보; 동일 접근 실패 즉시 반복 금지","resolvedAt":null},
+    {"id":"WARFRAME-PRIDE-EVIDENCE","target":"warframe-promo-codes-202610 / PRIDE2026","reportedAt":"2026-10-10","status":"IN_REVIEW","summary":"연결된 공식 사전 공지는 향후 배포와 2027년6월까지를 안내하지만 코드 문자열 자체는 본문에 없음. 제3자 목록은 2027-05-31 종료를 주장.","evidence":["https://www.warframe.com/ko/news/pride-2026","https://timesaver.gg/blog/warframe-promo-codes"],"nextAction":"실제 배포 SNS 원문과 종료 시각/시간대 확인; 공식 범위를 정확한 일자로 임의 변환하지 않음","resolvedAt":null}
+  ]
+}
