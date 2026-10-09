@@ -4,6 +4,7 @@
   const status=root.querySelector('[role="status"]');
   // These are published game guides, not proof of currently redeemable coupons.
   const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
+  const yieldToBrowser=()=>typeof scheduler!=='undefined'&&scheduler.yield?scheduler.yield():new Promise(resolve=>setTimeout(resolve,0));
 
   const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
   let heartCounts=new Map();let heartsReady=false;const heartLoad=(async()=>{try{const response=await fetch(heartEndpoint,{cache:'no-store',signal:AbortSignal.timeout(8000)});if(response.ok){heartCounts=new Map((await response.json()).hearts.map(row=>[row.gameId||row.brand,row.count]));heartsReady=true;}}catch{}})();
@@ -66,12 +67,13 @@
       const category=section.dataset.ncpHomeCategory,game=category==='게임',items=[],seen=new Set();
       try{
       const feedEntries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150&orderby=updated',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
-      const entries=feedEntries.filter(entry=>!game||guideCodeCount(entry)>0);
-      for(const entry of [...entries].sort((a,b)=>(Date.parse(b.updated?.$t||b.published?.$t)||0)-(Date.parse(a.updated?.$t||a.published?.$t)||0))){
+      for(const entry of [...feedEntries].sort((a,b)=>(Date.parse(b.updated?.$t||b.published?.$t)||0)-(Date.parse(a.updated?.$t||a.published?.$t)||0))){
+        await yieldToBrowser();
         if(!entry.category?.some(label=>label.term===category))continue;
+        const count=guideCodeCount(entry);if(game&&count===0)continue;
         const key=game?window.ncpResolveGame(entry).id:entry.id?.$t;
         if(seen.has(key))continue;
-        const item=game?card(entry,true,guideCodeCount(entry)):card(entry,false,guideCodeCount(entry));
+        const item=card(entry,game,count);
         if(item){items.push(item);seen.add(key);}
       }
       section.querySelector('h2').setAttribute('title','최근 갱신순');
