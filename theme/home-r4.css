@@ -123,3 +123,11 @@
 @media(max-width:600px){#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-cover{aspect-ratio:1;height:auto}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-card-body{padding:7px 5px}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) h3{font-size:11px}}
 .ncp-r4 .ncp-r4-logo{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;white-space:nowrap;font-size:24px;line-height:1.2;letter-spacing:-.6px}.ncp-r4 .ncp-r4-brand-icon{display:block;width:32px;height:32px;flex:0 0 32px;border-radius:8px;object-fit:contain}
 @media(max-width:600px){.ncp-r4 .ncp-r4-logo{font-size:20px}}
+
+/* Company logos and names share the same placement on home and category pages. */
+#ncp-home-r4 .ncp-brand-visual,#ncp-game-hub .ncp-brand-visual{position:relative;aspect-ratio:1;background:#fff;overflow:hidden}
+#ncp-home-r4 .ncp-brand-visual .ncp-game-cover-link,#ncp-game-hub .ncp-brand-visual .ncp-game-icon-wrap{display:block;width:100%;height:100%;aspect-ratio:1;position:relative;overflow:hidden;background:#fff}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-cover,#ncp-game-hub .ncp-brand-visual .ncp-game-icon{width:100%;height:100%;aspect-ratio:1;object-fit:contain;transform:translateY(var(--ncp-logo-shift,0%));background:#fff}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body{position:static;flex:0;padding:0}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-brand-visual .ncp-game-name{position:absolute;top:auto;bottom:8px;left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:calc(100% - 16px);margin:0;padding:5px 7px;font-size:14px;line-height:1.35;font-weight:600;border-radius:7px;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);text-align:center;box-shadow:none;-webkit-line-clamp:2}
+@media(max-width:600px){#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-brand-visual .ncp-game-name{bottom:4px;font-size:10px;max-width:calc(100% - 6px);padding:3px}}

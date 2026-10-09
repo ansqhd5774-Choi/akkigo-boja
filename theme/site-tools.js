@@ -1,5 +1,16 @@
 // Shared helpers use safe text nodes; feed HTML never enters the live page.
 (function(){
+  // Shared company identity for home and category cards.
+  const brandLogos={"/logos/tripcom-representative.png":"트립닷컴","/logos/dominos-representative.png":"도미노피자","/logos/hostinger-representative.png":"Hostinger","/logos/spaceship-representative.png":"Spaceship","/logos/namecheap-representative.png":"Namecheap","/logos/cafe24-representative.png":"카페24","/logos/dothome-representative.png":"닷홈","/logos/whois-representative.png":"후이즈","/logos/hostingkr-representative.png":"호스팅케이알","/logos/geniezip-representative.png":"지니집","/logos/nutrione-representative.png":"뉴트리원","/logos/angukhealth-representative.png":"안국건강","/logos/denps-representative.png":"덴프스","/logos/ckdhcmall-representative.png":"종근당건강몰","/logos/esthermall-representative.png":"에스더몰","/logos/haiip-representative.png":"하이아이피","/logos/coolip-representative.png":"쿨아이피","/logos/momoip-representative.png":"모모아이피","/logos/hackers-representative.png":"해커스공무원","/logos/fastcampus-representative.png":"패스트캠퍼스","/logos/gabia-representative.png":"가비아","/logos/iporter-representative.png":"아이포터","/logos/nygirlz-representative.png":"뉴욕걸즈","/logos/malltail-representative.png":"몰테일","/logos/jungkwanjang-representative.png":"정관장","/logos/lactiv-representative.png":"락티브","/logos/doctorlean-representative.png":"닥터린"};
+  window.ncpResolveBrand=function(entry){
+    const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+    const image=doc.querySelector('img');
+    const src=image?.getAttribute('src')||entry.media$thumbnail?.url||'';
+    let path='';try{path=new URL(src,location.href).pathname;}catch{}
+    const official=brandLogos[path];
+    const name=official||image?.getAttribute('alt')?.match(/^(.+?) 공식 대표 로고$/)?.[1]||String(entry.title?.$t||'').split(/\s*(?:할인|쿠폰|프로모션|도메인|\(|\|)/)[0].trim();
+    return {name,logoShift:official?(path.includes('/gabia-')?'33.4%':'24.61%'):null};
+  };
   const worker='https://akkigo-boja.ansqhd5774.workers.dev';
   const timeout=ms=>AbortSignal.timeout(ms);
   window.ncpFeed=function(category){

@@ -19,8 +19,9 @@
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
-    const identity=game?window.ncpResolveGame(entry):null;const name=game?identity.name:entry.title.$t.split(/\s*(?:할인쿠폰|할인코드|쿠폰|프로모션|\(|\|)/)[0].trim()||entry.title.$t;
-    const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual';
+    const identity=game?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
+    const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
+    if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
     if(game&&count>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';

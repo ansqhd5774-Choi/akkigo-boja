@@ -2824,6 +2824,14 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 @media(max-width:600px){#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-cover{aspect-ratio:1;height:auto}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-card-body{padding:7px 5px}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) h3{font-size:11px}}
 .ncp-r4 .ncp-r4-logo{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;white-space:nowrap;font-size:24px;line-height:1.2;letter-spacing:-.6px}.ncp-r4 .ncp-r4-brand-icon{display:block;width:32px;height:32px;flex:0 0 32px;border-radius:8px;object-fit:contain}
 @media(max-width:600px){.ncp-r4 .ncp-r4-logo{font-size:20px}}
+
+/* Company logos and names share the same placement on home and category pages. */
+#ncp-home-r4 .ncp-brand-visual,#ncp-game-hub .ncp-brand-visual{position:relative;aspect-ratio:1;background:#fff;overflow:hidden}
+#ncp-home-r4 .ncp-brand-visual .ncp-game-cover-link,#ncp-game-hub .ncp-brand-visual .ncp-game-icon-wrap{display:block;width:100%;height:100%;aspect-ratio:1;position:relative;overflow:hidden;background:#fff}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-cover,#ncp-game-hub .ncp-brand-visual .ncp-game-icon{width:100%;height:100%;aspect-ratio:1;object-fit:contain;transform:translateY(var(--ncp-logo-shift,0%));background:#fff}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body{position:static;flex:0;padding:0}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-brand-visual .ncp-game-name{position:absolute;top:auto;bottom:8px;left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:calc(100% - 16px);margin:0;padding:5px 7px;font-size:14px;line-height:1.35;font-weight:600;border-radius:7px;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);text-align:center;box-shadow:none;-webkit-line-clamp:2}
+@media(max-width:600px){#ncp-home-r4 .ncp-brand-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-brand-visual .ncp-game-name{bottom:4px;font-size:10px;max-width:calc(100% - 6px);padding:3px}}
 /* Keep feedback inside the button without changing coupon row height. */
 [data-ncp-copy][data-ncp-copied='true']{background:#087f5b!important;color:#fff!important;border-color:#087f5b!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
 [data-ncp-copy][data-ncp-copy-error='true']{background:#b42318!important;color:#fff!important}
@@ -4406,6 +4414,17 @@ SOFTWARE.
 window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-gamepad-2\" viewBox=\"0 0 24 24\"><path d=\"M6 11h4M8 9v4M15 12h.01M18 10h.01M17.32 5H6.68a4 4 0 0 0-3.978 3.59q-.008.077-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258q-.01-.075-.017-.151A4 4 0 0 0 17.32 5\"/></svg>","smartphone":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-smartphone\" viewBox=\"0 0 24 24\"><rect width=\"14\" height=\"20\" x=\"5\" y=\"2\" rx=\"2\" ry=\"2\"/><path d=\"M12 18h.01\"/></svg>","monitor":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-monitor\" viewBox=\"0 0 24 24\"><rect width=\"20\" height=\"14\" x=\"2\" y=\"3\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/></svg>","plane":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-plane\" viewBox=\"0 0 24 24\"><path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2\"/></svg>","heart":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-heart\" viewBox=\"0 0 24 24\"><path d=\"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5\"/></svg>","shield":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-shield\" viewBox=\"0 0 24 24\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/></svg>","graduation-cap":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-graduation-cap\" viewBox=\"0 0 24 24\"><path d=\"M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6\"/><path d=\"M6 12.5V16a6 3 0 0 0 12 0v-3.5\"/></svg>","chevron-left":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-chevron-left\" viewBox=\"0 0 24 24\"><path d=\"m15 18-6-6 6-6\"/></svg>","chevron-right":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-chevron-right\" viewBox=\"0 0 24 24\"><path d=\"m9 18 6-6-6-6\"/></svg>","search":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-search\" viewBox=\"0 0 24 24\"><path d=\"m21 21-4.34-4.34\"/><circle cx=\"11\" cy=\"11\" r=\"8\"/></svg>","copy":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-copy\" viewBox=\"0 0 24 24\"><rect width=\"14\" height=\"14\" x=\"8\" y=\"8\" rx=\"2\" ry=\"2\"/><path d=\"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2\"/></svg>","check":"<svg aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"lucide lucide-check\" viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>"};
 // Shared helpers use safe text nodes; feed HTML never enters the live page.
 (function(){
+  // Shared company identity for home and category cards.
+  const brandLogos={"/logos/tripcom-representative.png":"트립닷컴","/logos/dominos-representative.png":"도미노피자","/logos/hostinger-representative.png":"Hostinger","/logos/spaceship-representative.png":"Spaceship","/logos/namecheap-representative.png":"Namecheap","/logos/cafe24-representative.png":"카페24","/logos/dothome-representative.png":"닷홈","/logos/whois-representative.png":"후이즈","/logos/hostingkr-representative.png":"호스팅케이알","/logos/geniezip-representative.png":"지니집","/logos/nutrione-representative.png":"뉴트리원","/logos/angukhealth-representative.png":"안국건강","/logos/denps-representative.png":"덴프스","/logos/ckdhcmall-representative.png":"종근당건강몰","/logos/esthermall-representative.png":"에스더몰","/logos/haiip-representative.png":"하이아이피","/logos/coolip-representative.png":"쿨아이피","/logos/momoip-representative.png":"모모아이피","/logos/hackers-representative.png":"해커스공무원","/logos/fastcampus-representative.png":"패스트캠퍼스","/logos/gabia-representative.png":"가비아","/logos/iporter-representative.png":"아이포터","/logos/nygirlz-representative.png":"뉴욕걸즈","/logos/malltail-representative.png":"몰테일","/logos/jungkwanjang-representative.png":"정관장","/logos/lactiv-representative.png":"락티브","/logos/doctorlean-representative.png":"닥터린"};
+  window.ncpResolveBrand=function(entry){
+    const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+    const image=doc.querySelector('img');
+    const src=image?.getAttribute('src')||entry.media$thumbnail?.url||'';
+    let path='';try{path=new URL(src,location.href).pathname;}catch{}
+    const official=brandLogos[path];
+    const name=official||image?.getAttribute('alt')?.match(/^(.+?) 공식 대표 로고$/)?.[1]||String(entry.title?.$t||'').split(/\s*(?:할인|쿠폰|프로모션|도메인|\(|\|)/)[0].trim();
+    return {name,logoShift:official?(path.includes('/gabia-')?'33.4%':'24.61%'):null};
+  };
   const worker='https://akkigo-boja.ansqhd5774.workers.dev';
   const timeout=ms=>AbortSignal.timeout(ms);
   window.ncpFeed=function(category){
@@ -4549,10 +4568,10 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     const entries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
     const seen=new Set();
     for(const entry of entries){
-      const identity=category==='게임'?window.ncpResolveGame(entry):null;const name=identity?identity.name:entry.title?.$t;
+      const identity=category==='게임'?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
       if(!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
-      const card=document.createElement('a');card.className='ncp-game-card'+(category==='게임'?' ncp-game-visual':'');card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
+      const card=document.createElement('a');card.className='ncp-game-card ncp-game-visual'+(category==='게임'?'':' ncp-brand-visual');if(category!=='게임'&&identity.logoShift)card.style.setProperty('--ncp-logo-shift',identity.logoShift);card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
@@ -4585,7 +4604,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
         wrap.append(title);
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
         card.append(wrap);
-      }else card.append(wrap,title,date);
+      }else{wrap.append(title);card.append(wrap);}
       if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,identity.id);grid.append(shell);}else grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
@@ -4614,8 +4633,9 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
-    const identity=game?window.ncpResolveGame(entry):null;const name=game?identity.name:entry.title.$t.split(/\s*(?:할인쿠폰|할인코드|쿠폰|프로모션|\(|\|)/)[0].trim()||entry.title.$t;
-    const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual';
+    const identity=game?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
+    const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
+    if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
     if(game&&count>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';

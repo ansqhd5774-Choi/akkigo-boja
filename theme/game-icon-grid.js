@@ -20,10 +20,10 @@
     const entries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
     const seen=new Set();
     for(const entry of entries){
-      const identity=category==='게임'?window.ncpResolveGame(entry):null;const name=identity?identity.name:entry.title?.$t;
+      const identity=category==='게임'?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
       const url=(entry.link||[]).find(x=>x.rel==='alternate')?.href;
       if(!name||!url||seen.has(name)||new URL(url,location.href).origin!==location.origin)continue;
-      const card=document.createElement('a');card.className='ncp-game-card'+(category==='게임'?' ncp-game-visual':'');card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
+      const card=document.createElement('a');card.className='ncp-game-card ncp-game-visual'+(category==='게임'?'':' ncp-brand-visual');if(category!=='게임'&&identity.logoShift)card.style.setProperty('--ncp-logo-shift',identity.logoShift);card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
@@ -56,7 +56,7 @@
         wrap.append(title);
         if(codeCount>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
         card.append(wrap);
-      }else card.append(wrap,title,date);
+      }else{wrap.append(title);card.append(wrap);}
       if(category==='게임'){const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,identity.id);grid.append(shell);}else grid.append(card);
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
