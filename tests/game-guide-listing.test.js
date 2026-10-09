@@ -26,7 +26,9 @@ test('홈의 게임 목록은 LIVE Blogger feed를 카탈로그 날짜 검증에
   assert.match(home,/guideCodeCount\(entry\)/);
   assert.match(home,/data-ncp-copy=/);
   assert.doesNotMatch(home,/currentBrands|filter\(eligible\)|\/coupons\/catalog/);
-  assert.match(home,/card\(entry,true,guideCodeCount\(entry\)\)/);
+  assert.match(home,/const count=guideCodeCount\(entry\);if\(game&&count===0\)continue/);
+  assert.match(home,/card\(entry,game,count\)/);
+  assert.match(home,/await yieldToBrowser\(\)/);
   const found=[...fort.post.content.matchAll(/data-ncp-copy=["']([^"']+)["']/g)];
   assert.equal(new Set(found.map(m=>m[1])).size,25);
 });
