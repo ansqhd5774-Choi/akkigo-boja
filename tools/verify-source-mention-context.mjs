@@ -1,5 +1,6 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {observeDeclaredCode} from '../src/source-code-context.js';
 const review=JSON.parse(await readFile('data/operations/source-gap-review-20261010.json','utf8'));
 const path='data/operations/source-mention-context-20261010.json';
 const previous=await readFile(path,'utf8').then(JSON.parse).catch(e=>{if(e.code==='ENOENT')return {sources:[]};throw e;});
@@ -20,9 +21,9 @@ for(const url of urls){
   const safe=response.status===200&&!/captcha|just a moment|access denied|verify you are human/i.test(title);
   for(const item of items){
    const alias=Object.entries(aliases).find(([key])=>item.articleKey.startsWith(key))?.[1];
-   const escaped=item.code.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-   const boundary=new RegExp('(?<![A-Za-z0-9])'+escaped+'(?![A-Za-z0-9])','i');
-   if(safe&&alias?.test(title)&&contexts.some(text=>boundary.test(text)))result.codes.push({articleKey:item.articleKey,code:item.code,referenceType:new URL(url).hostname==='pokemongo.com'?'OFFICIAL_PAGE_CODE_MENTION':'THIRD_PARTY_CODE_MENTION'});
+   const declaration=observeDeclaredCode(body,item.code);
+   if(safe&&alias?.test(title)&&declaration.state==='EXACT_CODE_DECLARATION')result.codes.push({articleKey:item.articleKey,code:item.code,observedSpelling:declaration.observedSpelling,referenceType:new URL(url).hostname==='pokemongo.com'?'OFFICIAL_PAGE_CODE_MENTION':'THIRD_PARTY_CODE_MENTION'});
+   else if(safe&&alias?.test(title)&&declaration.state==='CASE_VARIANT_DECLARATION')(result.caseVariants??=[]).push({articleKey:item.articleKey,code:item.code,observedSpelling:declaration.observedSpelling});
   }
   result={...result,httpStatus:response.status,finalUrl:response.url,title:title.slice(0,220),bodyHash:createHash('sha256').update(body).digest('hex'),state:result.codes.length?'GAME_CONTEXT_AND_CODE_LIST_OBSERVED':'CONTEXT_NOT_ESTABLISHED'};
  }catch(e){result={...result,state:'ACCESS_UNVERIFIED',error:e.name};}

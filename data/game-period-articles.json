@@ -11622,19 +11622,19 @@
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
             "url": "https://www.pocketgamer.com/duck-survival/codes/",
-            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "referenceType": "THIRD_PARTY_CASE_VARIANT",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           },
           {
             "name": "gamestaunch.com · 제3자 코드 목록",
             "url": "https://gamestaunch.com/codes/duck-survival-codes/",
-            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "referenceType": "THIRD_PARTY_CASE_VARIANT",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>22해외판국내 미확인HEARDUCK</p>"
+        "evidenceHTML": "<p data-evidence-id=\"duck-case-variant\">제3자 원문 표기는 HearDuck 또는 hearduck입니다. 현재 기록 HEARDUCK과 대소문자가 달라 동일한 사용 가능 코드로 단정하지 않습니다. 원문의 사용 가능·만료 분류도 서로 달라 실제 계정 입력 확인 전까지 미확인으로 유지합니다.</p><p>22해외판국내 미확인HEARDUCK</p>"
       },
       {
         "code": "DUCK2M",
@@ -26444,24 +26444,29 @@
         "sourcePublishedAt": null,
         "expiry": "미확인",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [
+        "statusLabel": "코드 발급 근거 미확인",
+        "sources": [],
+        "evidenceHTML": "<p>이전 출처 연결에서 보상 설명의 Survivor Recruit Ticket을 쿠폰 코드 근거로 잘못 인식해 연결을 철회했습니다. SURVIVOR 기록은 보존하지만 실제 발급·사용 성공은 미확인입니다.</p><p>14AAYYY generic uncorrobo…미확인SURVIVOR</p>",
+        "withdrawnSourceAssociations": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
             "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
-            "sourcePublishedAt": null
+            "sourcePublishedAt": null,
+            "withdrawnAt": "2026-10-10",
+            "reason": "REWARD_DESCRIPTION_WORD_NOT_CODE_DECLARATION"
           },
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
             "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
-            "sourcePublishedAt": null
+            "sourcePublishedAt": null,
+            "withdrawnAt": "2026-10-10",
+            "reason": "REWARD_DESCRIPTION_WORD_NOT_CODE_DECLARATION"
           }
-        ],
-        "evidenceHTML": "<p>14AAYYY generic uncorrobo…미확인SURVIVOR</p>"
+        ]
       },
       {
         "code": "PLAGUE2024",

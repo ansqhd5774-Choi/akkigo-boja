@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:56:19.925Z",
+  "generatedAt": "2026-10-09T20:10:33.099Z",
   "scope": "ACCESS_LEDGER_NOT_COUPON_FACT_VERIFICATION",
   "policy": {
     "separateAccessClaimAndAccount": true,
@@ -10929,7 +10929,7 @@
         {
           "articleKey": "duck-survival-codes-202610",
           "code": "HEARDUCK",
-          "codeMentionExpected": true
+          "codeMentionExpected": false
         },
         {
           "articleKey": "duck-survival-codes-202610",
@@ -11150,7 +11150,7 @@
         {
           "articleKey": "duck-survival-codes-202610",
           "code": "HEARDUCK",
-          "codeMentionExpected": true
+          "codeMentionExpected": false
         },
         {
           "articleKey": "duck-survival-codes-202610",
@@ -16368,11 +16368,6 @@
           "articleKey": "last-asylum-plague-codes-202610",
           "code": "LAVD26",
           "codeMentionExpected": true
-        },
-        {
-          "articleKey": "last-asylum-plague-codes-202610",
-          "code": "SURVIVOR",
-          "codeMentionExpected": true
         }
       ],
       "nextReviewAt": "2026-10-16T18:36:11.355Z",
@@ -16475,11 +16470,6 @@
         {
           "articleKey": "last-asylum-plague-codes-202610",
           "code": "LADCEX1223",
-          "codeMentionExpected": true
-        },
-        {
-          "articleKey": "last-asylum-plague-codes-202610",
-          "code": "SURVIVOR",
           "codeMentionExpected": true
         }
       ],
