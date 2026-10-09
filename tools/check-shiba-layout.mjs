@@ -12,7 +12,7 @@ const copy=readFileSync('theme/coupon-copy.js','utf8');
 const check=`
 (async()=>{
  const failures=[],viewport=document.documentElement.clientWidth;
- const shown=n=>n.getBoundingClientRect().width>0;
+ const shown=n=>n.getBoundingClientRect().width>0&&!n.closest('.ncp-list-more:not([open])') || n.matches('.ncp-list-more')&&n.getBoundingClientRect().width>0;
  const checkVisible=article=>{
   if(document.documentElement.scrollWidth>viewport+1)failures.push('document-overflow');
   for(const s of article.querySelectorAll('section')){
@@ -45,7 +45,7 @@ const check=`
    const rows=list.querySelectorAll('.ncp-code-card'),more=list.querySelector(':scope>.ncp-list-more');
    if(rows.length>5){
     if(!more||more.open||list.querySelectorAll(':scope>.ncp-code-card').length!==5)failures.push('five-preview');
-    more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));if(!more.open)failures.push('disclosure-open');
+    more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));checkVisible(article);if(!more.open)failures.push('disclosure-open');
     if(shown(list)){
      const bottom=more.querySelector('summary').getBoundingClientRect(),last=rows[rows.length-1].getBoundingClientRect();
      if(bottom.top<last.bottom)failures.push('collapse-button-not-last');

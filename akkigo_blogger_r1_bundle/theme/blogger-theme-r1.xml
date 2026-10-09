@@ -2991,6 +2991,8 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-source{flex-wrap:nowrap}
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-expiry{max-width:240px;word-break:keep-all}
 }
+
+@media(min-width:601px){.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-more::details-content{display:contents}}
 ]]></b:skin>
 
     <b:template-skin>
