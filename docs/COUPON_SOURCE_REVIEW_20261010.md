@@ -60,3 +60,12 @@
 - output/coupon-high-priority-review.json:39건 상세 결과.
 - output/coupon-source-missing-context.json:501건 글 단위 링크 후보.
 - 24시간 resume 실행:20개 기존 checkpoint 재사용, 외부 재호출0.
+
+## 추가4건 의미 대조
+
+- PRIDE2026: 공식 Bluesky 원문에서 문자열과3개 보상,2027-05-31까지 확인. 종료 시각은 미공개. UTC 게시일2026-07-01/Asia-Seoul 화면2026-07-02 02:00. 원고에 보완.
+- PINKBEANATTACK: 공식 GM비니 공지를 실제 렌더링으로 확인. 동료 소환권300장,2026-10-14 23:59,계정당1회. 게임 입력AOS/PC,웹iOS/AOS/PC,계정 우편함. 원고에 보완.
+- QTCC 두 코드: 이용자 포럼의2025-12-31 23:59 ET 만료 이력과2026종합목록 활성 주장 충돌. 운영진 공지가 아니므로 확정 만료로 단정하지 않고 최신 후보에서 제외,전체280개 기록에 보존.
+- 원문: [공식 SNS](https://bsky.app/profile/warframe.com/post/3mplykfqiq32s),[공식 메이플 공지](https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440),[포럼 이용자 이력](https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment).
+- source-only285/285 PASS,공통 표현 검사42글 PASS. 기존2글 갱신 요청(existingOnly=true),공개 반영은 대기 상태.
+- 생성 도구의 후반 누락 모델 오류가 앞선 파일을 먼저 쓰는 문제를 확인해,입력 검증 완료 후 쓰기 및 대상 키2개 한정 생성 지원. 재현 회귀1건 PASS.

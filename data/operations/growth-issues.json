@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "scope": "coupon-growth-review",
   "issues": [
-    {"id":"SOURCE-GAPS-501","target":"data/game-period-articles.json + data/game-period-hubs.json","reportedAt":"2026-10-10","status":"IN_REVIEW","summary":"501개 기록의 구조화된 출처 URL 부재. 글 단위 참고 링크는 있으나 코드별 근거 연결은 미완료.","evidence":"output/coupon-source-missing-context.json","nextAction":"코드별 원문 대조 후 URL 보완; 글 단위 링크 자동 배정 금지","resolvedAt":null},
-    {"id":"SOURCE-ACCESS-5","target":"latest coupon source review","reportedAt":"2026-10-10","status":"OPEN","summary":"20개 출처 중5개는 오류/챌린지/정적본문 부족. 쿠폰 만료로 판정하지 않음.","evidence":"output/coupon-source-observations.json","nextAction":"공식 렌더링 또는 다른 직접 근거 확보; 동일 접근 실패 즉시 반복 금지","resolvedAt":null},
-    {"id":"WARFRAME-PRIDE-EVIDENCE","target":"warframe-promo-codes-202610 / PRIDE2026","reportedAt":"2026-10-10","status":"IN_REVIEW","summary":"연결된 공식 사전 공지는 향후 배포와 2027년6월까지를 안내하지만 코드 문자열 자체는 본문에 없음. 제3자 목록은 2027-05-31 종료를 주장.","evidence":["https://www.warframe.com/ko/news/pride-2026","https://timesaver.gg/blog/warframe-promo-codes"],"nextAction":"실제 배포 SNS 원문과 종료 시각/시간대 확인; 공식 범위를 정확한 일자로 임의 변환하지 않음","resolvedAt":null}
+    {
+      "id": "SOURCE-GAPS-501",
+      "target": "data/game-period-articles.json + data/game-period-hubs.json",
+      "reportedAt": "2026-10-10",
+      "status": "IN_REVIEW",
+      "summary": "501개 기록의 구조화된 출처 URL 부재. 글 단위 참고 링크는 있으나 코드별 근거 연결은 미완료.",
+      "evidence": "output/coupon-source-missing-context.json",
+      "nextAction": "코드별 원문 대조 후 URL 보완; 글 단위 링크 자동 배정 금지",
+      "resolvedAt": null
+    },
+    {
+      "id": "SOURCE-ACCESS-5",
+      "target": "latest coupon source review",
+      "reportedAt": "2026-10-10",
+      "status": "OPEN",
+      "summary": "20개 출처 중5개는 오류/챌린지/정적본문 부족. 쿠폰 만료로 판정하지 않음.",
+      "evidence": "output/coupon-source-observations.json",
+      "nextAction": "공식 렌더링 또는 다른 직접 근거 확보; 동일 접근 실패 즉시 반복 금지",
+      "resolvedAt": null
+    },
+    {
+      "id": "WARFRAME-PRIDE-EVIDENCE",
+      "target": "warframe-promo-codes-202610 / PRIDE2026",
+      "reportedAt": "2026-10-10",
+      "status": "IN_REVIEW",
+      "summary": "공식 PlayWarframe 실제 배포 원문에서 PRIDE2026,3개 보상,2027-05-31까지를 확인. 원고 보완 완료, 기존 글 공개 갱신 대기.",
+      "evidence": [
+        "https://www.warframe.com/ko/news/pride-2026",
+        "https://timesaver.gg/blog/warframe-promo-codes",
+        "https://bsky.app/profile/warframe.com/post/3mplykfqiq32s"
+      ],
+      "nextAction": "기존 Blogger 글 갱신 후 공개 원문 대조",
+      "resolvedAt": null
+    },
+    {
+      "id": "WARFRAME-QTCC-CONFLICT",
+      "target": "warframe-promo-codes-202610 / QTCC5KREWARD + QTCC10KBUNDLE",
+      "reportedAt": "2026-10-10",
+      "status": "IN_REVIEW",
+      "summary": "공식 도메인 이용자 포럼의2025년 만료 이력과2026년 목록의 활성 주장 충돌. 운영진 확인 아님. 현재 사용 미확인, 최신 후보에서 제외하고 역사 보존.",
+      "evidence": [
+        "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+        "https://timesaver.gg/blog/warframe-promo-codes"
+      ],
+      "nextAction": "기존 글 갱신과 재발급/실사용 증거 추적",
+      "resolvedAt": null
+    }
   ]
 }

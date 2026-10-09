@@ -6540,9 +6540,9 @@
       {
         "code": "PINKBEANATTACK",
         "sourcePublishedAt": "2026-09-03",
-        "expiry": "2026.10.14",
+        "expiry": "2026-10-14 23:59 (한국 공식 안내)",
         "latest": true,
-        "statusLabel": "공식 기한 내 · 사용 미확인",
+        "statusLabel": "공식 기한 안내 · 계정 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -6555,7 +6555,7 @@
             "sourcePublishedAt": "2026-09-03"
           }
         ],
-        "evidenceHTML": "<p>1공식 26.09.032026.10.14PINKBEANATTACK</p>",
+        "evidenceHTML": "<p>1공식 26.09.032026.10.14PINKBEANATTACK</p><p>공식 GM비니 공지에서 동료 소환권 300장, 2026년 10월 14일 오후 11시 59분까지, 계정당 1회를 확인했습니다. 게임 내 쿠폰 입력은 AOS·PC, 공식 웹 쿠폰 페이지는 iOS·AOS·PC를 지원합니다. 원하는 캐릭터인지 확인하고 계정 우편함에서 수령하세요. 실제 계정 수령은 미검증입니다.</p>",
         "latestEvidence": "기존 넥슨 공식 공지: 2026-09-03 게시, 2026-10-14 23:59 KST까지. 실제 계정 사용 성공 미확인."
       },
       {
@@ -27803,7 +27803,7 @@
     "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"워프레임 쿠폰 안내\"><div class=\"ncp-feed-stat\"><span>최근 추천 코드</span><strong>8개</strong></div><div class=\"ncp-feed-stat\"><span>쿠폰 원문 기록</span><strong>280개</strong></div><div class=\"ncp-feed-stat\"><span>게시일 확보</span><strong>7개</strong></div></div>",
     "featuredHTML": "<figure data-ncp-featured-image=\"warframe-promo-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://apps.apple.com/us/app/warframe/id1520001008\" xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"https://apps.apple.com/us/app/warframe/id1520001008\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/14/ab/de14abb7-218c-027e-da7b-e2ea25ab0b71/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/640x640bb.webp\" width=\"512\" height=\"512\" alt=\"워프레임 공식 앱 아이콘\" style=\"display:block;width:512px;height:auto;max-width:100%;aspect-ratio:1/1;object-fit:contain\" loading=\"eager\" decoding=\"async\"/></a><figcaption>Digital Extremes 공식 App Store 워프레임 앱 아이콘</figcaption></figure>",
     "noticeHTML": "<p>2026년 10월 9일 기준으로 전세계 공식 Warframe 페이지, 2026년 10월 영문 코드 조사, Reddit 원문 및 커뮤니티·크리에이터 글리프 목록을 대조했습니다. 코드 280개는 서로 다른 문자열을 뜻하며 게임 내 계정 적용 성공은 확인되지 않았습니다.</p><p>쿠폰을 찾은 날짜는 코드 발행 날짜가 아닙니다. 원문 게시물 날짜를 확인한 7개만 날짜순으로 기록했습니다. 종합 목록이 2026년 10월 3일에 게시돼도 각 크리에이터 코드의 원래 게시일은 알려지지 않았으므로 게시일 미확인으로 두었습니다.</p>",
-    "guideHTML": "<section class=\"ncp-coupon-guide\"><h2>쿠폰 입력 방법</h2><p>계정에 로그인 후 <a href=\"https://www.warframe.com/ko/promocode\" target=\"_blank\" rel=\"noopener noreferrer\">워프레임 공식 프로모션 코드 입력 페이지</a>에서 코드를 입력하세요. 게임 내 상점 → 코드 교환에서도 입력할 수 있습니다. 코드 보상은 계정당 1회인 경우가 많습니다.</p><h2>쿠폰이 안 될 때</h2><p>이미 입력한 코드, 만료 또는 계정·플랫폼 제한, 오타 여부를 확인하세요. 계정 전용 쿠폰이나 제휴사 개별 코드의 사용 성공은 보장되지 않습니다. <a href=\"https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes\">공식 고객지원</a>을 참고하세요.</p><h2>최신 행사와 글리프</h2><p>공식 2026년 10월 자선 이벤트는 <strong>CARRYTHEFIRE</strong>를 영구 제공하는 무료 글리프 코드로 안내합니다. 기존 Pride 2026 코드는 공식 공지상 2027년 6월까지 사용 가능한 것으로 설명합니다. 크리에이터 코드는 글리프 등 꾸미기 아이템이며 무료 플래티넘을 약속하지 않습니다.</p></section>",
+    "guideHTML": "<section class=\"ncp-coupon-guide\"><h2>쿠폰 입력 방법</h2><p>계정에 로그인 후 <a href=\"https://www.warframe.com/ko/promocode\" target=\"_blank\" rel=\"noopener noreferrer\">워프레임 공식 프로모션 코드 입력 페이지</a>에서 코드를 입력하세요. 게임 내 상점 → 코드 교환에서도 입력할 수 있습니다. 코드 보상은 계정당 1회인 경우가 많습니다.</p><h2>쿠폰이 안 될 때</h2><p>이미 입력한 코드, 만료 또는 계정·플랫폼 제한, 오타 여부를 확인하세요. 계정 전용 쿠폰이나 제휴사 개별 코드의 사용 성공은 보장되지 않습니다. <a href=\"https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes\">공식 고객지원</a>을 참고하세요.</p><h2>최신 행사와 글리프</h2><p>공식 2026년 10월 자선 이벤트는 <strong>CARRYTHEFIRE</strong>를 영구 제공하는 무료 글리프 코드로 안내합니다. Pride 2026은 실제 배포 SNS 원문의 2027년 5월 31일까지 안내를 우선합니다. 종료 시각은 미공개입니다. 크리에이터 코드는 글리프 등 꾸미기 아이템이며 무료 플래티넘을 약속하지 않습니다.</p></section><section class=\"ncp-coupon-guide\"><h2>배포 근거 재확인</h2><p>PRIDE2026은 <a href=\"https://bsky.app/profile/warframe.com/post/3mplykfqiq32s\">PlayWarframe 공식 배포 글</a>에서 2027년 5월 31일까지라고 안내합니다. QTCC5KREWARD와 QTCC10KBUNDLE은 해외 목록의 현재 활성 주장과 Warframe 포럼 이용자 변경 이력의 2025년 만료 기록이 충돌해 현재 사용 여부를 미확인으로 표시합니다.</p></section>",
     "archiveHTML": "<section><h2>워프레임 2026년 10월 이벤트</h2><p>공식 <a href=\"https://www.warframe.com/ko/qtcc\">Princess Margaret Cancer Foundation 캠페인</a>에서는 10월 1일부터 31일까지 방송 시청 드롭과 게임 내 상점에서 1크레딧으로 교환하는 과거 Conquera 장식품을 별도로 제공합니다. Twitch 보상은 별도 계정 연동·시청 조건이 있습니다.</p><h2>해외 쿠폰 조사 출처</h2><p><a href=\"https://www.warframe.com/ko/qtcc\">Warframe 2026 공식 자선 행사(10월 1일)</a> · <a href=\"https://www.warframe.com/ko/news/pride-2026\">Warframe 공식 Pride 2026(5월 28일)</a> · <a href=\"https://www.reddit.com/r/Warframe/comments/1wvd8fb/looks_like_a_limitedtime_code_redeem_carrythefire/\">Reddit 10월 1일 CARRYTHEFIRE 글</a> · <a href=\"https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/\">Reddit 2025년 10월 2일 QTCC 글</a> · <a href=\"https://timesaver.gg/blog/warframe-promo-codes\">해외 크리에이터·종합 코드 자료(10월 3일 게시)</a> · <a href=\"https://www.pockettactics.com/warframe/codes\">Pocket Tactics 10월 7일 확인</a>.</p><h2>날짜와 보상 확인 기준</h2><p>공식 제공 안내, 코드 발견, 제3자 활성 보고, 실제 계정 수령 성공은 서로 다릅니다. 처음 배포된 날짜가 확실하지 않은 코드는 날짜를 지어내지 않았습니다. 만료 보고 코드는 과거 기록으로 남기며 스토어가 아닌 외부 사이트에서 개인 계정 정보를 요구한다면 입력하지 마세요.</p></section>",
     "records": [
       {
@@ -27824,17 +27824,24 @@
       },
       {
         "code": "PRIDE2026",
-        "sourcePublishedAt": null,
-        "expiry": "2027년 6월까지",
+        "sourcePublishedAt": "2026-07-01",
+        "expiry": "2027-05-31 (공식 SNS 안내, 종료 시각 미공개)",
         "latest": true,
-        "latestEvidence": "https://www.warframe.com/ko/news/pride-2026",
-        "statusLabel": "2026년 10월 안내 · 실사용 미확인",
-        "evidenceHTML": "<p>분류: 이벤트 프로모션 · 보상: Pride Lotus Symbol 글리프·전시 장식. 공식 5월 28일 글에서 7월 1일 발급 예정과 2027년 6월까지의 유효기간을 안내했습니다. 실제 배포 SNS 글 원문 날짜는 따로 확인하지 못했습니다.</p>",
+        "latestEvidence": "https://bsky.app/profile/warframe.com/post/3mplykfqiq32s",
+        "statusLabel": "공식 코드 안내 · 계정 미확인",
+        "evidenceHTML": "<p>보상: Pride Lotus Symbol 글리프, Pride Frame Display, Pride Mesa Prime and Kaithe Display. 공식 PlayWarframe 배포 글에서 코드와 2027년 5월 31일까지의 기한을 확인했습니다. 종료 시각과 계정 입력 성공은 미확인입니다. 원문 게시일은 UTC 2026-07-01, 한국 표시 2026-07-02 오전 2시입니다. 사전 공지의 2027년 6월까지 표현보다 실제 배포 글의 구체 날짜를 우선합니다.</p>",
         "sources": [
           {
             "name": "코드 원문/교차 자료",
             "url": "https://www.warframe.com/ko/news/pride-2026",
             "sourcePublishedAt": "2026-05-28"
+          },
+          {
+            "name": "PlayWarframe 공식 Bluesky 코드 배포 원문",
+            "url": "https://bsky.app/profile/warframe.com/post/3mplykfqiq32s",
+            "sourcePublishedAt": "2026-07-01",
+            "sourceTimezone": "UTC",
+            "displayedPublishedAtKst": "2026-07-02 02:00"
           }
         ]
       },
@@ -27905,34 +27912,56 @@
       {
         "code": "QTCC5KREWARD",
         "sourcePublishedAt": "2025-10-02",
-        "expiry": "종료일 미확인",
-        "latest": true,
-        "latestEvidence": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
-        "statusLabel": "2026년 10월 안내 · 실사용 미확인",
-        "evidenceHTML": "<p>분류: 이벤트 프로모션 · 보상: Conquera 글리프 IX · 글리프 디스플레이. 최신 제3자 목록이나 과거 Reddit 기록에서 확인했으나 계정 적용 성공은 확인하지 않았습니다.</p>",
+        "expiry": "2025-12-31 23:59 ET 만료 보고 · 2026 활성 주장과 충돌",
+        "latest": false,
+        "latestEvidence": null,
+        "statusLabel": "근거 충돌 · 현재 사용 미확인",
+        "evidenceHTML": "<p>분류: 이벤트 프로모션 · 보상: Conquera 글리프 IX · 글리프 디스플레이. 최신 제3자 목록이나 과거 Reddit 기록에서 확인했으나 계정 적용 성공은 확인하지 않았습니다.</p><p>Warframe 공식 도메인의 이용자 포럼 변경 이력은 2025년 12월 31일 오후 11시 59분 ET 종료를 기록합니다. 이는 운영진 공지가 아닌 커뮤니티 기록이며, 2026년 해외 목록의 활성 주장과 충돌합니다. 실제 계정 적용과 재발급 여부는 미확인으로 남겼습니다.</p>",
         "sources": [
           {
             "name": "코드 원문/교차 자료",
             "url": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
             "sourcePublishedAt": "2025-10-02"
+          },
+          {
+            "name": "Warframe 이용자 포럼 만료 변경 이력(운영진 공지 아님)",
+            "url": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "2026년 종합 목록의 활성 주장(충돌 자료)",
+            "url": "https://timesaver.gg/blog/warframe-promo-codes",
+            "sourcePublishedAt": null
           }
-        ]
+        ],
+        "conflict": true
       },
       {
         "code": "QTCC10KBUNDLE",
         "sourcePublishedAt": "2025-10-02",
-        "expiry": "종료일 미확인",
-        "latest": true,
-        "latestEvidence": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
-        "statusLabel": "2026년 10월 안내 · 실사용 미확인",
-        "evidenceHTML": "<p>분류: 이벤트 프로모션 · 보상: Conquera 글리프 VIII · Bird 3 Floof. 최신 제3자 목록이나 과거 Reddit 기록에서 확인했으나 계정 적용 성공은 확인하지 않았습니다.</p>",
+        "expiry": "2025-12-31 23:59 ET 만료 보고 · 2026 활성 주장과 충돌",
+        "latest": false,
+        "latestEvidence": null,
+        "statusLabel": "근거 충돌 · 현재 사용 미확인",
+        "evidenceHTML": "<p>분류: 이벤트 프로모션 · 보상: Conquera 글리프 VIII · Bird 3 Floof. 최신 제3자 목록이나 과거 Reddit 기록에서 확인했으나 계정 적용 성공은 확인하지 않았습니다.</p><p>Warframe 공식 도메인의 이용자 포럼 변경 이력은 2025년 12월 31일 오후 11시 59분 ET 종료를 기록합니다. 이는 운영진 공지가 아닌 커뮤니티 기록이며, 2026년 해외 목록의 활성 주장과 충돌합니다. 실제 계정 적용과 재발급 여부는 미확인으로 남겼습니다.</p>",
         "sources": [
           {
             "name": "코드 원문/교차 자료",
             "url": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
             "sourcePublishedAt": "2025-10-02"
+          },
+          {
+            "name": "Warframe 이용자 포럼 만료 변경 이력(운영진 공지 아님)",
+            "url": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "2026년 종합 목록의 활성 주장(충돌 자료)",
+            "url": "https://timesaver.gg/blog/warframe-promo-codes",
+            "sourcePublishedAt": null
           }
-        ]
+        ],
+        "conflict": true
       },
       {
         "code": "WarframeWiki",
