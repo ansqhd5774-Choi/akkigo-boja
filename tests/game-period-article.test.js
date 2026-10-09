@@ -30,6 +30,7 @@ test('all registered articles and 3 hubs share the generator; manual date-box ed
  assert.ok(all.length>=36);
  assert.ok(all.reduce((n,a)=>n+a.source.gamePeriodModel.records.length,0)>=1427);
  for(const a of all){
+  if(a.articleKey==='last-echo-codes-202610') { const expected=renderGamePeriodArticle(a.source.gamePeriodModel); const actual=a.post.content; let i=0; while(i<Math.min(expected.length,actual.length)&&expected[i]===actual[i])i++; console.log('LAST_ECHO_DIFF',JSON.stringify({index:i,expectedLength:expected.length,actualLength:actual.length,expected:expected.slice(Math.max(0,i-150),i+500),actual:actual.slice(Math.max(0,i-150),i+500)})); }
   assert.equal(validateGamePeriodArticle(a),true);
   assert.equal(validatePresentationDOM(a),true);
   assert.throws(()=>validateGamePeriodArticle({...a,post:{...a.post,content:a.post.content+'<section><h2>8월 31일</h2></section>'}}),/GENERATED_CONTENT_DRIFT/);
