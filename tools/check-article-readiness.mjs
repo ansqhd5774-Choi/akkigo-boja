@@ -23,6 +23,7 @@ export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new P
         if(response.status===401 || response.status===403)throw Error('PREFLIGHT_AUTH_FAILED');
         const result=await response.json().catch(()=>({}));
         if(response.ok && result.approved===true && result.articleKey===local.articleKey && result.postSha256===local.postSha256){matching++;continue;}
+        if(response.ok)console.log('ARTICLE_FINGERPRINT_DIAGNOSTIC',JSON.stringify({articleKey:local.articleKey,remoteApproved:result.approved,localHash:local.postSha256,remoteHash:result.postSha256||null}));
         detail=response.ok?'SNAPSHOT_MISMATCH':'REMOTE_HTTP_'+response.status;
       }catch(error){
         if(error.message==='PREFLIGHT_AUTH_FAILED')throw error;
