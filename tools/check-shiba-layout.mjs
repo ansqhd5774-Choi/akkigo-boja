@@ -20,6 +20,10 @@ const check=`
    const h=s.querySelector(':scope>h2'),i=s.querySelector(':scope>.ncp-info');
    if(h&&i){const a=h.getBoundingClientRect(),b=i.getBoundingClientRect();if(Math.abs(a.y+a.height/2-b.y-b.height/2)>1)failures.push('heading-info-alignment');}
   }
+  if(viewport>600)for(const list of article.querySelectorAll('.ncp-card-list')){
+   const header=list.querySelector('.ncp-list-header');if(!shown(header))continue;const columns=[...header.children].map(c=>c.getBoundingClientRect().left);
+   for(const row of list.querySelectorAll('.ncp-code-card'))if(shown(row))[...row.children].forEach((cell,index)=>{if(Math.abs(cell.getBoundingClientRect().left-columns[index])>1)failures.push('table-column-misalignment');});
+  }
   for(const guide of article.querySelectorAll('.ncp-coupon-guide')){
    if(!shown(guide))continue;let previousBottom=-Infinity;
    for(const child of guide.children){if(!shown(child))continue;const rect=child.getBoundingClientRect();if(rect.top<previousBottom-1)failures.push('guide-content-overlap');previousBottom=rect.bottom;}

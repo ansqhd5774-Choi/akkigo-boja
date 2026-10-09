@@ -84,3 +84,13 @@
 
 /* Guides contain several headings: preserve normal document flow. */
 .post-body [data-ncp-presentation] .ncp-coupon-guide{display:block!important}
+
+/* Desktop tables share content-sized columns across headers and every row. */
+@media(min-width:601px){
+ .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-card-list{display:grid;grid-template-columns:38px max-content fit-content(240px) minmax(100px,1fr) 126px;column-gap:8px}
+ .post-body [data-ncp-template="game-period-tabs-r1"] :is(.ncp-list-header,.ncp-code-card,.ncp-list-more){grid-column:1/-1;display:grid;grid-template-columns:subgrid!important;column-gap:8px!important}
+ .post-body [data-ncp-template="game-period-tabs-r1"] :is(.ncp-list-header,.ncp-code-card){padding-left:8px!important;padding-right:8px!important}
+ .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-more>summary{grid-column:1/-1}
+ .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-source{flex-wrap:nowrap}
+ .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-expiry{max-width:240px;word-break:keep-all}
+}
