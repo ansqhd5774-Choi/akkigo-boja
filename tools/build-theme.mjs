@@ -62,6 +62,7 @@ const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+s
 // Keep the previously registered URL stable: bare /favicon.ico can retain old caches.
 const brandFavicon="\n<!-- AKKIGO STABLE FAVICON: retain this URL across theme builds. -->\n<link rel='icon' type='image/x-icon' href='https://lsifl.blogspot.com/favicon.ico?v=akkigo-20261009-2'/>\n";
 const faviconNormalize="<script type='text/javascript'>//<![CDATA[\n(function(){var icons=document.querySelectorAll('link[rel=icon]');for(var i=0;i<icons.length;i++){if(i<icons.length-1){icons[i].remove();}}})();\n//]]></script>\n";
+const directoryBadges=await readFile(new URL('theme/directory-badges.xml',root),'utf8');
 const naverAnalytics=await readFile(new URL('theme/naver-analytics.xml',root),'utf8');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+naverAnalytics+'</body>'));
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+naverAnalytics+directoryBadges+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');
