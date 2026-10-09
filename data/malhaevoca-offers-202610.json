@@ -137,7 +137,8 @@
     "https://jhbd82.tistory.com/376",
     "https://pickleplus-coupon.com/sayvoca/",
     "https://goodmanytips.com/malhae/",
-    "https://epop.ai/b2b/academy"
+    "https://epop.ai/b2b/academy",
+    "https://epop.ai/ko/premium/plan"
   ],
   "datePolicy": "Official first announcement date for a specific offer only; not check date, page modified date, event end or generated Blogger post date.",
   "relatedVoucherCandidates": [
@@ -201,5 +202,18 @@
       "conditions": "학원 구매 담당자 전용. 개인 말해보카 구독자용 아님.",
       "code": null
     }
-  ]
+  ],
+  "officialPriceComparison": {
+    "monthlyKRW": 19500,
+    "monthlyTimes12KRW": 234000,
+    "annualWebKRW": 99000,
+    "annualEquivalentMonthlyKRW": 8250,
+    "savingsVsTwelveMonthlyPaymentsKRW": 135000,
+    "discountVsTwelveMonthlyPaymentsPctApprox": 58,
+    "sourceUrl": "https://epop.ai/ko/premium/plan",
+    "sourcePublishedAt": null,
+    "dateBasis": "OFFICIAL_PRICE_PAGE_UNDATED",
+    "sourceCheckedAt": "2026-10-10",
+    "scope": "1인 개인 결제 비교. 월간 결제를 12개월 연속 같은 가격으로 유지한다고 가정한 계산이며, 실제 할인 누적·갱신 요금 보장 아님"
+  }
 }
