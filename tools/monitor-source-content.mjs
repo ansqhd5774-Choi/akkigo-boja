@@ -29,4 +29,7 @@ for(const record of ledger.records){
  const index=observations.findIndex(x=>x.sourceId===record.sourceId);if(index<0)observations.push(entry);else observations[index]=entry;
  await writeFile(path,JSON.stringify({scope:'CONTENT_CHANGE_REVIEW_NOT_FACT_VERIFICATION',observations},null,2));checked++;
 }
+// Refresh the current view after the checkpoint without overwriting historical baselines.
+await import('./build-source-warning-actions.mjs');
+await import('./build-source-current-status.mjs');
 console.log(JSON.stringify({checked,checkpointRecords:observations.length,reviewFlags:observations.filter(x=>x.flags.length).length,noFactMutation:true}));

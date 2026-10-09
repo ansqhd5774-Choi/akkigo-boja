@@ -1,4 +1,5 @@
 import {readFileSync,writeFileSync,existsSync} from 'node:fs';import {renderGamePeriodArticle} from '../src/game-period-article.js';
+import {summarizeSourceGaps} from '../src/source-gap-summary.js';
 const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');const changed=[];
 for(const p of ['data/articles.json','data/articles-supplemental.json']){const articles=JSON.parse(readFileSync(p));for(const a of articles){const m=a.source?.gamePeriodModel;if(!m)continue;
  if(a.articleKey==='last-asylum-plague-codes-202610'){
@@ -10,5 +11,6 @@ for(const p of ['data/articles.json','data/articles-supplemental.json']){const a
  if(changed.includes(a.articleKey)){a.post.content=renderGamePeriodArticle(m);writeFileSync('drafts/'+a.articleKey+'.html',a.post.content+'\n');if(existsSync('drafts/'+a.articleKey+'.json'))save('drafts/'+a.articleKey+'.json',{...JSON.parse(readFileSync('drafts/'+a.articleKey+'.json')),...a});save('publish-requests/'+a.articleKey+'-source-reference-20261010.json',{articleKey:a.articleKey,approved:true,existingOnly:true,requestedAt:'2026-10-10',reason:'출처 연관 오탐 및 코드 대소문자 차이 정정, 기록과 기존 URL 보존'});}
  }save(p,articles);}
 const all=[...JSON.parse(readFileSync('data/articles.json')),...JSON.parse(readFileSync('data/articles-supplemental.json'))];save('data/game-period-articles.json',JSON.parse(readFileSync('data/game-period-articles.json')).map(m=>changed.includes(m.articleKey)?all.find(a=>a.articleKey===m.articleKey).source.gamePeriodModel:m));
-save('data/operations/source-association-corrections-20261010.json',{checkedAt:new Date().toISOString(),withdrawnRecord:'last-asylum-plague-codes-202610:SURVIVOR',retainedCaseVariant:'duck-survival-codes-202610:HEARDUCK',linkedRecordsAfterCorrection:252,sourceGapsAfterCorrection:249,accountInputVerified:false});
+const gapSummary=summarizeSourceGaps(JSON.parse(readFileSync('data/operations/source-gap-review-20261010.json')).items,all);
+save('data/operations/source-association-corrections-20261010.json',{checkedAt:new Date().toISOString(),withdrawnRecord:'last-asylum-plague-codes-202610:SURVIVOR',retainedCaseVariant:'duck-survival-codes-202610:HEARDUCK',linkedRecordsAfterCorrection:gapSummary.linked,sourceGapsAfterCorrection:gapSummary.unconfirmed,accountInputVerified:false});
 
