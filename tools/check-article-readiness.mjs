@@ -9,6 +9,11 @@ import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
 const service='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/preflight';
+export function approvedRequestKey(request){
+ if(request.approved===false)return null;
+ if(request.approved!==true||typeof request.articleKey!=='string')throw Error('LOCAL_REQUEST_NOT_APPROVED');
+ return request.articleKey;
+}
 export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new Promise(r=>setTimeout(r,ms)),attempts=1,delayMs=2500}={}){
   if(!token)throw Error('GITHUB_OIDC_TOKEN_MISSING');
   const keysToCheck=[...new Set(keys)];
@@ -49,8 +54,9 @@ async function main(){
   const names=[];
   for(const file of fileNames){
     const request=JSON.parse(await readFile(file,'utf8'));
-    if(request.approved!==true || typeof request.articleKey!=='string')throw Error('LOCAL_REQUEST_NOT_APPROVED');
-    names.push(request.articleKey);
+    const key=approvedRequestKey(request);
+    if(key===null){console.log('PREFLIGHT_DEFERRED_REQUEST_SKIPPED',file);continue;}
+    names.push(key);
   }
   const result=await probeSnapshots(names,{token:process.env.GITHUB_OIDC_TOKEN,attempts:wait?9:1});
   console.log('ARTICLE_SNAPSHOT_PREFLIGHT',JSON.stringify(result));
