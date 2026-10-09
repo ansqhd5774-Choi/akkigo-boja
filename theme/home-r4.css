@@ -34,6 +34,7 @@
 .ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-game-visual .ncp-game-name{background:rgba(255,255,255,.76);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:7px 8px;border-radius:9px;box-sizing:border-box;text-shadow:none;box-shadow:0 2px 10px #14234612}
 
 /* Compact game titles and image-only home cards. */
+#Profile1 .profile-img{object-fit:contain!important}
 .ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body h3,#ncp-game-hub .ncp-game-visual .ncp-game-name{left:50%;right:auto;width:max-content;max-width:calc(100% - 24px);transform:translate(-50%,-50%);font-size:16px;font-weight:600;line-height:1.4;letter-spacing:-.3px;padding:6px 10px;border-radius:7px;word-break:keep-all;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;box-shadow:none}
 .ncp-r4-game-list .ncp-game-visual .ncp-r4-card-body{padding:0}
 .ncp-coupon-count{font-size:11px;font-weight:600;padding:4px 8px;border-radius:999px;box-shadow:none}
@@ -129,3 +130,6 @@
 /* All categories share the same bottom-left heart anchor. */
 #ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px;left:7px}
 @media(max-width:600px){#ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{bottom:5px;left:4px}}
+/* A single navigation target per home card; the title remains a visual label. */
+#ncp-home-r4 .ncp-game-visual .ncp-r4-card-body{pointer-events:none}
+@media(max-width:600px){#ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{min-height:24px;min-width:24px}}

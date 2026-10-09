@@ -24,7 +24,11 @@ test('Outerplane 2026-10 draft matches source and stores all 27 exact redeem val
   assertPeriodHTML(html);
   assert.equal((html.match(/<!--more-->/g)||[]).length,1);
   assert.equal(html.includes('<h1'),false);
-  assert.equal(html.includes(article.post.title),false);
+  assert.equal(article.post.title,'아우터플레인');
+  assert.equal(/최신\s*코드\s*9개/.test(article.post.title+' '+article.post.searchDescription),false);
+  assert.ok(article.post.searchDescription.includes('기록 27개'));
+  assert.ok(article.post.searchDescription.includes('현재 사용 여부는 미확인'));
+  assert.equal(html.includes('최신 코드 9개'),false);
   assert.equal(validateGameCouponLayout(key,article.post),true);
 });
 test('verified official square app icon has first-image and store provenance',()=>{

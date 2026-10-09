@@ -31,11 +31,12 @@
       const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');
       if(icon.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(icon.pathname))icon.pathname=icon.pathname.replace(/\.png$/,'.webp');
       if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/360x360bb.jpg');
+      if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/1024x1024wd\.png$/, '/360x360wd.jpg').replace(/\/1920x1080ia-80\.png$/, '/360x360ia-80.jpg');
       image.src=icon.href;
-      image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);
+      image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.setAttribute('aria-label',name+' 쿠폰 보기');coverLink.append(image);article.append(coverLink);
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
-    const heading=document.createElement('h3');const link=document.createElement('a');link.href=url;link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
+    const heading=document.createElement('h3');const link=document.createElement('span');link.textContent=name;if(game){link.textContent='';for(const part of name.split(/([A-Za-z0-9é]+(?:[ .:-][A-Za-z0-9é]+)*)/)){const segment=document.createElement('span');segment.textContent=part;if(/^[A-Za-z0-9é]/.test(part))segment.style.whiteSpace='nowrap';link.append(segment);}}heading.append(link);
     body.append(heading);article.append(body);addHeart(article,game?identity.id:name);return article;
   }
   function paginate(container,items,label){

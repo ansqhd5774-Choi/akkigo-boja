@@ -1,6 +1,28 @@
 <!-- AKKIGO NAVER ANALYTICS: keep across theme builds. -->
 <script type='text/javascript'>//<![CDATA[
-window.wcs_add = window.wcs_add || {};
-window.wcs_add['wa'] = '1269dd838904e20';
+(function(){
+  // Independent NAVER PV safeguards; this is not a consent UI or consent receipt.
+  if(window.ncpNaverAnalyticsStarted)return;
+  if(navigator.globalPrivacyControl===true||window.ncpAnalyticsInternalTraffic===true||window.ncpNaverAnalyticsOptOut===true)return;
+  try{if(localStorage.getItem('ncp-naver-analytics-opt-out')==='1')return;}catch{}
+  try{
+    const page=new URL(location.href);
+    const params=[...page.searchParams];
+    if(page.hash||params.length>1||params.some(([name,value])=>name!=='m'||!['0','1'].includes(value)))return;
+    if(document.referrer){const source=new URL(document.referrer);if(source.search||source.hash)return;}
+  }catch{return;}
+  // Avoid a second loader or pageview when the same snippet is included twice.
+  if(document.querySelector('script[src="https://wcs.pstatic.net/wcslog.js"]'))return;
+  window.ncpNaverAnalyticsStarted=true;
+  window.wcs_add=window.wcs_add||{};
+  window.wcs_add.wa='1269dd838904e20';
+  const script=document.createElement('script');
+  script.src='https://wcs.pstatic.net/wcslog.js';script.async=true;
+  script.onload=function(){
+    if(window.ncpNaverPageviewSent||!window.wcs||typeof window.wcs_do!=='function')return;
+    window.ncpNaverPageviewSent=true;
+    window.wcs_do();
+  };
+  document.head.append(script);
+})();
 //]]></script>
-<script type='text/javascript' src='https://wcs.pstatic.net/wcslog.js' async='async' onload='if(window.wcs){wcs_do();}'></script>
