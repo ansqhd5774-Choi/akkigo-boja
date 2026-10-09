@@ -8,21 +8,21 @@ const cases=[
     key:'haiip-discount-code-202610',
     labels:['VPN','하이아이피'],
     code:'adsoft',
-    image:/og_image_haiip\.png/,
+    image:/logos\/haiip-representative\.png/,
     required:[/5~25%/,/제휴사\/할인코드/,/3일/,/월 9,000원/]
   },
   {
     key:'coolip-discount-code-202610',
     labels:['VPN','쿨아이피'],
     code:'adsoft',
-    image:/coolip\.co\.kr\/img\/og_image\.jpg/,
+    image:/logos\/coolip-representative\.png/,
     required:[/5~25%/,/무료테스트/,/하이온넷/,/60일부터 5% 할인/]
   },
   {
     key:'momoip-discount-code-202610',
     labels:['VPN','모모아이피'],
     code:'adsoft',
-    image:/momoip\.net\/img\/og_image\.jpg/,
+    image:/logos\/momoip-representative\.png/,
     required:[/5~25%/,/KT 고정IP/,/하이온넷/,/월 15,000원/]
   }
 ];

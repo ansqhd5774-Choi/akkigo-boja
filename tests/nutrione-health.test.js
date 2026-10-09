@@ -11,7 +11,7 @@ test('뉴트리원 10월 건강 쿠폰 글은 공식 혜택과 공식 대표 이
   const draft=JSON.parse(readFileSync(new URL('../drafts/nutrione-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/20260930_19475\.jpg/);
+  assert.match(html,/logos\/nutrione-representative\.png/);
   assert.match(html,/WELCOME 12%/);
   assert.match(html,/60,000원 이상 구매/);
   assert.match(html,/APP 전용 2,000원/);

@@ -11,7 +11,7 @@ test('덴프스 10월 건강 쿠폰 글은 공식 혜택과 공식 이미지를 
   const draft=JSON.parse(readFileSync(new URL('../drafts/denps-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/share-image-1-0fbc02f4e38dbe9320d13c1b48d9c7b9\.jpg/);
+  assert.match(html,/logos\/denps-representative\.png/);
   assert.match(html,/10,000원 쿠폰/);
   assert.match(html,/30,000원 이상 구매/);
   assert.match(html,/5% 추가 쿠폰/);

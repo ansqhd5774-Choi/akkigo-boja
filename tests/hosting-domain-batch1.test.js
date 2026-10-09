@@ -6,8 +6,8 @@ const defs=[{"key":"hostinger-coupons-202610","brand":"Hostinger","codes":["COUP
 for(const d of defs)test(d.brand+' 10월 호스팅·도메인 글 검증',()=>{const a=articles.find(x=>x.articleKey===d.key);assert.ok(a);assert.deepEqual(a.post.labels,['호스팅·도메인',d.brand]);const html=readFileSync(new URL('../drafts/'+d.key+'.html',import.meta.url),'utf8').trim();const draft=JSON.parse(readFileSync(new URL('../drafts/'+d.key+'.json',import.meta.url),'utf8'));assert.equal(a.post.content,html);assert.equal(draft.post.content,html);assert.match(html,new RegExp('data-ncp-featured-image="'+d.key+'"'));for(const c of d.codes)assert.match(html,new RegExp('data-ncp-copy="'+c+'"'));assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|내부 운영 상태/);});
 
 
-test('Hostinger 글은 일반 OG 이미지가 아닌 공식 쿠폰 프로모션 이미지를 사용한다',()=>{
+test('Hostinger 글은 공식 대표 로고를 사용한다',()=>{
   const html=readFileSync(new URL('../drafts/hostinger-coupons-202610.html',import.meta.url),'utf8');
-  assert.match(html,/3fc114d2-0a8c-4dc0-ddc7-f83749a96d00\/public/);
+  assert.match(html,/logos\/hostinger-representative\.png/);
   assert.doesNotMatch(html,/hostinger\.com\/kr\/og-image\.png/);
 });

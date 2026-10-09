@@ -1,0 +1,182 @@
+[
+  {
+    "articleKey": "tripcom-hotel-coupons-202610",
+    "brand": "트립닷컴",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/tripcom-representative.png",
+    "sourceUrl": "https://kr.trip.com/",
+    "sourceAsset": "https://ak-d.tripcdn.com/images/05E5p12000cga1phzA0ED.webp",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "dominos-discounts-202610",
+    "brand": "도미노피자",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/dominos-representative.png",
+    "sourceUrl": "https://web.dominos.co.kr/",
+    "sourceAsset": "sprite:https://cdn.dominos.co.kr/domino/pc/images/sp/sp_common.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "hostinger-coupons-202610",
+    "brand": "Hostinger",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/hostinger-representative.png",
+    "sourceUrl": "https://www.hostinger.com/",
+    "sourceAsset": "local:theme/assets/logos/hostinger.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "spaceship-domain-coupons-202610",
+    "brand": "Spaceship",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/spaceship-representative.png",
+    "sourceUrl": "https://www.spaceship.com/",
+    "sourceAsset": "local:theme/assets/logos/spaceship.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "namecheap-birthday-202610",
+    "brand": "Namecheap",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/namecheap-representative.png",
+    "sourceUrl": "https://www.namecheap.com/",
+    "sourceAsset": "local:theme/assets/logos/namecheap.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "cafe24-domain-discount-202610",
+    "brand": "카페24",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/cafe24-representative.png",
+    "sourceUrl": "https://hosting.cafe24.com/",
+    "sourceAsset": "https://img.cafe24.com/images/common/cafe24.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "dothome-domain-coupon-202610",
+    "brand": "닷홈",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/dothome-representative.png",
+    "sourceUrl": "https://www.dothome.co.kr/",
+    "sourceAsset": "https://www.dothome.co.kr/static/images/_layout/logo_250908.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "whois-nworks-domain-coupon-202610",
+    "brand": "후이즈",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/whois-representative.png",
+    "sourceUrl": "https://m.whois.co.kr/",
+    "sourceAsset": "https://m.whois.co.kr/assets_m/image/logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "hostingkr-domain-discount-202610",
+    "brand": "호스팅케이알",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/hostingkr-representative.png",
+    "sourceUrl": "https://www.hosting.kr/",
+    "sourceAsset": "local:theme/assets/logos/hostingkr.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "geniezip-coupons-202610",
+    "brand": "지니집",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/geniezip-representative.png",
+    "sourceUrl": "https://www.geniezip.com/",
+    "sourceAsset": "https://www.geniezip.com/images/renew/pc_logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "nutrione-coupons-202610",
+    "brand": "뉴트리원",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/nutrione-representative.png",
+    "sourceUrl": "https://www.nutrione.co.kr/",
+    "sourceAsset": "https://www.nutrione.co.kr/res/images/logo/logo-111.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "angukhealth-coupons-202610",
+    "brand": "안국건강",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/angukhealth-representative.png",
+    "sourceUrl": "https://shopagh.com/",
+    "sourceAsset": "https://aghealth.hgodo.com/web/upload/logo/logo_pc.webp",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "denps-coupons-202610",
+    "brand": "덴프스",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/denps-representative.png",
+    "sourceUrl": "https://denpsmall.com/",
+    "sourceAsset": "local:theme/assets/logos/denps.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "ckdhcmall-coupons-202610",
+    "brand": "종근당건강몰",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/ckdhcmall-representative.png",
+    "sourceUrl": "https://ckdhcmall.co.kr/",
+    "sourceAsset": "https://s3.ckdhcmall.co.kr/upload/front/pc/assets/images/common/logo_f.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "esthermall-coupons-202610",
+    "brand": "에스더몰",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/esthermall-representative.png",
+    "sourceUrl": "https://esthermall.co.kr/",
+    "sourceAsset": "https://esther2023.cdn-nhncommerce.com/data/skin/front/moment/img/banner/1d3141cc749a05aba0b91453fc214c58_66305.jpg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "haiip-discount-code-202610",
+    "brand": "하이아이피",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/haiip-representative.png",
+    "sourceUrl": "https://www.haiip.net/",
+    "sourceAsset": "https://www.haiip.net/img/201901/header_logo.jpg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "coolip-discount-code-202610",
+    "brand": "쿨아이피",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/coolip-representative.png",
+    "sourceUrl": "https://www.coolip.co.kr/",
+    "sourceAsset": "https://www.coolip.co.kr/img/240301/header_logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "momoip-discount-code-202610",
+    "brand": "모모아이피",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/momoip-representative.png",
+    "sourceUrl": "https://momoip.net/",
+    "sourceAsset": "local:theme/assets/logos/momoip.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "hackers-gosi-direct-codes-202610",
+    "brand": "해커스공무원",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/hackers-representative.png",
+    "sourceUrl": "https://gosi.hackers.com/",
+    "sourceAsset": "https://gosi.hackers.com/images/common/re_hackers_logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "fastcampus-rag-code-202610",
+    "brand": "패스트캠퍼스",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/fastcampus-representative.png",
+    "sourceUrl": "https://fastcampus.co.kr/event_online_onepone_2610",
+    "sourceAsset": "https://storage.googleapis.com/static.fastcampus.co.kr/assets/b2c/fc-logo-light-mode.svg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  }
+]

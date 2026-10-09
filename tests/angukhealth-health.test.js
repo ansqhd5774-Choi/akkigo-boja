@@ -11,7 +11,7 @@ test('안국건강 10월 건강 쿠폰 글은 공식 혜택과 공식 이미지�
   const draft=JSON.parse(readFileSync(new URL('../drafts/angukhealth-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/mata_logo\.webp/);
+  assert.match(html,/logos\/angukhealth-representative\.png/);
   assert.match(html,/첫 구매 20% 할인쿠폰/);
   assert.match(html,/재구매 20% 할인쿠폰/);
   assert.match(html,/3% 앱 전용 할인쿠폰/);

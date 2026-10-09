@@ -4,6 +4,7 @@ import {validateGamePeriodArticle} from './game-period-article.js';
 import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
 import {validateGameCouponLayout} from './game-code-layout-contract.js';
 import {validateGameFeaturedImage} from './game-featured-image-policy.js';
+import {validateRepresentativeLogo} from './representative-logo-policy.js';
 import {validateGameCandidateCoverage} from './game-code-candidate-policy.js';
 
 function configured(env) {
@@ -64,6 +65,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   validatePost(article.post);
   validateGameCouponLayout(articleKey,article.post);
   validateGameFeaturedImage(articleKey,article.post);
+  validateRepresentativeLogo(article);
   validateGameCandidateCoverage(article);
   validateMonthlyGameCouponTimeline(article);
   validateArticlePresentation(article);

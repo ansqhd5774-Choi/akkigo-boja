@@ -11,7 +11,7 @@ test('에스더몰 10월 건강 쿠폰 글은 현재 공식 혜택만 사용한�
   const draft=JSON.parse(readFileSync(new URL('../drafts/esthermall-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/snsRepresentImage\.png/);
+  assert.match(html,/logos\/esthermall-representative\.png/);
   assert.match(html,/첫구매 100원딜/);
   assert.match(html,/최종 결제금액 합계가 20,000원 이상/);
   assert.match(html,/ID당 최대 1개/);

@@ -11,7 +11,7 @@ test('종근당건강몰 10월 건강 쿠폰 글은 현재 공식 혜택만 사�
   const draft=JSON.parse(readFileSync(new URL('../drafts/ckdhcmall-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/img_xl\.jpg/);
+  assert.match(html,/logos\/ckdhcmall-representative\.png/);
   assert.match(html,/15% 장바구니 쿠폰/);
   assert.match(html,/50,000원 이상 구매/);
   assert.match(html,/20% 장바구니 쿠폰/);
