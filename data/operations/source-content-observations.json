@@ -162,6 +162,106 @@
         "reviewedAt": "2026-10-10",
         "reason": "이전 공식 본문 직접 확인 증거 유지. JavaScript 렌더링 전 HTML에 코드가 없다는 자동 조회를 실제 코드 삭제로 해석하지 않음"
       }
+    },
+    {
+      "sourceId": "733c1048c2303f8c637d",
+      "url": "https://game.naver.com/lounge/BROWNDUST2/home",
+      "checkedAt": "2026-10-09T19:56:42.255Z",
+      "nextReviewAt": "2026-10-16T19:56:42.258Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://game.naver.com/lounge/BROWNDUST2/home",
+      "title": "네이버 게임",
+      "contentHash": "a0db3ca446c11e49dcb5c7ed2d6ae8fd06df5dcc02d50b79d2e162501197b8be",
+      "textLength": 53,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "OFFICIAL_COMMUNITY_NAVIGATION_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      }
+    },
+    {
+      "sourceId": "474954857290de036386",
+      "url": "https://redeem.bd2.pmang.cloud/bd2/index.html?lang=ko-KR",
+      "checkedAt": "2026-10-09T19:56:42.315Z",
+      "nextReviewAt": "2026-10-16T19:56:42.315Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://redeem.bd2.pmang.cloud/bd2/index.html?lang=ko-KR",
+      "title": "",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textLength": 0,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      }
+    },
+    {
+      "sourceId": "81e56ba711fb0fdfb658",
+      "url": "https://genshin.hoyoverse.com/ko/gift",
+      "checkedAt": "2026-10-09T19:56:42.413Z",
+      "nextReviewAt": "2026-10-16T19:56:42.413Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://genshin.hoyoverse.com/ko/gift",
+      "title": "Genshin Impact – Step into a Vast Magical World for Adventure",
+      "contentHash": "60c0f67117fc8379deaf2e97ffb144cf0f7156fcc280651a653a290bc8e8e6d4",
+      "textLength": 61,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      }
+    },
+    {
+      "sourceId": "acc77be79127aae5968d",
+      "url": "https://hsr.hoyoverse.com/gift",
+      "checkedAt": "2026-10-09T19:56:42.501Z",
+      "nextReviewAt": "2026-10-16T19:56:42.501Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://hsr.hoyoverse.com/gift",
+      "title": "Honkai: Star Rail official website | May this journey lead us starward",
+      "contentHash": "797498ce32c1812204c57dcc475aeea439c2a8ea6cd2bace6e4dc5d3e47c1d9d",
+      "textLength": 70,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      }
     }
   ]
 }

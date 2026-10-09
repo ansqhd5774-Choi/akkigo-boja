@@ -67,3 +67,8 @@ Wayback 공식 available API는 두404 URL에HTTP200,available=null 반환. 이 
 추가 bounded 초기 본문 조회4곳, 누적8곳. 네이버 공식 공지의 JS 렌더링 전53자 HTML을 코드 삭제로 해석하지 않고 기존 실제 브라우저 확인 증거를 수동 검토 기록으로 보존.
 발행37982997776의 최초 실행은ARTICLE_SNAPSHOT_MISMATCH로 Blogger 수정 전에 중단. 동일SHA Worker 배포37983097554 SUCCESS 이후 실패 단계 재실행.
 후속 공개 검증: Publish37982997776 재실행SUCCESS, 기존postId3738858704861232088 유지, publicVerified=true, 독립 공개1/1 오류0. 공개 브라우저 공식 링크·보상 수령 안내 실제 표시 및 가로 넘침 없음 확인. Verify37982997787·Layout37982997773·Worker37983097554 SUCCESS. 근거 화면 output/pokemon-source-followup-20261010.png.
+
+## MLB 공식 코드 후속 (2026-10-10)
+MLBxPOKEMONGO 공식 원문과 교환 종료2025-09-28 확인, 신규 원문 연결1건. MLBxPOKEMONGO2026에는 근거를 전용하지 않음. 연결 누적253건·미확인248건(계정 성공 검증 건수 아님). 최초 게시일은 현재 원문 본문에서 직접 확인되지 않아 null 보존. 공식 근거 미확보5개 문자열은 미확인 유지.
+점검 원장467URL. bounded 본문 조회4건 추가, 누적12건. 짧은 HTML4곳은 실제 브라우저에서 공식 커뮤니티 탐색 또는 코드 등록 양식 표시를 확인해 검토 기록 보존. 로그인·실제 교환 미실행.
+Verify37983627539·Layout37983627511·Publish37983627570·Worker37983720550 SUCCESS. 기존postId/URL 보존, publicVerified=true, 독립 공개조회1/1 오류0. 실제 공개 브라우저에서 종료 상태·공식 링크 표시 확인. 증거 output/pokemon-mlb-source-20261010.png.

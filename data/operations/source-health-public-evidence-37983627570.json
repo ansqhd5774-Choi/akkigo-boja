@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-09T19:58:02.224Z",
+  "runId": "37983627570",
+  "scope": "PROVIDER_AND_INDEPENDENT_PUBLIC_HTML",
+  "summary": {
+    "published": 1,
+    "checked": 1,
+    "errors": 0
+  },
+  "pages": [
+    {
+      "articleKey": "pokemon-go-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/pokemon-go-2026-10-adidaslego.html",
+      "postId": "3738858704861232088",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 5,
+      "thirdPartyReferenceMarkers": 8,
+      "broken404Anchor": false
+    }
+  ]
+}
