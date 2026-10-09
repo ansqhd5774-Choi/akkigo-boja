@@ -1,4 +1,5 @@
 import {catHeroArticle} from '../src/cat-hero-article.js';
+import {duolingoArticle} from '../src/duolingo-article.js';
 import {readFile} from 'node:fs/promises';
 import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
@@ -22,9 +23,9 @@ for (const name of names) {
     continue;
   }
   processedKeys.add(request.articleKey);
-  const source=await articleSnapshot(request.articleKey,[...primary,...supplemental,catHeroArticle]);
+  const source=await articleSnapshot(request.articleKey,[...primary,...supplemental,catHeroArticle,duolingoArticle]);
   if(!source.approved)throw new Error('LOCAL_ARTICLE_NOT_APPROVED');
-  const catalog=[...primary,...supplemental,catHeroArticle];
+  const catalog=[...primary,...supplemental,catHeroArticle,duolingoArticle];
   validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
   const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
