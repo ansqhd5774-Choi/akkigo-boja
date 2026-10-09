@@ -1164,11 +1164,19 @@
       {
         "code": "0004POKEMONGO",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "보상 수령 2026-09-22 20:00 (현지)",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>07과거 자료미확인0004POKEMONGO</p>"
+        "statusLabel": "공식 보상 수령 기간 종료",
+        "sources": [
+          {
+            "name": "Pokémon GO 공식 애니메이션 협업 행사 공지",
+            "url": "https://pokemongo.com/pt-BR/news/pokemon-horizons-celebration-event-2026",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
+        "evidenceHTML": "<p data-evidence-id=\"pokemon-horizons-2026\">공식 공지에서 0004POKEMONGO의 시간제한 리서치와 프리드의 고글을 쓴 파이리·몬스터볼 등의 보상을 확인했습니다. 리서치 완료 및 보상 수령 기한은 2026년 9월 22일 20:00(현지 시각)입니다. 코드 교환 종료일·원문 최초 게시일·실제 계정 입력 성공은 별도로 확인하지 않았습니다.</p><p>07과거 자료미확인0004POKEMONGO</p>"
       },
       {
         "code": "MEGACOMMUNITY",

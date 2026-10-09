@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {renderGamePeriodArticle} from '../src/game-period-article.js';
+const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const key='pokemon-go-codes-202610',code='0004POKEMONGO';
+const url='https://pokemongo.com/pt-BR/news/pokemon-horizons-celebration-event-2026';
+const articles=JSON.parse(readFileSync('data/articles.json'));const a=articles.find(a=>a.articleKey===key);const r=a.source.gamePeriodModel.records.find(r=>r.code===code);
+if(!r.sources.some(s=>s.url===url))r.sources.unshift({name:'Pokémon GO 공식 애니메이션 협업 행사 공지',url,referenceType:'OFFICIAL_CODE_CONTEXT',checkedAt:'2026-10-10',sourcePublishedAt:null});
+r.expiry='보상 수령 2026-09-22 20:00 (현지)';r.latest=false;r.statusLabel='공식 보상 수령 기간 종료';
+const note='<p data-evidence-id="pokemon-horizons-2026">공식 공지에서 0004POKEMONGO의 시간제한 리서치와 프리드의 고글을 쓴 파이리·몬스터볼 등의 보상을 확인했습니다. 리서치 완료 및 보상 수령 기한은 2026년 9월 22일 20:00(현지 시각)입니다. 코드 교환 종료일·원문 최초 게시일·실제 계정 입력 성공은 별도로 확인하지 않았습니다.</p>';
+if(!r.evidenceHTML.includes('pokemon-horizons-2026'))r.evidenceHTML=note+r.evidenceHTML;
+a.post.content=renderGamePeriodArticle(a.source.gamePeriodModel);save('data/articles.json',articles);
+save('data/game-period-articles.json',JSON.parse(readFileSync('data/game-period-articles.json')).map(m=>m.articleKey===key?a.source.gamePeriodModel:m));
+writeFileSync('drafts/'+key+'.html',a.post.content+'\n');save('drafts/'+key+'.json',{...JSON.parse(readFileSync('drafts/'+key+'.json')),...a});
+save('publish-requests/'+key+'-source-reference-20261010.json',{articleKey:key,approved:true,existingOnly:true,requestedAt:'2026-10-10',reason:'0004POKEMONGO 공식 원문 연결 및 보상 수령 종료 시각 구분'});
+save('data/operations/source-official-followup-pokemon-20261010.json',{checkedAt:new Date().toISOString(),articleKey:key,code,url,officialContextVerified:true,originalPublicationDateVerified:false,accountInputVerified:false,researchRewardDeadline:'2026-09-22T20:00:00 local',codeRedemptionDeadline:null});
+console.log('OFFICIAL_REFERENCE_ADDED');
