@@ -178,5 +178,68 @@
     "sourceAsset": "https://storage.googleapis.com/static.fastcampus.co.kr/assets/b2c/fc-logo-light-mode.svg",
     "verifiedAt": "2026-10-09",
     "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "gabia-domain-discount-202610",
+    "brand": "가비아",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/gabia-representative.png",
+    "sourceUrl": "https://kmi.gabia.com/",
+    "sourceAsset": "https://static.gabia.com/www/common/gnb/gabia_logo_1200.jpg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "iporter-coupons-202610",
+    "brand": "아이포터",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/iporter-representative.png",
+    "sourceUrl": "https://www.iporter.com/",
+    "sourceAsset": "https://www.iporter.com/res/images/www/ko/main_new/logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "nygirlz-coupons-202610",
+    "brand": "뉴욕걸즈",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/nygirlz-representative.png",
+    "sourceUrl": "https://www.nygirlz.co.kr/",
+    "sourceAsset": "https://www.nygirlz.co.kr/pc/images/main/new_images/logo.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "malltail-coupons-202610",
+    "brand": "몰테일",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/malltail-representative.png",
+    "sourceUrl": "https://post.malltail.com/",
+    "sourceAsset": "https://cdn.malltail.com/goods_img//contents/malltails/share_malltail_logo_D.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "jungkwanjang-coupons-202610",
+    "brand": "정관장",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/jungkwanjang-representative.png",
+    "sourceUrl": "https://www.kgcshop.co.kr/",
+    "sourceAsset": "https://www.kgcshop.co.kr/mobile/images/main/og_logo_20251107.jpg",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "lactiv-coupons-202610",
+    "brand": "락티브",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/lactiv-representative.png",
+    "sourceUrl": "https://lactiv.co.kr/",
+    "sourceAsset": "https://lactiv.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/4c74a23c25d1407059fa2387d122df41.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO"
+  },
+  {
+    "articleKey": "doctorlean-coupons-202610",
+    "logoUrl": "https://akkigo-boja.ansqhd5774.workers.dev/logos/doctorlean-representative.png",
+    "sourceUrl": "https://doctorlean.co.kr/",
+    "sourceAsset": "https://img.gcone.co.kr/DT/etc/202604/DT130552336940wYYNB7.png",
+    "verifiedAt": "2026-10-09",
+    "kind": "OFFICIAL_HEADER_LOGO",
+    "brand": "닥터린"
   }
 ]

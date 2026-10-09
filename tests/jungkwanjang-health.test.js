@@ -11,7 +11,7 @@ test('정관장 10월 건강 할인 글은 현재 공식 혜택만 사용한다'
   const draft=JSON.parse(readFileSync(new URL('../drafts/jungkwanjang-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/og_logo_20251107\.jpg/);
+  assert.match(html,/logos\/jungkwanjang-representative\.png/);
   assert.match(html,/~10% 할인/);
   assert.match(html,/홍삼정/);
   assert.match(html,/홍이장군/);

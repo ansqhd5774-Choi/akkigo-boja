@@ -11,7 +11,7 @@ test('닥터린 10월 건강 쿠폰 글은 공식 혜택과 공식 이미지를 
   const draft=JSON.parse(readFileSync(new URL('../drafts/doctorlean-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/DT130552336940wYYNB7\.png/);
+  assert.match(html,/logos\/doctorlean-representative\.png/);
   assert.match(html,/7종 쿠폰팩/);
   assert.match(html,/10% 추가할인 쿠폰/);
   assert.match(html,/앱 설치 회원 대상/);

@@ -11,7 +11,7 @@ test('락티브 10월 건강 쿠폰 글은 현재 공식 혜택만 사용한다'
   const draft=JSON.parse(readFileSync(new URL('../drafts/lactiv-coupons-202610.json',import.meta.url),'utf8'));
   assert.equal(a.post.content,html);
   assert.equal(draft.post.content,html);
-  assert.match(html,/laciv_main_color\.png/);
+  assert.match(html,/logos\/lactiv-representative\.png/);
   assert.match(html,/카카오 플친 채널 추가 후 쿠폰을 다운로드하면 10% 할인/);
   assert.match(html,/최대 할인금액은 10,000원/);
   assert.match(html,/일부 기획세트/);
