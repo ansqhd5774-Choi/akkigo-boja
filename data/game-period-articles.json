@@ -1285,11 +1285,19 @@
       {
         "code": "MLBxPOKEMONGO",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2025-09-28",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>16과거 자료미확인MLBxPOKEMONGO</p>"
+        "statusLabel": "공식 코드 교환 기간 종료",
+        "sources": [
+          {
+            "name": "Pokémon GO 공식 MLB 협업 공지",
+            "url": "https://pokemongo.com/news/mlb-2025",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
+        "evidenceHTML": "<p data-evidence-id=\"mlb-code-2025\">공식 공지에서 MLBxPOKEMONGO 코드로 MLB 로고 아바타 모자를 받을 수 있었음을 확인했습니다. 코드 제공 기간은 2025년 6월 24일부터 9월 28일까지입니다. 최초 게시일과 실제 계정 입력 성공은 미확인입니다. MLBxPOKEMONGO2026과는 별도 문자열이며 이 근거를 해당 코드에 적용하지 않습니다.</p><p>16과거 자료미확인MLBxPOKEMONGO</p>"
       },
       {
         "code": "Z3USC2JQS9LWN",

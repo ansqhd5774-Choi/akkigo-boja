@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {renderGamePeriodArticle} from '../src/game-period-article.js';
+const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const key='pokemon-go-codes-202610',code='MLBxPOKEMONGO',url='https://pokemongo.com/news/mlb-2025';
+const articles=JSON.parse(readFileSync('data/articles.json')),a=articles.find(a=>a.articleKey===key),r=a.source.gamePeriodModel.records.find(r=>r.code===code);
+if(!r.sources.some(s=>s.url===url))r.sources.unshift({name:'Pokémon GO 공식 MLB 협업 공지',url,referenceType:'OFFICIAL_CODE_CONTEXT',checkedAt:'2026-10-10',sourcePublishedAt:null});
+r.expiry='2025-09-28';r.latest=false;r.statusLabel='공식 코드 교환 기간 종료';
+if(!r.evidenceHTML.includes('mlb-code-2025'))r.evidenceHTML='<p data-evidence-id="mlb-code-2025">공식 공지에서 MLBxPOKEMONGO 코드로 MLB 로고 아바타 모자를 받을 수 있었음을 확인했습니다. 코드 제공 기간은 2025년 6월 24일부터 9월 28일까지입니다. 최초 게시일과 실제 계정 입력 성공은 미확인입니다. MLBxPOKEMONGO2026과는 별도 문자열이며 이 근거를 해당 코드에 적용하지 않습니다.</p>'+r.evidenceHTML;
+a.post.content=renderGamePeriodArticle(a.source.gamePeriodModel);save('data/articles.json',articles);save('data/game-period-articles.json',JSON.parse(readFileSync('data/game-period-articles.json')).map(m=>m.articleKey===key?a.source.gamePeriodModel:m));writeFileSync('drafts/'+key+'.html',a.post.content+'\n');save('drafts/'+key+'.json',{...JSON.parse(readFileSync('drafts/'+key+'.json')),...a});
+save('publish-requests/'+key+'-source-reference-20261010.json',{articleKey:key,approved:true,existingOnly:true,requestedAt:'2026-10-10',reason:'MLBxPOKEMONGO 공식 코드 교환 종료 근거 추가, 2026 접미사 코드는 별도 미확인 유지'});
+save('data/operations/source-official-mlb-followup-20261010.json',{checkedAt:new Date().toISOString(),code,url,redemptionEnd:'2025-09-28',accountInputVerified:false,originalPublicationDateVerified:false,notApplicableTo:['MLBxPOKEMONGO2026'],screenedWithoutOfficialEvidence:['MEGACOMMUNITY','TH4NKY0UF41RYMUCH','QFWM3SRJPVRY5','907andLIKO','LEGOxPOKEMONGOxBERRIES']});
