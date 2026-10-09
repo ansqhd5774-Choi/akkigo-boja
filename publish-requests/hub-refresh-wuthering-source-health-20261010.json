@@ -1,0 +1,8 @@
+{
+  "hubKeys": [
+    "wuthering"
+  ],
+  "approved": true,
+  "requestedAt": "2026-10-10",
+  "reason": "기존 명조 허브 코드별 원문 연결 미확인 표시, 기존 postId/URL 보존"
+}

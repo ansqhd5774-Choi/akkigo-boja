@@ -1,4 +1,5 @@
 import {validateMonthlyGameCouponTimeline} from './game-coupon-monthly.js';
+import {annotateSourceHealth} from './source-health.js';
 import {validateArticlePresentation} from './article-presentation.js';
 import {validateGamePeriodArticle} from './game-period-article.js';
 import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
@@ -69,6 +70,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   validateGameCandidateCoverage(article);
   validateMonthlyGameCouponTimeline(article);
   validateArticlePresentation(article);
+  if(!article.post.labels.includes('게임')&&annotateSourceHealth(article.post.content)!==article.post.content)throw Error('SOURCE_HEALTH_ANNOTATION_REQUIRED');
   if(article.post.labels.includes('게임'))validateGamePeriodArticle(article);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();

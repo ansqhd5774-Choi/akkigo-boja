@@ -8,6 +8,7 @@ test('confirmed 404 preserves citation identity without a broken clickable desti
 test('restricted sources retain usable links and do not imply expired coupons',()=>{
  const input='<a href="https://example.org/private">공식 근거</a>';
  const out=annotateSourceHealth(input,[{url:'https://example.org/private',status:403,checkedDate:'2026-10-10'}]);
- assert.ok(out.includes(input));assert.ok(out.includes('재확인'));assert.ok(!out.includes('만료'));
+ assert.ok(out.includes('href="https://example.org/private"'));assert.ok(out.includes('재확인'));assert.ok(!out.includes('만료'));
+ assert.equal(annotateSourceHealth(out,[{url:'https://example.org/private',status:403,checkedDate:'2026-10-10'}]),out);
  assert.equal(annotateSourceHealth(input,[]),input);
 });
