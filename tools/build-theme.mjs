@@ -59,9 +59,8 @@ const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript
 ${homeJs}
 //]]></script></b:if>`;
 const output=base.replace(']]></b:skin>',css+gameCss+homeCss+copyCss+detailCss+siteCss+updatedCss+typographyCss+compactCss+']]></b:skin>').replace('<body>',`<body><b:class cond='data:view.isHomepage' name='ncp-home'/><b:class cond='data:blog.searchLabel' name='ncp-category-page'/><b:if cond='!data:view.isHomepage'>${categoryHeaderR4(categories)}</b:if>${homeR4(categories)}`).replace('</body>',`<b:if cond='!data:view.isHomepage'>${footer}</b:if>`+siteMount+script+gameMount+homeMount+detailMount+updatedMount+'</body>');
-// Blogger all-head-content supplies the configured /favicon.ico directly.
-// Keep one static declaration so crawlers do not depend on JavaScript.
-const brandFavicon='';
-const faviconNormalize='';
+// Keep the previously registered URL stable: bare /favicon.ico can retain old caches.
+const brandFavicon="\n<!-- AKKIGO STABLE FAVICON: retain this URL across theme builds. -->\n<link rel='icon' type='image/x-icon' href='https://lsifl.blogspot.com/favicon.ico?v=akkigo-20261009-2'/>\n";
+const faviconNormalize="<script type='text/javascript'>//<![CDATA[\n(function(){var icons=document.querySelectorAll('link[rel=icon]');for(var i=0;i<icons.length;i++){if(i<icons.length-1){icons[i].remove();}}})();\n//]]></script>\n";
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+'</body>'));
 console.log('R3 theme generated using native Blogger widget base.');
