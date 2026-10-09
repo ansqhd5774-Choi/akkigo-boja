@@ -31,11 +31,13 @@ jobs:
       - name: Verify new model, official icon and shared period article
         run: |
           node --input-type=module -e "import a from './data/articles-supplemental.json' with {type:'json'}; import {validateGamePeriodArticle} from './src/game-period-article.js'; import {validateGameFeaturedImage} from './src/game-featured-image-policy.js'; const x=a.find(x=>x.articleKey==='immortal-rising-awakening-202610'); if(!x)throw Error('NOT_STAGED'); validateGamePeriodArticle(x); validateGameFeaturedImage(x.articleKey,x.post); console.log('IMMORTAL_SHARED_TEMPLATE_PASS');"
+      - name: Regenerate checked-in Blogger theme SOURCE for new game search titles
+        run: node tools/build-theme.mjs
       - name: Commit generated source, catalog and app icon without publication
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/immortal-rising-awakening-202610.json data/game-period-articles.json data/articles-supplemental.json data/game-app-icons.json
+          git add data/immortal-rising-awakening-202610.json data/game-period-articles.json data/articles-supplemental.json data/game-app-icons.json akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
           if git diff --cached --quiet; then echo "IMMORTAL_SOURCE_ALREADY_STAGED"; exit 0; fi
           git commit -m "stage(immortal-rising): official app icon and seven dated codes"
           git push origin HEAD:codex/blogger-worker-r1
