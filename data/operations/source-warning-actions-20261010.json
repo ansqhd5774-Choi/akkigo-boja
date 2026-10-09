@@ -1,0 +1,3110 @@
+{
+  "generatedAt": "2026-10-09T20:27:42.161Z",
+  "scope": "WARNING_ACTION_COVERAGE_NOT_SOURCE_FACT_COMPLETION",
+  "observations": 467,
+  "warningItems": 151,
+  "counts": {
+    "MANUALLY_REVIEWED": 23,
+    "BROWSER_FOLLOWUP_RECORDED": 84,
+    "EXTERNAL_ACCESS_PENDING": 42,
+    "MISSING_SOURCE": 2
+  },
+  "items": [
+    {
+      "sourceId": "72f7f83bd99310054686",
+      "url": "https://coupon.withhive.com/shibarpg",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:32:07.397Z",
+      "manualReview": {
+        "decision": "REGISTRATION_PAGE_NOT_CODE_LIST",
+        "falsePositiveFlag": "EXPECTED_CODE_NOT_OBSERVED",
+        "reviewedAt": "2026-10-10"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "6e0321866564b8c57111",
+      "url": "https://game.naver.com/lounge/Trickcal/board/31",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:32:07.884Z",
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_BOARD_CONFIRMED",
+        "reason": "JavaScript 렌더링 전 짧은 HTML을 실제 페이지 장애로 판단하지 않음",
+        "reviewedAt": "2026-10-10"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "4bb07b97ea10c09e33d5",
+      "url": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW",
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:51:03.109Z",
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_NOTICE_CONFIRMED",
+        "reviewedAt": "2026-10-10",
+        "reason": "이전 공식 본문 직접 확인 증거 유지. JavaScript 렌더링 전 HTML에 코드가 없다는 자동 조회를 실제 코드 삭제로 해석하지 않음"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "733c1048c2303f8c637d",
+      "url": "https://game.naver.com/lounge/BROWNDUST2/home",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:56:42.258Z",
+      "manualReview": {
+        "decision": "OFFICIAL_COMMUNITY_NAVIGATION_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "474954857290de036386",
+      "url": "https://redeem.bd2.pmang.cloud/bd2/index.html?lang=ko-KR",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:56:42.315Z",
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "81e56ba711fb0fdfb658",
+      "url": "https://genshin.hoyoverse.com/ko/gift",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:56:42.413Z",
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "acc77be79127aae5968d",
+      "url": "https://hsr.hoyoverse.com/gift",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T19:56:42.501Z",
+      "manualReview": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "3239325be2e61ff2639e",
+      "url": "https://game.naver.com/lounge/BROWNDUST2/board/detail/8263310",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:00:33.248Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:20:28.912Z",
+        "observation": {
+          "challenge": false,
+          "length": 176,
+          "title": "브라운더스트2 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "4dd197562ff9f5ad15d4",
+      "url": "https://genshin.hoyoverse.com/ko/gift?code=6LS3F3LS5K87",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:00:33.305Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:20:32.793Z",
+        "observation": {
+          "challenge": false,
+          "length": 1161,
+          "title": "원신——모험이 가득한 신비한 세계로 떠나자"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "48533ad619b2df6f6d56",
+      "url": "https://ckworks.jp/vinforadar/video/2a3eAC5NvvY",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:00:33.497Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "b9c7ac2c57a2339c5d40",
+      "url": "https://www.hoyolab.com/article/46765148",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:00:33.664Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:20:37.980Z",
+        "observation": {
+          "challenge": false,
+          "length": 2706,
+          "title": "코드 교환 - 붕괴: 스타 레일 (2026년 9월 20일 / 4.6 라이브 스트림) 붕괴: 스타레일 | HoYoLAB"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bad05cb2df1e1dd5b73c",
+      "url": "https://en.help.roblox.com/hc/ko/articles/360029650831",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:00:36.624Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "0affa008a24c5563468c",
+      "url": "https://leekduck.com/promo-code",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:02:41.349Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:20:41.657Z",
+        "observation": {
+          "challenge": false,
+          "length": 9824,
+          "title": "Available Promo Codes - Leek Duck | Pokémon GO News and Resources"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "02a1d68409742e4bef36",
+      "url": "https://supercell.com/brawlstars-gift/en",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:03:26.208Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:03.460Z",
+        "observation": {
+          "challenge": false,
+          "length": 435,
+          "title": "Brawl Stars freebies and Store Specials"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "3c9df824cd6ab90c7919",
+      "url": "https://support.supercell.com/supercell-store/en/articles/what-is-the-supercell-store-4.html",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:03:27.031Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:05.034Z",
+        "observation": {
+          "challenge": false,
+          "length": 4213,
+          "title": "About the Supercell Store | Supercell Support Portal"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "b6995d349073f659a7cd",
+      "url": "https://yesim.app/referral-program/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:03:31.963Z",
+      "manualReview": {
+        "decision": "PRIOR_BROWSER_BODY_EVIDENCE_RETAINED",
+        "reviewedAt": "2026-10-10",
+        "reason": "기존 브라우저 본문 확인을 자동HTTP202로 취소하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "1bec62bb10592b01f4dc",
+      "url": "https://maya.net/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:03:32.110Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "21c6c6dc72e5192845d8",
+      "url": "https://yesim.app/promocodes/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:03:45.068Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "d11c0b4d2599126b011d",
+      "url": "https://www.dontpayfull.com/at/simcorner.com",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:03:50.043Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "492ec34a17de74bd0c6c",
+      "url": "https://yesim.app/loyalty-program/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:13.534Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "e0c0c397ca29a640b7a8",
+      "url": "https://www.facebook.com/gigagocom/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:04:17.797Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:07.603Z",
+        "observation": {
+          "challenge": false,
+          "length": 339,
+          "title": "Gigago | Facebook"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "0c46160765df6e003537",
+      "url": "https://www.gomoworld.com/en/help/getting-started/use-promo-code",
+      "originalFlags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:04:21.742Z",
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.608Z",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "e42c570e272427945dfc",
+      "url": "https://www.gomoworld.com/en",
+      "originalFlags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:04:30.618Z",
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "3a789adabebc091d31f5",
+      "url": "https://keepgo.tenereteam.com/coupons",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:32.295Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "526f235806062e587a55",
+      "url": "https://www.dontpayfull.com/at/globalyo.com",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:39.836Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "f0298d3f883631531fe8",
+      "url": "https://www.esim4travel.com/ko",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:04:40.259Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:10.704Z",
+        "observation": {
+          "challenge": false,
+          "length": 6076,
+          "title": "eSIM4Travel: 해외여행을 위한 합리적인 eSIM 플랜"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "9dbd21541e2707f87acd",
+      "url": "https://www.dontpayfull.com/at/esim4travel.com",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:41.141Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "cfffe21a53ad1039b628",
+      "url": "https://www.spaceship.com/ko/promos/?tab=domains",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:44.551Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "a4273afebc19d22e674b",
+      "url": "https://www.namecheap.com/promos/company-birthday-offers-anniversary-deals/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:04:45.235Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "53b9fa748ba64fe365e8",
+      "url": "https://www.nygirlz.co.kr/web/info/benefit3.php",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:04:50.467Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:12.132Z",
+        "observation": {
+          "challenge": false,
+          "length": 1449,
+          "title": "뉴욕걸즈 - No.1 해외구매 서비스"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "531d1736a306da5a44c3",
+      "url": "https://doctorlean.co.kr/sopmal/goods/selectGoodsDtl?no=418",
+      "originalFlags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:04:51.675Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "f2388effd7c2c7bbf792",
+      "url": "https://www.kgcshop.co.kr/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:04:53.017Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:16.792Z",
+        "observation": {
+          "challenge": false,
+          "length": 1896,
+          "title": "정관장몰"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "dfaf3bcf264aef331d17",
+      "url": "https://www.nygirlz.co.kr/web/event/event.php",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:04.488Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:38.626Z",
+        "observation": {
+          "challenge": false,
+          "length": 1815,
+          "title": "뉴욕걸즈 - No.1 해외구매 서비스"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "1566344f8073c2db6ba3",
+      "url": "https://doctorlean.co.kr/",
+      "originalFlags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:05.745Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "a7bcd41507bf31e7c53e",
+      "url": "https://pf.kakao.com/_rMBub/coupons?filter=usable",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:06.668Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:39.811Z",
+        "observation": {
+          "challenge": false,
+          "length": 22,
+          "title": "카카오톡채널 - 종근당건강 공식몰"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "a596a30d5eace58cbf6f",
+      "url": "https://doctorlean.co.kr/sopmal/mbr/selectJoinGuidance",
+      "originalFlags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:10.743Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "366891238a9c10a8e5d7",
+      "url": "https://pf.kakao.com/_EiaLj/friend",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:11.558Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:40.288Z",
+        "observation": {
+          "challenge": false,
+          "length": 26,
+          "title": "카카오톡채널 - 락티브 lactiv"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bd62016e066d8072a530",
+      "url": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
+      "originalFlags": [
+        "NON_HTML_CONTENT_REVIEW_REQUIRED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:27:41.970Z",
+      "manualReview": {
+        "decision": "PDF_TYPE_CONFIRMED_CONTENT_NOT_EXTRACTED",
+        "reviewedAt": "2026-10-09T20:27:41.970Z"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "54d4c2e6d05e6f491c1c",
+      "url": "https://fastcampus.co.kr/account/sign-in",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:15.830Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:42.313Z",
+        "observation": {
+          "challenge": false,
+          "length": 104,
+          "title": "인증 | 패스트캠퍼스"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "7bafd1aff844a2db2899",
+      "url": "https://wikidocs.net/265342",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:05:16.325Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "4627b4136881cebadaa4",
+      "url": "https://game.naver.com/lounge/FORTBLOX",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:16.387Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:43.689Z",
+        "observation": {
+          "challenge": false,
+          "length": 0,
+          "title": "네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "ac84ae0cbeff15ff4671",
+      "url": "https://coupon.hyperrise.kr/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:17.693Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:45.270Z",
+        "observation": {
+          "challenge": false,
+          "length": 0,
+          "title": "쿠폰 교환소"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "57be7a6f234d64dbf05a",
+      "url": "https://discord.gg/vMUx8EbGS8",
+      "originalFlags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:05:18.712Z",
+      "manualReview": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "ab9c32afd48f8c3cb666",
+      "url": "https://www.digwow.net/%ED%8F%AC%ED%8A%B8%EB%B8%94%EB%A1%9D%EC%8A%A4-%EC%9D%B4%EB%8F%99%EC%9A%94%EC%83%88go/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:20.076Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "431018aa8852566142de",
+      "url": "https://www.digwow.net/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:23.375Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "678f9377cc5822f33f35",
+      "url": "https://game.naver.com/lounge/Samgukji_Lords_War/home",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:23.428Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:46.637Z",
+        "observation": {
+          "challenge": false,
+          "length": 236,
+          "title": "삼국지: 제후의 전쟁 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "fc47f919908ea20e4be9",
+      "url": "https://www.reddit.com/r/CoopTD/comments/1ihutw1/spare_rookie_codes_put_them_in_here/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:25.779Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:47.600Z",
+        "observation": {
+          "challenge": true,
+          "length": 240,
+          "title": "Reddit - Prove your humanity"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "f2f808004ee1c7a83650",
+      "url": "https://discord.gg/5XAq6hPX6U",
+      "originalFlags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:05:26.217Z",
+      "manualReview": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "929322b408cb6b5ad96b",
+      "url": "https://www.digwow.net/%EC%82%BC%EA%B5%AD%EC%A7%80-%EC%A0%9C%ED%9B%84%EC%9D%98-%EC%A0%84%EC%9F%81/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:42.011Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "ee4c810c5b1fe3ef9cb2",
+      "url": "https://forum.netmarble.com/sk_rebirth_gl",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:42.724Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:50.531Z",
+        "observation": {
+          "challenge": false,
+          "length": 942,
+          "title": "Seven Knights Re:BIRTH"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "762cea9fad36c4c5956a",
+      "url": "https://www.reddit.com/r/Warframe/comments/1ukuray/how_to_get_this_glyph/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:43.445Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:52.338Z",
+        "observation": {
+          "challenge": false,
+          "length": 143,
+          "title": ""
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bfbb889361d768561e54",
+      "url": "https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:05:44.967Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "4441281f39c722259deb",
+      "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:05:45.254Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "562f2e0e1ec18a5d03bc",
+      "url": "https://www.digwow.net/%EB%9E%9C%EB%8D%A4-%EB%8B%A4%EC%9D%B4%EC%8A%A4-2/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:48.372Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "397989a1d2f981bd32d4",
+      "url": "https://www.reddit.com/r/Warframe/comments/1s4ht93/newly_available_glyph_from_quitshy/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:50.156Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:55.451Z",
+        "observation": {
+          "challenge": false,
+          "length": 8085,
+          "title": "Newly available Glyph from quitshy : r/Warframe"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "0d3ca15da56f99602806",
+      "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:05:51.571Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "ca348ff518095b401a88",
+      "url": "https://www.digwow.net/%EC%86%8C%EB%8B%A4%EC%A0%84%EC%84%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:05:58.387Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "48f4bcdb53310720c0e7",
+      "url": "https://www.reddit.com/r/Warframe/comments/1u59e3w/how_can_i_get_this_glyph/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:05:59.016Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:21:59.581Z",
+        "observation": {
+          "challenge": false,
+          "length": 4537,
+          "title": "How can I get this Glyph? : r/Warframe"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "def077e7b9e5c365c238",
+      "url": "https://www.warframe.com/ko/promocode",
+      "originalFlags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:05:59.372Z",
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "68f1823885e2abe898d6",
+      "url": "https://www.mrguider.org/codes/whiteout-survival-codes-gift/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:05:59.433Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "01e5fad07da990ef656c",
+      "url": "https://www.zrrglobal.com/zrrofficial/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:00.115Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:14.086Z",
+        "observation": {
+          "challenge": false,
+          "length": 91,
+          "title": "Z Route: Redemption"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "105c65068143f79e3bf2",
+      "url": "https://www.itechguides.com/whiteout-survival-gift-codes-october-2026-gems-gold-keys-rewards/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:06:00.957Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "550695b6fc9dc1fe0ca7",
+      "url": "https://www.digwow.net/%ED%98%91%ED%83%80%EB%94%94-%ED%98%91%EB%8F%99-%ED%83%80%EC%9B%8C-%EB%94%94%ED%8E%9C%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:04.846Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "684f36864b416eee9124",
+      "url": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:05.332Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:17.997Z",
+        "observation": {
+          "challenge": false,
+          "length": 9658,
+          "title": "Free warframe promo code : r/Warframe"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "cf75a56e4e4585a39d40",
+      "url": "https://wos-giftcode.centurygame.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:05.695Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:20.005Z",
+        "observation": {
+          "challenge": false,
+          "length": 123,
+          "title": "교환 센터"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "40cab570372f98c3159f",
+      "url": "https://coupon.nexon.com/ko-kr/maplestoryidle",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:06:07.884Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "05fc165a7e203edc486a",
+      "url": "https://www.mrguider.org/codes/kingshot-codes/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:06:09.532Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "1b3ab509d4c5c5028d93",
+      "url": "https://ks-giftcode.centurygame.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:09.700Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:21.030Z",
+        "observation": {
+          "challenge": false,
+          "length": 123,
+          "title": "교환 센터"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "ce462d6b4289b6e22b2e",
+      "url": "https://www.reddit.com/r/Warframe/comments/1s19iea/new_promo_code_androidqv4rx/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:10.187Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:25.500Z",
+        "observation": {
+          "challenge": false,
+          "length": 10948,
+          "title": "New Promo Code [ ANDROID-QV4RX ] : r/Warframe"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "fcb6d5180fe2695fead8",
+      "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:06:11.610Z",
+      "manualReview": {
+        "decision": "WEB_READER_CODE_LIST_PRESENT_NODE_RESPONSE_DIFFERS",
+        "reviewedAt": "2026-10-10",
+        "reason": "웹리더에서 WELLDONE·Kingshot888·VIP777·KS1005 및 과거 코드 목록 확인. 자동조회의 전체 코드 소실로 판정하지 않음",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "7e7a3be4ecb02fa7e868",
+      "url": "https://fcmobile.nexon.com/Coupon/Index",
+      "originalFlags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:06:14.920Z",
+      "manualReview": {
+        "decision": "OFFICIAL_LOGIN_REDIRECT_OBSERVED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "f69c7de4845077d98330",
+      "url": "https://forum.nexon.com/fcmobile/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:15.126Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:30.246Z",
+        "observation": {
+          "challenge": false,
+          "length": 2213,
+          "title": "FC MOBILE – Nexon Community"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "8c5c8585ca56e0123e3b",
+      "url": "https://www.reddit.com/r/Warframe/comments/1wvd8fb/looks_like_a_limitedtime_code_redeem_carrythefire/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:17.963Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:22:56.452Z",
+        "observation": {
+          "challenge": false,
+          "length": 9024,
+          "title": "Looks like a limited-time code redeem: \"CARRYTHEFIRE\". Redeem in the in-game market : r/Warframe"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "75769f02d2b38bde6d8c",
+      "url": "https://danmaek.com/posts/lucky-defense-coupons/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "MISSING_SOURCE",
+      "action": "Retain historical citation; require matching replacement evidence before restoring source claims.",
+      "nextReviewAt": "2026-10-16T20:06:18.899Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "99c2fc0e6a79c42509ef",
+      "url": "https://discord.gg/nikke-en",
+      "originalFlags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:06:21.365Z",
+      "manualReview": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "7d734300746ffdb84c1d",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:32.311Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:00.858Z",
+        "observation": {
+          "challenge": false,
+          "length": 2696,
+          "title": "S1 Week 1 is live in Z Route: Redemption with a new Virus mechanic + 8 active resource codes : r/BlueStacks"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c36c6e2afafb9d7cfed7",
+      "url": "https://game.naver.com/lounge/Duck_Survival/board/detail/8206212",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:34.106Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:03.553Z",
+        "observation": {
+          "challenge": false,
+          "length": 410,
+          "title": "후더덕 서바이벌 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "e4263fc7bd32c9b4735f",
+      "url": "https://www.pocketgamer.com/duck-survival/codes/",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:06:34.294Z",
+      "manualReview": {
+        "decision": "SOURCE_CASING_VARIANT_PUBLIC_CLARIFICATION",
+        "reviewedAt": "2026-10-10",
+        "reason": "원문 HearDuck/hearduck과 HEARDUCK의 표기 차이 안내, 임의로 코드 문자열 변경하지 않음"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "55f54af1710d58970724",
+      "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:06:36.188Z",
+      "manualReview": {
+        "decision": "SOURCE_CASING_VARIANT_PUBLIC_CLARIFICATION",
+        "reviewedAt": "2026-10-10",
+        "reason": "원문 HearDuck/hearduck과 HEARDUCK의 표기 차이 안내, 임의로 코드 문자열 변경하지 않음"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c8bb543b5a0534c1104f",
+      "url": "https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:38.275Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:06.287Z",
+        "observation": {
+          "challenge": false,
+          "length": 1230,
+          "title": "🎁 New Gift Code: KS1005 : r/KingShot"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "119db0adb6f36b9c4beb",
+      "url": "https://game.naver.com/lounge/Duck_Survival/pre_campaign",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:38.336Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:08.642Z",
+        "observation": {
+          "challenge": false,
+          "length": 0,
+          "title": "네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "475546164f58ba519c8c",
+      "url": "https://www.aayyy.net/%E6%A7%8D%E6%89%8B%E8%B2%93%E5%92%AA/%E7%A6%AE%E5%8C%85%E7%A2%BC/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:42.962Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "0869b79361066998fc00",
+      "url": "https://game.edu.kg/ko/idle-cat-gunner%3A-shooter-rpg/%EC%BF%A0%ED%8F%B0/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:45.531Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "7e9100432af2828d5cc2",
+      "url": "https://www.ohcodes.com/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:06:46.812Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "291ba31a1c07af85850d",
+      "url": "https://www.reddit.com/r/u_SafeSkinTrade/comments/1tl8m8h/everyone_get_your_diamond_coupon/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:47.258Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:11.171Z",
+        "observation": {
+          "challenge": false,
+          "length": 747,
+          "title": "Everyone, get your diamond coupon! : u/SafeSkinTrade"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "2fc98a31d22a5701b26b",
+      "url": "https://store.toplords.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:48.287Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:22.746Z",
+        "observation": {
+          "challenge": false,
+          "length": 209,
+          "title": "Store"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "26f52cf71d46fd2f5424",
+      "url": "https://game.naver.com/lounge/ROGW_Remains_Of_Gods/board/detail/8269312",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:48.617Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:24.517Z",
+        "observation": {
+          "challenge": false,
+          "length": 257,
+          "title": "로그W: 리메인즈 오브 갓 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "b140ddf6942f255ec408",
+      "url": "https://www.digwow.net/%EB%A1%9C%EA%B7%B8w/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:50.524Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "ac75c12f296aeae7a649",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1pyipuk/lucky_coupon_lucky2026/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:52.292Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:27.474Z",
+        "observation": {
+          "challenge": false,
+          "length": 1246,
+          "title": "Lucky coupon: LUCKY2026 : r/luckydefense"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "3f9ca12543dd997aeefb",
+      "url": "https://game.edu.kg/ko/idle-cat-gunner/%EC%BF%A0%ED%8F%B0/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:54.077Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "6cac07bf3aa7143e58da",
+      "url": "https://game.naver.com/lounge/ROGW_Remains_Of_Gods",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:54.282Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:29.847Z",
+        "observation": {
+          "challenge": false,
+          "length": 176,
+          "title": "로그W: 리메인즈 오브 갓 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c3650da1a3d49fce20cd",
+      "url": "https://www.linegames.org/ko/royal-kingdom-%EC%BF%A0%ED%8F%B0/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:06:56.768Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "0e0efe50cdfe4b34fbe7",
+      "url": "https://fkssj.quxianghudong.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:58.817Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:33.232Z",
+        "observation": {
+          "challenge": false,
+          "length": 9366,
+          "title": "首页 - 疯狂水世界"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "cd9f24472c22f1a85482",
+      "url": "https://www.taptap.cn/moment/855187337099871515?group_id=1069519",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MISSING_SOURCE",
+      "action": "Retain historical citation; require matching replacement evidence before restoring source claims.",
+      "nextReviewAt": "2026-10-16T20:06:59.729Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "e67e49bd2bc6bb0e389c",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1tcttvs/2nd_anniversary_update_preview/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:06:59.944Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:35.614Z",
+        "observation": {
+          "challenge": false,
+          "length": 6802,
+          "title": "🎂 2nd Anniversary Update Preview** : r/luckydefense"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bf41be7dca71fb8faf67",
+      "url": "https://www.gamermall.net/global/flot/cdkey",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:02.083Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:38.817Z",
+        "observation": {
+          "challenge": false,
+          "length": 45,
+          "title": "Wild Water World"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "78b709d718b20fa77916",
+      "url": "https://game.naver.com/lounge/Wild_Water_World/board",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:02.134Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:41.133Z",
+        "observation": {
+          "challenge": false,
+          "length": 1923,
+          "title": "아쿠아랜드: 크레이지 서바이벌 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "90495e20f76e4960dfe6",
+      "url": "https://flotshelter.eworldgame.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:03.520Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:52.642Z",
+        "observation": {
+          "challenge": false,
+          "length": 73,
+          "title": "아쿠아랜드: 크레이지 서바이벌——험한 만큼 꿀잼 바다 생존!"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "50431522fdfdb5852461",
+      "url": "https://www.digwow.net/%EB%82%98%EB%A7%8C-sss%EA%B8%89-%ED%87%B4%EB%A7%88%EC%82%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:07:05.023Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "78bfbfbad8d2f92251a3",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1lkxyi0",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:05.582Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:56.570Z",
+        "observation": {
+          "challenge": false,
+          "length": 2344,
+          "title": "Coupon LUCKYCOMMU50K : r/luckydefense"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "2f088e539c8a1091424f",
+      "url": "https://game.naver.com/lounge/solo_exorcist/home",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:07.205Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:23:58.817Z",
+        "observation": {
+          "challenge": false,
+          "length": 1941,
+          "title": "나만 SSS급 퇴마사 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c6ba92f2b3e95f71356c",
+      "url": "https://www.digwow.net/%ED%83%91-%ED%8F%AC%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:07:10.266Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "c6487d15dea6ab2a3ecd",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1kos0iq",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:20.240Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:01.801Z",
+        "observation": {
+          "challenge": false,
+          "length": 2272,
+          "title": "Coupon event : r/luckydefense"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "58fb3a7511182a8e58d6",
+      "url": "https://game.edu.kg/ko/top-lords/%EC%BF%A0%ED%8F%B0/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:07:22.112Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "00aea913178a3016d964",
+      "url": "https://game.naver.com/lounge/solo_exorcist/board/detail/8227479",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:22.888Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:04.610Z",
+        "observation": {
+          "challenge": false,
+          "length": 857,
+          "title": "📚추석 쿠폰 모음 : 나만 SSS급 퇴마사"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "04d6922fb83b4c97a83e",
+      "url": "https://www.gamesradar.com/games/rpg/aniimo-codes/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:24.573Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:09.660Z",
+        "observation": {
+          "challenge": false,
+          "length": 7259,
+          "title": "Aniimo codes (October 2026) | GamesRadar+"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "1d29d810de20f8bb3905",
+      "url": "https://gevents.globallap.com/gamecode/index.html?gameId=440",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:24.967Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:15.876Z",
+        "observation": {
+          "challenge": false,
+          "length": 230,
+          "title": "globallap passport"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c37ab2617db1fbcc1ebc",
+      "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:07:25.842Z",
+      "manualReview": {
+        "decision": "REWARD_WORD_ASSOCIATION_WITHDRAWN",
+        "reviewedAt": "2026-10-10",
+        "reason": "보상명 단어를 코드 선언으로 오인한 이전 연결 철회"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "f325986c3af8d6df338c",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1f8ma02",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:26.493Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:19.631Z",
+        "observation": {
+          "challenge": false,
+          "length": 1967,
+          "title": "Coupon codes? : r/luckydefense"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "35fd6fa85485b9defce1",
+      "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+      "originalFlags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:07:28.649Z",
+      "manualReview": {
+        "decision": "REWARD_WORD_ASSOCIATION_WITHDRAWN",
+        "reviewedAt": "2026-10-10",
+        "reason": "보상명 단어를 코드 선언으로 오인한 이전 연결 철회"
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "66beb8cd147364dd2821",
+      "url": "https://ls-giftcode.centurygame.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:29.812Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:29.957Z",
+        "observation": {
+          "challenge": false,
+          "length": 151,
+          "title": "교환 코드 센터"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "87ad24d6db97892134f8",
+      "url": "https://www.reddit.com/r/redeemcodesmobile/comments/1tqbkeg/duck_survival_codes_updated_regularly/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:32.366Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:32.890Z",
+        "observation": {
+          "challenge": false,
+          "length": 2238,
+          "title": "Duck Survival Codes [Updated Regularly] : r/redeemcodesmobile"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "08b2fcea13c7174e1cbb",
+      "url": "https://discord.gg/Rq928VBeHx",
+      "originalFlags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:07:34.727Z",
+      "manualReview": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "89430973e4f4751ea896",
+      "url": "https://www.facebook.com/LastEchoHKTWMO/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:35.132Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:38.290Z",
+        "observation": {
+          "challenge": false,
+          "length": 441,
+          "title": "最後的迴響 | Facebook"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "f779d4515ebd9f22ddcc",
+      "url": "https://game.naver.com/lounge/Immortal_Rising_Awakening/home",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:35.182Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:40.462Z",
+        "observation": {
+          "challenge": false,
+          "length": 232,
+          "title": "이모탈 라이징: 불멸의 각성 : 네이버 게임"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "eb2c60ad31d8f561e03f",
+      "url": "https://immortalrising.goatgames.com/",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:38.787Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:42.815Z",
+        "observation": {
+          "challenge": false,
+          "length": 57,
+          "title": "이모탈 라이징: 불멸의 각성 정식 출시! 지금 바로 다운로드하세요!"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "e84d088142f423ab2766",
+      "url": "https://www.facebook.com/ImmortalRising.Awakening",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:39.291Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:50.832Z",
+        "observation": {
+          "challenge": false,
+          "length": 695,
+          "title": "이모탈 라이징: 불멸의 각성 | Facebook"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "b79538db075e7796f331",
+      "url": "https://forum.nexon.com/bluearchive/board_view?board=1039&thread=3536588",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:43.975Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:55.866Z",
+        "observation": {
+          "challenge": false,
+          "length": 3080,
+          "title": "에리카 합류 기념 특별 쿠폰 안내"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c10756b76c2c6f4cdc7e",
+      "url": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-16T20:07:44.627Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "2b2bb5d7a397649980bb",
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=10503",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:45.340Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:24:58.668Z",
+        "observation": {
+          "challenge": false,
+          "length": 5270,
+          "title": "도깨비의세계 공식 커뮤니티"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "8b022a116e3f155a2571",
+      "url": "https://game.edu.kg/pl/top-lords/kody/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:07:47.974Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "af202cf32b8f70e36725",
+      "url": "https://forum.nexon.com/bluearchive/board_view?board=1072&thread=1595648",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:49.073Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:11.129Z",
+        "observation": {
+          "challenge": false,
+          "length": 2541,
+          "title": "쿠폰 사용 및 조회 방법"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "487bb2a6fd2fabb07b1c",
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=9112",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:50.101Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:14.292Z",
+        "observation": {
+          "challenge": false,
+          "length": 4158,
+          "title": "도깨비의세계 공식 커뮤니티"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "c1e078fe5da0c43d2471",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3546003",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "MANUALLY_REVIEWED",
+      "action": "Preserve recorded review and original evidence; do not infer coupon validity.",
+      "nextReviewAt": "2026-10-16T20:07:52.194Z",
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_NOTICE_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:20:05.688Z",
+        "title": "9/22(화) 서버 통합 규모 조정 및 보상 개선 안내",
+        "sourcePublishedAt": "2026-09-16T19:00:00+09:00",
+        "code": "50CUBECOUPON",
+        "reward": "미라클 큐브 50개",
+        "expiry": "2026-10-07T23:59:00+09:00",
+        "falsePositiveFlag": "BODY_TOO_SHORT_REVIEW",
+        "accountInputVerified": false,
+        "existingCatalogAlreadyMatches": true
+      },
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "eb8af41ec5fd135084d4",
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=9200",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:52.629Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:15.285Z",
+        "observation": {
+          "challenge": false,
+          "length": 924,
+          "title": "도깨비의세계 공식 커뮤니티"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "57077e2d0ec4769ac5a6",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3512438",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:53.887Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:18.301Z",
+        "observation": {
+          "challenge": false,
+          "length": 1906,
+          "title": "🎉 여름 깜짝 쿠폰 선물 안내 (~8/19)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "828508181009f62d337d",
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=5533",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:54.321Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:19.601Z",
+        "observation": {
+          "challenge": false,
+          "length": 224,
+          "title": "도깨비의세계 공식 커뮤니티"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "90afe4b59d0917ea57cc",
+      "url": "https://game.edu.kg/ka/royal-kingdom/%E1%83%99%E1%83%9D%E1%83%93%E1%83%94%E1%83%91%E1%83%98/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:07:57.101Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "82f79ca861019c0387bb",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:07:57.312Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:21.884Z",
+        "observation": {
+          "challenge": false,
+          "length": 1902,
+          "title": "핑크빈 맞이 깜짝 쿠폰 선물 (~10/14)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "4aeede6e83f3b377c3ba",
+      "url": "https://game.edu.kg/hi/royal-kingdom/codes/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:08:00.486Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "d599f57c2250033efa3d",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3506500",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:08:00.691Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:23.588Z",
+        "observation": {
+          "challenge": false,
+          "length": 1882,
+          "title": "🎉 업데이트 기념 깜짝 쿠폰 선물 (~9/2)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "9ef433a02a8510cb151f",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3473910",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:08:01.779Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:27.542Z",
+        "observation": {
+          "challenge": false,
+          "length": 1940,
+          "title": "🍧여름맞이 깜짝 쿠폰 선물🍧 (~7/1)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "9570c0f974e6c7b9a930",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3436295",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:08:04.194Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:37.740Z",
+        "observation": {
+          "challenge": false,
+          "length": 1988,
+          "title": "가정의 달 기념 특별 선물 안내 🌱 (~5/25)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "ef29005fb864ffeb7695",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3440884",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:10.800Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:39.916Z",
+        "observation": {
+          "challenge": false,
+          "length": 1992,
+          "title": "🎁메이플 키우기 반주년 기념 쿠폰 깜짝 선물 (~5/27)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "19ec169fa2af8ea3a6b4",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3417995",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:14.055Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:42.183Z",
+        "observation": {
+          "challenge": false,
+          "length": 2419,
+          "title": "메이플스토리 X kt wiz 브랜드데이 콜라보 기념 특별 선물⚾ (~7/31)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "92405510b8044db71f78",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3433590",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:14.994Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:43.833Z",
+        "observation": {
+          "challenge": false,
+          "length": 2063,
+          "title": "(추가) 메이플 키우기 반주년 기념 특별 선물 (~5/20)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "49570211816e7b377334",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372427",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:15.804Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:46.149Z",
+        "observation": {
+          "challenge": false,
+          "length": 2386,
+          "title": "메이플 키우기 정식 오픈 100일 기념 - 세 번째 감사 쿠폰 안내"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "68c442b31af6624b9b84",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3413149",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:16.789Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:48.811Z",
+        "observation": {
+          "challenge": false,
+          "length": 2244,
+          "title": "만우절 깜짝 선물 안내🎁 (~4/14 까지)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "84f1d13f6623c238c6ab",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3323144",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:17.603Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:50.947Z",
+        "observation": {
+          "challenge": false,
+          "length": 2533,
+          "title": "새해 복 많이 받으세요! 새해 맞이 쿠폰 선물 안내🎁 (~26/1/14)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "8f6bc096fe7d730bda32",
+      "url": "https://game.edu.kg/ko/라스트-에코/쿠폰/",
+      "originalFlags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "category": "EXTERNAL_ACCESS_PENDING",
+      "action": "Use scheduled backoff; preserve unverified status; never remove codes solely because access failed.",
+      "nextReviewAt": "2026-10-10T20:09:20.663Z",
+      "manualReview": null,
+      "browserFollowup": null,
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "PENDING_EXTERNAL_EVIDENCE"
+    },
+    {
+      "sourceId": "7597c63f8dcf3486979b",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372426",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:20.888Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:25:53.726Z",
+        "observation": {
+          "challenge": false,
+          "length": 2402,
+          "title": "메이플 키우기 정식 오픈 100일 기념 - 두 번째 감사 쿠폰 안내 (~3/1 까지)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "4b7c5ddd50b27c53eafb",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372425",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:21.611Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:03.951Z",
+        "observation": {
+          "challenge": false,
+          "length": 2643,
+          "title": "메이플 키우기 정식 오픈 100일 기념 - 감사 쿠폰 안내 (~3/1까지)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "aa852ff6d38dbdd3f9e5",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3370500",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:22.265Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:05.709Z",
+        "observation": {
+          "challenge": false,
+          "length": 2073,
+          "title": "용사님께 드리는 GM비니의 감사 쿠폰 (~2/19까지)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "cf217974e62d1c7cb029",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3323138",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:22.721Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:07.348Z",
+        "observation": {
+          "challenge": false,
+          "length": 2212,
+          "title": "12월 25일(목) 크리스마스 맞이🎄 두 번째 특별 선물 안내 (~26/1/14)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "fd383e61601a3b8bf362",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3253224",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:23.203Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:09.011Z",
+        "observation": {
+          "challenge": false,
+          "length": 2229,
+          "title": "🎉 2일차 감사 쿠폰 공개! (~12/17까지)🎉"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bfea5353af334f34d007",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3323106",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:24.072Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:10.869Z",
+        "observation": {
+          "challenge": false,
+          "length": 2434,
+          "title": "메이플 키우기의 첫 크리스마스! 🎄 특별 선물 안내 (~26/1/14)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "b080477d97e5a84bac30",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3253237",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:24.621Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:12.738Z",
+        "observation": {
+          "challenge": false,
+          "length": 2186,
+          "title": "🎉 3일차 감사 쿠폰 공개! (~12/17까지)🎉"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "bb2b8d6d3b8d0223744a",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3225521",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:25.157Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:14.798Z",
+        "observation": {
+          "challenge": false,
+          "length": 2301,
+          "title": "메이플 키우기 마켓 1위 달성 기념! 감사 선물을 전해 드립니다."
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "336e4adb9ba6c692273b",
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3252827",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:25.742Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:16.767Z",
+        "observation": {
+          "challenge": false,
+          "length": 2347,
+          "title": "🎉 1일차 감사 쿠폰 공개! (~12/17까지)🎉"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "e0d870c327b3bf342a55",
+      "url": "https://forum.nexon.com/fcmobile/board_view?board=441&thread=3550867&stickyBoard=1",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:09:26.248Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:21.486Z",
+        "observation": {
+          "challenge": false,
+          "length": 4105,
+          "title": "[뚝딱] 교환 토큰 및 교환 관련 쿠폰 보상 안내"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    },
+    {
+      "sourceId": "0398c0fa921acd057e73",
+      "url": "https://forum.nexon.com/fcmobile/board_view?board=443&thread=3542994",
+      "originalFlags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "category": "BROWSER_FOLLOWUP_RECORDED",
+      "action": "Preserve rendered-page observation separately; verify article-specific claims before changing coupon facts.",
+      "nextReviewAt": "2026-10-16T20:10:20.131Z",
+      "manualReview": null,
+      "browserFollowup": {
+        "reviewedAt": "2026-10-09T20:26:23.221Z",
+        "observation": {
+          "challenge": false,
+          "length": 2554,
+          "title": "9~10월 대한민국 국가대표팀 A매치 쿠폰 이벤트 (~10/6 23:59)"
+        },
+        "renderingObservationOnly": true
+      },
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "resolution": "REVIEW_RECORDED_NOT_FACT_COMPLETION"
+    }
+  ]
+}

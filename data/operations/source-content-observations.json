@@ -1336,7 +1336,12 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.608Z",
+        "accountInputVerified": false
+      }
     },
     {
       "sourceId": "8fc96fd777eb39b72ef0",
@@ -1457,7 +1462,12 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      }
     },
     {
       "sourceId": "bcc49768f40e7e11f7ce",
@@ -2896,21 +2906,35 @@
     {
       "sourceId": "bd62016e066d8072a530",
       "url": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
-      "checkedAt": "2026-10-09T20:05:15.743Z",
-      "nextReviewAt": "2026-10-16T20:05:15.743Z",
+      "checkedAt": "2026-10-09T20:27:41.968Z",
+      "nextReviewAt": "2026-10-16T20:27:41.970Z",
       "consecutiveTransientFailures": 0,
       "lastObservedBodyHash": null,
       "httpStatus": 200,
       "finalUrl": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
       "title": "",
-      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "textLength": 0,
+      "contentHash": null,
+      "textLength": null,
       "flags": [
-        "BODY_TOO_SHORT_REVIEW"
+        "NON_HTML_CONTENT_REVIEW_REQUIRED"
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReviewHistory": [],
+      "previousObservation": {
+        "checkedAt": "2026-10-09T20:05:15.743Z",
+        "httpStatus": 200,
+        "flags": [
+          "BODY_TOO_SHORT_REVIEW"
+        ],
+        "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "contentType": "application/pdf",
+      "manualReview": {
+        "decision": "PDF_TYPE_CONFIRMED_CONTENT_NOT_EXTRACTED",
+        "reviewedAt": "2026-10-09T20:27:41.970Z"
+      }
     },
     {
       "sourceId": "54d4c2e6d05e6f491c1c",
@@ -4149,7 +4173,12 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "RECAPTCHA_FOOTER_FALSE_POSITIVE_BROWSER_BODY_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      }
     },
     {
       "sourceId": "68f1823885e2abe898d6",
@@ -4688,7 +4717,12 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "OFFICIAL_LOGIN_REDIRECT_OBSERVED",
+        "reviewedAt": "2026-10-09T20:27:29.623Z",
+        "accountInputVerified": false
+      }
     },
     {
       "sourceId": "f69c7de4845077d98330",
@@ -7598,7 +7632,19 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_NOTICE_CONFIRMED",
+        "reviewedAt": "2026-10-09T20:20:05.688Z",
+        "title": "9/22(화) 서버 통합 규모 조정 및 보상 개선 안내",
+        "sourcePublishedAt": "2026-09-16T19:00:00+09:00",
+        "code": "50CUBECOUPON",
+        "reward": "미라클 큐브 50개",
+        "expiry": "2026-10-07T23:59:00+09:00",
+        "falsePositiveFlag": "BODY_TOO_SHORT_REVIEW",
+        "accountInputVerified": false,
+        "existingCatalogAlreadyMatches": true
+      }
     },
     {
       "sourceId": "ff829692088dd26b00a2",
