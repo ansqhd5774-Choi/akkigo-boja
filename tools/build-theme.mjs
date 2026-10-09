@@ -10,7 +10,10 @@ const identityMount=`<script type='text/javascript'>//<![CDATA[\nwindow.ncpResol
 const catalogs=await Promise.all(['data/articles.json','data/articles-supplemental.json'].map(async path=>JSON.parse(await readFile(new URL(path,root),'utf8'))));
 const hubModels=JSON.parse(await readFile(new URL('data/game-period-hubs.json',root),'utf8'));
 const gameTitles=catalogs.flat().filter(article=>article.post.labels.includes('게임')).map(article=>article.post.title).concat(Object.values(hubModels).map(hub=>hub.title));
-const base=(await readFile(new URL('theme/blogger-native-base.xml',root),'utf8')).replace('<!-- GAME_SEARCH_TITLE_BRANCHES -->',gameSearchTitleBranches(gameTitles));
+const descriptions=[...new Map(catalogs.flat().filter(a=>a.source?.seo?.metaDescriptionDraft).map(a=>[a.post.title,a.source.seo.metaDescriptionDraft])).entries()];
+const descriptionFallback="<meta expr:content='data:blog.pageName + &quot; — 쿠폰 정보와 사용 방법, 출처 및 적용 조건을 본문에서 확인하세요.&quot;' name='description'/>";
+const descriptionBranches=descriptions.length?'<b:if cond=\'data:blog.pageName == &quot;'+e(descriptions[0][0])+'&quot;\'><meta name=\'description\' content=\''+e(descriptions[0][1])+'\'/>'+descriptions.slice(1).map(([title,description])=>'<b:elseif cond=\'data:blog.pageName == &quot;'+e(title)+'&quot;\'/><meta name=\'description\' content=\''+e(description)+'\'/>').join('')+'<b:else/>'+descriptionFallback+'</b:if>':descriptionFallback;
+const base=(await readFile(new URL('theme/blogger-native-base.xml',root),'utf8')).replace('<!-- GAME_SEARCH_TITLE_BRANCHES -->',gameSearchTitleBranches(gameTitles)).replace(descriptionFallback,descriptionBranches);
 const gameCss=await readFile(new URL('theme/game-icon-grid.css',root),'utf8');
 const gameScript=await readFile(new URL('theme/game-icon-grid.js',root),'utf8');
 const categories=['게임','유심·로밍','호스팅·도메인','해외직구','건강','VPN','교육'];
