@@ -67,5 +67,16 @@
 - PINKBEANATTACK: 공식 GM비니 공지를 실제 렌더링으로 확인. 동료 소환권300장,2026-10-14 23:59,계정당1회. 게임 입력AOS/PC,웹iOS/AOS/PC,계정 우편함. 원고에 보완.
 - QTCC 두 코드: 이용자 포럼의2025-12-31 23:59 ET 만료 이력과2026종합목록 활성 주장 충돌. 운영진 공지가 아니므로 확정 만료로 단정하지 않고 최신 후보에서 제외,전체280개 기록에 보존.
 - 원문: [공식 SNS](https://bsky.app/profile/warframe.com/post/3mplykfqiq32s),[공식 메이플 공지](https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440),[포럼 이용자 이력](https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment).
-- source-only285/285 PASS,공통 표현 검사42글 PASS. 기존2글 갱신 요청(existingOnly=true),공개 반영은 대기 상태.
+- source-only285/285 PASS,공통 표현 검사42글 PASS. 기존2글 갱신 요청(existingOnly=true), 아래 후속 실행에서 공개 반영 성공.
 - 생성 도구의 후반 누락 모델 오류가 앞선 파일을 먼저 쓰는 문제를 확인해,입력 검증 완료 후 쓰기 및 대상 키2개 한정 생성 지원. 재현 회귀1건 PASS.
+
+
+## 기존 글 갱신과 독립 공개 검증
+
+- 발행 실행 37968328817 SUCCESS. 기존 Maple/Warframe postId와 URL 유지, 각각 publicVerified=true. 신규 중복 글 없음.
+- PRIDE2026 공식 기한·3개 보상, PINKBEANATTACK 공식 기한·계정당1회·플랫폼 조건을 공개 본문/펼친 출처 안내에서 확인.
+- QTCC2건은 최신에서 제외되고 2025년 기록에 충돌 표시됨. Warframe 전체280건 보존, 최신8→6. 사실 충돌과 실제 계정 사용은 미확인.
+- 독립 브라우저 기본1280px에서 두 글 가로 넘침0·깨진 이미지0. 기간 탭 전환 및 출처 안내 정상.
+- 브라우저 viewport 설정이 실제 innerWidth에 적용되지 않음(390/1440 요청에도1280). 독립390px/1440px 검증은 AUTOMATION_BLOCKED이며 PASS로 계산하지 않음. 발행 CI 반응형 검사는 별도 PASS.
+- 전체 자동 검사285/285 PASS, 표현 검사42글 PASS. 공개 증거: output/warframe-source-public-desktop.png, output/maple-source-public-desktop.png. mobile 이름의 이미지도 실제1280px이므로 모바일 증거로 사용 금지.
+- 발행 기록: https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37968328817

@@ -26,15 +26,17 @@
       "id": "WARFRAME-PRIDE-EVIDENCE",
       "target": "warframe-promo-codes-202610 / PRIDE2026",
       "reportedAt": "2026-10-10",
-      "status": "IN_REVIEW",
-      "summary": "공식 PlayWarframe 실제 배포 원문에서 PRIDE2026,3개 보상,2027-05-31까지를 확인. 원고 보완 완료, 기존 글 공개 갱신 대기.",
+      "status": "RESOLVED",
+      "summary": "공식 실제 배포 원문과 기존 공개 글을 대조해 코드·3개 보상·2027-05-31 기한 반영 확인. 계정 사용 성공은 미확인.",
       "evidence": [
         "https://www.warframe.com/ko/news/pride-2026",
         "https://timesaver.gg/blog/warframe-promo-codes",
-        "https://bsky.app/profile/warframe.com/post/3mplykfqiq32s"
+        "https://bsky.app/profile/warframe.com/post/3mplykfqiq32s",
+        "https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37968328817",
+        "https://lsifl.blogspot.com/2026/10/blog-post_09.html"
       ],
-      "nextAction": "기존 Blogger 글 갱신 후 공개 원문 대조",
-      "resolvedAt": null
+      "nextAction": "정해진 재검토 기한에 공식 근거 변경 확인",
+      "resolvedAt": "2026-10-10"
     },
     {
       "id": "WARFRAME-QTCC-CONFLICT",
@@ -46,7 +48,7 @@
         "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
         "https://timesaver.gg/blog/warframe-promo-codes"
       ],
-      "nextAction": "기존 글 갱신과 재발급/실사용 증거 추적",
+      "nextAction": "공개 글의 최신 제외·충돌 표시 확인 완료. 재발급 또는 계정 실사용 증거 추적; 사실 충돌은 미해결",
       "resolvedAt": null
     }
   ]

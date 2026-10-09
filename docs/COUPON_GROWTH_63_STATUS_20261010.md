@@ -99,3 +99,14 @@
 2026-10-10: 최신39건 출처 관찰(35언급/4추가근거), 외부20자료(15본문/5제한),501건 글 단위 링크 후보 분리. 17/18/60은 관리 기능 적용 완료이며 쿠폰 사실 확인 및 실제 오류 해결 완료가 아니다. 새 검증: coupon-source-review/search-audit6/6 PASS. 정기 예약·외부 게시·새 분석 전송·공개 글 변경 없음.
 
 최신 원격 변경을 포함한 후속 전체 프로젝트 검사:284/284 PASS (output/growth-followup-tests.log). 공개 글/테마 발행·Worker 배포는 이번 후속 변경의 완료 증거로 주장하지 않는다.
+
+
+## 기존 글 갱신과 독립 공개 검증
+
+- 발행 실행 37968328817 SUCCESS. 기존 Maple/Warframe postId와 URL 유지, 각각 publicVerified=true. 신규 중복 글 없음.
+- PRIDE2026 공식 기한·3개 보상, PINKBEANATTACK 공식 기한·계정당1회·플랫폼 조건을 공개 본문/펼친 출처 안내에서 확인.
+- QTCC2건은 최신에서 제외되고 2025년 기록에 충돌 표시됨. Warframe 전체280건 보존, 최신8→6. 사실 충돌과 실제 계정 사용은 미확인.
+- 독립 브라우저 기본1280px에서 두 글 가로 넘침0·깨진 이미지0. 기간 탭 전환 및 출처 안내 정상.
+- 브라우저 viewport 설정이 실제 innerWidth에 적용되지 않음(390/1440 요청에도1280). 독립390px/1440px 검증은 AUTOMATION_BLOCKED이며 PASS로 계산하지 않음. 발행 CI 반응형 검사는 별도 PASS.
+- 전체 자동 검사285/285 PASS, 표현 검사42글 PASS. 공개 증거: output/warframe-source-public-desktop.png, output/maple-source-public-desktop.png. mobile 이름의 이미지도 실제1280px이므로 모바일 증거로 사용 금지.
+- 발행 기록: https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37968328817
