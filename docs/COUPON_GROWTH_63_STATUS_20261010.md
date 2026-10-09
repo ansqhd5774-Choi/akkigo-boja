@@ -53,7 +53,7 @@
 | 25 | 메타정보 | 공개77글 description 개수/고유성 검사 통과, 중복0. 글별 검색 의도 대조는 남음 |
 | 26 | 대표 URL | 공개77글 canonical 값과 sitemap URL 일치. Google 선택 canonical/리디렉션 별도 확인 필요 |
 | 28 | 사이트맵 | 공개 피드77글/sitemap77URL/HTTP 감사77글 집합 일치. Provider DB 발행 원장 대조 미확인 |
-| 29 | 오류 | 76글 HTTP200; 본문 soft404/링크체인 검사는 추가 필요 |
+| 29 | 오류 | 공개 내부 URL177개 HTTP/최종주소/리디렉션/본문 신호 검사 오류0. 외부 출처 링크 및 Google soft404 판정 미확인 |
 | 30 | 봇 렌더링 | 기존 GSC 실시간 대표 URL 검사 증거; 전체 핵심 코드/출처 렌더링 범위 미검증 |
 | 31 | JSON-LD | 76글 JSON-LD 문법 오류0; 화면 의미 일치 및 필요한 유형 검토 |
 | 32 | 브랜드 | 브랜드 기준 반영; 검색 결과 favicon/사이트명/소개 갱신 미확인 |
@@ -117,3 +117,10 @@
 2026-10-10 02:54 KST. 공개77글 HTTP200, noindex0, description 누락0/중복0, canonical 누락0/값 오류0, JSON-LD 문법 오류0. 공개 피드와 사이트맵의 누락/초과0, 수정일 초 단위 불일치0. sitemap은 초 단위, feed는 밀리초 단위이므로 타임존 변환 후 초를 비교한다.
 
 재실행: `npm run audit:search` 이후 `npm run audit:search-consistency`. 관련 회귀5/5 PASS. Provider 내부 발행 원장, Google 선택 canonical, 검색 의도와 실제 수정 내용은 이 검사로 확인되지 않는다. 따라서 완료26/미완료37 유지. 이번 변경은 검사 도구이며 공개 테마/글 변경·배포는 하지 않았다. 증거: `data/operations/search-consistency-evidence-20261010.json`.
+
+
+## 내부 링크 오류 후속 실행
+
+2026-10-10. 공개77글 감사에서 추출한 내부 링크177개를 최대병렬4·요청20초·최대6단계 리디렉션으로 조회. HTTP 오류0, 조회/리디렉션 오류0, 본문 누락 또는 오류 안내를 포함한 soft404 후보0, 리디렉션0. query는 공개 m=0/1만 허용하며 다른 쿼리/관리 경로/외부 주소는 요청하지 않음.
+
+관련 회귀2/2 PASS. `npm run audit:public-links`로 재실행. `output/public-link-audit.json`에 URL별 결과 기록. 외부 출처 링크는 미검사, Google soft404 판정은 미확인. 공개 UI 변경·배포 없음. 완료26/미완료37 유지.

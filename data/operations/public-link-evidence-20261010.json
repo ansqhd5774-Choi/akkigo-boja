@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-09T17:58:23.573Z",
+  "scope": "PUBLIC_INTERNAL_STATIC_ANCHORS_ONLY",
+  "sourceAuditCheckedAt": "2026-10-09T17:53:23.514Z",
+  "externalLinks": "NOT_CHECKED",
+  "googleSoft404Classification": "UNVERIFIED",
+  "summary": {
+    "targets": 177,
+    "httpErrors": 0,
+    "fetchOrRedirectErrors": 0,
+    "soft404Candidates": 0,
+    "redirected": 0
+  }
+}
