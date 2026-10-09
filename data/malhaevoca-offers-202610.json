@@ -1,0 +1,131 @@
+{
+  "articleKey": "malhaevoca-discounts-202610",
+  "brand": "말해보카",
+  "publisher": "이팝소프트",
+  "category": "교육",
+  "checkedAt": "2026-10-10",
+  "scope": "KOREAN_LANGUAGE_LEARNING_SUBSCRIPTIONS",
+  "offers": [
+    {
+      "id": "OFFICIAL_WEB_12M",
+      "type": "AUTO_DISCOUNT",
+      "name": "공식 웹결제 1인 12개월",
+      "priceKRW": 99000,
+      "advertisedPriceKRW": 234000,
+      "priceBasis": "공식 사이트 119,000원 할인가에 웹결제 추가 20,000원 할인",
+      "discountLabel": "웹결제 추가 2만원",
+      "dateBasis": "OFFICIAL_LANDING_PAGE_UNDATED",
+      "sourcePublishedAt": null,
+      "sourceCheckedAt": "2026-10-10",
+      "expiry": null,
+      "status": "OFFICIAL_LIVE_PAGE",
+      "eligibility": "웹결제, 1인 12개월, 결제 화면에서 최종가 확인",
+      "sourceUrl": "https://epop.ai/ko/premium",
+      "code": null
+    },
+    {
+      "id": "HANA_NARA_12M",
+      "type": "CARD_CHANNEL",
+      "name": "하나 나라사랑카드 1인 12개월",
+      "priceKRW": 69000,
+      "advertisedPriceKRW": 234000,
+      "discountLabel": "70% 할인",
+      "dateBasis": "OFFICIAL_PRESS_RELEASE",
+      "sourcePublishedAt": "2026-01-20",
+      "sourceCheckedAt": "2026-10-10",
+      "expiry": "2026-12-31",
+      "status": "OFFICIAL_ELIGIBILITY_RESTRICTED",
+      "eligibility": "하나 나라사랑카드 체크카드 회원, 연 1회, 공식 이벤트 전용 결제",
+      "sourceUrl": "https://epop.ai/event/hana-nara-card",
+      "newsUrl": "https://epop.ai/newsroom/49",
+      "code": null
+    },
+    {
+      "id": "SCHOOL_WEEKLY_FREE",
+      "type": "FREEBIE",
+      "name": "중·고등학생 선착순 무료 이벤트",
+      "discountLabel": "무료 이용권(조건부)",
+      "dateBasis": "OFFICIAL_LANDING_PAGE_UNDATED",
+      "sourcePublishedAt": null,
+      "sourceCheckedAt": "2026-10-10",
+      "expiry": null,
+      "status": "OFFICIAL_CAPACITY_DEPENDENT",
+      "eligibility": "2008~2013년생, 비회원 멤버십 이용자·한국어 설정, 본인 인증·카카오 연결, 매주 일요일 21:10 신규 150명, 리그 상위 50% 유지",
+      "sourceUrl": "https://epop.ai/promotion/middle-high-school",
+      "code": null
+    },
+    {
+      "id": "KAKAO_STUDENT_30",
+      "type": "MEMBER",
+      "name": "카카오 톡학생증 대학(원)생 할인",
+      "discountLabel": "30% 할인(과거 공지)",
+      "dateBasis": "OFFICIAL_KAKAO_NEWS_2024",
+      "sourcePublishedAt": "2024-06-19",
+      "sourceCheckedAt": "2026-10-10",
+      "expiry": null,
+      "status": "HISTORICAL_CURRENT_AMOUNT_UNVERIFIED",
+      "eligibility": "대학생·대학원생 톡학생증 인증, 졸업생 제외 안내 사례, 2026 결제화면 확인 필요",
+      "sourceUrl": "https://www.kakaocorp.com/page/detail/11098",
+      "secondaryUrl": "https://pf.kakao.com/_xhKcxcxj/104610545",
+      "code": null
+    }
+  ],
+  "rawCodesFound": [],
+  "excluded": [
+    {
+      "name": "말해보카 1개월 무료 쿠폰",
+      "reason": "발급 문자열·출처 확인되지 않아 코드로 생성하지 않음"
+    },
+    {
+      "name": "2인/4인 공동구독 가격",
+      "reason": "2026 현재 신규 판매를 독립적으로 확인하지 못해 할인 목록에 넣지 않음"
+    },
+    {
+      "name": "중개 공유계정 프로모션",
+      "reason": "공식 발급사 할인과 구분"
+    }
+  ],
+  "appStoreUrl": "https://apps.apple.com/kr/app/id1460766549",
+  "officialImageUrl": "https://epop.ai/og-image.jpg",
+  "seo": {
+    "title": "말해보카 할인 2026년 10월 | 웹결제·나라사랑카드·학생 무료 혜택",
+    "description": "말해보카 2026년 10월 공식 할인 정리. 연간 웹결제 99,000원, 하나 나라사랑카드 69,000원, 중고등학생 무료 이벤트 및 톡학생증 할인 조건·기간 확인.",
+    "keywords": [
+      "말해보카 할인",
+      "말해보카 쿠폰",
+      "말해보카 할인코드",
+      "말해보카 2026 10월",
+      "말해보카 나라사랑카드",
+      "말해보카 69000원",
+      "말해보카 웹결제 99000원",
+      "말해보카 무료 이벤트",
+      "말해보카 학생 할인",
+      "말해보카 톡학생증",
+      "말해보카 가격",
+      "말해보카 1년 가격"
+    ],
+    "hashtags": [
+      "#말해보카",
+      "#말해보카할인",
+      "#말해보카쿠폰",
+      "#영어공부앱",
+      "#나라사랑카드",
+      "#톡학생증",
+      "#학생할인",
+      "#영어앱"
+    ],
+    "measuredSearchVolume": null,
+    "measuredCTR": null
+  },
+  "sourcesReviewed": [
+    "https://epop.ai/ko/premium",
+    "https://epop.ai/event/hana-nara-card",
+    "https://epop.ai/newsroom/49",
+    "https://epop.ai/promotion/middle-high-school",
+    "https://www.kakaocorp.com/page/detail/11098",
+    "https://pf.kakao.com/_xhKcxcxj/104610545",
+    "https://epop.ai/ko",
+    "https://apps.apple.com/kr/app/id1460766549"
+  ],
+  "datePolicy": "Official first announcement date for a specific offer only; not check date, page modified date, event end or generated Blogger post date."
+}
