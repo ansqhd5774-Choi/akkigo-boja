@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-09T19:47:24.400Z",
+  "runId": "37982440581",
+  "scope": "PROVIDER_AND_INDEPENDENT_PUBLIC_HTML",
+  "summary": {
+    "published": 2,
+    "checked": 2,
+    "errors": 0
+  },
+  "pages": [
+    {
+      "articleKey": "trickcal-revive-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10.html",
+      "postId": "4891814108367830529",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 41,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "doctorlean-coupons-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10-7-10-100.html",
+      "postId": "1360467812829260332",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 3,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T19:14:21.837Z",
+  "checkedAt": "2026-10-09T19:47:31.167Z",
   "runId": "37978519860",
   "scope": "PROVIDER_AND_INDEPENDENT_PUBLIC_HTML",
   "summary": {
@@ -21,6 +21,23 @@
       "articlePresent": true,
       "healthMarkers": 22,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "aniimo-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_988.html",
+      "postId": "5926958210706026630",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 16,
       "broken404Anchor": false
     },
     {
@@ -36,21 +53,7 @@
       "articlePresent": true,
       "healthMarkers": 4,
       "sourceGapMarkers": 0,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "aniimo-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/blog-post_988.html",
-      "postId": "5926958210706026630",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 0,
-      "sourceGapMarkers": 16,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -66,6 +69,7 @@
       "articlePresent": true,
       "healthMarkers": 13,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -81,6 +85,7 @@
       "articlePresent": true,
       "healthMarkers": 3,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -95,7 +100,8 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 0,
-      "sourceGapMarkers": 27,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 27,
       "broken404Anchor": false
     },
     {
@@ -111,6 +117,7 @@
       "articlePresent": true,
       "healthMarkers": 1,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -126,36 +133,7 @@
       "articlePresent": true,
       "healthMarkers": 14,
       "sourceGapMarkers": 0,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "fortblox-mobile-go-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/10-2026-10-go.html",
-      "postId": "3746917485265254466",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 1,
-      "sourceGapMarkers": 25,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "genshin-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html",
-      "postId": "7068598989400675288",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 1,
-      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -171,6 +149,39 @@
       "articlePresent": true,
       "healthMarkers": 5,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "fortblox-mobile-go-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/10-2026-10-go.html",
+      "postId": "3746917485265254466",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 1,
+      "sourceGapMarkers": 18,
+      "thirdPartyReferenceMarkers": 7,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "genshin-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10_02129223752.html",
+      "postId": "7068598989400675288",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 1,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -185,22 +196,8 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 1,
-      "sourceGapMarkers": 163,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "last-echo-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/blog-post_292.html",
-      "postId": "8801485788820521504",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 8,
-      "sourceGapMarkers": 0,
+      "sourceGapMarkers": 81,
+      "thirdPartyReferenceMarkers": 82,
       "broken404Anchor": false
     },
     {
@@ -215,7 +212,24 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 1,
-      "sourceGapMarkers": 12,
+      "sourceGapMarkers": 5,
+      "thirdPartyReferenceMarkers": 7,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "last-asylum-plague-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_977.html",
+      "postId": "1529869178160281893",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 25,
+      "thirdPartyReferenceMarkers": 20,
       "broken404Anchor": false
     },
     {
@@ -231,36 +245,23 @@
       "articlePresent": true,
       "healthMarkers": 15,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
-      "articleKey": "last-asylum-plague-codes-202610",
+      "articleKey": "last-echo-codes-202610",
       "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/blog-post_977.html",
-      "postId": "1529869178160281893",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_292.html",
+      "postId": "8801485788820521504",
       "publicVerified": true,
       "alreadyLive": true,
       "userReviewRequired": true,
       "visualQa": "USER_REVIEW",
       "httpStatus": 200,
       "articlePresent": true,
-      "healthMarkers": 0,
-      "sourceGapMarkers": 45,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "maplestory-idle-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2026-10_01992004057.html",
-      "postId": "2692262957547157995",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 2,
+      "healthMarkers": 8,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -276,6 +277,23 @@
       "articlePresent": true,
       "healthMarkers": 1,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "maplestory-idle-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10_01992004057.html",
+      "postId": "2692262957547157995",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 2,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -290,7 +308,8 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 0,
-      "sourceGapMarkers": 27,
+      "sourceGapMarkers": 3,
+      "thirdPartyReferenceMarkers": 24,
       "broken404Anchor": false
     },
     {
@@ -305,22 +324,8 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 0,
-      "sourceGapMarkers": 14,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "roblox-promo-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2026-10-spidercola.html",
-      "postId": "8039261353062873778",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 2,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 14,
       "broken404Anchor": false
     },
     {
@@ -335,22 +340,8 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 0,
-      "sourceGapMarkers": 18,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "random-dice-2-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2.html",
-      "postId": "7361455701964518138",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 4,
-      "sourceGapMarkers": 0,
+      "sourceGapMarkers": 7,
+      "thirdPartyReferenceMarkers": 8,
       "broken404Anchor": false
     },
     {
@@ -366,6 +357,39 @@
       "articlePresent": true,
       "healthMarkers": 6,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "random-dice-2-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2.html",
+      "postId": "7361455701964518138",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 4,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "roblox-promo-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10-spidercola.html",
+      "postId": "8039261353062873778",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 2,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -381,21 +405,7 @@
       "articlePresent": true,
       "healthMarkers": 16,
       "sourceGapMarkers": 0,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "royal-match-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/blog-post_664.html",
-      "postId": "1595839414753019758",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 1,
-      "sourceGapMarkers": 37,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -411,6 +421,7 @@
       "articlePresent": true,
       "healthMarkers": 8,
       "sourceGapMarkers": 17,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -426,36 +437,23 @@
       "articlePresent": true,
       "healthMarkers": 83,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
-      "articleKey": "top-lords-codes-202610",
+      "articleKey": "royal-match-codes-202610",
       "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/blog-post_07.html",
-      "postId": "1430986309909933644",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_664.html",
+      "postId": "1595839414753019758",
       "publicVerified": true,
       "alreadyLive": true,
       "userReviewRequired": true,
       "visualQa": "USER_REVIEW",
       "httpStatus": 200,
       "articlePresent": true,
-      "healthMarkers": 20,
-      "sourceGapMarkers": 0,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "solo-sss-exorcist-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/sss.html",
-      "postId": "4906669358607659786",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 7,
-      "sourceGapMarkers": 0,
+      "healthMarkers": 1,
+      "sourceGapMarkers": 37,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -471,6 +469,7 @@
       "articlePresent": true,
       "healthMarkers": 1,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -485,22 +484,56 @@
       "httpStatus": 200,
       "articlePresent": true,
       "healthMarkers": 1,
-      "sourceGapMarkers": 52,
+      "sourceGapMarkers": 51,
+      "thirdPartyReferenceMarkers": 1,
       "broken404Anchor": false
     },
     {
-      "articleKey": "whiteout-survival-codes-202610",
+      "articleKey": "solo-sss-exorcist-codes-202610",
       "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2026-10_0416354315.html",
-      "postId": "4536450861010262464",
+      "url": "https://lsifl.blogspot.com/2026/10/sss.html",
+      "postId": "4906669358607659786",
       "publicVerified": true,
       "alreadyLive": true,
       "userReviewRequired": true,
       "visualQa": "USER_REVIEW",
       "httpStatus": 200,
       "articlePresent": true,
-      "healthMarkers": 2,
+      "healthMarkers": 7,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "top-lords-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_07.html",
+      "postId": "1430986309909933644",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 20,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "trickcal-revive-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10.html",
+      "postId": "4891814108367830529",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 41,
       "broken404Anchor": false
     },
     {
@@ -516,6 +549,23 @@
       "articlePresent": true,
       "healthMarkers": 5,
       "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "whiteout-survival-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10_0416354315.html",
+      "postId": "4536450861010262464",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 2,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     },
     {
@@ -531,21 +581,7 @@
       "articlePresent": true,
       "healthMarkers": 3,
       "sourceGapMarkers": 0,
-      "broken404Anchor": false
-    },
-    {
-      "articleKey": "trickcal-revive-codes-202610",
-      "status": "LIVE",
-      "url": "https://lsifl.blogspot.com/2026/10/2026-10.html",
-      "postId": "4891814108367830529",
-      "publicVerified": true,
-      "alreadyLive": true,
-      "userReviewRequired": true,
-      "visualQa": "USER_REVIEW",
-      "httpStatus": 200,
-      "articlePresent": true,
-      "healthMarkers": 0,
-      "sourceGapMarkers": 42,
+      "thirdPartyReferenceMarkers": 0,
       "broken404Anchor": false
     }
   ]
