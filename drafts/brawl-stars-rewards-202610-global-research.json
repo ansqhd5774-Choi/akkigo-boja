@@ -5,23 +5,30 @@
   "totalStoreCodes": 3,
   "existingVoucherLinks": 5,
   "accountRedemptionVerified": 0,
-  "originalDatePolicy": "sourcePublishedAt is dated source article/video publication; not scrape date, not inferred earliest-ever issuance",
+  "originalDatePolicy": "Use date of the ORIGINAL source post, video, or comment; never substitute crawler date, 2026-10-09 investigation date or last updated timestamp. A source post date is NOT necessarily the code's first-ever issuance date.",
   "keywords": [
     "브롤스타즈 쿠폰",
     "브롤스타즈 QR코드",
     "브롤스타즈 무료보상",
     "브롤스타즈 쿠폰 입력",
+    "브롤스타즈 스토어 코드",
     "브롤스타즈 쿠폰 2026년 10월",
+    "브롤스타즈 무료 핀",
+    "브롤스타즈 무료 박스",
+    "브롤스타즈 QR 2026",
     "Brawl Stars codes October 2026",
-    "Brawl Stars QR codes"
+    "Brawl Stars QR codes",
+    "Brawl Stars redeem store code"
   ],
   "hashtags": [
     "#브롤스타즈",
     "#브롤스타즈쿠폰",
     "#브롤스타즈QR코드",
     "#브롤스타즈무료보상",
+    "#브롤스타즈스토어코드",
     "#BrawlStars",
-    "#BrawlStarsCodes"
+    "#BrawlStarsCodes",
+    "#BrawlStarsQR"
   ],
   "measuredVolume": null,
   "measuredCTR": null,
@@ -68,20 +75,35 @@
     {
       "code": "ITSSUSHITIME",
       "status": "UNVERIFIED",
-      "sourcePublishedAt": "2025-05-14",
-      "reward": "Sushi-event cosmetics"
+      "sourcePublishedAt": "2025-05-26",
+      "reward": "Sushi-event cosmetics",
+      "sourcePublishedAtMeaning": "Reddit r/BrawlStarsCompetitive post first published 2025-05-26 and contains all three codes; earlier 2025-05-07 and 2025-05-14 comments elsewhere may predate this post; code first-issuance date unknown",
+      "evidenceUrl": "https://www.reddit.com/r/BrawlStarsCompetitive/comments/1kvx9bt/3_supercell_freebie_codes/",
+      "last2026ReportedAt": "2026-10-09",
+      "redemptionVerified2026": false,
+      "validityCaveat": "October media report these usable; GameBoost reported no working text codes as of Oct 7; Reddit user complained no longer working. Not confirmed ACTIVE."
     },
     {
       "code": "SAKURASPIKE!",
       "status": "UNVERIFIED",
-      "sourcePublishedAt": "2025-05-14",
-      "reward": "Spike-related cosmetics"
+      "sourcePublishedAt": "2025-05-26",
+      "reward": "Spike-related cosmetics",
+      "sourcePublishedAtMeaning": "Reddit r/BrawlStarsCompetitive post first published 2025-05-26 and contains all three codes; earlier 2025-05-07 and 2025-05-14 comments elsewhere may predate this post; code first-issuance date unknown",
+      "evidenceUrl": "https://www.reddit.com/r/BrawlStarsCompetitive/comments/1kvx9bt/3_supercell_freebie_codes/",
+      "last2026ReportedAt": "2026-10-09",
+      "redemptionVerified2026": false,
+      "validityCaveat": "October media report these usable; GameBoost reported no working text codes as of Oct 7; Reddit user complained no longer working. Not confirmed ACTIVE."
     },
     {
       "code": "BOBAPARTYYYY",
       "status": "UNVERIFIED",
-      "sourcePublishedAt": "2025-05-14",
-      "reward": "Boba-event cosmetics"
+      "sourcePublishedAt": "2025-05-26",
+      "reward": "Boba-event cosmetics",
+      "sourcePublishedAtMeaning": "Reddit r/BrawlStarsCompetitive post first published 2025-05-26 and contains all three codes; earlier 2025-05-07 and 2025-05-14 comments elsewhere may predate this post; code first-issuance date unknown",
+      "evidenceUrl": "https://www.reddit.com/r/BrawlStarsCompetitive/comments/1kvx9bt/3_supercell_freebie_codes/",
+      "last2026ReportedAt": "2026-10-09",
+      "redemptionVerified2026": false,
+      "validityCaveat": "October media report these usable; GameBoost reported no working text codes as of Oct 7; Reddit user complained no longer working. Not confirmed ACTIVE."
     }
   ],
   "existingOfficialVoucherLinks": [
@@ -120,5 +142,402 @@
       "redemptionVerified": false,
       "previousLinkAccessibleAt": "2026-10-07"
     }
-  ]
+  ],
+  "researchUpdatedAt": "2026-10-09",
+  "qrOriginalSources": [
+    {
+      "name": "Mobi.gg Brawl Stars QR collection",
+      "url": "https://mobi.gg/en/codes/brawl-stars-qr-codes/",
+      "sourcePublishedAt": "2026-10-02",
+      "countListed": 27,
+      "codeFirstPublishedAt": null,
+      "notes": "Article publication date is not individual QR release date; claims self-tested; not proof of account redemption in this session."
+    },
+    {
+      "name": "Pocket Tactics Brawl Stars QR collection",
+      "url": "https://www.pockettactics.com/brawl-stars/qr-codes",
+      "sourcePublishedAt": null,
+      "lastUpdatedAt": "2026-10-08",
+      "countListed": 22,
+      "notes": "New Candle Spray listed on Oct 8; exact first publication date of underlying vouchers unconfirmed."
+    },
+    {
+      "name": "Dexerto Brawl Stars codes",
+      "url": "https://www.dexerto.com/brawl-stars/brawl-stars-codes-3310079/",
+      "sourcePublishedAt": null,
+      "lastUpdatedAt": "2026-10-01",
+      "notes": "Three promotional text codes and 14 QR reward types; may be outdated."
+    },
+    {
+      "name": "YouTube QR compilation ASAD BS",
+      "url": "https://www.youtube.com/watch?v=oTStaQti70U",
+      "sourcePublishedAt": "2026-09-04",
+      "notes": "Video publication date, not QR individual original issuance; no guaranteed function."
+    },
+    {
+      "name": "Reddit original Coffin Box daily shop offer",
+      "url": "https://www.reddit.com/r/Brawlstars/comments/1wuvrgx/01102026_todays_store_freebie_1_coffin_box_50/",
+      "sourcePublishedAt": "2026-10-01",
+      "notes": "1 coffin box + 50 power points reported in Supercell Store; shop freebie not same as QR voucher."
+    },
+    {
+      "name": "Reddit early sushi codes",
+      "url": "https://www.reddit.com/r/Brawlstars/comments/1kgjep0",
+      "sourcePublishedAt": null,
+      "datedComments": [
+        {
+          "date": "2025-05-07",
+          "code": "ITSSUSHITIME"
+        },
+        {
+          "date": "2025-05-14",
+          "code": "BOBAPARTYYYY"
+        }
+      ],
+      "notes": "Individual dated comments, not proven first ever issuance."
+    }
+  ],
+  "qrLedger": [
+    {
+      "index": 1,
+      "reward": "Wendy Box",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 2,
+      "reward": "Chaos Drop",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 3,
+      "reward": "Nori Box",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 4,
+      "reward": "Thief Pin",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 5,
+      "reward": "Unspecified free reward #5",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 6,
+      "reward": "Bolt Box",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 7,
+      "reward": "Starr Nova Box",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 8,
+      "reward": "150 Credits",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 9,
+      "reward": "Subway Surfers Spray",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 10,
+      "reward": "Book Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 11,
+      "reward": "Egg Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 12,
+      "reward": "Pizza Planet (Toy Story) Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 13,
+      "reward": "Clown Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 14,
+      "reward": "Unspecified Pin #14",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 15,
+      "reward": "White Spray Pin",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 16,
+      "reward": "Scroll Spray",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 17,
+      "reward": "SpongeBob Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 18,
+      "reward": "Brawl Stars Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 19,
+      "reward": "Spike Icon #19",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 20,
+      "reward": "Kaiju Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 21,
+      "reward": "100 Coins",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 22,
+      "reward": "Smiley Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 23,
+      "reward": "Skull Icon",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 24,
+      "reward": "Spike Icon #24",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 25,
+      "reward": "Unspecified free reward #25",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 26,
+      "reward": "Unspecified free reward #26",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    },
+    {
+      "index": 27,
+      "reward": "Unspecified free reward #27",
+      "sourceListPublishedAt": "2026-10-02",
+      "firstVoucherPublishedAt": null,
+      "claimedSuccessAt": null,
+      "status": "UNVERIFIED",
+      "source": "https://mobi.gg/en/codes/brawl-stars-qr-codes/"
+    }
+  ],
+  "otherNotableQr": [
+    {
+      "name": "Candle Spray",
+      "source": "https://www.pockettactics.com/brawl-stars/qr-codes",
+      "listUpdatedAt": "2026-10-08",
+      "firstVoucherPublishedAt": null,
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Coffin Box",
+      "source": "https://www.pockettactics.com/brawl-stars/qr-codes",
+      "listUpdatedAt": "2026-10-08",
+      "firstVoucherPublishedAt": null,
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "10 Gems",
+      "source": "https://timesaver.gg/blog/brawl-stars-codes-october-2026",
+      "reportedAddedAt": "2026-10-06",
+      "firstVoucherPublishedAt": null,
+      "status": "UNVERIFIED",
+      "note": "Claim based on one guide; not equivalent to 10 Gems inside Coffin Box or store gift."
+    }
+  ],
+  "excludedAsFreeRewardCodes": [
+    {
+      "code": "LOVEBOMBING!",
+      "reason": "Dexerto 2026-10-01 lists expired; conflicting stale source still lists active; retain as historical candidate"
+    },
+    {
+      "code": "KENJIUNLOCK",
+      "reason": "Unverified October activity; different sites conflict"
+    },
+    {
+      "code": "akari / kairos / lex / OJ",
+      "reason": "Creator support codes, not free reward redemption codes"
+    }
+  ],
+  "conflictingSources": [
+    {
+      "url": "https://gameboost.com/blog/brawl-stars-codes",
+      "updatedAt": "2026-10-07",
+      "finding": "No currently working text-based store codes reported"
+    },
+    {
+      "url": "https://timesaver.gg/blog/brawl-stars-codes-october-2026",
+      "publishedAt": "2026-10-09",
+      "finding": "Three store promo codes reported active"
+    },
+    {
+      "url": "https://www.reddit.com/r/BrawlStarsCompetitive/comments/1kvx9bt/3_supercell_freebie_codes/",
+      "publishedAt": "2025-05-26",
+      "finding": "Contemporaneous account successes, plus a more recent comment saying not working anymore"
+    },
+    {
+      "url": "https://trucoman.com/codigos-qr-brawl-stars/",
+      "publishedAt": "2026-10-04",
+      "lastUpdatedAt": "2026-10-06",
+      "finding": "QR landing page opening alone does not verify actual reward claim"
+    }
+  ],
+  "seo": {
+    "recommendedArticleTitle": "브롤스타즈",
+    "searchDescription": "브롤스타즈 쿠폰 2026년 10월, 스토어 코드 3개와 해외 QR 무료 보상 27종, 원문 게시 날짜, 만료·입력 방법, 공식 보상 링크를 확인하세요.",
+    "keywordRankingBasis": "search-intent relevance only, not verified volume",
+    "selectedPrimary": [
+      "브롤스타즈 쿠폰",
+      "브롤스타즈 QR코드",
+      "브롤스타즈 무료보상"
+    ],
+    "selectedSecondary": [
+      "브롤스타즈 스토어 코드",
+      "브롤스타즈 쿠폰 입력",
+      "Brawl Stars codes October 2026"
+    ],
+    "quantitativeMetrics": {
+      "volume": null,
+      "ctr": null,
+      "impressions": null,
+      "hashtagVolume": null
+    },
+    "reason": "GSC Wizard returned payment_required; no official search volume data available without a connected eligible measurement source"
+  },
+  "sourceCoverage": {
+    "officialSupercell": true,
+    "reddit": true,
+    "pressEnglish": true,
+    "pressPortuguese": true,
+    "pressSpanish": true,
+    "pressJapanese": true,
+    "pressRussian": true,
+    "youtubeIndexed": true,
+    "instagramDirectVerified": false,
+    "tiktokDirectVerified": false,
+    "individualQrRedemption": false
+  },
+  "verifiedExistingPublishedURL": "https://lsifl.blogspot.com/2026/10/qr-2026-10.html",
+  "publicVerificationStatus": "UNCONFIRMED_THIS_SESSION; existing URL recorded in earlier production evidence, independent direct fetch blocked"
 }
