@@ -1,0 +1,717 @@
+{
+  "articleKey": "z-route-redemption-codes-202610",
+  "gameName": "Z 루트: 리뎀션",
+  "checkedAt": "2026-10-09",
+  "records": [
+    {
+      "code": "OKTOBER26",
+      "sourcePublishedAt": "2026-09-23",
+      "expiry": "2026-10-31 (해외 기사 주장)",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        },
+        {
+          "name": "MrGuider 9월 23일 발행·10월 1일 업데이트",
+          "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+          "sourcePublishedAt": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "code": "ZRTSML09",
+      "sourcePublishedAt": "2026-09-23",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        },
+        {
+          "name": "MrGuider 9월 23일 발행·10월 1일 업데이트",
+          "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+          "sourcePublishedAt": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "code": "WELCOME26",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRDAD26",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "26CHOCO",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "2026-07-31 만료 주장 · 10/3 일본 사용 성공 보고 충돌",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZR26PLAY",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZR26ALLY",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRSURV26",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "LOUNGE619",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRR6666",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRR999",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRR2NX6Q",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRRVJ4YD",
+      "sourcePublishedAt": "2026-09-10",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        },
+        {
+          "name": "일본 elpisoul 9월 10일 원문",
+          "url": "https://elpisoul.site/zroute/zroute-code/",
+          "sourcePublishedAt": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "code": "ZRRFT9BM",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRRLW2AC",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRRKR617",
+      "sourcePublishedAt": "2026-10-03",
+      "expiry": "종료일 미확인",
+      "latest": true,
+      "statusLabel": "일본판 10/3 사용 성공 보고 · 내 계정 미검증",
+      "sources": [
+        {
+          "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+          "url": "https://gamesakidori.com/z-route/gift-code/",
+          "sourcePublishedAt": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "code": "ZRR100S",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "VK30KBCV",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "DC8KYHJ",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "VK25KYYH",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "DC6KFEO",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "VK10KYUT",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "VK12KDGH",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "VK15KOKL",
+      "sourcePublishedAt": "2026-08-06",
+      "expiry": "2026-09-24 댓글상 모두 만료 보고",
+      "latest": false,
+      "statusLabel": "과거 코드 · 만료 보고",
+      "sources": [
+        {
+          "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+          "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+          "sourcePublishedAt": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "code": "DC75KJDR",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "BlueStacks 10월 코드 목록 (게시일 미표기)",
+          "url": "https://www.bluestacks.com/blog/redeem-codes/z-route-redemption-redeem-codes-en.html",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "DC65KZPW",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "BlueStacks 10월 코드 목록 (게시일 미표기)",
+          "url": "https://www.bluestacks.com/blog/redeem-codes/z-route-redemption-redeem-codes-en.html",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "DC45KIGS",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "BlueStacks 10월 코드 목록 (게시일 미표기)",
+          "url": "https://www.bluestacks.com/blog/redeem-codes/z-route-redemption-redeem-codes-en.html",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "ZRRUSG26",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "BlueStacks 10월 코드 목록 (게시일 미표기)",
+          "url": "https://www.bluestacks.com/blog/redeem-codes/z-route-redemption-redeem-codes-en.html",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "VK110KQBR",
+      "sourcePublishedAt": "2026-09-24",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Z Route HQ 코드 목록 (9월 24일 원문)",
+          "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+          "sourcePublishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "code": "DC70KMFT",
+      "sourcePublishedAt": "2026-09-24",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Z Route HQ 코드 목록 (9월 24일 원문)",
+          "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+          "sourcePublishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "code": "DC40KHAX",
+      "sourcePublishedAt": "2026-09-24",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Z Route HQ 코드 목록 (9월 24일 원문)",
+          "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+          "sourcePublishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "code": "DC60KHAX",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Clashiverse 최초 글 8월 27일·목록 갱신 시점 별도",
+          "url": "https://clashiverse.com/z-route-redemption-codes/",
+          "sourcePublishedAt": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "code": "26SCHOOL",
+      "sourcePublishedAt": null,
+      "expiry": "9월 종료 주장 (9월 31일은 존재하지 않음)",
+      "latest": false,
+      "statusLabel": "과거 이벤트 · 만료 가능성 높음",
+      "sources": [
+        {
+          "name": "Clashiverse 최초 글 8월 27일·목록 갱신 시점 별도",
+          "url": "https://clashiverse.com/z-route-redemption-codes/",
+          "sourcePublishedAt": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "code": "ZRYOUTH26",
+      "sourcePublishedAt": null,
+      "expiry": "2026-08-31 (해외 기사 주장)",
+      "latest": false,
+      "statusLabel": "과거 이벤트 · 만료 가능성 높음",
+      "sources": [
+        {
+          "name": "Clashiverse 최초 글 8월 27일·목록 갱신 시점 별도",
+          "url": "https://clashiverse.com/z-route-redemption-codes/",
+          "sourcePublishedAt": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "code": "ZRR2573Q",
+      "sourcePublishedAt": "2026-09-10",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "일본 elpisoul 9월 10일 원문",
+          "url": "https://elpisoul.site/zroute/zroute-code/",
+          "sourcePublishedAt": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "code": "ZRRC7WES",
+      "sourcePublishedAt": "2026-09-10",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "일본 elpisoul 9월 10일 원문",
+          "url": "https://elpisoul.site/zroute/zroute-code/",
+          "sourcePublishedAt": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "code": "VK100KLYS",
+      "sourcePublishedAt": "2026-10-07",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "러시아 Trassaz 10월 7일 최신 목록",
+          "url": "https://trassaz.ru/kody/",
+          "sourcePublishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "code": "VK90KPJD",
+      "sourcePublishedAt": "2026-10-07",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "러시아 Trassaz 10월 7일 최신 목록",
+          "url": "https://trassaz.ru/kody/",
+          "sourcePublishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "code": "VK60KPEZ",
+      "sourcePublishedAt": "2026-10-07",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "러시아 Trassaz 10월 7일 최신 목록",
+          "url": "https://trassaz.ru/kody/",
+          "sourcePublishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "code": "VK55KHLC",
+      "sourcePublishedAt": "2026-10-07",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "러시아 Trassaz 10월 7일 최신 목록",
+          "url": "https://trassaz.ru/kody/",
+          "sourcePublishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "code": "VK45KNQX",
+      "sourcePublishedAt": "2026-10-07",
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "러시아 Trassaz 10월 7일 최신 목록",
+          "url": "https://trassaz.ru/kody/",
+          "sourcePublishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "code": "DC4KFBG",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Promodoc 10월 6일 갱신 후보 목록",
+          "url": "https://promodoc.ru/promokod/z-route-redemption",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "ZRRLOVE26",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Promodoc 10월 6일 갱신 후보 목록",
+          "url": "https://promodoc.ru/promokod/z-route-redemption",
+          "sourcePublishedAt": null
+        }
+      ]
+    },
+    {
+      "code": "ZRR2026",
+      "sourcePublishedAt": null,
+      "expiry": "종료일 미확인",
+      "latest": false,
+      "statusLabel": "해외 2차 출처 · 실사용 미확인",
+      "sources": [
+        {
+          "name": "Promodoc 10월 6일 갱신 후보 목록",
+          "url": "https://promodoc.ru/promokod/z-route-redemption",
+          "sourcePublishedAt": null
+        }
+      ]
+    }
+  ],
+  "total": 44,
+  "latestEvidenceCount": 16,
+  "redditExpiredReport": 8,
+  "policy": "sourcePublishedAt uses dated publication of the specific source; if a list was edited after initial publication and code date is unknown, null. No claim that source page dates equal original code issuance dates.",
+  "keywords": [
+    "Z 루트 리뎀션 쿠폰",
+    "Z 루트: 리뎀션 기프트코드",
+    "Z 루트 리뎀션 코드 2026 10월",
+    "Z Route Redemption codes",
+    "Z Route Redemption gift code",
+    "Z Route Redemption redeem codes October 2026",
+    "Z 루트 쿠폰 입력",
+    "Z 루트 리뎀션 무료 다이아"
+  ],
+  "hashtags": [
+    "#Z루트리뎀션",
+    "#ZRouteRedemption",
+    "#ZRouteCodes",
+    "#Z루트쿠폰",
+    "#기프트코드",
+    "#모바일게임쿠폰",
+    "#게임쿠폰"
+  ],
+  "searchVolume": null,
+  "hashtagVolume": null,
+  "searchVolumeVerified": false,
+  "sourceLinks": {
+    "japan": {
+      "name": "일본판 10월 3일 직접 입력 성공 기록 (게임선취)",
+      "url": "https://gamesakidori.com/z-route/gift-code/",
+      "sourcePublishedAt": "2026-10-03"
+    },
+    "bluestacks": {
+      "name": "BlueStacks 10월 코드 목록 (게시일 미표기)",
+      "url": "https://www.bluestacks.com/blog/redeem-codes/z-route-redemption-redeem-codes-en.html",
+      "sourcePublishedAt": null
+    },
+    "hq": {
+      "name": "Z Route HQ 코드 목록 (9월 24일 원문)",
+      "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+      "sourcePublishedAt": "2026-09-24"
+    },
+    "clash": {
+      "name": "Clashiverse 최초 글 8월 27일·목록 갱신 시점 별도",
+      "url": "https://clashiverse.com/z-route-redemption-codes/",
+      "sourcePublishedAt": "2026-08-27"
+    },
+    "mr": {
+      "name": "MrGuider 9월 23일 발행·10월 1일 업데이트",
+      "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "sourcePublishedAt": "2026-09-23"
+    },
+    "reddit": {
+      "name": "Reddit BlueStacks 8월 6일 원문과 9월 24일 만료 댓글",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+      "sourcePublishedAt": "2026-08-06"
+    },
+    "russ": {
+      "name": "러시아 Trassaz 10월 7일 최신 목록",
+      "url": "https://trassaz.ru/kody/",
+      "sourcePublishedAt": "2026-10-07"
+    },
+    "jpold": {
+      "name": "일본 elpisoul 9월 10일 원문",
+      "url": "https://elpisoul.site/zroute/zroute-code/",
+      "sourcePublishedAt": "2026-09-10"
+    },
+    "russian": {
+      "name": "Promodoc 10월 6일 갱신 후보 목록",
+      "url": "https://promodoc.ru/promokod/z-route-redemption",
+      "sourcePublishedAt": null
+    },
+    "official": {
+      "name": "37GAMES 공식 Z Route 웹사이트",
+      "url": "https://www.zrrglobal.com/zrrofficial/",
+      "sourcePublishedAt": null
+    }
+  },
+  "warning": "GSC Wizard payment_required; Google official publisher pages lack full issuance evidence for third-party lists; BlueStacks article contradicts Japanese October 3 UI proof on redemption support."
+}
