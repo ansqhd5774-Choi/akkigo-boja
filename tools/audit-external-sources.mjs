@@ -2,7 +2,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 const model=JSON.parse(await readFile('data/operations/content-intent-review-20261010.json','utf8'));
 const path='output/external-source-link-audit.json';
 const previous=await readFile(path,'utf8').then(JSON.parse).catch(e=>{if(e.code==='ENOENT')return {items:[]};throw e;});
-const urls=[...new Set(model.articles.flatMap(a=>a.externalSourceUrls||[]))].filter(s=>{
+const urls=[...new Set(model.articles.flatMap(a=>a.externalSourceUrls||[]).map(s=>s.replaceAll('&amp;','&')))].filter(s=>{
   const u=new URL(s);return u.protocol==='https:'&&!u.username&&!u.password&&!/token|secret|auth|login|session/i.test(u.search);
 });
 const items=previous.items.filter(i=>urls.includes(i.url));

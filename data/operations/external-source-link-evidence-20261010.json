@@ -1,0 +1,373 @@
+{
+  "checkedAt": "2026-10-09T18:36:47.069Z",
+  "scope": "CATALOG_SOURCE_LINKS_NOT_CONTENT_FACT_VERIFICATION",
+  "total": 465,
+  "checked": 465,
+  "pending": 0,
+  "summary": {
+    "reachable": 415,
+    "restricted": 19,
+    "httpErrors": 28,
+    "unverified": 3
+  },
+  "counts": {
+    "200": 412,
+    "202": 3,
+    "401": 1,
+    "403": 18,
+    "404": 2,
+    "500": 1,
+    "522": 18,
+    "530": 7,
+    "ACCESS_UNVERIFIED": 3
+  },
+  "failures": [
+    {
+      "url": "https://ckworks.jp/vinforadar/video/2a3eAC5NvvY",
+      "status": 403,
+      "finalUrl": "https://ckworks.jp/vinforadar/video/2a3eAC5NvvY",
+      "checkedAt": "2026-10-09T18:33:49.706Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://en.help.roblox.com/hc/ko/articles/360029650831",
+      "status": 403,
+      "finalUrl": "https://en.help.roblox.com/hc/ko/articles/360029650831",
+      "checkedAt": "2026-10-09T18:33:51.834Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.spacemoney.com.br/entretenimento/codigos-brawl-stars-outubro-2026/",
+      "status": 500,
+      "finalUrl": "https://www.spacemoney.com.br/entretenimento/codigos-brawl-stars-outubro-2026/",
+      "checkedAt": "2026-10-09T18:33:53.549Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://maya.net/",
+      "status": 403,
+      "finalUrl": "https://maya.net/",
+      "checkedAt": "2026-10-09T18:33:58.140Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/simcorner.com",
+      "status": 403,
+      "finalUrl": "https://www.dontpayfull.com/at/simcorner.com",
+      "checkedAt": "2026-10-09T18:33:59.693Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://keepgo.tenereteam.com/coupons",
+      "status": 403,
+      "finalUrl": "https://keepgo.tenereteam.com/coupons",
+      "checkedAt": "2026-10-09T18:34:32.055Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/globalyo.com",
+      "status": 403,
+      "finalUrl": "https://www.dontpayfull.com/at/globalyo.com",
+      "checkedAt": "2026-10-09T18:34:33.660Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/esim4travel.com",
+      "status": 403,
+      "finalUrl": "https://www.dontpayfull.com/at/esim4travel.com",
+      "checkedAt": "2026-10-09T18:34:34.285Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.spaceship.com/ko/promos/?tab=domains",
+      "status": 403,
+      "finalUrl": "https://www.spaceship.com/ko/promos/?tab=domains",
+      "checkedAt": "2026-10-09T18:34:37.490Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.namecheap.com/promos/company-birthday-offers-anniversary-deals/",
+      "status": 403,
+      "finalUrl": "https://www.namecheap.com/promos/company-birthday-offers-anniversary-deals/",
+      "checkedAt": "2026-10-09T18:34:37.541Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://doctorlean.co.kr/sopmal/goods/selectGoodsDtl?no=418",
+      "state": "ACCESS_UNVERIFIED",
+      "error": "TypeError",
+      "checkedAt": "2026-10-09T18:34:44.191Z"
+    },
+    {
+      "url": "https://doctorlean.co.kr/",
+      "state": "ACCESS_UNVERIFIED",
+      "error": "TypeError",
+      "checkedAt": "2026-10-09T18:34:44.207Z"
+    },
+    {
+      "url": "https://doctorlean.co.kr/sopmal/mbr/selectJoinGuidance",
+      "state": "ACCESS_UNVERIFIED",
+      "error": "TypeError",
+      "checkedAt": "2026-10-09T18:34:44.210Z"
+    },
+    {
+      "url": "https://wikidocs.net/265342",
+      "status": 403,
+      "finalUrl": "https://wikidocs.net/265342",
+      "checkedAt": "2026-10-09T18:34:47.944Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%8F%AC%ED%8A%B8%EB%B8%94%EB%A1%9D%EC%8A%A4-%EC%9D%B4%EB%8F%99%EC%9A%94%EC%83%88go/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%ED%8F%AC%ED%8A%B8%EB%B8%94%EB%A1%9D%EC%8A%A4-%EC%9D%B4%EB%8F%99%EC%9A%94%EC%83%88go/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "checkedAt": "2026-10-09T18:34:49.895Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "checkedAt": "2026-10-09T18:34:51.513Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EC%82%BC%EA%B5%AD%EC%A7%80-%EC%A0%9C%ED%9B%84%EC%9D%98-%EC%A0%84%EC%9F%81/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EC%82%BC%EA%B5%AD%EC%A7%80-%EC%A0%9C%ED%9B%84%EC%9D%98-%EC%A0%84%EC%9F%81/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "checkedAt": "2026-10-09T18:34:54.532Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%9E%9C%EB%8D%A4-%EB%8B%A4%EC%9D%B4%EC%8A%A4-2/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EB%9E%9C%EB%8D%A4-%EB%8B%A4%EC%9D%B4%EC%8A%A4-2/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "checkedAt": "2026-10-09T18:34:56.414Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EC%86%8C%EB%8B%A4%EC%A0%84%EC%84%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EC%86%8C%EB%8B%A4%EC%A0%84%EC%84%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "checkedAt": "2026-10-09T18:34:57.805Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.com/coop-td-together/codes/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/coop-td-together/codes/",
+      "checkedAt": "2026-10-09T18:34:58.676Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%98%91%ED%83%80%EB%94%94-%ED%98%91%EB%8F%99-%ED%83%80%EC%9B%8C-%EB%94%94%ED%8E%9C%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%ED%98%91%ED%83%80%EB%94%94-%ED%98%91%EB%8F%99-%ED%83%80%EC%9B%8C-%EB%94%94%ED%8E%9C%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "checkedAt": "2026-10-09T18:34:59.626Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes",
+      "status": 403,
+      "finalUrl": "https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes",
+      "checkedAt": "2026-10-09T18:35:03.824Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "status": 403,
+      "finalUrl": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "checkedAt": "2026-10-09T18:35:04.083Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+      "status": 401,
+      "finalUrl": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+      "checkedAt": "2026-10-09T18:35:05.520Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.aayyy.com/z-route-redemption/how-to-redeem-codes-in-route/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/z-route-redemption/how-to-redeem-codes-in-route/",
+      "checkedAt": "2026-10-09T18:35:08.728Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/whiteout-survival-codes-gift/",
+      "status": 403,
+      "finalUrl": "https://www.mrguider.org/codes/whiteout-survival-codes-gift/",
+      "checkedAt": "2026-10-09T18:35:10.370Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.itechguides.com/whiteout-survival-gift-codes-october-2026-gems-gold-keys-rewards/",
+      "status": 403,
+      "finalUrl": "https://www.itechguides.com/whiteout-survival-gift-codes-october-2026-gems-gold-keys-rewards/",
+      "checkedAt": "2026-10-09T18:35:11.332Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://coupon.nexon.com/ko-kr/maplestoryidle",
+      "status": 403,
+      "finalUrl": "https://coupon.nexon.com/ko-kr/maplestoryidle",
+      "checkedAt": "2026-10-09T18:35:16.762Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/kingshot-codes/",
+      "status": 403,
+      "finalUrl": "https://www.mrguider.org/codes/kingshot-codes/",
+      "checkedAt": "2026-10-09T18:35:17.076Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://www.aayyy.com/lucky-defense/codes/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/lucky-defense/codes/",
+      "checkedAt": "2026-10-09T18:35:20.922Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://danmaek.com/posts/lucky-defense-coupons/",
+      "status": 404,
+      "finalUrl": "https://danmaek.com/posts/lucky-defense-coupons/",
+      "checkedAt": "2026-10-09T18:35:21.370Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.com/idle-cat-gunner-shooter-rpg/codes/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/idle-cat-gunner-shooter-rpg/codes/",
+      "checkedAt": "2026-10-09T18:35:25.992Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.net/%E6%A7%8D%E6%89%8B%E8%B2%93%E5%92%AA/%E7%A6%AE%E5%8C%85%E7%A2%BC/",
+      "status": 522,
+      "finalUrl": "https://www.aayyy.net/%E6%A7%8D%E6%89%8B%E8%B2%93%E5%92%AA/%E7%A6%AE%E5%8C%85%E7%A2%BC/",
+      "checkedAt": "2026-10-09T18:35:27.435Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/ko/idle-cat-gunner%3A-shooter-rpg/%EC%BF%A0%ED%8F%B0/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/ko/idle-cat-gunner%3A-shooter-rpg/%EC%BF%A0%ED%8F%B0/",
+      "checkedAt": "2026-10-09T18:35:28.228Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/ko/idle-cat-gunner/%EC%BF%A0%ED%8F%B0/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/ko/idle-cat-gunner/%EC%BF%A0%ED%8F%B0/",
+      "checkedAt": "2026-10-09T18:35:30.079Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/ko/top-lords/%EC%BF%A0%ED%8F%B0/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/ko/top-lords/%EC%BF%A0%ED%8F%B0/",
+      "checkedAt": "2026-10-09T18:35:33.192Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.ohcodes.com/",
+      "status": 403,
+      "finalUrl": "https://domains.atom.com/lpd/name/OhCodes.com",
+      "checkedAt": "2026-10-09T18:35:37.535Z",
+      "state": "ACCESS_RESTRICTED"
+    },
+    {
+      "url": "https://game.edu.kg/pl/top-lords/kody/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/pl/top-lords/kody/",
+      "checkedAt": "2026-10-09T18:35:42.273Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%A1%9C%EA%B7%B8w/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EB%A1%9C%EA%B7%B8w/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "checkedAt": "2026-10-09T18:35:43.841Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/ka/royal-kingdom/%E1%83%99%E1%83%9D%E1%83%93%E1%83%94%E1%83%91%E1%83%98/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/ka/royal-kingdom/%E1%83%99%E1%83%9D%E1%83%93%E1%83%94%E1%83%91%E1%83%98/",
+      "checkedAt": "2026-10-09T18:35:49.986Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/hi/royal-kingdom/codes/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/hi/royal-kingdom/codes/",
+      "checkedAt": "2026-10-09T18:35:50.063Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.linegames.org/ko/royal-kingdom-%EC%BF%A0%ED%8F%B0/",
+      "status": 522,
+      "finalUrl": "https://www.linegames.org/ko/royal-kingdom-%EC%BF%A0%ED%8F%B0/",
+      "checkedAt": "2026-10-09T18:35:50.237Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.com/no/royal-kingdom/codes/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/no/royal-kingdom/codes/",
+      "checkedAt": "2026-10-09T18:35:50.424Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.taptap.cn/moment/855187337099871515?group_id=1069519",
+      "status": 404,
+      "finalUrl": "https://www.taptap.cn/moment/855187337099871515?group_id=1069519",
+      "checkedAt": "2026-10-09T18:35:57.992Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%82%98%EB%A7%8C-sss%EA%B8%89-%ED%87%B4%EB%A7%88%EC%82%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%EB%82%98%EB%A7%8C-sss%EA%B8%89-%ED%87%B4%EB%A7%88%EC%82%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "checkedAt": "2026-10-09T18:36:03.245Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.com/royal-match/codes/",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/royal-match/codes/",
+      "checkedAt": "2026-10-09T18:36:03.918Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%83%91-%ED%8F%AC%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "status": 522,
+      "finalUrl": "https://www.digwow.net/%ED%83%91-%ED%8F%AC%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "checkedAt": "2026-10-09T18:36:08.406Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://www.aayyy.com/lordrush/codes",
+      "status": 530,
+      "finalUrl": "https://www.aayyy.com/lordrush/codes",
+      "checkedAt": "2026-10-09T18:36:13.140Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://game.edu.kg/ko/라스트-에코/쿠폰/",
+      "status": 522,
+      "finalUrl": "https://game.edu.kg/ko/%EB%9D%BC%EC%8A%A4%ED%8A%B8-%EC%97%90%EC%BD%94/%EC%BF%A0%ED%8F%B0/",
+      "checkedAt": "2026-10-09T18:36:16.091Z",
+      "state": "HTTP_ERROR"
+    },
+    {
+      "url": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+      "status": 403,
+      "finalUrl": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+      "checkedAt": "2026-10-09T18:36:33.034Z",
+      "state": "ACCESS_RESTRICTED"
+    }
+  ]
+}

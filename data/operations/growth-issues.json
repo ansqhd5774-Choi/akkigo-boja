@@ -70,6 +70,26 @@
       "evidence": "data/operations/provider-review-20261010.json",
       "nextAction": "다음크롤링/색인상태확인;현재source원인단정금지",
       "resolvedAt": null
+    },
+    {
+      "id": "FAVICON-REFERENCE-REGRESSION",
+      "status": "RESOLVED",
+      "summary": "파비콘의 기존 안정 주소를 실제 Blogger 테마에 복원, 공개 이미지와 단일 icon 확인. Google 서비스 표시는 별도 대기.",
+      "evidence": "data/operations/favicon-restored-evidence-20261010.json",
+      "nextAction": "주소 변경 없이 Google 갱신 추적",
+      "resolvedAt": "2026-10-10",
+      "reportedAt": "2026-10-10",
+      "target": "coupon site public evidence"
+    },
+    {
+      "id": "EXTERNAL-SOURCE-LINKS-465",
+      "status": "IN_REVIEW",
+      "summary": "465개 조회 완료. 404 2건, 외부 서버 오류26건, 접근제한19건, 조회미확인3건. 202 접수3건은 본문 검증 아님.",
+      "evidence": "data/operations/external-source-link-evidence-20261010.json",
+      "nextAction": "404 원문의 공식 대체 근거 검토; 접근 오류를 만료로 처리하지 않음",
+      "resolvedAt": null,
+      "reportedAt": "2026-10-10",
+      "target": "coupon site public evidence"
     }
   ]
 }
