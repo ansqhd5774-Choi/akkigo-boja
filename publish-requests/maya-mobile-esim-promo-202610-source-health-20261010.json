@@ -3,5 +3,5 @@
   "approved": true,
   "existingOnly": true,
   "requestedAt": "2026-10-10",
-  "reason": "승인된 출처 품질 개선: 브랜드 출처 접근 확인 대기 표시. 기존 postId 및 URL 유지. 원문 연결 상태와 브랜드 접근 상태 2차 동기화. 보류 요청 제외 후 안전한 발행 재개."
+  "reason": "출처 품질 반영: 식별 불일치는 보존하고 독립 글 갱신 계속"
 }

@@ -16,6 +16,7 @@ if (!requested.length) throw new Error('NO_EXPLICIT_PUBLISH_REQUESTS');
 const names=[...new Set(requested)].sort();
 const processedKeys=new Set();
 let processed=0;
+const deferred=[];
 for (const name of names) {
   const request=JSON.parse(await readFile(new URL(name,dir),'utf8'));
   if (request.approved!==true || typeof request.articleKey!=='string') continue;
@@ -46,9 +47,16 @@ for (const name of names) {
     if(request.existingOnly===true&&response.status===409&&body.error==='ARTICLE_NOT_LIVE_UPDATE_ONLY'){
       console.log('EXISTING_ONLY_NOT_LIVE_SKIPPED',request.articleKey);break;
     }
+    // Identity reconciliation failed before any mutation. Preserve that post
+    // and continue independent approved updates; never retry or create a copy.
+    if(request.existingOnly===true&&response.status===409&&body.error==='ARTICLE_STATE_MISMATCH'){
+      deferred.push(request.articleKey);
+      console.log('PRE_MUTATION_IDENTITY_DEFERRED',request.articleKey);break;
+    }
     throw new Error(`ARTICLE_PUBLISH_HTTP_${response.status}_${body.error || 'UNKNOWN'}`);
   }
   if(request.existingOnly===true&&body.error==='ARTICLE_NOT_LIVE_UPDATE_ONLY')continue;
+  if(request.existingOnly===true&&body.error==='ARTICLE_STATE_MISMATCH')continue;
   if (body.status!=='LIVE' || typeof body.url!=='string' || new URL(body.url).hostname!=='lsifl.blogspot.com') throw new Error('ARTICLE_PUBLISH_RESPONSE_INVALID');
   if(requireUnchanged && (body.alreadyLive!==true || body.updated!==false))throw Error('UNCHANGED_PUBLISH_PROBE_RESPONSE_INVALID');
   if(requireUnchanged && (body.postId!==process.env.UNCHANGED_EXPECTED_POST_ID || body.url!==process.env.UNCHANGED_EXPECTED_URL))throw Error('UNCHANGED_PUBLISH_PROBE_IDENTITY_CHANGED');
@@ -65,3 +73,4 @@ for (const name of names) {
   processed++;
 }
 if (!processed) throw new Error('NO_APPROVED_REQUESTS');
+if(deferred.length)throw new Error(`ARTICLE_IDENTITY_DEFERRED:${deferred.join(',')}`);

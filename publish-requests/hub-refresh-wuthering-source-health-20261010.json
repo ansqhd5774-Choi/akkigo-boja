@@ -4,5 +4,5 @@
   ],
   "approved": true,
   "requestedAt": "2026-10-10",
-  "reason": "기존 명조 허브 코드별 원문 연결 미확인 표시, 기존 postId/URL 보존"
+  "reason": "출처 품질 반영: 식별 불일치는 보존하고 독립 글 갱신 계속"
 }
