@@ -15,3 +15,14 @@ test('No-JavaScript homepage links refer to published blog URLs',()=>{
  assert.match(xml,/<noscript><nav/);
  for(const row of links){assert.equal(new URL(row.url).origin,'https://lsifl.blogspot.com');assert.ok(row.title);assert.ok(xml.includes(row.url));}
 });
+
+test('homepage has one consistent WebSite identity for Google site names',()=>{
+ const xml=readFileSync(new URL('../theme/blogger-native-base.xml',import.meta.url),'utf8');
+ const blocks=[...xml.matchAll(/<script type='application\/ld\+json'>(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1]));
+ const websites=blocks.filter(block=>block['@type']==='WebSite');
+ assert.equal(websites.length,1);
+ assert.equal(websites[0].name,'아끼고 보자');
+ assert.equal(websites[0].url,'https://lsifl.blogspot.com/');
+ assert.match(xml,/<meta content='아끼고 보자' property='og:site_name'\/>/);
+ assert.match(xml,/<b:if cond='data:view.isHomepage'>\s*<script type='application\/ld\+json'>/);
+});

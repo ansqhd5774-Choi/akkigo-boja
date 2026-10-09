@@ -6,6 +6,10 @@
     <!-- AKKIGO SEO: page-specific titles; keep article titles unchanged. -->
     <title><b:if cond='data:view.isHomepage'>아끼고 보자 | 게임 쿠폰·할인코드 모음<b:elseif cond='data:blog.searchLabel'/><data:blog.searchLabel/> 쿠폰·할인 안내 | 아끼고 보자<b:elseif cond='data:view.url == &quot;https://lsifl.blogspot.com/2026/10/blog-post_212.html&quot;'/>탑 포스 쿠폰 코드 52개 수집 기록 (2026년 10월)<b:elseif cond='data:view.url == &quot;https://lsifl.blogspot.com/2026/10/blog-post_988.html&quot;'/>애니모 쿠폰 코드 16개 수집 기록 (2026년 10월)<b:else/><data:view.title.escaped/></b:if></title>
     <b:include data='blog' name='all-head-content'/>
+    <meta content='아끼고 보자' property='og:site_name'/>
+    <b:if cond='data:view.isHomepage'>
+      <script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","name":"아끼고 보자","alternateName":"아끼고보자","url":"https://lsifl.blogspot.com/"}</script>
+    </b:if>
     <b:if cond='data:view.isSingleItem and !data:blog.metaDescription'>
       <meta expr:content='data:blog.pageName + &quot; — 쿠폰 정보와 사용 방법, 출처 및 적용 조건을 본문에서 확인하세요.&quot;' name='description'/>
     </b:if>
@@ -4027,6 +4031,5 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
     <b:template-script async='true' name='indie' version='1.0.0'/>
   </body>
 </html>
-
 
 
