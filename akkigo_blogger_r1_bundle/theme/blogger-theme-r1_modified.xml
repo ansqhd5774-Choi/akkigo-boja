@@ -2992,7 +2992,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-expiry{max-width:240px;word-break:keep-all}
 }
 
-@media(min-width:601px){.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-more::details-content{display:contents}}
+@media(min-width:601px){.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-more[open]::details-content{display:contents}.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-list-more:not([open])::details-content{display:none}}
 
 /* Share remaining desktop space across source, expiry and coupon columns. */
 @media(min-width:601px){.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-card-list{grid-template-columns:38px minmax(112px,1fr) minmax(132px,1fr) minmax(96px,1fr) 126px}.post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-expiry{max-width:none}}

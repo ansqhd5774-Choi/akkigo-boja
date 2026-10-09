@@ -45,6 +45,7 @@ const check=`
    const rows=list.querySelectorAll('.ncp-code-card'),more=list.querySelector(':scope>.ncp-list-more');
    if(rows.length>5){
     if(!more||more.open||list.querySelectorAll(':scope>.ncp-code-card').length!==5)failures.push('five-preview');
+    if(shown(list)&&[...more.querySelectorAll('.ncp-code-card')].some(row=>row.getBoundingClientRect().height>0&&row.checkVisibility({contentVisibilityAuto:true})))failures.push('closed-records-visible');
     more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));checkVisible(article);if(!more.open)failures.push('disclosure-open');
     if(shown(list)){
      const bottom=more.querySelector('summary').getBoundingClientRect(),last=rows[rows.length-1].getBoundingClientRect();
@@ -52,6 +53,7 @@ const check=`
      if(more.querySelector('summary').textContent!=='접기')failures.push('collapse-label');
     }
     more.querySelector('summary').click();await new Promise(r=>setTimeout(r,0));if(more.open)failures.push('disclosure-close');
+    if(shown(list)&&[...more.querySelectorAll('.ncp-code-card')].some(row=>row.getBoundingClientRect().height>0&&row.checkVisibility({contentVisibilityAuto:true})))failures.push('closed-records-visible');
     if(!more.querySelector('summary').textContent.startsWith('더 보기'))failures.push('more-label-restore');
    }
   }
