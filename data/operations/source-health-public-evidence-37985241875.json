@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-09T20:12:38.506Z",
+  "runId": "37985241875",
+  "scope": "PROVIDER_AND_INDEPENDENT_PUBLIC_HTML",
+  "summary": {
+    "published": 2,
+    "checked": 2,
+    "errors": 0
+  },
+  "pages": [
+    {
+      "articleKey": "duck-survival-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/2026-10-7.html",
+      "postId": "3881874018640613082",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 0,
+      "thirdPartyReferenceMarkers": 26,
+      "broken404Anchor": false
+    },
+    {
+      "articleKey": "last-asylum-plague-codes-202610",
+      "status": "LIVE",
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_977.html",
+      "postId": "1529869178160281893",
+      "publicVerified": true,
+      "alreadyLive": true,
+      "userReviewRequired": true,
+      "visualQa": "USER_REVIEW",
+      "httpStatus": 200,
+      "articlePresent": true,
+      "healthMarkers": 0,
+      "sourceGapMarkers": 26,
+      "thirdPartyReferenceMarkers": 19,
+      "broken404Anchor": false
+    }
+  ]
+}

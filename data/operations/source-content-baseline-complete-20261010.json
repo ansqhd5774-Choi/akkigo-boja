@@ -1,0 +1,1844 @@
+{
+  "checkedAt": "2026-10-09T20:11:21.686Z",
+  "scope": "467_INITIAL_CONTENT_OBSERVATIONS_NOT_FACT_VERIFICATION",
+  "summary": {
+    "total": 467,
+    "checked": 467,
+    "withFlags": 151,
+    "withoutFlags": 316,
+    "flags": {
+      "EXPECTED_CODE_NOT_OBSERVED": 7,
+      "BODY_TOO_SHORT_REVIEW": 129,
+      "HTTP_BODY_UNCONFIRMED": 42,
+      "ACCESS_CHALLENGE_SUSPECTED": 19,
+      "ACCESS_UNVERIFIED": 3,
+      "CROSS_HOST_REDIRECT_REVIEW": 6
+    }
+  },
+  "items": [
+    {
+      "url": "https://coupon.withhive.com/shibarpg",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "pick7p2y"
+      ],
+      "review": {
+        "decision": "REGISTRATION_PAGE_NOT_CODE_LIST",
+        "falsePositiveFlag": "EXPECTED_CODE_NOT_OBSERVED",
+        "reviewedAt": "2026-10-10"
+      },
+      "nextReviewAt": "2026-10-16T19:32:07.397Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Trickcal/board/31",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_BOARD_CONFIRMED",
+        "reason": "JavaScript 렌더링 전 짧은 HTML을 실제 페이지 장애로 판단하지 않음",
+        "reviewedAt": "2026-10-10"
+      },
+      "nextReviewAt": "2026-10-16T19:32:07.884Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW",
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "GOOGLETOP3"
+      ],
+      "review": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_NOTICE_CONFIRMED",
+        "reviewedAt": "2026-10-10",
+        "reason": "이전 공식 본문 직접 확인 증거 유지. JavaScript 렌더링 전 HTML에 코드가 없다는 자동 조회를 실제 코드 삭제로 해석하지 않음"
+      },
+      "nextReviewAt": "2026-10-16T19:51:03.109Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://game.naver.com/lounge/BROWNDUST2/home",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "OFFICIAL_COMMUNITY_NAVIGATION_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T19:56:42.258Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://redeem.bd2.pmang.cloud/bd2/index.html?lang=ko-KR",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T19:56:42.315Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://genshin.hoyoverse.com/ko/gift",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T19:56:42.413Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://hsr.hoyoverse.com/gift",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "BROWSER_REDEMPTION_FORM_RENDERED",
+        "reviewedAt": "2026-10-10",
+        "reason": "브라우저 렌더링 실제 확인. 짧은 정적 HTML을 서비스 장애나 쿠폰 만료로 처리하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T19:56:42.501Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://game.naver.com/lounge/BROWNDUST2/board/detail/8263310",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:00:33.248Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://genshin.hoyoverse.com/ko/gift?code=6LS3F3LS5K87",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:00:33.305Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://ckworks.jp/vinforadar/video/2a3eAC5NvvY",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:00:33.497Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.hoyolab.com/article/46765148",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:00:33.664Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://en.help.roblox.com/hc/ko/articles/360029650831",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:00:36.624Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://leekduck.com/promo-code",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:02:41.349Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://supercell.com/brawlstars-gift/en",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:03:26.208Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://support.supercell.com/supercell-store/en/articles/what-is-the-supercell-store-4.html",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:03:27.031Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://yesim.app/referral-program/",
+      "httpStatus": 202,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "PRIOR_BROWSER_BODY_EVIDENCE_RETAINED",
+        "reviewedAt": "2026-10-10",
+        "reason": "기존 브라우저 본문 확인을 자동HTTP202로 취소하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:03:31.963Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://maya.net/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:03:32.110Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://yesim.app/promocodes/",
+      "httpStatus": 202,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:03:45.068Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/simcorner.com",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:03:50.043Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://yesim.app/loyalty-program/",
+      "httpStatus": 202,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:13.534Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.facebook.com/gigagocom/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:17.797Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.gomoworld.com/en/help/getting-started/use-promo-code",
+      "httpStatus": 200,
+      "flags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:21.742Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.gomoworld.com/en",
+      "httpStatus": 200,
+      "flags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:30.618Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://keepgo.tenereteam.com/coupons",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:32.295Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/globalyo.com",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:39.836Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.esim4travel.com/ko",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:40.259Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.dontpayfull.com/at/esim4travel.com",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:41.141Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.spaceship.com/ko/promos/?tab=domains",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:44.551Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.namecheap.com/promos/company-birthday-offers-anniversary-deals/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:45.235Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.nygirlz.co.kr/web/info/benefit3.php",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:50.467Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://doctorlean.co.kr/sopmal/goods/selectGoodsDtl?no=418",
+      "flags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:04:51.675Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.kgcshop.co.kr/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:04:53.017Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.nygirlz.co.kr/web/event/event.php",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:04.488Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://doctorlean.co.kr/",
+      "flags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:05.745Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://pf.kakao.com/_rMBub/coupons?filter=usable",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:06.668Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://doctorlean.co.kr/sopmal/mbr/selectJoinGuidance",
+      "flags": [
+        "ACCESS_UNVERIFIED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:10.743Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://pf.kakao.com/_EiaLj/friend",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:11.558Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:15.743Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://fastcampus.co.kr/account/sign-in",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:15.830Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://wikidocs.net/265342",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:16.325Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/FORTBLOX",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:16.387Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://coupon.hyperrise.kr/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:17.693Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://discord.gg/vMUx8EbGS8",
+      "httpStatus": 200,
+      "flags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:05:18.712Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%8F%AC%ED%8A%B8%EB%B8%94%EB%A1%9D%EC%8A%A4-%EC%9D%B4%EB%8F%99%EC%9A%94%EC%83%88go/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:20.076Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:23.375Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Samgukji_Lords_War/home",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:23.428Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/CoopTD/comments/1ihutw1/spare_rookie_codes_put_them_in_here/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:25.779Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://discord.gg/5XAq6hPX6U",
+      "httpStatus": 200,
+      "flags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:05:26.217Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.digwow.net/%EC%82%BC%EA%B5%AD%EC%A7%80-%EC%A0%9C%ED%9B%84%EC%9D%98-%EC%A0%84%EC%9F%81/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:42.011Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.netmarble.com/sk_rebirth_gl",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:42.724Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1ukuray/how_to_get_this_glyph/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:43.445Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://support.warframe.com/hc/en-us/articles/218262387-Promo-Codes",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:44.967Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/z-route-redemption-codes/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:45.254Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%9E%9C%EB%8D%A4-%EB%8B%A4%EC%9D%B4%EC%8A%A4-2/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:48.372Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1s4ht93/newly_available_glyph_from_quitshy/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:50.156Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://zroutehq.com/z-route-redemption-gift-codes-latest-working-codes-2026/",
+      "httpStatus": 401,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:51.571Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%EC%86%8C%EB%8B%A4%EC%A0%84%EC%84%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:05:58.387Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1u59e3w/how_can_i_get_this_glyph/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:59.016Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.warframe.com/ko/promocode",
+      "httpStatus": 200,
+      "flags": [
+        "ACCESS_CHALLENGE_SUSPECTED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:59.372Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/whiteout-survival-codes-gift/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:05:59.433Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.zrrglobal.com/zrrofficial/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:00.115Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.itechguides.com/whiteout-survival-gift-codes-october-2026-gems-gold-keys-rewards/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:00.957Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%98%91%ED%83%80%EB%94%94-%ED%98%91%EB%8F%99-%ED%83%80%EC%9B%8C-%EB%94%94%ED%8E%9C%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:04.846Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1nvsp1d/free_warframe_promo_code/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:05.332Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://wos-giftcode.centurygame.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:05.695Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://coupon.nexon.com/ko-kr/maplestoryidle",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:07.884Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.mrguider.org/codes/kingshot-codes/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:09.532Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://ks-giftcode.centurygame.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:09.700Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1s19iea/new_promo_code_androidqv4rx/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:10.187Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "WELLDONE",
+        "Kingshot888",
+        "VIP777",
+        "KS1005",
+        "EXPLORETHEWORLD",
+        "MIDAUTUMN26",
+        "JPHolidaySEP",
+        "KS0919",
+        "KS0909",
+        "KS0907",
+        "OFFICIALSTORE0904",
+        "CHILLWEEKEND",
+        "FB2500KT",
+        "VIP0822",
+        "KS0822",
+        "JP26SUMMER",
+        "OFFICIALSTORE08011",
+        "KS0810",
+        "HAPPYCATDAY",
+        "KS0803",
+        "JPJULSEA26KS",
+        "HAPPYEMOJIDAY",
+        "KS0715",
+        "KS0713"
+      ],
+      "review": {
+        "decision": "WEB_READER_CODE_LIST_PRESENT_NODE_RESPONSE_DIFFERS",
+        "reviewedAt": "2026-10-10",
+        "reason": "웹리더에서 WELLDONE·Kingshot888·VIP777·KS1005 및 과거 코드 목록 확인. 자동조회의 전체 코드 소실로 판정하지 않음",
+        "accountInputVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:06:11.610Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://fcmobile.nexon.com/Coupon/Index",
+      "httpStatus": 200,
+      "flags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:14.920Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/fcmobile/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:15.126Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/Warframe/comments/1wvd8fb/looks_like_a_limitedtime_code_redeem_carrythefire/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:17.963Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://danmaek.com/posts/lucky-defense-coupons/",
+      "httpStatus": 404,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:18.899Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://discord.gg/nikke-en",
+      "httpStatus": 200,
+      "flags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:06:21.365Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.reddit.com/r/BlueStacks/comments/1vh1u96/s1_week_1_is_live_in_z_route_redemption_with_a/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:32.311Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Duck_Survival/board/detail/8206212",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:34.106Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.pocketgamer.com/duck-survival/codes/",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "HEARDUCK"
+      ],
+      "review": {
+        "decision": "SOURCE_CASING_VARIANT_PUBLIC_CLARIFICATION",
+        "reviewedAt": "2026-10-10",
+        "reason": "원문 HearDuck/hearduck과 HEARDUCK의 표기 차이 안내, 임의로 코드 문자열 변경하지 않음"
+      },
+      "nextReviewAt": "2026-10-16T20:06:34.294Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "HEARDUCK"
+      ],
+      "review": {
+        "decision": "SOURCE_CASING_VARIANT_PUBLIC_CLARIFICATION",
+        "reviewedAt": "2026-10-10",
+        "reason": "원문 HearDuck/hearduck과 HEARDUCK의 표기 차이 안내, 임의로 코드 문자열 변경하지 않음"
+      },
+      "nextReviewAt": "2026-10-16T20:06:36.188Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:38.275Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Duck_Survival/pre_campaign",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:38.336Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.aayyy.net/%E6%A7%8D%E6%89%8B%E8%B2%93%E5%92%AA/%E7%A6%AE%E5%8C%85%E7%A2%BC/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:42.962Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/ko/idle-cat-gunner%3A-shooter-rpg/%EC%BF%A0%ED%8F%B0/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:45.531Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.ohcodes.com/",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:46.812Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/u_SafeSkinTrade/comments/1tl8m8h/everyone_get_your_diamond_coupon/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:47.258Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://store.toplords.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:48.287Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/ROGW_Remains_Of_Gods/board/detail/8269312",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:48.617Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%A1%9C%EA%B7%B8w/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:50.524Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/luckydefense/comments/1pyipuk/lucky_coupon_lucky2026/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:52.292Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/ko/idle-cat-gunner/%EC%BF%A0%ED%8F%B0/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:54.077Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/ROGW_Remains_Of_Gods",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:54.282Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.linegames.org/ko/royal-kingdom-%EC%BF%A0%ED%8F%B0/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:06:56.768Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://fkssj.quxianghudong.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:58.817Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.taptap.cn/moment/855187337099871515?group_id=1069519",
+      "httpStatus": 404,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:59.729Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/luckydefense/comments/1tcttvs/2nd_anniversary_update_preview/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:06:59.944Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.gamermall.net/global/flot/cdkey",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:02.083Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Wild_Water_World/board",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:02.134Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://flotshelter.eworldgame.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:03.520Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%EB%82%98%EB%A7%8C-sss%EA%B8%89-%ED%87%B4%EB%A7%88%EC%82%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:07:05.023Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/luckydefense/comments/1lkxyi0",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:05.582Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/solo_exorcist/home",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:07.205Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.digwow.net/%ED%83%91-%ED%8F%AC%EC%8A%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:07:10.266Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/luckydefense/comments/1kos0iq",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:20.240Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/ko/top-lords/%EC%BF%A0%ED%8F%B0/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:07:22.112Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/solo_exorcist/board/detail/8227479",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:22.888Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.gamesradar.com/games/rpg/aniimo-codes/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:24.573Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://gevents.globallap.com/gamecode/index.html?gameId=440",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:24.967Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "SURVIVOR"
+      ],
+      "review": {
+        "decision": "REWARD_WORD_ASSOCIATION_WITHDRAWN",
+        "reviewedAt": "2026-10-10",
+        "reason": "보상명 단어를 코드 선언으로 오인한 이전 연결 철회"
+      },
+      "nextReviewAt": "2026-10-16T20:07:25.842Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.reddit.com/r/luckydefense/comments/1f8ma02",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:26.493Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+      "httpStatus": 200,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "SURVIVOR"
+      ],
+      "review": {
+        "decision": "REWARD_WORD_ASSOCIATION_WITHDRAWN",
+        "reviewedAt": "2026-10-10",
+        "reason": "보상명 단어를 코드 선언으로 오인한 이전 연결 철회"
+      },
+      "nextReviewAt": "2026-10-16T20:07:28.649Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://ls-giftcode.centurygame.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:29.812Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.reddit.com/r/redeemcodesmobile/comments/1tqbkeg/duck_survival_codes_updated_regularly/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:32.366Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://discord.gg/Rq928VBeHx",
+      "httpStatus": 200,
+      "flags": [
+        "CROSS_HOST_REDIRECT_REVIEW",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": {
+        "decision": "DISCORD_INVITE_REDIRECT_WITH_EXPECTED_GAME_TITLE",
+        "reviewedAt": "2026-10-10",
+        "claimVerified": false
+      },
+      "nextReviewAt": "2026-10-16T20:07:34.727Z",
+      "action": "MANUAL_REVIEW_RECORDED_RETAIN_OBSERVATION"
+    },
+    {
+      "url": "https://www.facebook.com/LastEchoHKTWMO/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:35.132Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.naver.com/lounge/Immortal_Rising_Awakening/home",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:35.182Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://immortalrising.goatgames.com/",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:38.787Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://www.facebook.com/ImmortalRising.Awakening",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:39.291Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/bluearchive/board_view?board=1039&thread=3536588",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:43.975Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forums.warframe.com/topic/992008-free-promocodes-and-content-creator-glyphs/?comment=13401806&do=findComment",
+      "httpStatus": 403,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED",
+        "ACCESS_CHALLENGE_SUSPECTED",
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:44.627Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=10503",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:45.340Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/pl/top-lords/kody/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:07:47.974Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/bluearchive/board_view?board=1072&thread=1595648",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:49.073Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=9112",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:50.101Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3546003",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:52.194Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=9200",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:52.629Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3512438",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:53.887Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.kakaogames.com/dokkaebi/postView/?code=notice&id=5533",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:54.321Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/ka/royal-kingdom/%E1%83%99%E1%83%9D%E1%83%93%E1%83%94%E1%83%91%E1%83%98/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:07:57.101Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:07:57.312Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/hi/royal-kingdom/codes/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:08:00.486Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3506500",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:08:00.691Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3473910",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:08:01.779Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3436295",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:08:04.194Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3440884",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:10.800Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3417995",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:14.055Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3433590",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:14.994Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372427",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:15.804Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3413149",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:16.789Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3323144",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:17.603Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://game.edu.kg/ko/라스트-에코/쿠폰/",
+      "httpStatus": 522,
+      "flags": [
+        "HTTP_BODY_UNCONFIRMED"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-10T20:09:20.663Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372426",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:20.888Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3372425",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:21.611Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3370500",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:22.265Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3323138",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:22.721Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6697&thread=3253224",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:23.203Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3323106",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:24.072Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3253237",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:24.621Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3225521",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:25.157Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=7418&thread=3252827",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:25.742Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/fcmobile/board_view?board=441&thread=3550867&stickyBoard=1",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:09:26.248Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    },
+    {
+      "url": "https://forum.nexon.com/fcmobile/board_view?board=443&thread=3542994",
+      "httpStatus": 200,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "review": null,
+      "nextReviewAt": "2026-10-16T20:10:20.131Z",
+      "action": "REVIEW_ACCESS_OR_CONTENT_NO_AUTOMATIC_CLAIM_CHANGE"
+    }
+  ]
+}
