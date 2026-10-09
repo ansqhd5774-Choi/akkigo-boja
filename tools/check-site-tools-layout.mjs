@@ -13,18 +13,20 @@ const test=`
  const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  async function waitFor(predicate){for(let i=0;i<80;i++){if(predicate())return;await pause(50);}throw Error('WAIT_TIMEOUT');}
  document.addEventListener('DOMContentLoaded',async()=>{try{
-   const grid=document.querySelector('.ncp-r4-game-list');await waitFor(()=>grid.children.length===12);
+   assert(window.ncpResolveBrand({title:{$t:'가비아 도메인 할인'},content:{$t:'<img src="https://akkigo-boja.ansqhd5774.workers.dev/logos/gabia-representative.png">'}}).name==='가비아','COMPANY_NAME_ONLY');
+   const grid=document.querySelector('.ncp-r4-game-list');const size=Number(${width})<601?4:6;const total=Math.ceil(24/size);await waitFor(()=>grid.children.length===size);
    assert(document.documentElement.scrollWidth<=Number(${width})+1,'HORIZONTAL_OVERFLOW');
    assert(getComputedStyle(grid).gridTemplateColumns.split(' ').length===(Number(${width})<601?4:6),'GRID_COLUMNS');
    assert(grid.querySelector('.ncp-game-heart').textContent.includes('—'),'UNKNOWN_HEART_IS_NOT_ZERO');
-   const pager=grid.nextElementSibling;assert(pager.textContent.includes('1 / 2'),'INITIAL_PAGE');
-   grid.focus();grid.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));await waitFor(()=>pager.textContent.includes('2 / 2'));
-   assert(grid.children.length===12,'SECOND_PAGE_COUNT');assert(pager.querySelector('button:last-child').disabled,'LAST_PAGE_BOUNDARY');
-   grid.dispatchEvent(new PointerEvent('pointerdown',{pointerType:'touch',pointerId:9,clientX:80,clientY:60,bubbles:true}));
-   grid.dispatchEvent(new PointerEvent('pointerup',{pointerType:'touch',pointerId:9,clientX:180,clientY:63,bubbles:true}));await waitFor(()=>pager.textContent.includes('1 / 2'));
+   grid.setPointerCapture=()=>{};grid.hasPointerCapture=()=>false;const pager=grid.nextElementSibling;const pageText=n=>n+'페이지, 전체 '+total+'페이지';assert(pager.textContent.includes(pageText(1)),'INITIAL_PAGE');
+   grid.focus();grid.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));await waitFor(()=>pager.textContent.includes(pageText(2)));await pause(450);
+   assert(grid.children.length===size,'SECOND_PAGE_COUNT');for(let n=3;n<=total;n++){grid.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));await waitFor(()=>pager.textContent.includes(pageText(n)));await pause(450);}assert(pager.querySelector('button:last-child').disabled,'LAST_PAGE_BOUNDARY');for(let n=total-1;n>=2;n--){grid.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true}));await waitFor(()=>pager.textContent.includes(pageText(n)));await pause(450);}
+   grid.dispatchEvent(new PointerEvent('pointerdown',{isPrimary:true,button:0,pointerType:'touch',pointerId:9,clientX:80,clientY:60,bubbles:true}));
+   grid.dispatchEvent(new PointerEvent('pointermove',{isPrimary:true,button:0,pointerType:'touch',pointerId:9,clientX:180,clientY:63,bubbles:true}));
+   grid.dispatchEvent(new PointerEvent('pointerup',{isPrimary:true,button:0,pointerType:'touch',pointerId:9,clientX:180,clientY:63,bubbles:true}));await waitFor(()=>pager.textContent.includes(pageText(1)));await pause(450);
    assert(pager.querySelector('button:first-child').disabled,'FIRST_PAGE_BOUNDARY');
-   grid.dispatchEvent(new PointerEvent('pointerdown',{pointerType:'touch',pointerId:10,clientX:180,clientY:60,bubbles:true}));
-   grid.dispatchEvent(new PointerEvent('pointerup',{pointerType:'touch',pointerId:10,clientX:70,clientY:200,bubbles:true}));await pause(100);assert(pager.textContent.includes('1 / 2'),'VERTICAL_SCROLL_NOT_PAGINATION');
+   grid.dispatchEvent(new PointerEvent('pointerdown',{isPrimary:true,button:0,pointerType:'touch',pointerId:10,clientX:180,clientY:60,bubbles:true}));
+   grid.dispatchEvent(new PointerEvent('pointerup',{isPrimary:true,button:0,pointerType:'touch',pointerId:10,clientX:70,clientY:200,bubbles:true}));await pause(100);assert(pager.textContent.includes(pageText(1)),'VERTICAL_SCROLL_NOT_PAGINATION');
    const input=document.querySelector('input[name=q]');input.focus();input.value='후더덕 서바이블';input.dispatchEvent(new Event('input',{bubbles:true}));
    const box=document.querySelector('.ncp-search-results');await waitFor(()=>!box.hidden);assert(box.textContent.includes('후더덕 서바이벌'),'FUZZY_KOREAN_SEARCH');
    input.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true}));assert(input.getAttribute('aria-activedescendant'),'KEYBOARD_SELECTION');
