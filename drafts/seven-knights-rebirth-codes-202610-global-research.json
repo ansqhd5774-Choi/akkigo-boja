@@ -1,0 +1,1871 @@
+{
+  "articleKey": "seven-knights-rebirth-codes-202610",
+  "gameName": "세븐나이츠 리버스",
+  "english": "Seven Knights Re:BIRTH",
+  "checkedAt": "2026-10-09",
+  "policy": "sourcePublishedAt = original article/comment publication date only, not scraping date, source-added date or latest editedAt. No user redemption success generalized.",
+  "keywordCandidates": [
+    "세븐나이츠 리버스 쿠폰",
+    "세나 리버스 쿠폰",
+    "세나리 쿠폰",
+    "세븐나이츠 리버스 쿠폰 입력",
+    "Seven Knights Rebirth codes",
+    "Seven Knights Re:BIRTH redeem codes",
+    "7ENMUGEN",
+    "SKRE300BIRTH"
+  ],
+  "hashtagCandidates": [
+    "#세븐나이츠리버스",
+    "#세나리버스",
+    "#세나리쿠폰",
+    "#세븐나이츠리버스쿠폰",
+    "#SevenKnightsRebirth",
+    "#SKRE"
+  ],
+  "searchVolumes": "not independently measurable; GSC Wizard returned payment_required, do not fabricate",
+  "primarySources": {
+    "officialRedeem": "https://coupon.netmarble.com/tskgb",
+    "officialForum": "https://forum.netmarble.com/sk_rebirth_gl",
+    "octEvent": "https://www.inven.co.kr/board/sena/6379/1504",
+    "julyCommunity": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+    "gamewith": "https://gamewith.jp/sevenknights-rebirth/520771",
+    "pocket": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+    "gg": "https://www.game.guide/seven-knights-rebirth-codes"
+  },
+  "counts": {
+    "total": 93,
+    "currentSourceReported": 2,
+    "expired": 91,
+    "datedOriginalPost": 9,
+    "actualRedemptionVerified": 0
+  },
+  "records": [
+    {
+      "code": "7ENMUGEN",
+      "sourcePublishedAt": "2026-10-01",
+      "expiry": "2026-10-29 (점검 전)",
+      "status": "UNVERIFIED",
+      "latest": true,
+      "latestEvidence": "https://gamewith.jp/sevenknights-rebirth/520771",
+      "reward": "영웅 소환권 20장, 조율의 결정 400개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "DATED_2026_10_01_EVENT_NOTICE_CROSSCHECKED",
+      "sources": [
+        {
+          "name": "인벤 CM 메이 이벤트 공지 전재",
+          "url": "https://www.inven.co.kr/board/sena/6379/1504",
+          "sourcePublishedAt": "2026-10-01"
+        },
+        {
+          "name": "GameWith 코드/보상 교차 확인",
+          "url": "https://gamewith.jp/sevenknights-rebirth/520771",
+          "sourcePublishedAt": null
+        },
+        {
+          "name": "Game.Guide 사용 가능 분류",
+          "url": "https://www.game.guide/seven-knights-rebirth-codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "여러 2026년 10월 기준 목록에서 사용 가능 분류. 직접 입력 성공은 확인하지 않음."
+    },
+    {
+      "code": "SKRE300BIRTH",
+      "sourcePublishedAt": null,
+      "expiry": "별도 공지 전까지",
+      "status": "UNVERIFIED",
+      "latest": true,
+      "latestEvidence": "https://gamewith.jp/sevenknights-rebirth/520771",
+      "reward": "영웅 소환권 300장, 펫 위시 소환권 30장, 4성 전설 장신구 선택상자 1개, 찬란한 스킬 강화석 3개, 골드 300만, 혼돈의 정수 30개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "GameWith 현재 코드·보상",
+          "url": "https://gamewith.jp/sevenknights-rebirth/520771",
+          "sourcePublishedAt": null
+        },
+        {
+          "name": "Game.Guide 10월 8일 점검",
+          "url": "https://www.game.guide/seven-knights-rebirth-codes",
+          "sourcePublishedAt": null
+        },
+        {
+          "name": "넷마블 쿠폰 입력 페이지",
+          "url": "https://coupon.netmarble.com/tskgb",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "여러 2026년 10월 기준 목록에서 사용 가능 분류. 직접 입력 성공은 확인하지 않음."
+    },
+    {
+      "code": "MAYDIARY92",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-04",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "WEB7SUNSET",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-04",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "POSTCARD7",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "8DNJFDMLAPDL",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "NEW7COSTUME",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "TRAVELNOTE86",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "FILMTICKET827",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "PETSKREPET",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "펫 뽑기권 10장",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "MONTH777SKRE",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "혼돈의 정수 10개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "7777KNIGHTS7777",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "푸키의 증표 5개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "SENAFESTIVAL",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "영웅 위시 소환권 7장·펫 뽑기권 7장·열쇠 상자 7개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "7REBIRTHKEY",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "열쇠 상자 10개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "SEVEN777RAID",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "레이드 입장권 50개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "7SENA77HERO7",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "영웅 위시 소환권 10장",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "7PET7WISH7",
+      "sourcePublishedAt": "2026-07-09",
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "펫 위시 소환권 10개",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "ORIGINAL_COMMUNITY_POST_2026_07_09",
+      "sources": [
+        {
+          "name": "DCinside (원문 게시일 2026.07.09)",
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=sevennightsrebirth&no=1245013&page=1",
+          "sourcePublishedAt": "2026-07-09"
+        },
+        {
+          "name": "Pocket Tactics (만료 기록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "2026년 7월 9일 원문 게시글에서 코드 존재를 확인. 현재 만료 목록에 있음."
+    },
+    {
+      "code": "SUMMERTIME7K",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "7KSUMMERFEST",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "7KSUMMERRUBY",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENA1STANNIV",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "THXUSENA",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "1STANNIVERSARY",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "NEWKARLHERON",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "WELCOMESENA",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "PALLANUS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "TRUSTYFRIEND",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SURPRISEFORYOU",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "RUBYFARM",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "KNIGHTSSEVEN",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "ONEMORETIME",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "RECONSTRUCTTELUS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "TIMEFORADVENTURE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAPPYSENATIME",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "CHLOEMAYALICE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "PSPDJEONGGI",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "DANCINGPOOKI",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "DELLONSVSKRIS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "TARGETWISH",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "OBLIVION",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "CHAOSESSENCE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENASTARCRYSTAL",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENA77MEMORY",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENAHAJASENA",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "KEYKEYKEY",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAPPYNEWYEAR2026",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "77EVENT77",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "GOLDENKINGPEPE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "POOKIFIVEKINDS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "7S7E7V7E7N7",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "100MILLIONHEARTS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "GRACEOFCHAOS",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "LETSGO7K",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HALFGOODHALFEVIL",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "BRANZEBRANSEL",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SUNWUKONGNO1",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SKRE2025GIFT",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENAGIFT2025",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAEROC",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HSENAFEST",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HSENAFIRST",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HSENAFGIFT",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HSENAFBOX",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "kyleteostory",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAPPYFULLMOON",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SEVENKNIGHTSFOREVER",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAPPYKYLEWK",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "KYLETEO4EVER",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "LEGENDKYLE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "REBIRTHKYLE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "KYLEGIFT",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "CHAINOFKYLE",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "KYLEWKSTART",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "kylevsteo1016",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "teorival",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "tastemywrath",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "fourlordsofold",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "nightchaser",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "reaperslayer",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "guesswho",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "assassin",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "RINKARMA",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "GUILDWAR",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "7SENASENA7",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "GOODLUCK",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENAREMOOVING",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENAREYOUNGLAEGI",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENARESAMEWAY",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SENAREGSIK",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Pocket Tactics (만료 목록)",
+          "url": "https://www.pockettactics.com/seven-knights-rebirth/codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "HAPPYFULLMOON7",
+      "sourcePublishedAt": null,
+      "expiry": "2026-09-26",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Game.Guide (만료 코드 목록)",
+          "url": "https://www.game.guide/seven-knights-rebirth-codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "7SENEVKMOON",
+      "sourcePublishedAt": null,
+      "expiry": "2026-09-27",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Game.Guide (만료 코드 목록)",
+          "url": "https://www.game.guide/seven-knights-rebirth-codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "SORRY4WAITING",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "Game.Guide (만료 코드 목록)",
+          "url": "https://www.game.guide/seven-knights-rebirth-codes",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    },
+    {
+      "code": "REBIRTHBACK",
+      "sourcePublishedAt": null,
+      "expiry": "만료 기록 (정확한 일자 미확인)",
+      "status": "EXPIRED",
+      "latest": false,
+      "latestEvidence": null,
+      "reward": "상세 보상 공식 확인 미완료",
+      "sourceAuthority": "THIRD_PARTY_CROSSCHECK",
+      "dateBasis": "UNKNOWN_ORIGINAL_PUBLICATION_DATE",
+      "sources": [
+        {
+          "name": "쿠폰몽 (이력)",
+          "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=sena_rebirth&wr_id=1",
+          "sourcePublishedAt": null
+        }
+      ],
+      "notes": "최신 목록에서 만료로 분류된 코드. 최초 원문 작성일은 확인되지 않아 연도 미배정."
+    }
+  ]
+}
