@@ -12,3 +12,8 @@ test('restricted sources retain usable links and do not imply expired coupons',(
  assert.equal(annotateSourceHealth(out,[{url:'https://example.org/private',status:403,checkedDate:'2026-10-10'}]),out);
  assert.equal(annotateSourceHealth(input,[]),input);
 });
+test('browser evidence refreshes old restriction warnings without duplicate markers',()=>{
+ const url='https://example.org/private';const old=annotateSourceHealth('<a href="'+url+'">공식 근거</a>',[{url,status:403,checkedDate:'2026-10-10'}]);
+ const entries=[{url,status:403,checkedDate:'2026-10-10',browserVerifiedDate:'2026-10-10'}];const out=annotateSourceHealth(old,entries);
+ assert.ok(out.includes('browser-confirmed'));assert.ok(!out.includes('재확인 중'));assert.equal((out.match(/class="ncp-source-health"/g)||[]).length,1);assert.equal(annotateSourceHealth(out,entries),out);
+});
