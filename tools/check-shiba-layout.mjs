@@ -5,7 +5,7 @@ const width=Number(process.argv[2]),output=process.argv[3];
 if(![390,1440].includes(width)||!output)throw Error('LAYOUT_FIXTURE_ARGUMENTS');
 // Exercise one shared template with latest, historical years, undated, empty,
 // and a long list. Exact source/code preservation is enforced by the DOM gate.
-const keys=['random-dice-2-codes-202610','infinite-stairs-codes-202610','maplestory-idle-codes-202610','brawl-stars-rewards-202610','coop-td-together-codes-202610'];
+const keys=['seven-knights-rebirth-codes-202610','random-dice-2-codes-202610','infinite-stairs-codes-202610','maplestory-idle-codes-202610','brawl-stars-rewards-202610','coop-td-together-codes-202610'];
 const content=keys.map(key=>[...primary,...supplemental].find(a=>a.articleKey===key)?.post.content||(()=>{throw Error('LAYOUT_ARTICLE_MISSING')})()).join('\n');
 const css=['theme/article-compact.css','theme/article-typography.css','theme/coupon-copy.css'].map(p=>readFileSync(p,'utf8')).join('\n');
 const copy=readFileSync('theme/coupon-copy.js','utf8');
@@ -19,6 +19,10 @@ const check=`
    if(!shown(s))continue;
    const h=s.querySelector(':scope>h2'),i=s.querySelector(':scope>.ncp-info');
    if(h&&i){const a=h.getBoundingClientRect(),b=i.getBoundingClientRect();if(Math.abs(a.y+a.height/2-b.y-b.height/2)>1)failures.push('heading-info-alignment');}
+  }
+  for(const guide of article.querySelectorAll('.ncp-coupon-guide')){
+   if(!shown(guide))continue;let previousBottom=-Infinity;
+   for(const child of guide.children){if(!shown(child))continue;const rect=child.getBoundingClientRect();if(rect.top<previousBottom-1)failures.push('guide-content-overlap');previousBottom=rect.bottom;}
   }
   for(const b of article.querySelectorAll('[data-ncp-copy],[data-ncp-share]'))if(shown(b)){
    const r=b.getBoundingClientRect();if(r.x<0||r.right>viewport+1)failures.push('button-overflow');if(r.height<44)failures.push('touch-height');if(b.hasAttribute('data-ncp-share')&&r.width!==44)failures.push('share-width');

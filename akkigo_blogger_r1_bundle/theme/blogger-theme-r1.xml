@@ -2978,6 +2978,9 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-expiry{grid-column:1;grid-row:3}
  .post-body [data-ncp-template="game-period-tabs-r1"] .ncp-col-source>.ncp-info>div{width:calc(100vw - 80px);max-width:420px}
 }
+
+/* Guides contain several headings: preserve normal document flow. */
+.post-body [data-ncp-presentation] .ncp-coupon-guide{display:block!important}
 ]]></b:skin>
 
     <b:template-skin>
