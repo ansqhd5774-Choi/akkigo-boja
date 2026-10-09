@@ -213,5 +213,32 @@
     "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/14/ab/de14abb7-218c-027e-da7b-e2ea25ab0b71/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/640x640bb.webp",
     "iconShape": "square",
     "verifiedDate": "2026-10-09"
+  },
+  {
+    "articleKey": "z-route-redemption-codes-202610",
+    "gameName": "Z 루트: 리뎀션",
+    "platform": "apple-app-store",
+    "appStoreUrl": "https://apps.apple.com/us/app/z-route-redemption/id6762268182",
+    "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/26/ea/13/26ea138f-5be0-eab5-34d2-adfbf7f67f80/Placeholder.mill/512x512bb.jpg",
+    "iconShape": "square",
+    "verifiedDate": "2026-10-09"
+  },
+  {
+    "articleKey": "cat-hero-codes-202610",
+    "gameName": "캣 히어로",
+    "platform": "google-play",
+    "appStoreUrl": "https://play.google.com/store/apps/details?id=net.gameduo.gv",
+    "iconUrl": "https://play-lh.googleusercontent.com/QfQrxylW8hLlAlO7paLKuKYdZW4QYuCvQpVxT88Su-GjOzvwXNqUkbeEyAUfBvQqQgEa8JljK1nlucux_tLL%3Dw240-h480",
+    "iconShape": "square",
+    "verifiedDate": "2026-10-09"
+  },
+  {
+    "articleKey": "immortal-rising-awakening-202610",
+    "gameName": "이모탈 라이징",
+    "platform": "apple-app-store",
+    "appStoreUrl": "https://apps.apple.com/kr/app/id6795748071",
+    "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f4/1f/d1/f41fd13f-5e68-5bf2-1f53-d50a0b598da8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "iconShape": "square",
+    "verifiedDate": "2026-10-09"
   }
 ]

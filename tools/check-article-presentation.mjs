@@ -1,3 +1,4 @@
+import {catHeroArticle} from '../src/cat-hero-article.js';
 import {readFile} from 'node:fs/promises';
 import {validateArticlePresentation} from '../src/article-presentation.js';
 import {validateGamePeriodArticle,renderGamePeriodArticle} from '../src/game-period-article.js';
@@ -35,6 +36,15 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
   checked++;
  }
 }
+if(checkedKeys.has(catHeroArticle.articleKey))throw Error('PERIOD_DUPLICATE_ARTICLE_KEY');
+checkedKeys.add(catHeroArticle.articleKey);
+validateGamePeriodArticle(catHeroArticle);
+validateArticlePresentation(catHeroArticle);
+if(domCheck)domCheck(catHeroArticle);
+const catCopies=[...catHeroArticle.post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+const catShares=[...catHeroArticle.post.content.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);
+if(JSON.stringify(catCopies)!==JSON.stringify(catShares))throw Error('PRESENTATION_SHARE_COVERAGE_CAT_HERO');
+checked++;
 const hubModels=JSON.parse(await readFile(new URL('data/game-period-hubs.json',root),'utf8'));
 const {buildHubDraft}=await import('../src/hubs.js');
 const coupons=JSON.parse(await readFile(new URL('data/coupons.json',root),'utf8'));

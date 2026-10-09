@@ -1,0 +1,45 @@
+name: Stage Immortal Rising Source
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - data/immortal-rising-awakening-202610.json
+      - tools/stage-immortal-rising.mjs
+      - .github/workflows/stage-immortal-rising.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+concurrency:
+  group: stage-immortal-rising
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Resolve official app icon and generate approved shared-template article
+        run: node tools/stage-immortal-rising.mjs
+      - name: Verify new model, official icon and shared period article
+        run: |
+          node --input-type=module -e "import a from './data/articles-supplemental.json' with {type:'json'}; import {validateGamePeriodArticle} from './src/game-period-article.js'; import {validateGameFeaturedImage} from './src/game-featured-image-policy.js'; const x=a.find(x=>x.articleKey==='immortal-rising-awakening-202610'); if(!x)throw Error('NOT_STAGED'); validateGamePeriodArticle(x); validateGameFeaturedImage(x.articleKey,x.post); console.log('IMMORTAL_SHARED_TEMPLATE_PASS');"
+      - name: Regenerate both checked-in Blogger theme SOURCE snapshots (no public theme deploy)
+        run: |
+          node tools/build-theme.mjs
+          cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+      - name: Commit generated source, catalog and app icon without publication
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/immortal-rising-awakening-202610.json data/game-period-articles.json data/articles-supplemental.json data/game-app-icons.json akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if git diff --cached --quiet; then echo "IMMORTAL_SOURCE_ALREADY_STAGED"; exit 0; fi
+          git commit -m "stage(immortal-rising): official app icon and seven dated codes"
+          git push origin HEAD:codex/blogger-worker-r1

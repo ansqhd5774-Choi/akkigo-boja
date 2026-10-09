@@ -1,3 +1,4 @@
+import {catHeroArticle} from '../src/cat-hero-article.js';
 import {readFileSync,writeFileSync} from 'node:fs';
 import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
@@ -5,9 +6,9 @@ const width=Number(process.argv[2]),output=process.argv[3];
 if(![390,1440].includes(width)||!output)throw Error('LAYOUT_FIXTURE_ARGUMENTS');
 // Exercise one shared template with latest, historical years, undated, empty,
 // and a long list. Exact source/code preservation is enforced by the DOM gate.
-const keys=[...primary,...supplemental].filter(a=>a.post?.content?.includes('data-ncp-template="game-period-tabs-r1"')).map(a=>a.articleKey);
+const keys=[...primary,...supplemental,catHeroArticle].filter(a=>a.post?.content?.includes('data-ncp-template="game-period-tabs-r1"')).map(a=>a.articleKey);
 if(!keys.length)throw Error('LAYOUT_PERIOD_ARTICLES_MISSING');
-const content=keys.map(key=>[...primary,...supplemental].find(a=>a.articleKey===key)?.post.content||(()=>{throw Error('LAYOUT_ARTICLE_MISSING')})()).join('\n');
+const content=keys.map(key=>[...primary,...supplemental,catHeroArticle].find(a=>a.articleKey===key)?.post.content||(()=>{throw Error('LAYOUT_ARTICLE_MISSING')})()).join('\n');
 const css=['theme/article-compact.css','theme/article-typography.css','theme/coupon-copy.css'].map(p=>readFileSync(p,'utf8')).join('\n');
 const copy=readFileSync('theme/coupon-copy.js','utf8');
 const check=`
