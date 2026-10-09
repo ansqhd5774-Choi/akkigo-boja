@@ -72,5 +72,5 @@ for (const name of names) {
   console.log('BLOGGER_LIVE_USER_REVIEW_URL',body.url);
   processed++;
 }
-if (!processed) throw new Error('NO_APPROVED_REQUESTS');
+if (!processed && !deferred.length) console.log('NO_APPROVED_REQUESTS_SKIPPED');
 if(deferred.length)throw new Error(`ARTICLE_IDENTITY_DEFERRED:${deferred.join(',')}`);
