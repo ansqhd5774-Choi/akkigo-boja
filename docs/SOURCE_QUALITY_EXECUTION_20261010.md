@@ -2,6 +2,15 @@
 
 상태: PARTIAL. 공개 영향 매핑 및 1차 공개 수정 완료. 2차 공개 갱신·원문 복구는 아래 결과로 구분한다.
 
+## 3차 후속 작업
+- 35개 후보 원문을 게임 제목 문맥과 코드 목록 요소에서 재검토. 251개 기록에 직접 연결 가능한 코드 목록을 확인하여 11글에 연결. 이 중248개는 제3자 수록 확인,3개는 Pokémon GO 공식 원문 코드·조건 확인. 공식 최초 게시일과 실제 계정 입력 성공은 별개이며 임의 작성하지 않았다. 나머지250개는 원문 연결 미확인 안내 유지.
+- Pokémon GO ADIDASxPOKEMON 공식 교환 기간(2027-01-15까지), FENDIxFRGMTxPOKEMON 공식 종료기간(2025-01-05), LEGOxPOKEMONGOxCAP 보상 수령 기한(2026-09-30 현지23:59)을 직접 읽고 구분. LEGO의 보상 수령 기한을 코드 교환 종료일로 혼동하지 않게 수정.
+- Yesim referral-program 사용자 브라우저 실제 본문 확인 완료. €5 지출 후 추천 기능 이용, 친구 선물1GB/€5 선택, 조건 충족 후 추천 보상 확인. 도움말과 소개 페이지의 Ycoins 유효기간 설명은 충돌하므로 해당 기간은 확정하지 않음. 삭제된 Yesim 글 복원·재발행 없음.
+- 사용자의 남은 작업 계속 진행 요청에 따라 기존 정기 점검을 ACTIVE로 재개. 중복 예약 없음. bounded 최초 운영 검사4개 실행,2개 검토 플래그 기록; 사실 변경 없음. 정기 예약 첫 실행은 아직 미도래.
+- HTTP 원장에 실제 구조화 코드 연결 목록을 추가하여 본문에서 코드가 사라지는 경우 검토하도록 연결.
+
+원천: https://pokemongo.com/en/news/pokemon-x-adidas-2026 , https://pokemongo.com/ko/news/FENDIxFRGMTxPOKEMON , https://pokemongo.com/news/lego-pokemon-go-2026 , https://yesim.app/referral-program/ .
+
 ## 후속 공개 반영
 2026-10-10 03:54 KST: 기존25글 갱신 성공. 발행37976233366 SUCCESS, Verify37976233203 SUCCESS. 모두LIVE/publicVerified=true/alreadyLive=true,postId/URL 보존. 독립25글 HTTP200·본문 식별·404 깨진 앵커 제거 확인,검사오류0. 자동297/297 PASS,XML3PASS,발행전390/1440 레이아웃PASS. Cua 공개 운빨존많겜 출처 안내에서404/서버오류 표시 직접 확인. 독립 모바일 Cua 크기 검증은 새로 실행하지 않았다.
 

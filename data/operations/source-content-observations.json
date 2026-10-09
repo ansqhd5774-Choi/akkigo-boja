@@ -1,0 +1,79 @@
+{
+  "scope": "CONTENT_CHANGE_REVIEW_NOT_FACT_VERIFICATION",
+  "observations": [
+    {
+      "sourceId": "72f7f83bd99310054686",
+      "url": "https://coupon.withhive.com/shibarpg",
+      "checkedAt": "2026-10-09T19:32:07.395Z",
+      "nextReviewAt": "2026-10-16T19:32:07.397Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "723ab0d7055ed34f12cc241e2c1d2a9564d615eb9364b16c4970b9e0b3a90455",
+      "httpStatus": 200,
+      "finalUrl": "https://coupon.withhive.com/shibarpg",
+      "title": "Hive",
+      "contentHash": "723ab0d7055ed34f12cc241e2c1d2a9564d615eb9364b16c4970b9e0b3a90455",
+      "textLength": 352,
+      "flags": [
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "pick7p2y"
+      ],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "0dffc02f97028c310ee6",
+      "url": "https://cpbv-community.com2us.com/board/4/287097",
+      "checkedAt": "2026-10-09T19:32:07.627Z",
+      "nextReviewAt": "2026-10-16T19:32:07.627Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "5fd637c243c5903d071f8dcdc54778abd835796c564efdad9915503e2d4c7f5d",
+      "httpStatus": 200,
+      "finalUrl": "https://cpbv-community.com2us.com/board/4/287097",
+      "title": "컴투스프로야구V26 공식 커뮤니티",
+      "contentHash": "5fd637c243c5903d071f8dcdc54778abd835796c564efdad9915503e2d4c7f5d",
+      "textLength": 8015,
+      "flags": [],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "60b434f7d6eb082bc505",
+      "url": "https://community.withhive.com/shibarpg",
+      "checkedAt": "2026-10-09T19:32:07.813Z",
+      "nextReviewAt": "2026-10-16T19:32:07.813Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "86509e6ad2826f874fd36b302680764870868007f91ef4140991cb6d4e17814c",
+      "httpStatus": 200,
+      "finalUrl": "https://community.withhive.com/shibarpg",
+      "title": "시바 모험단",
+      "contentHash": "86509e6ad2826f874fd36b302680764870868007f91ef4140991cb6d4e17814c",
+      "textLength": 2751,
+      "flags": [],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "6e0321866564b8c57111",
+      "url": "https://game.naver.com/lounge/Trickcal/board/31",
+      "checkedAt": "2026-10-09T19:32:07.884Z",
+      "nextReviewAt": "2026-10-16T19:32:07.884Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://game.naver.com/lounge/Trickcal/board/31",
+      "title": "네이버 게임",
+      "contentHash": "a0db3ca446c11e49dcb5c7ed2d6ae8fd06df5dcc02d50b79d2e162501197b8be",
+      "textLength": 53,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW"
+      ],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    }
+  ]
+}

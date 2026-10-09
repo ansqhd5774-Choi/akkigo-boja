@@ -6,10 +6,11 @@ const previous=await readFile(path,'utf8').then(JSON.parse).catch(e=>{if(e.code=
 const observations=previous.observations;
 const limit=Math.min(12,Number(process.argv.find(x=>x.startsWith('--limit='))?.split('=')[1]||4));
 const now=Date.now(),hosts=new Set();let checked=0;
+const initial=process.argv.includes('--initial');
 for(const record of ledger.records){
  if(checked>=limit)break;
  const old=observations.find(x=>x.sourceId===record.sourceId);
- if(Date.parse(old?.nextReviewAt||record.nextReviewAt)>now)continue;
+ if(!(initial&&!old)&&Date.parse(old?.nextReviewAt||record.nextReviewAt)>now)continue;
  const host=new URL(record.originalUrl).hostname;if(hosts.has(host))continue;hosts.add(host);
  // Sequential requests, one URL per host per run. Never retry challenges.
  let result;
@@ -17,7 +18,7 @@ for(const record of ledger.records){
   const response=await fetch(record.originalUrl,{signal:AbortSignal.timeout(12000)});
   const type=response.headers.get('content-type')||'';
   const html=type.includes('html')?(await response.text()).slice(0,1000000):'';
-  result={httpStatus:response.status,finalUrl:response.url,...inspectSourceContent({url:record.originalUrl,finalUrl:response.url,status:response.status,html,previousHash:old?.lastObservedBodyHash})};
+  result={httpStatus:response.status,finalUrl:response.url,...inspectSourceContent({url:record.originalUrl,finalUrl:response.url,status:response.status,html,previousHash:old?.lastObservedBodyHash,expectedCodes:[...new Set((record.claimLinks||[]).map(c=>c.code))]})};
  }catch(e){result={flags:['ACCESS_UNVERIFIED'],error:e.name,claimVerified:false,accountInputVerified:false};}
  const checkedAt=new Date().toISOString();
  const transient=result.httpStatus>=500||result.error;
