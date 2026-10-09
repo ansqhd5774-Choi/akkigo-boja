@@ -1,3 +1,4 @@
+import {renderServiceBenefitArticle} from './service-benefit-article.js';
 import research from '../data/malhaevoca-offers-202610.json' with {type:'json'};
 const KEY='malhaevoca-discounts-202610';
 const esc=v=>String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -60,7 +61,7 @@ const html=preview+'\n<!--more-->\n<article data-ncp-article="'+KEY+'" class="nc
 function link(url,text){return '<a href="'+url+'" rel="noopener noreferrer">'+text+'</a>';}
 export const malhaevocaArticle={
  articleKey:KEY,approvedForPublish:true,publicationStatus:'READY',
- post:{title:'말해보카 할인 2026년 10월 | 1년 가격·나라사랑카드·학생 무료 이벤트',labels:['교육','말해보카'],content:html},
+ post:{title:'말해보카 할인 2026년 10월 | 1년 가격·나라사랑카드·학생 무료 이벤트',labels:['교육','말해보카'],content:renderServiceBenefitArticle(KEY,html)},
  source:{type:'MALHAEVOCA_OFFICIAL_OFFERS_202610',url:'https://epop.ai/ko/premium',checkedAt:'2026-10-10',
  status:'UNVERIFIED',codes:[],offers:research.offers.map(x=>({id:x.id,sourcePublishedAt:x.sourcePublishedAt,dateBasis:x.dateBasis,status:x.status})),
  searchDescription:research.seo.description,keywords:research.seo.keywords,hashtags:research.seo.hashtags,

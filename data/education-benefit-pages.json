@@ -1,0 +1,273 @@
+[
+  {
+    "articleKey": "malhaevoca-discounts-202610",
+    "name": "말해보카",
+    "image": "https://epop.ai/og-image.jpg",
+    "checkedAt": "2026-10-10",
+    "intro": "웹결제·카드·학생 혜택을 조건별로 확인하세요.",
+    "subscription": true,
+    "offers": [
+      {
+        "name": "공식 웹결제 1인 12개월",
+        "value": "99,000원 / 12개월",
+        "method": "웹결제",
+        "target": "1인 연간 이용권",
+        "period": "기간·현재 조건 확인",
+        "url": "https://epop.ai/ko/premium",
+        "condition": "웹결제, 1인 12개월, 결제 화면에서 최종가 확인",
+        "code": null,
+        "date": null,
+        "source": "https://epop.ai/ko/premium",
+        "state": null,
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "하나 나라사랑카드 1인 12개월",
+        "value": "69,000원 / 12개월",
+        "method": "제휴 카드",
+        "target": "하나 나라사랑카드 회원",
+        "period": "행사 종료 2026-12-31",
+        "url": "https://epop.ai/event/hana-nara-card",
+        "condition": "하나 나라사랑카드 체크카드 회원, 연 1회, 공식 이벤트 전용 결제",
+        "code": null,
+        "date": "2026-01-20",
+        "source": "https://epop.ai/event/hana-nara-card",
+        "state": null,
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "중·고등학생 선착순 무료 이벤트",
+        "value": "무료 이용권(조건부)",
+        "method": "자격 인증",
+        "target": "2008~2013년생",
+        "period": "기간·현재 조건 확인",
+        "url": "https://epop.ai/promotion/middle-high-school",
+        "condition": "2008~2013년생, 비회원 멤버십 이용자·한국어 설정, 본인 인증·카카오 연결, 매주 일요일 21:10 신규 150명, 리그 상위 50% 유지",
+        "code": null,
+        "date": null,
+        "source": "https://epop.ai/promotion/middle-high-school",
+        "state": null,
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "카카오 톡학생증 대학(원)생 할인",
+        "value": "30% 할인(과거 공지)",
+        "method": "학생 인증",
+        "target": "대학·대학원생",
+        "period": "기간·현재 조건 확인",
+        "url": "https://www.kakaocorp.com/page/detail/11098",
+        "condition": "대학생·대학원생 톡학생증 인증, 졸업생 제외 안내 사례, 2026 결제화면 확인 필요",
+        "code": null,
+        "date": "2024-06-19",
+        "source": "https://www.kakaocorp.com/page/detail/11098",
+        "state": "과거 공지 · 현재 재확인",
+        "instruction": "공식 페이지에서 조건 확인"
+      }
+    ],
+    "steps": [
+      "대상 자격에 맞는 혜택의 공식 페이지를 엽니다.",
+      "상품·최종 결제금액·갱신 및 해지 조건을 확인합니다.",
+      "결제 또는 신청 후 멤버십 적용 결과를 확인합니다."
+    ]
+  },
+  {
+    "articleKey": "duolingo-super-coupons-202610",
+    "name": "듀오링고",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/c9/b8/bdc9b8e4-4ac0-7976-bf0a-c3647338fc7d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1920x1080ia-80.png",
+    "checkedAt": "2026-10-10",
+    "intro": "공식 체험과 미확인 코드 후보를 구분합니다.",
+    "subscription": true,
+    "offers": [
+      {
+        "name": "Taco Bell 제휴 체험",
+        "value": "Super 30일",
+        "method": "제휴 코드",
+        "target": "기존 발급 코드 보유자",
+        "period": "신규 발급 종료 · 등록 11.15까지",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "Taco Bell Rewards·유료 구독·중복 체험 조건 확인. 발급 종료일 원문 간 충돌 보존.",
+        "code": null,
+        "date": "2026-10-01",
+        "source": "https://www.tacobell.com/promotions/global-taco-day",
+        "state": "한국 계정 적용 미확인",
+        "instruction": "발급받은 개인 코드 등록"
+      },
+      {
+        "name": "공식 앱 무료 체험",
+        "value": "계정별 제안 확인",
+        "method": "앱 신청",
+        "target": "체험 대상 계정",
+        "period": "기간·자격은 계정별 확인",
+        "url": "https://ko.duolingo.com/",
+        "condition": "체험 종료 후 청구·자동 갱신·취소 조건 확인",
+        "code": null,
+        "date": null,
+        "source": "https://ko.duolingo.com/",
+        "state": "계정별 확인",
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "해외·커뮤니티 코드 후보",
+        "value": "혜택 적용 미확인",
+        "method": "코드 입력",
+        "target": "지역·계정 조건 미확인",
+        "period": "유효기간 미확인",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "공식 현재 유효 코드가 아님. 실패 가능성 있음.",
+        "code": "LOVELANGUAGE",
+        "date": null,
+        "source": "https://pushtolearn.com/post/duolingo-promo-codes",
+        "state": "미확인 후보",
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "해외·커뮤니티 코드 후보",
+        "value": "혜택 적용 미확인",
+        "method": "코드 입력",
+        "target": "지역·계정 조건 미확인",
+        "period": "유효기간 미확인",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "공식 현재 유효 코드가 아님. 실패 가능성 있음.",
+        "code": "SALE25",
+        "date": null,
+        "source": "https://promokodoff.ru/promokody-duolingo/",
+        "state": "미확인 후보",
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "해외·커뮤니티 코드 후보",
+        "value": "혜택 적용 미확인",
+        "method": "코드 입력",
+        "target": "지역·계정 조건 미확인",
+        "period": "유효기간 미확인",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "공식 현재 유효 코드가 아님. 실패 가능성 있음.",
+        "code": "SAVE50",
+        "date": null,
+        "source": "https://pushtolearn.com/post/duolingo-promo-codes",
+        "state": "미확인 후보",
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "해외·커뮤니티 코드 후보",
+        "value": "혜택 적용 미확인",
+        "method": "코드 입력",
+        "target": "지역·계정 조건 미확인",
+        "period": "유효기간 미확인",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "공식 현재 유효 코드가 아님. 실패 가능성 있음.",
+        "code": "DRACARYS",
+        "date": "2026-08-17",
+        "source": "https://www.reddit.com/r/duolingo/comments/1staodr/promocodes_for_free_duolingo_super_max/",
+        "state": "미확인 후보",
+        "instruction": "공식 페이지에서 조건 확인"
+      },
+      {
+        "name": "해외·커뮤니티 코드 후보",
+        "value": "혜택 적용 미확인",
+        "method": "코드 입력",
+        "target": "지역·계정 조건 미확인",
+        "period": "유효기간 미확인",
+        "url": "https://www.duolingo.com/redeem",
+        "condition": "공식 현재 유효 코드가 아님. 실패 가능성 있음.",
+        "code": "vetv1",
+        "date": "2026-06-23",
+        "source": "https://www.reddit.com/r/duolingo/comments/1staodr/promocodes_for_free_duolingo_super_max/",
+        "state": "미확인 후보",
+        "instruction": "공식 페이지에서 조건 확인"
+      }
+    ],
+    "steps": [
+      "공식 교환 페이지 또는 앱에 로그인합니다.",
+      "코드·상품·지역·체험 자격을 확인해 신청합니다.",
+      "적용 결과와 체험 종료 후 청구·취소 조건을 확인합니다."
+    ]
+  },
+  {
+    "articleKey": "hackers-gosi-direct-codes-202610",
+    "name": "해커스공무원",
+    "image": "https://akkigo-boja.ansqhd5774.workers.dev/logos/hackers-representative.png",
+    "checkedAt": "2026-10-08",
+    "intro": "강의 할인과 앱 이용권은 적용 대상이 다릅니다.",
+    "subscription": false,
+    "offers": [
+      {
+        "name": "직렬별 패스",
+        "value": "100,000원 할인",
+        "method": "코드 입력",
+        "target": "해커스공무원 직렬별 패스",
+        "period": "등록 2026.12.31까지 · 등록 후 7일",
+        "url": "https://gosi.hackers.com/",
+        "condition": "상품별 코드가 다릅니다. 등록·결제 적용 여부는 계정에서 확인.",
+        "code": "6A88D3EC5954A4BR",
+        "date": null,
+        "source": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
+        "state": null,
+        "instruction": "나의 강의실 → 쿠폰등록"
+      },
+      {
+        "name": "온라인 단과강의",
+        "value": "20% 할인",
+        "method": "코드 입력",
+        "target": "해커스공무원 온라인 단과",
+        "period": "등록 2026.12.31까지 · 등록 후 7일",
+        "url": "https://gosi.hackers.com/",
+        "condition": "상품별 코드가 다릅니다. 등록·결제 적용 여부는 계정에서 확인.",
+        "code": "8A52AFEDCD7D4FFD",
+        "date": null,
+        "source": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
+        "state": null,
+        "instruction": "나의 강의실 → 쿠폰등록"
+      },
+      {
+        "name": "매일국어 앱",
+        "value": "30일 이용권",
+        "method": "코드 입력",
+        "target": "해커스 매일국어 앱",
+        "period": "등록 2026.12.31까지 · 이용 30일",
+        "url": "https://gosi.hackers.com/",
+        "condition": "상품별 코드가 다릅니다. 등록·결제 적용 여부는 계정에서 확인.",
+        "code": "962F5LQETQY06G45",
+        "date": null,
+        "source": "https://cdn.hackers.com/public_content/hackersbook/hackersbook_260401/2026_pass_road_map.pdf",
+        "state": null,
+        "instruction": "나의 강의실 → 쿠폰등록"
+      }
+    ],
+    "steps": [
+      "강의 할인: 로그인 → 나의 강의실 → 쿠폰등록에서 코드를 등록합니다.",
+      "등록 후 7일 이내 대상 강의 결제 시 쿠폰을 선택합니다.",
+      "매일국어: 앱 이용권 입력란에 해당 코드를 입력하고 30일 적용을 확인합니다."
+    ]
+  },
+  {
+    "articleKey": "fastcampus-rag-code-202610",
+    "name": "패스트캠퍼스",
+    "image": "https://akkigo-boja.ansqhd5774.workers.dev/logos/fastcampus-representative.png",
+    "checkedAt": "2026-10-08",
+    "intro": "지정 강의 전용 할인코드입니다.",
+    "subscription": false,
+    "offers": [
+      {
+        "name": "테디노트 RAG 비법노트",
+        "value": "20% 할인",
+        "method": "코드 입력",
+        "target": "테디노트 RAG 비법노트 강의",
+        "period": "공개 안내 기한 2026.12.31 23:59",
+        "url": "https://fastcampus.co.kr/data_online_teddy",
+        "condition": "전체 강좌용 아님 · 중복/한도는 결제 화면 확인 · 원문 접근 재확인 중(2026-10-10)",
+        "code": "RAG비법노트",
+        "date": null,
+        "source": "https://wikidocs.net/265342",
+        "state": null,
+        "instruction": "공식 페이지에서 조건 확인"
+      }
+    ],
+    "steps": [
+      "로그인 → 마이페이지 → 쿠폰 내역에서 RAG비법노트를 등록합니다.",
+      "대상 강의 상세 페이지에서 수강 신청합니다.",
+      "결제 단계에서 쿠폰을 선택하고 최종 금액을 확인합니다."
+    ]
+  }
+]
+
