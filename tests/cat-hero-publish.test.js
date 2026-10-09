@@ -1,0 +1,22 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {catHeroArticle} from '../src/cat-hero-article.js';
+import {validateGamePeriodArticle} from '../src/game-period-article.js';
+import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
+test('Cat Hero primary identity, historical dates, code copy and source-only proof',()=>{
+ const a=catHeroArticle,records=a.source.gamePeriodModel.records,h=a.post.content;
+ assert.equal(a.post.title,'캣 히어로');
+ assert.equal(a.source.url,'https://play.google.com/store/apps/details?id=net.gameduo.gv');
+ assert.equal(records.length,75);
+ assert.equal(records.filter(r=>r.latest).length,7);
+ assert.equal(records.filter(r=>r.sourcePublishedAt==='2026-10-01').length,3);
+ assert.equal(records.filter(r=>r.sourcePublishedAt==='2023-11-16').length,5);
+ assert.equal(records.filter(r=>r.sourcePublishedAt===null).length,66);
+ assert.ok(!records.some(r=>['HELLOMEOW','MEOWORB100'].includes(r.code)));
+ const codes=[...h.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(codes.length,records.length);
+ assert.equal(new Set(codes).size,records.length);
+ assert.ok(h.includes('<!--more-->'));
+ assert.equal(validateGamePeriodArticle(a),true);
+ assert.equal(validateArticleDraft(a),true);
+});
