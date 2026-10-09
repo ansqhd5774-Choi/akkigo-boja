@@ -19,8 +19,8 @@
     const url=entry.link?.find(x=>x.rel==='alternate')?.href;
     if(!url||new URL(url,location.href).origin!==location.origin)return null;
     const labels=(entry.category||[]).map(x=>x.term);
-    const identity=game?window.ncpResolveGame(entry):null;const name=game?identity.name:entry.title.$t;
-    const article=document.createElement('article');article.className='ncp-r4-card'+(game?' ncp-game-visual':'');
+    const identity=game?window.ncpResolveGame(entry):null;const name=game?identity.name:entry.title.$t.split(/\s*(?:할인쿠폰|할인코드|쿠폰|프로모션|\(|\|)/)[0].trim()||entry.title.$t;
+    const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual';
     if(game&&count>0){const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
     const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
@@ -37,7 +37,7 @@
     if(!items.length)return;const pageSize=()=>innerWidth<=600?4:innerWidth<=900?3:6;let size=pageSize(),total=Math.ceil(items.length/size),page=0;
     const controls=document.createElement('div');controls.className='ncp-r4-row-arrows';controls.setAttribute('aria-label',label+' 이동');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    const doubleArrow='<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 5 7 7-7 7M12 5l7 7-7 7"/></svg>';
+    const doubleArrow='<span class="ncp-r4-double-chevron" aria-hidden="true"><i></i><i></i></span>';
     previous.type=next.type='button';previous.innerHTML=next.innerHTML=doubleArrow;previous.className='ncp-r4-row-previous';next.className='ncp-r4-row-next';previous.setAttribute('aria-label',label+' 이전 목록');next.setAttribute('aria-label',label+' 다음 목록');position.className='ncp-sr-only';position.setAttribute('aria-live','polite');
     function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;controls.hidden=total<=1;position.textContent=(page+1)+'페이지, 전체 '+total+'페이지';}
     let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;const focusLost=container.contains(document.activeElement);try{if(typeof container.animate==='function'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;}catch{}page=target;render();previous.disabled=next.disabled=true;try{await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}catch{}}else{page=target;render();}if(focusLost)container.focus({preventScroll:true});}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
@@ -55,7 +55,7 @@
     container.addEventListener('click',event=>{if(event.detail>0&&Date.now()<suppressClickUntil){event.preventDefault();event.stopPropagation();}},{capture:true});
     const shell=document.createElement('div');shell.className='ncp-r4-row-shell';container.before(shell);shell.append(container,controls);controls.append(previous,position,next);render();
   }
-  root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
+  root.querySelectorAll('.ncp-r4-section-head').forEach(head=>{const heading=head.querySelector('h2'),link=head.querySelector('a');link.textContent=heading.textContent;link.className='ncp-r4-category-title';link.setAttribute('aria-label',heading.textContent+' 카테고리 보기');heading.replaceChildren(link);});
   try{
     await Promise.all([...root.querySelectorAll('[data-ncp-home-category]')].map(async section=>{
       const category=section.dataset.ncpHomeCategory,game=category==='게임',items=[],seen=new Set();
