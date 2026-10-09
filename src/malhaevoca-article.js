@@ -6,6 +6,15 @@ if(offers.length!==4||new Set(offers.map(o=>o.id)).size!==4||offers.some(o=>o.co
 const formattedDate=o=>o.sourcePublishedAt?o.sourcePublishedAt.replaceAll('-','.'):'원문 게시일 미확인';
 const formattedPrice=o=>Number.isFinite(o.priceKRW)?o.priceKRW.toLocaleString('ko-KR')+'원':o.discountLabel;
 const row=o=>'<tr><td><strong>'+esc(o.name)+'</strong></td><td>'+esc(formattedPrice(o))+'</td><td>'+esc(formattedDate(o))+'</td><td>'+esc(o.eligibility)+'</td><td><a href="'+esc(o.sourceUrl)+'" rel="noopener noreferrer">공식 조건 보기</a></td></tr>';
+const related=research.relatedVoucherCandidates||[];
+const trials=research.relatedOfficialBenefits||[];
+if(related.length!==3||trials.length!==2||new Set(related.map(x=>x.code)).size!==3)throw Error('MALHAEVOCA_EXTERNAL_HISTORY_INCOMPLETE');
+const relatedRows=related.map(x=>'<tr><td><code>'+esc(x.code)+'</code></td><td>'+esc(x.issuer)+'</td><td>'+esc(x.sourcePublishedAt||'게시일 미확인')+'</td><td>'+esc(x.claim)+'</td><td><a href="'+esc(x.sourceUrl)+'" rel="noopener noreferrer">제3자 출처</a></td></tr>').join('');
+const extraOffers='<h2>공식 무료 체험: 개인 7일 / 학원 전용 30일</h2>'
++'<p>말해보카 <a href="https://epop.ai/ko" rel="noopener noreferrer">공식 FAQ</a>에는 앱 내 <strong>7일 무료 체험</strong>이 안내되어 있습니다. 제공 조건과 구독 전환 여부는 계정·앱의 결제 화면에서 확인하세요.</p>'
++'<p>말해보카 <a href="https://epop.ai/b2b/academy" rel="noopener noreferrer">학원 구매 페이지</a>에는 <strong>학원 전용 30일 무료 체험</strong>이 있습니다. 개인 이용자의 무료 30일 코드가 아닙니다.</p>';
+const otherCodes='<h2>해외·국내 블로그에서 찾은 문자 코드 3개</h2><p>아래 문자열들은 <strong>말해보카 앱 공식 쿠폰이 아니라 피클플러스 중개 수수료 할인용 제휴 후보</strong>입니다. 현재 적용 성공은 미확인입니다. 특히 말해보카 신규 공동구독 파티는 중단됐다는 안내가 있어 말해보카 직접 할인으로 오해하지 마세요.</p>'
++'<div class="ncp-mal-scroll"><table><thead><tr><th>쿠폰 문자열</th><th>적용 플랫폼</th><th>출처 게시일</th><th>제3자 주장</th><th>출처</th></tr></thead><tbody>'+relatedRows+'</tbody></table></div>';
 const preview='<div class="ncp-feed-preview" data-ncp-feed-preview="true" aria-label="말해보카 공식 할인 요약"><div class="ncp-feed-stat"><span>공식 웹결제 12개월</span><strong>99,000원</strong></div><div class="ncp-feed-stat"><span>나라사랑카드 12개월</span><strong>69,000원</strong></div><div class="ncp-feed-stat"><span>학생 무료 혜택</span><strong>선착순·자격 조건</strong></div></div>';
 const css='<style>'
 +'[data-ncp-article="'+KEY+'"]{font:15px/1.7 Arial,"Noto Sans KR",sans-serif;max-width:100%;color:#172033;overflow-wrap:anywhere}'
@@ -44,7 +53,8 @@ const html=preview+'\n<!--more-->\n<article data-ncp-article="'+KEY+'" class="nc
 +'<p>카카오는 2024년 6월 19일 <strong>12개월 프리미엄 30% 할인</strong>을 소개했습니다. 다만 이 자료만으로 2026년 10월에도 같은 할인액이 적용된다고 판단하지 않습니다. 카카오톡 지갑 톡학생증 인증 후 현재 제휴 혜택과 최종 결제액을 확인하세요. '+link('https://www.kakaocorp.com/page/detail/11098','카카오 공식 톡학생증 혜택 발표')+'</p>'
 +'<p class="ncp-mal-tip"><strong>주의:</strong> 서로 다른 할인 경로의 가격을 중복 적용하거나, 예전 2인·4인 요금제와 현재 신규 요금을 혼용하지 않습니다. 같은 연간 이용권 기준으로 가입 자격, 결제 수단, 자동 갱신, 환불 조건을 확인하세요.</p>'
 +'<h2>할인 받는 방법</h2><ol><li>내가 대상인 경로(일반 웹결제·하나 나라사랑카드·학생)를 선택합니다.</li><li>위 공식 페이지에서 이용 자격·기간·요금제를 확인합니다.</li><li>최종 결제금액과 갱신·해지 조건을 확인한 뒤 결제합니다.</li><li>앱의 멤버십 상태와 유료 기간이 표시되는지 확인합니다.</li></ol>'
-+'<h2>쿠폰 코드가 따로 있나요?</h2><p>이번 조사에서 <strong>모든 한국 계정에 공통 적용된다는 공식 문자 코드</strong>를 발견하지 못했습니다. 위 혜택은 대부분 공식 페이지 전용 할인이므로 입력할 코드가 없는 것이 정상입니다. 실제 문자열과 공식 발급 근거를 확보하면 별도 항목에 출처 글 작성 날짜와 함께 추가할 수 있습니다.</p>'
+ +extraOffers+otherCodes
++'<h2>쿠폰 코드가 따로 있나요?</h2><p>이번 조사에서 <strong>말해보카 앱에서 직접 사용하는 공통 공식 문자 코드</strong>는 발견하지 못했습니다. 피클플러스 제휴 문자열 3개는 위 별도 표에 출처와 날짜를 보존합니다. 위 혜택은 대부분 공식 페이지 전용 할인이므로 입력할 코드가 없는 것이 정상입니다. 실제 문자열과 공식 발급 근거를 확보하면 별도 항목에 출처 글 작성 날짜와 함께 추가할 수 있습니다.</p>'
 +'<h2>출처·날짜</h2><p>2026년 1월 20일은 나라사랑카드 공식 발표일, 2024년 6월 19일은 톡학생증 소개 글의 작성일입니다. 게시일이 표기되지 않은 상시 혜택은 임의로 2026년 10월 발행일을 지정하지 않았습니다. 말해보카 앱 공식 스토어: '+link('https://apps.apple.com/kr/app/id1460766549','Apple App Store')+'. 검색량·노출률은 실측되지 않아 근거 없는 인기 순위를 제시하지 않습니다.</p>'
 +'</article>';
 function link(url,text){return '<a href="'+url+'" rel="noopener noreferrer">'+text+'</a>';}
