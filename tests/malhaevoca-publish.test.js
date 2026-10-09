@@ -8,10 +8,18 @@ test('말해보카 공식 할인 네 가지와 출처 원문 게시일을 보존
  const h=malhaevocaArticle.post.content;
  assert.equal(research.offers.length,4);
  assert.equal(new Set(research.offers.map(x=>x.id)).size,4);
- assert.equal((h.match(/<tr><td>/g)||[]).length,4);
+ assert.equal((h.match(/<tr><td>/g)||[]).length,7);
  assert.equal((h.match(/<!--more-->/g)||[]).length,1);
  assert.equal((h.match(/data-ncp-copy=/g)||[]).length,0);
  assert.equal(research.rawCodesFound.length,0);
+ assert.equal(research.relatedVoucherCandidates.length,3);
+ assert.equal(research.relatedOfficialBenefits.length,2);
+ for(const x of research.relatedVoucherCandidates){assert.ok(h.includes(x.code));assert.ok(h.includes(x.sourceUrl));}
+ assert.equal(research.relatedVoucherCandidates.find(x=>x.code==='B8290428').sourcePublishedAt,'2026-03-14');
+ assert.equal(research.relatedVoucherCandidates.find(x=>x.code==='C6AAFEB3').sourcePublishedAt,null);
+ assert.ok(h.includes('앱 내 <strong>7일 무료 체험</strong>'));
+ assert.ok(h.includes('학원 전용 30일 무료 체험'));
+ assert.ok(h.includes('피클플러스 중개 수수료 할인용'));
  assert.equal(research.offers.find(x=>x.id==='HANA_NARA_12M').sourcePublishedAt,'2026-01-20');
  assert.equal(research.offers.find(x=>x.id==='KAKAO_STUDENT_30').sourcePublishedAt,'2024-06-19');
  assert.equal(research.offers.find(x=>x.id==='OFFICIAL_WEB_12M').sourcePublishedAt,null);
