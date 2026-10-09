@@ -1,0 +1,6 @@
+{
+  "articleKey": "last-echo-codes-202610",
+  "approved": true,
+  "requestedAt": "2026-10-09",
+  "reason": "Retry publication after validated 37th game article: full Verify success 37862686609 at latest merged commit; previous request failed before publication due template drift. Publish once, keep game title only, original-source dates unknown when unproven, preserve existing Blogger post identity if present; do not alter other articles or theme."
+}
