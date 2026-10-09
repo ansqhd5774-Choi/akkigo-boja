@@ -2826,7 +2826,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 @media(max-width:600px){.ncp-r4 .ncp-r4-logo{font-size:20px}}
 
 /* Representative logo whitespace correction; all card labels use the shared game rules. */
-#ncp-home-r4 .ncp-brand-visual .ncp-r4-cover[src*="-representative.png"],#ncp-game-hub .ncp-brand-visual .ncp-game-icon[src*="-representative.png"]{object-fit:contain;transform:translateY(var(--ncp-logo-shift,0%))}
+#ncp-home-r4 .ncp-brand-visual .ncp-r4-cover[src*="-representative."],#ncp-game-hub .ncp-brand-visual .ncp-game-icon[src*="-representative."]{object-fit:contain;transform:translateY(var(--ncp-logo-shift,0%))}
 /* All categories share the same bottom-left heart anchor. */
 #ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{top:auto;bottom:7px;left:7px}
 @media(max-width:600px){#ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{bottom:5px;left:4px}}
