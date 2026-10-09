@@ -17,7 +17,33 @@
     const key=category||'';window.ncpFeedCache ||= new Map();
     if(!window.ncpFeedCache.has(key)){
       const path='/feeds/posts/default'+(key?'/-/'+encodeURIComponent(key):'')+'?alt=json&max-results=150&orderby=updated';
-      const promise=fetch(path,{signal:timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
+      const promise=(async()=>{
+        const entries=[],seen=new Set();let offset=1,total,target;
+        for(let page=0;page<150;page++){
+          const response=await fetch(path+(offset===1?'':'&start-index='+offset),{signal:timeout(12000)});
+          if(!response.ok)throw Error('FEED_HTTP');
+          const feed=(await response.json()).feed;if(!feed)throw Error('FEED_INVALID');
+          const batch=feed.entry||[];if(!Array.isArray(batch))throw Error('FEED_INVALID');
+          const rawTotal=feed.openSearch$totalResults?.$t;
+          // Older compatible feeds omit this field; their single response remains bounded.
+          if(rawTotal===undefined&&page===0)return batch.slice(0,150);
+          if(!/^\d+$/.test(String(rawTotal)))throw Error('FEED_TOTAL_INVALID');
+          const currentTotal=Number(rawTotal);if(!Number.isSafeInteger(currentTotal))throw Error('FEED_TOTAL_INVALID');
+          if(page===0){total=currentTotal;target=Math.min(total,150);}else if(currentTotal!==total)throw Error('FEED_CHANGED');
+          if(target===0)return [];
+          if(!batch.length)throw Error('FEED_PAGE_EMPTY');
+          let added=0;
+          for(const entry of batch){
+            const id=entry.id?.$t;if(typeof id!=='string'||!id)throw Error('FEED_ENTRY_ID_MISSING');
+            if(seen.has(id))continue;seen.add(id);entries.push(entry);added++;
+            if(entries.length===target)return entries;
+          }
+          if(!added)throw Error('FEED_PAGE_REPEATED');
+          offset+=batch.length;
+          if(offset>total)throw Error('FEED_INCOMPLETE');
+        }
+        throw Error('FEED_PAGE_LIMIT');
+      })();
       window.ncpFeedCache.set(key,promise);promise.catch(()=>window.ncpFeedCache.delete(key));
     }
     return window.ncpFeedCache.get(key);

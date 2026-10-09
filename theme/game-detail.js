@@ -3,9 +3,11 @@
   if(!/^\/\d{4}\/\d{2}\/.+\.html$/.test(location.pathname))return;
   const body=document.querySelector('.post-body');if(!body)return;
   try{
-    const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent('게임')+'?alt=json&max-results=150');
-    if(!response.ok)return;
-    const entries=(await response.json()).feed.entry||[];
+    const entries=window.ncpFeed?await window.ncpFeed('게임'):await (async()=>{
+      const response=await fetch('/feeds/posts/default/-/'+encodeURIComponent('게임')+'?alt=json&max-results=150');
+      if(!response.ok)return [];
+      return (await response.json()).feed.entry||[];
+    })();
     const urlOf=entry=>(entry.link||[]).find(link=>link.rel==='alternate')?.href;
     const current=entries.find(entry=>{try{return new URL(urlOf(entry)).pathname===location.pathname;}catch{return false;}});
     if(!current||body.querySelector('.ncp-detail-overview'))return;
@@ -44,4 +46,3 @@
     }
   }catch{/* The original article and official instructions remain available. */}
 })();
-
