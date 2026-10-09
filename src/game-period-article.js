@@ -1,4 +1,5 @@
 import {renderArticleInfo} from './article-presentation.js';
+import {annotateSourceHealth} from './source-health.js';
 import {FIVE_COLUMN_HEADER} from './game-coupon-table.js';
 import baseline from '../data/game-period-migration-baseline.json' with {type:'json'};
 
@@ -42,7 +43,7 @@ function list(rows,label){
  const all=rows.map(row);
  return '<div class="ncp-card-list ncp-compact-list" role="table" aria-label="'+esc(label)+' 쿠폰 기록">'+FIVE_COLUMN_HEADER+all.slice(0,5).join('')+(all.length>5?'<details class="ncp-list-more"><summary aria-label="'+esc(label)+' 나머지 '+(all.length-5)+'개 보기">더 보기 '+(all.length-5)+'</summary>'+all.slice(5).join('')+'</details>':'')+'</div>';
 }
-export function renderGamePeriodArticle(model){
+function renderGamePeriodArticleBase(model){
  if(!/^[a-z0-9-]+$/.test(model.articleKey))throw Error('PERIOD_ARTICLE_KEY_INVALID');
  const groups=groupPeriodRecords(model.records);
  const codes=new Set(model.records.map(r=>r.code));
@@ -58,6 +59,9 @@ export function renderGamePeriodArticle(model){
  }).join('')+'</fieldset>';
  const unknown=groups.find(g=>g.period==='unknown');
  return (model.previewHTML||'<div data-ncp-feed-preview class="ncp-feed-preview">'+esc(model.title)+' 쿠폰 기록 '+normalizePeriodRecords(model.records).length+'개</div>')+'\n<!--more-->\n<article class="ncp-coupon-article" data-ncp-article="'+key+'" data-ncp-presentation="compact-r2" data-ncp-template="'+GAME_PERIOD_VERSION+'">'+(model.featuredHTML||'')+'<div class="ncp-brief"><p>원문 게시일별 쿠폰 기록 '+normalizePeriodRecords(model.records).length+'개입니다. 사용 조건과 출처는 ⓘ에서 확인하세요. 복사 완료는 사용 성공을 뜻하지 않습니다.</p>'+renderArticleInfo((model.noticeHTML||'')+'<p>공식 발급·현재 사용 가능 여부가 미확인인 기록은 유효 쿠폰으로 단정하지 않습니다.</p>','자료와 날짜 안내')+'</div><div class="ncp-period-browser">'+nav+'</div>'+(unknown.rows.length?'<section class="ncp-period-unknown"><h2>게시일 미확인 기록</h2>'+renderArticleInfo('<p>원문 최초 게시일이 확인되지 않아 연도에 배정하지 않았습니다.</p>','게시일 미확인 안내')+list(unknown.rows,'게시일 미확인')+'</section>':'')+(model.guideHTML||'')+'<section class="ncp-period-evidence"><h2>출처와 상세 안내</h2>'+renderArticleInfo(model.archiveHTML||'<p>각 행의 출처를 확인하세요.</p>','기존 기록·보상·입력 방법·출처 전체 보기')+'</section></article>';
+}
+export function renderGamePeriodArticle(model){
+ return annotateSourceHealth(renderGamePeriodArticleBase(model));
 }
 export function validateGamePeriodArticle(article){
  const model=article.source?.gamePeriodModel;
