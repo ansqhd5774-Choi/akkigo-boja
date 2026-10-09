@@ -1,6 +1,5 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {renderGamePeriodArticle,GAME_PERIOD_VERSION} from '../src/game-period-article.js';
-import {validateGameFeaturedImage} from '../src/game-featured-image-policy.js';
 const KEY='immortal-rising-awakening-202610', store='https://apps.apple.com/kr/app/id6795748071', modelPath='data/immortal-rising-awakening-202610.json';
 const model=JSON.parse(readFileSync(modelPath,'utf8'));
 if(model.articleKey!==KEY||model.title!=='이모탈 라이징'||model.records.length!==7||new Set(model.records.map(x=>x.code)).size!==7)throw Error('IMMORTAL_INPUT_INVALID');
@@ -28,6 +27,7 @@ const article={articleKey:KEY,approvedForPublish:true,post:{title:model.title,co
 if(JSON.parse(readFileSync('data/articles.json','utf8')).some(a=>a.articleKey===KEY))throw Error('ARTICLE_ALREADY_EXISTS_PRIMARY');
 const index=cat.findIndex(a=>a.articleKey===KEY);
 if(index===-1)cat.push(article);else cat[index]=article;
+const {validateGameFeaturedImage}=await import('../src/game-featured-image-policy.js');
 validateGameFeaturedImage(KEY,article.post);
 writeFileSync(catPath,JSON.stringify(cat,null,2)+'\n');
 console.log('IMMORTAL_STAGE_READY',{articleKey:KEY,records:7,iconStore:'apple-app-store',catalog:cat.length});
