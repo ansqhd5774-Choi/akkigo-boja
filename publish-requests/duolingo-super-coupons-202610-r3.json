@@ -1,0 +1,6 @@
+{
+  "articleKey": "duolingo-super-coupons-202610",
+  "approved": true,
+  "requestedAt": "2026-10-10",
+  "reason": "Diagnostic retry after r2 stopped before Blogger mutation at Worker preflight snapshot mismatch. Logs may show only safe article hash comparisons, never tokens. Publish only when matching exact source snapshot and all 276 tests pass."
+}
