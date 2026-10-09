@@ -151,7 +151,15 @@
         "expiry": "10/22 10:59",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01공식 라운지10/22 10:59GOOGLETOP3</p>"
       },
       {
@@ -160,7 +168,22 @@
         "expiry": "10/22 10:59",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02공식 라운지10/22 10:593RDBOLTHDAY</p>"
       },
       {
@@ -169,7 +192,15 @@
         "expiry": "12-19",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01기록 확인12-197SISTERS</p>"
       },
       {
@@ -178,7 +209,15 @@
         "expiry": "12-22",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02기록 확인12-22YOUTUBE4MAN</p>"
       },
       {
@@ -187,7 +226,15 @@
         "expiry": "11-28",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03기록 확인11-28WOOSUSANG</p>"
       },
       {
@@ -196,7 +243,15 @@
         "expiry": "10-17",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04기록 확인10-17HANGEULJJANG</p>"
       },
       {
@@ -205,7 +260,15 @@
         "expiry": "12-31",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01기록 확인12-31WINTERGIFT</p>"
       },
       {
@@ -214,7 +277,15 @@
         "expiry": "12-25",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02기록 확인12-25TRICKCALWORLD</p>"
       },
       {
@@ -223,7 +294,15 @@
         "expiry": "12-18",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03기록 확인12-186TUBE2MANX</p>"
       },
       {
@@ -232,7 +311,15 @@
         "expiry": "11-27",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04기록 확인11-27WINTERPREP</p>"
       },
       {
@@ -241,7 +328,15 @@
         "expiry": "11-20",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>05기록 확인11-206STARS</p>"
       },
       {
@@ -250,7 +345,15 @@
         "expiry": "11-15",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06기록 확인11-15PEPEROHNE</p>"
       },
       {
@@ -259,7 +362,15 @@
         "expiry": "10-23",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>07기록 확인10-232YEARGIFT</p>"
       },
       {
@@ -268,7 +379,15 @@
         "expiry": "10-23",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>08기록 확인10-23OPENTHEBAK</p>"
       },
       {
@@ -277,7 +396,15 @@
         "expiry": "10-19",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>09기록 확인10-19GLOBOLOPEN</p>"
       },
       {
@@ -286,7 +413,15 @@
         "expiry": "10-12",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>10기록 확인10-12HANGAWIGIFT</p>"
       },
       {
@@ -295,7 +430,15 @@
         "expiry": "10-09",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>11기록 확인10-095MANCAFE</p>"
       },
       {
@@ -304,7 +447,15 @@
         "expiry": "10-02",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>12기록 확인10-02HAPPY2GETHER</p>"
       },
       {
@@ -313,7 +464,15 @@
         "expiry": "10-02",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>13기록 확인10-02JJAZAN</p>"
       },
       {
@@ -322,7 +481,15 @@
         "expiry": "10-02",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>14기록 확인10-02WITHU2ND</p>"
       },
       {
@@ -331,7 +498,15 @@
         "expiry": "09-25",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>15기록 확인09-252YEARGAMSA</p>"
       },
       {
@@ -340,7 +515,15 @@
         "expiry": "08-03",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>16기록 확인08-03REALGAMSA</p>"
       },
       {
@@ -349,7 +532,15 @@
         "expiry": "06-30",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>17기록 확인06-30GLOBOL</p>"
       },
       {
@@ -358,7 +549,15 @@
         "expiry": "06-01",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>18기록 확인06-01LEVIGIFT</p>"
       },
       {
@@ -367,7 +566,15 @@
         "expiry": "05-11",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>19기록 확인05-11CHILDDAY</p>"
       },
       {
@@ -376,7 +583,15 @@
         "expiry": "02-16",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>20기록 확인02-16500DAYSGIFT</p>"
       },
       {
@@ -385,7 +600,15 @@
         "expiry": "01-30",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>21기록 확인01-30QUEENWIN</p>"
       },
       {
@@ -394,7 +617,15 @@
         "expiry": "01-09",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>22기록 확인01-092025START</p>"
       },
       {
@@ -403,7 +634,22 @@
         "expiry": "10-01",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01기록 확인10-01BOLEUMDAL</p>"
       },
       {
@@ -412,7 +658,22 @@
         "expiry": "09-25",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02기록 확인09-253YEARGIFT</p>"
       },
       {
@@ -421,7 +682,22 @@
         "expiry": "09-10",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03기록 확인09-10BOL100MANGAE</p>"
       },
       {
@@ -430,7 +706,22 @@
         "expiry": "08-13",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04기록 확인08-13X3MANGIFT</p>"
       },
       {
@@ -439,7 +730,22 @@
         "expiry": "08-06",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>05기록 확인08-06ENERGYBOL</p>"
       },
       {
@@ -448,7 +754,22 @@
         "expiry": "07-09",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06기록 확인07-09THANKYOU90K</p>"
       },
       {
@@ -457,7 +778,22 @@
         "expiry": "06-28",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>07기록 확인06-28GYOJU1KDAYS</p>"
       },
       {
@@ -466,7 +802,22 @@
         "expiry": "06-30",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>08기록 확인06-30SPAOCOLLABOL</p>"
       },
       {
@@ -475,7 +826,22 @@
         "expiry": "06-13",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamereviewkr.tistory.com · 제3자 코드 목록",
+            "url": "https://gamereviewkr.tistory.com/48",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>09기록 확인06-13MEMORIAL</p>"
       },
       {
@@ -484,7 +850,15 @@
         "expiry": "02-26",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>10기록 확인02-26CUAYOCUAYO</p>"
       },
       {
@@ -493,7 +867,15 @@
         "expiry": "02-23",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>11기록 확인02-23SAEHAEBOL</p>"
       },
       {
@@ -502,7 +884,15 @@
         "expiry": "02-12",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>12기록 확인02-12NOTEREVIVE</p>"
       },
       {
@@ -511,7 +901,15 @@
         "expiry": "02-05",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>13기록 확인02-055FREESET</p>"
       },
       {
@@ -520,7 +918,15 @@
         "expiry": "01-15",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "honeybeejoa.co.kr · 제3자 코드 목록",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>14기록 확인01-15TRICKCAL2026</p>"
       }
     ],
@@ -642,10 +1048,19 @@
         "code": "ADIDASxPOKEMON",
         "sourcePublishedAt": null,
         "expiry": "2027-01-15",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>01공식2027-01-15ADIDASxPOKEMON</p>"
+        "latest": true,
+        "statusLabel": "공식 행사 입력 후보 · 실사용 미확인",
+        "sources": [
+          {
+            "name": "Pokémon GO 공식 행사 원문",
+            "url": "https://pokemongo.com/en/news/pokemon-x-adidas-2026",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
+        "evidenceHTML": "<p>공식 공지에서 아바타 신발 코드와 2027년 1월 15일까지의 교환 기간을 확인했습니다. 계정 입력 성공은 미확인입니다.</p><p>01공식2027-01-15ADIDASxPOKEMON</p>",
+        "latestEvidence": "공식 행사 원문에서 2027-01-15까지 코드 교환 기간 확인; 계정 입력 미검증"
       },
       {
         "code": "LEGOxPOKEMONGOxBERRIES",
@@ -653,7 +1068,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.dexerto.com · 제3자 코드 목록",
+            "url": "https://www.dexerto.com/pokemon/pokemon-go-promo-codes-free-items-1350276/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02해외 매체미확인LEGOxPOKEMONGOxBERRIES</p>"
       },
       {
@@ -661,9 +1091,17 @@
         "sourcePublishedAt": null,
         "expiry": "2025-01-05",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>03공식2025-01-05FENDIxFRGMTxPOKEMON</p>"
+        "statusLabel": "공식 행사 기간 종료",
+        "sources": [
+          {
+            "name": "Pokémon GO 공식 행사 원문",
+            "url": "https://pokemongo.com/ko/news/FENDIxFRGMTxPOKEMON",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
+        "evidenceHTML": "<p>공식 공지의 코드 유효기간은 2024년 1월 4일부터 2025년 1월 5일까지입니다. 종료된 공식 행사 기록입니다.</p><p>03공식2025-01-05FENDIxFRGMTxPOKEMON</p>"
       },
       {
         "code": "MLBxPOKEMONGO2026",
@@ -671,17 +1109,33 @@
         "expiry": "2026-09-30",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04해외 보도2026-09-30MLBxPOKEMONGO2026</p>"
       },
       {
         "code": "LEGOxPOKEMONGOxCAP",
         "sourcePublishedAt": null,
-        "expiry": "2026-09-30",
+        "expiry": "보상 수령 2026-09-30 23:59 (현지)",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>05공식2026-09-30LEGOxPOKEMONGOxCAP</p>"
+        "statusLabel": "공식 보상 수령 기간 종료",
+        "sources": [
+          {
+            "name": "Pokémon GO 공식 행사 원문",
+            "url": "https://pokemongo.com/news/lego-pokemon-go-2026",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
+        "evidenceHTML": "<p>공식 공지에서 코드를 확인했습니다. 리서치 완료·보상 수령 기한은 2026년 9월 30일 23:59(현지 시각)입니다. 코드 교환 종료일과 보상 수령 기한은 구분합니다.</p><p>05공식2026-09-30LEGOxPOKEMONGOxCAP</p>"
       },
       {
         "code": "SANFRANCISCO2026",
@@ -689,7 +1143,15 @@
         "expiry": "2026-09 종료",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06해외 보도2026-09 종료SANFRANCISCO2026</p>"
       },
       {
@@ -716,7 +1178,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>09과거 자료미확인GOTOURKALOS</p>"
       },
       {
@@ -734,7 +1204,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>11과거 자료미확인2PKXPAT2RJXKL</p>"
       },
       {
@@ -743,7 +1221,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>12과거 자료미확인6K343X373BDQM</p>"
       },
       {
@@ -770,7 +1256,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "poketory.com · 제3자 코드 목록",
+            "url": "https://poketory.com/pokemongo-promo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>15과거 자료미확인GOFESTMAX</p>"
       },
       {
@@ -797,7 +1291,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.dexerto.com · 제3자 코드 목록",
+            "url": "https://www.dexerto.com/pokemon/pokemon-go-promo-codes-free-items-1350276/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>18과거 자료미확인907andLIKO</p>"
       }
     ],
@@ -932,7 +1434,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01해외 공개미확인spe7cial</p>"
       },
       {
@@ -941,7 +1451,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02해외 공개미확인MOB6ILEFORT</p>"
       },
       {
@@ -950,7 +1468,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03해외 공개미확인WEL5COME</p>"
       },
       {
@@ -959,7 +1485,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04해외 공개미확인Path4finder</p>"
       },
       {
@@ -968,7 +1502,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>05해외 공개미확인FORTBlOX2</p>"
       },
       {
@@ -977,7 +1519,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06해외 공개미확인GRANDOPEN</p>"
       },
       {
@@ -986,7 +1536,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/fortblox-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>07해외 공개미확인3SURVIVOR</p>"
       },
       {
@@ -7037,8 +7595,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7052,8 +7612,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7067,8 +7636,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7082,8 +7660,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7097,8 +7684,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7127,8 +7716,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7142,8 +7733,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7157,8 +7757,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7172,8 +7774,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7187,8 +7791,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7202,8 +7808,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7217,8 +7825,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7232,8 +7842,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7247,8 +7866,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7262,8 +7883,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7277,8 +7900,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7292,8 +7917,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7307,8 +7934,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7322,8 +7951,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7337,8 +7968,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7352,8 +7985,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7367,8 +8002,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7382,8 +8019,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7397,8 +8043,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7412,8 +8067,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7427,8 +8091,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.gamesradar.com · 제3자 코드 목록",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7442,8 +8115,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7457,8 +8132,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7472,8 +8149,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7487,8 +8166,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7502,8 +8183,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7517,8 +8200,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7532,8 +8217,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7577,8 +8264,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7637,8 +8326,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7652,8 +8343,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7667,8 +8360,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7802,8 +8497,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7832,8 +8529,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7862,8 +8561,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7952,8 +8653,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -7982,8 +8685,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8012,8 +8717,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8027,8 +8734,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8042,8 +8751,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8072,8 +8783,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8102,8 +8815,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8117,8 +8832,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8132,8 +8849,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8162,8 +8881,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8177,8 +8905,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8192,8 +8929,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8237,8 +8983,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8267,8 +9015,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8282,8 +9039,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8297,8 +9056,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8357,8 +9118,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8387,8 +9150,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8402,8 +9167,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8417,8 +9184,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -8432,8 +9201,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/kingshot-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9122,8 +9893,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9137,8 +9910,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9152,8 +9927,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9167,8 +9944,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9182,8 +9961,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9197,8 +9978,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9212,8 +9995,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9227,8 +10012,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9242,8 +10029,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9257,8 +10046,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9272,8 +10063,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9302,8 +10095,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9317,8 +10112,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9332,8 +10129,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9347,8 +10146,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9362,8 +10163,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9377,8 +10180,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9392,8 +10197,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9407,8 +10214,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9422,8 +10231,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9437,8 +10248,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -9994,7 +10807,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>2026 신년2026HAPPYNEWYEAR\n\n\n\n    보상고급 모집 티켓 2장 + 신년 추가 보상\n    기한공식 종료일 미확인\n\n  10월 최신 목록과 9월 재확인 목록에서 계속 입력 후보로 확인.</p>"
       },
       {
@@ -10003,7 +10831,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>2026 신년2026EATBETTER\n\n\n\n    보상고급 모집 티켓 2장 · 성장 세트 24시간 1개\n    기한공식 종료일 미확인\n\n  10월 최신 목록에서 계속 입력 후보로 확인.</p>"
       },
       {
@@ -10012,7 +10855,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>2026 신년2026LETSDANCE\n\n\n\n    보상고급 모집 티켓 2장 · 스킬 매뉴얼 박스 2개\n    기한공식 종료일 미확인\n\n  10월 최신 목록에서 계속 입력 후보로 확인.</p>"
       },
       {
@@ -10021,7 +10879,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>2026 신년2026WORKHARDER\n\n\n\n    보상고급 모집 티켓 2장 · 울트라 부스트 모듈 50개\n    기한공식 종료일 미확인\n\n  10월 최신 목록에서 계속 입력 후보로 확인.</p>"
       },
       {
@@ -10030,7 +10903,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>2026 신년2026KEEPTACTICAL\n\n\n\n    보상고급 모집 티켓 2장 · 버스트 매뉴얼 박스 2개\n    기한공식 종료일 미확인\n\n  10월 최신 목록에서 계속 입력 후보로 확인.</p>"
       },
       {
@@ -10039,7 +10927,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드NIKKECHRISTMASPARTY\n\n\n\n    보상고급 모집 티켓 10장 · 성장 세트 24시간 1개 · Darling for a Day 3개 · 울트라 부스트 모듈 50개\n    기한공식 종료일 미확인\n\n  장기 사용 보고가 이어지는 코드. 공식 종료일 미확인.</p>"
       },
       {
@@ -10048,7 +10951,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드3YEARSWITHNIKKE\n\n\n\n    보상모집 티켓 10장\n    기한공식 종료일 미확인\n\n  3주년 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10057,7 +10975,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드3YEARSWITHCOMMANDER\n\n\n\n    보상쥬얼 900개 · 고급 모집 티켓 1장\n    기한공식 종료일 미확인\n\n  3주년 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10066,7 +10999,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드PUNYQUEEN\n\n\n\n    보상고급 모집 티켓 10장\n    기한공식 종료일 미확인\n\n  캐릭터 이벤트 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10075,7 +11023,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드thxfor990000\n\n\n\n    보상성장 상자 1시간 1개\n    기한공식 종료일 미확인\n\n  커뮤니티 마일스톤 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10084,7 +11047,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드NIKKESTELLARBLADE\n\n\n\n    보상고급 모집 티켓 5장 · 성장 세트 24시간 1개 · Darling for a Day 3개 · 울트라 부스트 모듈 50개\n    기한공식 종료일 미확인\n\n  스텔라 블레이드 협업 코드. 9월 재확인 목록에서 장기 사용 보고.</p>"
       },
       {
@@ -10093,7 +11071,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.ldshop.gg · 제3자 코드 목록",
+            "url": "https://www.ldshop.gg/blog/goddess-of-victory-nikke-gp/goddess-of-victory-nikke-latest-code.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드30MONTHSTOGETHER\n\n\n\n    보상성장 세트 6개 · 모집 티켓 10장 · 울트라 부스트 모듈 10개 · 스킬 매뉴얼 박스 5개 · 프로필 커스텀 팩 50개\n    기한공식 종료일 미확인\n\n  30개월 기념 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10102,7 +11095,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드NIKKECONCERT2025\n\n\n\n    보상쥬얼 300개 · 스페셜 칭호\n    기한공식 종료일 미확인\n\n  2025 콘서트 코드. 10월 최신 목록에 계속 남아 있음.</p>"
       },
       {
@@ -10111,7 +11119,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "nikke.gg · 제3자 코드 목록",
+            "url": "https://nikke.gg/cd-keys-guide/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/latest-codes-for-goddess-victory-nikke-august-2026.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>장기 코드NIKKE1104\n\n\n\n    보상크레디트 상자 2시간 1개\n    기한공식 종료일 미확인\n\n  출시 초기 장기 코드. 10월 최신 목록에서도 입력 후보로 확인.</p>"
       }
     ],
@@ -10131,7 +11154,15 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01공식 라운지공식 미기재Welcome</p>"
       },
       {
@@ -10140,7 +11171,15 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02공식 라운지공식 미기재LAUNCH0918</p>"
       },
       {
@@ -10149,7 +11188,15 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03공식 라운지공식 미기재kibangduck</p>"
       },
       {
@@ -10158,7 +11205,22 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04공식 라운지공식 미기재DuckGo</p>"
       },
       {
@@ -10167,7 +11229,22 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>05공식 라운지공식 미기재DUCK777</p>"
       },
       {
@@ -10176,7 +11253,15 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06공식 라운지공식 미기재777DUCK</p>"
       },
       {
@@ -10185,7 +11270,15 @@
         "expiry": "공식 미기재",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>07공식 라운지공식 미기재JOY777</p>"
       },
       {
@@ -10194,7 +11287,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>08국내 제보미확인kakao1003</p>"
       },
       {
@@ -10203,7 +11304,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>09국내 제보미확인MOONDUEL</p>"
       },
       {
@@ -10212,7 +11321,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>10국내 제보미확인kakao0926</p>"
       },
       {
@@ -10221,7 +11338,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "life.infopeople.kr · 제3자 코드 목록",
+            "url": "https://life.infopeople.kr/%ED%9B%84%EB%8D%94%EB%8D%95-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EB%AA%A8%EC%9D%8C%EF%BD%9C10%EC%9B%94-%EC%8B%A0%EA%B7%9C-%EC%BF%A0%ED%8F%B0/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>11국내 제보미확인kakao0919</p>"
       },
       {
@@ -10230,7 +11355,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>12해외판국내 미확인d9P4gU</p>"
       },
       {
@@ -10239,7 +11379,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>13해외판국내 미확인T6zY1b</p>"
       },
       {
@@ -10248,7 +11403,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>14해외판국내 미확인v3H8aQ</p>"
       },
       {
@@ -10257,7 +11427,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>15해외판국내 미확인w7K2pD</p>"
       },
       {
@@ -10266,7 +11451,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>16해외판국내 미확인q8N6Rc</p>"
       },
       {
@@ -10275,7 +11475,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>17해외판국내 미확인T5kL3w</p>"
       },
       {
@@ -10284,7 +11499,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>18해외판국내 미확인b4Y9Vz</p>"
       },
       {
@@ -10293,7 +11523,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>19해외판국내 미확인BestDuck</p>"
       },
       {
@@ -10302,7 +11547,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>20해외판국내 미확인FanGift</p>"
       },
       {
@@ -10311,7 +11571,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>21해외판국내 미확인ThankYou</p>"
       },
       {
@@ -10320,7 +11595,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>22해외판국내 미확인HEARDUCK</p>"
       },
       {
@@ -10329,7 +11619,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>23해외판국내 미확인DUCK2M</p>"
       },
       {
@@ -10338,7 +11643,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>24해외판국내 미확인DUCK2026</p>"
       },
       {
@@ -10347,7 +11667,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>25해외판국내 미확인DUCKOP2026</p>"
       },
       {
@@ -10356,7 +11691,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>26해외판국내 미확인DUCKIE</p>"
       },
       {
@@ -10365,7 +11715,22 @@
         "expiry": "국내 미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/duck-survival/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "gamestaunch.com · 제3자 코드 목록",
+            "url": "https://gamestaunch.com/codes/duck-survival-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>27해외판국내 미확인DUCKOP</p>"
       }
     ],
@@ -10387,13 +11752,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10407,13 +11769,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10427,13 +11786,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10447,13 +11803,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10467,13 +11820,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10487,13 +11837,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10527,13 +11874,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10547,13 +11891,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/580422",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10567,13 +11908,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10587,13 +11925,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10607,13 +11942,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10627,13 +11959,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10647,13 +11976,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10667,13 +11993,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10687,13 +12010,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10707,13 +12027,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10727,13 +12044,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10767,13 +12081,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10787,13 +12098,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10807,13 +12115,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10827,13 +12132,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10867,13 +12169,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10887,13 +12186,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -10907,13 +12203,10 @@
         "statusLabel": "만료 기록",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "gamewith.jp · 제3자 코드 목록",
+            "url": "https://gamewith.jp/outerplane-jp/528222",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -23587,7 +24880,15 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "topforcehub.com · 제3자 코드 목록",
+            "url": "https://topforcehub.com/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01Top Force Hub미확인LAUNCH</p>"
       },
       {
@@ -24066,7 +25367,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01해외 매체미확인aniimonow</p>"
       },
       {
@@ -24075,7 +25391,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>02해외 매체미확인anywhereaniimo</p>"
       },
       {
@@ -24084,7 +25415,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>03해외 매체미확인anythinganiimo</p>"
       },
       {
@@ -24093,7 +25439,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/aniimo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>04Beebom미확인aniimazingfroyo</p>"
       },
       {
@@ -24102,7 +25463,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>05해외 매체미확인aniimofreetoplay</p>"
       },
       {
@@ -24111,7 +25487,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>06해외 매체미확인aniimotogether</p>"
       },
       {
@@ -24120,7 +25511,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>07해외 매체미확인aniimoidyll</p>"
       },
       {
@@ -24129,7 +25535,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>08해외 매체미확인aniimowelcome</p>"
       },
       {
@@ -24138,7 +25559,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>09해외 매체미확인twinewithaniimo</p>"
       },
       {
@@ -24147,7 +25583,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>10해외 매체미확인anyoneaniimo</p>"
       },
       {
@@ -24156,7 +25607,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>11해외 매체미확인aniimoopenworld</p>"
       },
       {
@@ -24165,7 +25631,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>12해외 매체미확인aniimolaunch2026</p>"
       },
       {
@@ -24174,7 +25655,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>13해외 매체미확인aniimobonus</p>"
       },
       {
@@ -24183,7 +25679,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>14해외 매체미확인ANIIMOGIFT</p>"
       },
       {
@@ -24192,7 +25703,22 @@
         "expiry": "미확인",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/aniimo/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>15해외 매체미확인Aniimo2026</p>"
       },
       {
@@ -24201,7 +25727,22 @@
         "expiry": "9/23 기록",
         "latest": false,
         "statusLabel": "사용 여부 미확인",
-        "sources": [],
+        "sources": [
+          {
+            "name": "www.pockettactics.com · 제3자 코드 목록",
+            "url": "https://www.pockettactics.com/aniimo/codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "beebom.com · 제3자 코드 목록",
+            "url": "https://beebom.com/aniimo-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          }
+        ],
         "evidenceHTML": "<p>01Game.Guide9/23 기록aniimoparty</p>"
       }
     ],
@@ -24223,8 +25764,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24238,8 +25781,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24253,8 +25798,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24283,8 +25830,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24298,8 +25847,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24313,8 +25864,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24328,8 +25881,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24358,8 +25913,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24373,8 +25930,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24388,8 +25947,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24448,8 +26009,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24493,8 +26056,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24508,8 +26073,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24643,8 +26217,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24658,8 +26234,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24673,8 +26251,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24688,8 +26268,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24703,8 +26285,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24718,8 +26302,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24838,8 +26424,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "www.topuplive.com · 제3자 코드 목록",
+            "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.pocketgamer.com · 제3자 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24909,8 +26504,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/lordrush-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24924,8 +26528,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24939,8 +26545,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/lordrush-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24954,8 +26569,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/lordrush-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24969,8 +26593,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/lordrush-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24984,8 +26617,10 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],
@@ -24999,8 +26634,17 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
-            "name": "기존 수집 기록",
-            "url": null,
+            "name": "lordrush.gg · 제3자 코드 목록",
+            "url": "https://lordrush.gg/it/gift-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
+            "name": "www.minutetactics.com · 제3자 코드 목록",
+            "url": "https://www.minutetactics.com/codes/lordrush-promo-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
           }
         ],

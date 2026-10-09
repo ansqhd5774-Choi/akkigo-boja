@@ -35,4 +35,10 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
  writeFileSync(path,JSON.stringify(articles,null,2)+'\n');
 }
 writeFileSync(reportPath,JSON.stringify({linkedRecords:prior.linkedRecords+linked,changedArticles:[...new Set([...prior.changedArticles,...changed])],scope:'CODE_REFERENCE_CONTEXT_NOT_UNIVERSAL_REDEMPTION_SUCCESS',officialEvidence:official},null,2));
+// Persist the same evidence in the generator input, so a later workflow render
+// cannot silently restore the old source-less version.
+const catalog=[...JSON.parse(readFileSync('data/articles.json')),...JSON.parse(readFileSync('data/articles-supplemental.json'))];
+const changedKeys=new Set([...prior.changedArticles,...changed]);
+const models=JSON.parse(readFileSync('data/game-period-articles.json')).map(m=>changedKeys.has(m.articleKey)?catalog.find(a=>a.articleKey===m.articleKey).source.gamePeriodModel:m);
+writeFileSync('data/game-period-articles.json',JSON.stringify(models,null,2)+'\n');
 console.log(JSON.stringify({linked,changed}));

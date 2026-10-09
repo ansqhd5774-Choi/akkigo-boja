@@ -3,5 +3,5 @@
   "approved": true,
   "existingOnly": true,
   "requestedAt": "2026-10-10",
-  "reason": "검증된 게임 문맥의 코드 목록 출처 연결. 제3자 수록과 실사용 성공 구분, 기존 ID와 URL 보존."
+  "reason": "게임 문맥의 코드 출처 연결. 생성 입력 원본과 발행 원고 일치, 기존 ID와 URL 보존"
 }
