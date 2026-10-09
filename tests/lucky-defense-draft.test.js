@@ -41,7 +41,9 @@ test('운빨존많겜 supplemental article과 공개 HTML이 일치한다',()=>{
   assert.match(html,/다이아 3,000개/);
   assert.match(html,/메뉴/);
   assert.match(html,/쿠폰 입력/);
-  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,4);
+  assert.equal(article.source.gamePeriodModel.records.length,31);
+  assert.equal((html.match(/data-ncp-copy=/g)||[]).length,31);
+  assert.equal((html.match(/data-ncp-share=/g)||[]).length,31);
   assert.equal((html.match(/data-ncp-featured-image="lucky-defense"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
