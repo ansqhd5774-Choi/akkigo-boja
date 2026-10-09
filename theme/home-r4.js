@@ -27,7 +27,10 @@
     let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){
       const image=document.createElement('img');image.className='ncp-r4-cover';image.alt=name;image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';
-      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');image.src=icon.href;
+      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');
+      if(icon.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(icon.pathname))icon.pathname=icon.pathname.replace(/\.png$/,'.webp');
+      if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/360x360bb.jpg');
+      image.src=icon.href;
       image.addEventListener('error',()=>{const fallback=entry.media$thumbnail?.url;if(fallback&&fallback!==image.src)image.src=fallback;else image.remove();},{once:true});const coverLink=document.createElement('a');coverLink.href=url;coverLink.className='ncp-game-cover-link';coverLink.append(image);article.append(coverLink);
     }
     const body=document.createElement('div');body.className='ncp-r4-card-body';
