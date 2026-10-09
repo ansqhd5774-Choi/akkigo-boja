@@ -16,6 +16,8 @@ Wayback 공식 available API는 두404 URL에HTTP200,available=null 반환. 이 
 ## 남은 범위
 25게임글 밖의 일반 브랜드 출처 표시,202 3개 본문 검증,501개 코드별 근거 연결,대체 원문 복구,주기적 검사 실행은 미완료. 실제 공개 반영과 관리기능 개선만 완료이며 전체 출처 품질 계획 또는63개 전체 완료를 주장하지 않는다.
 
+202 후속 웹 조회: Yesim promocodes 페이지에서 입력 절차·최초 구매 조건,loyalty-program 페이지에서 프로그램 본문 확인. referral-program 페이지는 일반 탐색/푸터만 추출되어 해당 혜택 본문 확인 미완료. 최초202 결과를 본문 정상으로 자동 승격하지 않았다. 원천:https://yesim.app/promocodes/ ,https://yesim.app/loyalty-program/ ,https://yesim.app/referral-program/ . 실제 구매·계정 사용 검증은 수행하지 않음.
+
 ## 실행 결과
 공개77글을 직접 HTTP 조회해 실패50URL의 실제 앵커를 대조했다. 45출처가29글에서 노출되며,최신 후보의 구조화 근거에 연결된 출처는2개다. 글 단위 링크를 모든 코드의 직접 근거로 임의 연결하지 않고 정확한 source URL이 일치하는 기록만 매핑했다.
 
