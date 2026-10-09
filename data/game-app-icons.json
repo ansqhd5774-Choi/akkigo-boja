@@ -195,5 +195,14 @@
     "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/c8/d3/34c8d36e-2060-ddfb-87c8-d537403299a1/Placeholder.mill/512x512bb.jpg",
     "iconShape": "square",
     "verifiedDate": "2026-10-09"
+  },
+  {
+    "articleKey": "fortblox-mobile-go-codes-202610",
+    "gameName": "포트블록스",
+    "platform": "google-play",
+    "appStoreUrl": "https://play.google.com/store/apps/details?id=global.hyperrise.wl",
+    "iconUrl": "https://play-lh.googleusercontent.com/ChoNLd30mzuJyBT159KLlOyi42mn01H3mFBu4JCdvHUPPIPMATB4OTyLnlMfdsLmSNxrPEBsIobSfGnDugSUCg=w512-h512",
+    "iconShape": "square",
+    "verifiedDate": "2026-10-09"
   }
 ]

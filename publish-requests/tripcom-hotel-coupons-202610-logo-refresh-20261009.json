@@ -2,6 +2,6 @@
   "articleKey": "tripcom-hotel-coupons-202610",
   "approved": true,
   "existingOnly": true,
-  "requestedAt": "2026-10-09T01:13:12.041Z",
-  "reason": "사용자 요청: 대표 이미지를 공식 브랜드 로고로 교체. 기존 게시물 ID와 URL 유지."
+  "requestedAt": "2026-10-09T01:16:17.791Z",
+  "reason": "대표 로고 갱신: 기존 비게임 제목 검증 호환 수정 후 재요청. 이전 요청은 발행 전 검증에서 중단되어 Blogger 변경 없음."
 }

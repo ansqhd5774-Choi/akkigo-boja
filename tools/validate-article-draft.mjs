@@ -11,7 +11,10 @@ export function validateArticleDraft(article){
  const h=article.post.content||'';
  validateArticlePresentation(article);
  validateRepresentativeLogo(article);
- if(h.includes('<h1'))throw Error('ARTICLE_DUPLICATE_TITLE');
+ // Game articles use the native Blogger heading. Existing commerce articles
+ // retain their single in-body heading; multiple body headings remain invalid.
+ const bodyHeadingCount=(h.match(/<h1\b/gi)||[]).length;
+ if(bodyHeadingCount>1||(article.post.labels.includes('게임')&&bodyHeadingCount))throw Error('ARTICLE_DUPLICATE_TITLE');
  if((h.match(/<!--more-->/g)||[]).length!==1)throw Error('ARTICLE_JUMP_BREAK_COUNT');
  if(h.includes('data-ncp-copy=')&&new Set([...h.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1])).size!==(h.match(/data-ncp-copy=/g)||[]).length)throw Error('ARTICLE_DUPLICATE_COUPON');
  if(article.articleKey==='aniimo-codes-202610'&&!article.source?.gamePeriodModel){

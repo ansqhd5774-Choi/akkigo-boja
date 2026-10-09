@@ -38,7 +38,9 @@ test('포트블록스 모바일 쿠폰 글의 코드 정확도·초안·게시�
   }
   assert.equal((html.match(/<!--more-->/g)||[]).length,1);
   assert.equal((html.match(/data-ncp-featured-image=/g)||[]).length,1);
-  assert.match(html,/news-p\.v1\.20260828\./);
+  assert.match(html,/data-ncp-app-icon="true"/);
+  assert.match(html,/play-lh\.googleusercontent\.com/);
+  assert.doesNotMatch(html,/wimg\.mk\.co\.kr/);
   assert.match(html,/HYPERRISE|하이퍼라이즈/);
   assert.match(html,/Roblox[^<]*게임/);
   assert.match(html,/Settings|설정/);
