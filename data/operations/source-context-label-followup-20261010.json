@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-09T21:21:15.346Z",
+  "url": "https://tokyogamestation.com/kingshot_giftcode/",
+  "httpStatus": 200,
+  "title": "【キングショット】最新ギフトコード一覧リストとコード入力方法まとめ | Tokyo game station",
+  "method": "PAGE_GAME_CONTEXT_AND_EXACT_JAPANESE_GIFT_CODE_LABEL",
+  "newLinkedRecords": 17,
+  "codes": [
+    "AJISAI26JP",
+    "LOVEFAMILY",
+    "KSGW26JP",
+    "OFFICIALSTORE9",
+    "syunnbun26jp",
+    "THANKSJP26",
+    "jpseijin26",
+    "THURMADNESS",
+    "JPX27KFOLLOW",
+    "TGIFISBACK",
+    "TOGOVERNOR",
+    "KSDC400K",
+    "TGIF1107",
+    "TRICKORTREAT",
+    "TGIF1016",
+    "BONAPPETIT",
+    "COFFEEPOWER"
+  ],
+  "preserved": [
+    "code case",
+    "sourcePublishedAt null",
+    "expiry",
+    "latest false",
+    "account input unverified"
+  ],
+  "remainingContextRecords": 233,
+  "notRetried": "Restricted/deleted source observations preserved",
+  "totalLinkedOriginalGapRecords": 269,
+  "remainingOriginalGapRecords": 232
+}

@@ -30,5 +30,13 @@
       "url": "https://pokemongo.com/news/lego-pokemon-go-2026",
       "note": "공식 공지에서 코드를 확인했습니다. 리서치 완료·보상 수령 기한은 2026년 9월 30일 23:59(현지 시각)입니다. 코드 교환 종료일과 보상 수령 기한은 구분합니다."
     }
-  ]
+  ],
+  "latestFollowup": {
+    "checkedAt": "2026-10-09T21:22:16.895Z",
+    "newLinkedRecords": 17,
+    "totalLinkedOriginalGapRecords": 269,
+    "remainingOriginalGapRecords": 232,
+    "evidence": "data/operations/source-context-label-followup-20261010.json",
+    "scope": "EXACT_THIRD_PARTY_GIFT_CODE_LABEL_ASSOCIATION_NO_DATE_REWARD_REDEMPTION_ASSERTION"
+  }
 }

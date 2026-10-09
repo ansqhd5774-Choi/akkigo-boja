@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:45:40.422Z",
+  "generatedAt": "2026-10-09T21:26:37.209Z",
   "scope": "LATEST_OBSERVATION_VIEW_NOT_RECOVERY_OR_FACT_VERIFICATION",
   "historicalBaseline": "source-content-baseline-complete-20261010.json",
   "summary": {
@@ -8,8 +8,8 @@
     "httpStatusDifferences": 13,
     "sourceGaps": {
       "original": 501,
-      "linked": 252,
-      "unconfirmed": 249
+      "linked": 269,
+      "unconfirmed": 232
     }
   },
   "records": [

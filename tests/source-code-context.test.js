@@ -12,3 +12,11 @@ test('list and table code declarations preserve casing evidence',()=>{
  assert.deepEqual(observeDeclaredCode('<li>HearDuck - rewards</li>','HEARDUCK'),{state:'CASE_VARIANT_DECLARATION',observedSpelling:'HearDuck'});
  assert.equal(observeDeclaredCode('<script><code>FAKE</code></script>','FAKE').state,'CODE_DECLARATION_NOT_OBSERVED');
 });
+
+test('Japanese gift-code labelled paragraphs preserve exact tokens and reject ordinary prose',()=>{
+ assert.equal(observeDeclaredCode('<p>ギフトコード：<strong>AJISAI26JP</strong><br>有効期限：未確認</p>','AJISAI26JP').state,'EXACT_CODE_DECLARATION');
+ assert.equal(observeDeclaredCode('<p>ギフトコード：AJISAI26JP</p>','AJISAI26').state,'CODE_DECLARATION_NOT_OBSERVED');
+ assert.deepEqual(observeDeclaredCode('<p>ギフトコード：syunnbun26jp</p>','SYUNNBUN26JP'),{state:'CASE_VARIANT_DECLARATION',observedSpelling:'syunnbun26jp'});
+ assert.equal(observeDeclaredCode('<p>ギフトコードの報酬にはSURVIVORが含まれます</p>','SURVIVOR').state,'CODE_DECLARATION_NOT_OBSERVED');
+ assert.equal(observeDeclaredCode('<script><p>ギフトコード：FAKE</p></script>','FAKE').state,'CODE_DECLARATION_NOT_OBSERVED');
+});

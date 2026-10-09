@@ -2836,6 +2836,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 /* A single navigation target per home card; the title remains a visual label. */
 #ncp-home-r4 .ncp-game-visual .ncp-r4-card-body{pointer-events:none}
 @media(max-width:600px){#ncp-home-r4 .ncp-game-heart,#ncp-game-hub .ncp-game-heart{min-height:24px;min-width:24px}}
+#ncp-home-r4 .ncp-game-heart>span:last-child,#ncp-game-hub .ncp-game-heart>span:last-child{color:#b92e55}
 /* Keep feedback inside the button without changing coupon row height. */
 [data-ncp-copy][data-ncp-copied='true']{background:#087f5b!important;color:#fff!important;border-color:#087f5b!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
 [data-ncp-copy][data-ncp-copy-error='true']{background:#b42318!important;color:#fff!important}

@@ -602,15 +602,124 @@
     },
     {
       "url": "https://tokyogamestation.com/kingshot_giftcode/",
-      "checkedAt": "2026-10-09T19:28:05.692Z",
-      "codes": [],
+      "checkedAt": "2026-10-09T21:21:15.346Z",
+      "codes": [
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "AJISAI26JP",
+          "observedSpelling": "AJISAI26JP",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "LOVEFAMILY",
+          "observedSpelling": "LOVEFAMILY",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "KSGW26JP",
+          "observedSpelling": "KSGW26JP",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "OFFICIALSTORE9",
+          "observedSpelling": "OFFICIALSTORE9",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "syunnbun26jp",
+          "observedSpelling": "syunnbun26jp",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "THANKSJP26",
+          "observedSpelling": "THANKSJP26",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "jpseijin26",
+          "observedSpelling": "jpseijin26",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "THURMADNESS",
+          "observedSpelling": "THURMADNESS",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "JPX27KFOLLOW",
+          "observedSpelling": "JPX27KFOLLOW",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "TGIFISBACK",
+          "observedSpelling": "TGIFISBACK",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "TOGOVERNOR",
+          "observedSpelling": "TOGOVERNOR",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "KSDC400K",
+          "observedSpelling": "KSDC400K",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "TGIF1107",
+          "observedSpelling": "TGIF1107",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "TRICKORTREAT",
+          "observedSpelling": "TRICKORTREAT",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "TGIF1016",
+          "observedSpelling": "TGIF1016",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "BONAPPETIT",
+          "observedSpelling": "BONAPPETIT",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        },
+        {
+          "articleKey": "kingshot-codes-202610",
+          "code": "COFFEEPOWER",
+          "observedSpelling": "COFFEEPOWER",
+          "referenceType": "THIRD_PARTY_EXPLICIT_GIFT_CODE_LABEL"
+        }
+      ],
       "claimVerified": false,
       "accountInputVerified": false,
       "httpStatus": 200,
       "finalUrl": "https://tokyogamestation.com/kingshot_giftcode/",
       "title": "【キングショット】最新ギフトコード一覧リストとコード入力方法まとめ | Tokyo game station",
-      "bodyHash": "e9b37c10e67841eb267891dd45802ecdad7be9ece21985f26c63ed45c6f7d953",
-      "state": "CONTEXT_NOT_ESTABLISHED"
+      "bodyHash": "4950256af18be3c7721340dd0ee36ec7545d7639d1736b4cf9ae2b0cf34cf48d",
+      "state": "GAME_CONTEXT_AND_CODE_LIST_OBSERVED",
+      "previousObservation": {
+        "checkedAt": "2026-10-09T19:28:05.692Z",
+        "state": "CONTEXT_NOT_ESTABLISHED",
+        "bodyHash": "e9b37c10e67841eb267891dd45802ecdad7be9ece21985f26c63ed45c6f7d953"
+      },
+      "declarationMethod": "EXACT_JAPANESE_GIFT_CODE_LABEL_CONTEXT"
     },
     {
       "url": "https://kingshot.net/gift-codes",
