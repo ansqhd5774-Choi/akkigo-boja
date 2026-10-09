@@ -35,20 +35,25 @@
   }
   function paginate(container,items,label){
     if(!items.length)return;const pageSize=()=>innerWidth<=600?4:innerWidth<=900?3:6;let size=pageSize(),total=Math.ceil(items.length/size),page=0;
-    const controls=document.createElement('div');controls.className='ncp-r4-pager';controls.setAttribute('aria-label',label+' 페이지');
+    const controls=document.createElement('div');controls.className='ncp-r4-row-arrows';controls.setAttribute('aria-label',label+' 이동');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    previous.type=next.type='button';previous.innerHTML=window.ncpIcons['chevron-left'];next.innerHTML=window.ncpIcons['chevron-right'];previous.setAttribute('aria-label',label+' 이전 목록');next.setAttribute('aria-label',label+' 다음 목록');position.setAttribute('aria-live','polite');
-    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;position.setAttribute('aria-label',(page+1)+'페이지, 전체 '+total+'페이지');}
+    const doubleArrow='<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 5 7 7-7 7M12 5l7 7-7 7"/></svg>';
+    previous.type=next.type='button';previous.innerHTML=next.innerHTML=doubleArrow;previous.className='ncp-r4-row-previous';next.className='ncp-r4-row-next';previous.setAttribute('aria-label',label+' 이전 목록');next.setAttribute('aria-label',label+' 다음 목록');position.className='ncp-sr-only';position.setAttribute('aria-live','polite');
+    function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;controls.hidden=total<=1;position.textContent=(page+1)+'페이지, 전체 '+total+'페이지';}
     let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;const focusLost=container.contains(document.activeElement);try{if(typeof container.animate==='function'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;}catch{}page=target;render();previous.disabled=next.disabled=true;try{await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}catch{}}else{page=target;render();}if(focusLost)container.focus({preventScroll:true});}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
     previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
     window.addEventListener('resize',()=>{const updated=pageSize();if(updated===size)return;const start=page*size;size=updated;total=Math.ceil(items.length/size);page=Math.min(Math.floor(start/size),total-1);render();});
     container.tabIndex=0;container.setAttribute('aria-label',label+' 목록');
     container.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();move(event.key==='ArrowRight'?1:-1);}});
-    let gesture,suppressClickUntil=0;container.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse')gesture={id:event.pointerId,x:event.clientX,y:event.clientY};});
-    container.addEventListener('pointercancel',()=>{gesture=null;});
-    container.addEventListener('pointerup',event=>{if(!gesture||gesture.id!==event.pointerId)return;const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y;gesture=null;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5){suppressClickUntil=Date.now()+500;move(dx<0?1:-1);}});
+    let gesture,suppressClickUntil=0;
+    const finishGesture=()=>{container.classList.remove('ncp-r4-dragging');container.style.transform='';};
+    container.addEventListener('dragstart',event=>event.preventDefault());
+    container.addEventListener('pointerdown',event=>{if(!event.isPrimary||event.button!==0||event.target.closest('button'))return;gesture={id:event.pointerId,x:event.clientX,y:event.clientY,dragging:false};});
+    container.addEventListener('pointermove',event=>{if(!gesture||gesture.id!==event.pointerId)return;const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y;if(!gesture.dragging&&Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)*1.5){gesture.dragging=true;container.setPointerCapture(event.pointerId);container.classList.add('ncp-r4-dragging');}if(gesture.dragging){event.preventDefault();container.style.transform='translateX('+Math.max(-60,Math.min(60,dx*.35))+'px)';}});
+    container.addEventListener('pointercancel',()=>{gesture=null;finishGesture();});
+    container.addEventListener('pointerup',event=>{if(!gesture||gesture.id!==event.pointerId)return;const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y,dragged=gesture.dragging;gesture=null;finishGesture();if(container.hasPointerCapture(event.pointerId))container.releasePointerCapture(event.pointerId);if(dragged)suppressClickUntil=Date.now()+500;if(dragged&&Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)move(dx<0?1:-1);});
     container.addEventListener('click',event=>{if(event.detail>0&&Date.now()<suppressClickUntil){event.preventDefault();event.stopPropagation();}},{capture:true});
-    controls.append(previous,position,next);container.after(controls);render();
+    const shell=document.createElement('div');shell.className='ncp-r4-row-shell';container.before(shell);shell.append(container,controls);controls.append(previous,position,next);render();
   }
   root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
   try{
