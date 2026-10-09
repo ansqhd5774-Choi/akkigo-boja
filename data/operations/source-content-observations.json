@@ -20,7 +20,12 @@
         "pick7p2y"
       ],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "REGISTRATION_PAGE_NOT_CODE_LIST",
+        "falsePositiveFlag": "EXPECTED_CODE_NOT_OBSERVED",
+        "reviewedAt": "2026-10-10"
+      }
     },
     {
       "sourceId": "0dffc02f97028c310ee6",
@@ -73,7 +78,12 @@
       ],
       "missingCodes": [],
       "claimVerified": false,
-      "accountInputVerified": false
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_BOARD_CONFIRMED",
+        "reason": "JavaScript 렌더링 전 짧은 HTML을 실제 페이지 장애로 판단하지 않음",
+        "reviewedAt": "2026-10-10"
+      }
     }
   ]
 }

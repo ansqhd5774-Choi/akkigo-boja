@@ -5,15 +5,18 @@ const audit=await read('output/external-source-link-audit.json');
 const impact=await read('data/operations/public-source-impact-20261010.json');
 const gap=await read('data/operations/source-gap-review-20261010.json');
 const catalog=[...await read('data/articles.json'),...await read('data/articles-supplemental.json')];
+// Newly observed official page was absent from the original 465-URL audit.
+const officialFollowup='https://game.naver.com/lounge/Trickcal/board/detail/8271053';
+if(!audit.items.some(i=>i.url===officialFollowup))audit.items.push({url:officialFollowup,finalUrl:officialFollowup,checkedAt:'2026-10-10',state:'BROWSER_BODY_OBSERVED',contentObservedAt:'2026-10-10'});
 const records=audit.items.map(item=>({
  sourceId:createHash('sha256').update(item.url).digest('hex').slice(0,20),
  originalUrl:item.url,finalUrl:item.finalUrl||null,
  publisher:new URL(item.url).hostname,title:null,originalPublishedAt:null,
- lastAccessAt:item.checkedAt,lastContentVerifiedAt:null,contentHash:null,
+ lastAccessAt:item.checkedAt,lastContentVerifiedAt:item.contentObservedAt||null,contentHash:null,
  accessStatus:item.status===202?'BODY_UNCONFIRMED':item.state,
  httpStatus:item.status??null,claimStatus:'NOT_VERIFIED_BY_HTTP_AUDIT',accountInputStatus:'UNCONFIRMED',
  archiveUrl:null,archiveDate:null,replacementHistory:[],
- claimLinks:catalog.flatMap(a=>(a.source?.gamePeriodModel?.records||[]).filter(r=>r.sources?.some(s=>s.url?.replaceAll('&amp;','&')===item.url)).map(r=>({articleKey:a.articleKey,code:r.code}))),
+ claimLinks:catalog.flatMap(a=>(a.source?.gamePeriodModel?.records||[]).filter(r=>r.sources?.some(s=>s.url?.replaceAll('&amp;','&')===item.url)).map(r=>({articleKey:a.articleKey,code:r.code,codeMentionExpected:r.sources.some(s=>s.url?.replaceAll('&amp;','&')===item.url&&['THIRD_PARTY_CODE_MENTION','OFFICIAL_CODE_CONTEXT'].includes(s.referenceType))}))),
  nextReviewAt:new Date(Date.parse(item.checkedAt)+((item.status>=500)?86400000:604800000)).toISOString(),
  reviewAction:'REVIEW_CONTENT_WITHOUT_AUTOMATIC_CLAIM_CHANGE'
 }));

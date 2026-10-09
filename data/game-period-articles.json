@@ -153,6 +153,13 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [
           {
+            "name": "트릭컬 리바이브 공식 매출 순위 기념 공지",
+            "url": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "checkedAt": "2026-10-10",
+            "sourcePublishedAt": null
+          },
+          {
             "name": "honeybeejoa.co.kr · 제3자 코드 목록",
             "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=Trickcal&wr_id=1",
             "referenceType": "THIRD_PARTY_CODE_MENTION",
@@ -160,7 +167,7 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>01공식 라운지10/22 10:59GOOGLETOP3</p>"
+        "evidenceHTML": "<p>공식 공지에서 GOOGLETOP3 코드, 교주의 빛무리 선택권 1개·참! 잘했어요 333개, 10월 22일 10:59까지의 사용 기한을 확인했습니다. 최초 게시일의 연도와 실제 계정 입력 성공은 별도로 확인하지 않았습니다.</p><p>01공식 라운지10/22 10:59GOOGLETOP3</p>"
       },
       {
         "code": "3RDBOLTHDAY",

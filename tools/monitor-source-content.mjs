@@ -18,7 +18,7 @@ for(const record of ledger.records){
   const response=await fetch(record.originalUrl,{signal:AbortSignal.timeout(12000)});
   const type=response.headers.get('content-type')||'';
   const html=type.includes('html')?(await response.text()).slice(0,1000000):'';
-  result={httpStatus:response.status,finalUrl:response.url,...inspectSourceContent({url:record.originalUrl,finalUrl:response.url,status:response.status,html,previousHash:old?.lastObservedBodyHash,expectedCodes:[...new Set((record.claimLinks||[]).map(c=>c.code))]})};
+  result={httpStatus:response.status,finalUrl:response.url,...inspectSourceContent({url:record.originalUrl,finalUrl:response.url,status:response.status,html,previousHash:old?.lastObservedBodyHash,expectedCodes:[...new Set((record.claimLinks||[]).filter(c=>c.codeMentionExpected).map(c=>c.code))]})};
  }catch(e){result={flags:['ACCESS_UNVERIFIED'],error:e.name,claimVerified:false,accountInputVerified:false};}
  const checkedAt=new Date().toISOString();
  const transient=result.httpStatus>=500||result.error;
