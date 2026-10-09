@@ -1,6 +1,6 @@
 # 출처 품질 개선 실행 원장
 
-상태: PARTIAL. 공개 영향 매핑 완료, 원문 복구·공개 수정 미완료.
+상태: PARTIAL. 공개 영향 매핑 및 1차 공개 수정 완료. 2차 공개 갱신·원문 복구는 아래 결과로 구분한다.
 
 ## 후속 공개 반영
 2026-10-10 03:54 KST: 기존25글 갱신 성공. 발행37976233366 SUCCESS, Verify37976233203 SUCCESS. 모두LIVE/publicVerified=true/alreadyLive=true,postId/URL 보존. 독립25글 HTTP200·본문 식별·404 깨진 앵커 제거 확인,검사오류0. 자동297/297 PASS,XML3PASS,발행전390/1440 레이아웃PASS. Cua 공개 운빨존많겜 출처 안내에서404/서버오류 표시 직접 확인. 독립 모바일 Cua 크기 검증은 새로 실행하지 않았다.
@@ -14,6 +14,12 @@ Wayback 공식 available API는 두404 URL에HTTP200,available=null 반환. 이 
 증거:data/operations/source-health-public-evidence-20261010.json,data/operations/source-archive-check-20261010.json,output/source-health-public-lucky-20261010.png.
 
 ## 남은 범위
+### 2차 실행 및 발행 식별 불일치 원인
+- 501개 코드별 원문 연결 누락 기록을 모두 검토. 95개 후보 원문 조회에서 270개는 문자열 등장 후보, 231개는 등장 후보 미확보. 문자열 등장만으로 직접 근거·날짜·보상 검증 완료로 승격하지 않았다. `data/operations/source-gap-review-20261010.json`.
+- 코드별 직접 원문 연결 미확인 안내를 생성기에 추가. 출처의 HTTP 상태와 쿠폰 사용 가능 여부는 별개로 유지.
+- 2026-10-10 Blogger 관리 UI 휴지통에서 eSIM4Travel(346779066631713625), Global YO(1740153709042300905), Keepgo(6608709482942576677), Maya Mobile(5133360442701744628), SimCorner(7495314037047724671)를 직접 확인. 저장 LIVE 상태와 휴지통 상태의 불일치가 발행 409 원인. 기존 삭제 상태를 보존하고 해당 5개 갱신 요청은 approved=false로 제외. 복원·재발행·D1 강제 수정 없음.
+- 발행 배치에서 mutation 이전 ARTICLE_STATE_MISMATCH만 해당 글을 보류하고 독립 갱신 계속. 마지막에 보류 목록과 실패 상태를 보고하며 다른 오류·네트워크 불명 상태는 계속 중단. 기존 식별 보호 유지.
+- 주간 출처 품질 모니터링 등록 완료: 월요일 오전 9시, 변경 없는 상태는 조용히 유지. 첫 정기 실행 검증은 아직 이루어지지 않았다.
 25게임글 밖의 일반 브랜드 출처 표시,202 3개 본문 검증,501개 코드별 근거 연결,대체 원문 복구,주기적 검사 실행은 미완료. 실제 공개 반영과 관리기능 개선만 완료이며 전체 출처 품질 계획 또는63개 전체 완료를 주장하지 않는다.
 
 202 후속 웹 조회: Yesim promocodes 페이지에서 입력 절차·최초 구매 조건,loyalty-program 페이지에서 프로그램 본문 확인. referral-program 페이지는 일반 탐색/푸터만 추출되어 해당 혜택 본문 확인 미완료. 최초202 결과를 본문 정상으로 자동 승격하지 않았다. 원천:https://yesim.app/promocodes/ ,https://yesim.app/loyalty-program/ ,https://yesim.app/referral-program/ . 실제 구매·계정 사용 검증은 수행하지 않음.
