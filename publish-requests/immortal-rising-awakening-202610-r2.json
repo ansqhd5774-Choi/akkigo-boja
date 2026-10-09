@@ -1,0 +1,6 @@
+{
+  "articleKey": "immortal-rising-awakening-202610",
+  "approved": true,
+  "requestedAt": "2026-10-09",
+  "reason": "Retry after 274/274 tests and checked-in generated theme source search title were fixed. Prior publish request r1 failed in source testing before Blogger mutation. Publish one idempotent GOAT Games Immortal Rising seven-code dated article; preserve official app identity and first-source 2026-09-24 dates; never use unrelated-game coupons."
+}
