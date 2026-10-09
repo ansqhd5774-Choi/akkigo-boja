@@ -10,4 +10,6 @@ const hero='https://akkigo-boja.ansqhd5774.workers.dev/home-hero.webp';
 if(xml.includes(hero)&&!xml.includes("rel='preload' as='image' href='"+hero)){
  xml=xml.replace('</head>',"<b:if cond='data:view.isHomepage'><link rel='preload' as='image' href='"+hero+"' type='image/webp' fetchpriority='high'/></b:if>\n</head>");
 }
+// Invalidate browser/CDN cache after the brand checkmark asset replacement.
+xml=xml.replace(/home-hero\.(webp|png)(?:\?v=[^'"\s<]+)?/g,'home-hero.$1?v=brand-check-20261009');
 writeFileSync(output,xml);
