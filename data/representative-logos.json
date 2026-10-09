@@ -241,5 +241,14 @@
     "verifiedAt": "2026-10-09",
     "kind": "OFFICIAL_HEADER_LOGO",
     "brand": "닥터린"
+  },
+  {
+    "articleKey": "duolingo-super-coupons-202610",
+    "brand": "듀오링고",
+    "logoUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/c9/b8/bdc9b8e4-4ac0-7976-bf0a-c3647338fc7d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1920x1080ia-80.png",
+    "sourceUrl": "https://testflight.apple.com/join/Sq8bYSnJ",
+    "sourceAsset": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/c9/b8/bdc9b8e4-4ac0-7976-bf0a-c3647338fc7d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1920x1080ia-80.png",
+    "verifiedAt": "2026-10-10",
+    "kind": "OFFICIAL_APPLE_TESTFLIGHT_APP_ICON"
   }
 ]
