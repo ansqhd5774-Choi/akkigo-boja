@@ -39,3 +39,12 @@
 - [Blogger API 공식 사용 안내](https://developers.google.com/blogger/docs/3.0/using), [Pages 공식 리소스](https://developers.google.com/blogger/docs/3.0/reference/pages): 현재 지원하는 콘텐츠 관리 기능. API 문서에 임의 key.txt 파일 호스팅 기능 없음은 현재 적용 판단의 근거이며 모든 미래 지원 가능성을 부정하는 의미는 아님.
 
 지금 source 수정/검증과 실제 게시를 구분한다. 이미지3개 공개 반영 성공은 부모 발행 로그·독립 HTTP OG조회가 나오기 전까지 미완료다.
+
+
+## 공개 갱신 결과
+
+Publish Approved Article 37971357011 SUCCESS, Verify 37971358887 SUCCESS. 기존글6개(cat-hero/seven-knights/soda-legend/solo-sss/warframe/z-route) 모두LIVE/publicVerified=true/alreadyLive=true, postId/URL보존. 독립공개HTTP6글200·본문존재, OG이미지6개200/image. 기존3건HTTP400해소. 캣히어로Cua실제1280px화면75코드유지·넘침0·깨진이미지0. source회귀294/294/XML3PASS와공개반영증거분리.
+
+분석어댑터는테마생성소스반영이며실제Blogger테마설치/GA수신미검증. Worker배포와글갱신을테마공개배포로해석하지않음. 실험Chrome초기81렌더와Cua사용자브라우저검증구분. publisher=Blogger의미보완은NON_BLOCKING;색인차단원인으로단정하지않음. 77글author/datePublished일치추가확인(날짜분정밀도).
+
+증거:data/operations/growth-published-6-evidence-20261010.json, output/cat-hero-public-fixed-20261010.png. 발행 https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37971357011 . 완료29/미완료34 유지. 37항목모두담당별진행기록있으며외부처리대기와남은실행을구분.

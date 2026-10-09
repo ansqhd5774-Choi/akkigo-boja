@@ -50,6 +50,26 @@
       ],
       "nextAction": "공개 글의 최신 제외·충돌 표시 확인 완료. 재발급 또는 계정 실사용 증거 추적; 사실 충돌은 미해결",
       "resolvedAt": null
+    },
+    {
+      "id": "OG-IMAGE-400-3",
+      "target": "cat-hero/soda-legend/solo-sss",
+      "reportedAt": "2026-10-10",
+      "status": "RESOLVED",
+      "summary": "중복리사이즈공유이미지HTTP4003건, 원본동일앱이미지URL정규화로기존3글수정. 공개OG200확인.",
+      "evidence": "data/operations/growth-published-6-evidence-20261010.json",
+      "nextAction": "정기공유이미지접근검사",
+      "resolvedAt": "2026-10-10"
+    },
+    {
+      "id": "GSC-HOME-REDIRECT-HISTORY",
+      "target": "https://lsifl.blogspot.com/",
+      "reportedAt": "2026-10-10",
+      "status": "IN_REVIEW",
+      "summary": "01:32Googlebot스마트폰리디렉션오류과거기록.03:02live등록가능/렌더정상, 현재오류재현없음. 색인결과대기.",
+      "evidence": "data/operations/provider-review-20261010.json",
+      "nextAction": "다음크롤링/색인상태확인;현재source원인단정금지",
+      "resolvedAt": null
     }
   ]
 }

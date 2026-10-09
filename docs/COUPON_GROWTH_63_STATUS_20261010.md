@@ -133,3 +133,12 @@
 실제 오류: 최신 후보 피드요약8→6, 대상명 본문 누락2건, 공유이미지HTTP4003건 수정 준비. 공개발행은 후속 증거 전까지대기. 분석 성공이벤트3종·PII제거·기본OFF 구현, 실제GA계정수신미확인. 공개홈GA설치ID미발견. 사용자홍보계정없음확인, 외부게시미실행.
 
 담당 상세: docs/CONTENT_GROWTH_FOLLOWUP_20261010.md, docs/TECHNICAL_GROWTH_FOLLOWUP_20261010.md, docs/ANALYTICS_GROWTH_FOLLOWUP_20261010.md, docs/PROVIDER_GROWTH_FOLLOWUP_20261010.md. source회귀294/294 PASS 및 XML3개PASS. 기본구조화데이터publisher=Blogger는남은실제수정대상.
+
+
+## 공개 갱신 결과
+
+Publish Approved Article 37971357011 SUCCESS, Verify 37971358887 SUCCESS. 기존글6개(cat-hero/seven-knights/soda-legend/solo-sss/warframe/z-route) 모두LIVE/publicVerified=true/alreadyLive=true, postId/URL보존. 독립공개HTTP6글200·본문존재, OG이미지6개200/image. 기존3건HTTP400해소. 캣히어로Cua실제1280px화면75코드유지·넘침0·깨진이미지0. source회귀294/294/XML3PASS와공개반영증거분리.
+
+분석어댑터는테마생성소스반영이며실제Blogger테마설치/GA수신미검증. Worker배포와글갱신을테마공개배포로해석하지않음. 실험Chrome초기81렌더와Cua사용자브라우저검증구분. publisher=Blogger의미보완은NON_BLOCKING;색인차단원인으로단정하지않음. 77글author/datePublished일치추가확인(날짜분정밀도).
+
+증거:data/operations/growth-published-6-evidence-20261010.json, output/cat-hero-public-fixed-20261010.png. 발행 https://github.com/ansqhd5774-Choi/akkigo-boja/actions/runs/37971357011 . 완료29/미완료34 유지. 37항목모두담당별진행기록있으며외부처리대기와남은실행을구분.

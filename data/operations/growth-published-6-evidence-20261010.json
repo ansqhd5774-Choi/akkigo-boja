@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-09T18:11:54.759Z",
+  "run": "37971357011",
+  "source": "ed4b7a33bf8a9b585ab06548230f2b17508e2873",
+  "scope": "PUBLIC_HTTP_6_EXISTING_POSTS_AND_OG_IMAGES",
+  "results": [
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_877.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/png"
+      },
+      "bodyTarget": null
+    },
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_917.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      "bodyTarget": true
+    },
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_369.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/png"
+      },
+      "bodyTarget": null
+    },
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/sss.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/png"
+      },
+      "bodyTarget": null
+    },
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/blog-post_09.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      "bodyTarget": null
+    },
+    {
+      "url": "https://lsifl.blogspot.com/2026/10/z.html",
+      "status": 200,
+      "postBody": true,
+      "og": {
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      "bodyTarget": true
+    }
+  ]
+}
