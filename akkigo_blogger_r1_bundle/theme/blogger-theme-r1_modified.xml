@@ -2807,6 +2807,15 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
 #ncp-home-r4 .ncp-r4-category-row{margin-bottom:20px}
 #ncp-home-r4 .ncp-r4-category-title{display:inline-flex;align-items:center;gap:9px;color:#142346;font-size:inherit;font-weight:inherit}
 #ncp-home-r4 .ncp-r4-category-title:after{content:'';display:block;width:7px;height:7px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+#ncp-home-r4 .ncp-r4-title-icon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;color:#314969}
+#ncp-home-r4 .ncp-r4-title-icon svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8}
+#ncp-home-r4 .ncp-r4-row-arrows button{width:36px;height:36px;min-height:36px;top:50%;border-radius:50%;background:#fff;color:#314969!important;border:1px solid #d6deea;box-shadow:0 2px 8px #14234618}
+#ncp-home-r4 .ncp-r4-row-previous{left:6px}
+#ncp-home-r4 .ncp-r4-row-next{right:6px}
+#ncp-home-r4 .ncp-r4-double-chevron{width:18px;height:18px}
+#ncp-home-r4 .ncp-r4-double-chevron i{width:7px;height:7px;border-color:#314969;border-width:2px; margin-left:-3px}
+#ncp-home-r4 .ncp-r4-row-arrows button:hover{background:#eef3ff;border-color:#b9cbea}
+@media(max-width:600px){#ncp-home-r4 .ncp-r4-row-arrows button{width:30px;height:30px;min-height:30px}#ncp-home-r4 .ncp-r4-title-icon{width:23px;height:23px}#ncp-home-r4 .ncp-r4-title-icon svg{width:21px;height:21px}}
 #ncp-home-r4 .ncp-r4-category-row{margin-bottom:20px}
 #ncp-home-r4 .ncp-r4-row-list{grid-template-rows:1fr}
 #ncp-home-r4 .ncp-r4-status:empty{display:none}
@@ -4623,7 +4632,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     if(!items.length)return;const pageSize=()=>innerWidth<=600?4:innerWidth<=900?3:6;let size=pageSize(),total=Math.ceil(items.length/size),page=0;
     const controls=document.createElement('div');controls.className='ncp-r4-row-arrows';controls.setAttribute('aria-label',label+' 이동');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    const doubleArrow='<span class="ncp-r4-double-chevron" aria-hidden="true"><i></i><i></i></span>';
+    const doubleArrow='<span class="ncp-r4-double-chevron" aria-hidden="true"><i></i></span>';
     previous.type=next.type='button';previous.innerHTML=next.innerHTML=doubleArrow;previous.className='ncp-r4-row-previous';next.className='ncp-r4-row-next';previous.setAttribute('aria-label',label+' 이전 목록');next.setAttribute('aria-label',label+' 다음 목록');position.className='ncp-sr-only';position.setAttribute('aria-live','polite');
     function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;controls.hidden=total<=1;position.textContent=(page+1)+'페이지, 전체 '+total+'페이지';}
     let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;const focusLost=container.contains(document.activeElement);try{if(typeof container.animate==='function'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;}catch{}page=target;render();previous.disabled=next.disabled=true;try{await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}catch{}}else{page=target;render();}if(focusLost)container.focus({preventScroll:true});}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
@@ -4641,21 +4650,22 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     container.addEventListener('click',event=>{if(event.detail>0&&Date.now()<suppressClickUntil){event.preventDefault();event.stopPropagation();}},{capture:true});
     const shell=document.createElement('div');shell.className='ncp-r4-row-shell';container.before(shell);shell.append(container,controls);controls.append(previous,position,next);render();
   }
-  root.querySelectorAll('.ncp-r4-section-head').forEach(head=>{const heading=head.querySelector('h2'),link=head.querySelector('a');link.textContent=heading.textContent;link.className='ncp-r4-category-title';link.setAttribute('aria-label',heading.textContent+' 카테고리 보기');heading.replaceChildren(link);});
+  const categoryIcons={'게임':'gamepad-2','유심·로밍':'smartphone','호스팅·도메인':'monitor','해외직구':'plane','건강':'heart','VPN':'shield','교육':'graduation-cap'};
+  root.querySelectorAll('.ncp-r4-section-head').forEach(head=>{const heading=head.querySelector('h2'),link=head.querySelector('a'),name=heading.textContent;link.textContent=name;const icon=document.createElement('span');icon.className='ncp-r4-title-icon';icon.setAttribute('aria-hidden','true');icon.innerHTML=window.ncpIcons[categoryIcons[name]];link.prepend(icon);link.className='ncp-r4-category-title';link.setAttribute('aria-label',name+' 카테고리 보기');heading.replaceChildren(link);});
   try{
     await Promise.all([...root.querySelectorAll('[data-ncp-home-category]')].map(async section=>{
       const category=section.dataset.ncpHomeCategory,game=category==='게임',items=[],seen=new Set();
       try{
       const feedEntries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150&orderby=updated',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
       const entries=feedEntries.filter(entry=>!game||guideCodeCount(entry)>0);
-      for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){
+      for(const entry of [...entries].sort((a,b)=>(Date.parse(b.updated?.$t||b.published?.$t)||0)-(Date.parse(a.updated?.$t||a.published?.$t)||0))){
         if(!entry.category?.some(label=>label.term===category))continue;
         const key=game?window.ncpResolveGame(entry).id:entry.id?.$t;
         if(seen.has(key))continue;
         const item=game?card(entry,true,guideCodeCount(entry)):card(entry,false,0);
         if(item){items.push(item);seen.add(key);}
       }
-      section.querySelector('h2').setAttribute('title','최신 등록순');
+      section.querySelector('h2').setAttribute('title','최근 갱신순');
       paginate(section.querySelector('.ncp-r4-row-list'),items,category+' 쿠폰');
       section.querySelector('[role="status"]').textContent=items.length?'':'등록된 글이 없습니다.';
       }catch{section.querySelector('[role="status"]').textContent='목록을 불러오지 못했습니다. 전체 보기 또는 검색으로 찾아주세요.';}
