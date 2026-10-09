@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-09T18:05:26.423Z",
+  "google": {
+    "home": "https://lsifl.blogspot.com/",
+    "indexState": "NOT_INDEXED",
+    "lastCrawlKst": "2026-10-10T01:32:27+09:00",
+    "lastCrawlAgent": "Googlebot smartphone",
+    "lastCrawlFailure": "REDIRECT_ERROR",
+    "liveTestKst": "2026-10-10T03:02:00+09:00",
+    "liveTest": "INDEXABLE",
+    "smartphoneScreenshot": "output/gsc-home-live-render-20261010.png",
+    "report": "PROCESSING",
+    "selectedCanonical": "UNAVAILABLE"
+  },
+  "naver": {
+    "property": "https://lsifl.blogspot.com",
+    "httpsRedirect": "NORMAL",
+    "sitemap": "REGISTERED",
+    "diagnosis": "NO_DATA",
+    "impressionsClicks": "NO_DATA"
+  },
+  "bing": {
+    "property": "https://lsifl.blogspot.com/",
+    "sitemap": "SUBMITTED_PROCESSING",
+    "discoveredUrls": 0,
+    "indexing": "UNVERIFIED"
+  },
+  "limitations": [
+    "Live test eligibility is not indexing",
+    "Past redirect error not reproduced by current live test",
+    "No repeated index request",
+    "No theme redirect changes without reproduced failure"
+  ]
+}

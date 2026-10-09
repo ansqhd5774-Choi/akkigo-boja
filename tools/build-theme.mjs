@@ -33,11 +33,12 @@ const cards=manual.map(c=>`<article class='ncp-r3-card'><span class='ncp-r3-badg
 const home=`<b:if cond='data:view.isHomepage'><main class='ncp-r3 ncp-r3-wrap' id='ncp-coupon-home'><h1>쿠폰을 찾고, 확인하고, 사용하세요</h1><p>게임 쿠폰과 입력 방법을 빠르게 확인하세요.</p><h2>사용 확인 쿠폰</h2><div class='ncp-r3-grid'>${cards||'<p>현재 표시할 쿠폰이 없습니다.</p>'}</div><h2>게임 쿠폰 · 입력 안내</h2><div class='ncp-r3-grid'>${links.map(([name,url])=>`<article class='ncp-r3-card'><h3>${e(name)}</h3><p>쿠폰 코드 · 보상 · 입력 방법</p><a class='ncp-r3-link' href='${url}'>확인하기</a></article>`).join('')}</div><h2>최신 코드</h2><p>게임별 최신 쿠폰은 위 목록에서 확인하세요.</p><h2>만료 임박</h2><p>현재 표시할 만료 임박 쿠폰이 없습니다.</p></main></b:if>`;
 const footer=`<footer class='ncp-r3 ncp-r3-footer'><div class='ncp-r3-wrap'><strong>아끼고 보자</strong><a href='/p/blog-page.html'>개인정보 처리 안내</a></div></footer>`;
 const copyJs=await readFile(new URL('theme/coupon-copy.js',root),'utf8');
+const analyticsJs=await readFile(new URL('theme/analytics-events.js',root),'utf8');
 const copyCss=await readFile(new URL('theme/coupon-copy.css',root),'utf8');
 const detailCss=await readFile(new URL('theme/game-detail.css',root),'utf8');
 const detailJs=await readFile(new URL('theme/game-detail.js',root),'utf8');
 const detailMount=`<b:if cond='data:view.isPost'><script type='text/javascript'>//<![CDATA[\n${detailJs}\n//]]></script></b:if>`;
-const script=`<script type='text/javascript'>//<![CDATA[\n${copyJs}\n//]]></script>`;
+const script=`<script type='text/javascript'>//<![CDATA[\n${analyticsJs}\n${copyJs}\n//]]></script>`;
 const gameMount=`<b:if cond='data:blog.searchLabel'><script type='text/javascript'>//<![CDATA[\n${gameScript}\n//]]></script></b:if>`;
 const homeCss=await readFile(new URL('theme/home-r4.css',root),'utf8');
 const homeJs=await readFile(new URL('theme/home-r4.js',root),'utf8');

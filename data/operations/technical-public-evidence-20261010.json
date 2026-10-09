@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-09T18:06:19.476Z",
+  "scope": "PUBLIC_STATIC_SCHEMA_OG_IMAGE_ATTRIBUTES",
+  "summary": {
+    "pages": 77,
+    "fetchErrors": 0,
+    "missingArticleSchema": 0,
+    "headlineMismatch": [],
+    "schemaCanonicalMismatch": [],
+    "missingOgImage": 0,
+    "ogUrlMismatch": [],
+    "ogImageFailures": [
+      {
+        "url": "https://play-lh.googleusercontent.com/QfQrxylW8hLlAlO7paLKuKYdZW4QYuCvQpVxT88Su-GjOzvwXNqUkbeEyAUfBvQqQgEa8JljK1nlucux_tLL%3Dw240-h480=w1200-h630-p-k-no-nu",
+        "status": 400,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 1555
+      },
+      {
+        "url": "https://play-lh.googleusercontent.com/pKTZQouXCxce4c7E-7hPrmTp39IiiWwEPN8uJHUeFnXlQBXG2cYaTIx-nngRU10XXkRp-CVnMvl61fk_5nuqGNc%3Dw240-h480=w1200-h630-p-k-no-nu",
+        "status": 400,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 1555
+      },
+      {
+        "url": "https://play-lh.googleusercontent.com/ceUBjNJg-amLkxroSmXROYnMLidaq6fv7nvXuWxgxZ9_9tdRLC62yprljkycEM7YIpnBtnC-H1PJF8V47BO8Wg%3Dw240-h480=w1200-h630-p-k-no-nu",
+        "status": 400,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 1555
+      }
+    ],
+    "missingAltPages": 0,
+    "missingDimensionPages": 21
+  },
+  "publisherNames": [
+    "Blogger"
+  ],
+  "repairs": [
+    {
+      "articleKey": "solo-sss-exorcist-codes-202610",
+      "iconUrl": "https://play-lh.googleusercontent.com/ceUBjNJg-amLkxroSmXROYnMLidaq6fv7nvXuWxgxZ9_9tdRLC62yprljkycEM7YIpnBtnC-H1PJF8V47BO8Wg",
+      "originalStatus": 200,
+      "bloggerResizeStatus": 200,
+      "publicPublication": "PENDING"
+    },
+    {
+      "articleKey": "soda-legend-codes-202610",
+      "iconUrl": "https://play-lh.googleusercontent.com/pKTZQouXCxce4c7E-7hPrmTp39IiiWwEPN8uJHUeFnXlQBXG2cYaTIx-nngRU10XXkRp-CVnMvl61fk_5nuqGNc",
+      "originalStatus": 200,
+      "bloggerResizeStatus": 200,
+      "publicPublication": "PENDING"
+    },
+    {
+      "articleKey": "cat-hero-codes-202610",
+      "iconUrl": "https://play-lh.googleusercontent.com/QfQrxylW8hLlAlO7paLKuKYdZW4QYuCvQpVxT88Su-GjOzvwXNqUkbeEyAUfBvQqQgEa8JljK1nlucux_tLL",
+      "originalStatus": 200,
+      "bloggerResizeStatus": 200,
+      "publicPublication": "PENDING"
+    }
+  ],
+  "sourceChecks": "PRESENTATION_POLICY_PASS42; soda-legend-draft1/1PASS",
+  "liveUpdate": "PENDING_PARENT_PUBLICATION"
+}

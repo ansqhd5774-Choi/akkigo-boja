@@ -4510,8 +4510,41 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
 })();
 
 //]]></script><script type='text/javascript'>//<![CDATA[
+// Optional adapter. No network, storage, page_view, URL, code or user identity is collected here.
+(function(){
+  if(window.ncpAnalyticsInstalled)return;
+  window.ncpAnalyticsInstalled=true;
+  const names=new Set(['coupon_copy','share','redeem_outbound']);
+  document.addEventListener('click',event=>{
+    const link=event.target.closest?.('a.ncp-detail-register,a[data-ncp-redeem]');
+    if(!link||event.defaultPrevented)return;
+    try{
+      const target=new URL(link.href,location.href);
+      if(target.protocol!=='https:'||target.origin===location.origin)return;
+      window.dispatchEvent(new CustomEvent('ncp:action',{detail:{name:'redeem_outbound',method:'link',outcome:'click'}}));
+    }catch{}
+  });
+  window.addEventListener('ncp:action',event=>{
+    const detail=event.detail||{};
+    if(!names.has(detail.name)||detail.outcome!==(detail.name==='redeem_outbound'?'click':'success'))return;
+    // The site's consent controller must explicitly grant analytics; no inferred consent.
+    if(window.ncpAnalyticsConsent!=='granted'||window.ncpAnalyticsEnabled!==true)return;
+    if(window.ncpAnalyticsInternalTraffic===true||navigator.globalPrivacyControl===true)return;
+    if(typeof window.gtag!=='function')return;
+    // Disable inherited default page URL/title/referrer, which can contain user input.
+    try{window.gtag('event',detail.name,{
+      outcome:detail.name==='redeem_outbound'?'click':'success',
+      method:detail.name==='redeem_outbound'?'link':detail.method==='native'?'native':'clipboard',
+      page_location:location.origin+(/^\/\d{4}\/\d{2}\/[a-z0-9_-]+\.html$/i.test(location.pathname)?location.pathname:'/'),
+      page_referrer:'',page_title:'',
+      non_interaction:false
+    });}catch{}
+  });
+})();
+
 // AKKIGO persistent copy feedback: copying is not redemption confirmation.
 (function(){
+ const record=(name,method)=>{try{window.dispatchEvent(new CustomEvent('ncp:action',{detail:{name,method,outcome:'success'}}));}catch{}};
  const moreLabels=new WeakMap();
  document.addEventListener('toggle',event=>{
   const details=event.target;if(!details.matches?.('.ncp-list-more'))return;
@@ -4536,8 +4569,8 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
    const shareStatus=share.closest?.('.ncp-code-card')?.querySelector('[role="status"]');if(shareStatus)shareStatus.textContent='';
    share.disabled=true;
    try{
-    if(!fallback&&navigator.share&&(!navigator.canShare||navigator.canShare(payload)))await navigator.share(payload);
-    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';delete share.dataset.ncpShareFallback;}
+    if(!fallback&&navigator.share&&(!navigator.canShare||navigator.canShare(payload))){await navigator.share(payload);record('share','native');}
+    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';delete share.dataset.ncpShareFallback;record('share','clipboard');}
    }catch(error){if(error.name!=='AbortError'){
     share.dataset.ncpShareError=error.name||'Error';share.dataset.ncpShareFallback='true';
     const message=fallback?'링크 복사 실패 · 다시 시도':'공유 링크 복사 · 다시 누르세요';
@@ -4554,6 +4587,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   button.disabled=true;
   try{
    await navigator.clipboard.writeText(button.dataset.ncpCopy||'');
+   record('coupon_copy','clipboard');
    mark(button);try{localStorage.setItem(key(button),'1');}catch{}
    if(status)status.textContent='코드를 복사했습니다.';
   }catch{

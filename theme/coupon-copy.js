@@ -1,5 +1,6 @@
 // AKKIGO persistent copy feedback: copying is not redemption confirmation.
 (function(){
+ const record=(name,method)=>{try{window.dispatchEvent(new CustomEvent('ncp:action',{detail:{name,method,outcome:'success'}}));}catch{}};
  const moreLabels=new WeakMap();
  document.addEventListener('toggle',event=>{
   const details=event.target;if(!details.matches?.('.ncp-list-more'))return;
@@ -24,8 +25,8 @@
    const shareStatus=share.closest?.('.ncp-code-card')?.querySelector('[role="status"]');if(shareStatus)shareStatus.textContent='';
    share.disabled=true;
    try{
-    if(!fallback&&navigator.share&&(!navigator.canShare||navigator.canShare(payload)))await navigator.share(payload);
-    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';delete share.dataset.ncpShareFallback;}
+    if(!fallback&&navigator.share&&(!navigator.canShare||navigator.canShare(payload))){await navigator.share(payload);record('share','native');}
+    else {await navigator.clipboard.writeText(code+'\n'+url);share.setAttribute('aria-label','공유 링크 복사 완료');share.title='공유 링크 복사 완료';delete share.dataset.ncpShareFallback;record('share','clipboard');}
    }catch(error){if(error.name!=='AbortError'){
     share.dataset.ncpShareError=error.name||'Error';share.dataset.ncpShareFallback='true';
     const message=fallback?'링크 복사 실패 · 다시 시도':'공유 링크 복사 · 다시 누르세요';
@@ -42,6 +43,7 @@
   button.disabled=true;
   try{
    await navigator.clipboard.writeText(button.dataset.ncpCopy||'');
+   record('coupon_copy','clipboard');
    mark(button);try{localStorage.setItem(key(button),'1');}catch{}
    if(status)status.textContent='코드를 복사했습니다.';
   }catch{

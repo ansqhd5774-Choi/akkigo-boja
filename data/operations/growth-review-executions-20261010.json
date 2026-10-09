@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "timezone": "Asia/Seoul",
+  "status": "PARTIAL",
+  "automationCreated": false,
+  "recurringContract": {
+    "daily": "Incident and urgent coupon changes",
+    "weekly": "Search state, errors and coupon evidence",
+    "monthly": "Performance, duplication and UX",
+    "firstReviewRecorded": true,
+    "repeatExecutions": 0
+  },
+  "checks": [
+    {
+      "area": "coupon_evidence_review",
+      "evidence": "docs/COUPON_SOURCE_REVIEW_20261010.md",
+      "evidenceReuse": true,
+      "result": "PARTIAL_WITH_RECORDED_ISSUES",
+      "scope": "Official-source corrections published to two existing articles; source gaps and QTCC conflict remain recorded"
+    },
+    {
+      "area": "technical_public_health",
+      "evidence": "data/operations/search-consistency-evidence-20261010.json",
+      "evidenceReuse": true,
+      "result": "PASS",
+      "scope": "77 public pages and public sitemap/feed consistency; provider ledger unverified"
+    },
+    {
+      "area": "internal_links",
+      "evidence": "data/operations/public-link-evidence-20261010.json",
+      "evidenceReuse": true,
+      "result": "PASS",
+      "scope": "177 public internal URLs; external links and Google soft404 unverified"
+    },
+    {
+      "area": "analytics_installation",
+      "evidenceReuse": false,
+      "result": "MISSING_IN_STATIC_HTML",
+      "url": "https://lsifl.blogspot.com/",
+      "httpStatus": 200,
+      "googleAnalyticsScript": false,
+      "measurementIdConfigured": false,
+      "dynamicInjection": "UNVERIFIED"
+    },
+    {
+      "area": "monthly_performance",
+      "result": "DEFERRED",
+      "reason": "Real query and before/after observation samples unavailable",
+      "impressions": null,
+      "clicks": null,
+      "couponCopies": null
+    },
+    {
+      "area": "promotion_execution",
+      "result": "NOT_EXECUTED",
+      "reason": "User confirmed no existing promotion account; new account signup not executed",
+      "publicPostUrl": null
+    }
+  ]
+}

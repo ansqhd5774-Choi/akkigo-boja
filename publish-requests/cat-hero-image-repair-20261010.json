@@ -1,0 +1,7 @@
+{
+  "articleKey": "cat-hero-codes-202610",
+  "approved": true,
+  "existingOnly": true,
+  "requestedAt": "2026-10-10",
+  "reason": "승인된 63개 개선: 공식 앱 이미지 URL의 인코딩/중복 리사이즈 오류 수정. 기존 postId/URL 보존."
+}
