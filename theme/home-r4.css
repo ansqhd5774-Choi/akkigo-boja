@@ -86,5 +86,12 @@
 @media(max-width:600px){#ncp-game-hub .ncp-game-heart{bottom:5px}}
 
 /* Shared brand mark: readable name plus the registered favicon. */
+/* Home categories each occupy one paginated card row. */
+#ncp-home-r4 .ncp-r4-category-row{margin-bottom:32px}
+#ncp-home-r4 .ncp-r4-row-list{grid-template-rows:1fr}
+#ncp-home-r4 .ncp-r4-status:empty{display:none}
+#ncp-home-r4 .ncp-r4-category-row .ncp-r4-pager{margin-top:10px}
+#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) h3{font-size:14px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:600px){#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-cover{aspect-ratio:1;height:auto}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) .ncp-r4-card-body{padding:7px 5px}#ncp-home-r4 .ncp-r4-row-list .ncp-r4-card:not(.ncp-game-visual) h3{font-size:11px}}
 .ncp-r4 .ncp-r4-logo{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;white-space:nowrap;font-size:24px;line-height:1.2;letter-spacing:-.6px}.ncp-r4 .ncp-r4-brand-icon{display:block;width:32px;height:32px;flex:0 0 32px;border-radius:8px;object-fit:contain}
 @media(max-width:600px){.ncp-r4 .ncp-r4-logo{font-size:20px}}

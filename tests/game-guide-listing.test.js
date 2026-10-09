@@ -21,7 +21,8 @@ test('포트블록스는 게임 라벨 글이지만 쿠폰 카탈로그 현재 �
 });
 
 test('홈의 게임 목록은 LIVE Blogger feed를 카탈로그 날짜 검증에 의존하지 않고 표시한다',()=>{
-  assert.match(home,/feeds\/posts\/default\?alt=json/);
+  assert.match(home,/window\.ncpFeed\(category\)/);
+  assert.match(home,/feeds\/posts\/default\/-\//);
   assert.match(home,/guideCodeCount\(entry\)/);
   assert.match(home,/data-ncp-copy=/);
   assert.doesNotMatch(home,/currentBrands|filter\(eligible\)|\/coupons\/catalog/);

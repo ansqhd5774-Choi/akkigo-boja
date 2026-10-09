@@ -34,13 +34,14 @@
     body.append(heading);article.append(body);if(game)addHeart(article,identity.id);return article;
   }
   function paginate(container,items,label){
-    if(!items.length)return;const size=12,total=Math.ceil(items.length/size);let page=0;
+    if(!items.length)return;const pageSize=()=>innerWidth<=600?4:innerWidth<=900?3:6;let size=pageSize(),total=Math.ceil(items.length/size),page=0;
     const controls=document.createElement('div');controls.className='ncp-r4-pager';controls.setAttribute('aria-label',label+' 페이지');
     const previous=document.createElement('button'),next=document.createElement('button'),position=document.createElement('span');
-    previous.type=next.type='button';previous.innerHTML=window.ncpIcons['chevron-left'];next.innerHTML=window.ncpIcons['chevron-right'];previous.setAttribute('aria-label',label+' 이전 12개');next.setAttribute('aria-label',label+' 다음 12개');position.setAttribute('aria-live','polite');
+    previous.type=next.type='button';previous.innerHTML=window.ncpIcons['chevron-left'];next.innerHTML=window.ncpIcons['chevron-right'];previous.setAttribute('aria-label',label+' 이전 목록');next.setAttribute('aria-label',label+' 다음 목록');position.setAttribute('aria-live','polite');
     function render(){container.replaceChildren(...items.slice(page*size,(page+1)*size));previous.disabled=page===0;next.disabled=page===total-1;position.textContent=(page+1)+' / '+total;position.setAttribute('aria-label',(page+1)+'페이지, 전체 '+total+'페이지');}
     let moving=false;async function move(direction){const target=page+direction;if(moving||target<0||target>=total)return;moving=true;previous.disabled=next.disabled=true;const focusLost=container.contains(document.activeElement);try{if(typeof container.animate==='function'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){try{await container.animate([{transform:'translateX(0)',opacity:1},{transform:'translateX('+(-direction*24)+'px)',opacity:0}],{duration:140,easing:'ease-in'}).finished;}catch{}page=target;render();previous.disabled=next.disabled=true;try{await container.animate([{transform:'translateX('+(direction*32)+'px)',opacity:0},{transform:'translateX(0)',opacity:1}],{duration:240,easing:'cubic-bezier(.22,1,.36,1)'}).finished;}catch{}}else{page=target;render();}if(focusLost)container.focus({preventScroll:true});}finally{moving=false;previous.disabled=page===0;next.disabled=page===total-1;}}
     previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+    window.addEventListener('resize',()=>{const updated=pageSize();if(updated===size)return;const start=page*size;size=updated;total=Math.ceil(items.length/size);page=Math.min(Math.floor(start/size),total-1);render();});
     container.tabIndex=0;container.setAttribute('aria-label',label+' 목록');
     container.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();move(event.key==='ArrowRight'?1:-1);}});
     let gesture,suppressClickUntil=0;container.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse')gesture={id:event.pointerId,x:event.clientX,y:event.clientY};});
@@ -51,10 +52,22 @@
   }
   root.querySelectorAll('.ncp-r4-section-head a').forEach(link=>{link.textContent='전체 보기';link.classList.add('ncp-r4-view-all');});
   try{
-    const feedEntries=window.ncpFeed?await window.ncpFeed():await fetch('/feeds/posts/default?alt=json&max-results=150&orderby=updated',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
-    const entries=feedEntries.filter(entry=>!entry.category?.some(label=>label.term==='게임')||guideCodeCount(entry)>0);const games=root.querySelector('.ncp-r4-game-list');
-    const gameCards=[],seen=new Set();for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){const labels=(entry.category||[]).map(x=>x.term);if(labels.includes('게임')){const name=window.ncpResolveGame(entry).id;if(!seen.has(name)){const item=card(entry,true,guideCodeCount(entry));if(item){gameCards.push(item);seen.add(name);}}}}
-    games.closest('section')?.querySelector('h2')?.setAttribute('title','최신 등록순');paginate(games,gameCards,'게임 쿠폰');
-    status.textContent='';if(!games.children.length)status.textContent='현재 표시 기준에 맞는 게임 쿠폰이 없습니다.';
-  }catch{status.textContent='목록을 불러오지 못했습니다. 카테고리 또는 검색으로 쿠폰을 찾아주세요.';}
+    await Promise.all([...root.querySelectorAll('[data-ncp-home-category]')].map(async section=>{
+      const category=section.dataset.ncpHomeCategory,game=category==='게임',items=[],seen=new Set();
+      try{
+      const feedEntries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150&orderby=updated',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
+      const entries=feedEntries.filter(entry=>!game||guideCodeCount(entry)>0);
+      for(const entry of [...entries].sort((a,b)=>(Date.parse(b.published?.$t)||0)-(Date.parse(a.published?.$t)||0))){
+        if(!entry.category?.some(label=>label.term===category))continue;
+        const key=game?window.ncpResolveGame(entry).id:entry.id?.$t;
+        if(seen.has(key))continue;
+        const item=game?card(entry,true,guideCodeCount(entry)):card(entry,false,0);
+        if(item){items.push(item);seen.add(key);}
+      }
+      section.querySelector('h2').setAttribute('title','최신 등록순');
+      paginate(section.querySelector('.ncp-r4-row-list'),items,category+' 쿠폰');
+      section.querySelector('[role="status"]').textContent=items.length?'':'등록된 글이 없습니다.';
+      }catch{section.querySelector('[role="status"]').textContent='목록을 불러오지 못했습니다. 전체 보기 또는 검색으로 찾아주세요.';}
+    }));
+  }catch{root.querySelectorAll('.ncp-r4-category-row [role="status"]').forEach(el=>{el.textContent='목록을 불러오지 못했습니다. 전체 보기 또는 검색으로 찾아주세요.';});}
 })();
