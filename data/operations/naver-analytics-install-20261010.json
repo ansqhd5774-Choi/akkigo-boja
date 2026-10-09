@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-09T20:34:37.536Z",
+  "siteUrl": "https://lsifl.blogspot.com/",
+  "siteId": "1269dd838904e20",
+  "bloggerSaved": true,
+  "publicRuntime": {
+    "result": {
+      "type": "string",
+      "value": "{\"siteId\":\"1269dd838904e20\",\"wcsLoaded\":true,\"wcsDoAvailable\":true,\"resources\":[{\"origin\":\"https://wcs.pstatic.net\",\"path\":\"/wcslog.js\",\"initiatorType\":\"script\"},{\"origin\":\"https://wcs.naver.com\",\"path\":\"/b\",\"initiatorType\":\"beacon\"}]}"
+    }
+  },
+  "dashboardAggregationVerified": false,
+  "postRuntime": {
+    "result": {
+      "type": "string",
+      "value": "{\"siteId\":\"1269dd838904e20\",\"scriptCount\":1,\"wcsLoaded\":true,\"beaconObserved\":true}"
+    }
+  },
+  "postUrl": "https://lsifl.blogspot.com/2026/10/blog-post_877.html"
+}

@@ -1,0 +1,6 @@
+<!-- AKKIGO NAVER ANALYTICS: keep across theme builds. -->
+<script type='text/javascript'>//<![CDATA[
+window.wcs_add = window.wcs_add || {};
+window.wcs_add['wa'] = '1269dd838904e20';
+//]]></script>
+<script type='text/javascript' src='https://wcs.pstatic.net/wcslog.js' async='async' onload='if(window.wcs){wcs_do();}'></script>
