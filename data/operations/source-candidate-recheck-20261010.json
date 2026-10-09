@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-09T20:01:08.041Z",
+  "scope": "SOURCE_CANDIDATE_BODY_RECHECK_NOT_CODE_VALIDATION",
+  "items": [
+    {
+      "url": "https://www.linegames.org/en/royal-match-codes/",
+      "httpStatus": 200,
+      "title": "Royal Match Codes, Game Guide and Details | LINEGames",
+      "screenedCodes": [
+        "RM2024",
+        "A1vRZpEShDcp"
+      ],
+      "decision": "SCREENED_STRINGS_NOT_OBSERVED_IN_RESPONSE",
+      "claimVerified": false
+    },
+    {
+      "url": "https://www.linegames.org/az/top-force-codes/",
+      "httpStatus": 200,
+      "title": "Top Force kodları · Oyun məlumatları | LINEGames",
+      "screenedCodes": [
+        "TOPFORCE777"
+      ],
+      "decision": "SCREENED_STRINGS_NOT_OBSERVED_IN_RESPONSE",
+      "claimVerified": false
+    }
+  ],
+  "policy": "HTTP200 and matching game title alone do not verify the listed codes"
+}

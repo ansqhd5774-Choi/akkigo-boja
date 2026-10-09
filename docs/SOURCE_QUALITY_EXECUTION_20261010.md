@@ -72,3 +72,7 @@ Wayback 공식 available API는 두404 URL에HTTP200,available=null 반환. 이 
 MLBxPOKEMONGO 공식 원문과 교환 종료2025-09-28 확인, 신규 원문 연결1건. MLBxPOKEMONGO2026에는 근거를 전용하지 않음. 연결 누적253건·미확인248건(계정 성공 검증 건수 아님). 최초 게시일은 현재 원문 본문에서 직접 확인되지 않아 null 보존. 공식 근거 미확보5개 문자열은 미확인 유지.
 점검 원장467URL. bounded 본문 조회4건 추가, 누적12건. 짧은 HTML4곳은 실제 브라우저에서 공식 커뮤니티 탐색 또는 코드 등록 양식 표시를 확인해 검토 기록 보존. 로그인·실제 교환 미실행.
 Verify37983627539·Layout37983627511·Publish37983627570·Worker37983720550 SUCCESS. 기존postId/URL 보존, publicVerified=true, 독립 공개조회1/1 오류0. 실제 공개 브라우저에서 종료 상태·공식 링크 표시 확인. 증거 output/pokemon-mlb-source-20261010.png.
+
+## 추가 본문·후보 검토 (2026-10-10)
+bounded 신규 본문12URL 조회, checkpoint 누적24URL. 추가 조회 중403접근제한2곳, 짧은HTML4곳은 내용 미확인 유지. 다른6곳은 자동 진단 플래그 없음이며 쿠폰 사실·실사용 성공으로 승격하지 않음.
+LINEGames 로얄매치·탑포스 후보 본문 재확인: HTTP200 및 대상 게임 제목 표시, RM2024/A1vRZpEShDcp/TOPFORCE777 문자열은 응답에서 미관찰. 해당 문자열의 근거 연결·삭제·만료 변경 미실행. 근거 없는 수치 개선을 하지 않음. data/operations/source-candidate-recheck-20261010.json.
