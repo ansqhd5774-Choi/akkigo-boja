@@ -4,6 +4,7 @@ import coupons from '../data/coupons.json' with { type: 'json' };
 import articles from '../data/articles.json' with { type: 'json' };
 import supplementalArticles from '../data/articles-supplemental.json' with { type: 'json' };
 import {catHeroArticle} from './cat-hero-article.js';
+import {malhaevocaArticle} from './malhaevoca-article.js';
 import {duolingoArticle} from './duolingo-article.js';
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
@@ -27,7 +28,7 @@ export default {
       let input;
       try {input=await request.json();}catch{return Response.json({error:'INVALID_JSON'},{status:400});}
       try {
-        const catalog=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle];
+        const catalog=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle];
         const snapshot=await articleSnapshot(input.articleKey,catalog);
         if(input.readOnlyLive===true) snapshot.live=await probeExistingArticle(env,input.articleKey,catalog);
         return Response.json(snapshot,{headers:{'Cache-Control':'no-store'}});
@@ -43,9 +44,9 @@ export default {
       let input;
       try { input=await request.json(); } catch { return Response.json({error:'INVALID_JSON'},{status:400}); }
       try {
-        const source=await articleSnapshot(input.articleKey,[...articles,...supplementalArticles,catHeroArticle,duolingoArticle]);
+        const source=await articleSnapshot(input.articleKey,[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle]);
         if(!source.approved || source.postSha256!==input.postSha256)throw new Error('ARTICLE_SNAPSHOT_MISMATCH');
-        const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles,catHeroArticle,duolingoArticle],fetch,{requireUnchanged:input.requireUnchanged===true,existingOnly:input.existingOnly===true});
+        const result=await publishApprovedArticle(env,input.articleKey,[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle],fetch,{requireUnchanged:input.requireUnchanged===true,existingOnly:input.existingOnly===true});
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {
         const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
