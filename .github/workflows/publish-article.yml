@@ -61,6 +61,9 @@ jobs:
       - name: Validate Blogger XML
         if: steps.verification.outputs.reused != 'true'
         run: node tools/validate-theme-xml.mjs
+      - name: Require responsive coupon layout before publication
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/run-layout-checks.mjs
       - name: Require verified source snapshot
         env:
           VERIFIED_SOURCE_SHA: ${{ steps.verification.outputs.verified_sha || github.sha }}

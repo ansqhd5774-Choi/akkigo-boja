@@ -54,6 +54,8 @@ jobs:
           git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - name: Validate Blogger XML
         run: node tools/validate-theme-xml.mjs
+      - name: Require responsive coupon layout before verification certificate
+        run: node tools/run-layout-checks.mjs
       - name: Mark exact verified source
         id: verified
         run: node tools/verification-certificate.mjs

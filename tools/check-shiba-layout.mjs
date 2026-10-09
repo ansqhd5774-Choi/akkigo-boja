@@ -5,7 +5,8 @@ const width=Number(process.argv[2]),output=process.argv[3];
 if(![390,1440].includes(width)||!output)throw Error('LAYOUT_FIXTURE_ARGUMENTS');
 // Exercise one shared template with latest, historical years, undated, empty,
 // and a long list. Exact source/code preservation is enforced by the DOM gate.
-const keys=['seven-knights-rebirth-codes-202610','random-dice-2-codes-202610','infinite-stairs-codes-202610','maplestory-idle-codes-202610','brawl-stars-rewards-202610','coop-td-together-codes-202610'];
+const keys=[...primary,...supplemental].filter(a=>a.post?.content?.includes('data-ncp-template="game-period-tabs-r1"')).map(a=>a.articleKey);
+if(!keys.length)throw Error('LAYOUT_PERIOD_ARTICLES_MISSING');
 const content=keys.map(key=>[...primary,...supplemental].find(a=>a.articleKey===key)?.post.content||(()=>{throw Error('LAYOUT_ARTICLE_MISSING')})()).join('\n');
 const css=['theme/article-compact.css','theme/article-typography.css','theme/coupon-copy.css'].map(p=>readFileSync(p,'utf8')).join('\n');
 const copy=readFileSync('theme/coupon-copy.js','utf8');
@@ -34,6 +35,10 @@ const check=`
  };
  for(const article of document.querySelectorAll('article[data-ncp-template]')){
   const choices=[...article.querySelectorAll('.ncp-period-option>input')];
+  for(const badge of article.querySelectorAll('.ncp-period-option>label>small')){
+   const style=getComputedStyle(badge),rect=badge.getBoundingClientRect();
+   if(parseFloat(style.fontSize)<15||rect.height<28||rect.width<28)failures.push('period-count-readability');
+  }
   if(!choices[0]?.checked||choices[0].value!=='latest')failures.push('default-latest');
   for(const choice of choices){
    choice.click();const panel=document.getElementById(choice.getAttribute('aria-controls'));

@@ -8,6 +8,10 @@ on:
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
       - theme/article-compact.css
+      - theme/coupon-copy.js
+      - theme/coupon-copy.css
+      - data/articles.json
+      - data/articles-supplemental.json
       - theme/article-typography.css
       - src/game-period-article.js
       - data/game-period-articles.json
@@ -22,6 +26,10 @@ on:
       - akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
       - tools/check-shiba-layout.mjs
       - theme/article-compact.css
+      - theme/coupon-copy.js
+      - theme/coupon-copy.css
+      - data/articles.json
+      - data/articles-supplemental.json
       - theme/article-typography.css
       - src/game-period-article.js
       - data/game-period-articles.json
