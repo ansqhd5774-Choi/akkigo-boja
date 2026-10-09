@@ -5,6 +5,8 @@ on:
     branches: [codex/blogger-worker-r1]
     paths:
       - tools/check-public-seo.mjs
+      - tools/audit-search-foundation.mjs
+      - src/search-audit.js
       - .github/workflows/public-seo.yml
 permissions:
   contents: read
@@ -22,3 +24,11 @@ jobs:
         with:
           node-version: '24'
       - run: node tools/check-public-seo.mjs
+      - name: Audit public article metadata and static discovery
+        if: always()
+        run: node tools/audit-search-foundation.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: search-foundation-audit
+          path: output/search-foundation-audit.json

@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.3.3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
+    <meta content='737bf9234bbc9497b06b9b7c1dd8d695b71ec2f5' name='naver-site-verification'/>
+    <meta content='AFDF7C316680F021B7AF4DCBA4C89062' name='msvalidate.01'/>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <!-- AKKIGO SEO: page-specific titles; keep article titles unchanged. -->
     <title><b:if cond='data:view.isHomepage'>아끼고 보자 | 게임 쿠폰·할인코드 모음<b:elseif cond='data:blog.searchLabel'/><data:blog.searchLabel/> 쿠폰·할인 안내 | 아끼고 보자<!-- GAME_SEARCH_TITLE_BRANCHES --><b:else/><data:view.title.escaped/></b:if></title>
@@ -4031,5 +4033,4 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
     <b:template-script async='true' name='indie' version='1.0.0'/>
   </body>
 </html>
-
 
