@@ -1,0 +1,124 @@
+{
+  "articleKey": "brawl-stars-rewards-202610",
+  "gameName": "브롤스타즈",
+  "checkedAt": "2026-10-09",
+  "totalStoreCodes": 3,
+  "existingVoucherLinks": 5,
+  "accountRedemptionVerified": 0,
+  "originalDatePolicy": "sourcePublishedAt is dated source article/video publication; not scrape date, not inferred earliest-ever issuance",
+  "keywords": [
+    "브롤스타즈 쿠폰",
+    "브롤스타즈 QR코드",
+    "브롤스타즈 무료보상",
+    "브롤스타즈 쿠폰 입력",
+    "브롤스타즈 쿠폰 2026년 10월",
+    "Brawl Stars codes October 2026",
+    "Brawl Stars QR codes"
+  ],
+  "hashtags": [
+    "#브롤스타즈",
+    "#브롤스타즈쿠폰",
+    "#브롤스타즈QR코드",
+    "#브롤스타즈무료보상",
+    "#BrawlStars",
+    "#BrawlStarsCodes"
+  ],
+  "measuredVolume": null,
+  "measuredCTR": null,
+  "measurementNote": "GSC Wizard payment_required, no invented search metrics",
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=pJ-IRC25qxg",
+      "publishedAt": "2025-05-14",
+      "authority": "Supercell creator",
+      "finding": "video description mentions ITSSUSHITIME, SAKURASPIKE!, BOBAPARTYYYY"
+    },
+    {
+      "url": "https://www.spacemoney.com.br/entretenimento/codigos-brawl-stars-outubro-2026/",
+      "publishedAt": "2026-10-01",
+      "authority": "news",
+      "finding": "three store codes reported in October"
+    },
+    {
+      "url": "https://mobi.gg/en/codes/brawl-stars-qr-codes/",
+      "publishedAt": "2026-10-02",
+      "authority": "games media",
+      "finding": "27 QR rewards index; first per-QR issuance dates not supplied"
+    },
+    {
+      "url": "https://www.pockettactics.com/brawl-stars/qr-codes",
+      "publishedAt": "2026-10-08",
+      "authority": "games media",
+      "finding": "QR list and creator codes"
+    },
+    {
+      "url": "https://timesaver.gg/blog/brawl-stars-codes-october-2026",
+      "publishedAt": "2026-10-09",
+      "authority": "games guide",
+      "finding": "October available reports, actual account tests not independently confirmed"
+    },
+    {
+      "url": "https://support.supercell.com/supercell-store/en/articles/what-is-the-supercell-store-4.html",
+      "publishedAt": null,
+      "authority": "OFFICIAL",
+      "finding": "Redeem a Store Code process, creator codes distinct"
+    }
+  ],
+  "storeCodes": [
+    {
+      "code": "ITSSUSHITIME",
+      "status": "UNVERIFIED",
+      "sourcePublishedAt": "2025-05-14",
+      "reward": "Sushi-event cosmetics"
+    },
+    {
+      "code": "SAKURASPIKE!",
+      "status": "UNVERIFIED",
+      "sourcePublishedAt": "2025-05-14",
+      "reward": "Spike-related cosmetics"
+    },
+    {
+      "code": "BOBAPARTYYYY",
+      "status": "UNVERIFIED",
+      "sourcePublishedAt": "2025-05-14",
+      "reward": "Boba-event cosmetics"
+    }
+  ],
+  "existingOfficialVoucherLinks": [
+    {
+      "reward": "Candle Spray",
+      "url": "https://link.brawlstars.com/en/voucher/04b98c55-f411-4656-bbec-ef47b46ef1fa/",
+      "sourcePublishedAt": null,
+      "redemptionVerified": false,
+      "previousLinkAccessibleAt": "2026-10-07"
+    },
+    {
+      "reward": "Nori Box",
+      "url": "https://link.brawlstars.com/en/voucher/04b4d1af-3493-4b39-8850-b24295b8e141/",
+      "sourcePublishedAt": null,
+      "redemptionVerified": false,
+      "previousLinkAccessibleAt": "2026-10-07"
+    },
+    {
+      "reward": "Thief Pin",
+      "url": "https://link.brawlstars.com/en/voucher/7bae5a2d-2afa-4e58-8f9b-dab2d987834c/",
+      "sourcePublishedAt": null,
+      "redemptionVerified": false,
+      "previousLinkAccessibleAt": "2026-10-07"
+    },
+    {
+      "reward": "Bolt Box",
+      "url": "https://link.brawlstars.com/en/voucher/5f6bd4ef-c965-462f-aa87-49cf3ba05cc2/",
+      "sourcePublishedAt": null,
+      "redemptionVerified": false,
+      "previousLinkAccessibleAt": "2026-10-07"
+    },
+    {
+      "reward": "Bulb Pin",
+      "url": "https://link.brawlstars.com/en/voucher/fad039a8-4850-4a09-b1dd-f673afec5aa7/",
+      "sourcePublishedAt": null,
+      "redemptionVerified": false,
+      "previousLinkAccessibleAt": "2026-10-07"
+    }
+  ]
+}
