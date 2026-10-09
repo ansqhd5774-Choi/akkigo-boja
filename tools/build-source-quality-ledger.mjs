@@ -5,9 +5,12 @@ const audit=await read('output/external-source-link-audit.json');
 const impact=await read('data/operations/public-source-impact-20261010.json');
 const gap=await read('data/operations/source-gap-review-20261010.json');
 const catalog=[...await read('data/articles.json'),...await read('data/articles-supplemental.json')];
-// Newly observed official page was absent from the original 465-URL audit.
-const officialFollowup='https://game.naver.com/lounge/Trickcal/board/detail/8271053';
-if(!audit.items.some(i=>i.url===officialFollowup))audit.items.push({url:officialFollowup,finalUrl:officialFollowup,checkedAt:'2026-10-10',state:'BROWSER_BODY_OBSERVED',contentObservedAt:'2026-10-10'});
+// Add newly linked evidence to monitoring without inventing an HTTP audit result.
+for(const article of catalog)for(const record of article.source?.gamePeriodModel?.records||[])for(const source of record.sources||[]){
+ if(!source.url||!source.checkedAt||!['OFFICIAL_CODE_CONTEXT','THIRD_PARTY_CODE_MENTION'].includes(source.referenceType))continue;
+ const url=source.url.replaceAll('&amp;','&');
+ if(!audit.items.some(i=>i.url===url))audit.items.push({url,checkedAt:source.checkedAt,state:'REFERENCE_CONTEXT_OBSERVED_HTTP_UNAUDITED',contentObservedAt:source.checkedAt});
+}
 const records=audit.items.map(item=>({
  sourceId:createHash('sha256').update(item.url).digest('hex').slice(0,20),
  originalUrl:item.url,finalUrl:item.finalUrl||null,

@@ -84,6 +84,84 @@
         "reason": "JavaScript 렌더링 전 짧은 HTML을 실제 페이지 장애로 판단하지 않음",
         "reviewedAt": "2026-10-10"
       }
+    },
+    {
+      "sourceId": "2f9998374d84b77f8314",
+      "url": "https://cpbv-community.com2us.com/board/all/44252",
+      "checkedAt": "2026-10-09T19:51:02.843Z",
+      "nextReviewAt": "2026-10-16T19:51:02.846Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "78e7cb6f51e782c583e9e1fc0ef12bc5adf879b4146a09c75593cfdc59d66863",
+      "httpStatus": 200,
+      "finalUrl": "https://cpbv-community.com2us.com/board/all/44252",
+      "title": "컴투스프로야구V26 공식 커뮤니티",
+      "contentHash": "78e7cb6f51e782c583e9e1fc0ef12bc5adf879b4146a09c75593cfdc59d66863",
+      "textLength": 4088,
+      "flags": [],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "4f8cf217a71018eb9536",
+      "url": "https://coupon.a.prod.service.trickcal.io/",
+      "checkedAt": "2026-10-09T19:51:02.913Z",
+      "nextReviewAt": "2026-10-16T19:51:02.913Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "3d199f5fca31a63a604a64d7cc7396b902773dc62f06bc9aa8cc99ac3315d8a5",
+      "httpStatus": 200,
+      "finalUrl": "https://coupon.a.prod.service.trickcal.io/",
+      "title": "Trickcal Revive",
+      "contentHash": "3d199f5fca31a63a604a64d7cc7396b902773dc62f06bc9aa8cc99ac3315d8a5",
+      "textLength": 200,
+      "flags": [],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "5eab526986821ebd759d",
+      "url": "https://gamereviewkr.tistory.com/48",
+      "checkedAt": "2026-10-09T19:51:03.054Z",
+      "nextReviewAt": "2026-10-16T19:51:03.054Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": "46b6c664157f60cc47ba68d7b4cb2ee38ebe74a3512686b1f598eae975032161",
+      "httpStatus": 200,
+      "finalUrl": "https://gamereviewkr.tistory.com/48",
+      "title": "트릭컬 리바이브 쿠폰 코드 2개 정리, 만료 코드까지 (2026년 9월 29일 확인)",
+      "contentHash": "46b6c664157f60cc47ba68d7b4cb2ee38ebe74a3512686b1f598eae975032161",
+      "textLength": 4947,
+      "flags": [],
+      "missingCodes": [],
+      "claimVerified": false,
+      "accountInputVerified": false
+    },
+    {
+      "sourceId": "4bb07b97ea10c09e33d5",
+      "url": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+      "checkedAt": "2026-10-09T19:51:03.109Z",
+      "nextReviewAt": "2026-10-16T19:51:03.109Z",
+      "consecutiveTransientFailures": 0,
+      "lastObservedBodyHash": null,
+      "httpStatus": 200,
+      "finalUrl": "https://game.naver.com/lounge/Trickcal/board/detail/8271053",
+      "title": "네이버 게임",
+      "contentHash": "a0db3ca446c11e49dcb5c7ed2d6ae8fd06df5dcc02d50b79d2e162501197b8be",
+      "textLength": 53,
+      "flags": [
+        "BODY_TOO_SHORT_REVIEW",
+        "EXPECTED_CODE_NOT_OBSERVED"
+      ],
+      "missingCodes": [
+        "GOOGLETOP3"
+      ],
+      "claimVerified": false,
+      "accountInputVerified": false,
+      "manualReview": {
+        "decision": "BROWSER_RENDERED_OFFICIAL_NOTICE_CONFIRMED",
+        "reviewedAt": "2026-10-10",
+        "reason": "이전 공식 본문 직접 확인 증거 유지. JavaScript 렌더링 전 HTML에 코드가 없다는 자동 조회를 실제 코드 삭제로 해석하지 않음"
+      }
     }
   ]
 }
