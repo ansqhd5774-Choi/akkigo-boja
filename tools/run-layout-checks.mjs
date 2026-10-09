@@ -11,6 +11,6 @@ for(const width of [390,1440])for(const [kind,height,budget,marker,label] of [['
   execFileSync(process.execPath,[kind==='layout'?'tools/check-shiba-layout.mjs':kind==='feed'?'tools/check-shiba-feed-layout.mjs':'tools/check-site-tools-layout.mjs',String(width),fixture],{stdio:'inherit'});
   const html=kind==='site'?await renderSiteFixture(chrome,fixture,width,process.env.RUNNER_TEMP):execFileSync(chrome,['--headless=new','--disable-gpu','--force-device-scale-factor=1',`--user-data-dir=${join(process.env.RUNNER_TEMP,`layout-chrome-${kind}-${width}`)}`,`--window-size=${width},${height}`,`--virtual-time-budget=${budget}`,'--dump-dom',pathToFileURL(fixture).href],{encoding:'utf8',maxBuffer:4*1024*1024,timeout:60000,stdio:['ignore','pipe','pipe']});
   writeFileSync(fixture+'.dump.html',html);
-  if(!html.includes(`${marker}="PASS"`))throw Error(`${label}_FAILED_${width}`);
+  if(!html.includes(`${marker}="PASS"`))throw Error(`${label}_FAILED_${width}: ${html.match(/data-layout-failures="([^"]*)"/)?.[1]||"see fixture"}`);
   console.log(`${label}_${width}`);
 }
