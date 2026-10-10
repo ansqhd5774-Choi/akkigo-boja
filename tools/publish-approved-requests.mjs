@@ -8,13 +8,14 @@ import {inflearnArticle} from '../src/inflearn-article.js';
 import {maaltalkArticle} from '../src/maaltalk-article.js';
 import {ip4uArticle} from '../src/ip4u-article.js';
 import {hotvpnArticle} from '../src/hotvpn-article.js';
+import {twofastsArticle} from '../src/twofasts-article.js';
 import {readFile} from 'node:fs/promises';
 import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
-const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle,hotvpnArticle];
+const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle,hotvpnArticle,twofastsArticle];
 const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 const token=process.env.GITHUB_OIDC_TOKEN;
