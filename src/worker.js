@@ -8,6 +8,7 @@ import {malhaevocaArticle} from './malhaevoca-article.js';
 import {duolingoArticle} from './duolingo-article.js';
 import {tilesSurviveArticle} from './tiles-survive-article.js';
 import {rokebiArticle} from './rokebi-article.js';
+import {frombioArticle} from './frombio-article.js';
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
@@ -17,7 +18,7 @@ import { publishApprovedArticle, probeExistingArticle } from './articles.js';
 import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
 
-const articleCatalogBase=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle];
+const articleCatalogBase=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle];
 const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 export default {
