@@ -1,0 +1,164 @@
+{
+  "articleKey": "rokebi-promo-202610",
+  "target": "로밍도깨비",
+  "category": "유심·로밍",
+  "checkedAt": "2026-10-10",
+  "updateMode": "EXISTING_ARTICLE_PATCH_KEEP_URL",
+  "publicUrl": "https://lsifl.blogspot.com/2026/10/2026-10-5-5.html",
+  "benefits": [
+    {
+      "name": "WELCOME COUPON",
+      "type": "ACCOUNT_COUPON",
+      "value": "5%",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "신규가입 후 계정 쿠폰",
+      "target": "신규가입자·전상품",
+      "sourceUrl": "https://apps.apple.com/kr/app/id1525664178",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "친구초대",
+      "type": "REFERRAL",
+      "value": "500캐시씩",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "앱 초대 링크",
+      "target": "친구·추천인",
+      "sourceUrl": "https://apps.apple.com/kr/app/id1525664178",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "더블팩",
+      "type": "BUNDLE_DISCOUNT",
+      "value": "5%",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "동일 eSIM 2개 묶음",
+      "target": "지원 상품",
+      "sourceUrl": "https://www.rokebi.com/esim/463",
+      "sourcePublishedAt": "2025-11-28",
+      "expiry": null
+    },
+    {
+      "name": "신세계면세점",
+      "type": "PARTNER_LINK",
+      "value": "5%",
+      "authority": "PARTNER",
+      "status": "ACTIVE",
+      "method": "신세계면세점 온라인몰 전용 링크",
+      "target": "신세계면세점 온라인 회원",
+      "sourceUrl": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260378361",
+      "sourcePublishedAt": null,
+      "eventStart": "2026-03-19",
+      "expiry": "2026-12-31"
+    },
+    {
+      "name": "오키투어",
+      "type": "PARTNER_LINK",
+      "value": "10%",
+      "authority": "PARTNER",
+      "status": "ACTIVE",
+      "method": "오키투어 eSIM/WIFI 전용 링크",
+      "target": "전용 경로 구매",
+      "sourceUrl": "https://www.okitour.co.kr/kr/areas/map",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "승무원 전용 eSIM",
+      "type": "ELIGIBILITY",
+      "value": "맞춤 요금",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "회사 이메일 인증",
+      "target": "지원 14개 항공사 현직 승무원",
+      "sourceUrl": "https://www.rokebi.com/cabin-crew",
+      "sourcePublishedAt": "2026-04-21",
+      "expiry": null
+    },
+    {
+      "name": "멤버십 앱 전용 쿠폰·제휴",
+      "type": "MEMBERSHIP",
+      "value": "등급별",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "앱 멤버십 확인",
+      "target": "회원",
+      "sourceUrl": "https://apps.apple.com/kr/app/id1525664178",
+      "sourcePublishedAt": "2026-06-24",
+      "expiry": null
+    },
+    {
+      "name": "상품별 자동 할인",
+      "type": "AUTO_DISCOUNT",
+      "value": "상품별 상이",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "상품 페이지 자동 반영",
+      "target": "국가·기간·상품별",
+      "sourceUrl": "https://www.rokebi.com/esim/475",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "로깨비톡 무료 통화",
+      "type": "INCLUDED_FREE_USE",
+      "value": "무료 통화",
+      "authority": "OFFICIAL",
+      "status": "ACTIVE",
+      "method": "올데이 플러스 구매",
+      "target": "해당 상품",
+      "sourceUrl": "https://www.rokebi.com/esim/463",
+      "sourcePublishedAt": null,
+      "expiry": null
+    }
+  ],
+  "heldOrUnverified": [
+    {
+      "url": "https://store.rokebi.com/?pt=modetour",
+      "observed": "5~10% 현재 가격 노출",
+      "reason": "제휴사 원문·행사기간 독립 확인 미완료"
+    },
+    {
+      "url": "https://store.rokebi.com/?pt=travelmate",
+      "observed": "10% 현재 가격 노출",
+      "reason": "제휴사 원문·행사기간 독립 확인 미완료"
+    },
+    {
+      "url": "https://store.rokebi.com/?pt=euromate",
+      "observed": "유럽 상품 5% 현재 가격 노출",
+      "reason": "제휴사 원문·행사기간 독립 확인 미완료"
+    },
+    {
+      "observed": "과거 신규가입 1000캐시 제3자 후기",
+      "reason": "현재 공식 App Store의 5% WELCOME COUPON과 조건이 달라 현재 혜택에서 제외"
+    }
+  ],
+  "searchIntent": {
+    "keywords": [
+      "로밍도깨비 쿠폰",
+      "로밍도깨비 할인코드",
+      "로밍도깨비 5% 할인",
+      "로밍도깨비 10% 할인",
+      "로밍도깨비 eSIM",
+      "일본 이심 로밍도깨비",
+      "로밍도깨비 친구초대",
+      "로밍도깨비 더블팩"
+    ],
+    "hashtags": [
+      "#로밍도깨비",
+      "#로밍도깨비쿠폰",
+      "#로밍도깨비할인",
+      "#eSIM",
+      "#이심",
+      "#해외여행",
+      "#일본이심",
+      "#유심로밍"
+    ],
+    "measurement": "실제 검색량·노출률 측정 근거 미확보 — 수치 미기록"
+  },
+  "sourceDatePolicy": "행사 시작일·앱 업데이트일·확인일은 출처 게시일과 분리. 최초 게시일 미확인 시 null 유지."
+}
