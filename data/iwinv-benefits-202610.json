@@ -1,0 +1,123 @@
+{
+  "articleKey": "iwinv-benefits-202610",
+  "checkedAt": "2026-10-10",
+  "urls": {
+    "web": "https://gdn.event.iwinv.kr/webhosting/index.html",
+    "gpu": "https://gdn.event.iwinv.kr/gpu/",
+    "gov": "https://docs.iwinv.kr/blog/2026/05/15/cloud-service-event/",
+    "long": "https://docs.iwinv.kr/blog/2025/09/17/gpu/",
+    "half": "https://docs.iwinv.kr/blog/2026/03/31/iwinv-half-price/",
+    "old": "https://www.iwinv.kr/event/22",
+    "events": "https://www.iwinv.kr/event/"
+  },
+  "offers": [
+    {
+      "name": "웹호스팅 신규",
+      "value": "6개월 50%",
+      "method": "공식 이벤트 페이지 신규 신청",
+      "target": "신규 서비스 1인 1회",
+      "url": "web",
+      "date": null,
+      "detail": "라이트 월 940→470원, 프리미엄 3,740→1,870원, 무제한 5,900→2,950원. 6개월 이후 정상가·조기 종료 가능."
+    },
+    {
+      "name": "GPU 신규 첫달",
+      "value": "50%",
+      "method": "이벤트 신청 버튼 이메일 접수·상담",
+      "target": "신규 고객 1인 1회·최소 1개월",
+      "url": "gpu",
+      "date": null,
+      "detail": "할인 혜택은 월말 V-Pay 마일리지 지급, 최대 2개월 분할. 재고 소진 시 종료. VAT 별도."
+    },
+    {
+      "name": "GPU 1년 장기",
+      "value": "50%",
+      "method": "1년 이상 이용 후 약정·관리자 승인",
+      "target": "GPU 장기이용 고객",
+      "url": "long",
+      "date": "2025-09-17",
+      "detail": "승인일 다음달 1일부터 적용. 약정 후 사양 변경·양도 불가. 신규 첫달 할인과 중복 불명."
+    },
+    {
+      "name": "GPU 이전 트래픽",
+      "value": "무제한 무료",
+      "method": "마이그레이션 일정 협의",
+      "target": "GPU 이전 고객",
+      "url": "gpu",
+      "date": null,
+      "detail": "GPU 마이그레이션에 한정. 모든 일반 트래픽 무제한 무료가 아님."
+    },
+    {
+      "name": "2026 정부 사업",
+      "value": "최대 80% 지원",
+      "method": "2026년 사업 선정 후 신청",
+      "target": "선정 중소기업·6/1~12/31",
+      "url": "gov",
+      "date": "2026-05-15",
+      "detail": "GPU·클라우드·베어메탈·VDI·스토리지·DBMS·보안·매니지드 등. 일반 회원 쿠폰 아님."
+    },
+    {
+      "name": "사업 종료 후 GPU",
+      "value": "30% 지속 할인",
+      "method": "지원사업 참여 고객 상담",
+      "target": "선정 중소기업 GPU 이용자",
+      "url": "gov",
+      "date": "2026-05-15",
+      "detail": "정부 지원 종료 후 적용. 지원율과 단순 합산 불가."
+    },
+    {
+      "name": "사업 종료 후 일반 서비스",
+      "value": "20% 지속 할인",
+      "method": "지원사업 참여 고객 상담",
+      "target": "선정 중소기업 일반 서비스",
+      "url": "gov",
+      "date": "2026-05-15",
+      "detail": "정부 지원 종료 후 적용. 지원율과 단순 합산 불가."
+    },
+    {
+      "name": "웹호스팅 SSL·웹방화벽",
+      "value": "무료 포함",
+      "method": "대상 유료 웹호스팅 이용",
+      "target": "웹호스팅 가입자",
+      "url": "web",
+      "date": null,
+      "detail": "SSL 자동 갱신·웹방화벽 제공. 호스팅 자체 무료 아님."
+    }
+  ],
+  "historical": [
+    {
+      "name": "2025년 클라우드 보급확산 무료 크레딧",
+      "status": "EXPIRED_PERIOD",
+      "url": "old",
+      "publishedAt": null,
+      "start": "2025-04-10",
+      "end": "2025-12-31"
+    }
+  ],
+  "unverified": [
+    "현재 공용 문자열 할인코드",
+    "신규가입 무료 서버 크레딧",
+    "추천인 보너스",
+    "카드사 전용 할인",
+    "학생 인증 할인",
+    "실사용 계정에서의 할인·마일리지 지급"
+  ],
+  "keywords": [
+    "iwinv 쿠폰",
+    "iwinv 할인",
+    "아이윈브이 할인",
+    "iwinv 웹호스팅 50%",
+    "iwinv GPU 서버 할인",
+    "iwinv 반값서버",
+    "iwinv 무료 크레딧",
+    "iwinv 클라우드 지원사업"
+  ],
+  "hashtags": [
+    "#iwinv",
+    "#아이윈브이",
+    "#GPU할인",
+    "#웹호스팅",
+    "#클라우드할인",
+    "#반값서버"
+  ]
+}
