@@ -1,1 +1,11 @@
-export const ohmyzipArticle={articleKey:'ohmyzip-benefits-202610',approvedForPublish:false,post:{title:'오마이집 할인',labels:['해외직구','오마이집'],content:''},source:{url:'https://www.ohmyzip.com/',checkedAt:'2026-10-10'}};
+const official='https://www.ohmyzip.com/index.php';
+const referral='https://www.ohmyzip.com/point/rewardPoints';
+const tracking='https://www.ohmyzip.com/event/tracking-fee-free/';
+const japan='https://www.ohmyzip.com/event/japan-volume-weight-100percent-off-event/';
+const china='https://www.ohmyzip.com/event/volume-weight-exemption-for-china/';
+const tv='https://www.ohmyzip.com/event/flat-rate-shipping-event/fixed-rate-promotion-for-tv-delivery/';
+const germany='https://www.ohmyzip.com/event/flat-rate-shipping-event/nespresso-capsule-and-aptamil-flat-rate-shipping-promotion';
+const prime='https://www.ohmyzip.com/service/prime-membership-business';
+const grades='https://www.ohmyzip.com/service/membership-benefits/';
+const htmlParts=[];
+export const ohmyzipArticle={articleKey:'ohmyzip-benefits-202610',approvedForPublish:false,post:{title:'오마이집 쿠폰·배송비 할인 (2026년 10월)',labels:['해외직구','오마이집'],content:''},source:{url:official,checkedAt:'2026-10-10'}};
