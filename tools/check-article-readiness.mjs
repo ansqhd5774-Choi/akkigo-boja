@@ -10,6 +10,9 @@ import supplemental from '../data/articles-supplemental.json' with {type:'json'}
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
+const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle];
+const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
+
 const service='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/preflight';
 export function approvedRequestKey(request){
  if(request.approved===false)return null;
@@ -19,9 +22,9 @@ export function approvedRequestKey(request){
 export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new Promise(r=>setTimeout(r,ms)),attempts=1,delayMs=2500}={}){
   if(!token)throw Error('GITHUB_OIDC_TOKEN_MISSING');
   const keysToCheck=[...new Set(keys)];
-  const snapshots=await Promise.all(keysToCheck.map(k=>articleSnapshot(k,[...primary.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle])));
+  const snapshots=await Promise.all(keysToCheck.map(k=>articleSnapshot(k,currentArticleCatalog)));
   if(snapshots.some(x=>!x.approved))throw Error('LOCAL_ARTICLE_NOT_APPROVED');
-  for(const key of keysToCheck)validateArticleDraft([...primary.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle].find(x=>x.articleKey===key));
+  for(const key of keysToCheck)validateArticleDraft(currentArticleCatalog.find(x=>x.articleKey===key));
   for(let attempt=1;attempt<=attempts;attempt++){
     let matching=0;
     let detail='REMOTE_SNAPSHOT_NOT_READY';
