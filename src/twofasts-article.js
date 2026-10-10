@@ -70,34 +70,28 @@ const postContent=`<div class="ncp-feed-preview" data-ncp-feed-preview aria-labe
 </section>
 
 <section>
- <h2>회원등급별 승급쿠폰</h2>
- <p>투패스츠 공식 회원등급표는 <strong>출고 건수</strong>를 기준으로 등급을 올리며, 해당 등급으로 승급할 때 쿠폰을 자동 발급한다고 안내합니다. <strong>승급쿠폰 유효기간은 발급일부터 1개월</strong>입니다. 묶음배송은 1건으로 계산되며, 기존 등급을 이전한 회원도 실제 등급이 상향될 때 쿠폰이 발행됩니다.</p>
- <div class="ncp-table-scroll"><table><thead><tr><th>등급</th><th>출고 건수</th><th>승급쿠폰</th></tr></thead><tbody>
-  <tr><td>브론즈</td><td>0~20건</td><td>표시 없음</td></tr>
-  <tr><td>실버</td><td>21~30건</td><td><strong>$2</strong></td></tr>
-  <tr><td>골드</td><td>31~50건</td><td><strong>$5</strong></td></tr>
-  <tr><td>루비</td><td>51~80건</td><td><strong>$5</strong></td></tr>
-  <tr><td>다이아몬드</td><td>81~100건</td><td><strong>$7</strong></td></tr>
-  <tr><td>플래티넘</td><td>101건 이상</td><td><strong>$10</strong></td></tr>
- </tbody></table></div>
- <p>ZERO CLASS는 공식 표에 유료회원으로 별도 표기됩니다. 이용료·등급할인율을 이 글에서 추정하지 않았으며, e-기프트카드 구매와 반송은 등급 실적에서 제외됩니다.</p>
- <a class="ncp-action" href="${grade}" rel="noopener noreferrer">공식 회원등급·승급쿠폰</a>
+ <h2>신규가입 $1·등급 상향 $2 쿠폰</h2>
+ <p>2026년 7월 8일 공식 공지에서 투패스츠 운영사 GSI는 <strong>신규가입 쿠폰을 기존 $2에서 $1로 변경</strong>하고, 회원가입 문자 인증 절차를 없앤다고 발표했습니다. 가입 후 계정 쿠폰함과 결제화면에서 실제 지급·적용 조건을 확인하세요.</p>
+ <p>동일 공지에 따라 과거 등급별 $2·$5·$7·$10이던 승급쿠폰은 <strong>등급과 관계없이 $2</strong>로 변경됐습니다. 과거 회원등급 안내 페이지는 기존 금액을 계속 표시하므로, 2026년 7월 최신 공식 변경 공지를 우선했습니다. 발급 후 유효기간은 계정 쿠폰함에서 확인해야 합니다.</p>
+ <p class="ncp-note">공식 공지에는 '매월 다양한 쿠폰 발급 예정'이라고 적혀 있지만, 2026년 10월 특정 월별 쿠폰의 발급액·조건·만료일은 공개 자료에서 확인되지 않았습니다. 예정된 혜택을 현재 발급된 쿠폰으로 표시하지 않습니다.</p>
+ <a class="ncp-action" href="https://www.2fasts.com/member/agreement.asp" rel="noopener noreferrer">회원가입 후 쿠폰함 확인</a>
+ <a class="ncp-action" href="https://www.2fasts.com/board/notice/detail.asp?seqno=2167" rel="noopener noreferrer">2026년 7월 쿠폰 변경 공지</a>
 </section>
 
 <section>
- <h2>배송비 1% 예치금 적립</h2>
- <p>공식 회원등급 안내에 따르면 <strong>배송비의 1%에 해당하는 금액을 예치금으로 돌려줍니다.</strong> 단, <strong>예치금 잔액이 배송비보다 큰 경우에만 예치금 사용이 가능</strong>하다고 명시되어 있습니다. 즉, 매번 배송비에서 즉시 1%를 차감하는 현장 할인과는 다릅니다.</p>
- <p class="ncp-note">예: 배송비가 $20이면 1%는 $0.20 상당입니다(단순 계산). 실제 적립 통화·반올림·적립 제외항목은 회원 결제내역을 기준으로 확인하세요.</p>
- <a class="ncp-action" href="${grade}" rel="noopener noreferrer">적립 조건 확인</a>
+ <h2>배송비 1% 리워드 신규 적립 중지</h2>
+ <p>과거 공식 회원등급표에는 배송비의 1%를 예치금으로 적립한다고 안내하지만, <strong>2026년 7월 10일 공식 운영 공지에서 신규 1% 리워드 적립을 당분간 중지</strong>한다고 밝혔습니다. 따라서 현재 이용 가능한 적립 혜택으로 소개하지 않습니다.</p>
+ <p><strong>기존에 적립된 리워드는 정상 사용 가능</strong>합니다. 2026년 7월 8일 공지에 따르면 예치금 선입금도 중단됐으며, 기존 잔액은 다음 배송 결제 시 사용하도록 안내됐습니다.</p>
+ <a class="ncp-action" href="https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2170" rel="noopener noreferrer">신규 적립 중지 공식 공지</a>
 </section>
 
 <section>
- <h2>무료 합배송·검수·보관</h2>
- <p><strong>합배송/묶음배송 수수료는 무료</strong>입니다. 다만 공식 수수료표에 명시된 한도는 <strong>트래킹 최대 5개 또는 상품 최대 10개</strong>입니다. 기본 일반검수는 무료이고, 정밀검수는 개당 <strong>$1.50</strong>, 특수포장은 별도 비용이 발생할 수 있습니다.</p>
- <p>미국 물류센터에서 상품 입고 후 기본 <strong>30일 무료 보관</strong>이 안내됩니다. 유료회원은 60일 기준이지만, 배송비가 책정된 건은 책정 후 15일이 지나면 별도 보관료가 발생할 수 있으므로 장기 보관용 무료 서비스로 오해하지 마세요.</p>
- <p>회원은 뉴저지(NJ)와 델라웨어(DE) 센터의 미국 배송주소를 무료로 제공받습니다. 주소 제공이 무료라는 뜻이지 <strong>한국행 국제운송료까지 무료라는 뜻은 아닙니다.</strong></p>
- <a class="ncp-action" href="${fees}" rel="noopener noreferrer">수수료·무료 서비스 확인</a>
- <a class="ncp-action" href="${delivery}" rel="noopener noreferrer">배송대행 이용 방법</a>
+ <h2>델라웨어 수수료 $1 면제·무료 서비스</h2>
+ <p>2026년 7월 10일 공식 운영 공지에 따르면 <strong>델라웨어 도착 화물에 기존 부과하던 $1 수수료가 무료</strong>로 변경됐습니다. 국제운송료 전체가 무료라는 뜻은 아닙니다.</p>
+ <p>공식 수수료표에는 <strong>합배송 수수료 무료</strong>(트래킹 최대 5개·상품 최대 10개), <strong>일반검수 무료</strong>, 기본 <strong>30일 무료 보관</strong>이 게시돼 있습니다. 정밀검수는 개당 $1.50이며 특수포장과 장기 보관은 별도 비용이 발생할 수 있습니다. 특히 배송비 책정 후 15일이 지나면 별도 보관료가 부과될 수 있습니다.</p>
+ <p>뉴저지·델라웨어 미국 배송주소와 개인 사서함 번호는 무료로 제공되지만 한국행 국제운송료, 관부가세, 통관료, 추가 검수·포장 비용까지 면제되는 것은 아닙니다. GSI 인수 이후 실제 청구 조건은 결제화면을 우선 확인하세요.</p>
+ <a class="ncp-action" href="https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2170" rel="noopener noreferrer">델라웨어 수수료 면제 공지</a>
+ <a class="ncp-action" href="https://www.2fasts.com/page/info_commission.asp" rel="noopener noreferrer">수수료·무료 서비스 확인</a>
 </section>
 
 <section>
