@@ -1,0 +1,1 @@
+export const ohmyzipArticle={articleKey:'ohmyzip-benefits-202610',approvedForPublish:false,post:{title:'오마이집 할인',labels:['해외직구','오마이집'],content:''},source:{url:'https://www.ohmyzip.com/',checkedAt:'2026-10-10'}};
