@@ -1,0 +1,117 @@
+{
+  "articleKey": "frombio-coupons-202610",
+  "target": "프롬바이오",
+  "category": "건강",
+  "checkedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubArticleKeyMatch": false,
+    "publicSearchMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "current": [
+    {
+      "name": "10월 쿠폰팩 3,000원",
+      "method": "공식 상품 페이지 쿠폰 다운로드",
+      "sourcePublishedAt": null,
+      "validity": "발급일로부터 10일",
+      "evidence": "여러 10월 공식 상품 페이지 반복 노출"
+    },
+    {
+      "name": "10월 쿠폰팩 5,000원",
+      "method": "공식 상품 페이지 쿠폰 다운로드",
+      "sourcePublishedAt": null,
+      "validity": "발급일로부터 10일",
+      "evidence": "여러 10월 공식 상품 페이지 반복 노출"
+    },
+    {
+      "name": "10월 쿠폰팩 7,000원",
+      "method": "공식 상품 페이지 쿠폰 다운로드",
+      "sourcePublishedAt": null,
+      "validity": "발급일로부터 10일",
+      "evidence": "여러 10월 공식 상품 페이지 반복 노출"
+    },
+    {
+      "name": "신규 회원 혜택",
+      "sourcePublishedAt": "2022-09-07",
+      "status": "official ongoing list; numeric detail not text-verifiable"
+    },
+    {
+      "name": "정기배송 혜택",
+      "sourcePublishedAt": "2022-09-07",
+      "status": "official ongoing list; numeric detail not text-verifiable"
+    },
+    {
+      "name": "단체주문 할인",
+      "sourcePublishedAt": "2024-01-12",
+      "status": "official ongoing list; numeric detail not text-verifiable"
+    },
+    {
+      "name": "적립금 사용",
+      "sourcePublishedAt": null,
+      "conditions": "최소 5,000원, 1회 최대 사용한도 없음, 최종 적립 후 3년 추가적립 없으면 소멸"
+    },
+    {
+      "name": "무료배송",
+      "sourcePublishedAt": null,
+      "conditions": "다수 상품 30,000원 이상; 상품별 예외 존재"
+    },
+    {
+      "name": "비밀특가 사은품",
+      "sourcePublishedAt": null,
+      "conditions": "올인원 이뮨 멀티비타민&미네랄 일부 비밀특가에 디어퀸 콜라겐스틱 9포 증정"
+    }
+  ],
+  "historicalOrRecheck": [
+    {
+      "name": "추석 선물 대첩 10%",
+      "sourcePublishedAt": null,
+      "validity": "과거 색인 기준 발급일로부터 14일",
+      "reason": "2~4주 전 공식 페이지 색인에는 노출, 더 최근 10월 페이지는 3/5/7천원 쿠폰팩으로 교체되어 상태 상충"
+    }
+  ],
+  "publicCodeSearch": {
+    "result": "NO_VERIFIED_PUBLIC_STRING_CODE_FOUND",
+    "note": "공식몰 결제창에는 할인코드 입력란이 있으나 현재 프롬바이오 전용 공개 문자열 코드는 확인되지 않음"
+  },
+  "searchIntent": {
+    "keywords": [
+      "프롬바이오 쿠폰",
+      "프롬바이오 할인쿠폰",
+      "프롬바이오 10월 쿠폰",
+      "프롬바이오 쿠폰팩",
+      "프롬바이오 공식몰 할인",
+      "프롬바이오 신규회원 혜택",
+      "프롬바이오 정기배송 할인",
+      "프롬바이오 보스웰리아 할인"
+    ],
+    "hashtags": [
+      "#프롬바이오",
+      "#프롬바이오쿠폰",
+      "#프롬바이오할인",
+      "#건강기능식품",
+      "#보스웰리아",
+      "#매스틱",
+      "#건강쿠폰",
+      "#공식몰쿠폰"
+    ],
+    "measured": {
+      "brand": "프롬바이오",
+      "monthlySearchRange": "1만~3만",
+      "measuredAt": "2026-06-05",
+      "source": "https://blokey.co.kr/k/%ED%94%84%EB%A1%AC%EB%B0%94%EC%9D%B4%EC%98%A4%2B%EC%BD%94%EC%97%94%EC%9E%90%EC%9E%84%2BQ10"
+    },
+    "couponKeywordMeasurement": null
+  },
+  "sources": [
+    "https://www.frombio.co.kr/",
+    "https://m.frombio.co.kr/product/%EA%B4%80%EC%A0%88%EC%97%B0%EA%B3%A8%EC%97%94-%EB%B3%B4%EC%8A%A4%EC%9B%B0%EB%A6%AC%EC%95%84-1%EA%B0%9C%EC%9B%94-30%EC%A0%95x2%EB%B0%95%EC%8A%A4/24/",
+    "https://m.frombio.co.kr/product/detail.html?product_no=1658",
+    "https://frombio.co.kr/product/list.html?cate_no=54",
+    "https://frombio.co.kr/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8/12/22351/",
+    "https://frombio.co.kr/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8/12/22355/",
+    "https://frombio.co.kr/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8/12/33319/",
+    "https://frombio.co.kr/shopinfo/guide.html",
+    "https://litt.ly/frombio_official"
+  ],
+  "sourceDatePolicy": "sourcePublishedAt is the source's first publication date only. Check date, event start, issue date, coupon validity and page update date are separate; unknown publication dates remain null."
+}
