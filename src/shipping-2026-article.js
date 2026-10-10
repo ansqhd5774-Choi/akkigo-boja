@@ -1,1 +1,2 @@
-export const articleVersion='2026-10-10';
+import {twofastsArticle as base} from './twofasts-article.js';
+export const twofastsArticle=base;
