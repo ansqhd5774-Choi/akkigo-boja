@@ -9,9 +9,9 @@ const signup='https://www.2fasts.com/member/agreement.asp';
 const logo='https://www.2fasts.com/images/gsiexpress_top1.png';
 
 const postContent=`<div class="ncp-feed-preview" data-ncp-feed-preview aria-label="투패스츠 혜택 요약">
- <div class="ncp-feed-stat"><span>배송비 적립</span><strong>1%</strong></div>
- <div class="ncp-feed-stat"><span>등급 승급</span><strong>최대 $10</strong></div>
- <div class="ncp-feed-stat"><span>합배송</span><strong>무료</strong></div>
+ <div class="ncp-feed-stat"><span>신규가입 쿠폰</span><strong>$1</strong></div>
+ <div class="ncp-feed-stat"><span>등급 승급</span><strong>$2</strong></div>
+ <div class="ncp-feed-stat"><span>DE 수수료</span><strong>$1 면제</strong></div>
 </div>
 <!--more-->
 <article data-ncp-article="twofasts-benefits-202610" class="ncp-commerce-article">
@@ -44,30 +44,29 @@ const postContent=`<div class="ncp-feed-preview" data-ncp-feed-preview aria-labe
 </figure>
 <header>
  <div class="ncp-meta"><span class="ncp-badge">해외직구·배송대행</span><span>자료 확인 2026-10-10</span></div>
- <h1>투패스츠 쿠폰·배송비 할인 (2026년 10월) | 승급 최대 $10·적립 1%</h1>
- <p>투패스츠(2FASTS)는 미국 뉴저지·델라웨어 센터를 운영하는 해외직구 배송대행 서비스입니다. 현재 공식 이용안내에서 확인되는 혜택은 <strong>배송비의 1% 예치금 적립</strong>, <strong>회원등급 승급 시 최대 $10 쿠폰</strong>, <strong>조건부 무료 합배송·기본검수</strong>입니다. 별도로 공식 사이트에 고정배송비 이벤트 게시물이 남아 있지만, <strong>2026년 10월 실제 적용 요금은 신청·결제화면 확인이 필요</strong>합니다.</p>
+ <h1>투패스츠 쿠폰·배송비 할인 (2026년 10월) | 신규 $1·승급 $2·DE 수수료 면제</h1>
+ <p>투패스츠(2FASTS)는 미국 뉴저지·델라웨어 센터를 운영하는 해외직구 배송대행 서비스입니다. <strong>2026년 7월 GSI 운영 전환 공지</strong>에 따라 신규가입 <strong>$1 쿠폰</strong>, 등급 상향 <strong>$2 쿠폰</strong>, 델라웨어 도착 화물의 기존 <strong>$1 수수료 면제</strong>를 확인했습니다. 과거 회원등급표의 최대 $10 승급쿠폰은 변경됐으며, <strong>배송비 1% 리워드 신규 적립은 일시 중지</strong>됐습니다. 실제 계정 지급·적용은 쿠폰함과 결제화면에서 확인해야 합니다.</p>
 </header>
 
 <section>
  <h2>공식 혜택 한눈에 보기</h2>
  <div class="ncp-grid">
-  <div class="ncp-card"><b>1%</b><span>배송비 기준 예치금 적립</span></div>
-  <div class="ncp-card"><b>최대 $10</b><span>출고 실적에 따른 승급쿠폰</span></div>
-  <div class="ncp-card"><b>무료</b><span>트래킹 최대 5개 조건부 합배송</span></div>
+  <div class="ncp-card"><b>$1</b><span>신규가입 쿠폰</span></div>
+  <div class="ncp-card"><b>$2</b><span>등급 상향 쿠폰</span></div>
+  <div class="ncp-card"><b>$1 면제</b><span>델라웨어 기존 수수료</span></div>
  </div>
- <div class="ncp-table-scroll"><table>
- <thead><tr><th>혜택</th><th>받는 방법</th><th>대상·기한</th><th>근거·상태</th></tr></thead>
- <tbody>
-  <tr><td><strong>배송비 1% 예치금 적립</strong></td><td>배송비 결제·출고 실적 이용</td><td>회원등급 안내에 표기. 사용은 예치금이 배송비보다 클 때 가능</td><td>공식 이용안내 게시 중</td></tr>
-  <tr><td><strong>등급 승급쿠폰 $2~$10</strong></td><td>출고 건수 누적 후 등급 상향 시 자동 발급</td><td>발급일로부터 1개월 유효</td><td>공식 회원등급 안내</td></tr>
-  <tr><td><strong>합배송 수수료 무료</strong></td><td>합배송/묶음배송 선택</td><td>트래킹 최대 5개, 상품 최대 10개 조건</td><td>공식 수수료표</td></tr>
-  <tr><td><strong>일반검수 무료</strong></td><td>일반 배송대행 이용</td><td>정밀검수는 별도 과금</td><td>공식 수수료표</td></tr>
-  <tr><td><strong>미국 주소 무료 제공</strong></td><td>회원가입 후 미국 센터 주소 이용</td><td>NJ·DE 센터 / 개인 사서함 번호</td><td>공식 배송대행 안내</td></tr>
-  <tr><td><strong>보관 기본 30일 무료</strong></td><td>미국 센터 입고</td><td>유료회원은 기본 60일; 배송비 책정 후 15일 경과 시 별도 보관료 주의</td><td>공식 수수료표</td></tr>
-  <tr><td>깡통 고정배송비 안내</td><td>대상 품목·중량 조건에 맞게 깡통배송 선택</td><td>2019년 게시·2025년 수정 표시. 2026년 현재 적용 요금 별도 확인</td><td>공식 게시 중 / 실제 적용 미확인</td></tr>
- </tbody>
- </table></div>
- <a class="ncp-action" href="${signup}" rel="noopener noreferrer">투패스츠 가입·혜택 확인</a>
+ <div class="ncp-table-scroll"><table><thead><tr><th>혜택</th><th>받는 방법</th><th>대상·기한</th><th>상태</th></tr></thead><tbody>
+ <tr><td><strong>신규가입 $1 쿠폰</strong></td><td>회원가입 후 쿠폰함 확인</td><td>신규회원 / 개별 만료일 확인</td><td>공식 2026-07-08 변경 공지</td></tr>
+ <tr><td><strong>등급 상향 $2 쿠폰</strong></td><td>등급 상향 후 쿠폰함 확인</td><td>등급 무관 / 개별 만료일 확인</td><td>공식 2026-07-08 변경 공지</td></tr>
+ <tr><td><strong>델라웨어 $1 수수료 면제</strong></td><td>DE 센터 배송대행 신청</td><td>델라웨어 도착 화물</td><td>공식 2026-07-10 공지</td></tr>
+ <tr><td>합배송 수수료 무료</td><td>합배송 신청</td><td>트래킹 최대 5개·상품 최대 10개</td><td>공식 수수료표 · 결제화면 확인</td></tr>
+ <tr><td>일반검수 무료</td><td>일반 배송대행</td><td>정밀검수 별도 과금</td><td>공식 수수료표</td></tr>
+ <tr><td>미국 주소 제공 무료</td><td>회원가입</td><td>NJ·DE 개인 사서함 / 국제운송료 별도</td><td>공식 배송대행 안내</td></tr>
+ <tr><td>기본 보관 30일 무료</td><td>센터 입고</td><td>배송비 책정 후 15일 경과 시 별도 요금</td><td>공식 수수료표</td></tr>
+ <tr><td>기존 1% 리워드 신규 적립</td><td>신규 적립 중지</td><td>기존 적립분은 사용 가능</td><td>공식 2026-07-10 중지 공지</td></tr>
+ </tbody></table></div>
+ <a class="ncp-action" href="https://www.2fasts.com/board/notice/detail.asp?seqno=2167" rel="noopener noreferrer">쿠폰 변경 공식 공지</a>
+ <a class="ncp-action" href="https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2170" rel="noopener noreferrer">수수료 면제·리워드 중지 공지</a>
 </section>
 
 <section>
@@ -145,7 +144,7 @@ export const twofastsArticle={
  articleKey:'twofasts-benefits-202610',
  approvedForPublish:true,
  post:{
-  title:'투패스츠 쿠폰·배송비 할인 (2026년 10월) | 승급 최대 $10·적립 1%',
+  title:'투패스츠 쿠폰·배송비 할인 (2026년 10월) | 신규 $1·승급 $2·DE 수수료 면제',
   labels:['해외직구','투패스츠'],
   content:postContent
  },
