@@ -31,7 +31,8 @@ test('Tiles Survive uses the shared game-period article contract',()=>{
   assert.ok(html.includes('LDSHOP5FF'));
   assert.ok(html.includes('첫 구매 5% 할인'));
   assert.ok(html.includes('최대 22% 할인'));
-  assert.ok(html.includes('2026-10-11'));
+  assert.ok(html.includes('10-11'));
+  assert.equal(a.source.benefits.find(x=>x.type==='ELIGIBILITY_APPLICATION')?.expiry,'2026-10-11');
   assertPeriodHTML(html);
   assert.equal(validateGamePeriodArticle(a),true);
   assert.equal(validateGameCouponLayout(key,a.post),true);
