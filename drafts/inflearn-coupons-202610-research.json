@@ -1,0 +1,144 @@
+{
+  "articleKey": "inflearn-coupons-202610",
+  "target": "인프런",
+  "category": "교육",
+  "checkedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubMatch": false,
+    "publicBlogMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "current": [
+    {
+      "name": "신규가입 25%",
+      "type": "자동발급 쿠폰",
+      "source": "https://www.inflearn.com/welcome",
+      "sourcePublishedAt": null,
+      "conditions": "회원가입 시 자동 발급, 가입 후 24시간, 프로모션 비동의 강의 제외"
+    },
+    {
+      "name": "자격증 강의 30%",
+      "type": "버튼 발급 쿠폰",
+      "source": "https://www.inflearn.com/pages/202610-get-certificate",
+      "sourcePublishedAt": null,
+      "conditions": "지정 자격증 강의, 발급 2026-10-31까지, 받은 날부터 7일"
+    },
+    {
+      "name": "개인 마케팅 파트너 30%",
+      "type": "가입형 자동 쿠폰",
+      "source": "https://www.inflearn.com/pages/partners",
+      "sourcePublishedAt": null,
+      "conditions": "개인 마케팅 파트너 가입자, 전 강의 30% 안내"
+    },
+    {
+      "name": "2026 평생교육이용권",
+      "type": "자격 인증/정부지원",
+      "source": "https://www.inflearn.com/pages/lifelongvoucher_2026",
+      "sourcePublishedAt": null,
+      "conditions": "2026 선정자, 기본 35만원, 우수이용자 70만원, 2026-12-31까지"
+    },
+    {
+      "name": "10월 AI 환급 과정",
+      "type": "조건형 환급",
+      "source": "https://www.inflearn.com/challenge/%EC%A4%91%EC%9D%B8%ED%94%84-ai-%EC%97%85%EB%AC%B4-%EC%9E%90%EB%8F%99%ED%99%94-10%EC%9B%94?cid=344144",
+      "sourcePublishedAt": null,
+      "conditions": "90% 환급 표시, 과정별 모집·수료·자격 조건 확인"
+    },
+    {
+      "name": "젠스파크 무료 챌린지",
+      "type": "무료 이용",
+      "source": "https://www.inflearn.com/challenge/ai-work-fundamentals?cid=344623",
+      "sourcePublishedAt": null,
+      "conditions": "무료, 모집 2026-10-07~10-21, 진행 10-22~10-23"
+    },
+    {
+      "name": "무료 Live",
+      "type": "무료 이용",
+      "source": "https://www.inflearn.com/tag-curation/skill/free-live",
+      "sourcePublishedAt": null,
+      "conditions": "10/14 AI 활용·바이브코딩, 10/20 코드 품질관리 등 확인"
+    },
+    {
+      "name": "신규 AI 강의 3종 최대 30%",
+      "type": "강의별 자동 할인",
+      "source": "https://www.inflearn.com/course/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%ED%95%B5%EC%8B%AC%EB%A7%8C-%EC%8F%99%EC%8F%99-%EB%B0%B0%EC%9A%B0%EA%B8%B0-%EC%9E%85/news?cid=340157&pageNumber=1",
+      "sourcePublishedAt": null,
+      "conditions": "2026-10-16까지"
+    }
+  ],
+  "historicalOrRecheck": [
+    {
+      "name": "카카오톡 플러스친구 10%",
+      "status": "RECHECK_REQUIRED",
+      "source": "https://www.inflearn.com/pages/kakao-friends-event",
+      "sourcePublishedAt": "2021-12-12",
+      "conditions": "원문상 웰컴메시지 한글 코드, 1회, 발급 후 14일; 2026 현재 재발급 독립 확인 부족"
+    },
+    {
+      "name": "2026 썸머 블랙프라이데이 30%",
+      "status": "EXPIRED",
+      "source": "https://www.inflearn.com/pages/summerblackfriday2606",
+      "sourcePublishedAt": null,
+      "conditions": "공식 페이지 제목에 종료 표시"
+    },
+    {
+      "name": "널널한 개발자 인프런 강의 40%",
+      "status": "EXPIRED",
+      "source": "https://www.youtube.com/watch?v=4L1Zsj0RH30",
+      "sourcePublishedAt": "2026-04-25",
+      "conditions": "유효기간 2026-04-30까지"
+    },
+    {
+      "name": "마소캠퍼스 특정 강의 50%",
+      "status": "EXPIRED",
+      "source": "https://www.inflearn.com/course/%ED%9A%8C%EC%82%AC%EA%B0%80-%EC%9B%90%ED%95%98%EB%8A%94-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8-ai-%ED%99%9C%EC%9A%A9-a/news?cid=339343&pageNumber=1",
+      "sourcePublishedAt": null,
+      "conditions": "2026-08-26 23:59까지, 선착순 10명"
+    }
+  ],
+  "community": [
+    {
+      "source": "https://www.inflearn.com/community/questions/1820745/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94-%ED%95%A0%EC%9D%B8%EC%BF%A0%ED%8F%B0-%EA%B4%80%EB%A0%A8",
+      "sourcePublishedAt": "2026-06-01",
+      "note": "취준생 특별 할인은 별도 확인되지 않는다는 커뮤니티 답변. 카카오·인스타 이벤트 언급은 AI 인턴 답변이므로 단독 현재성 근거로 사용하지 않음."
+    },
+    {
+      "source": "https://www.inflearn.com/en/community/questions/1751974/ai-agent-%EC%BF%A0%ED%8F%B0",
+      "sourcePublishedAt": "2026-01-19",
+      "note": "강의별 쿠폰 링크는 지식공유자가 수정·관리할 수 있음을 확인. 플랫폼 공통 코드로 일반화하지 않음."
+    }
+  ],
+  "socialAndVideo": {
+    "officialInstagram": "@inflearn__official",
+    "officialFacebook": "https://www.facebook.com/inflearn",
+    "officialAppEvidence": "https://play.google.com/store/apps/details?id=com.inflab.inflearn",
+    "youtubeHistorical": "https://www.youtube.com/watch?v=4L1Zsj0RH30",
+    "result": "현재 플랫폼 공통 문자열 쿠폰코드는 공개 검증되지 않음"
+  },
+  "searchIntent": {
+    "keywords": [
+      "인프런 쿠폰",
+      "인프런 할인쿠폰",
+      "인프런 신규가입 25%",
+      "인프런 자격증 30%",
+      "인프런 할인코드",
+      "인프런 무료 강의",
+      "인프런 평생교육이용권",
+      "인프런 90% 환급",
+      "인프런 마케팅 파트너 30%"
+    ],
+    "hashtags": [
+      "#인프런",
+      "#인프런쿠폰",
+      "#인프런할인",
+      "#온라인강의",
+      "#개발강의",
+      "#무료강의",
+      "#평생교육이용권",
+      "#국비교육"
+    ],
+    "measuredSearch": null,
+    "note": "인프런 쿠폰 자체의 신뢰할 수 있는 실제 검색량·해시태그 노출량 측정 자료 미확보"
+  },
+  "sourceDatePolicy": "출처 게시일은 원문 최초 게시일만 기록. URL의 202610, 모집 시작일, 발급일, 확인일을 게시일로 대체하지 않음."
+}
