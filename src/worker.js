@@ -17,6 +17,9 @@ import { publishApprovedArticle, probeExistingArticle } from './articles.js';
 import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
 
+const articleCatalogBase=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle];
+const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
+
 export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
@@ -30,7 +33,7 @@ export default {
       let input;
       try {input=await request.json();}catch{return Response.json({error:'INVALID_JSON'},{status:400});}
       try {
-        const catalog=[...articles.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle];
+        const catalog=currentArticleCatalog;
         const snapshot=await articleSnapshot(input.articleKey,catalog);
         if(input.readOnlyLive===true) snapshot.live=await probeExistingArticle(env,input.articleKey,catalog);
         return Response.json(snapshot,{headers:{'Cache-Control':'no-store'}});
@@ -46,9 +49,9 @@ export default {
       let input;
       try { input=await request.json(); } catch { return Response.json({error:'INVALID_JSON'},{status:400}); }
       try {
-        const source=await articleSnapshot(input.articleKey,[...articles.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle]);
+        const source=await articleSnapshot(input.articleKey,currentArticleCatalog);
         if(!source.approved || source.postSha256!==input.postSha256)throw new Error('ARTICLE_SNAPSHOT_MISMATCH');
-        const result=await publishApprovedArticle(env,input.articleKey,[...articles.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle],fetch,{requireUnchanged:input.requireUnchanged===true,existingOnly:input.existingOnly===true});
+        const result=await publishApprovedArticle(env,input.articleKey,currentArticleCatalog,fetch,{requireUnchanged:input.requireUnchanged===true,existingOnly:input.existingOnly===true});
         return Response.json(result,{headers:{'Cache-Control':'no-store'}});
       } catch (error) {
         const code=String(error?.message || 'ARTICLE_PUBLISH_FAILED').slice(0,120);
