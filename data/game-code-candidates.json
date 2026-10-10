@@ -322,5 +322,429 @@
     "workingVerifiedAt": null,
     "redemptionResult": null,
     "sourceReportedStatus": "ACTIVE_CLAIM_UNCORROBORATED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TS777",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "TilesSurvive.net current fan database",
+    "sourceUrl": "https://tilessurvive.net/en/guides/gift-code-how-to-use/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TS888",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "TilesSurvive.net current fan database",
+    "sourceUrl": "https://tilessurvive.net/en/guides/gift-code-how-to-use/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TS999",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "TilesSurvive.net current fan database",
+    "sourceUrl": "https://tilessurvive.net/en/guides/gift-code-how-to-use/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "MOONGIFT",
+    "sourceAuthority": "OFFICIAL",
+    "sourceName": "Tiles Survive official X post mirror",
+    "sourceUrl": "https://twstalker.com/TilesSurvive",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://twstalker.com/TilesSurvive",
+    "statusEvidenceReason": "공식 게시물의 2026-10-10 이전 마감 시각 확인"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "DISCORD50K",
+    "sourceAuthority": "OFFICIAL",
+    "sourceName": "Tiles Survive official X post mirror",
+    "sourceUrl": "https://twstalker.com/TilesSurvive",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://twstalker.com/TilesSurvive",
+    "statusEvidenceReason": "공식 게시물의 2026-10-10 이전 마감 시각 확인"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "FACEBOOK100K",
+    "sourceAuthority": "OFFICIAL",
+    "sourceName": "Tiles Survive official X post mirror",
+    "sourceUrl": "https://twstalker.com/TilesSurvive",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://twstalker.com/TilesSurvive",
+    "statusEvidenceReason": "공식 게시물의 2026-10-10 이전 마감 시각 확인"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "SCHOOLTIME26",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "PUPPYLOVE",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "SUMMER2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "CAT0808",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TSONEYEAR",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "HelloJuly",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "THANKS30M",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "FATHERSDAY26",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "RUSSIADAY",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TILESCHILD26",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "EIDALADHA2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "THANKSMOM",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "WORKPLAYWIN",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "EASTER2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "NOTAJOKE",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "STPADDY2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "SPRING2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "LOVE2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub code archive",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "2026 campaign expiry recorded in code tracker"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TS20251117",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "LDShop / Buffhub historical archive",
+    "sourceUrl": "https://www.ldshop.gg/jp/blog/tiles-survive/tiles-code-jp.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "older 2025 code recorded as expired/history"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "MERRYXMASTS",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "LDShop / Buffhub historical archive",
+    "sourceUrl": "https://www.ldshop.gg/jp/blog/tiles-survive/tiles-code-jp.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "EXPIRED",
+    "statusEvidenceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "statusEvidenceReason": "older 2025 code recorded as expired/history"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "HUGDAY2026",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "Buffhub / Pocket Gamer conflicting status",
+    "sourceUrl": "https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "GAMEEDU",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP333",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP666",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP777",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP999",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP2024",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "FBGIFT",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ja/tiles-survive/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP222",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ru/tiles-survive%21/%D0%BA%D0%BE%D0%B4%D1%8B/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP888",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ru/tiles-survive%21/%D0%BA%D0%BE%D0%B4%D1%8B/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "GO2024",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ru/tiles-survive%21/%D0%BA%D0%BE%D0%B4%D1%8B/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "DCGIFT",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ru/tiles-survive%21/%D0%BA%D0%BE%D0%B4%D1%8B/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "WELCOME",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ar/tiles-survive%21/codes/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "VIP555",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "GameEDU regional code list",
+    "sourceUrl": "https://game.edu.kg/ar/tiles-survive%21/codes/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "TS666",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "TEM TEK needs-verification list",
+    "sourceUrl": "https://temtekplay.com/en/codes/",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
+  },
+  {
+    "gameName": "타일서바이벌",
+    "code": "txUWQ2pjja",
+    "sourceAuthority": "THIRD_PARTY",
+    "sourceName": "LDShop / TEM TEK third-party lists",
+    "sourceUrl": "https://www.ldshop.gg/jp/blog/tiles-survive/tiles-code-jp.html",
+    "sourceGame": "Tiles Survive!",
+    "status": "UNVERIFIED"
   }
 ]
