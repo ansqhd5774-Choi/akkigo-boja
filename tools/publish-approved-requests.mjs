@@ -6,13 +6,14 @@ import {rokebiArticle} from '../src/rokebi-article.js';
 import {frombioArticle} from '../src/frombio-article.js';
 import {inflearnArticle} from '../src/inflearn-article.js';
 import {maaltalkArticle} from '../src/maaltalk-article.js';
+import {ip4uArticle} from '../src/ip4u-article.js';
 import {readFile} from 'node:fs/promises';
 import primary from '../data/articles.json' with {type:'json'};
 import supplemental from '../data/articles-supplemental.json' with {type:'json'};
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
-const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle];
+const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle];
 const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 const token=process.env.GITHUB_OIDC_TOKEN;
