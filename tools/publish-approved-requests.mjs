@@ -9,6 +9,9 @@ import supplemental from '../data/articles-supplemental.json' with {type:'json'}
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
+const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle];
+const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
+
 const token=process.env.GITHUB_OIDC_TOKEN;
 if (!token) throw new Error('GITHUB_OIDC_TOKEN_MISSING');
 const dir=new URL('../publish-requests/',import.meta.url);
@@ -27,9 +30,9 @@ for (const name of names) {
     continue;
   }
   processedKeys.add(request.articleKey);
-  const source=await articleSnapshot(request.articleKey,[...primary.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle]);
+  const source=await articleSnapshot(request.articleKey,currentArticleCatalog);
   if(!source.approved)throw new Error('LOCAL_ARTICLE_NOT_APPROVED');
-  const catalog=[...primary.filter(x=>x.articleKey!=='rokebi-promo-202610'),...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,rokebiArticle];
+  const catalog=currentArticleCatalog;
   validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
   const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
