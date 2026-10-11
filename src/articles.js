@@ -29,7 +29,7 @@ async function readStoredLivePost(env,stored,transport=fetch) {
   if (post.id!==stored.post_id) throw Error('ARTICLE_STATE_POST_ID_MISMATCH');
   if (post.blog?.id!==BLOG_ID) throw Error('ARTICLE_STATE_BLOG_ID_MISMATCH');
   if (post.status!=='LIVE') {
-    const safeStatus=['DRAFT','SCHEDULED'].includes(post.status) ? post.status : 'OTHER';
+    const safeStatus=String(post.status ?? 'MISSING').toUpperCase().replace(/[^A-Z0-9_-]/g,'').slice(0,32) || 'MISSING';
     throw Error(`ARTICLE_STATE_STATUS_MISMATCH_${safeStatus}`);
   }
   if (post.url!==stored.public_url) throw Error('ARTICLE_STATE_URL_MISMATCH');
