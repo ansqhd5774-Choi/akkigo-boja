@@ -1,0 +1,7 @@
+{
+  "articleKey": "nomad-esim-promo-202610",
+  "approved": true,
+  "existingOnly": true,
+  "requestedAt": "2026-10-11",
+  "reason": "Final read-only identity/status diagnostic before repairing the stored Nomad post. Existing post only; never create a replacement."
+}
