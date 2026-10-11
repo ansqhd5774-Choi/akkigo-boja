@@ -5,36 +5,53 @@
   "duplicateCheck": {
     "repositoryExisting": true,
     "publicDuplicate": false,
-    "decision": "USE_EXISTING_ARTICLE_SOURCE_AND_PUBLISH_ONCE"
+    "existingPostId": "7661898723515399036",
+    "existingPublicUrl": "https://lsifl.blogspot.com/2026/10/2026-10-1-2de.html",
+    "decision": "PATCH_EXISTING_ONLY_IF_RESEARCH_CHANGED"
   },
   "official": "https://www.2fasts.com/",
   "current": [
     {
       "name": "신규가입 쿠폰",
       "value": "$1",
+      "type": "정액 쿠폰",
+      "method": "회원가입 후 계정 자동 발급",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/board/notice/detail.asp?seqno=2167",
-      "sourcePublishedAt": "2026-07-08"
+      "sourcePublishedAt": "2026-07-08",
+      "expiry": null
     },
     {
       "name": "등급 상향 축하쿠폰",
       "value": "$2",
+      "type": "정액 쿠폰",
+      "method": "등급 상향 시 자동 발급",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/board/notice/detail.asp?seqno=2167",
       "sourcePublishedAt": "2026-07-08",
-      "condition": "등급과 무관하게 $2"
+      "condition": "등급과 무관하게 $2",
+      "expiry": null
     },
     {
       "name": "델라웨어 기존 수수료 면제",
       "value": "$1 면제",
+      "type": "수수료 면제",
+      "method": "DE 센터 이용 시 자동 적용",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2170",
-      "sourcePublishedAt": "2026-07-10"
+      "sourcePublishedAt": "2026-07-10",
+      "expiry": null
     },
     {
       "name": "합배송/묶음배송 수수료",
       "value": "무료",
+      "type": "수수료 면제",
+      "method": "합배송 신청",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/page/info_commission.asp",
       "sourcePublishedAt": null,
       "condition": "트래킹 최대 5개·상품 최대 10개"
@@ -42,30 +59,67 @@
     {
       "name": "일반검수",
       "value": "무료",
+      "type": "무료 서비스",
+      "method": "일반 배송대행 이용",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/page/info_commission.asp",
       "sourcePublishedAt": null
     },
     {
       "name": "미국 배송주소",
       "value": "무료",
+      "type": "무료 서비스",
+      "method": "회원가입",
       "status": "ACTIVE",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/page/info_delivery.asp",
       "sourcePublishedAt": null
     },
     {
       "name": "기본 보관",
-      "value": "30일 무료",
+      "value": "일반 30일·유료회원 60일 무료",
+      "type": "무료 이용기간",
+      "method": "미국 센터 입고",
       "status": "ACTIVE_CONDITIONAL",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/page/info_commission.asp",
       "sourcePublishedAt": null,
-      "condition": "배송비 책정 후 15일 경과 시 별도 보관료 가능"
+      "condition": "배송비 책정 후 15일이 지나면 회원 유형과 무관하게 16일째부터 별도 보관료 부과"
+    }
+  ],
+  "ended": [
+    {
+      "name": "인스타그램 이용후기 인증 $5 쿠폰",
+      "value": "$5",
+      "type": "후기·자격 인증형 쿠폰",
+      "method": "인스타그램에 사진·이용후기와 #2fasts_usa 게시 후 1:1 게시판에 인증 사진 제출",
+      "status": "EXPIRED",
+      "authority": "OFFICIAL",
+      "source": "https://www.2fasts.com/board/notice/detail.asp?seqno=2174",
+      "sourcePublishedAt": "2026-07-16",
+      "registrationDeadline": "2026-08-31",
+      "issuedCouponExpiry": "공식 공지상 기간 한정 없음",
+      "condition": "깡통배송 사용 불가"
+    },
+    {
+      "name": "운영 이관 기간 보관료 면제",
+      "value": "보관료 면제",
+      "type": "자동 적용형 수수료 면제",
+      "method": "해당 운영 이관 기간 자동 적용",
+      "status": "EXPIRED",
+      "authority": "OFFICIAL",
+      "source": "https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2185",
+      "sourcePublishedAt": "2026-09-01",
+      "benefitPeriod": "2026-07-10~2026-08-31",
+      "note": "2026-09-01부터 공식 수수료 규정에 따른 보관료 부과 재개"
     }
   ],
   "suspendedOrChanged": [
     {
       "name": "배송비 1% 리워드 신규 적립",
       "status": "SUSPENDED",
+      "authority": "OFFICIAL",
       "source": "https://www.2fasts.com/board/notice/detail.asp?page=1&seqno=2170",
       "sourcePublishedAt": "2026-07-10",
       "note": "기존 적립분은 사용 가능"
@@ -83,7 +137,8 @@
       "name": "깡통 고정배송비 이벤트의 2026 실제 적용조건",
       "source": "https://www.2fasts.com/board/event/detail.asp?seqno=18",
       "sourcePublishedAt": "2019-03-19",
-      "sourceLastModifiedLabel": "2025-04-01"
+      "sourceLastModifiedLabel": "2025-04-01",
+      "note": "공식 이벤트 목록에는 노출되지만 현재 세부 품목·요율을 텍스트 근거로 확인하지 못함"
     },
     {
       "name": "과거 추천인 쿠폰의 2026 현재 지급조건",
@@ -91,10 +146,18 @@
     },
     {
       "name": "2026년 10월 별도 월간 쿠폰",
-      "sourcePublishedAt": null
+      "sourcePublishedAt": null,
+      "note": "2026-07-08 공지는 매월 다양한 쿠폰 발급 예정이라고 안내하지만 10월 별도 금액·조건 공지는 현재 확인되지 않음"
     }
   ],
   "publicStringCode": "NONE_VERIFIED_CURRENT",
+  "externalReview": {
+    "officialNoticeListLatestObserved": "2026-10-08",
+    "officialInstagramAccountMentioned": "@2fasts_usa",
+    "thirdPartyAndCommunityChecked": true,
+    "currentThirdPartyBenefitPromoted": false,
+    "note": "공개 검색으로 공식 사이트·제3자 공지 미러·블로그·커뮤니티·영상 검색을 확인했으나 현재 조건을 공식 근거로 교차확인하지 못한 과거 혜택은 승격하지 않음. 접근 제한 자료까지 모두 확인했다고 보장하지 않음"
+  },
   "searchIntent": {
     "keywords": [
       "투패스츠 쿠폰",
