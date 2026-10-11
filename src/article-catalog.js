@@ -21,6 +21,7 @@ import {executionerSwordClassicArticle,majoArticle,blackDesertMobileArticle,zomb
 import {dragonVillage3Article,evernightReverseArticle,xpHeroArticle,yulgangNextArticle,nyangjjikHeroesArticle} from './game-batch-20261012-c.js';
 import {godSlayerArticle,romanticGanghoArticle,herollArticle,swordOfConvallariaArticle,treeOfSaviorMArticle} from './game-batch-20261012-d.js';
 import {chunoIdleArticle,cookieRunCrumbleArticle,switchingHeroesArticle,realfarmArticle,mongilStarDiveArticle} from './game-batch-20261012-e.js';
+import {blackWizardInfiniteDefenseArticle,pixelDefendersArticle,battleCatsArticle,lastWarSurvivalArticle} from './game-batch-20261012-f.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -66,7 +67,11 @@ const articleCatalogBase=[
   cookieRunCrumbleArticle,
   switchingHeroesArticle,
   realfarmArticle,
-  mongilStarDiveArticle
+  mongilStarDiveArticle,
+  blackWizardInfiniteDefenseArticle,
+  pixelDefendersArticle,
+  battleCatsArticle,
+  lastWarSurvivalArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
