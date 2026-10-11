@@ -13,46 +13,33 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Extract final Duolingo and FromBIO official logo assets read-only
+      - name: Inspect Duolingo press logo bundle references read-only
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const targets={
-            duolingo:'https://design.duolingo.com/identity/logos',
-            duolingoPress:'https://press.duolingo.com/',
-            frombioCI:'https://frombio-company.co.kr/default/sub/about/page04.php',
-            frombioEN:'https://www.frombio-company.co.kr/default/en/frombio/page04.php',
-            frombioHome:'https://www.frombio-company.co.kr/'
-          };
-          const kw=/(logo|logotype|lockup|duolingo|frombio|symbol|ci[_-]?)/i;
-          function abs(v,b){try{if(!v||/^(data|javascript|mailto):/i.test(v))return null;return new URL(v.replaceAll('&amp;','&'),b).href}catch{return null}}
-          function assets(text,base,label){
-            const out=new Set();
-            for(const m of text.matchAll(/(?:src|srcset|href|content)\s*=\s*["']([^"']+)["']/gi)){
-              for(const p of m[1].split(',').map(x=>x.trim().split(/\s+/)[0])){const u=abs(p,base);if(u&&/\.(?:svg|png|webp|jpe?g)(?:\?|$)/i.test(u)&&kw.test(u))out.add(u)}
-            }
-            for(const m of text.matchAll(/(?:https?:\\?\/\\?\/|["'`(=:\s])([^"'`()\s<>]{0,300}(?:logo|logotype|lockup|duolingo|frombio|symbol|ci)[^"'`()\s<>]{0,300}\.(?:svg|png|webp|jpe?g)(?:\?[^"'`()\s<>]*)?)/gi)){
-              const raw=m[1].replaceAll('\\/','/');const u=abs(raw,base);if(u)out.add(u);
-            }
-            for(const u of out)console.log(`ASSET ${label} ${u}`);
-          }
-          async function get(url){
-            const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml,text/css,*/*'},signal:AbortSignal.timeout(20000)});
-            const buf=new Uint8Array(await r.arrayBuffer());
-            let text='';
-            for(const enc of ['utf-8','euc-kr']){try{const t=new TextDecoder(enc).decode(buf);if((t.match(/�/g)||[]).length<(text.match(/�/g)||[]).length||!text)text=t}catch{}}
-            return {r,text};
-          }
-          for(const [name,url] of Object.entries(targets)){
-            try{
-              const {r,text}=await get(url);console.log(`PAGE ${name} ${r.status} ${r.url} bytes=${text.length}`);assets(text,r.url,name);
-              const linked=new Set();
-              for(const m of text.matchAll(/<(?:script|link)[^>]+(?:src|href)=["']([^"']+)["'][^>]*>/gi)){
-                const u=abs(m[1],r.url);if(u&&/\.(?:js|css)(?:\?|$)/i.test(u))linked.add(u);
+          const base='https://press.duolingo.com/';
+          const r=await fetch(base,{headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(20000)});
+          const html=await r.text();
+          const scripts=[...html.matchAll(/<script[^>]+src=["']([^"']+)["']/gi)].map(m=>new URL(m[1],r.url).href);
+          console.log('PRESS',r.status,r.url,scripts);
+          for(const url of scripts){
+            const x=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(20000)});
+            const text=await x.text();
+            if(!/(press kit|logos?|logotype|lockup)/i.test(text))continue;
+            console.log('BUNDLE',url,'bytes',text.length);
+            const terms=['Press Kit','Logos','logo','logotype','lockup'];
+            for(const term of terms){
+              let pos=0,count=0;
+              while((pos=text.toLowerCase().indexOf(term.toLowerCase(),pos))>=0&&count++<12){
+                const s=Math.max(0,pos-700),e=Math.min(text.length,pos+1400);
+                console.log('CTX',term,text.slice(s,e).replace(/\s+/g,' '));pos+=term.length;
               }
-              let n=0;
-              for(const u of linked){if(n++>=25)break;try{const x=await get(u);if(kw.test(x.text)){console.log(`LINKED ${name} ${x.r.status} ${x.r.url} bytes=${x.text.length}`);assets(x.text,x.r.url,`${name}:linked`)}}catch(e){console.log(`LINKERR ${name} ${u} ${e.name}`)}}
-              for(const m of text.matchAll(/<img[^>]*>/gi)){if(kw.test(m[0]))console.log(`IMGTAG ${name} ${m[0].slice(0,1200).replace(/\s+/g,' ')}`)}
-            }catch(e){console.log(`ERROR ${name} ${url} ${e.name} ${e.message}`)}
+            }
+            const urls=new Set();
+            for(const m of text.matchAll(/(?:https?:\\?\/\\?\/[^"'`\s)]+|["'`]([^"'`\s]+\.(?:svg|png|webp|jpe?g)(?:\?[^"'`\s]*)?)["'`])/gi)){
+              const raw=(m[1]||m[0]).replaceAll('\\/','/').replace(/^['"`]|['"`]$/g,'');
+              try{const u=new URL(raw,url).href;if(/duolingo|logo|lockup|press|asset|static|media/i.test(u))urls.add(u)}catch{}
+            }
+            for(const u of [...urls].slice(0,100))console.log('IMAGEURL',u);
           }
           NODE
