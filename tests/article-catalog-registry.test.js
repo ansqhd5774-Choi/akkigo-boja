@@ -8,6 +8,8 @@ test('all approved module articles are reachable through the single article regi
   const audit=await auditArticleRegistry();
   assert.ok(audit.discovered.includes('gigaip-benefits-202610'));
   assert.ok(audit.registered.includes('gigaip-benefits-202610'));
+  assert.ok(!audit.discovered.includes('ohmyzip-benefits-202610'));
+  assert.ok(!audit.registered.includes('ohmyzip-benefits-202610'));
   assert.equal(currentArticleCatalog.filter(x=>x.articleKey==='gigaip-benefits-202610').length,1);
 });
 
