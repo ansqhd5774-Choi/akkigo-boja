@@ -1,10 +1,11 @@
 import entries from '../data/game-app-icons.json' with {type:'json'};
 import supplemental from '../data/game-app-icons-supplemental.json' with {type:'json'};
 import supplemental2 from '../data/game-app-icons-supplemental-2.json' with {type:'json'};
+import supplemental3 from '../data/game-app-icons-supplemental-3.json' with {type:'json'};
 // Older pages are not rewritten until their app-store identity is verified.
 // New game posts and explicitly converted pages require a registered original store icon.
 export const LEGACY_GAME_ICON_KEYS=new Set(["shibarpg-pickup-202610","cpbv26-codes-202610","trickcal-revive-codes-202610","browndust2-codes-202610","genshin-codes-202610","honkai-star-rail-codes-202610","blue-archive-codes-202610","roblox-promo-codes-202610","brawl-stars-rewards-202610","fortblox-mobile-go-codes-202610","whiteout-survival-codes-202610","maplestory-idle-codes-202610","kingshot-codes-202610","fc-mobile-codes-202610","lucky-defense-codes-202610","nikke-codes-202610"]);
-const icons=new Map([...entries,...supplemental,...supplemental2].map(x=>[x.articleKey,x]));
+const icons=new Map([...entries,...supplemental,...supplemental2,...supplemental3].map(x=>[x.articleKey,x]));
 export function validateGameFeaturedImage(articleKey,post){
   if(!post?.labels?.includes('게임'))return true;
   if(LEGACY_GAME_ICON_KEYS.has(articleKey))return true;

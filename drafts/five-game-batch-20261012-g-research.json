@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-12",
+  "category": "게임",
+  "searchMeasurement": {"status": "NOT_MEASURED"},
+  "identityNormalization": [
+    {"input":"캣 히어로즈","resolvedOfficialTitle":"캣 히어로즈 - 고양이 머지 디펜스","package":"com.poomgames.catheroes","note":"HYKICK official Google Play; similarly named Cat Hero coupon alert excluded"},
+    {"input":"Dark War Survival","resolvedOfficialTitle":"Dark War Survival","package":"com.readygo.dark.gp"},
+    {"input":"라스트 Z","resolvedOfficialTitle":"Last Z: Survival Shooter","package":"com.readygo.barrel.gp"},
+    {"input":"다크슬레이어","resolvedOfficialTitle":"다크슬레이어 : 방치형 RPG 키우기","package":"com.gamepub.zhteam.g","note":"Dark Slayer 2 and unrelated Pixel Hack&Slash excluded"},
+    {"input":"좀비 타워","resolvedOfficialTitle":"Zombie Tower","package":"com.pi.zombie.tower","note":"Roblox Zombie Tower Defense codes excluded"}
+  ],
+  "games": [
+    {"articleKey":"cat-heroes-merge-defense-codes-202610","currentPublicCodeCount":0,"officialStore":"https://play.google.com/store/apps/details?hl=ko&id=com.poomgames.catheroes","status":"NO_PUBLIC_REDEEM_CODE_FOUND"},
+    {"articleKey":"dark-war-survival-codes-202610","officialStore":"https://play.google.com/store/apps/details?hl=en-US&id=com.readygo.dark.gp","officialSite":"https://darkwar-survival.com/","officialGiftCenter":"https://giftcenter.darkwar-survival.com/","sources":[{"url":"https://www.darkwarrewards.com/giftcodes","sourcePublishedAt":null,"note":"live/expired tracker"},{"url":"https://vantera.app/de/codes","sourcePublishedAt":null,"note":"independent Gift Center checking claim"},{"url":"https://www.pocketgamer.com/dark-war-survival/codes/","sourcePublishedAt":"2026-10-11"},{"url":"https://clashiverse.com/dark-war-survival-codes/","sourcePublishedAt":"2026-10-01"}],"recordCount":33,"status":"MULTI_SOURCE_CONFLICT_UNVERIFIED"},
+    {"articleKey":"last-z-survival-shooter-codes-202610","officialStore":"https://play.google.com/store/apps/details?hl=en_US&id=com.readygo.barrel.gp","officialSite":"https://last-z.com/","officialNoticeDates":["2026-10-06","2026-09-29","2026-09-22"],"sources":[{"url":"https://www.gamsgo.com/blog/last-z-survival-shooter-codes","sourcePublishedAt":"2026-10-10"},{"url":"https://www.pocketgamer.com/last-z-survival-shooter/codes/","sourcePublishedAt":"2026-10-11"},{"url":"https://progamepilot.com/last-z-survival-shooter-codes/","sourcePublishedAt":"2026-10-07"}],"recordCount":21,"status":"MULTI_SOURCE_CONFLICT_UNVERIFIED","note":"THANKU250KCOM and THANU250KCOM kept separately because current sources disagree on exact spelling"},
+    {"articleKey":"dark-slayer-idle-codes-202610","officialStore":"https://play.google.com/store/apps/details?hl=ko&id=com.gamepub.zhteam.g","officialCommunity":"https://game.naver.com/lounge/Ghost_Hunter/home","historySource":{"url":"https://coingos.tistory.com/690","sourcePublishedAt":"2023-12-15"},"historyCodeCount":12,"status":"OFFICIAL_COUPON_FEATURE_CURRENT_CODE_UNCONFIRMED"},
+    {"articleKey":"zombie-tower-codes-202610","officialStore":"https://play.google.com/store/apps/details?hl=ko&id=com.pi.zombie.tower","developerSite":"https://www.pigame-mobile.com/","currentPublicCodeCount":0,"status":"NO_PUBLIC_REDEEM_CODE_FOUND"}
+  ]
+}
