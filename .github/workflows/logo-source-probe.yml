@@ -13,33 +13,36 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Inspect Duolingo press logo bundle references read-only
+      - name: Extract Duolingo official press-kit logo downloads read-only
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const base='https://press.duolingo.com/';
-          const r=await fetch(base,{headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(20000)});
-          const html=await r.text();
-          const scripts=[...html.matchAll(/<script[^>]+src=["']([^"']+)["']/gi)].map(m=>new URL(m[1],r.url).href);
-          console.log('PRESS',r.status,r.url,scripts);
-          for(const url of scripts){
-            const x=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(20000)});
-            const text=await x.text();
-            if(!/(press kit|logos?|logotype|lockup)/i.test(text))continue;
-            console.log('BUNDLE',url,'bytes',text.length);
-            const terms=['Press Kit','Logos','logo','logotype','lockup'];
-            for(const term of terms){
-              let pos=0,count=0;
-              while((pos=text.toLowerCase().indexOf(term.toLowerCase(),pos))>=0&&count++<12){
-                const s=Math.max(0,pos-700),e=Math.min(text.length,pos+1400);
-                console.log('CTX',term,text.slice(s,e).replace(/\s+/g,' '));pos+=term.length;
-              }
+          const start='https://duolingopress.lingoapp.com/s/Logos-oJyX2Q';
+          const seen=new Set();
+          const queue=[start];
+          const interesting=/(duolingo|logo|logotype|lockup|wordmark|brand|download)/i;
+          for(let depth=0;depth<3&&queue.length;depth++){
+            const round=queue.splice(0,40);
+            for(const url of round){
+              if(seen.has(url))continue;seen.add(url);
+              try{
+                const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml,*/*'},signal:AbortSignal.timeout(20000)});
+                const ct=r.headers.get('content-type')||'';
+                const text=await r.text();console.log('PAGE',depth,r.status,r.url,ct,'bytes='+text.length);
+                if(/image\/svg|application\/svg/i.test(ct)){console.log('SVG',r.url,text.slice(0,2000).replace(/\s+/g,' '));continue}
+                const urls=new Set();
+                for(const m of text.matchAll(/(?:src|srcset|href|content|url)\s*[=:]\s*["'`]([^"'`]+)["'`]/gi)){
+                  for(const p of m[1].split(',').map(x=>x.trim().split(/\s+/)[0])){try{urls.add(new URL(p.replaceAll('\\/','/'),r.url).href)}catch{}}
+                }
+                for(const m of text.matchAll(/https?:\\?\/\\?\/[^"'`\s<>]+/gi)){try{urls.add(m[0].replaceAll('\\/','/'))}catch{}}
+                for(const u of urls){
+                  if(/\.(?:svg|png|webp|jpe?g|zip|pdf)(?:\?|$)/i.test(u))console.log('ASSET',u);
+                  if(depth<2&&(/\.(?:js|json)(?:\?|$)/i.test(u)||interesting.test(u))&&u.startsWith('http'))queue.push(u);
+                }
+                for(const term of ['Duolingo','Logo','Logotype','Lockup','Download']){
+                  let p=0,n=0;while((p=text.toLowerCase().indexOf(term.toLowerCase(),p))>=0&&n++<10){console.log('CTX',term,text.slice(Math.max(0,p-500),Math.min(text.length,p+1200)).replace(/\s+/g,' '));p+=term.length}
+                }
+              }catch(e){console.log('ERROR',url,e.name,e.message)}
             }
-            const urls=new Set();
-            for(const m of text.matchAll(/(?:https?:\\?\/\\?\/[^"'`\s)]+|["'`]([^"'`\s]+\.(?:svg|png|webp|jpe?g)(?:\?[^"'`\s]*)?)["'`])/gi)){
-              const raw=(m[1]||m[0]).replaceAll('\\/','/').replace(/^['"`]|['"`]$/g,'');
-              try{const u=new URL(raw,url).href;if(/duolingo|logo|lockup|press|asset|static|media/i.test(u))urls.add(u)}catch{}
-            }
-            for(const u of [...urls].slice(0,100))console.log('IMAGEURL',u);
           }
           NODE
