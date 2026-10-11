@@ -1,106 +1,155 @@
 {
   "articleKey": "iwinv-benefits-202610",
-  "checkedAt": "2026-10-10",
+  "checkedAt": "2026-10-11",
+  "category": "호스팅·도메인",
   "urls": {
+    "official": "https://www.iwinv.kr/",
     "web": "https://gdn.event.iwinv.kr/webhosting/index.html",
     "gpu": "https://gdn.event.iwinv.kr/gpu/",
     "gov": "https://docs.iwinv.kr/blog/2026/05/15/cloud-service-event/",
     "long": "https://docs.iwinv.kr/blog/2025/09/17/gpu/",
     "half": "https://docs.iwinv.kr/blog/2026/03/31/iwinv-half-price/",
+    "partner": "https://help.iwinv.kr/manual/985",
     "old": "https://www.iwinv.kr/event/22",
     "events": "https://www.iwinv.kr/event/"
   },
   "offers": [
     {
-      "name": "웹호스팅 신규",
+      "name": "웹호스팅 신규 6개월 반값",
+      "type": "AUTO_DISCOUNT",
+      "status": "ACTIVE_OFFICIAL",
       "value": "6개월 50%",
-      "method": "공식 이벤트 페이지 신규 신청",
-      "target": "신규 서비스 1인 1회",
-      "url": "web",
-      "date": null,
-      "detail": "라이트 월 940→470원, 프리미엄 3,740→1,870원, 무제한 5,900→2,950원. 6개월 이후 정상가·조기 종료 가능."
+      "method": "공식 이벤트 페이지에서 신규 서비스 신청",
+      "target": "신규 서비스 신청 고객·사용자당 1회",
+      "endMode": "UNTIL_PROMOTION_ENDS",
+      "source": "web",
+      "sourcePublishedAt": null,
+      "detail": "라이트 월 940→470원, 프리미엄 3,740→1,870원, 무제한 5,900→2,950원. 신청 시점부터 최대 6개월, 중도 해지 시 잔여 혜택 소멸, 조기 종료 가능."
     },
     {
-      "name": "GPU 신규 첫달",
-      "value": "50%",
-      "method": "이벤트 신청 버튼 이메일 접수·상담",
-      "target": "신규 고객 1인 1회·최소 1개월",
-      "url": "gpu",
-      "date": null,
-      "detail": "할인 혜택은 월말 V-Pay 마일리지 지급, 최대 2개월 분할. 재고 소진 시 종료. VAT 별도."
+      "name": "GPU 신규 고객 첫달 반값",
+      "type": "CASHBACK",
+      "status": "ACTIVE_OFFICIAL",
+      "value": "첫달 50%",
+      "method": "공식 이벤트 신청 버튼으로 이메일 접수 후 상담",
+      "target": "GPU 신규 고객·사용자당 1회·최소 1개월",
+      "endMode": "UNTIL_STOCK_EXHAUSTED",
+      "source": "gpu",
+      "sourcePublishedAt": null,
+      "detail": "할인 상당액은 월말 V-Pay 마일리지로 지급되며 최대 2개월 분할될 수 있음. 재고 소진 시 사전 안내 없이 종료 가능. VAT 별도."
     },
     {
-      "name": "GPU 1년 장기",
+      "name": "GPU 1년 이상 장기이용 반값",
+      "type": "MEMBER",
+      "status": "ACTIVE_OFFICIAL",
       "value": "50%",
-      "method": "1년 이상 이용 후 약정·관리자 승인",
+      "method": "GPU 1년 이상 이용 후 1년 약정 신청·관리자 승인",
       "target": "GPU 장기이용 고객",
-      "url": "long",
-      "date": "2025-09-17",
-      "detail": "승인일 다음달 1일부터 적용. 약정 후 사양 변경·양도 불가. 신규 첫달 할인과 중복 불명."
+      "endMode": "ONGOING",
+      "source": "long",
+      "sourcePublishedAt": "2025-09-17",
+      "detail": "승인일 기준 익월 1일부터 할인 적용. 약정 후 사양 변경·양도 불가. 해지 후 재약정은 다시 1년 이상 이용 후 가능."
     },
     {
-      "name": "GPU 이전 트래픽",
+      "name": "GPU 마이그레이션 트래픽",
+      "type": "FREEBIE",
+      "status": "ACTIVE_OFFICIAL",
       "value": "무제한 무료",
-      "method": "마이그레이션 일정 협의",
-      "target": "GPU 이전 고객",
-      "url": "gpu",
-      "date": null,
-      "detail": "GPU 마이그레이션에 한정. 모든 일반 트래픽 무제한 무료가 아님."
+      "method": "GPU 서버 이전 시간대를 iwinv와 협의",
+      "target": "GPU 서버 마이그레이션 고객",
+      "endMode": "UNKNOWN",
+      "source": "gpu",
+      "sourcePublishedAt": null,
+      "detail": "GPU 이전 작업에 한정된 트래픽 혜택이며 일반 서비스의 모든 트래픽이 무제한 무료라는 의미가 아님."
     },
     {
-      "name": "2026 정부 사업",
-      "value": "최대 80% 지원",
-      "method": "2026년 사업 선정 후 신청",
-      "target": "선정 중소기업·6/1~12/31",
-      "url": "gov",
-      "date": "2026-05-15",
-      "detail": "GPU·클라우드·베어메탈·VDI·스토리지·DBMS·보안·매니지드 등. 일반 회원 쿠폰 아님."
+      "name": "2026년 클라우드 서비스 보급·확산 사업",
+      "type": "QUALIFICATION",
+      "status": "ACTIVE_OFFICIAL",
+      "value": "이용료 최대 80% 지원",
+      "method": "2026년 사업 선정 후 iwinv 대상 서비스 신청",
+      "target": "2026년 사업 선정 중소기업·2026-06-01~12-31",
+      "endMode": "FIXED_DATE",
+      "source": "gov",
+      "sourcePublishedAt": "2026-05-15",
+      "detail": "GPU·클라우드·베어메탈·VDI·스토리지·DBMS·보안·매니지드 등이 대상. 일반 회원용 쿠폰이 아님."
     },
     {
-      "name": "사업 종료 후 GPU",
+      "name": "지원사업 종료 후 GPU 할인",
+      "type": "MEMBER",
+      "status": "OFFICIAL_FUTURE_FOLLOWUP",
       "value": "30% 지속 할인",
       "method": "지원사업 참여 고객 상담",
-      "target": "선정 중소기업 GPU 이용자",
-      "url": "gov",
-      "date": "2026-05-15",
-      "detail": "정부 지원 종료 후 적용. 지원율과 단순 합산 불가."
+      "target": "선정 중소기업의 GPU 서비스 이용자",
+      "endMode": "ONGOING",
+      "source": "gov",
+      "sourcePublishedAt": "2026-05-15",
+      "detail": "정부 지원 기간 종료 후 제공되는 후속 혜택. 최대 80% 지원과 같은 기간에 단순 합산하지 않음."
     },
     {
-      "name": "사업 종료 후 일반 서비스",
+      "name": "지원사업 종료 후 일반 서비스 할인",
+      "type": "MEMBER",
+      "status": "OFFICIAL_FUTURE_FOLLOWUP",
       "value": "20% 지속 할인",
       "method": "지원사업 참여 고객 상담",
-      "target": "선정 중소기업 일반 서비스",
-      "url": "gov",
-      "date": "2026-05-15",
-      "detail": "정부 지원 종료 후 적용. 지원율과 단순 합산 불가."
+      "target": "선정 중소기업의 일반 서비스 이용자",
+      "endMode": "ONGOING",
+      "source": "gov",
+      "sourcePublishedAt": "2026-05-15",
+      "detail": "정부 지원 기간 종료 후 제공되는 후속 혜택. 최대 80% 지원과 같은 기간에 단순 합산하지 않음."
     },
     {
-      "name": "웹호스팅 SSL·웹방화벽",
+      "name": "웹호스팅 무료 SSL·웹방화벽",
+      "type": "FREEBIE",
+      "status": "ACTIVE_OFFICIAL",
       "value": "무료 포함",
       "method": "대상 유료 웹호스팅 이용",
       "target": "웹호스팅 가입자",
-      "url": "web",
-      "date": null,
-      "detail": "SSL 자동 갱신·웹방화벽 제공. 호스팅 자체 무료 아님."
+      "endMode": "ONGOING",
+      "source": "web",
+      "sourcePublishedAt": null,
+      "detail": "SSL 자동 갱신과 웹방화벽이 호스팅 상품 기능에 포함됨. 호스팅 이용료 자체가 무료라는 의미는 아님."
+    },
+    {
+      "name": "콘텐츠 캐시 파트너 제휴 할인",
+      "type": "PARTNER_LINK",
+      "status": "ACTIVE_OFFICIAL_CONDITIONAL",
+      "value": "할인율 공개 안 됨",
+      "method": "제휴업체에서 파트너 코드를 받아 전용 가입 링크로 신규 가입 후 캐시 라이트 할인 선택",
+      "target": "파트너 링크로 가입한 콘텐츠 캐시 이용자",
+      "endMode": "UNKNOWN",
+      "source": "partner",
+      "sourcePublishedAt": null,
+      "manualVersion": "2026-08-12",
+      "detail": "공식 파트너사 전용 매뉴얼에서 제휴 할인 존재와 적용 절차는 확인되지만 공개 할인율과 공용 파트너 코드는 없음."
     }
   ],
   "historical": [
     {
       "name": "2025년 클라우드 보급확산 무료 크레딧",
       "status": "EXPIRED_PERIOD",
-      "url": "old",
-      "publishedAt": null,
+      "source": "old",
+      "sourcePublishedAt": null,
       "start": "2025-04-10",
       "end": "2025-12-31"
     }
   ],
   "unverified": [
     "현재 공용 문자열 할인코드",
-    "신규가입 무료 서버 크레딧",
-    "추천인 보너스",
+    "일반 신규가입 즉시 무료 서버 크레딧",
+    "공용 추천인 보너스",
     "카드사 전용 할인",
     "학생 인증 할인",
-    "실사용 계정에서의 할인·마일리지 지급"
+    "신규 GPU 첫달 V-Pay 마일리지의 개별 계정 실수령",
+    "웹호스팅 50%와 다른 프로모션의 중복 적용"
+  ],
+  "thirdParty": [
+    {
+      "source": "https://gall.dcinside.com/mgallery/board/view/?id=servernetworkop&no=284",
+      "publishedAt": "2026-04-29",
+      "status": "SERVICE_USE_REPORT_ONLY",
+      "detail": "GPU 서버 이용 후기로 가격과 사용 경험은 언급하지만 별도 쿠폰·할인코드는 제시하지 않음."
+    }
   ],
   "keywords": [
     "iwinv 쿠폰",
@@ -110,7 +159,8 @@
     "iwinv GPU 서버 할인",
     "iwinv 반값서버",
     "iwinv 무료 크레딧",
-    "iwinv 클라우드 지원사업"
+    "iwinv 클라우드 지원사업",
+    "iwinv 파트너 할인"
   ],
   "hashtags": [
     "#iwinv",
@@ -119,5 +169,9 @@
     "#웹호스팅",
     "#클라우드할인",
     "#반값서버"
-  ]
+  ],
+  "searchMeasurement": {
+    "status": "NOT_MEASURED",
+    "note": "검색량·노출률의 신뢰 가능한 실제 측정 자료를 확보하지 않아 수치를 기록하지 않음."
+  }
 }
