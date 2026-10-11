@@ -73,3 +73,15 @@ test('stored postId fallback reports post, blog and status mismatches separately
   assert.equal(state.attempt,null);
  }
 });
+
+test('REMOVED article state blocks Blogger reads, patches and replacement creation',async()=>{
+ const {DB,state}=fixtureDb();
+ state.article.status='REMOVED';
+ let bloggerCalls=0;
+ const transport=async()=>{bloggerCalls++;throw Error('BLOGGER_MUST_NOT_RUN');};
+ await assert.rejects(publishApprovedArticle(env(DB),article.articleKey,[article],transport),/ARTICLE_REMOVED/);
+ assert.equal(bloggerCalls,0);
+ assert.equal(state.attempt,null);
+ assert.equal(state.article.post_id,'555');
+ assert.equal(state.article.public_url,publicUrl);
+});
