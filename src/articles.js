@@ -97,6 +97,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   if(article.post.labels.includes('게임'))validateGamePeriodArticle(article);
 
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
+  if(stored?.status==='REMOVED')throw Error('ARTICLE_REMOVED');
   if(existingOnly&&(stored?.status!=='LIVE'||!stored.post_id||!stored.public_url))throw Error('ARTICLE_NOT_LIVE_UPDATE_ONLY');
   if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
     const current=await resolveStoredLivePost(env,articleKey,stored,transport);
