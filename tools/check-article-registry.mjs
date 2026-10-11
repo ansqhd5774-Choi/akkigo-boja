@@ -23,7 +23,13 @@ export async function discoverApprovedModuleKeys({srcDir=resolve(root,'src')}={}
   const files=(await readdir(srcDir)).filter(name=>name.endsWith('-article.js')).sort();
   const keys=new Set();
   for(const name of files){
-    const mod=await import(pathToFileURL(resolve(srcDir,name)).href);
+    const path=resolve(srcDir,name);
+    const source=await readFile(path,'utf8');
+    // Do not execute modules that are explicitly non-publishable. This keeps
+    // the audit based on source intent and prevents runtime side effects from
+    // promoting retained research/evidence modules such as OhMyZip.
+    if(!/approvedForPublish\s*:\s*true\b/.test(source))continue;
+    const mod=await import(pathToFileURL(path).href);
     for(const value of Object.values(mod)){
       if(value && typeof value==='object' && value.approvedForPublish===true && typeof value.articleKey==='string' && value.post){
         keys.add(value.articleKey);
