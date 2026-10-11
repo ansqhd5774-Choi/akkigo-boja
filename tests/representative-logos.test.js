@@ -48,10 +48,21 @@ test('game articles remain under the official app-icon policy rather than compan
  assert.equal(validateRepresentativeLogo(game,{required:true,allowLegacy:false,strictSource:true,registry:[]}),true);
 });
 
-test('approved non-game representative image audit reports all legacy and missing contracts without mutating content',()=>{
+test('approved non-game representative image audit reports current debt and forbids any new image regression',()=>{
  const audit=auditRepresentativeImages();
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
+ const expectedMissing=[
+  'bnesim-esim-promo-202610','dosirakesim-promo-202610','duolingo-super-coupons-202610','eskimo-esim-promo-202610',
+  'frombio-coupons-202610','gigago-esim-promo-202610','globalyo-esim-promo-202610','gomoworld-esim-promo-202610',
+  'gigaip-benefits-202610','hotvpn-benefits-202610','inflearn-coupons-202610','ip4u-benefits-202610',
+  'keepgo-esim-promo-202610','maaltalk-benefits-202610','malhaevoca-discounts-202610','nomad-esim-promo-202610',
+  'ohmyzip-benefits-202610','rokebi-promo-202610','simcorner-promo-202610','twofasts-benefits-202610','yesim-esim-promo-202610'
+ ].sort();
+ assert.deepEqual([...audit.missing].sort(),expectedMissing);
+ assert.deepEqual([...audit.suspicious].sort(),['esthermall-coupons-202610']);
+ assert.deepEqual([...audit.firstImageMismatch].sort(),[]);
+ assert.equal(audit.fail,expectedMissing.length+1);
  const missingDetails=audit.rows.filter(row=>row.issues.includes('MISSING_REGISTRY')).map(({articleKey,title,labels,sourceUrl,firstImageSrc})=>({articleKey,title,labels,sourceUrl,firstImageSrc}));
  const suspiciousDetails=audit.rows.filter(row=>row.issues.includes('SUSPICIOUS_SOURCE_ASSET')).map(({articleKey,title,registeredSourceAsset})=>({articleKey,title,registeredSourceAsset}));
  console.log('REPRESENTATIVE_IMAGE_AUDIT_TEST',JSON.stringify({total:audit.total,pass:audit.pass,fail:audit.fail,missing:audit.missing,legacy:audit.legacy,suspicious:audit.suspicious,firstImageMismatch:audit.firstImageMismatch,missingDetails,suspiciousDetails}));
