@@ -6,11 +6,11 @@ import {auditArticleRegistry,assertApprovedRequestInCatalog} from '../tools/chec
 
 test('all approved module articles are reachable through the single article registry',async()=>{
   const audit=await auditArticleRegistry();
-  assert.ok(audit.discovered.includes('gigaip-benefits-202610'));
-  assert.ok(audit.registered.includes('gigaip-benefits-202610'));
-  assert.ok(!audit.discovered.includes('ohmyzip-benefits-202610'));
-  assert.ok(!audit.registered.includes('ohmyzip-benefits-202610'));
-  assert.equal(currentArticleCatalog.filter(x=>x.articleKey==='gigaip-benefits-202610').length,1);
+  for(const key of ['gigaip-benefits-202610','ohmyzip-benefits-202610']){
+    assert.ok(audit.discovered.includes(key),key);
+    assert.ok(audit.registered.includes(key),key);
+    assert.equal(currentArticleCatalog.filter(x=>x.articleKey===key).length,1,key);
+  }
 });
 
 test('worker readiness and publisher consume the shared registry instead of private catalogs',async()=>{
