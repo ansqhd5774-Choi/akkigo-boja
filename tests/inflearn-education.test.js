@@ -1,10 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {inflearnArticle} from '../src/inflearn-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('인프런 교육 혜택 글은 현재 쿠폰·자격·환급·무료 혜택을 구분한다',()=>{
-  const a=inflearnArticle;
+  const a=currentArticleCatalog.find(x=>x.articleKey==='inflearn-coupons-202610');
   assert.equal(a.articleKey,'inflearn-coupons-202610');
   assert.equal(a.approvedForPublish,true);
   assert.deepEqual(a.post.labels,['교육','인프런']);
