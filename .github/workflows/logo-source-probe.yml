@@ -1,0 +1,48 @@
+name: Temporary Remaining Logo Probe
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths: [.github/workflows/logo-source-probe.yml]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Read official pages for logo candidates
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          const targets={
+            dosirak:['https://dosirakesim.com/'],
+            duolingo:['https://design.duolingo.com/identity/logos'],
+            malhaevoca:['https://epop.ai/ko/premium','https://epop.ai/ko'],
+            frombio:['https://www.frombio.co.kr/','https://m.frombio.co.kr/'],
+            rokebi:['https://store.rokebi.com/','https://www.rokebi.com/'],
+            esther:['https://www.esthermall.co.kr/']
+          };
+          const kw=/(logo|logotype|mainlogo|brand|duolingo|dosirak|도시락|epop|말해보카|frombio|프롬바이오|rokebi|로밍도깨비|esther|에스더)/i;
+          function abs(v,b){try{if(!v||/^(data|javascript):/i.test(v))return null;return new URL(v.replace(/&amp;/g,'&'),b).href}catch{return null}}
+          function candidates(html,base){
+            const out=[];
+            for(const m of html.matchAll(/<(?:img|source|link|meta)[^>]*>/gi)){
+              const tag=m[0]; if(!kw.test(tag))continue;
+              const attrs=[...tag.matchAll(/(?:src|srcset|href|content)\s*=\s*["']([^"']+)["']/gi)].map(x=>x[1]);
+              for(const raw of attrs){for(const part of raw.split(',').map(x=>x.trim().split(/\s+/)[0])){const u=abs(part,base);if(u)out.push([u,tag.slice(0,320).replace(/\s+/g,' ')])}}
+            }
+            for(const m of html.matchAll(/(?:["'(=:\s])([^"'()\s<>]{0,200}(?:logo|brand)[^"'()\s<>]{0,200}\.(?:svg|png|webp|jpe?g)(?:\?[^"'()\s<>]*)?)/gi)){const u=abs(m[1],base);if(u)out.push([u,'raw-logo-path']);}
+            return [...new Map(out.map(x=>[x[0],x])).values()].slice(0,60);
+          }
+          for(const [name,urls] of Object.entries(targets)){
+            for(const url of urls){
+              try{
+                const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(12000)});
+                const html=await r.text(); console.log(`PAGE ${name} ${r.status} ${r.url} bytes=${html.length}`);
+                for(const [u,ctx] of candidates(html,r.url))console.log(`CANDIDATE ${name} ${u} CONTEXT ${ctx}`);
+              }catch(e){console.log(`ERROR ${name} ${url} ${e.name}`)}
+            }
+          }
+          NODE
