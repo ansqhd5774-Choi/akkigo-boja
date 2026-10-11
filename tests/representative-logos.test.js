@@ -55,15 +55,14 @@ test('game articles remain under the official app-icon policy rather than compan
  assert.equal(validateRepresentativeLogo(game,{required:true,allowLegacy:false,strictSource:true,registry:[]}),true);
 });
 
-test('approved non-game representative image audit reports current debt and forbids any new image regression',()=>{
+test('approved non-game representative image audit requires zero current debt',()=>{
  const audit=auditRepresentativeImages();
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
- const expectedMissing=['duolingo-super-coupons-202610','frombio-coupons-202610'].sort();
- assert.deepEqual([...audit.missing].sort(),expectedMissing);
+ assert.deepEqual([...audit.missing].sort(),[]);
  assert.deepEqual([...audit.suspicious].sort(),[]);
  assert.deepEqual([...audit.firstImageMismatch].sort(),[]);
- assert.equal(audit.fail,expectedMissing.length);
+ assert.equal(audit.fail,0);
  const missingDetails=audit.rows.filter(row=>row.issues.includes('MISSING_REGISTRY')).map(({articleKey,title,labels,sourceUrl,firstImageSrc})=>({articleKey,title,labels,sourceUrl,firstImageSrc}));
  const suspiciousDetails=audit.rows.filter(row=>row.issues.includes('SUSPICIOUS_SOURCE_ASSET')).map(({articleKey,title,registeredSourceAsset})=>({articleKey,title,registeredSourceAsset}));
  console.log('REPRESENTATIVE_IMAGE_AUDIT_TEST',JSON.stringify({total:audit.total,pass:audit.pass,fail:audit.fail,missing:audit.missing,legacy:audit.legacy,suspicious:audit.suspicious,firstImageMismatch:audit.firstImageMismatch,missingDetails,suspiciousDetails}));
