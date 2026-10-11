@@ -1,10 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {maaltalkArticle} from '../src/maaltalk-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('말톡 글은 현재 상품할인·쿠폰·리뷰·무료전화 혜택을 구분한다',()=>{
-  const a=maaltalkArticle;
+  const a=currentArticleCatalog.find(x=>x.articleKey==='maaltalk-benefits-202610');
   assert.equal(a.articleKey,'maaltalk-benefits-202610');
   assert.equal(a.approvedForPublish,true);
   assert.deepEqual(a.post.labels,['유심·로밍','말톡']);
