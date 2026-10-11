@@ -1,6 +1,5 @@
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import logos from '../data/representative-logos.json' with {type:'json'};
 import {currentArticleCatalog} from '../src/article-catalog.js';
 import {
   LEGACY_REPRESENTATIVE_LOGO_KIND,
@@ -8,6 +7,7 @@ import {
   isGameArticle,
   isSuspiciousRepresentativeAsset,
   representativeLogoFor,
+  representativeLogoRegistry,
   validateRepresentativeLogo
 } from '../src/representative-logo-policy.js';
 
@@ -19,7 +19,7 @@ function firstImageSrc(html=''){
   return firstImage(html).match(/\bsrc="([^"]+)"/i)?.[1]||null;
 }
 
-export function auditRepresentativeImages(catalog=currentArticleCatalog,registry=logos){
+export function auditRepresentativeImages(catalog=currentArticleCatalog,registry=representativeLogoRegistry){
   const rows=[];
   for(const article of catalog){
     if(article?.approvedForPublish!==true||!article?.post||isGameArticle(article))continue;
