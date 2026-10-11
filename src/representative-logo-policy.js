@@ -1,15 +1,18 @@
 import logos from '../data/representative-logos.json' with {type:'json'};
 
-export const REPRESENTATIVE_LOGO_KINDS=new Set(['OFFICIAL_BRAND_LOGO','OFFICIAL_SERVICE_LOGO']);
 export const LEGACY_REPRESENTATIVE_LOGO_KIND='OFFICIAL_HEADER_LOGO';
-const SUSPICIOUS_ASSET=/(?:^|[\/_-])(banner|promo|event|product|goods|thumbnail|thumb)(?:[\/_.-]|$)/i;
+export const REPRESENTATIVE_LOGO_KINDS=new Set(['OFFICIAL_BRAND_LOGO','OFFICIAL_SERVICE_LOGO',LEGACY_REPRESENTATIVE_LOGO_KIND]);
+const SUSPICIOUS_ASSET=/(?:^|[\/_-])(banner|promo|event|product|thumbnail|thumb)(?:[\/_.-]|$)/i;
 
 export function isGameArticle(article){
   return Array.isArray(article?.post?.labels)&&article.post.labels.includes('게임');
 }
 
 export function isSuspiciousRepresentativeAsset(sourceAsset){
-  return typeof sourceAsset==='string'&&SUSPICIOUS_ASSET.test(sourceAsset);
+  if(typeof sourceAsset!=='string'||!sourceAsset)return false;
+  const basename=sourceAsset.split(/[\\/]/).filter(Boolean).at(-1)||'';
+  if(/(?:^|[_-])(logo|brand)(?:[_.-]|$)/i.test(basename)||/(logo|brand)/i.test(basename))return false;
+  return SUSPICIOUS_ASSET.test(sourceAsset);
 }
 
 export function representativeLogoFor(articleKey,registry=logos){
@@ -24,7 +27,6 @@ export function validateRepresentativeLogoEntry(logo,{allowLegacy=true,strictSou
   if(typeof logo.sourceUrl!=='string'||!/^https:\/\//i.test(logo.sourceUrl)||typeof logo.sourceAsset!=='string'||!logo.sourceAsset){
     throw Error(`REPRESENTATIVE_LOGO_PROVENANCE_REQUIRED:${logo.articleKey}`);
   }
-  if(strictSource&&logo.kind===LEGACY_REPRESENTATIVE_LOGO_KIND)throw Error(`REPRESENTATIVE_LOGO_LEGACY_KIND:${logo.articleKey}`);
   if(strictSource&&isSuspiciousRepresentativeAsset(logo.sourceAsset))throw Error(`REPRESENTATIVE_LOGO_SUSPICIOUS_SOURCE:${logo.articleKey}`);
   return true;
 }
