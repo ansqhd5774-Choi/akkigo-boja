@@ -13,7 +13,13 @@ export function applyRepresentativeLogo(article,{registry=representativeLogoRegi
   if(!article||article.approvedForPublish!==true||!article.post||isGameArticle(article))return article;
   const logo=representativeLogoFor(article.articleKey,registry);
   if(!logo)return article;
-  validateRepresentativeLogoEntry(logo,{allowLegacy:false,strictSource:true});
+  try{
+    validateRepresentativeLogoEntry(logo,{allowLegacy:false,strictSource:true});
+  }catch{
+    // Historical bad registrations stay unchanged and remain visible to the audit/publish gate.
+    // Do not let one quarantined record prevent the full article catalog from loading.
+    return article;
+  }
   let content=article.post.content||'';
   const current=content.match(/<figure\b[^>]*data-ncp-featured-image="[^"]+"[^>]*>[\s\S]*?<\/figure>/i)?.[0]||'';
   const target=figure(article,logo);
