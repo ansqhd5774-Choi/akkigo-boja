@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-12",
+  "category": "게임",
+  "searchMeasurement": {"status": "NOT_MEASURED"},
+  "identityNormalization": {
+    "input": "몬",
+    "resolvedOfficialTitle": "몬길: STAR DIVE",
+    "basis": "Netmarble official Google Play package com.netmarble.monster2 and official Korean forum"
+  },
+  "games": [
+    {
+      "articleKey": "chuno-idle-codes-202610",
+      "title": "추노 키우기",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.dwgames.chunorpg",
+      "officialCommunity": "https://cafe.naver.com/chunorpg",
+      "candidateSource": {"url": "https://data100.dasfl.com/추노키우기-가이드/", "sourcePublishedAt": "2026-07-09"},
+      "candidates": ["OPENCHUNO", "FIRSTWIN", "CHUNO1ST", "IOSOPEN", "APPLE1ST", "CAFE1000", "CAFE2000", "CAFE3000"],
+      "status": "UNVERIFIED",
+      "notes": "Third-party source traces these to the official cafe, but exact official issue posts and current account redemption were not confirmed; no-expiry claim not promoted."
+    },
+    {
+      "articleKey": "cookierun-crumble-codes-202610",
+      "title": "쿠키런 키우기 - 쿠키런: 크럼블",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.devsisters.cc",
+      "officialSite": "https://cookieruncrumble.com/ko",
+      "officialCouponHelp": "https://cs-cookieruncrumble.devsisters.com/hc/ko/articles/59145001308185-쿠키런-크럼블-쿠폰-입력-페이지-바로가기",
+      "currentOfficialCode": null,
+      "history": [
+        {"code": "COOKIERUNCRUMBLE1ST", "status": "EXPIRED", "expiry": "2026-08 종료"},
+        {"code": "COOKIERUNCRUMBLENO1", "status": "EXPIRED", "expiry": "2026-08 종료·세부일 상충"}
+      ],
+      "notes": "Official redemption page exists. September-updated code guide reports no current valid codes; conflicting exact August expiry dates were not normalized into a false precise date."
+    },
+    {
+      "articleKey": "switching-heroes-codes-202610",
+      "title": "스위칭 히어로즈: 키우기 RPG",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.zilliongames.collectionidle",
+      "officialCommunity": "https://cafe.naver.com/switchingheroes",
+      "partnerSource": {"url": "https://kupon.kr/community/switching-heroes-partner", "sourcePublishedAt": "2026-09-30", "modifiedAt": "2026-10-05", "authority": "PARTNER_GAME_COMPANY_PROVIDED"},
+      "partnerCodes": [
+        {"code": "kupondotcom1", "reward": "다이아 300,000", "expiry": "2027-09-30 00:00", "limit": "first 300,000"},
+        {"code": "kupondotcom2", "reward": "보물·각성·무기·유물 던전 입장열쇠 각 30", "expiry": "2027-09-30 00:00", "limit": "first 300,000"},
+        {"code": "kupondotcom3", "reward": "히어로·장비·스킬 소환권 각 300", "expiry": "2027-09-30 00:00", "limit": "first 300,000"}
+      ],
+      "anniversaryCandidates": [
+        {"code": "1STANNIV1", "expiry": "2027-03-04"},
+        {"code": "1STANNIV2", "expiry": "2027-03-05"},
+        {"code": "1STANNIV3", "expiry": "2027-03-06"}
+      ],
+      "anniversarySource": {"url": "https://nyangcorp.com/games/games-coupon/switching-heroes", "sourcePublishedAt": "2026-03-07"},
+      "unverifiedAdditional": ["26KOREABIGEVENT", "202607SumFes", "26NOCOUPON"]
+    },
+    {
+      "articleKey": "realfarm-benefits-202610",
+      "title": "레알팜",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=kr.neogames.realfarm",
+      "officialCommunity": "https://game.naver.com/lounge/REAL_FARM",
+      "officialMarket": "https://www.realfarmmarket.co.kr/",
+      "publicStringCode": null,
+      "currentBenefits": [
+        {"type": "IN_GAME_REDEMPTION", "benefit": "레알쿠폰 11장으로 14주년 기념 농산물 상품 교환", "status": "ACTIVE_OBSERVED", "sourcePublishedAt": null},
+        {"type": "EVENT_NOTICE", "benefit": "새로운 레알쿠폰 이벤트·콘텐츠 준비 안내", "status": "ANNOUNCED", "sourcePublishedAt": "2026-10-02"}
+      ],
+      "historySource": {"url": "https://game.naver.com/lounge/REAL_FARM/board/detail/7933613", "sourcePublishedAt": "2026-07-15"},
+      "notes": "Real Farm uses earned Real Coupons exchanged for physical products rather than a public copyable string code; product availability can change with stock/event state."
+    },
+    {
+      "articleKey": "mongil-star-dive-codes-202610",
+      "title": "몬길: STAR DIVE",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.netmarble.monster2",
+      "officialForum": "https://forum.netmarble.com/stardive_ko",
+      "currentOfficialCode": null,
+      "currentStatusSource": {"url": "https://kupon.kr/community/mongil-star-dive-beginner-guide-439", "sourcePublishedAt": "2026-10-10", "claim": "official confirmed live coupon 0"},
+      "officialCurrentBenefit": {"source": "https://forum.netmarble.com/stardive_ko/view/4/5733", "sourcePublishedAt": "2026-09-29", "benefit": "초행길의 동반자 · 무작위 ★5 일반 캐릭터", "period": "2026-09-30 maintenance ~ 2026-11-11 08:59 KST", "condition": "first summon completed"},
+      "history": [
+        {"code": "BUNNYSHOW", "sourcePublishedAt": "2026-09-02", "expiry": "2026-09-09 08:30 JST", "status": "EXPIRED_OFFICIAL"},
+        {"code": "MONGILDISCORD", "sourcePublishedAt": "2026-04-16", "status": "OFFICIAL_HISTORY_CURRENT_INACTIVE"},
+        {"code": "LOVEMONGIL", "sourcePublishedAt": "2026-04-16", "status": "OFFICIAL_HISTORY_CURRENT_INACTIVE"},
+        {"code": "devlive0410", "sourcePublishedAt": "2026-04-16", "status": "OFFICIAL_HISTORY_CURRENT_INACTIVE"},
+        {"code": "DINDINISDINDIN", "sourcePublishedAt": "2026-04-16", "status": "OFFICIAL_HISTORY_CURRENT_INACTIVE"},
+        {"code": "MONGILPRESENT", "sourcePublishedAt": "2026-04-16", "status": "OFFICIAL_HISTORY_CURRENT_INACTIVE"}
+      ]
+    }
+  ]
+}

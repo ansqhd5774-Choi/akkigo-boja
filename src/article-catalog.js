@@ -20,6 +20,7 @@ import {darkTowerArticle,honkaiImpact3rdArticle,neoMonstersArticle,tokyoDebunker
 import {executionerSwordClassicArticle,majoArticle,blackDesertMobileArticle,zombieWavesArticle,rogueLegendArticle,aion2Article} from './game-batch-20261012-b.js';
 import {dragonVillage3Article,evernightReverseArticle,xpHeroArticle,yulgangNextArticle,nyangjjikHeroesArticle} from './game-batch-20261012-c.js';
 import {godSlayerArticle,romanticGanghoArticle,herollArticle,swordOfConvallariaArticle,treeOfSaviorMArticle} from './game-batch-20261012-d.js';
+import {chunoIdleArticle,cookieRunCrumbleArticle,switchingHeroesArticle,realfarmArticle,mongilStarDiveArticle} from './game-batch-20261012-e.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -60,7 +61,12 @@ const articleCatalogBase=[
   romanticGanghoArticle,
   herollArticle,
   swordOfConvallariaArticle,
-  treeOfSaviorMArticle
+  treeOfSaviorMArticle,
+  chunoIdleArticle,
+  cookieRunCrumbleArticle,
+  switchingHeroesArticle,
+  realfarmArticle,
+  mongilStarDiveArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
