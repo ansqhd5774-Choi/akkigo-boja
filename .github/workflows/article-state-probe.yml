@@ -24,6 +24,6 @@ jobs:
         with:
           version: '11.19.0'
       - run: pnpm install --frozen-lockfile
-      - name: Read Shiba article state only
+      - name: Read Yesim article state only
         run: |
-          pnpm exec wrangler d1 execute akkigo-boja-state --remote --json --command "SELECT article_key,post_id,public_url,status,updated_at FROM article_state WHERE article_key='shibarpg-pickup-202610'; SELECT article_key,operation,status,error_code,started_at,finished_at FROM article_publish_attempts WHERE article_key='shibarpg-pickup-202610' ORDER BY started_at DESC LIMIT 5;"
+          pnpm exec wrangler d1 execute akkigo-boja-state --remote --json --command "SELECT article_key,post_id,public_url,status,updated_at FROM article_state WHERE article_key='yesim-esim-promo-202610'; SELECT article_key,operation,status,error_code,started_at,finished_at FROM article_publish_attempts WHERE article_key='yesim-esim-promo-202610' ORDER BY started_at DESC LIMIT 5;"
