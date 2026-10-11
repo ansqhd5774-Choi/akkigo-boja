@@ -43,5 +43,23 @@
     "sourceAsset": "https://www.usimsa.com/_vercel/image?q=100&url=%2Fimg%2Fmain%2Flogo.svg&w=320",
     "verifiedAt": "2026-10-11",
     "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "nomad-esim-promo-202610",
+    "brand": "Nomad eSIM",
+    "logoUrl": "https://www.nomadesim.com/assets/static/logo-full-light.DiuaXs0F.png",
+    "sourceUrl": "https://www.nomadesim.com/about/us",
+    "sourceAsset": "https://www.nomadesim.com/assets/static/logo-full-light.DiuaXs0F.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "hotvpn-benefits-202610",
+    "brand": "HotVPN",
+    "logoUrl": "https://www.hotvpn.co.kr/images/common/footer-logo.svg",
+    "sourceUrl": "https://www.hotvpn.co.kr/",
+    "sourceAsset": "https://www.hotvpn.co.kr/images/common/footer-logo.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
   }
 ]
