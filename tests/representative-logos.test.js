@@ -52,5 +52,7 @@ test('approved non-game representative image audit reports all legacy and missin
  const audit=auditRepresentativeImages();
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
- console.log('REPRESENTATIVE_IMAGE_AUDIT_TEST',JSON.stringify({total:audit.total,pass:audit.pass,fail:audit.fail,missing:audit.missing,legacy:audit.legacy,suspicious:audit.suspicious,firstImageMismatch:audit.firstImageMismatch}));
+ const missingDetails=audit.rows.filter(row=>row.issues.includes('MISSING_REGISTRY')).map(({articleKey,title,labels,sourceUrl,firstImageSrc})=>({articleKey,title,labels,sourceUrl,firstImageSrc}));
+ const suspiciousDetails=audit.rows.filter(row=>row.issues.includes('SUSPICIOUS_SOURCE_ASSET')).map(({articleKey,title,registeredSourceAsset})=>({articleKey,title,registeredSourceAsset}));
+ console.log('REPRESENTATIVE_IMAGE_AUDIT_TEST',JSON.stringify({total:audit.total,pass:audit.pass,fail:audit.fail,missing:audit.missing,legacy:audit.legacy,suspicious:audit.suspicious,firstImageMismatch:audit.firstImageMismatch,missingDetails,suspiciousDetails}));
 });
