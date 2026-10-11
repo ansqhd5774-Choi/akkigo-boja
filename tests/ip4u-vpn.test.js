@@ -1,10 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {ip4uArticle} from '../src/ip4u-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('IP4U VPN 글은 기간할인·무료체험·교체권을 구분한다',()=>{
-  const a=ip4uArticle;
+  const a=currentArticleCatalog.find(x=>x.articleKey==='ip4u-benefits-202610');
   assert.equal(a.articleKey,'ip4u-benefits-202610');
   assert.equal(a.approvedForPublish,true);
   assert.deepEqual(a.post.labels,['VPN','IP4U']);
