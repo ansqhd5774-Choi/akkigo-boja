@@ -53,13 +53,12 @@ test('approved non-game representative image audit reports current debt and forb
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
  const expectedMissing=[
-  'dosirakesim-promo-202610','duolingo-super-coupons-202610','frombio-coupons-202610',
-  'malhaevoca-discounts-202610','rokebi-promo-202610'
+  'duolingo-super-coupons-202610','frombio-coupons-202610'
  ].sort();
  assert.deepEqual([...audit.missing].sort(),expectedMissing);
- assert.deepEqual([...audit.suspicious].sort(),['esthermall-coupons-202610']);
+ assert.deepEqual([...audit.suspicious].sort(),[]);
  assert.deepEqual([...audit.firstImageMismatch].sort(),[]);
- assert.equal(audit.fail,expectedMissing.length+1);
+ assert.equal(audit.fail,expectedMissing.length);
  const missingDetails=audit.rows.filter(row=>row.issues.includes('MISSING_REGISTRY')).map(({articleKey,title,labels,sourceUrl,firstImageSrc})=>({articleKey,title,labels,sourceUrl,firstImageSrc}));
  const suspiciousDetails=audit.rows.filter(row=>row.issues.includes('SUSPICIOUS_SOURCE_ASSET')).map(({articleKey,title,registeredSourceAsset})=>({articleKey,title,registeredSourceAsset}));
  console.log('REPRESENTATIVE_IMAGE_AUDIT_TEST',JSON.stringify({total:audit.total,pass:audit.pass,fail:audit.fail,missing:audit.missing,legacy:audit.legacy,suspicious:audit.suspicious,firstImageMismatch:audit.firstImageMismatch,missingDetails,suspiciousDetails}));
