@@ -15,8 +15,13 @@ function firstImage(html=''){
   return html.match(/<img\b[^>]*>/i)?.[0]||'';
 }
 
+function decodeHtmlAttribute(value=''){
+  return String(value).replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>');
+}
+
 function firstImageSrc(html=''){
-  return firstImage(html).match(/\bsrc="([^"]+)"/i)?.[1]||null;
+  const value=firstImage(html).match(/\bsrc="([^"]+)"/i)?.[1]||null;
+  return value===null?null:decodeHtmlAttribute(value);
 }
 
 export function auditRepresentativeImages(catalog=currentArticleCatalog,registry=representativeLogoRegistry){
@@ -31,7 +36,8 @@ export function auditRepresentativeImages(catalog=currentArticleCatalog,registry
       if(!REPRESENTATIVE_LOGO_KINDS.has(logo.kind))issues.push('INVALID_KIND');
       if(isSuspiciousRepresentativeAsset(logo.sourceAsset))issues.push('SUSPICIOUS_SOURCE_ASSET');
       const first=firstImage(article.post.content);
-      if(!first.includes(`src="${logo.logoUrl}"`)||!first.includes('data-ncp-brand-logo="true"'))issues.push('FIRST_IMAGE_MISMATCH');
+      const src=firstImageSrc(article.post.content);
+      if(src!==logo.logoUrl||!first.includes('data-ncp-brand-logo="true"'))issues.push('FIRST_IMAGE_MISMATCH');
       try{
         validateRepresentativeLogo(article,{required:true,allowLegacy:false,strictSource:true,registry});
       }catch(error){
