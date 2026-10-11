@@ -88,5 +88,104 @@
     "sourceAsset": "https://cdn.shopify.com/s/files/1/0179/4388/7926/files/logo2.png?v=1683987645",
     "verifiedAt": "2026-10-11",
     "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "gigago-esim-promo-202610",
+    "brand": "Gigago",
+    "logoUrl": "https://gigago.com/wp-content/uploads/2022/09/gigago-logo-new.svg",
+    "sourceUrl": "https://gigago.com/",
+    "sourceAsset": "https://gigago.com/wp-content/uploads/2022/09/gigago-logo-new.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "eskimo-esim-promo-202610",
+    "brand": "Eskimo",
+    "logoUrl": "https://www.eskimo.travel/image_landing/logo-blue.png",
+    "sourceUrl": "https://www.eskimo.travel/",
+    "sourceAsset": "https://www.eskimo.travel/image_landing/logo-blue.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "gomoworld-esim-promo-202610",
+    "brand": "GoMoWorld",
+    "logoUrl": "https://www.gomoworld.com/static/images/logo-red.webp",
+    "sourceUrl": "https://www.gomoworld.com/",
+    "sourceAsset": "https://www.gomoworld.com/static/images/logo-red.webp",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "keepgo-esim-promo-202610",
+    "brand": "Keepgo",
+    "logoUrl": "https://cdn.shopify.com/s/files/1/0546/0449/files/logo_header_90x42px.png?5449809845600272201",
+    "sourceUrl": "https://www.keepgo.com/",
+    "sourceAsset": "https://cdn.shopify.com/s/files/1/0546/0449/files/logo_header_90x42px.png?5449809845600272201",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "globalyo-esim-promo-202610",
+    "brand": "Global YO",
+    "logoUrl": "https://www.globalyo.com/images/logos/logo.svg",
+    "sourceUrl": "https://www.globalyo.com/",
+    "sourceAsset": "https://www.globalyo.com/images/logos/logo.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "inflearn-coupons-202610",
+    "brand": "인프런",
+    "logoUrl": "https://cdn.inflearn.com/assets/images/header/inflearn_logo_default.svg",
+    "sourceUrl": "https://www.inflearn.com/",
+    "sourceAsset": "https://cdn.inflearn.com/assets/images/header/inflearn_logo_default.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "maaltalk-benefits-202610",
+    "brand": "말톡",
+    "logoUrl": "https://shop.maaltalk.com/static/version1756833090/frontend/dial070/maaltalknow/en_US/images/logo.svg",
+    "sourceUrl": "https://www.maaltalk.com/",
+    "sourceAsset": "https://shop.maaltalk.com/static/version1756833090/frontend/dial070/maaltalknow/en_US/images/logo.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "ip4u-benefits-202610",
+    "brand": "IP4U",
+    "logoUrl": "https://www.ip4u.co.kr/res/img/logo_footer.png",
+    "sourceUrl": "https://www.ip4u.co.kr/",
+    "sourceAsset": "https://www.ip4u.co.kr/res/img/logo_footer.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "gigaip-benefits-202610",
+    "brand": "GIGA IP",
+    "logoUrl": "https://gigaip.net/resources/img/top_logo.png",
+    "sourceUrl": "https://gigaip.net/",
+    "sourceAsset": "https://gigaip.net/resources/img/top_logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "ohmyzip-benefits-202610",
+    "brand": "오마이집",
+    "logoUrl": "https://www.ohmyzip.com/images2026/main/ohmyzip_logo.png",
+    "sourceUrl": "https://www.ohmyzip.com/index.php",
+    "sourceAsset": "https://www.ohmyzip.com/images2026/main/ohmyzip_logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "twofasts-benefits-202610",
+    "brand": "투패스츠",
+    "logoUrl": "https://www.2fasts.com/images/common/copyright_logo.png",
+    "sourceUrl": "https://www.2fasts.com/",
+    "sourceAsset": "https://www.2fasts.com/images/common/copyright_logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
   }
 ]
