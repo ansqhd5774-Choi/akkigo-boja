@@ -1,8 +1,15 @@
-import logos from '../data/representative-logos.json' with {type:'json'};
+import baseLogos from '../data/representative-logos.json' with {type:'json'};
+import supplementalLogos from '../data/representative-logos-supplemental.json' with {type:'json'};
 
 export const LEGACY_REPRESENTATIVE_LOGO_KIND='OFFICIAL_HEADER_LOGO';
 export const REPRESENTATIVE_LOGO_KINDS=new Set(['OFFICIAL_BRAND_LOGO','OFFICIAL_SERVICE_LOGO',LEGACY_REPRESENTATIVE_LOGO_KIND]);
 const SUSPICIOUS_ASSET=/(?:^|[\/_-])(banner|promo|event|product|thumbnail|thumb)(?:[\/_.-]|$)/i;
+
+const supplementalKeys=new Set(supplementalLogos.map(item=>item.articleKey));
+export const representativeLogoRegistry=[
+  ...baseLogos.filter(item=>!supplementalKeys.has(item.articleKey)),
+  ...supplementalLogos
+];
 
 export function isGameArticle(article){
   return Array.isArray(article?.post?.labels)&&article.post.labels.includes('게임');
@@ -15,7 +22,7 @@ export function isSuspiciousRepresentativeAsset(sourceAsset){
   return SUSPICIOUS_ASSET.test(sourceAsset);
 }
 
-export function representativeLogoFor(articleKey,registry=logos){
+export function representativeLogoFor(articleKey,registry=representativeLogoRegistry){
   return registry.find(item=>item.articleKey===articleKey)||null;
 }
 
@@ -31,7 +38,7 @@ export function validateRepresentativeLogoEntry(logo,{allowLegacy=true,strictSou
   return true;
 }
 
-export function validateRepresentativeLogo(article,{required=false,allowLegacy=true,strictSource=required,registry=logos}={}){
+export function validateRepresentativeLogo(article,{required=false,allowLegacy=true,strictSource=required,registry=representativeLogoRegistry}={}){
   if(isGameArticle(article))return true;
   const logo=representativeLogoFor(article?.articleKey,registry);
   if(!logo){
