@@ -2,6 +2,7 @@ import {readdir,readFile} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {currentArticleCatalog,assertArticleCatalogIntegrity} from '../src/article-catalog.js';
+import {isGameArticle,validateRepresentativeLogo} from '../src/representative-logo-policy.js';
 import {changedRequestPaths} from './select-publish-requests.mjs';
 
 const here=dirname(fileURLToPath(import.meta.url));
@@ -17,6 +18,11 @@ export function assertApprovedRequestInCatalog(request,catalog=currentArticleCat
     throw new Error(`PUBLISH_REQUEST_ARTICLE_NOT_IN_REGISTRY:${request.articleKey}`);
   }
   return matches[0];
+}
+
+export function assertRepresentativeImageReady(article){
+  if(isGameArticle(article))return true;
+  return validateRepresentativeLogo(article,{required:true,allowLegacy:false,strictSource:true});
 }
 
 export async function discoverApprovedModuleEntries({srcDir=resolve(root,'src')}={}){
@@ -64,6 +70,7 @@ export async function validateChangedPublishRequests(before,head,{cwd=root}={}){
     const request=JSON.parse(await readFile(resolve(cwd,path),'utf8'));
     const article=assertApprovedRequestInCatalog(request);
     if(!article)continue;
+    assertRepresentativeImageReady(article);
     if(seen.has(article.articleKey))continue;
     seen.add(article.articleKey);
   }
