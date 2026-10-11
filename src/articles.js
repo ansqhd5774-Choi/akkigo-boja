@@ -20,13 +20,17 @@ function validKey(key) {
 }
 
 async function readStoredLivePost(env,stored,transport=fetch) {
-  if (!/^\d+$/.test(stored?.post_id || '') || typeof stored?.public_url!=='string') throw Error('ARTICLE_STATE_MISMATCH');
+  if (!/^\d+$/.test(stored?.post_id || '') || typeof stored?.public_url!=='string') throw Error('ARTICLE_STATE_STORED_INVALID');
   const token=await accessToken(env,transport);
   const endpoint=`https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts/${stored.post_id}?view=ADMIN`;
   const response=await transport(endpoint,{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15000)});
   if (!response.ok) throw Error('BLOGGER_STORED_POST_READ_FAILED');
   const post=await response.json();
-  if (post.id!==stored.post_id || post.blog?.id!==BLOG_ID || post.status!=='LIVE' || post.url!==stored.public_url || typeof post.title!=='string' || typeof post.content!=='string') throw Error('ARTICLE_STATE_MISMATCH');
+  if (post.id!==stored.post_id) throw Error('ARTICLE_STATE_POST_ID_MISMATCH');
+  if (post.blog?.id!==BLOG_ID) throw Error('ARTICLE_STATE_BLOG_ID_MISMATCH');
+  if (post.status!=='LIVE') throw Error('ARTICLE_STATE_STATUS_MISMATCH');
+  if (post.url!==stored.public_url) throw Error('ARTICLE_STATE_URL_MISMATCH');
+  if (typeof post.title!=='string' || typeof post.content!=='string') throw Error('ARTICLE_STATE_CONTENT_INVALID');
   const url=new URL(post.url);
   if (url.hostname!=='lsifl.blogspot.com' || !['http:','https:'].includes(url.protocol)) throw Error('BLOGGER_PUBLIC_URL_MISMATCH');
   return {postId:post.id,status:post.status,url:post.url,title:post.title,content:post.content};
