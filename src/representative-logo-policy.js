@@ -8,6 +8,10 @@ export function isGameArticle(article){
   return Array.isArray(article?.post?.labels)&&article.post.labels.includes('게임');
 }
 
+export function isSuspiciousRepresentativeAsset(sourceAsset){
+  return typeof sourceAsset==='string'&&SUSPICIOUS_ASSET.test(sourceAsset);
+}
+
 export function representativeLogoFor(articleKey,registry=logos){
   return registry.find(item=>item.articleKey===articleKey)||null;
 }
@@ -21,7 +25,7 @@ export function validateRepresentativeLogoEntry(logo,{allowLegacy=true,strictSou
     throw Error(`REPRESENTATIVE_LOGO_PROVENANCE_REQUIRED:${logo.articleKey}`);
   }
   if(strictSource&&logo.kind===LEGACY_REPRESENTATIVE_LOGO_KIND)throw Error(`REPRESENTATIVE_LOGO_LEGACY_KIND:${logo.articleKey}`);
-  if(strictSource&&SUSPICIOUS_ASSET.test(logo.sourceAsset))throw Error(`REPRESENTATIVE_LOGO_SUSPICIOUS_SOURCE:${logo.articleKey}`);
+  if(strictSource&&isSuspiciousRepresentativeAsset(logo.sourceAsset))throw Error(`REPRESENTATIVE_LOGO_SUSPICIOUS_SOURCE:${logo.articleKey}`);
   return true;
 }
 
