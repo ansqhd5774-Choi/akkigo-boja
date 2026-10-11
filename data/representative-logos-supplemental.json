@@ -187,5 +187,41 @@
     "sourceAsset": "https://www.2fasts.com/images/common/copyright_logo.png",
     "verifiedAt": "2026-10-11",
     "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "dosirakesim-promo-202610",
+    "brand": "도시락eSIM",
+    "logoUrl": "https://wmstgbb001.blob.core.windows.net/wm-esim/image/common/DosirakeSIM.png",
+    "sourceUrl": "https://www.dosirakesim.com/",
+    "sourceAsset": "https://wmstgbb001.blob.core.windows.net/wm-esim/image/common/DosirakeSIM.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "malhaevoca-discounts-202610",
+    "brand": "말해보카",
+    "logoUrl": "https://epop.ai/_next/static/media/ic_logo_home.48c0ea51.png",
+    "sourceUrl": "https://epop.ai/ko/",
+    "sourceAsset": "https://epop.ai/_next/static/media/ic_logo_home.48c0ea51.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "rokebi-promo-202610",
+    "brand": "로밍도깨비",
+    "logoUrl": "https://www.rokebi.com/assets/images/rokebiB2B.svg",
+    "sourceUrl": "https://www.rokebi.com/",
+    "sourceAsset": "https://www.rokebi.com/assets/images/rokebiB2B.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "esthermall-coupons-202610",
+    "brand": "에스더몰",
+    "logoUrl": "https://esther2023.cdn-nhncommerce.com/data/skin/mobile/moment/img/banner/2655003ba49362fe32f0dae7d472b146_41908.jpg",
+    "sourceUrl": "https://m.esthermall.co.kr/",
+    "sourceAsset": "official-header:ESTHERMALL:110x18",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_BRAND_LOGO"
   }
 ]
