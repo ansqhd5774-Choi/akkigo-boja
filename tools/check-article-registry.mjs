@@ -19,32 +19,41 @@ export function assertApprovedRequestInCatalog(request,catalog=currentArticleCat
   return matches[0];
 }
 
-export async function discoverApprovedModuleKeys({srcDir=resolve(root,'src')}={}){
+export async function discoverApprovedModuleEntries({srcDir=resolve(root,'src')}={}){
   const files=(await readdir(srcDir)).filter(name=>name.endsWith('-article.js')).sort();
-  const keys=new Set();
+  const entries=[];
+  const seen=new Set();
   for(const name of files){
     const path=resolve(srcDir,name);
     const source=await readFile(path,'utf8');
-    // Do not execute modules that are explicitly non-publishable. This keeps
-    // the audit based on source intent and prevents runtime side effects from
-    // promoting retained research/evidence modules such as OhMyZip.
     if(!/approvedForPublish\s*:\s*true\b/.test(source))continue;
     const mod=await import(pathToFileURL(path).href);
     for(const value of Object.values(mod)){
       if(value && typeof value==='object' && value.approvedForPublish===true && typeof value.articleKey==='string' && value.post){
-        keys.add(value.articleKey);
+        const id=`${name}:${value.articleKey}`;
+        if(seen.has(id))continue;
+        seen.add(id);
+        entries.push({file:name,articleKey:value.articleKey});
       }
     }
   }
-  return [...keys].sort();
+  return entries.sort((a,b)=>a.articleKey.localeCompare(b.articleKey)||a.file.localeCompare(b.file));
+}
+
+export async function discoverApprovedModuleKeys(options={}){
+  return [...new Set((await discoverApprovedModuleEntries(options)).map(x=>x.articleKey))].sort();
 }
 
 export async function auditArticleRegistry(){
   assertArticleCatalogIntegrity(currentArticleCatalog);
   const registered=new Set(currentArticleCatalog.filter(x=>x.approvedForPublish===true).map(x=>x.articleKey));
-  const discovered=await discoverApprovedModuleKeys();
+  const entries=await discoverApprovedModuleEntries();
+  const discovered=[...new Set(entries.map(x=>x.articleKey))].sort();
   const missing=discovered.filter(key=>!registered.has(key));
-  if(missing.length)throw new Error(`ARTICLE_REGISTRY_MISSING:${missing.join(',')}`);
+  if(missing.length){
+    const origins=entries.filter(x=>missing.includes(x.articleKey)).map(x=>`${x.articleKey}@${x.file}`);
+    throw new Error(`ARTICLE_REGISTRY_MISSING:${origins.join(',')}`);
+  }
   return {registered:[...registered].sort(),discovered};
 }
 
