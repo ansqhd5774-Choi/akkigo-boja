@@ -16,6 +16,7 @@ import {twofastsArticle} from './twofasts-article.js';
 import {iwinvArticle} from './iwinv-article.js';
 import {swordxstaffArticle} from './swordxstaff-article.js';
 import {plantsOnFireArticle} from './plants-on-fire-article.js';
+import {darkTowerArticle,honkaiImpact3rdArticle,neoMonstersArticle,tokyoDebunkerArticle,kartRiderRushPlusArticle} from './game-batch-20261012.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -35,7 +36,12 @@ const articleCatalogBase=[
   twofastsArticle,
   iwinvArticle,
   swordxstaffArticle,
-  plantsOnFireArticle
+  plantsOnFireArticle,
+  darkTowerArticle,
+  honkaiImpact3rdArticle,
+  neoMonstersArticle,
+  tokyoDebunkerArticle,
+  kartRiderRushPlusArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
