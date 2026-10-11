@@ -21,20 +21,16 @@ export function applyRepresentativeLogo(article,{registry=representativeLogoRegi
     return article;
   }
   let content=article.post.content||'';
-  const current=content.match(/<figure\b[^>]*data-ncp-featured-image="[^"]+"[^>]*>[\s\S]*?<\/figure>/i)?.[0]||'';
   const target=figure(article,logo);
-  if(current){
-    if(current.includes(`src="${logo.logoUrl}"`)&&current.includes('data-ncp-brand-logo="true"'))return article;
-    content=content.replace(current,target);
-  }else{
-    const styleEnd=content.indexOf('</style>');
-    if(styleEnd>=0)content=content.slice(0,styleEnd+8)+target+content.slice(styleEnd+8);
-    else{
-      const articleOpen=content.match(/<article\b[^>]*>/i);
-      if(articleOpen)content=content.replace(articleOpen[0],articleOpen[0]+target);
-      else content=target+content;
-    }
-  }
+  const current=content.match(/<figure\b[^>]*data-ncp-featured-image="[^"]+"[^>]*>[\s\S]*?<\/figure>/i)?.[0]||'';
+
+  // Blogger selects the first image as the representative image. A valid brand/service
+  // logo therefore has to be the first <img> in the entire post, not merely the first
+  // image inside the article body. Remove any prior generated figure and prepend the
+  // canonical one before feed previews, jump breaks, promotional art, or product images.
+  if(current)content=content.replace(current,'');
+  content=target+content;
+
   return {...article,post:{...article.post,content}};
 }
 
