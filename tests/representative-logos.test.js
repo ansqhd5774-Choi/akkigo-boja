@@ -1,26 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import logos from '../data/representative-logos.json' with {type:'json'};
-import {validateRepresentativeLogo} from '../src/representative-logo-policy.js';
+import baseLogos from '../data/representative-logos.json' with {type:'json'};
+import {currentArticleCatalog} from '../src/article-catalog.js';
+import {representativeLogoRegistry,validateRepresentativeLogo} from '../src/representative-logo-policy.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 import {auditRepresentativeImages} from '../tools/audit-representative-images.mjs';
 
-test('registered representative logos are the first article image and have packaged assets',()=>{
- const articles=['data/articles.json','data/articles-supplemental.json'].flatMap(file=>JSON.parse(fs.readFileSync(file,'utf8')));
- assert.equal(new Set(logos.map(x=>x.articleKey)).size,logos.length);
- for(const logo of logos){
-  const article=articles.find(x=>x.articleKey===logo.articleKey);assert.ok(article,logo.articleKey);
+test('registered representative logos are the first article image and packaged local assets remain present',()=>{
+ assert.equal(new Set(representativeLogoRegistry.map(x=>x.articleKey)).size,representativeLogoRegistry.length);
+ const baseKeys=new Set(baseLogos.map(x=>x.articleKey));
+ for(const logo of representativeLogoRegistry){
+  const article=currentArticleCatalog.find(x=>x.articleKey===logo.articleKey);assert.ok(article,logo.articleKey);
   validateRepresentativeLogo(article);
-  assert.ok(fs.existsSync('theme/assets'+new URL(logo.logoUrl).pathname));
+  if(baseKeys.has(logo.articleKey)&&logo.logoUrl.startsWith('https://akkigo-boja.ansqhd5774.workers.dev/logos/')){
+   assert.ok(fs.existsSync('theme/assets'+new URL(logo.logoUrl).pathname),logo.articleKey);
+  }
   assert.throws(()=>validateRepresentativeLogo({...article,post:{...article.post,content:article.post.content.replace(logo.logoUrl,'https://example.com/promo.png')}}),/REPRESENTATIVE_LOGO_MISMATCH/);
  }
 });
 
 test('existing commerce logo refresh passes publish validation while repeated headings are rejected',()=>{
- const articles=JSON.parse(fs.readFileSync('data/articles.json','utf8'));
- for(const logo of logos)validateArticleDraft(articles.find(x=>x.articleKey===logo.articleKey));
- const article=articles.find(x=>x.articleKey==='namecheap-birthday-202610');
+ for(const logo of representativeLogoRegistry){
+  const article=currentArticleCatalog.find(x=>x.articleKey===logo.articleKey);assert.ok(article,logo.articleKey);validateArticleDraft(article);
+ }
+ const article=currentArticleCatalog.find(x=>x.articleKey==='namecheap-birthday-202610');
+ assert.ok(article);
  assert.throws(()=>validateArticleDraft({...article,post:{...article.post,content:article.post.content+'<h1>duplicate</h1>'}}),/ARTICLE_DUPLICATE_TITLE/);
 });
 
@@ -52,9 +57,7 @@ test('approved non-game representative image audit reports current debt and forb
  const audit=auditRepresentativeImages();
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
- const expectedMissing=[
-  'duolingo-super-coupons-202610','frombio-coupons-202610'
- ].sort();
+ const expectedMissing=['duolingo-super-coupons-202610','frombio-coupons-202610'].sort();
  assert.deepEqual([...audit.missing].sort(),expectedMissing);
  assert.deepEqual([...audit.suspicious].sort(),[]);
  assert.deepEqual([...audit.firstImageMismatch].sort(),[]);
