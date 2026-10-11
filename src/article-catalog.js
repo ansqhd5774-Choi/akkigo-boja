@@ -14,6 +14,7 @@ import {gigaipArticle} from './gigaip-article.js';
 import {readyArticle as ohmyzipReadyArticle} from './ohmyzip-ready-article.js';
 import {twofastsArticle} from './twofasts-article.js';
 import {iwinvArticle} from './iwinv-article.js';
+import {swordxstaffArticle} from './swordxstaff-article.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -31,7 +32,8 @@ const articleCatalogBase=[
   gigaipArticle,
   ohmyzipReadyArticle,
   twofastsArticle,
-  iwinvArticle
+  iwinvArticle,
+  swordxstaffArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
