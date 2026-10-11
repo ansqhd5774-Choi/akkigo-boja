@@ -13,6 +13,7 @@ import {hotvpnArticle} from './hotvpn-article.js';
 import {gigaipArticle} from './gigaip-article.js';
 import {readyArticle as ohmyzipReadyArticle} from './ohmyzip-ready-article.js';
 import {twofastsArticle} from './twofasts-article.js';
+import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
   ...primary,
@@ -31,10 +32,10 @@ const articleCatalogBase=[
   twofastsArticle
 ];
 
-export const currentArticleCatalog=[
+export const currentArticleCatalog=applyRepresentativeLogos([
   ...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),
   rokebiArticle
-];
+]);
 
 export function assertArticleCatalogIntegrity(catalog=currentArticleCatalog){
   const seen=new Set();
