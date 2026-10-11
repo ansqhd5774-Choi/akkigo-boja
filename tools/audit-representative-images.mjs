@@ -15,6 +15,10 @@ function firstImage(html=''){
   return html.match(/<img\b[^>]*>/i)?.[0]||'';
 }
 
+function firstImageSrc(html=''){
+  return firstImage(html).match(/\bsrc="([^"]+)"/i)?.[1]||null;
+}
+
 export function auditRepresentativeImages(catalog=currentArticleCatalog,registry=logos){
   const rows=[];
   for(const article of catalog){
@@ -24,8 +28,7 @@ export function auditRepresentativeImages(catalog=currentArticleCatalog,registry
     if(!logo){
       issues.push('MISSING_REGISTRY');
     }else{
-      if(logo.kind===LEGACY_REPRESENTATIVE_LOGO_KIND)issues.push('LEGACY_KIND');
-      else if(!REPRESENTATIVE_LOGO_KINDS.has(logo.kind))issues.push('INVALID_KIND');
+      if(!REPRESENTATIVE_LOGO_KINDS.has(logo.kind))issues.push('INVALID_KIND');
       if(isSuspiciousRepresentativeAsset(logo.sourceAsset))issues.push('SUSPICIOUS_SOURCE_ASSET');
       const first=firstImage(article.post.content);
       if(!first.includes(`src="${logo.logoUrl}"`)||!first.includes('data-ncp-brand-logo="true"'))issues.push('FIRST_IMAGE_MISMATCH');
@@ -36,7 +39,17 @@ export function auditRepresentativeImages(catalog=currentArticleCatalog,registry
         if(!issues.includes(code))issues.push(code);
       }
     }
-    rows.push({articleKey:article.articleKey,title:article.post.title||'',issues});
+    rows.push({
+      articleKey:article.articleKey,
+      title:article.post.title||'',
+      labels:Array.isArray(article.post.labels)?article.post.labels:[],
+      sourceUrl:typeof article?.source?.url==='string'?article.source.url:null,
+      firstImageSrc:firstImageSrc(article.post.content),
+      registeredLogoUrl:logo?.logoUrl||null,
+      registeredSourceAsset:logo?.sourceAsset||null,
+      kind:logo?.kind||null,
+      issues
+    });
   }
   const failing=rows.filter(row=>row.issues.length>0);
   return {
@@ -44,7 +57,7 @@ export function auditRepresentativeImages(catalog=currentArticleCatalog,registry
     pass:rows.length-failing.length,
     fail:failing.length,
     missing:failing.filter(row=>row.issues.includes('MISSING_REGISTRY')).map(row=>row.articleKey),
-    legacy:failing.filter(row=>row.issues.includes('LEGACY_KIND')).map(row=>row.articleKey),
+    legacy:rows.filter(row=>row.kind===LEGACY_REPRESENTATIVE_LOGO_KIND).map(row=>row.articleKey),
     suspicious:failing.filter(row=>row.issues.includes('SUSPICIOUS_SOURCE_ASSET')).map(row=>row.articleKey),
     firstImageMismatch:failing.filter(row=>row.issues.includes('FIRST_IMAGE_MISMATCH')).map(row=>row.articleKey),
     rows
