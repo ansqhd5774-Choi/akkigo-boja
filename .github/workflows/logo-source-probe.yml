@@ -13,36 +13,23 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Extract Duolingo official press-kit logo downloads read-only
+      - name: Inspect Duolingo official press-kit landing page only
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const start='https://duolingopress.lingoapp.com/s/Logos-oJyX2Q';
-          const seen=new Set();
-          const queue=[start];
-          const interesting=/(duolingo|logo|logotype|lockup|wordmark|brand|download)/i;
-          for(let depth=0;depth<3&&queue.length;depth++){
-            const round=queue.splice(0,40);
-            for(const url of round){
-              if(seen.has(url))continue;seen.add(url);
-              try{
-                const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml,*/*'},signal:AbortSignal.timeout(20000)});
-                const ct=r.headers.get('content-type')||'';
-                const text=await r.text();console.log('PAGE',depth,r.status,r.url,ct,'bytes='+text.length);
-                if(/image\/svg|application\/svg/i.test(ct)){console.log('SVG',r.url,text.slice(0,2000).replace(/\s+/g,' '));continue}
-                const urls=new Set();
-                for(const m of text.matchAll(/(?:src|srcset|href|content|url)\s*[=:]\s*["'`]([^"'`]+)["'`]/gi)){
-                  for(const p of m[1].split(',').map(x=>x.trim().split(/\s+/)[0])){try{urls.add(new URL(p.replaceAll('\\/','/'),r.url).href)}catch{}}
-                }
-                for(const m of text.matchAll(/https?:\\?\/\\?\/[^"'`\s<>]+/gi)){try{urls.add(m[0].replaceAll('\\/','/'))}catch{}}
-                for(const u of urls){
-                  if(/\.(?:svg|png|webp|jpe?g|zip|pdf)(?:\?|$)/i.test(u))console.log('ASSET',u);
-                  if(depth<2&&(/\.(?:js|json)(?:\?|$)/i.test(u)||interesting.test(u))&&u.startsWith('http'))queue.push(u);
-                }
-                for(const term of ['Duolingo','Logo','Logotype','Lockup','Download']){
-                  let p=0,n=0;while((p=text.toLowerCase().indexOf(term.toLowerCase(),p))>=0&&n++<10){console.log('CTX',term,text.slice(Math.max(0,p-500),Math.min(text.length,p+1200)).replace(/\s+/g,' '));p+=term.length}
-                }
-              }catch(e){console.log('ERROR',url,e.name,e.message)}
+          const url='https://duolingopress.lingoapp.com/s/Logos-oJyX2Q';
+          try{
+            const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml,*/*'},signal:AbortSignal.timeout(15000)});
+            const text=await r.text();
+            console.log('PAGE',r.status,r.url,r.headers.get('content-type'),'bytes='+text.length);
+            const urls=new Set();
+            for(const m of text.matchAll(/(?:src|srcset|href|content)\s*=\s*["']([^"']+)["']/gi)){
+              for(const p of m[1].split(',').map(x=>x.trim().split(/\s+/)[0])){try{urls.add(new URL(p.replaceAll('\\/','/'),r.url).href)}catch{}}
             }
-          }
+            for(const m of text.matchAll(/https?:\\?\/\\?\/[^"'`\s<>]+/gi)){try{urls.add(m[0].replaceAll('\\/','/'))}catch{}}
+            for(const u of urls)console.log('URL',u);
+            for(const term of ['Duolingo','Logo','Logotype','Lockup','Download','SVG','PNG']){
+              let p=0,n=0;while((p=text.toLowerCase().indexOf(term.toLowerCase(),p))>=0&&n++<12){console.log('CTX',term,text.slice(Math.max(0,p-500),Math.min(text.length,p+1400)).replace(/\s+/g,' '));p+=term.length}
+            }
+          }catch(e){console.log('ERROR',e.name,e.message);process.exit(1)}
           NODE
