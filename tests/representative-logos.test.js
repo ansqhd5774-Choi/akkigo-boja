@@ -16,7 +16,9 @@ test('registered representative logos are the first article image and packaged l
   if(baseKeys.has(logo.articleKey)&&logo.logoUrl.startsWith('https://akkigo-boja.ansqhd5774.workers.dev/logos/')){
    assert.ok(fs.existsSync('theme/assets'+new URL(logo.logoUrl).pathname),logo.articleKey);
   }
-  assert.throws(()=>validateRepresentativeLogo({...article,post:{...article.post,content:article.post.content.replace(logo.logoUrl,'https://example.com/promo.png')}}),/REPRESENTATIVE_LOGO_MISMATCH/);
+  const mutated=article.post.content.replace(/(<img\b[^>]*\bsrc=")[^"]+/i,'$1https://example.com/promo.png');
+  assert.notEqual(mutated,article.post.content,logo.articleKey);
+  assert.throws(()=>validateRepresentativeLogo({...article,post:{...article.post,content:mutated}}),/REPRESENTATIVE_LOGO_MISMATCH/);
  }
 });
 
