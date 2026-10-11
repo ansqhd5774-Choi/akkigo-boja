@@ -1,10 +1,12 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {hotvpnArticle} from '../src/hotvpn-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('HotVPN 한국 서비스 글은 가입 포인트·적립·기간 할인·정기결제를 구분한다',()=>{
-  const a=hotvpnArticle;
+  const a=currentArticleCatalog.find(article=>article.articleKey==='hotvpn-benefits-202610');
+  assert.ok(a);
   assert.equal(a.articleKey,'hotvpn-benefits-202610');
   assert.equal(a.approvedForPublish,true);
   assert.deepEqual(a.post.labels,['VPN','HotVPN']);
@@ -21,6 +23,8 @@ test('HotVPN 한국 서비스 글은 가입 포인트·적립·기간 할인·�
   assert.match(html,/360일 25%/);
   assert.match(html,/정기결제 5%/);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,0);
+  assert.match(html,/data-ncp-brand-logo="true"/);
+  assert.match(html,/https:\/\/www\.hotvpn\.co\.kr\/images\/common\/footer-logo\.svg/);
   assert.equal(validateArticleDraft(a),true);
 });
 
