@@ -1,7 +1,153 @@
 import m from '../data/iwinv-benefits-202610.json' with {type:'json'};
+
+const official=m.urls.official;
+const web=m.urls.web;
+const gpu=m.urls.gpu;
+const gov=m.urls.gov;
+const long=m.urls.long;
+const partner=m.urls.partner;
+const events=m.urls.events;
+
+const postContent=`<div class="ncp-feed-preview" data-ncp-feed-preview aria-label="iwinv 할인 혜택 요약">
+ <div class="ncp-feed-stat"><span>웹호스팅</span><strong>6개월 50%</strong></div>
+ <div class="ncp-feed-stat"><span>GPU 신규</span><strong>첫달 50%</strong></div>
+ <div class="ncp-feed-stat"><span>중소기업 지원</span><strong>최대 80%</strong></div>
+</div>
+<!--more-->
+<article data-ncp-article="iwinv-benefits-202610" class="ncp-commerce-article">
+<style>
+.ncp-feed-preview{display:none!important}
+[data-ncp-article="iwinv-benefits-202610"]{--ink:#1f2937;--muted:#667085;--line:#e5e7eb;--soft:#f8fafc;--ok:#067647;color:var(--ink);font-size:16px;line-height:1.72}
+[data-ncp-article="iwinv-benefits-202610"] *{box-sizing:border-box}
+[data-ncp-article="iwinv-benefits-202610"] h1{margin:0 0 12px;font-size:clamp(28px,4vw,38px);line-height:1.24}
+[data-ncp-article="iwinv-benefits-202610"] h2{margin:32px 0 14px;font-size:23px;line-height:1.35}
+[data-ncp-article="iwinv-benefits-202610"] h3{margin:20px 0 9px;font-size:18px}
+[data-ncp-article="iwinv-benefits-202610"] p{margin:0 0 14px}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;color:var(--muted);font-size:14px}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-badge{display:inline-flex;padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:800}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 26px}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-card{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-card b{display:block;color:var(--ok);font-size:20px;margin-bottom:4px}
+[data-ncp-article="iwinv-benefits-202610"] table{width:100%;border-collapse:collapse;margin:0 0 18px}
+[data-ncp-article="iwinv-benefits-202610"] th,[data-ncp-article="iwinv-benefits-202610"] td{padding:10px 11px;border:1px solid var(--line);text-align:left;vertical-align:top}
+[data-ncp-article="iwinv-benefits-202610"] th{background:var(--soft)}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-action{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin:4px 6px 8px 0;padding:9px 13px;border-radius:9px;background:#111827;color:#fff!important;text-decoration:none!important;font-weight:800}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-note{padding:14px 16px;border-left:4px solid #f79009;background:#fffaeb}
+[data-ncp-article="iwinv-benefits-202610"] .ncp-source{padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:0 0 10px;overflow-wrap:anywhere}
+@media(max-width:640px){[data-ncp-article="iwinv-benefits-202610"]{font-size:15px}[data-ncp-article="iwinv-benefits-202610"] h1{font-size:28px}[data-ncp-article="iwinv-benefits-202610"] .ncp-grid{grid-template-columns:1fr}[data-ncp-article="iwinv-benefits-202610"] table{font-size:13px}}
+</style>
+<header>
+ <div class="ncp-meta"><span class="ncp-badge">호스팅·도메인</span><span>공식 혜택 확인 2026-10-11</span></div>
+ <h1>iwinv 할인·쿠폰 (2026년 10월) | 웹호스팅 50%·GPU 반값·중소기업 지원</h1>
+ <p><strong>iwinv</strong>에서 현재 공개적으로 확인되는 핵심 혜택은 <strong>신규 웹호스팅 6개월 50%</strong>, <strong>GPU 신규 고객 첫달 50%</strong>, <strong>GPU 1년 이상 장기이용 50%</strong>, <strong>2026년 중소기업 클라우드 이용료 최대 80% 지원</strong>입니다. 공개 문자열 쿠폰코드가 아니라 신규 신청·약정·자격 선정·전용 링크 방식이 중심입니다.</p>
+ <p class="ncp-note"><strong>현재 공용 입력형 할인코드는 확인되지 않았습니다.</strong> 검색 결과나 후기에서 발견한 문자열을 임의로 쿠폰으로 올리지 않고 공식 행사·매뉴얼·공지에 명시된 혜택만 현재 항목으로 분리했습니다.</p>
+</header>
+
+<section>
+ <h2>현재 혜택 한눈에 보기</h2>
+ <div class="ncp-grid">
+  <div class="ncp-card"><b>6개월 50%</b><span>웹호스팅 신규 서비스</span><small>사용자당 1회</small></div>
+  <div class="ncp-card"><b>첫달 50%</b><span>GPU 신규 고객</span><small>V-Pay 마일리지 지급 방식</small></div>
+  <div class="ncp-card"><b>최대 80%</b><span>2026 클라우드 보급·확산 사업</span><small>선정 중소기업 한정</small></div>
+ </div>
+ <table>
+ <thead><tr><th>혜택</th><th>받는 방법</th><th>대상·기한</th><th>확인</th></tr></thead>
+ <tbody>
+  <tr><td><strong>웹호스팅 6개월 50%</strong></td><td>공식 행사 페이지에서 신규 신청</td><td>신규 서비스·사용자당 1회·조기 종료 가능</td><td>공식 행사</td></tr>
+  <tr><td><strong>GPU 신규 첫달 50%</strong></td><td>행사 버튼으로 이메일 접수 후 상담</td><td>신규 고객·최소 1개월·재고 소진 시 종료 가능</td><td>공식 행사</td></tr>
+  <tr><td><strong>GPU 장기이용 50%</strong></td><td>1년 이상 이용 후 1년 약정·관리자 승인</td><td>GPU 장기이용 고객</td><td>2025-09-17 공식 공지</td></tr>
+  <tr><td><strong>GPU 이전 트래픽 무료</strong></td><td>마이그레이션 시간대 협의</td><td>GPU 서버 이전 고객</td><td>공식 행사</td></tr>
+  <tr><td><strong>클라우드 최대 80% 지원</strong></td><td>2026 사업 선정 후 신청</td><td>선정 중소기업·2026-06-01~12-31</td><td>2026-05-15 공식 공지</td></tr>
+  <tr><td>파트너 콘텐츠 캐시 할인</td><td>파트너 코드 전용 가입 → 캐시 라이트 할인 선택</td><td>제휴 파트너 경유 가입자·할인율 공개 안 됨</td><td>공식 매뉴얼 ver. 2026-08-12</td></tr>
+ </tbody>
+ </table>
+ <a class="ncp-action" href="${web}" rel="noopener noreferrer">웹호스팅 50% 확인</a><a class="ncp-action" href="${gpu}" rel="noopener noreferrer">GPU 반값 확인</a>
+</section>
+
+<section>
+ <h2>웹호스팅 신규 6개월 50%</h2>
+ <p>공식 이벤트 페이지는 <strong>전 상품 신규 가입 시 6개월간 50% 할인</strong>을 안내합니다. 라이트는 월 <strong>940원 → 470원</strong>, 프리미엄은 <strong>3,740원 → 1,870원</strong>, 무제한 트래픽 상품은 <strong>5,900원 → 2,950원</strong>으로 표시됩니다.</p>
+ <p>혜택은 <strong>신규 서비스 신청 고객</strong>에게 적용되고 사용자당 1회입니다. 중도 해지하면 남은 할인 기간은 소멸하며 이벤트는 조기 종료될 수 있습니다. 무료 SSL 자동 갱신과 웹방화벽은 대상 웹호스팅에 포함된 부가 기능이지 웹호스팅 자체 무료 이용권은 아닙니다.</p>
+ <p>행사 랜딩 페이지에는 최초 게시일이 표시되지 않아 <strong>출처 게시일은 미확인</strong>으로 유지합니다.</p>
+ <a class="ncp-action" href="${web}" rel="noopener noreferrer">공식 웹호스팅 행사</a>
+</section>
+
+<section>
+ <h2>GPU 신규 첫달 50%·장기 50%</h2>
+ <h3>신규 고객 첫달 50%</h3>
+ <p>현재 GPU 행사 페이지는 신규 고객에게 <strong>첫달 요금 50% 상당 혜택</strong>을 안내합니다. 단순 즉시 가격 인하로 단정하면 안 됩니다. 공식 유의사항상 혜택은 <strong>매월 말 V-Pay 마일리지</strong>로 지급되고 최대 2개월에 나눠 지급될 수 있습니다. 최소 이용 1개월, 사용자당 1회이며 재고가 소진되면 조기 종료될 수 있습니다.</p>
+ <h3>1년 이상 이용 고객 50%</h3>
+ <p><strong>2025-09-17 공식 공지</strong>는 GPU 클라우드를 1년 이상 이용한 고객이 약정을 신청하고 관리자 승인을 받으면 <strong>승인일 기준 다음달 1일부터 50% 할인</strong>을 적용한다고 안내합니다. 약정 후 사양 변경·양도는 불가하며 서비스 해지 후 다시 약정하려면 1년 이상 이용 조건을 다시 충족해야 합니다.</p>
+ <p>신규 첫달 혜택과 장기 50%를 동시에 적용할 수 있다는 공식 근거는 확인되지 않아 중복 적용을 가정하지 않습니다.</p>
+ <a class="ncp-action" href="${gpu}" rel="noopener noreferrer">GPU 현재 행사</a><a class="ncp-action" href="${long}" rel="noopener noreferrer">장기 50% 공식 공지</a>
+</section>
+
+<section>
+ <h2>2026 중소기업 클라우드 최대 80% 지원</h2>
+ <p><strong>2026-05-15 공식 공지</strong> 기준, 2026년 중소기업 클라우드 서비스 보급·확산 사업에 선정된 고객은 <strong>2026-06-01~12-31</strong> iwinv 대상 서비스 이용료를 <strong>최대 80%</strong> 지원받을 수 있습니다.</p>
+ <p>대상에는 GPU 서버, 클라우드 서버, 베어메탈, VDI, 스토리지, DBMS, 보안 솔루션, 매니지드 서비스 등이 포함됩니다. 일반 회원 누구에게나 자동 적용되는 쿠폰이 아니라 <strong>사업 선정 자격형 혜택</strong>입니다.</p>
+ <p>공식 공지는 사업 종료 후 참여 고객에게 <strong>GPU 30%</strong>, <strong>일반 서비스 20%</strong> 지속 할인도 안내합니다. 정부 지원 최대 80%와 후속 할인율을 같은 기간에 합산해 표시하지 않습니다.</p>
+ <a class="ncp-action" href="${gov}" rel="noopener noreferrer">2026 지원사업 공식 안내</a>
+</section>
+
+<section>
+ <h2>파트너 링크형 할인도 있음</h2>
+ <p>iwinv의 <strong>콘텐츠 캐시 파트너사 전용 매뉴얼 ver. 2026-08-12</strong>에는 제휴 이벤트 참여 시 파트너 링크를 통해 회원가입하고, 관리콘솔에서 <strong>캐시 라이트 제휴 할인</strong>을 선택하는 절차가 명시되어 있습니다.</p>
+ <p>다만 공용 파트너 코드와 할인율은 공개돼 있지 않습니다. 파트너 코드는 제휴업체에서 받아야 하므로 누구나 복사하는 쿠폰코드로 분류하지 않았습니다.</p>
+ <a class="ncp-action" href="${partner}" rel="noopener noreferrer">파트너 할인 공식 매뉴얼</a>
+</section>
+
+<section>
+ <h2>종료·미확인 혜택</h2>
+ <table>
+ <thead><tr><th>항목</th><th>상태</th><th>근거</th></tr></thead>
+ <tbody>
+  <tr><td>2025 클라우드 보급확산 무료 크레딧</td><td>종료</td><td>행사기간 2025-04-10~12-31</td></tr>
+  <tr><td>공용 문자열 할인코드</td><td>미확인</td><td>현재 공식 코드 공지 없음</td></tr>
+  <tr><td>일반 신규가입 무료 서버 크레딧</td><td>미확인</td><td>2026 현재 공식 일반회원 혜택 근거 없음</td></tr>
+  <tr><td>추천인·카드사·학생 할인</td><td>미확인</td><td>현재 공개 공식 조건 미확인</td></tr>
+  <tr><td>개별 계정 GPU 마일리지 실수령</td><td>실사용 미확인</td><td>공식 지급 방식은 확인, 사용자 계정 수령은 별도 검증 안 함</td></tr>
+ </tbody>
+ </table>
+ <p>2026-04-29 공개 커뮤니티의 GPU 서버 이용 후기는 실제 사용 경험과 가격을 언급하지만 별도 쿠폰이나 할인코드를 제시하지 않아 <strong>서비스 이용 참고자료</strong>로만 분리했습니다.</p>
+</section>
+
+<section>
+ <h2>출처·날짜</h2>
+ <div class="ncp-source"><strong>웹호스팅 반값</strong><br><a href="${web}" rel="noopener noreferrer">${web}</a><br>출처 게시일: 미확인 · 확인일: 2026-10-11</div>
+ <div class="ncp-source"><strong>GPU 반값 행사</strong><br><a href="${gpu}" rel="noopener noreferrer">${gpu}</a><br>출처 게시일: 미확인 · 확인일: 2026-10-11</div>
+ <div class="ncp-source"><strong>GPU 1년 이상 50%</strong><br><a href="${long}" rel="noopener noreferrer">${long}</a><br>출처 게시일: 2025-09-17</div>
+ <div class="ncp-source"><strong>2026 클라우드 보급·확산 사업</strong><br><a href="${gov}" rel="noopener noreferrer">${gov}</a><br>출처 게시일: 2026-05-15 · 프로모션 기간: 2026-06-01~12-31</div>
+ <div class="ncp-source"><strong>콘텐츠 캐시 파트너 매뉴얼</strong><br><a href="${partner}" rel="noopener noreferrer">${partner}</a><br>원문 게시일: 미확인 · 매뉴얼 버전: 2026-08-12</div>
+ <a class="ncp-action" href="${events}" rel="noopener noreferrer">iwinv 이벤트 목록</a><a class="ncp-action" href="${official}" rel="noopener noreferrer">iwinv 공식 사이트</a>
+</section>
+
+<section>
+ <h2>검색 키워드</h2>
+ <p>iwinv 쿠폰 · iwinv 할인 · 아이윈브이 할인 · iwinv 웹호스팅 50% · iwinv GPU 서버 할인 · iwinv 반값서버 · iwinv 무료 크레딧 · iwinv 클라우드 지원사업 · iwinv 파트너 할인</p>
+ <p>#iwinv #아이윈브이 #GPU할인 #웹호스팅 #클라우드할인 #반값서버</p>
+ <p>검색량과 해시태그 노출률은 신뢰할 수 있는 실제 측정 자료를 확보하지 못해 수치를 기록하지 않았습니다.</p>
+</section>
+</article>`;
+
 export const iwinvArticle={
  articleKey:m.articleKey,
- approvedForPublish:false,
- post:{title:'iwinv 할인',labels:['호스팅·도메인','iwinv'],content:''},
- source:{url:'https://www.iwinv.kr/',checkedAt:m.checkedAt}
+ approvedForPublish:true,
+ post:{
+  title:'iwinv 할인·쿠폰 (2026년 10월) | 웹호스팅 50%·GPU 반값',
+  labels:['호스팅·도메인','iwinv'],
+  content:postContent,
+  searchDescription:'iwinv 할인 2026년 10월: 신규 웹호스팅 6개월 50%, GPU 신규 첫달·장기이용 50%, 중소기업 클라우드 최대 80% 지원과 파트너 할인 조건을 정리했습니다.',
+  keywords:m.keywords
+ },
+ source:{
+  type:'OFFICIAL_IWINV_BENEFITS_WITH_THIRD_PARTY_CROSSCHECK',
+  url:official,
+  checkedAt:m.checkedAt,
+  benefits:m.offers,
+  historical:m.historical,
+  unverified:m.unverified,
+  thirdParty:m.thirdParty,
+  searchMeasurement:m.searchMeasurement
+ }
 };
