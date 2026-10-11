@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {rokebiArticle} from '../src/rokebi-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('로밍도깨비는 현재 공식·제휴·자격형 혜택을 분리한다',()=>{
@@ -21,7 +22,9 @@ test('로밍도깨비는 현재 공식·제휴·자격형 혜택을 분리한다
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,0);
   assert.equal((html.match(/<!--more-->/g)||[]).length,1);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|내부 운영 상태/);
-  assert.equal(validateArticleDraft(article),true);
+  const rendered=currentArticleCatalog.find(x=>x.articleKey===article.articleKey);
+  assert.ok(rendered);
+  assert.equal(validateArticleDraft(rendered),true);
 });
 
 test('로밍도깨비 출처 게시일과 행사기간을 섞지 않는다',()=>{
