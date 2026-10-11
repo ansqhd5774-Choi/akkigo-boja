@@ -61,5 +61,32 @@
     "sourceAsset": "https://www.hotvpn.co.kr/images/common/footer-logo.svg",
     "verifiedAt": "2026-10-11",
     "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "yesim-esim-promo-202610",
+    "brand": "Yesim",
+    "logoUrl": "https://yesim.app/yesim-logo.png",
+    "sourceUrl": "https://yesim.app/about-us/",
+    "sourceAsset": "https://yesim.app/yesim-logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "bnesim-esim-promo-202610",
+    "brand": "BNESIM",
+    "logoUrl": "https://shop.bnesim.com/static/d6531e4cc2e8452ca6d083a6b87ca92b/10199/bnesim_logo.svg",
+    "sourceUrl": "https://shop.bnesim.com/login/",
+    "sourceAsset": "https://shop.bnesim.com/static/d6531e4cc2e8452ca6d083a6b87ca92b/10199/bnesim_logo.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "simcorner-promo-202610",
+    "brand": "SimCorner",
+    "logoUrl": "https://cdn.shopify.com/s/files/1/0179/4388/7926/files/logo2.png?v=1683987645",
+    "sourceUrl": "https://simcorner.com/",
+    "sourceAsset": "https://cdn.shopify.com/s/files/1/0179/4388/7926/files/logo2.png?v=1683987645",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
   }
 ]

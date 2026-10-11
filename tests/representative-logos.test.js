@@ -53,11 +53,11 @@ test('approved non-game representative image audit reports current debt and forb
  assert.ok(audit.total>0);
  assert.equal(audit.rows.length,audit.total);
  const expectedMissing=[
-  'bnesim-esim-promo-202610','dosirakesim-promo-202610','duolingo-super-coupons-202610','eskimo-esim-promo-202610',
+  'dosirakesim-promo-202610','duolingo-super-coupons-202610','eskimo-esim-promo-202610',
   'frombio-coupons-202610','gigago-esim-promo-202610','globalyo-esim-promo-202610','gomoworld-esim-promo-202610',
   'gigaip-benefits-202610','inflearn-coupons-202610','ip4u-benefits-202610',
   'keepgo-esim-promo-202610','maaltalk-benefits-202610','malhaevoca-discounts-202610',
-  'ohmyzip-benefits-202610','rokebi-promo-202610','simcorner-promo-202610','twofasts-benefits-202610','yesim-esim-promo-202610'
+  'ohmyzip-benefits-202610','rokebi-promo-202610','twofasts-benefits-202610'
  ].sort();
  assert.deepEqual([...audit.missing].sort(),expectedMissing);
  assert.deepEqual([...audit.suspicious].sort(),['esthermall-coupons-202610']);
