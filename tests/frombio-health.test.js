@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {frombioArticle} from '../src/frombio-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 
 test('프롬바이오 건강 쿠폰 글은 10월 쿠폰팩과 회원 혜택을 구분한다',()=>{
@@ -22,7 +23,9 @@ test('프롬바이오 건강 쿠폰 글은 10월 쿠폰팩과 회원 혜택을 �
   assert.match(html,/30,000원 이상 구매 시 무료배송/);
   assert.equal((html.match(/data-ncp-copy=/g)||[]).length,0);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|내부 운영 상태/);
-  assert.equal(validateArticleDraft(a),true);
+  const rendered=currentArticleCatalog.find(x=>x.articleKey===a.articleKey);
+  assert.ok(rendered);
+  assert.equal(validateArticleDraft(rendered),true);
 });
 
 test('프롬바이오 출처 게시일·확인일·사용기간을 분리한다',()=>{
