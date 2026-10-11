@@ -1,12 +1,17 @@
 {
   "articleKey": "iwinv-benefits-202610",
-  "checkedAt": "2026-10-10",
+  "checkedAt": "2026-10-11",
   "category": "호스팅·도메인",
   "official": "https://www.iwinv.kr/",
   "status": "RESEARCHED",
   "sources": [
-    "https://gdn.event.iwinv.kr/gpu/",
-    "https://gdn.event.iwinv.kr/webhosting/index.html",
-    "https://docs.iwinv.kr/blog/2026/05/15/cloud-service-event/"
-  ]
+    {"url":"https://gdn.event.iwinv.kr/webhosting/index.html","kind":"OFFICIAL_EVENT","sourcePublishedAt":null,"note":"신규 웹호스팅 6개월 50%, 무료 SSL·웹방화벽"},
+    {"url":"https://gdn.event.iwinv.kr/gpu/","kind":"OFFICIAL_EVENT","sourcePublishedAt":null,"note":"GPU 신규 첫달 50%, 이전 트래픽 무료"},
+    {"url":"https://docs.iwinv.kr/blog/2025/09/17/gpu/","kind":"OFFICIAL_NOTICE","sourcePublishedAt":"2025-09-17","note":"GPU 1년 이상 장기이용 고객 50% 약정 할인"},
+    {"url":"https://docs.iwinv.kr/blog/2026/05/15/cloud-service-event/","kind":"OFFICIAL_NOTICE","sourcePublishedAt":"2026-05-15","note":"2026 중소기업 클라우드 최대 80% 지원 및 종료 후 할인"},
+    {"url":"https://help.iwinv.kr/manual/985","kind":"OFFICIAL_PARTNER_MANUAL","sourcePublishedAt":null,"manualVersion":"2026-08-12","note":"콘텐츠 캐시 파트너 링크형 제휴 할인"},
+    {"url":"https://gall.dcinside.com/mgallery/board/view/?id=servernetworkop&no=284","kind":"THIRD_PARTY_USAGE_REPORT","sourcePublishedAt":"2026-04-29","note":"GPU 서버 사용 경험. 별도 쿠폰·할인코드 근거 없음"}
+  ],
+  "currentPublicStringCode":"NONE_VERIFIED",
+  "searchMeasurement":"NOT_MEASURED"
 }
