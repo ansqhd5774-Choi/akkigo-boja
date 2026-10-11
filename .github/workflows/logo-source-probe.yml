@@ -13,23 +13,18 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Inspect Duolingo official press-kit landing page only
+      - name: Resolve Duolingo official Press Room header logo asset read-only
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const url='https://duolingopress.lingoapp.com/s/Logos-oJyX2Q';
-          try{
-            const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml,*/*'},signal:AbortSignal.timeout(15000)});
-            const text=await r.text();
-            console.log('PAGE',r.status,r.url,r.headers.get('content-type'),'bytes='+text.length);
-            const urls=new Set();
-            for(const m of text.matchAll(/(?:src|srcset|href|content)\s*=\s*["']([^"']+)["']/gi)){
-              for(const p of m[1].split(',').map(x=>x.trim().split(/\s+/)[0])){try{urls.add(new URL(p.replaceAll('\\/','/'),r.url).href)}catch{}}
-            }
-            for(const m of text.matchAll(/https?:\\?\/\\?\/[^"'`\s<>]+/gi)){try{urls.add(m[0].replaceAll('\\/','/'))}catch{}}
-            for(const u of urls)console.log('URL',u);
-            for(const term of ['Duolingo','Logo','Logotype','Lockup','Download','SVG','PNG']){
-              let p=0,n=0;while((p=text.toLowerCase().indexOf(term.toLowerCase(),p))>=0&&n++<12){console.log('CTX',term,text.slice(Math.max(0,p-500),Math.min(text.length,p+1400)).replace(/\s+/g,' '));p+=term.length}
-            }
-          }catch(e){console.log('ERROR',e.name,e.message);process.exit(1)}
+          const url='https://press.duolingo.com/main.1fa341056a8e1b7872a8.js';
+          const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(15000)});
+          const text=await r.text();
+          console.log('BUNDLE',r.status,r.url,'bytes='+text.length);
+          for(const needle of ['alt:"Duolingo",src:ia','ia=a.p+','ia=','Duolingo Press Room']){
+            let p=0,n=0;while((p=text.indexOf(needle,p))>=0&&n++<8){console.log('CTX',needle,text.slice(Math.max(0,p-1200),Math.min(text.length,p+1600)));p+=needle.length}
+          }
+          for(const m of text.matchAll(/(?:^|[,;])([A-Za-z_$][\w$]*)=a\.p\+"([a-f0-9]{20,}\.(?:svg|png|webp))"/g)){
+            if(['ia','nl','sl','yi','bi','wi','Ei'].includes(m[1]))console.log('MAP',m[1],`https://press.duolingo.com/${m[2]}`);
+          }
           NODE
