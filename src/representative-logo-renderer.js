@@ -1,5 +1,4 @@
-import logos from '../data/representative-logos.json' with {type:'json'};
-import {isGameArticle,representativeLogoFor,validateRepresentativeLogoEntry} from './representative-logo-policy.js';
+import {isGameArticle,representativeLogoFor,representativeLogoRegistry,validateRepresentativeLogoEntry} from './representative-logo-policy.js';
 
 function esc(value=''){
   return String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
@@ -10,7 +9,7 @@ function figure(article,logo){
   return `<figure data-ncp-featured-image="${esc(article.articleKey)}" style="margin:0 0 24px"><img src="${esc(logo.logoUrl)}" alt="${esc(brand)} 공식 대표 로고" data-ncp-brand-logo="true" width="512" height="512" loading="eager" decoding="async" style="display:block;width:180px;height:180px;object-fit:contain;margin:auto;border-radius:14px"></figure>`;
 }
 
-export function applyRepresentativeLogo(article,{registry=logos}={}){
+export function applyRepresentativeLogo(article,{registry=representativeLogoRegistry}={}){
   if(!article||article.approvedForPublish!==true||!article.post||isGameArticle(article))return article;
   const logo=representativeLogoFor(article.articleKey,registry);
   if(!logo)return article;
@@ -33,6 +32,6 @@ export function applyRepresentativeLogo(article,{registry=logos}={}){
   return {...article,post:{...article.post,content}};
 }
 
-export function applyRepresentativeLogos(catalog,{registry=logos}={}){
+export function applyRepresentativeLogos(catalog,{registry=representativeLogoRegistry}={}){
   return catalog.map(article=>applyRepresentativeLogo(article,{registry}));
 }
