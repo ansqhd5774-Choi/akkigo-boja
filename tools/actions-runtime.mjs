@@ -4,6 +4,7 @@ import {execFileSync, spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 export const workerPaths = ['src/','data/','theme/assets/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
+export const runtimeWorkerPaths = ['src/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
 export const isWorkerPath = path => workerPaths.some(p => p.endsWith('/') ? path.startsWith(p) : path === p);
 export function assertVerifiedSource(verified, current) {
   if(verified!==current || !/^[a-f0-9]{40}$/.test(verified||''))throw Error('SOURCE_VERIFY_SHA_MISMATCH');
@@ -25,6 +26,14 @@ async function runs(workflow,limit) {
   const response=await fetch(url,{headers:{Authorization:`Bearer ${process.env.GH_TOKEN}`,Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(20000)});
   if(!response.ok)throw Error('WORKFLOW_LOOKUP_HTTP_'+response.status);
   return (await response.json()).workflow_runs;
+}
+async function runPerformedDeployment(run,workflow) {
+  if(!isSuccessfulDeploymentRun(run,workflow) || !run.jobs_url)return false;
+  const response=await fetch(`${run.jobs_url}?filter=latest&per_page=100`,{headers:{Authorization:`Bearer ${process.env.GH_TOKEN}`,Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(20000)});
+  if(!response.ok)throw Error('WORKFLOW_JOBS_LOOKUP_HTTP_'+response.status);
+  const jobs=(await response.json()).jobs || [];
+  const names=workflow==='deploy.yml' ? new Set(['Run pnpm deploy','Deploy Worker']) : new Set(['Repair Worker deployment when required']);
+  return jobs.some(job=>(job.steps||[]).some(step=>names.has(step.name)&&step.status==='completed'&&step.conclusion==='success'));
 }
 export async function requestOidc() {
   if(!process.env.ACTIONS_ID_TOKEN_REQUEST_URL || !process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN)throw Error('OIDC_CONTEXT_MISSING');
@@ -48,17 +57,21 @@ async function main(command) {
     // Either exact-SHA complete coverage was reused or local full checks passed.
     console.log('SOURCE_SNAPSHOT_VERIFIED '+assertVerifiedSource(process.env.VERIFIED_SOURCE_SHA,process.env.GITHUB_SHA));
   } else if(command==='worker') {
-    if(process.env.WORKER_READY==='true'){output('deploy_needed',false);console.log('WORKER_SNAPSHOT_MATCH_SKIP_DEPLOY');return;}
-    const source=git('log','-1','--format=%H','HEAD','--',...workerPaths);
+    // An article snapshot match only proves the requested article payload is current.
+    // It does not prove runtime code such as src/articles.js is deployed. When the
+    // snapshot matches, require deployment coverage for the latest runtime source;
+    // otherwise require coverage for the full Worker/data source set.
+    const paths=process.env.WORKER_READY==='true'?runtimeWorkerPaths:workerPaths;
+    const source=git('log','-1','--format=%H','HEAD','--',...paths);
     if(source)for(const [workflow,limit,label] of [['deploy.yml',30,'WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW'],['publish-article.yml',20,'WORKER_ALREADY_DEPLOYED_BY_SUCCESSFUL_PUBLISH']]) {
       for(const run of await runs(workflow,limit)) {
         const sha=run.head_sha;
-        if(isSuccessfulDeploymentRun(run,workflow) && gitOk('cat-file','-e',sha+'^{commit}') && gitOk('merge-base','--is-ancestor',source,sha) && gitOk('merge-base','--is-ancestor',sha,'HEAD')) {
+        if(isSuccessfulDeploymentRun(run,workflow) && gitOk('cat-file','-e',sha+'^{commit}') && gitOk('merge-base','--is-ancestor',source,sha) && gitOk('merge-base','--is-ancestor',sha,'HEAD') && await runPerformedDeployment(run,workflow)) {
           output('deploy_needed',false);console.log(label);return;
         }
       }
     }
-    output('deploy_needed',true);console.log('WORKER_REPAIR_DEPLOY_REQUIRED');
+    output('deploy_needed',true);console.log(process.env.WORKER_READY==='true'?'WORKER_RUNTIME_DEPLOY_REQUIRED':'WORKER_REPAIR_DEPLOY_REQUIRED');
   } else if(command==='oidc') await requestOidc();
   else if(command==='auth') {
     if(!process.env.CLOUDFLARE_API_TOKEN)throw Error('CLOUDFLARE_API_TOKEN_MISSING');
