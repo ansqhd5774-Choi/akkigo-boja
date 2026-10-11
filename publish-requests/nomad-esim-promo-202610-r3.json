@@ -1,0 +1,7 @@
+{
+  "articleKey": "nomad-esim-promo-202610",
+  "approved": true,
+  "existingOnly": true,
+  "requestedAt": "2026-10-11",
+  "reason": "Repair the previously deferred Nomad representative-logo update by reconciling the exact stored Blogger postId first. PATCH the existing post only; preserve postId and public URL; never create a replacement post."
+}
