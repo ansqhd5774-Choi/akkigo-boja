@@ -223,5 +223,23 @@
     "sourceAsset": "official-header:ESTHERMALL:110x18",
     "verifiedAt": "2026-10-11",
     "kind": "OFFICIAL_BRAND_LOGO"
+  },
+  {
+    "articleKey": "duolingo-super-coupons-202610",
+    "brand": "Duolingo",
+    "logoUrl": "https://press.duolingo.com/2b2efbe1b1a37089bad6.svg",
+    "sourceUrl": "https://press.duolingo.com/",
+    "sourceAsset": "https://press.duolingo.com/2b2efbe1b1a37089bad6.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_BRAND_LOGO"
+  },
+  {
+    "articleKey": "frombio-coupons-202610",
+    "brand": "프롬바이오",
+    "logoUrl": "https://frombio-company.co.kr/default/img/yami/img/frombio/logo.png",
+    "sourceUrl": "https://frombio-company.co.kr/default/sub/about/page04.php",
+    "sourceAsset": "https://frombio-company.co.kr/default/img/yami/img/frombio/logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_BRAND_LOGO"
   }
 ]
