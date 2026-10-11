@@ -2,7 +2,7 @@ import {validateMonthlyGameCouponTimeline} from './game-coupon-monthly.js';
 import {annotateSourceHealth} from './source-health.js';
 import {validateArticlePresentation} from './article-presentation.js';
 import {validateGamePeriodArticle} from './game-period-article.js';
-import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,BLOG_ID} from './blogger.js';
+import {createDraft,findArticlePosts,publishDraft,updateExistingHub,validatePost,bloggerConfigured,accessToken,BLOG_ID} from './blogger.js';
 import {validateGameCouponLayout} from './game-code-layout-contract.js';
 import {validateGameFeaturedImage} from './game-featured-image-policy.js';
 import {validateRepresentativeLogo} from './representative-logo-policy.js';
@@ -19,6 +19,25 @@ function validKey(key) {
   return /^[a-z0-9-]{1,100}$/.test(key || '');
 }
 
+async function readStoredLivePost(env,stored,transport=fetch) {
+  if (!/^\d+$/.test(stored?.post_id || '') || typeof stored?.public_url!=='string') throw Error('ARTICLE_STATE_MISMATCH');
+  const token=await accessToken(env,transport);
+  const endpoint=`https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts/${stored.post_id}?view=ADMIN`;
+  const response=await transport(endpoint,{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15000)});
+  if (!response.ok) throw Error('BLOGGER_STORED_POST_READ_FAILED');
+  const post=await response.json();
+  if (post.id!==stored.post_id || post.blog?.id!==BLOG_ID || post.status!=='LIVE' || post.url!==stored.public_url || typeof post.title!=='string' || typeof post.content!=='string') throw Error('ARTICLE_STATE_MISMATCH');
+  const url=new URL(post.url);
+  if (url.hostname!=='lsifl.blogspot.com' || !['http:','https:'].includes(url.protocol)) throw Error('BLOGGER_PUBLIC_URL_MISMATCH');
+  return {postId:post.id,status:post.status,url:post.url,title:post.title,content:post.content};
+}
+
+async function resolveStoredLivePost(env,articleKey,stored,transport=fetch) {
+  const matches=await findArticlePosts(env,articleKey,transport);
+  if (matches.length===1 && matches[0].postId===stored.post_id && matches[0].status==='LIVE' && matches[0].url===stored.public_url) return matches[0];
+  return readStoredLivePost(env,stored,transport);
+}
+
 // Operational test path: D1 SELECT + Blogger GET only. Never creates attempts
 // or updates a post, even if the stored article differs from the local source.
 export async function probeExistingArticle(env, articleKey, articles, transport=fetch) {
@@ -28,11 +47,8 @@ export async function probeExistingArticle(env, articleKey, articles, transport=
   if (!article || article.approvedForPublish!==true) throw Error('ARTICLE_NOT_APPROVED');
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
   if (stored?.status!=='LIVE' || !/^\d+$/.test(stored.post_id||'')) throw Error('ARTICLE_NOT_LIVE');
-  const matches=await findArticlePosts(env,articleKey,transport);
-  if (matches.length!==1 || matches[0].postId!==stored.post_id || matches[0].status!=='LIVE' || matches[0].url!==stored.public_url) throw Error('ARTICLE_STATE_MISMATCH');
-  const url=new URL(stored.public_url);
-  if (url.hostname!=='lsifl.blogspot.com' || !['http:','https:'].includes(url.protocol)) throw Error('BLOGGER_PUBLIC_URL_MISMATCH');
-  return {articleKey,postId:stored.post_id,status:'LIVE',url:stored.public_url,readOnly:true,contentMatches:matches[0].title===article.post.title && matches[0].content===article.post.content};
+  const current=await resolveStoredLivePost(env,articleKey,stored,transport);
+  return {articleKey,postId:stored.post_id,status:'LIVE',url:stored.public_url,readOnly:true,contentMatches:current.title===article.post.title && current.content===article.post.content};
 }
 
 async function upsertState(env,key,{postId,url,status}) {
@@ -76,9 +92,7 @@ export async function publishApprovedArticle(env, articleKey, articles, transpor
   const stored=await env.DB.prepare('SELECT post_id,public_url,status FROM article_state WHERE article_key=?').bind(articleKey).first();
   if(existingOnly&&(stored?.status!=='LIVE'||!stored.post_id||!stored.public_url))throw Error('ARTICLE_NOT_LIVE_UPDATE_ONLY');
   if (stored?.status==='LIVE' && stored.public_url && stored.post_id) {
-    const matches=await findArticlePosts(env,articleKey,transport);
-    if (matches.length!==1 || matches[0].postId!==stored.post_id) throw new Error('ARTICLE_STATE_MISMATCH');
-    const current=matches[0];
+    const current=await resolveStoredLivePost(env,articleKey,stored,transport);
     const same=current.title===article.post.title && current.content===article.post.content;
     if (same) {
       return {postId:stored.post_id,status:'LIVE',url:stored.public_url,alreadyLive:true,updated:false,publicVerified:await publicCheck(stored.public_url,articleKey,transport)};
