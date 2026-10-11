@@ -1,19 +1,7 @@
 import {gameHearts} from './game-hearts.js';
 import {couponCatalog} from './coupon-lifecycle.js';
 import coupons from '../data/coupons.json' with { type: 'json' };
-import articles from '../data/articles.json' with { type: 'json' };
-import supplementalArticles from '../data/articles-supplemental.json' with { type: 'json' };
-import {catHeroArticle} from './cat-hero-article.js';
-import {malhaevocaArticle} from './malhaevoca-article.js';
-import {duolingoArticle} from './duolingo-article.js';
-import {tilesSurviveArticle} from './tiles-survive-article.js';
-import {rokebiArticle} from './rokebi-article.js';
-import {frombioArticle} from './frombio-article.js';
-import {inflearnArticle} from './inflearn-article.js';
-import {maaltalkArticle} from './maaltalk-article.js';
-import {ip4uArticle} from './ip4u-article.js';
-import {hotvpnArticle} from './hotvpn-article.js';
-import {twofastsArticle} from './twofasts-article.js';
+import {currentArticleCatalog} from './article-catalog.js';
 import { bloggerConfigured } from './blogger.js';
 import { collectSources } from './collector.js';
 import { listUnverifiedCandidates } from './candidates.js';
@@ -22,9 +10,6 @@ import { buildHubDraft } from './hubs.js';
 import { publishApprovedArticle, probeExistingArticle } from './articles.js';
 import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
-
-const articleCatalogBase=[...articles,...supplementalArticles,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle,hotvpnArticle,twofastsArticle];
-const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 export default {
   async fetch(request, env) {

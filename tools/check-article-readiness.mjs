@@ -1,23 +1,8 @@
-import {catHeroArticle} from '../src/cat-hero-article.js';
-import {malhaevocaArticle} from '../src/malhaevoca-article.js';
-import {duolingoArticle} from '../src/duolingo-article.js';
-import {tilesSurviveArticle} from '../src/tiles-survive-article.js';
-import {rokebiArticle} from '../src/rokebi-article.js';
-import {frombioArticle} from '../src/frombio-article.js';
-import {inflearnArticle} from '../src/inflearn-article.js';
-import {maaltalkArticle} from '../src/maaltalk-article.js';
-import {ip4uArticle} from '../src/ip4u-article.js';
-import {hotvpnArticle} from '../src/hotvpn-article.js';
-import {twofastsArticle} from '../src/twofasts-article.js';
 import {readFile} from 'node:fs/promises';
 import {join} from 'node:path';
-import primary from '../data/articles.json' with {type:'json'};
-import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
-
-const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle,hotvpnArticle,twofastsArticle];
-const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 const service='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/preflight';
 export function approvedRequestKey(request){
@@ -28,8 +13,11 @@ export function approvedRequestKey(request){
 export async function probeSnapshots(keys,{transport=fetch,token,sleep=ms=>new Promise(r=>setTimeout(r,ms)),attempts=1,delayMs=2500}={}){
   if(!token)throw Error('GITHUB_OIDC_TOKEN_MISSING');
   const keysToCheck=[...new Set(keys)];
+  const missing=keysToCheck.filter(k=>!currentArticleCatalog.some(x=>x.articleKey===k));
+  if(missing.length)throw Error(`LOCAL_ARTICLE_NOT_IN_REGISTRY:${missing.join(',')}`);
   const snapshots=await Promise.all(keysToCheck.map(k=>articleSnapshot(k,currentArticleCatalog)));
-  if(snapshots.some(x=>!x.approved))throw Error('LOCAL_ARTICLE_NOT_APPROVED');
+  const unapproved=snapshots.filter(x=>!x.approved).map(x=>x.articleKey);
+  if(unapproved.length)throw Error(`LOCAL_ARTICLE_NOT_APPROVED:${unapproved.join(',')}`);
   for(const key of keysToCheck)validateArticleDraft(currentArticleCatalog.find(x=>x.articleKey===key));
   for(let attempt=1;attempt<=attempts;attempt++){
     let matching=0;

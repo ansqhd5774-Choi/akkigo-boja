@@ -1,22 +1,7 @@
-import {catHeroArticle} from '../src/cat-hero-article.js';
-import {malhaevocaArticle} from '../src/malhaevoca-article.js';
-import {duolingoArticle} from '../src/duolingo-article.js';
-import {tilesSurviveArticle} from '../src/tiles-survive-article.js';
-import {rokebiArticle} from '../src/rokebi-article.js';
-import {frombioArticle} from '../src/frombio-article.js';
-import {inflearnArticle} from '../src/inflearn-article.js';
-import {maaltalkArticle} from '../src/maaltalk-article.js';
-import {ip4uArticle} from '../src/ip4u-article.js';
-import {hotvpnArticle} from '../src/hotvpn-article.js';
-import {twofastsArticle} from '../src/twofasts-article.js';
 import {readFile} from 'node:fs/promises';
-import primary from '../data/articles.json' with {type:'json'};
-import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
-
-const articleCatalogBase=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle,tilesSurviveArticle,frombioArticle,inflearnArticle,maaltalkArticle,ip4uArticle,hotvpnArticle,twofastsArticle];
-const currentArticleCatalog=[...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),rokebiArticle];
 
 const token=process.env.GITHUB_OIDC_TOKEN;
 if (!token) throw new Error('GITHUB_OIDC_TOKEN_MISSING');
@@ -36,10 +21,11 @@ for (const name of names) {
     continue;
   }
   processedKeys.add(request.articleKey);
+  const localArticle=currentArticleCatalog.find(x=>x.articleKey===request.articleKey);
+  if(!localArticle)throw new Error(`LOCAL_ARTICLE_NOT_IN_REGISTRY:${request.articleKey}`);
   const source=await articleSnapshot(request.articleKey,currentArticleCatalog);
-  if(!source.approved)throw new Error('LOCAL_ARTICLE_NOT_APPROVED');
-  const catalog=currentArticleCatalog;
-  validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
+  if(!source.approved)throw new Error(`LOCAL_ARTICLE_NOT_APPROVED:${request.articleKey}`);
+  validateArticleDraft(localArticle);
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
   const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
   const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256,...(requireUnchanged?{requireUnchanged:true}:{}),...(request.existingOnly===true?{existingOnly:true}:{})});
