@@ -38,6 +38,10 @@ export function validateRepresentativeLogoEntry(logo,{allowLegacy=true,strictSou
   return true;
 }
 
+function decodeHtmlAttribute(value=''){
+  return String(value).replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&lt;','<').replaceAll('&gt;','>');
+}
+
 export function validateRepresentativeLogo(article,{required=false,allowLegacy=true,strictSource=required,registry=representativeLogoRegistry}={}){
   if(isGameArticle(article))return true;
   const logo=representativeLogoFor(article?.articleKey,registry);
@@ -47,7 +51,8 @@ export function validateRepresentativeLogo(article,{required=false,allowLegacy=t
   }
   validateRepresentativeLogoEntry(logo,{allowLegacy,strictSource});
   const first=article?.post?.content?.match(/<img\b[^>]*>/i)?.[0]||'';
-  if(!first.includes(`src="${logo.logoUrl}"`)||!first.includes('data-ncp-brand-logo="true"')){
+  const firstSrc=decodeHtmlAttribute(first.match(/\bsrc="([^"]+)"/i)?.[1]||'');
+  if(firstSrc!==logo.logoUrl||!first.includes('data-ncp-brand-logo="true"')){
     throw Error(`REPRESENTATIVE_LOGO_MISMATCH:${article.articleKey}`);
   }
   return true;
