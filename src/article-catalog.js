@@ -15,6 +15,7 @@ import {readyArticle as ohmyzipReadyArticle} from './ohmyzip-ready-article.js';
 import {twofastsArticle} from './twofasts-article.js';
 import {iwinvArticle} from './iwinv-article.js';
 import {swordxstaffArticle} from './swordxstaff-article.js';
+import {plantsOnFireArticle} from './plants-on-fire-article.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -33,7 +34,8 @@ const articleCatalogBase=[
   ohmyzipReadyArticle,
   twofastsArticle,
   iwinvArticle,
-  swordxstaffArticle
+  swordxstaffArticle,
+  plantsOnFireArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
