@@ -12,37 +12,30 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Read official pages for logo candidates
+      - name: Inspect official logo candidates read-only
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          const targets={
-            dosirak:['https://dosirakesim.com/'],
-            duolingo:['https://design.duolingo.com/identity/logos'],
-            malhaevoca:['https://epop.ai/ko/premium','https://epop.ai/ko'],
-            frombio:['https://www.frombio.co.kr/','https://m.frombio.co.kr/'],
-            rokebi:['https://store.rokebi.com/','https://www.rokebi.com/'],
-            esther:['https://www.esthermall.co.kr/']
+          const assets={
+            dosirak:'https://wmstgbb001.blob.core.windows.net/wm-esim/image/common/DosirakeSIM.png',
+            malhaeCompany:'https://epop.ai/_next/static/media/logo_epop.f9d22353.svg',
+            malhaeHome:'https://epop.ai/_next/static/media/ic_logo_home.48c0ea51.png',
+            rokebiB2B:'https://www.rokebi.com/assets/images/rokebiB2B.svg',
+            rokebiOg:'https://esim.rokebi.com/sites/default/files/web/ogRokebi.png',
+            estherHeader:'https://esther2023.cdn-nhncommerce.com/data/skin/mobile/moment/img/banner/2655003ba49362fe32f0dae7d472b146_41908.jpg',
+            estherOg:'https://m.esthermall.co.kr/data/common/snsRepresentImage.png?v=1696942206',
+            frombioOg:'https://m.frombio.co.kr/web/upload/share-image-1-299c0f1f293617b02946a375c1c72e6e.jpg'
           };
-          const kw=/(logo|logotype|mainlogo|brand|duolingo|dosirak|도시락|epop|말해보카|frombio|프롬바이오|rokebi|로밍도깨비|esther|에스더)/i;
-          function abs(v,b){try{if(!v||/^(data|javascript):/i.test(v))return null;return new URL(v.replace(/&amp;/g,'&'),b).href}catch{return null}}
-          function candidates(html,base){
-            const out=[];
-            for(const m of html.matchAll(/<(?:img|source|link|meta)[^>]*>/gi)){
-              const tag=m[0]; if(!kw.test(tag))continue;
-              const attrs=[...tag.matchAll(/(?:src|srcset|href|content)\s*=\s*["']([^"']+)["']/gi)].map(x=>x[1]);
-              for(const raw of attrs){for(const part of raw.split(',').map(x=>x.trim().split(/\s+/)[0])){const u=abs(part,base);if(u)out.push([u,tag.slice(0,320).replace(/\s+/g,' ')])}}
-            }
-            for(const m of html.matchAll(/(?:["'(=:\s])([^"'()\s<>]{0,200}(?:logo|brand)[^"'()\s<>]{0,200}\.(?:svg|png|webp|jpe?g)(?:\?[^"'()\s<>]*)?)/gi)){const u=abs(m[1],base);if(u)out.push([u,'raw-logo-path']);}
-            return [...new Map(out.map(x=>[x[0],x])).values()].slice(0,60);
+          function dims(buf,type){
+            const b=new Uint8Array(buf),v=new DataView(buf);
+            if(type.includes('png')&&b.length>24&&b[0]===137&&b[1]===80)return [v.getUint32(16),v.getUint32(20)];
+            if((type.includes('jpeg')||type.includes('jpg'))&&b[0]===255&&b[1]===216){let i=2;while(i+9<b.length){if(b[i]!==255){i++;continue}const m=b[i+1],len=(b[i+2]<<8)+b[i+3];if([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf].includes(m))return [(b[i+7]<<8)+b[i+8],(b[i+5]<<8)+b[i+6]];if(len<2)break;i+=2+len}}
+            return null;
           }
-          for(const [name,urls] of Object.entries(targets)){
-            for(const url of urls){
-              try{
-                const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(12000)});
-                const html=await r.text(); console.log(`PAGE ${name} ${r.status} ${r.url} bytes=${html.length}`);
-                for(const [u,ctx] of candidates(html,r.url))console.log(`CANDIDATE ${name} ${u} CONTEXT ${ctx}`);
-              }catch(e){console.log(`ERROR ${name} ${url} ${e.name}`)}
-            }
+          for(const [name,url] of Object.entries(assets)){
+            try{const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(12000)});const type=(r.headers.get('content-type')||'').toLowerCase();const buf=await r.arrayBuffer();const d=dims(buf,type);console.log(`ASSET ${name} status=${r.status} type=${type} bytes=${buf.byteLength} dims=${d?d.join('x'):'n/a'} final=${r.url}`);if(type.includes('svg'))console.log(`SVG ${name} ${new TextDecoder().decode(buf).slice(0,600).replace(/\s+/g,' ')}`)}catch(e){console.log(`ASSET_ERROR ${name} ${e.name}`)}
+          }
+          for(const [name,url] of Object.entries({duolingo:'https://careers.duolingo.com/',frombio:'https://m.frombio.co.kr/',esther:'https://m.esthermall.co.kr/',rokebi:'https://www.rokebi.com/'})){
+            try{const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(12000)});const html=await r.text();console.log(`PAGE ${name} ${r.status} ${r.url} bytes=${html.length}`);const tags=[...html.matchAll(/<img[^>]*>/gi)].map(x=>x[0]).filter(t=>/(logo|esthermall|frombio|프롬바이오|duolingo|rokebi)/i.test(t)).slice(0,20);for(const tag of tags)console.log(`IMG ${name} ${tag.slice(0,700).replace(/\s+/g,' ')}`);for(const m of html.matchAll(/["']([^"']*(?:logo|Logo|LOGO)[^"']*\.(?:svg|png|webp|jpe?g)(?:\?[^"']*)?)["']/g)){console.log(`RAW ${name} ${m[1]}`)}}catch(e){console.log(`PAGE_ERROR ${name} ${e.name}`)}
           }
           NODE
