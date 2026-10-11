@@ -11,6 +11,7 @@ import {maaltalkArticle} from './maaltalk-article.js';
 import {ip4uArticle} from './ip4u-article.js';
 import {hotvpnArticle} from './hotvpn-article.js';
 import {gigaipArticle} from './gigaip-article.js';
+import {readyArticle as ohmyzipReadyArticle} from './ohmyzip-ready-article.js';
 import {twofastsArticle} from './twofasts-article.js';
 
 const articleCatalogBase=[
@@ -26,6 +27,7 @@ const articleCatalogBase=[
   ip4uArticle,
   hotvpnArticle,
   gigaipArticle,
+  ohmyzipReadyArticle,
   twofastsArticle
 ];
 
