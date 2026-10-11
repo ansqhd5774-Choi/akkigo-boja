@@ -57,6 +57,8 @@ test('화이트아웃 서바이벌 supplemental article과 공개 HTML이 일치
 
 test('Worker가 supplemental article registry를 publish 후보에 포함한다',()=>{
   const worker=readFileSync(new URL('../src/worker.js',import.meta.url),'utf8');
-  assert.match(worker,/articles-supplemental\.json/);
-  assert.match(worker,/\.\.\.articles,\.\.\.supplementalArticles/);
+  const registry=readFileSync(new URL('../src/article-catalog.js',import.meta.url),'utf8');
+  assert.match(worker,/currentArticleCatalog.*article-catalog\.js/);
+  assert.match(registry,/articles-supplemental\.json/);
+  assert.match(registry,/\.\.\.supplemental/);
 });

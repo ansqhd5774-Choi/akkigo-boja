@@ -7,7 +7,7 @@ const endedFree='https://www.gigaip.net/counsel/view/8348';
 const launchedFree='https://www.gigaip.net/counsel/view/5';
 const notice='https://gigaip.net/counsel/view/12853';
 
-const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-label="GIGA IP 할인·무료 서비스 상태 요약">
+const postContent=`<div class="ncp-feed-preview" data-ncp-feed-preview aria-label="GIGA IP 할인·무료 서비스 상태 요약">
  <div class="ncp-feed-stat"><span>고정IP 장기결제</span><strong>최대 35%</strong></div>
  <div class="ncp-feed-stat"><span>12개월 총액</span><strong>62,400원</strong></div>
  <div class="ncp-feed-stat"><span>무료프록시</span><strong>2019년 종료</strong></div>
@@ -60,7 +60,7 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
   <tr><td>무료 IP 교체권</td><td>고정IP 결제기간별 제공</td><td>공식 가격표상 1·2·3·6개</td><td>공식 요금표</td></tr>
  </tbody>
  </table>
- <a class="ncp-action" href="\${fixed}" rel="noopener noreferrer">고정 VPN 할인 확인</a><a class="ncp-action" href="\${proxy}" rel="noopener noreferrer">유동 PROXY 확인</a>
+ <a class="ncp-action" href="${fixed}" rel="noopener noreferrer">고정 VPN 할인 확인</a><a class="ncp-action" href="${proxy}" rel="noopener noreferrer">유동 PROXY 확인</a>
 </section>
 
 <section>
@@ -77,14 +77,14 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
  </table>
  <p>월 환산 금액은 3개월 <strong>6,800원</strong>, 6개월 <strong>6,000원</strong>, 12개월 <strong>5,200원</strong>입니다. 12개월 62,400원은 한 번에 결제하는 기간 총액이지 매월 결제금액이 아닙니다.</p>
  <p>가격표에 표시된 IP 교체권은 결제기간에 따라 제공되는 부가 혜택이며, <strong>무료로 VPN 이용기간 자체를 제공한다는 뜻은 아닙니다.</strong></p>
- <a class="ncp-action" href="\${fixed}" rel="noopener noreferrer">공식 고정IP 가격표 보기</a>
+ <a class="ncp-action" href="${fixed}" rel="noopener noreferrer">공식 고정IP 가격표 보기</a>
 </section>
 
 <section>
  <h2>30개 이상 대량구매 특별가</h2>
  <p>공식 고정 VPN 소개 페이지는 <strong>30개 이상 구매 고객</strong>에게 특별 혜택을 제공하며 <strong>약정기간에 따라 추가할인</strong>이 가능하다고 안내합니다. 홈페이지에는 대량구매 추가 할인율이나 최종 견적 금액이 공개되어 있지 않습니다.</p>
  <p>구매 수량·약정기간·적용할 IP 수·기존 기간할인과의 중복 여부를 고객센터에 확인한 뒤 결제하세요. 30개 미만 구매자에게도 같은 특별가가 적용된다고 가정하지 않습니다.</p>
- <a class="ncp-action" href="\${vpn}" rel="noopener noreferrer">대량구매 공식 안내</a>
+ <a class="ncp-action" href="${vpn}" rel="noopener noreferrer">대량구매 공식 안내</a>
  <p>공식 고객센터: <strong>070-7098-3166</strong> / 평일 <strong>10:00~18:00</strong> (주말·공휴일 제외).</p>
 </section>
 
@@ -92,7 +92,7 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
  <h2>유동 PROXY 가격·할인 확인</h2>
  <p>기가아이피 공식 홈페이지는 <strong>유동 PROXY 최저 35,000원</strong>이라고 소개합니다. 다만 공개된 유동 PROXY 소개 페이지에는 구매기간별 전체 요금표가 없어 <strong>최저가 적용 조건·월별 가격·기간별 할인율</strong>을 확정하지 않았습니다.</p>
  <p>유동 PROXY는 다수 사용자가 IP 자원을 공유하며 공식 설명상 웹 전용 프록시 방식입니다. <strong>고정 VPN의 최대 35% 할인율을 유동 PROXY에도 동일 적용한다고 볼 근거는 없습니다.</strong></p>
- <a class="ncp-action" href="\${proxy}" rel="noopener noreferrer">유동 PROXY 상품 안내</a>
+ <a class="ncp-action" href="${proxy}" rel="noopener noreferrer">유동 PROXY 상품 안내</a>
 </section>
 
 <section>
@@ -102,7 +102,7 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
  <p>따라서 오래된 광고나 검색 결과에 <strong>무료 IP</strong> 문구가 남아 있더라도 현재 제공되는 무료 혜택으로 분류하지 않았습니다.</p>
  <h3>고정 VPN 무료 테스트</h3>
  <p>공식 고정IP 가격표 하단 주의사항에는 <strong>무료 테스트를 제공하지 않는다</strong>고 명시되어 있습니다. 유동 PROXY의 별도 현재 무료체험도 공식 자료에서 확인하지 못했습니다.</p>
- <a class="ncp-action" href="\${endedFree}" rel="noopener noreferrer">무료 프록시 종료 공지</a><a class="ncp-action" href="\${fixed}" rel="noopener noreferrer">고정 VPN 무료테스트 안내</a>
+ <a class="ncp-action" href="${endedFree}" rel="noopener noreferrer">무료 프록시 종료 공지</a><a class="ncp-action" href="${fixed}" rel="noopener noreferrer">고정 VPN 무료테스트 안내</a>
 </section>
 
 <section>
@@ -110,7 +110,7 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
  <p>공식 사이트·가격표·고객센터 공지와 공개 검색으로 확인 가능한 제휴·SNS·블로그·YouTube·커뮤니티 자료를 조사했습니다. <strong>2026년 10월 현재 gigaip.net에서 누구나 입력해 할인받는 공용 쿠폰 문자열</strong>은 확인되지 않았습니다. 복사 버튼은 넣지 않았습니다.</p>
  <p><strong>신규가입 포인트·추천인 코드·카드사 할인·전용 링크·자격 인증 할인</strong>도 현재 공식적으로 적용 가능한 조건을 확인하지 못했습니다. 회원가입 페이지가 존재한다는 사실만으로 가입 보너스가 있다고 간주하지 않았습니다.</p>
  <p>공식 약관의 '할인쿠폰, 이벤트 혜택'이라는 일반 문구도 <strong>현재 발급 중인 쿠폰의 증거가 아니므로</strong> 혜택 목록에 포함하지 않았습니다. 제3자 코드·사용 성공 보고 역시 확인되지 않아 실사용 확인으로 표시하지 않았습니다.</p>
- <a class="ncp-action" href="\${signup}" rel="noopener noreferrer">공식 회원가입·약관</a>
+ <a class="ncp-action" href="${signup}" rel="noopener noreferrer">공식 회원가입·약관</a>
 </section>
 
 <section>
@@ -150,15 +150,15 @@ const postContent=\`<div class="ncp-feed-preview" data-ncp-feed-preview aria-lab
 
 <section>
  <h2>공식 출처</h2>
- <div class="ncp-source"><strong>기가아이피 공식 홈페이지 · 최저가·대량구매</strong><br><a href="\${official}" rel="noopener noreferrer">\${official}</a> · 원문 게시일 미확인</div>
- <div class="ncp-source"><strong>고정IP 요금표 · 15/25/35% 할인</strong><br><a href="\${fixed}" rel="noopener noreferrer">\${fixed}</a> · 원문 게시일 미확인</div>
- <div class="ncp-source"><strong>고정VPN 30개 이상 특별가</strong><br><a href="\${vpn}" rel="noopener noreferrer">\${vpn}</a> · 원문 게시일 미확인</div>
- <div class="ncp-source"><strong>유동 PROXY 서비스</strong><br><a href="\${proxy}" rel="noopener noreferrer">\${proxy}</a> · 원문 게시일 미확인</div>
- <div class="ncp-source"><strong>무료IP 서비스 종료 공식 공지</strong><br><a href="\${endedFree}" rel="noopener noreferrer">\${endedFree}</a> · 게시 2019-05-22 / 시행 2019-05-23</div>
- <div class="ncp-source"><strong>무료IP 과거 오픈 공지</strong><br><a href="\${launchedFree}" rel="noopener noreferrer">\${launchedFree}</a> · 게시 2015-06-19</div>
- <div class="ncp-source"><strong>2026년 10월 운영 공지</strong><br><a href="\${notice}" rel="noopener noreferrer">\${notice}</a> · 게시 2026-10-06</div>
+ <div class="ncp-source"><strong>기가아이피 공식 홈페이지 · 최저가·대량구매</strong><br><a href="${official}" rel="noopener noreferrer">${official}</a> · 원문 게시일 미확인</div>
+ <div class="ncp-source"><strong>고정IP 요금표 · 15/25/35% 할인</strong><br><a href="${fixed}" rel="noopener noreferrer">${fixed}</a> · 원문 게시일 미확인</div>
+ <div class="ncp-source"><strong>고정VPN 30개 이상 특별가</strong><br><a href="${vpn}" rel="noopener noreferrer">${vpn}</a> · 원문 게시일 미확인</div>
+ <div class="ncp-source"><strong>유동 PROXY 서비스</strong><br><a href="${proxy}" rel="noopener noreferrer">${proxy}</a> · 원문 게시일 미확인</div>
+ <div class="ncp-source"><strong>무료IP 서비스 종료 공식 공지</strong><br><a href="${endedFree}" rel="noopener noreferrer">${endedFree}</a> · 게시 2019-05-22 / 시행 2019-05-23</div>
+ <div class="ncp-source"><strong>무료IP 과거 오픈 공지</strong><br><a href="${launchedFree}" rel="noopener noreferrer">${launchedFree}</a> · 게시 2015-06-19</div>
+ <div class="ncp-source"><strong>2026년 10월 운영 공지</strong><br><a href="${notice}" rel="noopener noreferrer">${notice}</a> · 게시 2026-10-06</div>
 </section>
-</article>\`;
+</article>`;
 
 export const gigaipArticle={
  articleKey:'gigaip-benefits-202610',
