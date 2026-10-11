@@ -13,6 +13,7 @@ import {hotvpnArticle} from './hotvpn-article.js';
 import {gigaipArticle} from './gigaip-article.js';
 import {readyArticle as ohmyzipReadyArticle} from './ohmyzip-ready-article.js';
 import {twofastsArticle} from './twofasts-article.js';
+import {iwinvArticle} from './iwinv-article.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -29,7 +30,8 @@ const articleCatalogBase=[
   hotvpnArticle,
   gigaipArticle,
   ohmyzipReadyArticle,
-  twofastsArticle
+  twofastsArticle,
+  iwinvArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
