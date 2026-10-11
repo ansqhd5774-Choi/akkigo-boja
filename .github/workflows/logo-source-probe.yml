@@ -1,0 +1,74 @@
+name: Temporary Official Logo Source Probe
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths: [.github/workflows/logo-source-probe.yml]
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Extract official logo asset candidates read-only
+        run: |
+          node --input-type=module <<'NODE'
+          const targets={
+            gigago:'https://gigago.com/',
+            eskimo:'https://www.eskimo.travel/',
+            gomoworld:'https://www.gomoworld.com/',
+            keepgo:'https://www.keepgo.com/',
+            globalyo:'https://www.globalyo.com/',
+            dosirakesim:'https://dosirakesim.com/',
+            duolingo:'https://design.duolingo.com/identity/logos',
+            malhaevoca:'https://epop.ai/ko/premium',
+            frombio:'https://www.frombio.co.kr/',
+            inflearn:'https://www.inflearn.com/',
+            maaltalk:'https://www.maaltalk.com/',
+            ip4u:'https://www.ip4u.co.kr/',
+            gigaip:'https://gigaip.net/',
+            ohmyzip:'https://www.ohmyzip.com/index.php',
+            twofasts:'https://www.2fasts.com/',
+            rokebi:'https://www.rokebi.com/',
+            esthermall:'https://www.esthermall.co.kr/'
+          };
+          const imgExt=/\.(?:svg|png|webp|jpe?g|gif)(?:[?#].*)?$/i;
+          function resolve(value,base){
+            const v=value.replace(/&amp;/g,'&').trim();
+            if(!v||v.startsWith('data:')||v.startsWith('javascript:'))return null;
+            try{return new URL(v,base).href}catch{return null}
+          }
+          function collect(text,base){
+            const out=new Set();
+            const patterns=[
+              /(?:src|href|content)\s*=\s*["']([^"']*(?:logo|brand)[^"']*)["']/gi,
+              /["']([^"']*(?:logo|brand)[^"']*\.(?:svg|png|webp|jpe?g|gif)(?:\?[^"']*)?)["']/gi,
+              /url\((?:["']?)([^)"']*(?:logo|brand)[^)"']*)(?:["']?)\)/gi
+            ];
+            for(const re of patterns){let m;while((m=re.exec(text))){const u=resolve(m[1],base);if(u&&(imgExt.test(new URL(u).pathname)||/logo|brand/i.test(u)))out.add(u)}}
+            return out;
+          }
+          for(const [name,url] of Object.entries(targets)){
+            console.log(`LOGO_PROBE_START ${name} ${url}`);
+            try{
+              const r=await fetch(url,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0','accept':'text/html,application/xhtml+xml'},signal:AbortSignal.timeout(20000)});
+              const text=await r.text();
+              console.log(`LOGO_PROBE_HTTP ${name} ${r.status} ${r.url} bytes=${text.length}`);
+              const candidates=collect(text,r.url);
+              const sheets=[...text.matchAll(/<link[^>]+href=["']([^"']+)["'][^>]*>/gi)]
+                .map(m=>resolve(m[1],r.url)).filter(Boolean).filter(x=>/\.css(?:[?#]|$)/i.test(x)).slice(0,8);
+              for(const sheet of sheets){
+                try{const sr=await fetch(sheet,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0 LogoAudit/1.0'},signal:AbortSignal.timeout(12000)});if(sr.ok){for(const c of collect(await sr.text(),sr.url))candidates.add(c)}}catch{}
+              }
+              const list=[...candidates].slice(0,30);
+              if(!list.length)console.log(`LOGO_PROBE_NONE ${name}`);
+              for(const c of list)console.log(`LOGO_CANDIDATE ${name} ${c}`);
+            }catch(e){console.log(`LOGO_PROBE_ERROR ${name} ${String(e?.name||'ERROR')}`)}
+          }
+          NODE
