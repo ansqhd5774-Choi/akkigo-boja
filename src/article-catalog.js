@@ -17,6 +17,7 @@ import {iwinvArticle} from './iwinv-article.js';
 import {swordxstaffArticle} from './swordxstaff-article.js';
 import {plantsOnFireArticle} from './plants-on-fire-article.js';
 import {darkTowerArticle,honkaiImpact3rdArticle,neoMonstersArticle,tokyoDebunkerArticle,kartRiderRushPlusArticle} from './game-batch-20261012.js';
+import {executionerSwordClassicArticle,majoArticle,blackDesertMobileArticle,zombieWavesArticle,rogueLegendArticle,aion2Article} from './game-batch-20261012-b.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -41,7 +42,13 @@ const articleCatalogBase=[
   honkaiImpact3rdArticle,
   neoMonstersArticle,
   tokyoDebunkerArticle,
-  kartRiderRushPlusArticle
+  kartRiderRushPlusArticle,
+  executionerSwordClassicArticle,
+  majoArticle,
+  blackDesertMobileArticle,
+  zombieWavesArticle,
+  rogueLegendArticle,
+  aion2Article
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
