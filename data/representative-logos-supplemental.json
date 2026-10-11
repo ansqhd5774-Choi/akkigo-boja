@@ -1,0 +1,47 @@
+[
+  {
+    "articleKey": "jetpac-esim-promo-202610",
+    "brand": "Jetpac",
+    "logoUrl": "https://www.jetpacglobal.com/_fe/_next/image?q=75&url=%2Fimages%2Fheader%2Fheader-logo.svg&w=384",
+    "sourceUrl": "https://www.jetpacglobal.com/",
+    "sourceAsset": "https://www.jetpacglobal.com/_fe/_next/image?q=75&url=%2Fimages%2Fheader%2Fheader-logo.svg&w=384",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "maya-mobile-esim-promo-202610",
+    "brand": "Maya Mobile",
+    "logoUrl": "https://assets.maya.net/69dcd6db24fc66cecd1d418a/web/common/logo.png",
+    "sourceUrl": "https://maya.net/esim/global",
+    "sourceAsset": "https://assets.maya.net/69dcd6db24fc66cecd1d418a/web/common/logo.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "esim4travel-promo-202610",
+    "brand": "eSIM4Travel",
+    "logoUrl": "https://www.esim4travel.com/assets/img/picture/about/e4t_logo.svg",
+    "sourceUrl": "https://www.esim4travel.com/about",
+    "sourceAsset": "https://www.esim4travel.com/assets/img/picture/about/e4t_logo.svg",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "redteago-esim-promo-202610",
+    "brand": "RedteaGO",
+    "logoUrl": "https://redteago.com/wp-content/uploads/2020/08/redteago-logo-%E5%BD%A9.png",
+    "sourceUrl": "https://redteago.com/",
+    "sourceAsset": "https://redteago.com/wp-content/uploads/2020/08/redteago-logo-%E5%BD%A9.png",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  },
+  {
+    "articleKey": "usimsa-promo-202610",
+    "brand": "유심사",
+    "logoUrl": "https://www.usimsa.com/_vercel/image?q=100&url=%2Fimg%2Fmain%2Flogo.svg&w=320",
+    "sourceUrl": "https://www.usimsa.com/entrance",
+    "sourceAsset": "https://www.usimsa.com/_vercel/image?q=100&url=%2Fimg%2Fmain%2Flogo.svg&w=320",
+    "verifiedAt": "2026-10-11",
+    "kind": "OFFICIAL_SERVICE_LOGO"
+  }
+]
