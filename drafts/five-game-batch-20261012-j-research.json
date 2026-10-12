@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-12",
+  "category": "게임",
+  "games": [
+    {
+      "articleKey": "mobile-legends-bang-bang-codes-202610",
+      "title": "모바일 레전드: Bang Bang",
+      "existingPost": null,
+      "action": "CREATE_NEW",
+      "currentCodes": 3,
+      "classification": "THIRD_PARTY_CURRENT_CANDIDATES_OFFICIAL_REDEEM",
+      "notes": "10월 최신 자료 3개 교차. 공식 Code Exchange 존재, 개별 Moonton 발급 원문 미확인. 사용 횟수 한도."
+    },
+    {
+      "articleKey": "clash-royale-codes-202610",
+      "title": "클래시 로얄",
+      "existingPost": null,
+      "action": "CREATE_NEW",
+      "currentCodes": 8,
+      "classification": "THIRD_PARTY_STORE_CODE_CANDIDATES",
+      "notes": "최근 자료 8개 Store 코드. 공식 Supercell Store 운영 및 포인트/스탬프 혜택과 Creator Code는 별도."
+    },
+    {
+      "articleKey": "mu-monarch-codes-202610",
+      "title": "뮤 모나크",
+      "existingPost": null,
+      "action": "CREATE_NEW",
+      "currentOfficialCodes": 1,
+      "unverifiedCandidates": 5,
+      "expiredOfficial": 2,
+      "classification": "OFFICIAL_CURRENT_PLUS_UNVERIFIED_CANDIDATES",
+      "notes": "ChuSeokMu 공식 2026-10-21 23:59 KST. MURELIC/COOLINGMU 종료. 제3자 5개 별도."
+    },
+    {
+      "articleKey": "anipang4-codes-202610",
+      "title": "애니팡4: 매치3 퍼즐 게임",
+      "existingPost": null,
+      "action": "CREATE_NEW",
+      "currentCodes": 0,
+      "classification": "NO_PUBLIC_CODE_OFFICIAL_PARTNER_BENEFIT",
+      "notes": "공식 공개 리딤코드 확인 못함. T world 유료 콘텐츠팩 5,500원, 일 15코인, 첫 가입 30일간 30% 할인."
+    },
+    {
+      "articleKey": "reverse-1999-codes-202610",
+      "title": "리버스: 1999",
+      "existingPost": null,
+      "action": "CREATE_NEW",
+      "currentCandidates": 9,
+      "classification": "THIRD_PARTY_CURRENT_CANDIDATES",
+      "notes": "10/8 갱신 자료 9개. 기간형 3개와 상시 주장 6개 분리; 공식 현재 전체 확인 미완료."
+    }
+  ],
+  "datePolicy": "sourcePublishedAt is the source article publication/update date when verified; collection date is never substituted.",
+  "searchMeasurement": {
+    "status": "NOT_MEASURED",
+    "note": "No search-volume/exposure numbers claimed without measured evidence."
+  }
+}
