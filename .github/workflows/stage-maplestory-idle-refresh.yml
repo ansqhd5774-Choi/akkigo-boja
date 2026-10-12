@@ -1,0 +1,45 @@
+name: Stage MapleStory Idle Refresh
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - data/maplestory-idle-refresh-20261013.json
+      - tools/stage-maplestory-idle-refresh.mjs
+      - .github/workflows/stage-maplestory-idle-refresh.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+concurrency:
+  group: stage-maplestory-idle-refresh
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Apply 2026-10-13 research to canonical model and current renderer
+        run: node tools/stage-maplestory-idle-refresh.mjs
+      - name: Validate target article invariants
+        run: |
+          node --input-type=module -e "import a from './data/articles.json' with {type:'json'}; import b from './data/articles-supplemental.json' with {type:'json'}; import {validateGamePeriodArticle} from './src/game-period-article.js'; const x=[...a,...b].find(x=>x.articleKey==='maplestory-idle-codes-202610'); if(!x)throw Error('MAPLE_ARTICLE_MISSING'); validateGamePeriodArticle(x); const m=x.source.gamePeriodModel; if(m.records.length!==24)throw Error('MAPLE_HISTORY_COUNT_DRIFT_'+m.records.length); if(!x.post.content.includes('https://mcoupon.nexon.com/maplestoryidle?lang=ko'))throw Error('MAPLE_NEW_REDEEM_MISSING'); if(x.post.content.includes('https://coupon.nexon.com/ko-kr/maplestoryidle'))throw Error('MAPLE_STALE_REDEEM_REMAINS'); if(!x.post.content.includes('maplestory-idle-20261013'))throw Error('MAPLE_REFRESH_EVIDENCE_MISSING'); console.log('MAPLE_REFRESH_INVARIANTS_PASS');"
+      - name: Regenerate checked-in Blogger theme source snapshots
+        run: |
+          node tools/build-theme.mjs
+          cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+      - name: Commit refreshed canonical source and generated outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "418982+github-actions[bot]@users.noreply.github.com"
+          git add data/game-period-articles.json data/articles.json data/articles-supplemental.json drafts/maplestory-idle-codes-202610.html akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if git diff --cached --quiet; then echo "MAPLE_REFRESH_ALREADY_STAGED"; exit 0; fi
+          git commit -m "refresh(maplestory-idle): verify redeem page and rerender article"
+          git push origin HEAD:codex/blogger-worker-r1
