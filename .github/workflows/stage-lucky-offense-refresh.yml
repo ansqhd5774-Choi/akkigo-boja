@@ -27,22 +27,22 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
-      - name: Apply 2026-10-13 research to canonical model
+      - name: Apply 2026-10-13 research to source-generated article
         run: node tools/stage-lucky-offense-refresh.mjs
       - name: Validate target article invariants
         run: |
-          node --input-type=module -e "import a from './data/articles.json' with {type:'json'}; import b from './data/articles-supplemental.json' with {type:'json'}; import {validateGamePeriodArticle} from './src/game-period-article.js'; const x=[...a,...b].find(x=>x.articleKey==='lucky-offense-codes-202610'); if(!x)throw Error('LUCKY_OFFENSE_ARTICLE_MISSING'); validateGamePeriodArticle(x); const m=x.source.gamePeriodModel; if(m.records.length!==3)throw Error('LUCKY_OFFENSE_HISTORY_COUNT_DRIFT_'+m.records.length); if(m.records.some(r=>r.latest))throw Error('LUCKY_OFFENSE_FALSE_CURRENT_CODE'); if(x.source.checkedAt!=='2026-10-13')throw Error('LUCKY_OFFENSE_CHECKED_AT_DRIFT'); if((x.source.benefits||[]).length!==2)throw Error('LUCKY_OFFENSE_BENEFIT_COUNT_DRIFT'); if(!x.post.content.includes('lucky-offense-20261013'))throw Error('LUCKY_OFFENSE_REFRESH_EVIDENCE_MISSING'); console.log('LUCKY_OFFENSE_REFRESH_INVARIANTS_PASS');"
+          node --input-type=module -e "import {luckyOffenseArticle as x} from './src/game-batch-20261012-h.js'; import {currentArticleCatalog} from './src/article-catalog.js'; import {validateGamePeriodArticle} from './src/game-period-article.js'; if(!x)throw Error('LUCKY_OFFENSE_ARTICLE_MISSING'); if(currentArticleCatalog.find(a=>a.articleKey===x.articleKey)!==x)throw Error('LUCKY_OFFENSE_CATALOG_MISMATCH'); validateGamePeriodArticle(x); const m=x.source.gamePeriodModel; if(m.records.length!==3)throw Error('LUCKY_OFFENSE_HISTORY_COUNT_DRIFT_'+m.records.length); if(m.records.some(r=>r.latest))throw Error('LUCKY_OFFENSE_FALSE_CURRENT_CODE'); if(x.source.checkedAt!=='2026-10-13')throw Error('LUCKY_OFFENSE_CHECKED_AT_DRIFT'); if((x.source.benefits||[]).length!==2)throw Error('LUCKY_OFFENSE_BENEFIT_COUNT_DRIFT'); if(!x.post.content.includes('lucky-offense-20261013'))throw Error('LUCKY_OFFENSE_REFRESH_EVIDENCE_MISSING'); console.log('LUCKY_OFFENSE_REFRESH_INVARIANTS_PASS');"
       - name: Run Lucky Offense refresh regression tests
         run: node --test tests/lucky-offense-refresh.test.js tests/game-batch-20261012-h.test.js
       - name: Regenerate checked-in Blogger theme source snapshots
         run: |
           node tools/build-theme.mjs
           cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
-      - name: Commit refreshed canonical source and generated outputs
+      - name: Commit refreshed source and generated outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "418982+github-actions[bot]@users.noreply.github.com"
-          git add data/game-period-articles.json data/articles.json data/articles-supplemental.json akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          git add src/game-batch-20261012-h.js akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
           if [ -f drafts/lucky-offense-codes-202610.html ]; then git add drafts/lucky-offense-codes-202610.html; fi
           if [ -f drafts/lucky-offense-codes-202610.json ]; then git add drafts/lucky-offense-codes-202610.json; fi
           if git diff --cached --quiet; then echo "LUCKY_OFFENSE_REFRESH_ALREADY_STAGED"; exit 0; fi
