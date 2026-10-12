@@ -1,0 +1,41 @@
+{
+  "articleKey": "maplestory-idle-codes-202610",
+  "checkedAt": "2026-10-13",
+  "target": {
+    "postId": "2692262957547157995",
+    "url": "https://lsifl.blogspot.com/2026/10/2026-10_01992004057.html",
+    "existingOnly": true
+  },
+  "findings": {
+    "currentOfficialCode": {
+      "code": "PINKBEANATTACK",
+      "sourcePublishedAt": "2026-09-03",
+      "expiry": "2026-10-14 23:59 KST",
+      "reward": "동료 소환권 300장",
+      "source": "https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440"
+    },
+    "officialHistoryPreserved": 20,
+    "unverifiedCandidatesPreserved": [
+      "IDLEMAPLE1ST",
+      "HEROOFMAPLE",
+      "MAPLEIDLE2026"
+    ],
+    "newCouponAdded": false
+  },
+  "redeem": {
+    "previousUrl": "https://coupon.nexon.com/ko-kr/maplestoryidle",
+    "currentOfficialUrl": "https://mcoupon.nexon.com/maplestoryidle?lang=ko",
+    "currentPageVerified": true,
+    "verifiedElements": [
+      "회원코드 입력",
+      "쿠폰번호 입력",
+      "쿠폰사용"
+    ]
+  },
+  "notes": [
+    "2026-10-13 공개 재조사에서 PINKBEANATTACK 공식 공지와 2026-10-14 23:59 KST 기한을 재확인했다.",
+    "넥슨 공식 mcoupon 페이지가 현재 열리며 회원코드와 쿠폰번호 입력 UI를 확인했다.",
+    "기존 24개 기록(최신 1, 공식 지난 기록 20, 제3자 미확인 후보 3)은 삭제하지 않는다.",
+    "제3자 후보는 공식 발급 또는 실제 계정 사용 성공으로 승격하지 않는다."
+  ]
+}
