@@ -26,6 +26,7 @@ import {catHeroesMergeDefenseArticle,darkWarSurvivalArticle,lastZSurvivalShooter
 import {luckyOffenseArticle,potatoZombieArticle,imoWorldOfMagicArticle,mahjongSoulKrArticle} from './game-batch-20261012-h.js';
 import {evilLandsArticle,muMonarch2Article,rfOnlineNextArticle,pixelMageIdleArticle,overgearedHeroArticle} from './game-batch-20261012-i.js';
 import {mobileLegendsArticle,clashRoyaleArticle,muMonarchArticle,anipang4Article,reverse1999Article} from './game-batch-20261012-j.js';
+import {silverPalaceArticle} from './game-batch-20261012-k.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -94,7 +95,8 @@ const articleCatalogBase=[
   clashRoyaleArticle,
   muMonarchArticle,
   anipang4Article,
-  reverse1999Article
+  reverse1999Article,
+  silverPalaceArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
