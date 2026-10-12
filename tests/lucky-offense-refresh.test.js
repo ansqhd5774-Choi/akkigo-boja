@@ -1,13 +1,13 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
-import articles from '../data/articles.json' with {type:'json'};
-import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import {luckyOffenseArticle} from '../src/game-batch-20261012-h.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 
-const article=[...articles,...supplemental].find(x=>x.articleKey==='lucky-offense-codes-202610');
+const article=luckyOffenseArticle;
 
 test('운빨돌격대 2026-10-13 재조사는 현재 쿠폰 0개와 과거 코드 3개를 보존한다',()=>{
-  assert.ok(article);
+  assert.equal(article.articleKey,'lucky-offense-codes-202610');
+  assert.equal(currentArticleCatalog.find(x=>x.articleKey===article.articleKey),article);
   assert.equal(article.source.checkedAt,'2026-10-13');
   const html=article.post.content;
   for(const code of ['LUCKY777','UNBBAL111','luckyoffens2e'])assert.match(html,new RegExp(`data-ncp-copy="${code}"`));
@@ -18,6 +18,7 @@ test('운빨돌격대 2026-10-13 재조사는 현재 쿠폰 0개와 과거 코�
   assert.match(html,/2026년 제휴 발급 이력/);
   assert.match(html,/현재 신규 발급 가능 여부는 확인되지 않았습니다/);
   assert.doesNotMatch(html,/현재 확인<\/span><strong>[1-9]/);
+  assert.ok(article.source.gamePeriodModel.records.every(x=>x.latest===false));
 });
 
 test('운빨돌격대 TikTok Lite 이력은 공개 공용 코드가 아닌 발급형 혜택으로 분리한다',()=>{
