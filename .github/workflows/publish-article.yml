@@ -128,6 +128,16 @@ jobs:
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.publish-oidc.outputs.token }}
         run: node tools/actions-runtime.mjs publish
+      - name: Check public HTML discovery after successful publication
+        if: steps.requests.outputs.has_requests == 'true' && success()
+        continue-on-error: true
+        run: node tools/check-public-discovery.mjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.requests.outputs.has_requests == 'true'
+        with:
+          name: public-discovery
+          path: output/public-discovery.json
+          if-no-files-found: ignore
       - name: Summarize verification and deployment
         if: always()
         env:

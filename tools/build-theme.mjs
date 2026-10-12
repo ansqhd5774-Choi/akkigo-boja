@@ -54,6 +54,7 @@ ${updatedJs}
 const license=await readFile(new URL('theme/assets/licenses/lucide.txt',root),'utf8');
 const siteMount=`<script type='text/javascript'>//<![CDATA[\n/* ${license.replace(/\*\//g,'* /')} */\nwindow.ncpIcons=${JSON.stringify(icons)};\n${siteJs}\n//]]></script>`;
 const seoLinks=JSON.parse(await readFile(new URL('theme/seo-post-links.json',root),'utf8'));
+const serverDirectory=await readFile(new URL('theme/search-directory.xml',root),'utf8');
 const seoFallback=`<b:if cond='data:view.isHomepage'><noscript><nav class='ncp-r4 ncp-r4-wrap' aria-label='쿠폰 안내 글 목록'><h2>쿠폰·할인코드 안내</h2><p>JavaScript를 사용할 수 없어 글 링크를 표시합니다.</p><ul>${seoLinks.map(row=>`<li><a href='${e(row.url)}'>${e(row.title)}</a></li>`).join('')}</ul></nav></noscript></b:if>`;
 const homeMount=`<b:if cond='data:view.isHomepage'><script type='text/javascript'>//<![CDATA[
 ${homeJs}
@@ -64,5 +65,8 @@ const brandFavicon="\n<!-- AKKIGO STABLE FAVICON: retain this URL across theme b
 const faviconNormalize="<script type='text/javascript'>//<![CDATA[\n(function(){var icons=document.querySelectorAll('link[rel=icon]');for(var i=0;i<icons.length;i++){if(i<icons.length-1){icons[i].remove();}}})();\n//]]></script>\n";
 const directoryBadges=await readFile(new URL('theme/directory-badges.xml',root),'utf8');
 const naverAnalytics=await readFile(new URL('theme/naver-analytics.xml',root),'utf8');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+naverAnalytics+directoryBadges+'</body>'));
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+serverDirectory+naverAnalytics+directoryBadges+'</body>'));
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',root),await readFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root)));
 console.log('R3 theme generated using native Blogger widget base.');
+
+
