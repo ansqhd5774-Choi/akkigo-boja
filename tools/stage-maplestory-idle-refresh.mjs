@@ -9,11 +9,22 @@ const CHECKED='2026-10-13';
 const OFFICIAL_PINK='https://forum.nexon.com/maplestoryidle-kr/board_view?board=6633&thread=3536440';
 
 const models=JSON.parse(readFileSync(MODEL_PATH,'utf8'));
-const model=models.find(x=>x.articleKey===KEY);
-if(!model)throw Error('MAPLESTORY_IDLE_MODEL_MISSING');
+const index=models.findIndex(x=>x.articleKey===KEY);
+if(index<0)throw Error('MAPLESTORY_IDLE_MODEL_MISSING');
 
-if(model.guideHTML.includes(OLD_REDEEM))model.guideHTML=model.guideHTML.replaceAll(OLD_REDEEM,NEW_REDEEM);
-if(!model.guideHTML.includes(NEW_REDEEM))throw Error('MAPLESTORY_IDLE_REDEEM_LINK_MISSING');
+// The legacy URL exists in both the current guide and preserved explanatory HTML.
+// Replace only inside this article's canonical model so generated public content cannot retain it.
+const replaceRedeem=value=>{
+  if(typeof value==='string')return value.replaceAll(OLD_REDEEM,NEW_REDEEM);
+  if(Array.isArray(value))return value.map(replaceRedeem);
+  if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,replaceRedeem(v)]));
+  return value;
+};
+models[index]=replaceRedeem(models[index]);
+const model=models[index];
+if(!JSON.stringify(model).includes(NEW_REDEEM))throw Error('MAPLESTORY_IDLE_REDEEM_LINK_MISSING');
+if(JSON.stringify(model).includes(OLD_REDEEM))throw Error('MAPLESTORY_IDLE_STALE_REDEEM_MODEL_REMAINS');
+
 const confirmation='(공식 페이지 확인 · 2026-10-13)';
 if(!model.guideHTML.includes(confirmation)){
   const label='넥슨 공식 쿠폰 등록 페이지</a>';
