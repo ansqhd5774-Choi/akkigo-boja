@@ -1,0 +1,95 @@
+{
+  "articleKey": "lucky-offense-codes-202610",
+  "checkedAt": "2026-10-13",
+  "target": {
+    "existingOnly": true,
+    "preservePostId": true,
+    "preserveUrl": true
+  },
+  "findings": {
+    "currentOfficialPublicCodeCount": 0,
+    "historicalPublicCodesPreserved": [
+      "LUCKY777",
+      "UNBBAL111",
+      "luckyoffens2e"
+    ],
+    "newPublicCodeAdded": false,
+    "couponInputFeature": {
+      "introducedVersion": "1.1.6",
+      "introducedAt": "2025-03-27",
+      "currentMenuPath": "게임 내 우측 하단 메뉴 → 설정 → 쿠폰",
+      "currentMenuPathStatus": "HISTORICAL_GUIDE_RECHECK_REQUIRED_IN_APP"
+    }
+  },
+  "partnerBenefitHistory": [
+    {
+      "kind": "INDIVIDUAL_CODE_AFTER_PARTNER_PARTICIPATION",
+      "partner": "TikTok Lite",
+      "sourcePublishedAt": "2026-02-25",
+      "status": "PAST_SOURCE_ONLY_CURRENT_ISSUANCE_UNVERIFIED",
+      "expiry": null,
+      "publicCopyCode": false,
+      "source": "https://bboddo.tistory.com/460",
+      "note": "새학기 준비 쿠폰 페스타 참여 후 쿠폰 보관함에서 개별 코드를 발급받는 방식으로 소개됐다. 공개 공용 문자열이 아니며 현재 신규 발급 여부는 확인되지 않았다."
+    },
+    {
+      "kind": "INDIVIDUAL_CODE_AFTER_PARTNER_PARTICIPATION",
+      "partner": "TikTok Lite",
+      "sourcePublishedAt": "2026-05-30",
+      "status": "EXPIRED_SOURCE_REPORTED",
+      "expiry": "2026-06-30",
+      "publicCopyCode": false,
+      "source": "https://bjjy10261.tistory.com/12",
+      "note": "제3자 글에서 운빨돌격대 x TikTok Lite 발급형 이벤트를 2026-06-30까지로 안내했다. 현재는 기한이 지났고 공개 공용 코드도 아니다."
+    }
+  ],
+  "sources": [
+    {
+      "name": "운빨돌격대 Google Play",
+      "url": "https://play.google.com/store/apps/details?hl=ko&id=com.percent.aos.luckyrolling",
+      "role": "OFFICIAL_APP_IDENTITY"
+    },
+    {
+      "name": "운빨돌격대 네이버 게임 라운지",
+      "url": "https://game.naver.com/lounge/Lucky_Offense/home",
+      "role": "OFFICIAL_COMMUNITY_HOME"
+    },
+    {
+      "name": "운빨돌격대 2025 쿠폰 정리",
+      "url": "https://softit.tistory.com/203",
+      "sourcePublishedAt": "2025-03-30",
+      "role": "THIRD_PARTY_HISTORICAL_CODE_LIST"
+    },
+    {
+      "name": "운빨돌격대 과거 쿠폰·라운지 정리",
+      "url": "https://tiredgamer.tistory.com/m/13",
+      "sourcePublishedAt": "2025-03-27",
+      "role": "THIRD_PARTY_HISTORICAL_CODE_LIST"
+    },
+    {
+      "name": "v1.1.6 쿠폰 기능 추가 재게시",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=luckydefense2&no=942",
+      "sourcePublishedAt": "2025-03-27",
+      "role": "COMMUNITY_COPY_OF_UPDATE_NOTICE"
+    },
+    {
+      "name": "TikTok Lite 새학기 발급형 혜택 보도",
+      "url": "https://bboddo.tistory.com/460",
+      "sourcePublishedAt": "2026-02-25",
+      "role": "THIRD_PARTY_PARTNER_BENEFIT_REPORT"
+    },
+    {
+      "name": "TikTok Lite 6월 발급형 혜택 보도",
+      "url": "https://bjjy10261.tistory.com/12",
+      "sourcePublishedAt": "2026-05-30",
+      "role": "THIRD_PARTY_PARTNER_BENEFIT_REPORT"
+    }
+  ],
+  "notes": [
+    "2026-10-13 재조사에서 10월 신규 공식 공용 쿠폰은 확인하지 못했다.",
+    "2025년 공개 코드 3개는 삭제하지 않고 과거 기록으로 보존한다.",
+    "2026년 TikTok Lite 관련 혜택은 참여 후 개별 발급형이므로 공개 복사 코드로 만들지 않는다.",
+    "기간을 확인할 수 없는 2026-02-25 발급형 혜택은 종료일을 임의로 채우지 않는다.",
+    "검색량·노출률 수치는 측정 근거가 없어 기록하지 않는다."
+  ]
+}
