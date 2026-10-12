@@ -24,6 +24,7 @@ import {chunoIdleArticle,cookieRunCrumbleArticle,switchingHeroesArticle,realfarm
 import {blackWizardInfiniteDefenseArticle,pixelDefendersArticle,battleCatsArticle,lastWarSurvivalArticle} from './game-batch-20261012-f.js';
 import {catHeroesMergeDefenseArticle,darkWarSurvivalArticle,lastZSurvivalShooterArticle,darkSlayerIdleArticle,zombieTowerArticle} from './game-batch-20261012-g.js';
 import {luckyOffenseArticle,potatoZombieArticle,imoWorldOfMagicArticle,mahjongSoulKrArticle} from './game-batch-20261012-h.js';
+import {evilLandsArticle,muMonarch2Article,rfOnlineNextArticle,pixelMageIdleArticle,overgearedHeroArticle} from './game-batch-20261012-i.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const articleCatalogBase=[
@@ -82,7 +83,12 @@ const articleCatalogBase=[
   luckyOffenseArticle,
   potatoZombieArticle,
   imoWorldOfMagicArticle,
-  mahjongSoulKrArticle
+  mahjongSoulKrArticle,
+  evilLandsArticle,
+  muMonarch2Article,
+  rfOnlineNextArticle,
+  pixelMageIdleArticle,
+  overgearedHeroArticle
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
