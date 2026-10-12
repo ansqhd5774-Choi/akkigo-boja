@@ -1,0 +1,1 @@
+export const section1='<section><h2>친구추천 혜택</h2><p>오마이집 공식 추천 링크로 가입한 신규회원은 10% 할인쿠폰 3장을 받는다고 안내합니다. 실제 지급은 계정 쿠폰함에서 확인해야 합니다.</p><p><a href="https://www.ohmyzip.com/point/rewardPoints">공식 친구추천 페이지</a></p></section>';

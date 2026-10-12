@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {malhaevocaArticle} from '../src/malhaevoca-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import research from '../data/malhaevoca-offers-202610.json' with {type:'json'};
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 import {articleSnapshot} from '../src/article-snapshot.js';
@@ -28,10 +29,12 @@ test('말해보카 공식 할인 네 가지와 출처 원문 게시일을 보존
  assert.ok(h.includes('선착순'));
  assert.ok(h.includes('공식 웹사이트 대표 이미지'));
  assert.ok(!h.includes('현재 모든 계정에 적용 가능'));
- assert.equal(validateArticleDraft(malhaevocaArticle),true);
+ const rendered=currentArticleCatalog.find(x=>x.articleKey===malhaevocaArticle.articleKey);
+ assert.ok(rendered);
+ assert.equal(validateArticleDraft(rendered),true);
 });
 test('말해보카 승인 원고 snapshot is stable and approved',async()=>{
- const a=await articleSnapshot(malhaevocaArticle.articleKey,[malhaevocaArticle]);
+ const a=await articleSnapshot(malhaevocaArticle.articleKey,currentArticleCatalog);
  assert.equal(a.approved,true);
- assert.deepEqual(a,await articleSnapshot(malhaevocaArticle.articleKey,[malhaevocaArticle]));
+ assert.deepEqual(a,await articleSnapshot(malhaevocaArticle.articleKey,currentArticleCatalog));
 });

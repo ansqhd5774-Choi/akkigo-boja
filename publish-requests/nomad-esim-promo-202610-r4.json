@@ -1,0 +1,7 @@
+{
+  "articleKey": "nomad-esim-promo-202610",
+  "approved": true,
+  "existingOnly": true,
+  "requestedAt": "2026-10-11",
+  "reason": "Read exact stored Blogger post identity/status through the guarded existing-only path. Never create a replacement post; preserve stored postId and public URL."
+}

@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {duolingoArticle} from '../src/duolingo-article.js';
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import research from '../data/duolingo-super-research-202610.json' with {type:'json'};
 import {validateArticleDraft} from '../tools/validate-article-draft.mjs';
 import {articleSnapshot} from '../src/article-snapshot.js';
@@ -14,10 +15,12 @@ test('Duolingo source dates and unique records are preserved in published HTML',
  assert.equal(research.records.find(x=>x.code==='LOVELANGUAGE').sourcePublishedAt,null);
  assert.equal(research.records.find(x=>x.code==='DUOBNB2026').sourcePublishedAt,'2026-04-10');
  assert.ok(h.includes('11월 15일'));
- assert.equal(validateArticleDraft(duolingoArticle),true);
+ const rendered=currentArticleCatalog.find(x=>x.articleKey===duolingoArticle.articleKey);
+ assert.ok(rendered);
+ assert.equal(validateArticleDraft(rendered),true);
 });
 test('Duolingo approved source fingerprint is deterministic',async()=>{
- const a=await articleSnapshot(duolingoArticle.articleKey,[duolingoArticle]);
+ const a=await articleSnapshot(duolingoArticle.articleKey,currentArticleCatalog);
  assert.equal(a.approved,true);
- assert.deepEqual(a,await articleSnapshot(duolingoArticle.articleKey,[duolingoArticle]));
+ assert.deepEqual(a,await articleSnapshot(duolingoArticle.articleKey,currentArticleCatalog));
 });

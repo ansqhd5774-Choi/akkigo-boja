@@ -1,3 +1,4 @@
+import {tilesSurviveArticle} from '../src/tiles-survive-article.js';
 import {catHeroArticle} from '../src/cat-hero-article.js';
 import {readFile} from 'node:fs/promises';
 import {validateArticlePresentation} from '../src/article-presentation.js';
@@ -36,6 +37,15 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
   checked++;
  }
 }
+if(checkedKeys.has(tilesSurviveArticle.articleKey))throw Error('PERIOD_DUPLICATE_ARTICLE_KEY');
+checkedKeys.add(tilesSurviveArticle.articleKey);
+validateGamePeriodArticle(tilesSurviveArticle);
+validateArticlePresentation(tilesSurviveArticle);
+if(domCheck)domCheck(tilesSurviveArticle);
+const tileCopies=[...tilesSurviveArticle.post.content.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
+const tileShares=[...tilesSurviveArticle.post.content.matchAll(/data-ncp-share="([^"]+)"/g)].map(m=>m[1]);
+if(JSON.stringify(tileCopies)!==JSON.stringify(tileShares))throw Error('PRESENTATION_SHARE_COVERAGE_TILES_SURVIVE');
+checked++;
 if(checkedKeys.has(catHeroArticle.articleKey))throw Error('PERIOD_DUPLICATE_ARTICLE_KEY');
 checkedKeys.add(catHeroArticle.articleKey);
 validateGamePeriodArticle(catHeroArticle);
@@ -55,7 +65,7 @@ for(const [articleKey,model] of Object.entries(hubModels)){
 }
 const models=JSON.parse(await readFile(new URL('data/game-period-articles.json',root),'utf8'));
 for(const m of models){
- const articles=[...JSON.parse(await readFile(new URL('data/articles.json',root),'utf8')),...JSON.parse(await readFile(new URL('data/articles-supplemental.json',root),'utf8'))];
+ const articles=[...JSON.parse(await readFile(new URL('data/articles.json',root),'utf8')),...JSON.parse(await readFile(new URL('data/articles-supplemental.json',root),'utf8')),tilesSurviveArticle];
  if(articles.find(a=>a.articleKey===m.articleKey)?.post.content!==renderGamePeriodArticle(m))throw Error('PERIOD_INPUT_CATALOG_DRIFT');
 }
 console.log('PRESENTATION_POLICY_PASS: '+checked+' current-format articles; shared table weights and generated themes match');

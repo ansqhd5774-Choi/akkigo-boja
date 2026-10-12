@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-12",
+  "category": "게임",
+  "searchMeasurement": {
+    "status": "NOT_MEASURED",
+    "note": "검색량·노출률 수치 측정 근거 없음"
+  },
+  "games": [
+    {
+      "input": "승리의 여신 니케",
+      "resolvedTitle": "승리의 여신: 니케",
+      "existingArticleKey": "nikke-codes-202610",
+      "existingPostId": "882596228058217245",
+      "existingUrl": "https://lsifl.blogspot.com/2026/10/2026-10-cd-key.html",
+      "action": "KEEP_EXISTING_NO_DUPLICATE",
+      "currentResearch": [
+        {
+          "url": "https://nikke.gg/cd-keys-guide/",
+          "sourcePublishedAt": null,
+          "finding": "2026-08-29 갱신 기준 UNBREAKABLEMEMORIES 8월 1일 종료 이후 신규 공개 CD-Key 미확인"
+        },
+        {
+          "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=nikke&wr_id=1",
+          "sourcePublishedAt": "2022-12-22",
+          "finding": "동적 목록에 NIKKEGIFT·NIKKE1104 등 과거/후보 코드 존재"
+        },
+        {
+          "url": "https://www.game.guide/nikke-codes",
+          "sourcePublishedAt": null,
+          "finding": "NIKKEGIFT 등을 만료 목록으로 분류"
+        }
+      ],
+      "decision": "기존 14개 입력시도 기록·URL을 유지한다. NIKKEGIFT 등은 최신 자료에서 상태가 상충하고 공식 신규 발급 근거가 없어 이번 배치에서 기존 글 구조를 덮어쓰지 않는다."
+    },
+    {
+      "input": "흑마법사 무한 디펜스",
+      "resolvedTitle": "흑마법사: 무한 디펜스",
+      "articleKey": "dark-wizard-infinite-defense-codes-202610",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.arumgames.darkwizard",
+      "officialSite": "https://www.arumgames.com/",
+      "candidateSource": "https://game.edu.kg/ko/%ED%9D%91%EB%A7%88%EB%B2%95%EC%82%AC%3A-%EB%AC%B4%ED%95%9C-%EB%94%94%ED%8E%9C%EC%8A%A4/%EC%BF%A0%ED%8F%B0/",
+      "candidates": ["WELCOME", "VIP111", "VIP222", "VIP555", "VIP888", "VIP999", "FBGIFT", "DCGIFT"],
+      "status": "UNVERIFIED_GENERIC_CANDIDATES",
+      "sourcePublishedAt": null,
+      "notes": "GameEDU는 2026-09-16 작동 중 목록으로 표시하지만 최초 공식 발급 원문·만료·계정 성공은 미확인. 범용 문자열도 삭제하지 않고 후보로 보존."
+    },
+    {
+      "input": "픽셀 디펜더스",
+      "resolvedTitle": "픽셀 디펜더스",
+      "articleKey": "pixel-defenders-codes-202610",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.ondi.fortias.defense",
+      "officialSite": "https://www.ondigames.com/",
+      "sources": [
+        {"url": "https://www.mrguider.org/roblox/pixel-defenders-codes/", "sourcePublishedAt": "2026-10-02"},
+        {"url": "https://progamegeek.com/pixel-defenders-codes/", "sourcePublishedAt": "2026-10-04"},
+        {"url": "https://gamevoyant.com/codes/pixel-defenders-codes", "sourcePublishedAt": "2026-10-05"}
+      ],
+      "recordCount": 35,
+      "currentCandidateCountAtCheck": 13,
+      "status": "THIRD_PARTY_CANDIDATES_WITH_EXPIRY_SEPARATION",
+      "notes": "서버별 코드와 종료일을 분리. 공식 발급 원문·개별 계정 성공은 미확인."
+    },
+    {
+      "input": "냥코 대전쟁",
+      "resolvedTitle": "냥코 대전쟁",
+      "articleKey": "battle-cats-codes-202610",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=jp.co.ponos.battlecatskr",
+      "officialSite": "https://www.ponos.jp/ko/games/thebattlecats/",
+      "officialSerialNotice": "https://ponos.s3.amazonaws.com/information/appli/battlecats/serial/kr/index.html",
+      "recordCount": 0,
+      "status": "OFFICIAL_SERIAL_SUPPORT_ENDED",
+      "notes": "PONOS 공식 공지는 시리얼 코드 지원이 더 이상 불가능하다고 안내. 과거 문자열을 현재 쿠폰으로 재활성화하지 않음."
+    },
+    {
+      "input": "라스트 워 서바이",
+      "resolvedTitle": "라스트 워: 서바이벌",
+      "articleKey": "last-war-survival-codes-202610",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.fun.lastwar.gp",
+      "officialSite": "https://www.lastwar.com/ko/main.html",
+      "officialRedeem": "https://lastwar-h5.lastwargame.com/platform/cdkey/index.html#/login",
+      "sources": [
+        {"url": "https://www.digwow.net/%EB%9D%BC%EC%8A%A4%ED%8A%B8-%EC%9B%8C-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/", "sourcePublishedAt": null, "modifiedAt": "2026-10-11"},
+        {"url": "https://couponquest.net/games/last-war-survival", "sourcePublishedAt": "2026-09-12"},
+        {"url": "https://www.topuplive.com/ko/news/last-war-survival-game-codes-november-2025.html", "sourcePublishedAt": "2026-10-01"}
+      ],
+      "recordCount": 10,
+      "currentCandidateCountAtCheck": 8,
+      "status": "CONFLICTING_THIRD_PARTY_CURRENT_STATUS",
+      "notes": "DIGWOW·CouponQuest 후보와 TopUpLive의 활성 코드 없음 판정이 상충. 후보를 삭제하지 않고 미확인으로 보존하며 종료 이력과 분리."
+    }
+  ]
+}

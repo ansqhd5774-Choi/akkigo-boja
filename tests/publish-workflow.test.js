@@ -27,6 +27,15 @@ test('발행 workflow는 소스 Verify 성공과 Worker 배포 상태를 확인�
   assert.match(yaml,/group:\s*production-worker/);
 });
 
+test('글 스냅샷 일치만으로 런타임 Worker 배포를 건너뛰지 않는다',()=>{
+  assert.match(actionRuntime,/runtimeWorkerPaths/);
+  assert.match(actionRuntime,/WORKER_RUNTIME_DEPLOY_REQUIRED/);
+  assert.match(actionRuntime,/runPerformedDeployment/);
+  assert.match(actionRuntime,/Repair Worker deployment when required/);
+  assert.match(actionRuntime,/Run pnpm deploy/);
+  assert.doesNotMatch(actionRuntime,/if\(process\.env\.WORKER_READY==='true'\)\{output\('deploy_needed',false\);console\.log\('WORKER_SNAPSHOT_MATCH_SKIP_DEPLOY'\);return;\}/);
+});
+
 test('발행은 완전한 소스 검사를 재사용하거나 직접 수행하고 화면 렌더 검사는 별도 UI 경로로 제한한다',()=>{
   const verify=readFileSync(new URL('../.github/workflows/verify.yml',import.meta.url),'utf8');
   const layout=readFileSync(new URL('../.github/workflows/verify-layout.yml',import.meta.url),'utf8');
@@ -72,9 +81,10 @@ test('Deploy는 별도 account probe와 cache 복원을 반복하지 않고 테�
   assert.match(yaml,/pnpm deploy/);
 });
 
-test('이미 성공한 Worker 배포가 최신 데이터 커밋의 후손이면 중복 재배포하지 않는다',()=>{
+test('이미 실제 배포된 Worker 소스의 후손이면 중복 재배포하지 않는다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/publish-article.yml',import.meta.url),'utf8');
   assert.match(actionRuntime,/isSuccessfulDeploymentRun/);
+  assert.match(actionRuntime,/runPerformedDeployment/);
   assert.match(actionRuntime,/gitOk\('merge-base','--is-ancestor',source,sha\)/);
   assert.match(actionRuntime,/gitOk\('merge-base','--is-ancestor',sha,'HEAD'\)/);
   assert.match(actionRuntime,/WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW/);
@@ -105,6 +115,6 @@ test('발행 실행의 빈 diff와 중복 코드 방지가 안전하게 연결�
 
 test('배포 상태 탐지는 50개 커밋 조회 제한 대신 전체 Git 이력을 사용한다',()=>{
   const yaml=readFileSync(new URL('../.github/workflows/publish-article.yml',import.meta.url),'utf8');
-  assert.match(actionRuntime,/git\('log','-1','--format=%H','HEAD','--',...workerPaths\)/);
+  assert.match(actionRuntime,/git\('log','-1','--format=%H','HEAD','--',\.\.\.paths\)/);
   assert.doesNotMatch(yaml,/git rev-list --max-count=50/);
 });

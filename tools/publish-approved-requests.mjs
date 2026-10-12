@@ -1,9 +1,5 @@
-import {catHeroArticle} from '../src/cat-hero-article.js';
-import {malhaevocaArticle} from '../src/malhaevoca-article.js';
-import {duolingoArticle} from '../src/duolingo-article.js';
 import {readFile} from 'node:fs/promises';
-import primary from '../data/articles.json' with {type:'json'};
-import supplemental from '../data/articles-supplemental.json' with {type:'json'};
+import {currentArticleCatalog} from '../src/article-catalog.js';
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
 
@@ -25,10 +21,11 @@ for (const name of names) {
     continue;
   }
   processedKeys.add(request.articleKey);
-  const source=await articleSnapshot(request.articleKey,[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle]);
-  if(!source.approved)throw new Error('LOCAL_ARTICLE_NOT_APPROVED');
-  const catalog=[...primary,...supplemental,catHeroArticle,duolingoArticle,malhaevocaArticle];
-  validateArticleDraft(catalog.find(x=>x.articleKey===request.articleKey));
+  const localArticle=currentArticleCatalog.find(x=>x.articleKey===request.articleKey);
+  if(!localArticle)throw new Error(`LOCAL_ARTICLE_NOT_IN_REGISTRY:${request.articleKey}`);
+  const source=await articleSnapshot(request.articleKey,currentArticleCatalog);
+  if(!source.approved)throw new Error(`LOCAL_ARTICLE_NOT_APPROVED:${request.articleKey}`);
+  validateArticleDraft(localArticle);
   const publishUrl='https://akkigo-boja.ansqhd5774.workers.dev/internal/articles/publish';
   const requireUnchanged=process.env.READONLY_PUBLISH_TEST==='true';
   const payload=JSON.stringify({articleKey:request.articleKey,postSha256:source.postSha256,...(requireUnchanged?{requireUnchanged:true}:{}),...(request.existingOnly===true?{existingOnly:true}:{})});

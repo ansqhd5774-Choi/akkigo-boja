@@ -1,0 +1,88 @@
+{
+  "articleKey": "ohmyzip-benefits-202610",
+  "checkedAt": "2026-10-10",
+  "category": "해외직구",
+  "status": "RESEARCHED_NOT_PUBLISHED",
+  "official": "https://www.ohmyzip.com/index.php",
+  "duplicateCheck": {
+    "repo": false,
+    "publicSearch": false
+  },
+  "current": [
+    {
+      "name": "친구추천 신규가입",
+      "value": "10% 할인쿠폰 3장",
+      "source": "https://www.ohmyzip.com/point/rewardPoints",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "친구추천 추천인 포인트",
+      "value": "배송비 5%",
+      "source": "https://www.ohmyzip.com/point/rewardPoints",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "일본 해상 부피무게 면제",
+      "value": "100%",
+      "source": "https://www.ohmyzip.com/event/volume-weight-exemption-for-japan/",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "중국 항공·해상 부피무게 면제",
+      "value": "100%",
+      "source": "https://www.ohmyzip.com/event/volume-weight-exemption-for-china/",
+      "sourcePublishedAt": null,
+      "expiry": null
+    },
+    {
+      "name": "트래킹 3개 무료",
+      "value": "무료",
+      "source": "https://www.ohmyzip.com/event/tracking-fee-free/",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-25"
+    },
+    {
+      "name": "미국 TV 고정가",
+      "value": "$44부터",
+      "source": "https://www.ohmyzip.com/event/flat-rate-shipping-event/fixed-rate-promotion-for-tv-delivery/",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-25"
+    },
+    {
+      "name": "독일 네스프레소·압타밀 고정가",
+      "value": "$19/$21부터",
+      "source": "https://www.ohmyzip.com/event/flat-rate-shipping-event/nespresso-capsule-and-aptamil-flat-rate-shipping-promotion",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-25"
+    },
+    {
+      "name": "프라임 멤버십",
+      "value": "500엔 쿠폰·안심보장 쿠폰",
+      "source": "https://www.ohmyzip.com/service/prime-membership-business",
+      "sourcePublishedAt": null,
+      "expiry": null
+    }
+  ],
+  "ended": [
+    {
+      "name": "미국 DE 5LB 면제",
+      "endDate": "2025-12-31"
+    },
+    {
+      "name": "독일 3kg 면제",
+      "endDate": "2025-12-31"
+    }
+  ],
+  "unverified": [
+    "windly 제휴 무료 프라임 및 추천 코드",
+    "오마이집 제휴 카드 5% 청구할인 현재 적용",
+    "신규 배송신청서 설문 쿠폰 지급 조건"
+  ],
+  "measurement": {
+    "searchVolume": null,
+    "exposureRate": null
+  }
+}

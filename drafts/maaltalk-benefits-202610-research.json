@@ -1,0 +1,137 @@
+{
+  "articleKey": "maaltalk-benefits-202610",
+  "target": "말톡",
+  "category": "유심·로밍",
+  "checkedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubMatch": false,
+    "publicBlogMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "current": [
+    {
+      "name": "일부 eSIM 자동 할인",
+      "value": "약 40%",
+      "status": "ACTIVE_PRODUCT_SPECIFIC",
+      "source": "https://store.maaltalk.com/goods/goods_list.php?cateCd=005017002",
+      "sourcePublishedAt": null,
+      "evidence": "유럽42개국 7000→4200, 유럽27개국 20000→12000"
+    },
+    {
+      "name": "상품 페이지 쿠폰 다운로드",
+      "value": null,
+      "status": "ACTIVE_UNDISCLOSED",
+      "source": "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000354",
+      "sourcePublishedAt": null,
+      "note": "쿠폰 다운받기 버튼 확인. 비로그인 공개 텍스트에서 금액·최소구매금액·사용기한 미확인"
+    },
+    {
+      "name": "리뷰 작성 마일리지",
+      "value": "200P",
+      "status": "ACTIVE",
+      "source": "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000243",
+      "sourcePublishedAt": null,
+      "note": "리뷰 작성 시 즉시 지급 안내"
+    },
+    {
+      "name": "eSIM 무료배송",
+      "value": "무료",
+      "status": "ACTIVE_PRODUCT_SPECIFIC",
+      "source": "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000243",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "말톡나우 해외 현지 무료전화",
+      "value": "무료전화",
+      "status": "ACTIVE",
+      "source": "https://play.google.com/store/apps/details?hl=ko&id=com.maaltalk.now",
+      "sourcePublishedAt": null,
+      "note": "앱 업데이트일 2026-04-20은 출처 게시일로 대체하지 않음"
+    },
+    {
+      "name": "최초 한국·중국·미국 무료통화",
+      "value": "10분",
+      "status": "ACTIVE",
+      "source": "https://www.maaltalk.com/index.php",
+      "sourcePublishedAt": null,
+      "note": "말톡 통화 서비스 별도 혜택"
+    },
+    {
+      "name": "추천인코드",
+      "value": null,
+      "status": "UNVERIFIED_BENEFIT_VALUE",
+      "source": "https://www.maaltalk.com/use.php",
+      "sourcePublishedAt": null,
+      "note": "인증 단계 입력란은 공식 확인, 보상값 미공개"
+    }
+  ],
+  "historicalOrExpired": [
+    {
+      "name": "스마트스토어 리뷰 여행지원금",
+      "value": "1명 100만원·100명 1만원",
+      "status": "EXPIRED",
+      "source": "https://pf.kakao.com/_VaaFd/posts",
+      "sourcePublishedAt": "2023-07-12",
+      "eventPeriod": "07-01~07-31"
+    },
+    {
+      "name": "하나카드 말톡 유심",
+      "value": "15% 즉시할인",
+      "status": "EXPIRED",
+      "source": "https://m.hanacard.co.kr/MKEVT1010M.web?EVN_SEQ=7151",
+      "sourcePublishedAt": null,
+      "eventPeriod": "2023-01-01~2023-12-31"
+    },
+    {
+      "name": "부킹닷컴 캐시백",
+      "value": "8%",
+      "status": "HISTORICAL",
+      "source": "https://pf.kakao.com/_VaaFd/posts",
+      "sourcePublishedAt": "2019-10-04"
+    }
+  ],
+  "publicStringCodeSearch": {
+    "result": "NO_VERIFIED_CURRENT_PUBLIC_STRING_CODE_FOUND",
+    "note": "추천인코드·핀코드 기능은 있으나 현재 누구나 사용할 할인 문자열은 확인되지 않음"
+  },
+  "searchIntent": {
+    "keywords": [
+      "말톡 쿠폰",
+      "말톡 할인쿠폰",
+      "말톡 eSIM 할인",
+      "말톡 이심 쿠폰",
+      "말톡 유심 할인",
+      "말톡 마일리지 200",
+      "말톡나우 무료전화",
+      "일본 이심 말톡",
+      "베트남 이심 말톡"
+    ],
+    "hashtags": [
+      "#말톡",
+      "#말톡쿠폰",
+      "#말톡이심",
+      "#말톡eSIM",
+      "#해외유심",
+      "#유심할인",
+      "#이심할인",
+      "#해외여행"
+    ],
+    "measuredSearch": null,
+    "note": "말톡 쿠폰 자체의 신뢰할 수 있는 실제 검색량·해시태그 노출량 측정 자료 미확보"
+  },
+  "sources": [
+    "https://www.maaltalk.com/",
+    "https://store.maaltalk.com/main/index.php",
+    "https://store.maaltalk.com/goods/goods_list.php?cateCd=005017002",
+    "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000359",
+    "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000243",
+    "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000270",
+    "https://store.maaltalk.com/goods/goods_view.php?goodsNo=1000000354",
+    "https://www.maaltalk.com/index.php",
+    "https://www.maaltalk.com/use.php",
+    "https://pf.kakao.com/_VaaFd/posts",
+    "https://play.google.com/store/apps/details?hl=ko&id=com.maaltalk.now",
+    "https://m.hanacard.co.kr/MKEVT1010M.web?EVN_SEQ=7151"
+  ],
+  "sourceDatePolicy": "출처 게시일은 원문 최초 게시일만 기록. 앱 업데이트일·행사기간·확인일·상품 크롤링일을 게시일로 대체하지 않음."
+}

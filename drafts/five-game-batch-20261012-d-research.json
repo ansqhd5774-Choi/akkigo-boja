@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-12",
+  "category": "게임",
+  "searchMeasurement": {"status": "NOT_MEASURED"},
+  "games": [
+    {
+      "articleKey": "god-slayer-codes-202610",
+      "title": "갓 슬레이어",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.growking.godslayer",
+      "officialCommunity": "https://game.naver.com/lounge/God_Slayer",
+      "currentOfficialCode": null,
+      "history": [
+        {"code": "goddice00", "expiry": "2025-08-01", "status": "EXPIRED"},
+        {"code": "godgold05", "expiry": "2025-08-04", "status": "EXPIRED"}
+      ],
+      "benefits": ["Google Play 공식 설명의 접속 보석·장비 성장 보상"],
+      "notes": "현재 공식 고정 쿠폰을 새로 확인하지 못함. 과거 라운지 발급 이력은 종료 기록으로만 보존."
+    },
+    {
+      "articleKey": "romantic-gangho-codes-202610",
+      "title": "낭만강호",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.morefunkr.yyjh",
+      "officialCommunity": "https://game.naver.com/lounge/RomanticGangho/home",
+      "candidateSource": "https://www.lv1arcade.com/coupons/romanticKangho/%EB%82%AD%EB%A7%8C%EA%B0%95%ED%98%B8",
+      "candidates": ["강호초입", "패치성공", "2ae3wd16", "2dyxx58d", "천하제일", "2a3ajv4m", "2bdrima6", "낭만보상", "2b4egt55"],
+      "status": "UNVERIFIED",
+      "notes": "공식 발급 원문과 현재 계정 입력 성공 미확인. 낭만보상·2b4egt55는 만료 의심 신고 1건씩 존재."
+    },
+    {
+      "articleKey": "heroll-codes-202610",
+      "title": "용사님 돌았어요?",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.percent.aos.rollinghero",
+      "historySource": "https://apkpure.net/kr/heroll-dice-roguelike/com.percent.aos.rollinghero/versions",
+      "records": [
+        {"code": "UPDATE200", "sourcePublishedAt": "2026-08-21", "expiry": "2026-08-31 KST", "status": "EXPIRED"},
+        {"code": "HELLOHEROLL", "sourcePublishedAt": "2026-07-13", "expiry": null, "status": "UNVERIFIED"},
+        {"code": "WELCOME", "sourcePublishedAt": "2026-07-13", "expiry": null, "status": "UNVERIFIED"}
+      ],
+      "notes": "UPDATE200은 Google Play 공식 최신 기능에서 8월 31일까지로 명시. 이전 2개는 후속 최신 기능에서 사라져 현재 상태 미확인."
+    },
+    {
+      "articleKey": "sword-of-convallaria-codes-202610",
+      "title": "소드 오브 콘발라리아",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.xd.ssrpgkr",
+      "officialSite": "https://soc.xd.com/kr",
+      "officialCafe": "https://cafe.naver.com/swordofconvallaria",
+      "koreanCandidates": ["MOONCAKE2026KR", "2YEARSWITHKR", "KR2NDANNIV", "THANKYOU2KR", "elamanKR2026"],
+      "koreanCandidateStatus": "UNVERIFIED",
+      "globalOfficial": {"code": "ckwy32t1eeevs", "reward": "Hope Luxite 300", "sourcePublishedAt": "2026-09-09", "expiry": "2026-10-14 11:59 UTC-4", "region": "GLOBAL"},
+      "notes": "사용자 입력명 '소울 오브 콘발라리아'는 공식 게임명 '소드 오브 콘발라리아'로 정규화. 한국 후보와 글로벌 공식 코드를 지역별로 분리."
+    },
+    {
+      "articleKey": "tree-of-savior-m-codes-202610",
+      "title": "트리 오브 세이비어M",
+      "officialStore": "https://play.google.com/store/apps/details?hl=ko&id=com.imc.mtos",
+      "officialCommunity": "https://game.naver.com/lounge/tosm/home",
+      "current": {"code": "GOLDENSEASON", "sourcePublishedAt": "2026-09-16", "expiry": null, "status": "UNVERIFIED", "authority": "IMC게임즈 발표 보도"},
+      "history": {"code": "SUMMER2026", "sourcePublishedAt": "2026-07-01", "expiry": null, "status": "UNVERIFIED_HISTORY"},
+      "benefits": ["최대 330회 무료 영입", "경험치 2배", "강화 비용 50% 할인", "던전 무료 입장 횟수 추가"],
+      "source": "https://www.inven.co.kr/webzine/news/?iskin=paintheroes&news=320985&searchwhere=writer",
+      "notes": "GOLDENSEASON은 모든 이용자 제공 발표가 확인되나 정확한 종료일과 현재 계정 실사용은 미확인."
+    }
+  ]
+}

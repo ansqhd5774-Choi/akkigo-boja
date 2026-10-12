@@ -1,0 +1,121 @@
+{
+  "articleKey": "tiles-survive-codes-202610",
+  "game": "타일 서바이벌",
+  "category": "게임",
+  "collectedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubArticleKeyMatch": false,
+    "publicSearchMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "currentCodeCandidates": [
+    "TS777",
+    "TS888",
+    "TS999"
+  ],
+  "officialExpired": [
+    {
+      "code": "MOONGIFT",
+      "expiry": "2026-10-08 23:59 UTC",
+      "sourcePublishedAt": null,
+      "source": "https://twstalker.com/TilesSurvive"
+    },
+    {
+      "code": "DISCORD50K",
+      "expiry": "2026-09-30 23:59 UTC",
+      "sourcePublishedAt": null,
+      "source": "https://twstalker.com/TilesSurvive"
+    },
+    {
+      "code": "FACEBOOK100K",
+      "expiry": "2026-09-30 23:59 UTC",
+      "sourcePublishedAt": null,
+      "source": "https://twstalker.com/TilesSurvive"
+    }
+  ],
+  "benefits": [
+    {
+      "type": "PAYMENT_DISCOUNT",
+      "authority": "OFFICIAL",
+      "benefit": "첫 결제 5% 할인",
+      "sourcePublishedAt": null,
+      "url": "https://store.funplus.com/tilessurvive/"
+    },
+    {
+      "type": "POINTS_EXCHANGE",
+      "authority": "OFFICIAL",
+      "benefit": "주간 Points Exchange",
+      "sourcePublishedAt": null,
+      "url": "https://twstalker.com/TilesSurvive"
+    },
+    {
+      "type": "PAYMENT_CODE",
+      "authority": "THIRD_PARTY",
+      "code": "LDSHOP5FF",
+      "benefit": "다음 결제 5%",
+      "sourcePublishedAt": "2026-05-27",
+      "expiry": "2026-10-31 23:59:59",
+      "url": "https://www.ldshop.gg/blog/tiles-survive/top-up-guide.html"
+    },
+    {
+      "type": "PAYMENT_DISCOUNT",
+      "authority": "THIRD_PARTY",
+      "benefit": "Waypoints 최대 22% 표시",
+      "sourcePublishedAt": null,
+      "url": "https://www.lootbar.com/ko/top-up/tiles-survive"
+    },
+    {
+      "type": "ELIGIBILITY_APPLICATION",
+      "authority": "OFFICIAL",
+      "benefit": "Creator Program 프레임·월간/성과 보상",
+      "sourcePublishedAt": null,
+      "expiry": "2026-10-11",
+      "url": "https://twstalker.com/TilesSurvive"
+    }
+  ],
+  "seo": {
+    "keywords": [
+      "타일 서바이벌 쿠폰",
+      "타일 서바이벌 쿠폰 코드",
+      "타일 서바이벌 기프트 코드",
+      "Tiles Survive codes",
+      "Tiles Survive gift code",
+      "타일 서바이벌 충전 할인"
+    ],
+    "hashtags": [
+      "#타일서바이벌",
+      "#TilesSurvive",
+      "#타일서바이벌쿠폰",
+      "#게임쿠폰",
+      "#기프트코드",
+      "#쿠폰코드",
+      "#충전할인"
+    ],
+    "measured": {
+      "keyword": "타일 서바이벌 쿠폰",
+      "measuredAt": "2026-09-29 17:23 KST",
+      "monthlySearchRange": "500~1천",
+      "mobileShare": "62%",
+      "source": "https://blokey.co.kr/k/%ED%83%80%EC%9D%BC%2B%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C%2B%EC%BF%A0%ED%8F%B0"
+    }
+  },
+  "held": [
+    {
+      "value": "TILES",
+      "reason": "isolated third-party list and likely title fragment"
+    },
+    {
+      "value": "SURVIVE!",
+      "reason": "special-character/title-fragment ambiguity"
+    },
+    {
+      "value": "GetGemGo 29% display",
+      "reason": "region/product/final-price conditions not independently confirmed"
+    },
+    {
+      "value": "AppGallery $1 voucher display",
+      "reason": "region/eligibility conditions not independently confirmed"
+    }
+  ],
+  "sourceDatePolicy": "Source publication date is preserved separately from official issue date, check date, update date and expiry. Unknown dates remain null."
+}

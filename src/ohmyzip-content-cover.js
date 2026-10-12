@@ -1,0 +1,1 @@
+export const cover='<div class="ncp-feed-preview" data-ncp-feed-preview>오마이집 10% 쿠폰·묶음배송 무료</div><!--more--><article class="ncp-commerce-article" data-ncp-article="ohmyzip-benefits-202610"><header><h1>오마이집 쿠폰·배송비 할인 (2026년 10월)</h1><p>2026-10-10 공식 안내 확인. 친구추천 신규회원 10% 쿠폰 3장, 묶음배송 트래킹 3개 무료, 일본·중국 부피무게 면제를 확인했습니다. 실제 지급과 결제 적용은 계정 쿠폰함에서 확인하세요.</p></header>';

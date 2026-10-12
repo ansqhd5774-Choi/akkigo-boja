@@ -31,6 +31,16 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
+      - name: Validate article registry before publication work
+        env:
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            node tools/check-article-registry.mjs "$PUSH_BEFORE" "$PUSH_AFTER"
+          else
+            node tools/check-article-registry.mjs
+          fi
       - name: Enforce shared period renderer and preserved history before publication
         run: node tools/check-article-presentation.mjs --static
       - name: Look up exact SHA full verification

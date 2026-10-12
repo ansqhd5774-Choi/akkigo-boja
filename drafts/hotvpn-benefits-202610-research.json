@@ -1,0 +1,177 @@
+{
+  "articleKey": "hotvpn-benefits-202610",
+  "target": "HotVPN",
+  "targetIdentity": {
+    "domain": "https://www.hotvpn.co.kr/",
+    "operator": "(주)이원커뮤니케이션",
+    "appPackage": "com.E1.hotvpn",
+    "note": "동명이인 해외 HotVPN 서비스와 분리"
+  },
+  "category": "VPN",
+  "checkedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubMatch": false,
+    "publicBlogMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "current": [
+    {
+      "name": "신규 회원가입 포인트",
+      "value": "3000P",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/",
+      "sourcePublishedAt": null,
+      "method": "신규 회원가입",
+      "note": "가입 후 바로 사용 가능 공식 안내"
+    },
+    {
+      "name": "서비스 결제 포인트 적립",
+      "value": "10%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/",
+      "sourcePublishedAt": null,
+      "method": "서비스 결제",
+      "note": "약관상 현금 환급 불가·특정 서비스 구매에 사용·구매 취소 시 회수 가능"
+    },
+    {
+      "name": "통신사 고정 VPN 180일",
+      "value": "5%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/static",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "통신사 고정 VPN 360일",
+      "value": "10%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/static",
+      "sourcePublishedAt": null,
+      "note": "공식 페이지의 360일 표시 금액은 할인율과 산술적으로 맞지 않아 가격 숫자를 운영 글에서 임의 보정하지 않음"
+    },
+    {
+      "name": "통신사 고정 VPN 정기결제",
+      "value": "2%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/static",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "통신사 유동 VPN 90일",
+      "value": "5%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/dynamic",
+      "sourcePublishedAt": null,
+      "price": "171000원"
+    },
+    {
+      "name": "통신사 유동 VPN 180일",
+      "value": "15%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/dynamic",
+      "sourcePublishedAt": null,
+      "price": "306000원"
+    },
+    {
+      "name": "통신사 유동 VPN 360일",
+      "value": "25%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/dynamic",
+      "sourcePublishedAt": null,
+      "price": "540000원"
+    },
+    {
+      "name": "통신사 유동 VPN 정기결제",
+      "value": "5%",
+      "status": "ACTIVE",
+      "source": "https://www.hotvpn.co.kr/about/dynamic",
+      "sourcePublishedAt": null,
+      "price": "57000원"
+    }
+  ],
+  "currentServiceEvidence": [
+    {
+      "source": "https://www.hotvpn.co.kr/support/notice/677",
+      "sourcePublishedAt": "2026-09-21",
+      "note": "2026년 10월 고객센터 휴무 중에도 자동화 시스템으로 서비스 정상 이용 가능 공지"
+    },
+    {
+      "source": "https://play.google.com/store/apps/details?hl=ko&id=com.E1.hotvpn",
+      "publishedAt": null,
+      "appUpdatedAt": "2026-08-03",
+      "note": "공식 앱 개발자 EONE COMMUNICATION / (주)이원커뮤니케이션 확인"
+    }
+  ],
+  "terms": {
+    "source": "https://www.hotvpn.co.kr/policy/terms",
+    "sourcePublishedAt": null,
+    "effectiveDate": "2025-01-01",
+    "pointPolicy": "서비스 구매 시 적립, 현금 환급 불가, 특정 서비스 구매에 사용, 구매취소 시 환급 포인트 회수"
+  },
+  "publicStringCodeSearch": {
+    "result": "NO_VERIFIED_CURRENT_PUBLIC_STRING_CODE_FOUND"
+  },
+  "freeTrialSearch": {
+    "result": "NO_VERIFIED_CURRENT_FREE_TRIAL_FOUND_FOR_HOTVPN_CO_KR"
+  },
+  "exclusions": [
+    {
+      "service": "hotvpn.io / Marketing66",
+      "observed": "50% off, 30-day money-back guarantee",
+      "reason": "다른 운영주체·도메인의 해외 HotVPN 서비스"
+    },
+    {
+      "service": "HotCodes / com.hotcodes.hotvpn",
+      "observed": "무료 앱",
+      "reason": "Google Play 개발자와 도메인이 다른 별도 HotVPN 앱"
+    }
+  ],
+  "thirdParty": [
+    {
+      "source": "https://kin.naver.com/qna/detail.naver?d1id=4&dirId=40104&docId=483712765",
+      "sourcePublishedAt": null,
+      "observations": [
+        "2025-04-02 사용자 답변에서 국내 IP용 HotVPN 이용 경험 언급",
+        "2025-04-17 별도 사용자 답변에서도 이용 경험 언급"
+      ],
+      "use": "서비스 사용 경험 참고만; 할인 혜택 검증 근거로 사용하지 않음"
+    },
+    {
+      "source": "https://www.ndex.kr/data/oldsus56",
+      "sourcePublishedAt": null,
+      "observations": [
+        "2026-01-13 네이버 블로그 색인에 HotVPN 게임작업장 한국 통신사 IP 설정 글 존재"
+      ],
+      "use": "블로그 사용 사례 확인만; 혜택 근거로 사용하지 않음"
+    }
+  ],
+  "socialVideoBlogSearch": {
+    "result": "공식 사이트·Google Play·App Store·공지 및 공개 블로그/커뮤니티/YouTube 검색 수행. 별도 현재 소셜 전용 쿠폰이나 공용 코드 미발견.",
+    "accessPolicy": "검색 미노출·접근 제한을 만료로 처리하지 않음"
+  },
+  "searchIntent": {
+    "keywords": [
+      "HotVPN 할인",
+      "핫VPN 할인",
+      "HotVPN 쿠폰",
+      "핫VPN 쿠폰",
+      "HotVPN 3000 포인트",
+      "HotVPN 10% 적립",
+      "HotVPN 유동IP 할인",
+      "HotVPN 고정IP 할인",
+      "통신사 VPN 할인"
+    ],
+    "hashtags": [
+      "#HotVPN",
+      "#핫VPN",
+      "#고정IP",
+      "#유동IP",
+      "#통신사VPN",
+      "#VPN할인",
+      "#고정아이피",
+      "#유동아이피"
+    ],
+    "measuredSearch": null,
+    "note": "HotVPN 할인·쿠폰 키워드의 신뢰할 수 있는 실제 검색량·해시태그 노출량 측정 자료 미확보"
+  },
+  "sourceDatePolicy": "혜택 정적 페이지의 최초 게시일이 표시되지 않아 sourcePublishedAt=null 유지. 앱 업데이트일, 약관 시행일, 최근 공지일, 확인일을 혜택 게시일이나 발급일로 대체하지 않음."
+}

@@ -1,0 +1,139 @@
+{
+  "articleKey": "ip4u-benefits-202610",
+  "target": "IP4U",
+  "category": "VPN",
+  "checkedAt": "2026-10-10",
+  "duplicateCheck": {
+    "githubMatch": false,
+    "publicBlogMatch": false,
+    "decision": "NEW_ARTICLE"
+  },
+  "current": [
+    {
+      "name": "IP4U 고정IP 장기결제",
+      "value": "최대 25%",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Vpn/StaticIp/",
+      "sourcePublishedAt": null,
+      "conditions": "1개월 8000원, 3개월 15% 20400원, 6개월 25% 36000원; 부가세 별도"
+    },
+    {
+      "name": "마케팅 고정IP 장기결제",
+      "value": "최대 10%",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Vpn/VsETC/",
+      "sourcePublishedAt": null,
+      "conditions": "1개월 12000원, 3개월 5% 34200원, 6개월 10% 64800원; 부가세 별도"
+    },
+    {
+      "name": "VPN 유동IP 장기결제",
+      "value": "최대 20%",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Vpn/DynimicIp/",
+      "sourcePublishedAt": null,
+      "conditions": "1개월 42000원, 3개월 10% 113400원, 6개월 20% 201600원; 부가세 별도"
+    },
+    {
+      "name": "PROXY 유동IP 장기결제",
+      "value": "최대 20%",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Proxy/DynimicIp/",
+      "sourcePublishedAt": null,
+      "conditions": "1개월 50000원, 3개월 10% 135000원, 6개월 20% 240000원; 부가세 별도"
+    },
+    {
+      "name": "IP4U 고정IP 무료체험",
+      "value": "24시간",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Test/",
+      "sourcePublishedAt": null,
+      "conditions": "최초 가입 후 48시간 이내, 서비스당 1회, 신청 즉시 시작"
+    },
+    {
+      "name": "VPN 유동IP 무료체험",
+      "value": "1시간",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Test/",
+      "sourcePublishedAt": null,
+      "conditions": "고객센터 문의, 최초 가입 후 48시간 이내, 서비스당 1회"
+    },
+    {
+      "name": "PROXY 유동IP 무료체험",
+      "value": "1시간",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Test/",
+      "sourcePublishedAt": null,
+      "conditions": "고객센터 문의, 최초 가입 후 48시간 이내, 서비스당 1회"
+    },
+    {
+      "name": "무료 IP 교체권",
+      "value": "1~3개",
+      "status": "ACTIVE",
+      "source": "https://www.ip4u.co.kr/Vpn/StaticIp/",
+      "sourcePublishedAt": null,
+      "conditions": "IP4U 고정IP 1개월 1개, 3개월 2개, 6개월 3개"
+    }
+  ],
+  "importantConditions": [
+    "마케팅 고정IP는 무료체험 미제공",
+    "무료체험 신청 없이 유료서비스를 먼저 사용하면 무료체험 미제공",
+    "무료체험 중 유료 전환 시 남은 체험시간을 유료 기간에 합산",
+    "무료체험 IP는 무작위 배정",
+    "과도한 트래픽 또는 불법 용도는 서비스 중지 가능"
+  ],
+  "historicalOrExpired": {
+    "found": false,
+    "note": "현재 공개 검색에서 별도 종료 쿠폰 이벤트는 확인되지 않음. 서비스 중단·점검 공지는 혜택 종료 기록으로 오인하지 않음."
+  },
+  "publicStringCodeSearch": {
+    "result": "NO_VERIFIED_CURRENT_PUBLIC_STRING_CODE_FOUND",
+    "falsePositives": [
+      "해외 쿠폰 사이트에서 문자열 IP4U가 타 브랜드 쇼핑몰 코드로 노출됨",
+      "Simple Peptide/JL Matthews/Karina Dresses 등 IP4U VPN과 무관한 결과로 제외"
+    ]
+  },
+  "sourceChecks": {
+    "officialSite": "checked",
+    "officialFAQ": "checked",
+    "officialYoutubeEmbed": "checked via FAQ/free-trial page; no extra discount value found",
+    "officialBlog": "FAQ links to Naver blog; direct crawler access restricted, access restriction not treated as expiration",
+    "community": "Naver Knowledge iN 2023-06-01 IP4U account answer confirms free-test messaging; current conditions revalidated on official site",
+    "social": "public search did not reveal a separate current social-only coupon"
+  },
+  "searchIntent": {
+    "keywords": [
+      "IP4U 할인",
+      "아이피포유 할인",
+      "IP4U 쿠폰",
+      "아이피포유 쿠폰",
+      "IP4U 무료체험",
+      "고정IP 할인",
+      "VPN 유동IP 할인",
+      "프록시 유동IP 할인",
+      "고정아이피 무료체험"
+    ],
+    "hashtags": [
+      "#IP4U",
+      "#아이피포유",
+      "#고정IP",
+      "#유동IP",
+      "#VPN",
+      "#프록시IP",
+      "#고정아이피",
+      "#VPN할인"
+    ],
+    "measuredSearch": null,
+    "note": "IP4U·아이피포유 쿠폰 키워드의 신뢰할 수 있는 실제 검색량·해시태그 노출량 측정 자료 미확보"
+  },
+  "sources": [
+    "https://www.ip4u.co.kr/",
+    "https://www.ip4u.co.kr/Test/",
+    "https://www.ip4u.co.kr/Vpn/StaticIp/",
+    "https://www.ip4u.co.kr/Vpn/VsETC/",
+    "https://www.ip4u.co.kr/Vpn/DynimicIp/",
+    "https://www.ip4u.co.kr/Proxy/DynimicIp/",
+    "https://www.ip4u.co.kr/CS/Faq/",
+    "https://m.kin.naver.com/qna/dirs/10801/docs/446997129"
+  ],
+  "sourceDatePolicy": "출처 게시일은 원문 최초 게시일만 기록. 정적 요금/무료체험 페이지는 게시일 미확인으로 null 유지하며 확인일, 결제기간, 가입 후 48시간 신청기한으로 대체하지 않음."
+}
