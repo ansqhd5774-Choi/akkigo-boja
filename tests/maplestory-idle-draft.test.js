@@ -39,7 +39,9 @@ test('메이플 키우기 supplemental article과 공개 HTML이 일치한다',(
   assert.match(html,/미라클 큐브 50개/);
   assert.match(html,/2026년 10월 14일 23:59/);
   assert.match(html,/2026년 10월 7일 23:59/);
-  assert.match(html,/coupon\.nexon\.com\/ko-kr\/maplestoryidle/);
+  assert.match(html,/mcoupon\.nexon\.com\/maplestoryidle\?lang=ko/);
+  assert.doesNotMatch(html,/coupon\.nexon\.com\/ko-kr\/maplestoryidle/);
+  assert.match(html,/공식 페이지 확인 · 2026-10-13/);
   const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(x=>x[1]);
   assert.equal(codes.length,24);
   assert.equal(new Set(codes).size,24);
