@@ -1,0 +1,8 @@
+{
+  "articleKey": "lucky-offense-codes-202610",
+  "stagedSourceSha": "3e3a28ee588ed895a629935a375fc7e99183bf86",
+  "checkedAt": "2026-10-13",
+  "stageWorkflow": "Stage Lucky Offense Refresh",
+  "stageResult": "SUCCESS",
+  "next": "VERIFY_THEN_EXISTING_POST_PATCH"
+}
