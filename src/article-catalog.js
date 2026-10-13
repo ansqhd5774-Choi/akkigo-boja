@@ -32,6 +32,7 @@ import {bladeWarThreeKingdomsArticle} from './game-batch-20261014-b.js';
 import {sabukIceKingdomArticle} from './game-batch-20261014-c.js';
 import {superEvolutionStory2Article} from './game-batch-20261014-d.js';
 import {nightDiffArticle} from './game-batch-20261014-e.js';
+import {ttukkaPetSurvivalArticle} from './game-batch-20261014-f.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const canonicalArticles=[...primary,...supplemental];
@@ -104,7 +105,8 @@ const legacyArticleCatalog=[
   bladeWarThreeKingdomsArticle,
   sabukIceKingdomArticle,
   superEvolutionStory2Article,
-  nightDiffArticle
+  nightDiffArticle,
+  ttukkaPetSurvivalArticle
 ];
 
 // Canonical JSON is the migration destination. A canonical article replaces the
