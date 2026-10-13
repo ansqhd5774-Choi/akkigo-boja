@@ -29,9 +29,9 @@ import {mobileLegendsArticle,clashRoyaleArticle,muMonarchArticle,anipang4Article
 import {silverPalaceArticle} from './game-batch-20261012-k.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
-const articleCatalogBase=[
-  ...primary,
-  ...supplemental,
+const canonicalArticles=[...primary,...supplemental];
+const canonicalKeys=new Set(canonicalArticles.map(article=>article.articleKey));
+const legacyArticleCatalog=[
   catHeroArticle,
   duolingoArticle,
   malhaevocaArticle,
@@ -96,6 +96,14 @@ const articleCatalogBase=[
   muMonarchArticle,
   anipang4Article,
   silverPalaceArticle
+];
+
+// Once an article is migrated into the canonical JSON registry, the canonical
+// entry replaces its legacy module registration. Duplicate canonical entries
+// and duplicate non-migrated legacy entries still fail in the integrity check.
+const articleCatalogBase=[
+  ...canonicalArticles,
+  ...legacyArticleCatalog.filter(article=>!canonicalKeys.has(article.articleKey))
 ];
 
 export const currentArticleCatalog=applyRepresentativeLogos([
