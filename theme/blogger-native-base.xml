@@ -3083,7 +3083,7 @@ body{background:#f6f7f9!important;color:#16202c!important}.bg-photo,.bg-photo-ov
                       <b:includable id='title'>
           <div>
             <b:class cond='data:this.imagePlacement == &quot;REPLACE&quot;' name='replaced'/>
-            <b:include name='super.title'/>
+            <b:if cond='data:view.isHomepage'><p class='ncp-native-site-title'><data:blog.title/></p><b:else/><b:include name='super.title'/></b:if>
           </div>
         </b:includable>
                     </b:widget>

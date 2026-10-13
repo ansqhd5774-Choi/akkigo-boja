@@ -3447,7 +3447,7 @@ window.ncpResolveGame=(function(){const known=["원신","승리의 여신: 니�
                       <b:includable id='title'>
           <div>
             <b:class cond='data:this.imagePlacement == &quot;REPLACE&quot;' name='replaced'/>
-            <b:include name='super.title'/>
+            <b:if cond='data:view.isHomepage'><p class='ncp-native-site-title'><data:blog.title/></p><b:else/><b:include name='super.title'/></b:if>
           </div>
         </b:includable>
                     </b:widget>
