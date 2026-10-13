@@ -5,9 +5,9 @@ const p=t=>`<p>${t}</p>`;
 const tp=(name,url,sourcePublishedAt=null)=>({name,url,referenceType:'THIRD_PARTY_CODE_MENTION',sourcePublishedAt,checkedAt});
 const off=(name,url,sourcePublishedAt=null)=>({name,url,referenceType:'OFFICIAL_CODE_CONTEXT',sourcePublishedAt,checkedAt});
 const featured=(key,title,storeUrl,iconUrl)=>`<figure data-ncp-featured-image="${key}" data-ncp-app-icon="true" data-ncp-app-icon-source="${storeUrl}" style="margin:0 0 24px"><a href="${storeUrl}" rel="noopener noreferrer"><img src="${iconUrl}" width="512" height="512" alt="${title} 공식 앱 아이콘" loading="eager" decoding="async" style="display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px"/></a></figure>`;
-const make=({articleKey,title,english,storeUrl,iconUrl,sourceUrl,references,records,previewHTML,noticeHTML,guideHTML,archiveHTML,searchDescription,keywords,hashtags,benefits=[],type})=>{
+const make=({articleKey,title,english,storeUrl,iconUrl,sourceUrl,references,records,previewHTML,noticeHTML,guideHTML,archiveHTML,searchDescription,keywords,hashtags,benefits=[],type,sourceCheckedAt=checkedAt})=>{
   const model={articleKey,title,previewHTML,featuredHTML:featured(articleKey,title,storeUrl,iconUrl),noticeHTML,guideHTML,archiveHTML,records};
-  return {articleKey,approvedForPublish:true,post:{title,content:renderGamePeriodArticle(model),labels:[...new Set(['게임',title,english])]},source:{type,url:sourceUrl,checkedAt,references,presentationVersion:'compact-r2',templateVersion:'game-period-tabs-r1',gamePeriodModel:model,searchDescription,keywords,hashtags,searchMeasurement:{status:'NOT_MEASURED'},benefits}};
+  return {articleKey,approvedForPublish:true,post:{title,content:renderGamePeriodArticle(model),labels:[...new Set(['게임',title,english])]},source:{type,url:sourceUrl,checkedAt:sourceCheckedAt,references,presentationVersion:'compact-r2',templateVersion:'game-period-tabs-r1',gamePeriodModel:model,searchDescription,keywords,hashtags,searchMeasurement:{status:'NOT_MEASURED'},benefits}};
 };
 
 // 캣 히어로즈 - 고양이 머지 디펜스
@@ -146,13 +146,14 @@ export const darkSlayerIdleArticle=make({
 const ztStore='https://play.google.com/store/apps/details?hl=ko&id=com.pi.zombie.tower';
 const ztIcon='https://play-lh.googleusercontent.com/Q3ZcQA5m7pA2QjE5iY5x3dEMMp73wGFHOfs3YxA5134p8eXdczpxo80HplO0gWdLoDBu6vGA_2_mniWc6oaHqA%3Dw240-h480';
 const ztSite='https://www.pigame-mobile.com/';
+const ztCheckedAt='2026-10-13';
 export const zombieTowerArticle=make({
-  articleKey:'zombie-tower-codes-202610',title:'Zombie Tower',english:'Zombie Tower',storeUrl:ztStore,iconUrl:ztIcon,sourceUrl:ztStore,
+  articleKey:'zombie-tower-codes-202610',title:'Zombie Tower',english:'Zombie Tower',storeUrl:ztStore,iconUrl:ztIcon,sourceUrl:ztStore,sourceCheckedAt:ztCheckedAt,
   references:[ztStore,ztSite],records:[],type:'ZOMBIE_TOWER_NO_PUBLIC_REDEEM_CODE_FOUND',
-  previewHTML:'<div class="ncp-feed-preview" data-ncp-feed-preview="data-ncp-feed-preview" aria-label="Zombie Tower 쿠폰 요약"><div class="ncp-feed-stat"><span>공개 코드</span><strong>0개 확인</strong></div><div class="ncp-feed-stat"><span>공식 앱</span><strong>Pi Game</strong></div><div class="ncp-feed-stat"><span>Roblox 자료</span><strong>제외</strong></div></div>',
-  noticeHTML:'<p>Pi Game의 패키지 com.pi.zombie.tower를 기준으로 공개 자료를 확인했지만 이 모바일 게임 전용 리딤코드나 쿠폰 입력 경로는 확인하지 못했습니다. 검색되는 Roblox ‘Zombie Tower Defense’ 계열 코드는 다른 게임이므로 제외했습니다.</p>',
-  guideHTML:'<section><h3>현재 확인</h3><p>공식 Google Play에는 광고·인앱 구매와 게임 정보가 안내되지만 공개 쿠폰 기능은 안내되지 않습니다. 향후 공식 앱 또는 개발사 공지에 입력형 혜택이 생기면 별도 기록합니다.</p></section>',
+  previewHTML:'<div class="ncp-feed-preview" data-ncp-feed-preview="data-ncp-feed-preview" aria-label="Zombie Tower 쿠폰 요약"><div class="ncp-feed-stat"><span>공개 코드</span><strong>0개 확인</strong></div><div class="ncp-feed-stat"><span>공식 앱</span><strong>Pi Game</strong></div><div class="ncp-feed-stat"><span>최근 앱 업데이트</span><strong>2026.05.11</strong></div></div>',
+  noticeHTML:'<p data-refresh-evidence="zombie-tower-20261013">2026년 10월 13일 국내외 공개 자료를 다시 확인했지만 Pi Game의 Zombie Tower(com.pi.zombie.tower) 전용 공개 리딤코드나 공식 쿠폰 입력 체계는 찾지 못했습니다. 검색되는 Roblox Zombie Tower Defense·Zombie Tower의 코드는 다른 게임이므로 이 글의 쿠폰으로 등록하지 않습니다.</p>',
+  guideHTML:'<section><h3>현재 확인</h3><p>Google Play 공식 앱은 Pi Game의 com.pi.zombie.tower이며 2026년 5월 11일 업데이트가 확인됩니다. 공식 스토어와 Pi Game 개발사 사이트에서는 이 모바일 게임 전용 공개 쿠폰 번호나 리딤 메뉴 안내가 확인되지 않았습니다. 향후 공식 앱·개발사 채널에서 입력형 혜택이 공개되면 이 기록에 추가합니다.</p></section>',
   archiveHTML:`<p><a href="${ztStore}" rel="noopener noreferrer">Google Play 공식 앱</a> · <a href="${ztSite}" rel="noopener noreferrer">Pi Game 개발사 사이트</a></p>`,
-  searchDescription:'Pi Game Zombie Tower 모바일 게임의 쿠폰·리딤코드 공개 여부를 확인하고 Roblox 동명 게임 코드와 분리했습니다.',
-  keywords:['Zombie Tower coupon','Zombie Tower codes','좀비 타워 쿠폰','좀비 타워 코드'],hashtags:['#ZombieTower','#좀비타워','#게임쿠폰']
+  searchDescription:'Pi Game Zombie Tower 쿠폰을 2026년 10월 13일 다시 조사했습니다. 현재 공개 리딤코드는 확인되지 않았으며 Roblox 동명 게임 코드는 분리했습니다.',
+  keywords:['Zombie Tower coupon','Zombie Tower codes','좀비 타워 쿠폰','좀비 타워 코드','Pi Game Zombie Tower'],hashtags:['#ZombieTower','#좀비타워','#PiGame','#게임쿠폰']
 });
