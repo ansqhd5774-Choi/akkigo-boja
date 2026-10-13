@@ -27,6 +27,7 @@ import {luckyOffenseArticle,potatoZombieArticle,imoWorldOfMagicArticle,mahjongSo
 import {evilLandsArticle,muMonarch2Article,rfOnlineNextArticle,pixelMageIdleArticle,overgearedHeroArticle} from './game-batch-20261012-i.js';
 import {mobileLegendsArticle,clashRoyaleArticle,muMonarchArticle,anipang4Article} from './game-batch-20261012-j.js';
 import {silverPalaceArticle} from './game-batch-20261012-k.js';
+import {waruruBeaverArticle} from './game-batch-20261014.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const canonicalArticles=[...primary,...supplemental];
@@ -94,7 +95,8 @@ const legacyArticleCatalog=[
   clashRoyaleArticle,
   muMonarchArticle,
   anipang4Article,
-  silverPalaceArticle
+  silverPalaceArticle,
+  waruruBeaverArticle
 ];
 
 // Canonical JSON is the migration destination. A canonical article replaces the
