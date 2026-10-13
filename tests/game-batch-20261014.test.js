@@ -38,5 +38,5 @@ test('와르르비버는 공식 코드 0개와 제3자 현재 후보 11개를 �
   for(const code of expectedCodes)assert.match(html,new RegExp(code));
   assert.match(html,/범용 문자열처럼 보여도 삭제하지 않고 미확인 후보로 보존/);
   assert.match(html,/원문 최초 게시일은 정확히 확인되지 않아 수집일로 대체하지 않았습니다/);
-  assert.match(html,/공식 쿠폰 입력 메뉴를 확인하지 못했습니다/);
+  assert.match(html,/공식 쿠폰 코드 또는 공식 쿠폰 입력 안내는 확인되지 않았습니다/);
 });
