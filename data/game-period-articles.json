@@ -7628,9 +7628,9 @@
       {
         "code": "WELLDONE",
         "sourcePublishedAt": null,
-        "expiry": "10/11 08:59",
+        "expiry": "2026-10-10",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "종료 보고·과거 기록",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7638,16 +7638,26 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>1GamesRadar+·Reddit10/11 08:59WELLDONE</p>"
+        "evidenceHTML": "<p>1GamesRadar+·Reddit10/11 08:59WELLDONE</p><p>2026-10-14 재조사에서 GamesRadar+는 WELLDONE을 종료 목록으로 분류하고, MrGuider는 2026-10-10 23:59 UTC 종료를 기재했습니다. 기존 제3자 현재 후보 기록은 삭제하지 않고 2026년 이력으로 보존합니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 종료 코드로 확인했습니다.</p>",
+        "latestEvidence": "GamesRadar+와 MrGuider의 2026년 10월 목록에서 종료 상태와 2026-10-10 마감 보고를 확인했다. 과거에 현재 후보로 수집된 기록은 보존하지만 최신 목록에서는 제외한다.",
+        "periodYear": "2026"
       },
       {
         "code": "Kingshot888",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "expiry": null,
+        "latest": true,
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7662,16 +7672,25 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>2GamesRadar+미확인Kingshot888</p>"
+        "evidenceHTML": "<p>2GamesRadar+미확인Kingshot888</p><p>2026-10-14 재조사에서 여러 최신 목록이 Kingshot888을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>",
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다."
       },
       {
         "code": "VIP777",
         "sourcePublishedAt": null,
-        "expiry": "12/31 보고",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "expiry": null,
+        "latest": true,
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7686,9 +7705,18 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>3GamesRadar+12/31 보고VIP777</p>"
+        "evidenceHTML": "<p>3GamesRadar+12/31 보고VIP777</p><p>2026-10-14 재조사에서 여러 최신 목록이 VIP777을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>",
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다."
       },
       {
         "code": "AKeYD8gK8",
@@ -7748,10 +7776,10 @@
       },
       {
         "code": "KS1005",
-        "sourcePublishedAt": null,
-        "expiry": "10/8 만료 제보",
+        "sourcePublishedAt": "2026-10-05",
+        "expiry": "2026-10-08",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "종료 보고·2026년 기록",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7761,7 +7789,9 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>1Reddit·GamesRadar+10/8 만료 제보KS1005</p>"
+        "evidenceHTML": "<p>1Reddit·GamesRadar+10/8 만료 제보KS1005</p><p>2026-10-14 기준 최신 활성 목록에서는 제외되어 있으며 기존 2026-10-08 종료 보고를 우선해 2026년 이력으로 유지합니다.</p>",
+        "latestEvidence": "기존 2026-10-09 조사에서 2026-10-08 종료 보고가 있었고, 2026-10-14 재조사에서도 최신 활성 목록에 포함되지 않았다.",
+        "periodYear": "2026"
       },
       {
         "code": "EXPLORETHEWORLD",
@@ -10443,13 +10473,96 @@
           }
         ],
         "evidenceHTML": "<p>157과거 기록종료·미확인WEHIT1K</p>"
+      },
+      {
+        "code": "Hangul2026",
+        "sourcePublishedAt": "2026-10-09",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "r/KingShot에 2026-10-09 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었으나 GamesRadar+ 2026-10-13 갱신에서는 종료 목록으로 이동했다.",
+        "statusLabel": "최근 종료 보고·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Reddit r/KingShot · New Gift Code Hangul2026",
+            "url": "https://www.reddit.com/r/KingShot/comments/1x1grni/new_gift_code_hangul2026/",
+            "sourcePublishedAt": "2026-10-09",
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-09 커뮤니티에 Kingshot 리딤 링크와 함께 공유된 코드입니다. 2026-10-13 GamesRadar+ 갱신에서는 종료 목록으로 분류되어 최신에서 제외합니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "CHALLENGE26",
+        "sourcePublishedAt": "2026-10-12",
+        "expiry": "2026-10-16",
+        "latest": true,
+        "latestEvidence": "r/KingShot에 2026-10-12 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었고 GamesRadar+ 2026-10-13 갱신에서 2026-10-16 종료 예정 현재 코드로 수록됐다.",
+        "statusLabel": "현재 후보·10/16 종료 보고·실사용 미확인",
+        "sources": [
+          {
+            "name": "Reddit r/KingShot · New Gift Code CHALLENGE26",
+            "url": "https://www.reddit.com/r/KingShot/comments/1x3xt37/new_gift_code_challenge26/",
+            "sourcePublishedAt": "2026-10-12",
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-12 신규 코드 공유와 2026-10-13 최신 목록을 교차 확인했습니다. 2026-10-16 종료 예정 보고가 있어 우선 입력 대상이지만 실제 계정 성공은 별도 확인이 필요합니다.</p>"
+      },
+      {
+        "code": "IG200KS",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "2026-10-19",
+        "latest": true,
+        "latestEvidence": "GamesRadar+가 2026-10-13 새 Kingshot 코드로 추가했고 2026-10-19 종료 예정과 보상 구성을 함께 기재했다. KingShot Rewards 공개 채널에도 VALID 신규 코드로 노출됐다.",
+        "statusLabel": "최신 후보·10/19 종료 보고·실사용 미확인",
+        "sources": [
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "KingShot Rewards public channel mirror",
+            "url": "https://telemetr.io/es/channels/2890587581-ksrewards/posts",
+            "sourcePublishedAt": null,
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-13 새 코드로 확인된 최신 후보입니다. GamesRadar+는 2026-10-19 종료 예정과 1,000 Gems·자원·가속·스태미나·Mythic General Hero Shard 보상을 기재합니다. 실제 계정 사용 성공은 미확인입니다.</p>"
       }
     ],
     "featuredHTML": "<figure data-ncp-featured-image=\"kingshot\" style=\"margin:0 0 24px\" xmlns=\"http://www.w3.org/1999/xhtml\"><img src=\"https://play-lh.googleusercontent.com/cs59HOM5uSmSzgnmMyFpqYw9sMtQkYxMUTRZ1TSCZK6t6T-cjluQW_9krAcgeEozBYQWKl2DmUTeETdYtKhq=s0-br30\" alt=\"킹샷 Kingshot Google Play 공식 대표 이미지\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;height:auto;border-radius:14px\"/></figure>",
-    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"킹샷 쿠폰 요약\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\"><span>최근 입력 후보</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>추가 시도</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>163개</strong></div></div>",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"킹샷 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>현재 입력 후보</span><strong>4개</strong></div><div class=\"ncp-feed-stat\"><span>신규·최근 코드</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>166개</strong></div></div>",
     "guideHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>킹샷 쿠폰 입력 방법</h3><h3>안드로이드</h3><ol><li>게임 왼쪽 상단 프로필 선택</li><li>설정 → Gift Code 메뉴 선택</li><li>코드 복사·붙여넣기 후 Redeem 선택</li><li>게임 내 우편함에서 보상 확인</li></ol>\n<h3>아이폰(iOS)·웹</h3><ol><li><a href=\"https://ks-giftcode.centurygame.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Century Games 공식 Gift Code Center</a> 접속</li><li>게임 프로필에서 Player ID 복사·로그인</li><li>쿠폰 코드를 붙여넣고 확인</li><li>우편함에서 결과 확인</li></ol></section>",
     "archiveHTML": "\n\n<article xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\n<p>2026년 10월 9일 기준 <strong>킹샷(Kingshot) 쿠폰</strong> 정보를 국내외 공식 이벤트 기록, 게임 커뮤니티 및 공략 매체에서 교차 조사했습니다. 최근 시도 코드 3개, 추가 후보 3개, 만료 제보 및 과거 기록 157개를 분리했습니다.</p>\n<p><strong>먼저 입력할 코드:</strong> <code>WELLDONE</code>, <code>Kingshot888</code>, <code>VIP777</code>.<br/><code>WELLDONE</code>의 매체 안내 만료는 <strong>2026년 10월 11일 오전 8시 59분(KST)</strong>입니다. 개인별 수령 성공과 서버 적용 범위는 확인되지 않았습니다.</p>\n<div><a>최신 3개</a><a>추가 후보 3개</a><a>과거 기록 157개</a><a href=\"https://ks-giftcode.centurygame.com/\" rel=\"noopener noreferrer\">공식 쿠폰 입력</a></div>\n<section><h3>킹샷 쿠폰 2026년 10월 — 최근 입력 후보</h3><p>아래는 최신 매체의 이용 가능 목록에 수록된 후보입니다. 실제 계정 입력 성공을 의미하지 않습니다.</p>\n<div aria-label=\"킹샷 최근 쿠폰 3개\"><div><span>1</span><span>GamesRadar+·Reddit</span><span>10/11 08:59</span><code>WELLDONE</code><span></span></div>\n<div><span>2</span><span>GamesRadar+</span><span>미확인</span><code>Kingshot888</code><span></span></div>\n<div><span>3</span><span>GamesRadar+</span><span>12/31 보고</span><code>VIP777</code><span></span></div></div>\n<h3>보상 안내</h3><p><code>WELLDONE</code>은 GamesRadar+ 기준 보석 1,000개, 영웅 경험치, 빵·목재·돌·철, 일반 가속 아이템으로 안내됩니다. <code>Kingshot888</code>과 <code>VIP777</code>은 보석 200개, 스킬북·골드 키 등의 보상이 보고됐습니다. 지역·수령 조건에 따라 다를 수 있습니다.</p></section>\n<section><h3>추가 입력 시도 후보</h3><p>해외 매체의 코드 발견 기록이 있으나 일회성 크리에이터 코드나 출처별 유효 상태 충돌이 있습니다.</p>\n<div aria-label=\"킹샷 추가 후보 3개\"><div><span>1</span><span>Beebom</span><span>종료·미확인</span><code>AKeYD8gK8</code><span></span></div>\n<div><span>2</span><span>TOPUPlive</span><span>종료·미확인</span><code>7VAeANrV7</code><span></span></div>\n<div><span>3</span><span>MrGuider</span><span>종료·미확인</span><code>KSPRAWNING</code><span></span></div></div>\n<p>일부 크리에이터 코드는 입력 횟수·서버·계정 등 제한으로 다른 사용자에게는 적용되지 않을 수 있습니다.</p></section>\n<section><h3>과거 만료·미확인 쿠폰 기록</h3><p><code>KS1005</code>는 2026년 10월 8일 만료됐다는 사용자 제보가 있습니다. 아래 과거 기록은 장기 추적 데이터이며 <strong>현재 사용 가능 목록이 아닙니다.</strong> 개별 발급사 출처가 확인되지 않은 기록도 포함돼 있어 직접 입력 결과는 다를 수 있습니다.</p>\n<div><div>과거 및 만료 기록 157개 펼쳐보기 (복사 가능)</div><div aria-label=\"킹샷 과거 코드 기록 157개\"><div><span>1</span><span>Reddit·GamesRadar+</span><span>10/8 만료 제보</span><code>KS1005</code><span></span></div>\n<div><span>2</span><span>과거 기록</span><span>종료·미확인</span><code>EXPLORETHEWORLD</code><span></span></div>\n<div><span>3</span><span>과거 기록</span><span>종료·미확인</span><code>MIDAUTUMN26</code><span></span></div>\n<div><span>4</span><span>과거 기록</span><span>종료·미확인</span><code>JPHolidaySEP</code><span></span></div>\n<div><span>5</span><span>과거 기록</span><span>종료·미확인</span><code>KS0919</code><span></span></div>\n<div><span>6</span><span>과거 기록</span><span>종료·미확인</span><code>KS0909</code><span></span></div>\n<div><span>7</span><span>과거 기록</span><span>종료·미확인</span><code>KS0907</code><span></span></div>\n<div><span>8</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE0904</code><span></span></div>\n<div><span>9</span><span>과거 기록</span><span>종료·미확인</span><code>CHILLWEEKEND</code><span></span></div>\n<div><span>10</span><span>과거 기록</span><span>종료·미확인</span><code>FB2500KT</code><span></span></div>\n<div><span>11</span><span>과거 기록</span><span>종료·미확인</span><code>VIP0822</code><span></span></div>\n<div><span>12</span><span>과거 기록</span><span>종료·미확인</span><code>KS0822</code><span></span></div>\n<div><span>13</span><span>과거 기록</span><span>종료·미확인</span><code>JP26SUMMER</code><span></span></div>\n<div><span>14</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE08011</code><span></span></div>\n<div><span>15</span><span>과거 기록</span><span>종료·미확인</span><code>KS0810</code><span></span></div>\n<div><span>16</span><span>과거 기록</span><span>종료·미확인</span><code>HAPPYCATDAY</code><span></span></div>\n<div><span>17</span><span>과거 기록</span><span>종료·미확인</span><code>KS0803</code><span></span></div>\n<div><span>18</span><span>과거 기록</span><span>종료·미확인</span><code>JPJULSEA26KS</code><span></span></div>\n<div><span>19</span><span>과거 기록</span><span>종료·미확인</span><code>HAPPYEMOJIDAY</code><span></span></div>\n<div><span>20</span><span>과거 기록</span><span>종료·미확인</span><code>KS0715</code><span></span></div>\n<div><span>21</span><span>과거 기록</span><span>종료·미확인</span><code>KS0713</code><span></span></div>\n<div><span>22</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE0709</code><span></span></div>\n<div><span>23</span><span>과거 기록</span><span>종료·미확인</span><code>KS0709</code><span></span></div>\n<div><span>24</span><span>과거 기록</span><span>종료·미확인</span><code>KS0706</code><span></span></div>\n<div><span>25</span><span>과거 기록</span><span>종료·미확인</span><code>0706FORU</code><span></span></div>\n<div><span>26</span><span>과거 기록</span><span>종료·미확인</span><code>DC600KTHANKS</code><span></span></div>\n<div><span>27</span><span>과거 기록</span><span>종료·미확인</span><code>BESTDAD0621</code><span></span></div>\n<div><span>28</span><span>과거 기록</span><span>종료·미확인</span><code>PICNIC2026</code><span></span></div>\n<div><span>29</span><span>과거 기록</span><span>종료·미확인</span><code>AJISAI26JP</code><span></span></div>\n<div><span>30</span><span>과거 기록</span><span>종료·미확인</span><code>KS0615</code><span></span></div>\n<div><span>31</span><span>과거 기록</span><span>종료·미확인</span><code>PROTECTNATURE</code><span></span></div>\n<div><span>32</span><span>과거 기록</span><span>종료·미확인</span><code>N4rG26aVj</code><span></span></div>\n<div><span>33</span><span>과거 기록</span><span>종료·미확인</span><code>KS0603</code><span></span></div>\n<div><span>34</span><span>과거 기록</span><span>종료·미확인</span><code>7VAEDbAV7</code><span></span></div>\n<div><span>35</span><span>과거 기록</span><span>종료·미확인</span><code>CHILDFUN2026</code><span></span></div>\n<div><span>36</span><span>과거 기록</span><span>종료·미확인</span><code>EIDALADHA0527</code><span></span></div>\n<div><span>37</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE27</code><span></span></div>\n<div><span>38</span><span>과거 기록</span><span>종료·미확인</span><code>KS0524</code><span></span></div>\n<div><span>39</span><span>과거 기록</span><span>종료·미확인</span><code>rK9e6vKXu</code><span></span></div>\n<div><span>40</span><span>과거 기록</span><span>종료·미확인</span><code>Bw8NanVq8</code><span></span></div>\n<div><span>41</span><span>과거 기록</span><span>종료·미확인</span><code>X43Q2EKBq</code><span></span></div>\n<div><span>42</span><span>과거 기록</span><span>종료·미확인</span><code>n4xeR7VGd</code><span></span></div>\n<div><span>43</span><span>과거 기록</span><span>종료·미확인</span><code>eK5B3kw7t</code><span></span></div>\n<div><span>44</span><span>과거 기록</span><span>종료·미확인</span><code>847EadKex</code><span></span></div>\n<div><span>45</span><span>과거 기록</span><span>종료·미확인</span><code>KS0518</code><span></span></div>\n<div><span>46</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE516</code><span></span></div>\n<div><span>47</span><span>과거 기록</span><span>종료·미확인</span><code>LOVEFAMILY</code><span></span></div>\n<div><span>48</span><span>과거 기록</span><span>종료·미확인</span><code>BESTMOM2026</code><span></span></div>\n<div><span>49</span><span>과거 기록</span><span>종료·미확인</span><code>Childrenday0505</code><span></span></div>\n<div><span>50</span><span>과거 기록</span><span>종료·미확인</span><code>WORKERPOWER</code><span></span></div>\n<div><span>51</span><span>과거 기록</span><span>종료·미확인</span><code>KSGW26JP</code><span></span></div>\n<div><span>52</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE9</code><span></span></div>\n<div><span>53</span><span>과거 기록</span><span>종료·미확인</span><code>KS0426</code><span></span></div>\n<div><span>54</span><span>과거 기록</span><span>종료·미확인</span><code>0425FORU</code><span></span></div>\n<div><span>55</span><span>과거 기록</span><span>종료·미확인</span><code>KS0425</code><span></span></div>\n<div><span>56</span><span>과거 기록</span><span>종료·미확인</span><code>LOVETHEPLANET</code><span></span></div>\n<div><span>57</span><span>과거 기록</span><span>종료·미확인</span><code>KS0420</code><span></span></div>\n<div><span>58</span><span>과거 기록</span><span>종료·미확인</span><code>WEEKENDPLAN</code><span></span></div>\n<div><span>59</span><span>과거 기록</span><span>종료·미확인</span><code>KS0408</code><span></span></div>\n<div><span>60</span><span>과거 기록</span><span>종료·미확인</span><code>BUNNY405</code><span></span></div>\n<div><span>61</span><span>과거 기록</span><span>종료·미확인</span><code>NOFOOLIN</code><span></span></div>\n<div><span>62</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE04</code><span></span></div>\n<div><span>63</span><span>과거 기록</span><span>종료·미확인</span><code>KS0330</code><span></span></div>\n<div><span>64</span><span>과거 기록</span><span>종료·미확인</span><code>FIREFRIDAY</code><span></span></div>\n<div><span>65</span><span>과거 기록</span><span>종료·미확인</span><code>syunnbun26jp</code><span></span></div>\n<div><span>66</span><span>과거 기록</span><span>종료·미확인</span><code>EIDMUB2026</code><span></span></div>\n<div><span>67</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTHBD</code><span></span></div>\n<div><span>68</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE</code><span></span></div>\n<div><span>69</span><span>과거 기록</span><span>종료·미확인</span><code>KS0315</code><span></span></div>\n<div><span>70</span><span>과거 기록</span><span>종료·미확인</span><code>DC500KWEMADEIT</code><span></span></div>\n<div><span>71</span><span>과거 기록</span><span>종료·미확인</span><code>CELEBRATEHER</code><span></span></div>\n<div><span>72</span><span>과거 기록</span><span>종료·미확인</span><code>THUR0305</code><span></span></div>\n<div><span>73</span><span>과거 기록</span><span>종료·미확인</span><code>0302FORU</code><span></span></div>\n<div><span>74</span><span>과거 기록</span><span>종료·미확인</span><code>KS0302</code><span></span></div>\n<div><span>75</span><span>과거 기록</span><span>종료·미확인</span><code>ITSFRIDAY227</code><span></span></div>\n<div><span>76</span><span>과거 기록</span><span>종료·미확인</span><code>KS0225</code><span></span></div>\n<div><span>77</span><span>과거 기록</span><span>종료·미확인</span><code>RAMADAN</code><span></span></div>\n<div><span>78</span><span>과거 기록</span><span>종료·미확인</span><code>SPRINGFES217</code><span></span></div>\n<div><span>79</span><span>과거 기록</span><span>종료·미확인</span><code>LOVEKS2026</code><span></span></div>\n<div><span>80</span><span>과거 기록</span><span>종료·미확인</span><code>KS260213</code><span></span></div>\n<div><span>81</span><span>과거 기록</span><span>종료·미확인</span><code>THANKSJP26</code><span></span></div>\n<div><span>82</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSTORE210</code><span></span></div>\n<div><span>83</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFBOOST26</code><span></span></div>\n<div><span>84</span><span>과거 기록</span><span>종료·미확인</span><code>KS26TGS</code><span></span></div>\n<div><span>85</span><span>과거 기록</span><span>종료·미확인</span><code>TACODE0127</code><span></span></div>\n<div><span>86</span><span>과거 기록</span><span>종료·미확인</span><code>WEEKENDJOY</code><span></span></div>\n<div><span>87</span><span>과거 기록</span><span>종료·미확인</span><code>SAYCHEESE26</code><span></span></div>\n<div><span>88</span><span>과거 기록</span><span>종료·미확인</span><code>KINGDOMSTAR</code><span></span></div>\n<div><span>89</span><span>과거 기록</span><span>종료·미확인</span><code>ENERGY0112</code><span></span></div>\n<div><span>90</span><span>과거 기록</span><span>종료·미확인</span><code>jpseijin26</code><span></span></div>\n<div><span>91</span><span>과거 기록</span><span>종료·미확인</span><code>THURMADNESS</code><span></span></div>\n<div><span>92</span><span>과거 기록</span><span>종료·미확인</span><code>SEEYOUIN2026</code><span></span></div>\n<div><span>93</span><span>과거 기록</span><span>종료·미확인</span><code>JPX27KFOLLOW</code><span></span></div>\n<div><span>94</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTXMAS</code><span></span></div>\n<div><span>95</span><span>과거 기록</span><span>종료·미확인</span><code>THEKINGSTORE</code><span></span></div>\n<div><span>96</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOT13M</code><span></span></div>\n<div><span>97</span><span>과거 기록</span><span>종료·미확인</span><code>STORELAUNCH</code><span></span></div>\n<div><span>98</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFISBACK</code><span></span></div>\n<div><span>99</span><span>과거 기록</span><span>종료·미확인</span><code>casualgame25</code><span></span></div>\n<div><span>100</span><span>과거 기록</span><span>종료·미확인</span><code>TOGOVERNOR</code><span></span></div>\n<div><span>101</span><span>과거 기록</span><span>종료·미확인</span><code>HELLOWORLD25</code><span></span></div>\n<div><span>102</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC400K</code><span></span></div>\n<div><span>103</span><span>과거 기록</span><span>종료·미확인</span><code>pepero</code><span></span></div>\n<div><span>104</span><span>과거 기록</span><span>종료·미확인</span><code>TGIF1107</code><span></span></div>\n<div><span>105</span><span>과거 기록</span><span>종료·미확인</span><code>JackKaoAndKS</code><span></span></div>\n<div><span>106</span><span>과거 기록</span><span>종료·미확인</span><code>HALLOWEEN25</code><span></span></div>\n<div><span>107</span><span>과거 기록</span><span>종료·미확인</span><code>TRICKORTREAT</code><span></span></div>\n<div><span>108</span><span>과거 기록</span><span>종료·미확인</span><code>KS2025award</code><span></span></div>\n<div><span>109</span><span>과거 기록</span><span>종료·미확인</span><code>TGIF1016</code><span></span></div>\n<div><span>110</span><span>과거 기록</span><span>종료·미확인</span><code>BONAPPETIT</code><span></span></div>\n<div><span>111</span><span>과거 기록</span><span>종료·미확인</span><code>Hangul2025</code><span></span></div>\n<div><span>112</span><span>과거 기록</span><span>종료·미확인</span><code>Gaecheonjeol</code><span></span></div>\n<div><span>113</span><span>과거 기록</span><span>종료·미확인</span><code>tgs2025ks1st</code><span></span></div>\n<div><span>114</span><span>과거 기록</span><span>종료·미확인</span><code>COFFEEPOWER</code><span></span></div>\n<div><span>115</span><span>과거 기록</span><span>종료·미확인</span><code>1INAMILLION</code><span></span></div>\n<div><span>116</span><span>과거 기록</span><span>종료·미확인</span><code>GIVEUAGIFT</code><span></span></div>\n<div><span>117</span><span>과거 기록</span><span>종료·미확인</span><code>SORRYIMLATE</code><span></span></div>\n<div><span>118</span><span>과거 기록</span><span>종료·미확인</span><code>LETSCLEANUP</code><span></span></div>\n<div><span>119</span><span>과거 기록</span><span>종료·미확인</span><code>Y4jx5z6Ke</code><span></span></div>\n<div><span>120</span><span>과거 기록</span><span>종료·미확인</span><code>54N25Ny4q</code><span></span></div>\n<div><span>121</span><span>과거 기록</span><span>종료·미확인</span><code>G4E8Xzzwe</code><span></span></div>\n<div><span>122</span><span>과거 기록</span><span>종료·미확인</span><code>9VqM2mMVq</code><span></span></div>\n<div><span>123</span><span>과거 기록</span><span>종료·미확인</span><code>dwmjyky44</code><span></span></div>\n<div><span>124</span><span>과거 기록</span><span>종료·미확인</span><code>847QgrmKx</code><span></span></div>\n<div><span>125</span><span>과거 기록</span><span>종료·미확인</span><code>X43Gxb246</code><span></span></div>\n<div><span>126</span><span>과거 기록</span><span>종료·미확인</span><code>v4njPbB4a</code><span></span></div>\n<div><span>127</span><span>과거 기록</span><span>종료·미확인</span><code>nwkJ6AXK6</code><span></span></div>\n<div><span>128</span><span>과거 기록</span><span>종료·미확인</span><code>N4r9ezWwf</code><span></span></div>\n<div><span>129</span><span>과거 기록</span><span>종료·미확인</span><code>ITISFRIDAY</code><span></span></div>\n<div><span>130</span><span>과거 기록</span><span>종료·미확인</span><code>DAYANDNIGHT</code><span></span></div>\n<div><span>131</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFTIME</code><span></span></div>\n<div><span>132</span><span>과거 기록</span><span>종료·미확인</span><code>THANKUOLIVE</code><span></span></div>\n<div><span>133</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC300K</code><span></span></div>\n<div><span>134</span><span>과거 기록</span><span>종료·미확인</span><code>looking4code</code><span></span></div>\n<div><span>135</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT777</code><span></span></div>\n<div><span>136</span><span>과거 기록</span><span>종료·미확인</span><code>FRIENDSHIP25</code><span></span></div>\n<div><span>137</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTGIF</code><span></span></div>\n<div><span>138</span><span>과거 기록</span><span>종료·미확인</span><code>COURAGE</code><span></span></div>\n<div><span>139</span><span>과거 기록</span><span>종료·미확인</span><code>CHOCOLATE25</code><span></span></div>\n<div><span>140</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC200K</code><span></span></div>\n<div><span>141</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB500K</code><span></span></div>\n<div><span>142</span><span>과거 기록</span><span>종료·미확인</span><code>HIDAD25</code><span></span></div>\n<div><span>143</span><span>과거 기록</span><span>종료·미확인</span><code>UFOUNDIT</code><span></span></div>\n<div><span>144</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT400</code><span></span></div>\n<div><span>145</span><span>과거 기록</span><span>종료·미확인</span><code>CHILDHOOD25</code><span></span></div>\n<div><span>146</span><span>과거 기록</span><span>종료·미확인</span><code>ACODEBURGER</code><span></span></div>\n<div><span>147</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB300K</code><span></span></div>\n<div><span>148</span><span>과거 기록</span><span>종료·미확인</span><code>FAMILY25</code><span></span></div>\n<div><span>149</span><span>과거 기록</span><span>종료·미확인</span><code>THXMOM</code><span></span></div>\n<div><span>150</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC100K</code><span></span></div>\n<div><span>151</span><span>과거 기록</span><span>종료·미확인</span><code>KINGDOM200</code><span></span></div>\n<div><span>152</span><span>과거 기록</span><span>종료·미확인</span><code>WORKERS2025</code><span></span></div>\n<div><span>153</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB200K</code><span></span></div>\n<div><span>154</span><span>과거 기록</span><span>종료·미확인</span><code>EASTER2025</code><span></span></div>\n<div><span>155</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB150K</code><span></span></div>\n<div><span>156</span><span>과거 기록</span><span>종료·미확인</span><code>EASTER</code><span></span></div>\n<div><span>157</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT1K</code><span></span></div></div></div></section>\n<section><h3>킹샷 쿠폰 입력 방법</h3><h3>안드로이드</h3><ol><li>게임 왼쪽 상단 프로필 선택</li><li>설정 → Gift Code 메뉴 선택</li><li>코드 복사·붙여넣기 후 Redeem 선택</li><li>게임 내 우편함에서 보상 확인</li></ol>\n<h3>아이폰(iOS)·웹</h3><ol><li><a href=\"https://ks-giftcode.centurygame.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Century Games 공식 Gift Code Center</a> 접속</li><li>게임 프로필에서 Player ID 복사·로그인</li><li>쿠폰 코드를 붙여넣고 확인</li><li>우편함에서 결과 확인</li></ol></section>\n<section><h3>쿠폰이 입력되지 않는 이유</h3><ul><li>코드 대소문자·영문 숫자·앞뒤 공백 오류</li><li>이미 수령한 계정이거나 이벤트 한도 초과</li><li>기간 만료 또는 서버·국가별 제한</li><li>매체의 게시 당시 정보와 현재 사용 조건 차이</li></ul></section>\n<section><h3>공식·해외 정보 출처</h3><ul><li><a href=\"https://www.centurygames.com/games/kingshot/\" rel=\"noopener noreferrer\">Century Games — 킹샷</a></li><li><a href=\"https://ks-giftcode.centurygame.com/\" rel=\"noopener noreferrer\">공식 쿠폰 입력 페이지</a></li><li><a href=\"https://www.gamesradar.com/games/strategy/kingshot-codes-gift/\" rel=\"noopener noreferrer\">GamesRadar+ 10월 쿠폰·보상</a></li><li><a href=\"https://www.mrguider.org/codes/kingshot-codes/\" rel=\"noopener noreferrer\">MrGuider 10월 목록</a></li><li><a href=\"https://beebom.com/kingshot-codes/\" rel=\"noopener noreferrer\">Beebom 코드 목록</a></li><li><a href=\"https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html\" rel=\"noopener noreferrer\">TOPUPlive 한국어판</a></li><li><a href=\"https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/\" rel=\"noopener noreferrer\">Reddit — KS1005 만료 제보</a></li><li><a href=\"https://tokyogamestation.com/kingshot_giftcode/\" rel=\"noopener noreferrer\">일본 공식 SNS 기반 기록</a></li><li><a href=\"https://kingshot.net/gift-codes\" rel=\"noopener noreferrer\">킹샷 팬 운영 과거 코드 기록</a></li></ul></section>\n<section><h3>관련 게임 쿠폰</h3><p><a href=\"https://lsifl.blogspot.com/2026/10/2026-10_0416354315.html\">화이트아웃 서바이벌</a> · <a href=\"https://lsifl.blogspot.com/2026/10/2026-10_01992004057.html\">메이플 키우기</a></p></section>\n</article>",
-    "noticeHTML": "<p>기존 원고의 수집 근거와 사용 조건을 보존했습니다. 원문 게시일이 없는 기록은 미확인으로 표시합니다.</p>"
+    "noticeHTML": "<p>2026-10-14 전세계 공개 자료를 다시 확인했습니다. 현재 우선 입력 후보는 <strong>IG200KS</strong>, <strong>CHALLENGE26</strong>, <strong>Kingshot888</strong>, <strong>VIP777</strong>입니다. <strong>Hangul2026</strong>, <strong>WELLDONE</strong>, <strong>KS1005</strong>는 최신 종료 보고를 반영해 과거 기록으로 분리했습니다. 공식 최초 발급 원문과 개별 계정 성공이 확인되지 않은 항목은 제3자·커뮤니티 근거 수준으로 표시합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
   },
   {
     "articleKey": "fc-mobile-codes-202610",
