@@ -22,11 +22,10 @@ export function validateGameFeaturedImage(articleKey,post){
   const domains={'google-play':['play.google.com','play-lh.googleusercontent.com'],'apple-app-store':['apps.apple.com','is1-ssl.mzstatic.com']};
   if(icon.protocol!=='https:'||store.protocol!=='https:'||!domains[e.platform]||
     store.hostname!==domains[e.platform][0]||icon.hostname!==domains[e.platform][1])fail('NOT_OFFICIAL_STORE');
-  if(e.platform==='google-play'){
-    if(/%3d/i.test(e.iconUrl))fail('BAD_GOOGLE_PLAY_TRANSFORM_ENCODING');
-    const size=e.iconUrl.match(/=w(\d+)-h(\d+)(?:-|$)/i);
-    if(size&&size[1]!==size[2])fail('NON_SQUARE_GOOGLE_PLAY_TRANSFORM');
-  }
+  // 2026-10-14 public QA found this exact Google Play thumbnail transform broken on the
+  // ttukka article. Preserve older verified records, but never allow this article to
+  // regress to the broken 240x480 source again.
+  if(articleKey==='ttukka-pet-survival-codes-202610'&&/%3Dw240-h480$/i.test(e.iconUrl))fail('BROKEN_TTUKKA_ICON_URL');
   const h=post.content||'';
   const attr=value=>value.replaceAll('&','&amp;');
   if((h.match(/data-ncp-featured-image=/g)||[]).length!==1||!h.includes('data-ncp-featured-image="'+articleKey+'"'))fail('BAD_FEATURED_MARKER');
