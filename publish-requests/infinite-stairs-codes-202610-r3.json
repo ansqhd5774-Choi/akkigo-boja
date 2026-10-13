@@ -1,6 +1,7 @@
 {
   "articleKey": "infinite-stairs-codes-202610",
-  "reason": "Update existing post only after 2026-10-14 recheck: preserve 49 historical records, keep current verified code count at 0, add the 2026-10-11 SOURCE_TEXT_ONLY reference without inventing a coupon row, and keep the existing postId/URL.",
-  "requestedAt": "2026-10-14T01:26:00+09:00",
-  "approved": true
+  "reason": "Worldwide multilingual recheck: preserve all 49 existing records, keep STAIRS/INFINITY/UPDATE/GIFT as UNVERIFIED with the 2026-10-13 page update date separate from original publication date, add the official 2026 Team K League Run participant-issued skin coupon benefit separately from public codes, and update only the existing postId/URL.",
+  "requestedAt": "2026-10-14T01:45:00+09:00",
+  "approved": true,
+  "existingOnly": true
 }
