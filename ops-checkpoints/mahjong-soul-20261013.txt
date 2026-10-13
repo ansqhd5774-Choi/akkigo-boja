@@ -1,0 +1,5 @@
+Mahjong Soul refresh checkpoint
+source_sha=3457e08d1846d07079d01ce7d4144b987c7cbcf5
+article_key=mahjong-soul-kr-codes-202610
+checked_at=2026-10-13
+purpose=trigger exact-SHA Verify after GitHub Actions staged source refresh
