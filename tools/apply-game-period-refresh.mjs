@@ -19,7 +19,7 @@ const mergeSource=(record,source)=>{
   if(!record.sources.some(s=>sourceKey(s)===sourceKey(source)))record.sources.push(source);
 };
 const RECORD_SET_KEYS=new Set(['sourcePublishedAt','expiry','latest','latestEvidence','statusLabel']);
-const SOURCE_SET_KEYS=new Set(['name','sourcePublishedAt','updatedAt','checkedAt','referenceType']);
+const SOURCE_SET_KEYS=new Set(['url','name','sourcePublishedAt','updatedAt','checkedAt','referenceType']);
 const validBootstrapArticle=(article,key)=>Boolean(article&&article.articleKey===key&&article.approvedForPublish===true&&article.post&&article.source?.gamePeriodModel?.articleKey===key&&Array.isArray(article.source.gamePeriodModel.records));
 
 let legacyArticleIndexPromise;
