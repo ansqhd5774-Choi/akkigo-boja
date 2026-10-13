@@ -31,21 +31,21 @@ test('킹샷 supplemental article과 공개 HTML이 일치한다',()=>{
   assert.deepEqual(article.post.labels,['게임','킹샷']);
   const html=readFileSync(new URL('../drafts/kingshot-codes-202610.html',import.meta.url),'utf8').trim();
   assert.equal(article.post.content,html);
-  for (const code of ['KS1005','WELLDONE','Kingshot888','VIP777']) {
+  for (const code of ['KS1005','WELLDONE','Kingshot888','VIP777','Hangul2026','CHALLENGE26','IG200KS']) {
     assert.match(html,new RegExp(code));
   }
   assert.match(html,/2026년 10월 8일 만료/);
   assert.match(html,/2026년 10월 11일 오전 8시 59분/);
   assert.match(html,/ks-giftcode\.centurygame\.com/);
   const codes=[...html.matchAll(/data-ncp-copy="([^"]+)"/g)].map(m=>m[1]);
-  assert.equal(codes.length,163);
-  assert.equal(new Set(codes).size,163);
+  assert.equal(codes.length,166);
+  assert.equal(new Set(codes).size,166);
   assertPeriodHTML(html);
   assert.equal(article.post.title,'킹샷');
   assert.equal((html.match(/data-ncp-featured-image="kingshot"/g)||[]).length,1);
   assert.match(html,/<!--more-->/);
   const preview=html.slice(0,html.indexOf('<!--more-->'));
-  for (const code of ['KS1005','WELLDONE','Kingshot888','VIP777']) assert.equal(preview.includes(code),false);
+  for (const code of ['KS1005','WELLDONE','Kingshot888','VIP777','Hangul2026','CHALLENGE26','IG200KS']) assert.equal(preview.includes(code),false);
   assert.equal(preview.includes('<script'),false);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태/);
 });
