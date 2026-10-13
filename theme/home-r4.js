@@ -29,6 +29,7 @@
     if(src&&new URL(src,location.href).protocol==='https:'){
       const image=document.createElement('img');image.className='ncp-r4-cover';image.alt=name;image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';
       const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');
+      if(/^lh[0-9]+\.googleusercontent\.com$/.test(icon.hostname))icon.pathname=icon.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
       if(icon.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(icon.pathname))icon.pathname=icon.pathname.replace(/\.png$/,'.webp');
       if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/360x360bb.jpg');
       if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/1024x1024wd\.png$/, '/360x360wd.jpg').replace(/\/1920x1080ia-80\.png$/, '/360x360ia-80.jpg');
