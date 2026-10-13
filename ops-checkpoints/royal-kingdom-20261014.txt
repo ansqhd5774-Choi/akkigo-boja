@@ -1,0 +1,16 @@
+ROYAL_KINGDOM_REFRESH_20261014
+articleKey=royal-kingdom-codes-202610
+stagedSourceSha=366f1962648986d2a377cda677ab704f203ebe32
+existingPostId=2613227497112154332
+existingUrl=https://lsifl.blogspot.com/2026/10/blog-post_741.html
+checkedAt=2026-10-14
+preservedBefore=128
+addedThirdPartyCandidates=18
+expectedAfter=146
+officialCurrentVerifiedCodes=0
+linegamesCurrentClaims=16
+linegamesUpdatedAt=2026-10-11
+digwowNewCandidates=2
+digwowUpdatedAt=2026-09-30
+sameNameIdentityExclusions=LDPlayer,Teknoistan
+publicationMode=existingOnly PATCH
