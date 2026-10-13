@@ -1,0 +1,50 @@
+name: Stage Zombie Tower Refresh
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - data/zombie-tower-refresh-20261013.json
+      - tools/stage-zombie-tower-refresh.mjs
+      - tests/zombie-tower-refresh.test.js
+      - .github/workflows/stage-zombie-tower-refresh.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+concurrency:
+  group: stage-zombie-tower-refresh
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Apply 2026-10-13 research to source-generated article
+        run: node tools/stage-zombie-tower-refresh.mjs
+      - name: Validate target article invariants
+        run: |
+          node --input-type=module -e "import {zombieTowerArticle as x} from './src/game-batch-20261012-g.js'; import {currentArticleCatalog} from './src/article-catalog.js'; import {validateGamePeriodArticle} from './src/game-period-article.js'; if(!x)throw Error('ZOMBIE_TOWER_ARTICLE_MISSING'); if(currentArticleCatalog.find(a=>a.articleKey===x.articleKey)!==x)throw Error('ZOMBIE_TOWER_CATALOG_MISMATCH'); validateGamePeriodArticle(x); if(x.source.checkedAt!=='2026-10-13')throw Error('ZOMBIE_TOWER_CHECKED_AT_DRIFT'); if(x.source.gamePeriodModel.records.length!==0)throw Error('ZOMBIE_TOWER_FALSE_CODE_COUNT'); if(!x.post.content.includes('zombie-tower-20261013'))throw Error('ZOMBIE_TOWER_REFRESH_EVIDENCE_MISSING'); console.log('ZOMBIE_TOWER_REFRESH_INVARIANTS_PASS');"
+      - name: Run Zombie Tower refresh regression tests
+        run: node --test tests/zombie-tower-refresh.test.js tests/game-batch-20261012-g.test.js
+      - name: Regenerate checked-in Blogger theme source snapshots
+        run: |
+          node tools/build-theme.mjs
+          cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+      - name: Commit refreshed source and generated outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "418982+github-actions[bot]@users.noreply.github.com"
+          git add src/game-batch-20261012-g.js akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if [ -f drafts/zombie-tower-codes-202610.html ]; then git add drafts/zombie-tower-codes-202610.html; fi
+          if [ -f drafts/zombie-tower-codes-202610.json ]; then git add drafts/zombie-tower-codes-202610.json; fi
+          if git diff --cached --quiet; then echo "ZOMBIE_TOWER_REFRESH_ALREADY_STAGED"; exit 0; fi
+          git commit -m "refresh(zombie-tower): recheck Pi Game coupons and identity"
+          git push origin HEAD:codex/blogger-worker-r1
