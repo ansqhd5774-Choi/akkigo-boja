@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: stage-game-period-refresh
@@ -24,6 +23,8 @@ jobs:
   stage:
     if: github.event.repository.private == false && github.repository == 'ansqhd5774-Choi/akkigo-boja'
     runs-on: ubuntu-24.04
+    outputs:
+      generated_sha: ${{ steps.generated.outputs.generated_sha }}
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -60,10 +61,18 @@ jobs:
           generated_sha="$(git rev-parse HEAD)"
           echo "generated_sha=$generated_sha" >> "$GITHUB_OUTPUT"
           echo "GAME_PERIOD_REFRESH_GENERATED_SHA $generated_sha"
-      - name: Dispatch one final Verify for generated source
-        if: steps.generated.outputs.generated_sha != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh workflow run verify.yml --repo "$GITHUB_REPOSITORY" --ref codex/blogger-worker-r1
-          echo "GAME_PERIOD_REFRESH_FINAL_VERIFY_DISPATCHED ${{ steps.generated.outputs.generated_sha }}"
+
+  verify-generated:
+    needs: stage
+    if: needs.stage.outputs.generated_sha != ''
+    uses: ./.github/workflows/verify.yml
+    with:
+      source_sha: ${{ needs.stage.outputs.generated_sha }}
+
+  deploy-generated:
+    needs: [stage, verify-generated]
+    if: needs.stage.outputs.generated_sha != ''
+    uses: ./.github/workflows/deploy.yml
+    with:
+      source_sha: ${{ needs.stage.outputs.generated_sha }}
+    secrets: inherit
