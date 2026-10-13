@@ -1,0 +1,49 @@
+name: Stage Mahjong Soul Refresh
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - tools/stage-mahjong-soul-refresh.mjs
+      - tests/mahjong-soul-refresh.test.js
+      - .github/workflows/stage-mahjong-soul-refresh.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+concurrency:
+  group: stage-mahjong-soul-refresh
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Apply 2026-10-13 research to source-generated article
+        run: node tools/stage-mahjong-soul-refresh.mjs
+      - name: Validate target article invariants
+        run: |
+          node --input-type=module -e "import {mahjongSoulKrArticle as x} from './src/game-batch-20261012-h.js'; import {currentArticleCatalog} from './src/article-catalog.js'; import {validateGamePeriodArticle} from './src/game-period-article.js'; if(!x)throw Error('MAHJONG_SOUL_ARTICLE_MISSING'); if(currentArticleCatalog.find(a=>a.articleKey===x.articleKey)!==x)throw Error('MAHJONG_SOUL_CATALOG_MISMATCH'); validateGamePeriodArticle(x); const m=x.source.gamePeriodModel; if(m.records.length!==6)throw Error('MAHJONG_SOUL_RECORD_COUNT_DRIFT_'+m.records.length); if(x.source.checkedAt!=='2026-10-13')throw Error('MAHJONG_SOUL_CHECKED_AT_DRIFT'); const latest=m.records.filter(r=>r.latest).map(r=>r.code).sort().join(','); if(latest!==['HAPPYANNIV2026','WKJZSH7MA5AM'].sort().join(','))throw Error('MAHJONG_SOUL_LATEST_DRIFT_'+latest); const sao=m.records.find(r=>r.code==='WKJZSH7MA5AM'); if(sao?.sourcePublishedAt!=='2026-04-20')throw Error('MAHJONG_SOUL_SOURCE_DATE_DRIFT'); const z=m.records.find(r=>r.code==='RXDPSAKMA4A3'); if(z?.latest!==false||z?.expiry!=='2026-06-15 19:00 UTC-7')throw Error('MAHJONG_SOUL_EXPIRED_CONFLICT_DRIFT'); if((x.source.benefits||[]).length!==1)throw Error('MAHJONG_SOUL_BENEFIT_COUNT_DRIFT'); if(!x.post.content.includes('mahjong-soul-20261013'))throw Error('MAHJONG_SOUL_REFRESH_EVIDENCE_MISSING'); console.log('MAHJONG_SOUL_REFRESH_INVARIANTS_PASS');"
+      - name: Run Mahjong Soul refresh regression tests
+        run: node --test tests/mahjong-soul-refresh.test.js tests/game-batch-20261012-h.test.js
+      - name: Regenerate checked-in Blogger theme source snapshots
+        run: |
+          node tools/build-theme.mjs
+          cp akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+      - name: Commit refreshed source and generated outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "418982+github-actions[bot]@users.noreply.github.com"
+          git add src/game-batch-20261012-h.js akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if [ -f drafts/mahjong-soul-kr-codes-202610.html ]; then git add drafts/mahjong-soul-kr-codes-202610.html; fi
+          if [ -f drafts/mahjong-soul-kr-codes-202610.json ]; then git add drafts/mahjong-soul-kr-codes-202610.json; fi
+          if git diff --cached --quiet; then echo "MAHJONG_SOUL_REFRESH_ALREADY_STAGED"; exit 0; fi
+          git commit -m "refresh(mahjong-soul): correct source dates and conflict status"
+          git push origin HEAD:codex/blogger-worker-r1
