@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
   stage:
+    if: github.event.repository.private == false && github.repository == 'ansqhd5774-Choi/akkigo-boja'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7.0.1
@@ -45,7 +46,7 @@ jobs:
           git add data/game-period-articles.json data/articles.json drafts/infinite-stairs-global-research-20261009.json drafts/infinite-stairs-codes-202610.json drafts/infinite-stairs-codes-202610.html akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
           if git diff --cached --quiet; then
             echo "INFINITE_STAIRS_NO_DIFF"
-            exit 1
+            exit 0
           fi
           git commit -m "refresh(infinite-stairs): recheck coupons on 2026-10-14"
           git push origin HEAD:codex/blogger-worker-r1
