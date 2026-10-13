@@ -17,7 +17,7 @@
     heartLoad.then(()=>{count.textContent=heartCounts.has(brand)?String(heartCounts.get(brand)):'—';button.title=heartsReady?'하트 누르기':'집계 불러오기 실패';update();});
   }
   try{
-    const entries=window.ncpFeed?await window.ncpFeed(category):await fetch('/feeds/posts/default/-/'+encodeURIComponent(category)+'?alt=json&max-results=150',{signal:AbortSignal.timeout(12000)}).then(r=>{if(!r.ok)throw Error('FEED_HTTP');return r.json();}).then(data=>data.feed.entry||[]);
+    const entries=await (window.ncpCardFeed||window.ncpFeed)(category);
     const seen=new Set();
     for(const entry of entries){
       const identity=category==='게임'?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
@@ -35,6 +35,10 @@
       if(src&&new URL(src,location.href).protocol==='https:'){
         const iconUrl=new URL(src,location.href);
         if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '=w240-h240-rw');
+        if(/^lh[0-9]+\.googleusercontent\.com$/.test(iconUrl.hostname))iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
+        if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/320x320bb.jpg');
+        if(iconUrl.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(iconUrl.pathname))iconUrl.pathname=iconUrl.pathname.replace(/\.png$/,'.webp');
+        if(grid.children.length<2){image.loading='eager';image.fetchPriority='high';}
         image.src=iconUrl.href;
         image.addEventListener('error',()=>{
           const fallback=entry.media$thumbnail?.url;

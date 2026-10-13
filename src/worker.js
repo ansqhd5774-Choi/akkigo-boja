@@ -1,4 +1,5 @@
 import {gameHearts} from './game-hearts.js';
+import {cardFeed} from './card-feed.js';
 import {couponCatalog} from './coupon-lifecycle.js';
 import coupons from '../data/coupons.json' with { type: 'json' };
 import {currentArticleCatalog} from './article-catalog.js';
@@ -15,6 +16,7 @@ export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
     const path = requestUrl.pathname.length>1 ? requestUrl.pathname.replace(/\/+$/,'') : requestUrl.pathname;
+    if(path==='/public/card-feed'&&request.method==='GET')return cardFeed(request);
     if(path==='/games/hearts'){try{return await gameHearts(request,env);}catch{return Response.json({error:'HEART_STORAGE_FAILED'},{status:503,headers:{'Access-Control-Allow-Origin':'https://lsifl.blogspot.com'}});}}
     if (path === '/coupons/catalog' && request.method === 'GET') {
       return Response.json(couponCatalog(coupons),{headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://lsifl.blogspot.com'}});
