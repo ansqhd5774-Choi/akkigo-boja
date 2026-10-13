@@ -1,11 +1,15 @@
 import {existsSync,readFileSync,writeFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
 
 const MODEL_PATH='data/game-period-articles.json';
 const CATALOG_PATHS=['data/articles.json','data/articles-supplemental.json'];
 const PATCH_RE=/^data\/game-period-refreshes\/[a-z0-9-]+\.json$/;
+const BOOTSTRAP_MODULE_RE=/^src\/game-batch-[0-9]{8}(?:-[a-z])?\.js$/;
 const load=p=>JSON.parse(readFileSync(p,'utf8'));
 const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const clone=v=>JSON.parse(JSON.stringify(v));
 const fail=m=>{throw Error(m);};
 const exactUnique=list=>[...new Map((list||[]).map(x=>[JSON.stringify(x),x])).values()];
 const sourceKey=s=>JSON.stringify([s?.url||'',s?.name||'',s?.sourcePublishedAt??null,s?.updatedAt??null,s?.referenceType||'']);
@@ -25,20 +29,51 @@ const catalogs=Object.fromEntries(CATALOG_PATHS.map(p=>[p,load(p)]));
 const touched=new Set();
 
 for(const path of paths){
-  const patch=load(path);
+  let patch=load(path);
+  if(patch.includePatch){
+    if(!PATCH_RE.test(patch.includePatch)||!existsSync(patch.includePatch)||patch.includePatch===path)fail('GAME_PERIOD_REFRESH_INCLUDE_INVALID');
+    const included=load(patch.includePatch);
+    if(included.version!==patch.version||included.articleKey!==patch.articleKey)fail('GAME_PERIOD_REFRESH_INCLUDE_MISMATCH');
+    patch={...included,...patch,bootstrap:patch.bootstrap??included.bootstrap};
+  }
   if(patch.version!==1)fail('GAME_PERIOD_REFRESH_VERSION_UNSUPPORTED');
   if(!/^[a-z0-9-]+$/.test(patch.articleKey||''))fail('GAME_PERIOD_REFRESH_ARTICLE_KEY_INVALID');
   if(!/^\d{4}-\d{2}-\d{2}$/.test(patch.checkedAt||''))fail('GAME_PERIOD_REFRESH_CHECKED_AT_INVALID');
   if(touched.has(patch.articleKey))fail('GAME_PERIOD_REFRESH_DUPLICATE_ARTICLE');
   touched.add(patch.articleKey);
 
-  const model=models.find(m=>m.articleKey===patch.articleKey);
-  if(!model)fail('GAME_PERIOD_REFRESH_MODEL_MISSING');
-  const articleHits=[];
-  for(const [catalogPath,articles] of Object.entries(catalogs)){
-    const article=articles.find(a=>a.articleKey===patch.articleKey);
-    if(article)articleHits.push([catalogPath,article]);
+  let model=models.find(m=>m.articleKey===patch.articleKey);
+  let articleHits=[];
+  const scanArticles=()=>{
+    articleHits=[];
+    for(const [catalogPath,articles] of Object.entries(catalogs)){
+      const article=articles.find(a=>a.articleKey===patch.articleKey);
+      if(article)articleHits.push([catalogPath,article]);
+    }
+  };
+  scanArticles();
+
+  if((!model||articleHits.length===0)&&patch.bootstrap){
+    const spec=patch.bootstrap;
+    if(!BOOTSTRAP_MODULE_RE.test(spec.module||'')||!/^[A-Za-z_$][A-Za-z0-9_$]*$/.test(spec.export||''))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_SPEC_INVALID');
+    const targetCatalog=spec.catalog||'data/articles-supplemental.json';
+    if(!CATALOG_PATHS.includes(targetCatalog))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_CATALOG_INVALID');
+    const mod=await import(pathToFileURL(resolve(spec.module)).href);
+    const sourceArticle=mod[spec.export];
+    if(!sourceArticle||sourceArticle.articleKey!==patch.articleKey||sourceArticle.approvedForPublish!==true||!sourceArticle.post)fail('GAME_PERIOD_REFRESH_BOOTSTRAP_ARTICLE_INVALID');
+    const sourceModel=sourceArticle.source?.gamePeriodModel;
+    if(!sourceModel||sourceModel.articleKey!==patch.articleKey||!Array.isArray(sourceModel.records))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_MODEL_INVALID');
+    if(!model){
+      models.push(clone(sourceModel));
+      model=models.find(m=>m.articleKey===patch.articleKey);
+    }
+    if(articleHits.length===0){
+      catalogs[targetCatalog].push(clone(sourceArticle));
+      scanArticles();
+    }
   }
+
+  if(!model)fail('GAME_PERIOD_REFRESH_MODEL_MISSING');
   if(articleHits.length!==1)fail('GAME_PERIOD_REFRESH_ARTICLE_REGISTRY_MISMATCH');
   const article=articleHits[0][1];
 
