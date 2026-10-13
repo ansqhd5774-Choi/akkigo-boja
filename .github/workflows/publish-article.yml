@@ -41,14 +41,15 @@ jobs:
           else
             node tools/check-article-registry.mjs
           fi
-      - name: Enforce shared period renderer and preserved history before publication
-        run: node tools/check-article-presentation.mjs --static
       - name: Look up reusable full verification
         id: verification
         env:
           GH_TOKEN: ${{ github.token }}
           VERIFY_BASE_SHA: ${{ github.event.before }}
         run: node tools/verification-reuse.mjs
+      - name: Enforce shared period renderer and preserved history before publication
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/check-article-presentation.mjs --static
       - uses: pnpm/action-setup@v4
         if: steps.verification.outputs.reused != 'true'
         with:
@@ -134,22 +135,13 @@ jobs:
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.publish-oidc.outputs.token }}
         run: node tools/check-article-readiness.mjs --wait
-      # No separate browser QA after normal publication; the user reviews the URL.
+      # No separate browser/site-wide discovery after normal publication.
+      # The publisher already returns the target Blogger URL and publicVerified state.
       - name: Publish only changed approved requests and return Blogger link
         if: steps.requests.outputs.has_requests == 'true'
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.publish-oidc.outputs.token }}
         run: node tools/actions-runtime.mjs publish
-      - name: Check public HTML discovery after successful publication
-        if: steps.requests.outputs.has_requests == 'true' && success()
-        continue-on-error: true
-        run: node tools/check-public-discovery.mjs
-      - uses: actions/upload-artifact@v4
-        if: always() && steps.requests.outputs.has_requests == 'true'
-        with:
-          name: public-discovery
-          path: output/public-discovery.json
-          if-no-files-found: ignore
       - name: Summarize verification and deployment
         if: always()
         env:

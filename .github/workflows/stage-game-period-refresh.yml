@@ -6,10 +6,10 @@ on:
     paths:
       - 'data/game-period-refreshes/**'
       - 'tools/apply-game-period-refresh.mjs'
-      - '.github/workflows/stage-game-period-refresh.yml'
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: stage-game-period-refresh
@@ -31,26 +31,74 @@ jobs:
         with:
           node-version: '24'
       - name: Apply changed declarative game refreshes
+        id: refresh
         env:
           PUSH_BEFORE: ${{ github.event.before }}
           PUSH_AFTER: ${{ github.sha }}
         run: |
           mapfile -t files < <(git diff --name-only "$PUSH_BEFORE" "$PUSH_AFTER" -- data/game-period-refreshes | grep -E '^data/game-period-refreshes/[a-z0-9-]+\.json$' || true)
           if [ "${#files[@]}" -eq 0 ]; then
+            echo "has_refresh=false" >> "$GITHUB_OUTPUT"
             echo "GAME_PERIOD_REFRESH_NO_DATA_CHANGE"
             exit 0
           fi
+          echo "has_refresh=true" >> "$GITHUB_OUTPUT"
           node tools/apply-game-period-refresh.mjs "${files[@]}"
       - name: Validate shared period source before commit
+        if: steps.refresh.outputs.has_refresh == 'true'
         run: node tools/check-article-presentation.mjs --static
       - name: Commit generated canonical source once
+        id: generated
+        if: steps.refresh.outputs.has_refresh == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "418982+github-actions[bot]@users.noreply.github.com"
           git add data/game-period-articles.json data/articles.json data/articles-supplemental.json drafts akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
           if git diff --cached --quiet; then
             echo "GAME_PERIOD_REFRESH_NO_GENERATED_DIFF"
+            echo "generated_sha=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "refresh(game): apply declarative period update"
           git push origin HEAD:codex/blogger-worker-r1
+          generated_sha="$(git rev-parse HEAD)"
+          echo "generated_sha=$generated_sha" >> "$GITHUB_OUTPUT"
+          echo "GAME_PERIOD_REFRESH_GENERATED_SHA $generated_sha"
+      - name: Dispatch one final Verify and wait for exact generated source
+        if: steps.generated.outputs.generated_sha != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GENERATED_SHA: ${{ steps.generated.outputs.generated_sha }}
+        run: |
+          gh workflow run verify.yml --repo "$GITHUB_REPOSITORY" --ref codex/blogger-worker-r1
+          run_id=""
+          for attempt in $(seq 1 30); do
+            run_id="$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/verify.yml/runs?branch=codex%2Fblogger-worker-r1&event=workflow_dispatch&per_page=20" --jq '.workflow_runs[] | select(.head_sha == env.GENERATED_SHA) | .id' | head -n 1)"
+            if [ -n "$run_id" ]; then break; fi
+            sleep 2
+          done
+          if [ -z "$run_id" ]; then
+            echo "GAME_PERIOD_REFRESH_VERIFY_RUN_NOT_FOUND"
+            exit 1
+          fi
+          echo "GAME_PERIOD_REFRESH_VERIFY_RUN $run_id"
+          gh run watch "$run_id" --repo "$GITHUB_REPOSITORY" --exit-status
+      - name: Dispatch one Worker deploy after verified source
+        if: steps.generated.outputs.generated_sha != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GENERATED_SHA: ${{ steps.generated.outputs.generated_sha }}
+        run: |
+          gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY" --ref codex/blogger-worker-r1 -f source_sha="$GENERATED_SHA"
+          run_id=""
+          for attempt in $(seq 1 30); do
+            run_id="$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs?branch=codex%2Fblogger-worker-r1&event=workflow_dispatch&per_page=20" --jq '.workflow_runs[] | select(.head_sha == env.GENERATED_SHA) | .id' | head -n 1)"
+            if [ -n "$run_id" ]; then break; fi
+            sleep 2
+          done
+          if [ -z "$run_id" ]; then
+            echo "GAME_PERIOD_REFRESH_DEPLOY_RUN_NOT_FOUND"
+            exit 1
+          fi
+          echo "GAME_PERIOD_REFRESH_DEPLOY_RUN $run_id"
+          gh run watch "$run_id" --repo "$GITHUB_REPOSITORY" --exit-status

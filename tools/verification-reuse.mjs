@@ -2,7 +2,15 @@ import {appendFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {expectedCertificate, matchesCertificate, parseCertificate} from './verification-certificate.mjs';
 
-export const requiredSteps = ['Source tests', 'Worker dry-run build', 'Regenerate Blogger theme and require clean diff', 'Validate Blogger XML', 'Mark exact verified source'];
+export const requiredSteps = [
+  'Source tests',
+  'Enforce shared period renderer, history preservation and R2 DOM',
+  'Worker dry-run build',
+  'Regenerate Blogger theme and require clean diff',
+  'Validate Blogger XML',
+  'Require responsive coupon layout before verification certificate',
+  'Mark exact verified source'
+];
 export const isPublishRequestPath = path => /^publish-requests\/[a-z0-9-]+\.json$/.test(path || '');
 export function publishRequestOnlyFiles(files = []) {
   return files.length > 0 && files.every(file => isPublishRequestPath(file?.filename) && (!file?.previous_filename || isPublishRequestPath(file.previous_filename)));

@@ -25642,8 +25642,8 @@
         "code": "LAMAU26",
         "sourcePublishedAt": "2026-09-30",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25653,14 +25653,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>12026-09-30 해외 공략에서 공식 F…미확인LAMAU26</p>"
+        "evidenceHTML": "<p>12026-09-30 해외 공략에서 공식 F…미확인LAMAU26</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LAOKT26",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25670,14 +25671,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>2다수 추적 사이트미확인LAOKT26</p>"
+        "evidenceHTML": "<p>2다수 추적 사이트미확인LAOKT26</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LA30W7F2M",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25687,14 +25689,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>3다수 추적 사이트미확인LA30W7F2M</p>"
+        "evidenceHTML": "<p>3다수 추적 사이트미확인LA30W7F2M</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LACAFE26",
         "sourcePublishedAt": "2026-09-25",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25702,14 +25705,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>4일본 가이드 2026-09-25미확인LACAFE26</p>"
+        "evidenceHTML": "<p>4일본 가이드 2026-09-25미확인LACAFE26</p>",
+        "latestEvidence": "Buffhub 2026-09-30 최근 사용 보고"
       },
       {
         "code": "LA25W8CM",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25719,14 +25723,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>5해외 가이드미확인LA25W8CM</p>"
+        "evidenceHTML": "<p>5해외 가이드미확인LA25W8CM</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LA20WBZ9",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25736,14 +25741,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>6해외 가이드미확인LA20WBZ9</p>"
+        "evidenceHTML": "<p>6해외 가이드미확인LA20WBZ9</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LADAD26",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25753,14 +25759,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>7해외 가이드미확인LADAD26</p>"
+        "evidenceHTML": "<p>7해외 가이드미확인LADAD26</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "26CHOCO",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25770,14 +25777,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>8해외 가이드미확인26CHOCO</p>"
+        "evidenceHTML": "<p>8해외 가이드미확인26CHOCO</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LAKR15K9A",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25785,14 +25793,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>9한국 커뮤니티 추적미확인LAKR15K9A</p>"
+        "evidenceHTML": "<p>9한국 커뮤니티 추적미확인LAKR15K9A</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "twlap666",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25802,14 +25811,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>10대만·일본 가이드미확인twlap666</p>"
+        "evidenceHTML": "<p>10대만·일본 가이드미확인twlap666</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "twlap888",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25819,14 +25829,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>11대만·일본 가이드미확인twlap888</p>"
+        "evidenceHTML": "<p>11대만·일본 가이드미확인twlap888</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LA26ALLY",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25836,14 +25847,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>1해외 가이드미확인LA26ALLY</p>"
+        "evidenceHTML": "<p>1해외 가이드미확인LA26ALLY</p>",
+        "latestEvidence": "TopUpLive 2026-10-01 현재 사용 후보 목록"
       },
       {
         "code": "LAQIXI26",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25851,14 +25863,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>2일본 가이드미확인LAQIXI26</p>"
+        "evidenceHTML": "<p>2일본 가이드미확인LAQIXI26</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LADOG26",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25866,14 +25879,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>3일본 가이드미확인LADOG26</p>"
+        "evidenceHTML": "<p>3일본 가이드미확인LADOG26</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LA14EBRN",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-08-25",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25881,14 +25895,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>4일본 가이드미확인LA14EBRN</p>"
+        "evidenceHTML": "<p>4일본 가이드미확인LA14EBRN</p><p>Buffhub 과거 기록에서 2026-08-25 종료로 보고했습니다. 최근 '시도 가능' 목록과 상충하더라도 확정 만료일을 기간 분류에 우선합니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "LAKR10K6L",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25898,14 +25913,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>5한국 커뮤니티 추적미확인LAKR10K6L</p>"
+        "evidenceHTML": "<p>5한국 커뮤니티 추적미확인LAKR10K6L</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LAKR12K7O",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·지역/계정 조건 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25913,14 +25929,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>6한국 커뮤니티 추적미확인LAKR12K7O</p>"
+        "evidenceHTML": "<p>6한국 커뮤니티 추적미확인LAKR12K7O</p>",
+        "latestEvidence": "GamsGo 2026-10 최근 시도 후보 목록"
       },
       {
         "code": "LA15WPN4D",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25928,14 +25945,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>7해외 커뮤니티미확인LA15WPN4D</p>"
+        "evidenceHTML": "<p>7해외 커뮤니티미확인LA15WPN4D</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LA1OW9F7X",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -25945,14 +25963,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>8해외 공략미확인LA1OW9F7X</p>"
+        "evidenceHTML": "<p>8해외 공략미확인LA1OW9F7X</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LADCEX1223",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.topuplive.com · 제3자 코드 목록",
@@ -25969,14 +25988,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>9해외 공략미확인LADCEX1223</p>"
+        "evidenceHTML": "<p>9해외 공략미확인LADCEX1223</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LAU15CHG",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25984,14 +26004,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>10일본 가이드미확인LAU15CHG</p>"
+        "evidenceHTML": "<p>10일본 가이드미확인LAU15CHG</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LAWTD16F",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-09-08",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -25999,14 +26020,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>11연합 자동 수집미확인LAWTD16F</p>"
+        "evidenceHTML": "<p>11연합 자동 수집미확인LAWTD16F</p><p>Buffhub 과거 기록에서 2026-09-08 종료로 보고했습니다. KMA의 최근 working 표기와 상충하므로 확정 만료일을 기간 분류에 우선합니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "LA26PLAY",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26014,14 +26036,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>12MrGuider미확인LA26PLAY</p>"
+        "evidenceHTML": "<p>12MrGuider미확인LA26PLAY</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LA26LOVE",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26029,14 +26052,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>13MrGuider미확인LA26LOVE</p>"
+        "evidenceHTML": "<p>13MrGuider미확인LA26LOVE</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LAPKOR777",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·지역/계정 조건 미확인",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26044,7 +26068,8 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>14constante.tistory.com K…미확인LAPKOR777</p>"
+        "evidenceHTML": "<p>14constante.tistory.com K…미확인LAPKOR777</p>",
+        "latestEvidence": "GamsGo 2026-10 최근 시도 후보 목록"
       },
       {
         "code": "LUCK777",
@@ -26095,8 +26120,8 @@
         "code": "LABOR26",
         "sourcePublishedAt": "2026-10-04",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26106,14 +26131,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>1Pocket Gamer 2026-10-04미확인LABOR26</p>"
+        "evidenceHTML": "<p>1Pocket Gamer 2026-10-04미확인LABOR26</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LAEGG26",
         "sourcePublishedAt": "2026-10-04",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26123,14 +26149,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>2Pocket Gamer 2026-10-04미확인LAEGG26</p>"
+        "evidenceHTML": "<p>2Pocket Gamer 2026-10-04미확인LAEGG26</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LA26FOOL",
         "sourcePublishedAt": "2026-10-04",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26140,14 +26167,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>3Pocket Gamer 2026-10-04미확인LA26FOOL</p>"
+        "evidenceHTML": "<p>3Pocket Gamer 2026-10-04미확인LA26FOOL</p>",
+        "latestEvidence": "KMA 2026-10-03 공개 추적기 working 보고"
       },
       {
         "code": "LAPGPOFF",
         "sourcePublishedAt": "2026-10-04",
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26157,14 +26185,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>4Pocket Gamer 2026-10-04…미확인LAPGPOFF</p>"
+        "evidenceHTML": "<p>4Pocket Gamer 2026-10-04…미확인LAPGPOFF</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LAiOSLA",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26174,14 +26203,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>5Pocket Gamer / lastasyl…미확인LAiOSLA</p>"
+        "evidenceHTML": "<p>5Pocket Gamer / lastasyl…미확인LAiOSLA</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LAVD26",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·사용 여부 미확인",
         "sources": [
           {
             "name": "www.pocketgamer.com · 제3자 코드 목록",
@@ -26191,14 +26221,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>6Pocket Gamer / lastasyl…미확인LAVD26</p>"
+        "evidenceHTML": "<p>6Pocket Gamer / lastasyl…미확인LAVD26</p>",
+        "latestEvidence": "MrGuider 2026-10 Working 목록"
       },
       {
         "code": "LAW5HBR",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-06-24",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26206,14 +26237,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>7constante.tistory.com e…미확인LAW5HBR</p>"
+        "evidenceHTML": "<p>7constante.tistory.com e…미확인LAW5HBR</p><p>기존 한국어 수집 기록에 2026-06-24 종료로 기재되어 있어 해당 만료연도로 분류합니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "LAFD13GY",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-08-18",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26221,14 +26253,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>8Buffhub expired미확인LAFD13GY</p>"
+        "evidenceHTML": "<p>8Buffhub expired미확인LAFD13GY</p><p>Buffhub 과거 기록에서 2026-08-18 종료로 보고했습니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "LAW12A3K",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-08-14",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26236,14 +26269,15 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>9Buffhub expired미확인LAW12A3K</p>"
+        "evidenceHTML": "<p>9Buffhub expired미확인LAW12A3K</p><p>Buffhub 과거 기록에서 2026-08-14 종료로 보고했습니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "lapno1",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
+        "expiry": "2026-08-10",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "과거 종료 보고",
         "sources": [
           {
             "name": "기존 수집 기록",
@@ -26251,7 +26285,8 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>10Buffhub expired미확인lapno1</p>"
+        "evidenceHTML": "<p>10Buffhub expired미확인lapno1</p><p>Buffhub 과거 기록에서 2026-08-10 종료로 보고했습니다.</p>",
+        "periodYear": "2026"
       },
       {
         "code": "LA11WB5Q",
@@ -26371,13 +26406,197 @@
           }
         ],
         "evidenceHTML": "<p>17AAYYY generic uncorrobo…미확인LASTASYLUM</p>"
+      },
+      {
+        "code": "LAXMAS25",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "KMA 2026-10-03 working 보고",
+        "statusLabel": "제3자 현재 후보·철자 상충 미확인",
+        "sources": [
+          {
+            "name": "KMA Alliance 공개 추적기",
+            "url": "https://kma-alliance.github.io/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-03",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>KMA 공개 추적기에 <code>LAXMAS25</code>가 working으로 수록되어 있습니다. 기존 <code>LAXMAS2025</code>와 철자가 다르므로 별도 후보로 보존합니다.</p>"
+      },
+      {
+        "code": "LAAS777",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "GamsGo 2026-10 추가 시도 후보",
+        "statusLabel": "제3자 현재 후보·철자/지역 조건 미확인",
+        "sources": [
+          {
+            "name": "GamsGo 2026-10 코드 목록",
+            "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>GamsGo 2026년 10월 자료에서 <code>LAAS777</code>를 추가로 시도할 수 있는 코드로 제시했습니다. 공식 발급·지역·계정별 사용 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "LAPJAP777",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "GamsGo 2026-10 추가 시도 후보",
+        "statusLabel": "제3자 현재 후보·철자/지역 조건 미확인",
+        "sources": [
+          {
+            "name": "GamsGo 2026-10 코드 목록",
+            "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>GamsGo 2026년 10월 자료에서 <code>LAPJAP777</code>를 추가로 시도할 수 있는 코드로 제시했습니다. 공식 발급·지역·계정별 사용 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "61HW4LA",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "GamsGo 2026-10 추가 시도 후보",
+        "statusLabel": "제3자 현재 후보·철자/지역 조건 미확인",
+        "sources": [
+          {
+            "name": "GamsGo 2026-10 코드 목록",
+            "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>GamsGo 2026년 10월 자료에서 <code>61HW4LA</code>를 추가로 시도할 수 있는 코드로 제시했습니다. 공식 발급·지역·계정별 사용 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "LAKQIXI26",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "GamsGo 2026-10 추가 시도 후보",
+        "statusLabel": "제3자 현재 후보·철자/지역 조건 미확인",
+        "sources": [
+          {
+            "name": "GamsGo 2026-10 코드 목록",
+            "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>GamsGo 2026년 10월 자료에서 <code>LAKQIXI26</code>를 추가로 시도할 수 있는 코드로 제시했습니다. 공식 발급·지역·계정별 사용 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "LA10W9F7X",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "GamsGo 2026-10 추가 시도 후보",
+        "statusLabel": "제3자 현재 후보·철자/지역 조건 미확인",
+        "sources": [
+          {
+            "name": "GamsGo 2026-10 코드 목록",
+            "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>GamsGo 2026년 10월 자료에서 <code>LA10W9F7X</code>를 추가로 시도할 수 있는 코드로 제시했습니다. 공식 발급·지역·계정별 사용 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "LAKR12K70",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "iTechGuides가 9to5Gaming 목록으로 재인용",
+        "statusLabel": "제3자 현재 후보·철자/출처 조건 미확인",
+        "sources": [
+          {
+            "name": "iTechGuides 2026-10 제3자 목록 비교",
+            "url": "https://www.itechguides.com/last-asylum-plague-codes-for-october-2026-whats-reported-active/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>iTechGuides의 2026년 10월 비교 자료가 9to5Gaming 목록의 <code>LAKR12K70</code>를 재인용했습니다. 원 출처 날짜와 철자 정확성은 추가 확인이 필요해 후보로만 보존합니다.</p>"
+      },
+      {
+        "code": "WLTLAP",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "iTechGuides가 9to5Gaming 목록으로 재인용",
+        "statusLabel": "제3자 현재 후보·철자/출처 조건 미확인",
+        "sources": [
+          {
+            "name": "iTechGuides 2026-10 제3자 목록 비교",
+            "url": "https://www.itechguides.com/last-asylum-plague-codes-for-october-2026-whats-reported-active/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>iTechGuides의 2026년 10월 비교 자료가 9to5Gaming 목록의 <code>WLTLAP</code>를 재인용했습니다. 원 출처 날짜와 철자 정확성은 추가 확인이 필요해 후보로만 보존합니다.</p>"
+      },
+      {
+        "code": "LANY2026",
+        "sourcePublishedAt": "2026-10-12",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "Pocket Gamer 2026-10-12 expired 목록",
+        "statusLabel": "과거 종료 보고",
+        "sources": [
+          {
+            "name": "Pocket Gamer 2026-10 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "sourcePublishedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Pocket Gamer 2026년 10월 목록에서 <code>LANY2026</code>를 expired로 분류했습니다. 정확한 공식 만료일은 미확인이라 날짜를 추정하지 않습니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "LAXMAS2025",
+        "sourcePublishedAt": "2026-10-12",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "Pocket Gamer 2026-10-12 expired 목록",
+        "statusLabel": "과거 종료 보고·철자 상충 보존",
+        "sources": [
+          {
+            "name": "Pocket Gamer 2026-10 코드 목록",
+            "url": "https://www.pocketgamer.com/last-asylum-plague/codes/",
+            "sourcePublishedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Pocket Gamer 2026년 10월 목록에서 <code>LAXMAS2025</code>를 expired로 분류했습니다. <code>LAXMAS25</code>와 철자가 달라 합치지 않고 별도 기록으로 보존합니다.</p>",
+        "periodYear": "2026"
       }
     ],
     "featuredHTML": "<figure class=\"ncp-featured\" data-ncp-featured-image=\"last-asylum-plague-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://apps.apple.com/us/app/last-asylum-plague/id6756989323\" xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"https://apps.apple.com/us/app/last-asylum-plague/id6756989323\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/e9/66/4ae966d3-c4b5-4666-9404-df34644bd412/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png\" alt=\"라스트 어사일럼: 페스트 공식 앱 아이콘\" width=\"512\" height=\"512\"/></a><figcaption>공식 App Store</figcaption></figure>",
-    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\">쿠폰 후보 <strong>45개</strong></div><div class=\"ncp-feed-stat\">확인일 <strong>2026년 10월 9일</strong></div></div>",
-    "guideHTML": "",
-    "archiveHTML": "\n\n<article xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\n<p><strong>라스트 어사일럼: 페스트(Last Asylum: Plague)</strong>의 쿠폰 후보를 2026년 10월 9일 기준 정리했습니다. 공개 자료에 언급된 코드는 한 번씩만 출력했으며, 국가·서버·계정별 실제 사용 성공은 별도 확인이 필요합니다.</p>\n<h3>2026년 10월 라스트 어사일럼 쿠폰 모음</h3><p>쿠폰 출처를 우선 확인하고 복사해 시도할 수 있습니다. 오래된 후보는 임의 삭제하지 않고 아래 기록으로 남깁니다.</p><h3>최근 확인된 후보 (11개)</h3><p>사용 가능 여부는 계정·서버에 따라 다르며 만료일은 개별 확인이 필요합니다.</p><div aria-label=\"최근 확인된 후보\"><div><span>1</span><span title=\"2026-09-30 해외 공략에서 공식 Facebook 발표로 소개\">2026-09-30 해외 공략에서 공식 F…</span><span>미확인</span><code>LAMAU26</code><span></span></div><div><span>2</span><span title=\"다수 추적 사이트\">다수 추적 사이트</span><span>미확인</span><code>LAOKT26</code><span></span></div><div><span>3</span><span title=\"다수 추적 사이트\">다수 추적 사이트</span><span>미확인</span><code>LA30W7F2M</code><span></span></div><div><span>4</span><span title=\"일본 가이드 2026-09-25\">일본 가이드 2026-09-25</span><span>미확인</span><code>LACAFE26</code><span></span></div><div><span>5</span><span title=\"해외 가이드\">해외 가이드</span><span>미확인</span><code>LA25W8CM</code><span></span></div><div><span>6</span><span title=\"해외 가이드\">해외 가이드</span><span>미확인</span><code>LA20WBZ9</code><span></span></div><div><span>7</span><span title=\"해외 가이드\">해외 가이드</span><span>미확인</span><code>LADAD26</code><span></span></div><div><span>8</span><span title=\"해외 가이드\">해외 가이드</span><span>미확인</span><code>26CHOCO</code><span></span></div><div><span>9</span><span title=\"한국 커뮤니티 추적\">한국 커뮤니티 추적</span><span>미확인</span><code>LAKR15K9A</code><span></span></div><div><span>10</span><span title=\"대만·일본 가이드\">대만·일본 가이드</span><span>미확인</span><code>twlap666</code><span></span></div><div><span>11</span><span title=\"대만·일본 가이드\">대만·일본 가이드</span><span>미확인</span><code>twlap888</code><span></span></div></div><h3>해외·국내 추가 후보 (17개)</h3><p>사용 가능 여부는 계정·서버에 따라 다르며 만료일은 개별 확인이 필요합니다.</p><div aria-label=\"해외·국내 추가 후보\"><div><span>1</span><span title=\"해외 가이드\">해외 가이드</span><span>미확인</span><code>LA26ALLY</code><span></span></div><div><span>2</span><span title=\"일본 가이드\">일본 가이드</span><span>미확인</span><code>LAQIXI26</code><span></span></div><div><span>3</span><span title=\"일본 가이드\">일본 가이드</span><span>미확인</span><code>LADOG26</code><span></span></div><div><span>4</span><span title=\"일본 가이드\">일본 가이드</span><span>미확인</span><code>LA14EBRN</code><span></span></div><div><span>5</span><span title=\"한국 커뮤니티 추적\">한국 커뮤니티 추적</span><span>미확인</span><code>LAKR10K6L</code><span></span></div><div><span>6</span><span title=\"한국 커뮤니티 추적\">한국 커뮤니티 추적</span><span>미확인</span><code>LAKR12K7O</code><span></span></div><div><span>7</span><span title=\"해외 커뮤니티\">해외 커뮤니티</span><span>미확인</span><code>LA15WPN4D</code><span></span></div><div><span>8</span><span title=\"해외 공략\">해외 공략</span><span>미확인</span><code>LA1OW9F7X</code><span></span></div><div><span>9</span><span title=\"해외 공략\">해외 공략</span><span>미확인</span><code>LADCEX1223</code><span></span></div><div><span>10</span><span title=\"일본 가이드\">일본 가이드</span><span>미확인</span><code>LAU15CHG</code><span></span></div><div><span>11</span><span title=\"연합 자동 수집\">연합 자동 수집</span><span>미확인</span><code>LAWTD16F</code><span></span></div><div><span>12</span><span title=\"MrGuider\">MrGuider</span><span>미확인</span><code>LA26PLAY</code><span></span></div><div><span>13</span><span title=\"MrGuider\">MrGuider</span><span>미확인</span><code>LA26LOVE</code><span></span></div><div><span>14</span><span title=\"constante.tistory.com Korea 2026-06\">constante.tistory.com K…</span><span>미확인</span><code>LAPKOR777</code><span></span></div><div><span>15</span><span title=\"constante.tistory.com Korea 2026-06\">constante.tistory.com K…</span><span>미확인</span><code>LUCK777</code><span></span></div><div><span>16</span><span title=\"last-asylum.fun\">last-asylum.fun</span><span>미확인</span><code>LAW7D4V</code><span></span></div><div><span>17</span><span title=\"last-asylum.fun\">last-asylum.fun</span><span>미확인</span><code>LAW83AS</code><span></span></div></div><h3>만료·상태 상충 기록 (17개)</h3><p>만료 보고, 출처 간 모순 또는 게임 전용 발급 근거가 불충분한 코드입니다.</p><div aria-label=\"만료·상태 상충 기록\"><div><span>1</span><span title=\"Pocket Gamer 2026-10-04\">Pocket Gamer 2026-10-04</span><span>미확인</span><code>LABOR26</code><span></span></div><div><span>2</span><span title=\"Pocket Gamer 2026-10-04\">Pocket Gamer 2026-10-04</span><span>미확인</span><code>LAEGG26</code><span></span></div><div><span>3</span><span title=\"Pocket Gamer 2026-10-04\">Pocket Gamer 2026-10-04</span><span>미확인</span><code>LA26FOOL</code><span></span></div><div><span>4</span><span title=\"Pocket Gamer 2026-10-04 / fan site expired\">Pocket Gamer 2026-10-04…</span><span>미확인</span><code>LAPGPOFF</code><span></span></div><div><span>5</span><span title=\"Pocket Gamer / lastasylum.com expired\">Pocket Gamer / lastasyl…</span><span>미확인</span><code>LAiOSLA</code><span></span></div><div><span>6</span><span title=\"Pocket Gamer / lastasylum.com expired\">Pocket Gamer / lastasyl…</span><span>미확인</span><code>LAVD26</code><span></span></div><div><span>7</span><span title=\"constante.tistory.com ends 2026-06-24\">constante.tistory.com e…</span><span>미확인</span><code>LAW5HBR</code><span></span></div><div><span>8</span><span title=\"Buffhub expired\">Buffhub expired</span><span>미확인</span><code>LAFD13GY</code><span></span></div><div><span>9</span><span title=\"Buffhub expired\">Buffhub expired</span><span>미확인</span><code>LAW12A3K</code><span></span></div><div><span>10</span><span title=\"Buffhub expired\">Buffhub expired</span><span>미확인</span><code>lapno1</code><span></span></div><div><span>11</span><span title=\"Buffhub expired\">Buffhub expired</span><span>미확인</span><code>LA11WB5Q</code><span></span></div><div><span>12</span><span title=\"Buffhub expired\">Buffhub expired</span><span>미확인</span><code>LAW10A7C</code><span></span></div><div><span>13</span><span title=\"AAYYY generic uncorroborated\">AAYYY generic uncorrobo…</span><span>미확인</span><code>WELCOME</code><span></span></div><div><span>14</span><span title=\"AAYYY generic uncorroborated\">AAYYY generic uncorrobo…</span><span>미확인</span><code>SURVIVOR</code><span></span></div><div><span>15</span><span title=\"AAYYY generic uncorroborated\">AAYYY generic uncorrobo…</span><span>미확인</span><code>PLAGUE2024</code><span></span></div><div><span>16</span><span title=\"AAYYY generic uncorroborated\">AAYYY generic uncorrobo…</span><span>미확인</span><code>LA777</code><span></span></div><div><span>17</span><span title=\"AAYYY generic uncorroborated\">AAYYY generic uncorrobo…</span><span>미확인</span><code>LASTASYLUM</code><span></span></div></div><h3>쿠폰 입력 방법</h3><ol><li>게임을 실행하고 프로필을 선택합니다.</li><li>설정 메뉴의 Gift Code를 선택합니다.</li><li>쿠폰을 붙여넣고 보상 수령 여부를 확인합니다.</li></ol>\n<p>게임 버전에 따라 <a href=\"https://gevents.globallap.com/gamecode/index.html?gameId=440\" rel=\"noopener noreferrer\" target=\"_blank\">온라인 쿠폰 등록 페이지</a>를 이용할 수 있습니다. 서버와 캐릭터를 확인해 입력하세요.</p>\n<h3>쿠폰 보상·서버 제한</h3><p>보상에는 재화·아이템·가속 아이템 등이 보고되어 있지만 <strong>개별 코드의 정확한 수량은 확인되지 않았습니다.</strong> 한국 서버 적용 여부 및 만료일이 불분명한 코드는 사용 성공으로 표시하지 않습니다.</p>\n<h3>사용이 안 된다면?</h3><p>코드 대소문자, 만료 여부, 서버 제한, 계정당 1회 수령 여부를 확인하세요. 동일 코드라도 개인의 계정 상태에 따라 입력 결과가 다를 수 있습니다.</p>\n<h3>정보 출처</h3><ul><li><a href=\"https://www.pocketgamer.com/last-asylum-plague/codes/\">Pocket Gamer</a></li><li><a href=\"https://lastasylum.com/gift-codes\">Last Asylum 관련 코드 가이드</a></li><li><a href=\"https://www.topuplive.com/news/last-asylum-plague-codes.html\">TOPUPlive</a></li></ul>\n<p>출처 확인과 실제 쿠폰 사용 성공은 다릅니다. 갱신일: 2026년 10월 9일.</p></article>",
-    "noticeHTML": "<p>기존 원고의 수집 근거와 사용 조건을 보존했습니다. 원문 게시일이 없는 기록은 미확인으로 표시합니다.</p>"
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"라스트 어사일럼 페스트 쿠폰 요약\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\">최근 입력 후보 <strong>37개</strong></div><div class=\"ncp-feed-stat\">명시 종료 기록 <strong>8개</strong></div><div class=\"ncp-feed-stat\">전체 보존 기록 <strong>55개</strong></div></div>",
+    "guideHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>쿠폰 입력 방법</h3><div class=\"ncp-step-grid\"><div class=\"ncp-step-card\"><h3>Android 게임에서 입력</h3><ol><li>게임에서 프로필을 엽니다.</li><li><strong>Settings → Gift Code</strong>로 이동합니다.</li><li>쿠폰 문자열을 그대로 입력하고 확인합니다.</li><li>보상은 게임 내 우편함에서 확인합니다.</li></ol></div><div class=\"ncp-step-card\"><h3>웹 등록 페이지</h3><ol><li><a href=\"https://gevents.globallap.com/gamecode/index.html?gameId=440\" rel=\"noopener noreferrer\">게임 코드 등록 페이지</a>를 엽니다.</li><li>연동 계정으로 로그인하고 서버·캐릭터를 선택합니다.</li><li>코드를 입력한 뒤 확인합니다.</li><li>게임 내 우편함에서 보상을 확인합니다.</li></ol><p class=\"ncp-note\">웹·Android 경로는 최근 공개 가이드들이 안내하는 방법입니다. 계정·서버·플랫폼에 따라 메뉴나 적용 가능 여부가 다를 수 있습니다.</p></div></div></section>",
+    "archiveHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>2026년 10월 14일 재조사 요약</h3><p>최근 자료를 다시 비교한 결과, 한 출처의 ‘working’ 표기를 전체 계정의 사용 성공으로 간주할 수 없었습니다. 운영사 직접 공지로 현재 활성 전체 목록을 확정하지 못했기 때문에 최근 목록에 등장한 문자열은 제3자 입력 후보로 표시하고, 과거 종료·철자 상충·지역 조건은 별도로 보존했습니다.</p><ul><li><strong>최근 입력 후보:</strong> 37개</li><li><strong>명시 종료 기록:</strong> 8개</li><li><strong>전체 보존 기록:</strong> 55개</li></ul><p>최근 참고 자료: Pocket Gamer(2026-10 현재 목록), TopUpLive(2026-10-01), KMA 공개 추적기(2026-10-03 갱신), MrGuider(2026-10 Working 목록), Buffhub(2026-09-30 갱신), GamsGo(2026-10 목록). 각 출처의 상태 판정이 서로 다르므로 코드별 ⓘ에서 출처와 충돌 여부를 확인하세요.</p><p><a href=\"https://gevents.globallap.com/gamecode/index.html?gameId=440\" rel=\"noopener noreferrer\">게임 코드 등록 페이지 열기</a></p></section>",
+    "noticeHTML": "<p>2026년 10월 14일 재조사 기준, 운영사가 현재 활성 코드 전체를 한 번에 확정한 최신 목록은 확인하지 못했습니다. 최근 공개된 Pocket Gamer·TopUpLive·KMA·MrGuider·GamsGo 등은 서로 다른 코드를 현재 또는 시도 후보로 제시하므로 <strong>37개를 제3자 현재 입력 후보</strong>로 분리했습니다. 복사 가능 표시는 실제 사용 성공을 뜻하지 않습니다.</p><p>과거 만료일이 날짜로 확인된 코드는 최근 목록에서 다시 언급되더라도 <strong>확정 만료연도를 우선</strong>해 최신 탭에서 제외합니다. 철자가 다른 <code>LAXMAS25/LAXMAS2025</code>, <code>LAKR12K7O/LAKR12K70</code>, <code>LA1OW9F7X/LA10W9F7X</code> 같은 문자열도 임의로 합치지 않고 출처별 후보로 보존합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
   },
   {
     "articleKey": "lordrush-codes-202610",
@@ -35233,5 +35452,2472 @@
     "noticeHTML": "<p>2026년 10월 10일 기준입니다. <strong>출처 게시일</strong>은 해당 자료가 처음 게시된 날짜이며 공식 발급일·수집일·업데이트일·만료일과 구분합니다. 정확한 최초 게시일이 없는 자료는 수집일로 채우지 않고 미확인으로 유지했습니다.</p><p><code>TS777</code>·<code>TS888</code>·<code>TS999</code>는 현재 팬 데이터베이스와 최근 해외 기사에 계속 수록되지만, 최근 공식 영구 유효 공지와 이 계정의 직접 입력 성공은 확인되지 않았습니다. 반면 <code>MOONGIFT</code>·<code>DISCORD50K</code>·<code>FACEBOOK100K</code>는 공식 계정이 안내한 마감 시각이 이미 지났습니다.</p>",
     "guideHTML": "<section class=\"ncp-coupon-guide\"><h2>쿠폰 입력 방법</h2><ol><li>게임에서 왼쪽 위 <strong>아바타/프로필</strong>을 엽니다.</li><li><strong>Settings</strong>로 이동합니다.</li><li><strong>Gift Redemption</strong> 또는 번역된 교환 메뉴를 선택합니다.</li><li>코드를 대소문자 그대로 입력하고 결과와 게임 내 우편함을 확인합니다.</li></ol><p>공식 계정의 최근 이벤트 안내는 <strong>Avatar → Settings → Gift Redemption</strong> 경로와 계정당 1회 조건을 사용했습니다. 버전·언어에 따라 메뉴 명칭은 달라질 수 있습니다.</p><h2>할인·추가 혜택</h2><ul><li><strong>공식 Top-Up Center:</strong> 첫 구매 5% 할인 안내와 주간 Points Exchange가 운영됩니다. Waypoint 구매 시 Points가 쌓이며 주간 교환 한도는 월요일 00:00 UTC부터 일요일 23:59 UTC까지 주기로 초기화됩니다. <a href=\"https://store.funplus.com/tilessurvive/\" rel=\"noopener noreferrer\">공식 충전 센터</a></li><li><strong>LDShop:</strong> 제3자 결제처 코드 <code>LDSHOP5FF</code>는 2026-10-31 23:59:59까지 다음 결제 5% 할인으로 안내됩니다. 출처 글 최초 게시일은 2026-05-27입니다. 공식 FunPlus 결제와 구분하고 최종 결제 조건을 확인해야 합니다. <a href=\"https://www.ldshop.gg/blog/tiles-survive/top-up-guide.html\" rel=\"noopener noreferrer\">LDShop 안내</a></li><li><strong>LootBar:</strong> 제3자 충전처가 Waypoints <strong>최대 22% 할인</strong>을 표시합니다. 패키지·통화·지역·프로모션에 따라 최종 가격이 달라질 수 있습니다. <a href=\"https://www.lootbar.com/ko/top-up/tiles-survive\" rel=\"noopener noreferrer\">LootBar Tiles Survive</a></li><li><strong>Creator Program:</strong> 공식 계정이 2026-09-24~10-11 모집을 안내하며 전용 아바타 프레임, 월간 게임 보상, 성과형 추가 보상을 제시합니다. 신청·자격형 혜택으로 쿠폰과는 별도입니다. <a href=\"https://twstalker.com/TilesSurvive\" rel=\"noopener noreferrer\">공식 계정 게시물 미러</a></li></ul><h2>확인 수준</h2><p><strong>공식 안내</strong>, <strong>제3자 코드 수록</strong>, <strong>현재 계정의 실사용 성공</strong>은 서로 다른 상태입니다. 이번 조사에서는 직접 계정 입력 테스트를 수행하지 않았으므로 현재 3개 코드는 입력 후보로만 표시합니다. GameEDU·TEM TEK 등에서 추가 문자열을 수집했지만 공식 발급·한국 계정 적용은 미확인으로 분리했습니다.</p><h2>공식 채널</h2><p><a href=\"https://tilessurvive.com/en/list\" rel=\"noopener noreferrer\">Tiles Survive 공식 사이트</a> · <a href=\"https://apps.apple.com/kr/app/%ED%83%80%EC%9D%BC-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C/id6738109752\" rel=\"noopener noreferrer\">한국 App Store</a> · <a href=\"https://play.google.com/store/apps/details?id=com.funplus.ts.global\" rel=\"noopener noreferrer\">Google Play</a> · <a href=\"https://store.funplus.com/tilessurvive/\" rel=\"noopener noreferrer\">FunPlus 공식 Top-Up Center</a></p></section>",
     "archiveHTML": "<section><h2>출처와 조사 기록</h2><p>공식 사이트·앱스토어·공식 SNS 게시물 미러와 국내외 코드 DB·게임 매체·충전 제휴 페이지를 교차 확인했습니다. 접근 제한이나 서로 다른 목록은 만료로 간주하지 않고 상태 상충 또는 미확인으로 남겼습니다.</p><ul><li><a href=\"https://twstalker.com/TilesSurvive\" rel=\"noopener noreferrer\">Tiles Survive 공식 X(@TilesSurvive) 게시물 미러</a></li><li><a href=\"https://tilessurvive.net/en/guides/gift-code-how-to-use/\" rel=\"noopener noreferrer\">TilesSurvive.net 팬 DB · 현재 TS777/TS888/TS999 목록</a></li><li><a href=\"https://wotpack.ru/ko/kody-tiles-survive-v-dekabre-2025/\" rel=\"noopener noreferrer\">Wotpack 한국어판 · 2026-09-27 게시</a></li><li><a href=\"https://buffhub.com/blog/tiles-survive/tiles-survive-codes.html\" rel=\"noopener noreferrer\">Buffhub · 2026-08-04 최초 게시, 2026-09-30 업데이트</a></li><li><a href=\"https://game.edu.kg/ja/tiles-survive/\" rel=\"noopener noreferrer\">GameEDU 일본어판 · 원문 정확 날짜 미확인</a></li><li><a href=\"https://game.edu.kg/ru/tiles-survive%21/%D0%BA%D0%BE%D0%B4%D1%8B/\" rel=\"noopener noreferrer\">GameEDU 러시아어판 · 원문 정확 날짜 미확인</a></li><li><a href=\"https://game.edu.kg/ar/tiles-survive%21/codes/\" rel=\"noopener noreferrer\">GameEDU 아랍어판 · 원문 정확 날짜 미확인</a></li><li><a href=\"https://temtekplay.com/en/codes/\" rel=\"noopener noreferrer\">TEM TEK · 추가 코드 상태 추적</a></li><li><a href=\"https://www.ldshop.gg/jp/blog/tiles-survive/tiles-code-jp.html\" rel=\"noopener noreferrer\">LDShop 일본어 코드 기사 · 2026-09-02 게시</a></li></ul><h2>검색 의도</h2><p>핵심 키워드는 <strong>타일 서바이벌 쿠폰</strong>, 타일 서바이벌 쿠폰 코드, 타일 서바이벌 기프트 코드, Tiles Survive codes, Tiles Survive gift code, 타일 서바이벌 충전 할인으로 선정했습니다. 실측 자료가 없는 해시태그의 검색량·노출률 수치는 만들지 않았습니다.</p><h2>제외·보류 문자열</h2><p>일부 제3자 목록의 <code>TILES</code>와 <code>SURVIVE!</code>는 분리된 게임명처럼 보이거나 특수문자를 포함하고 최근 강한 교차 근거가 부족해 운영 복사 목록에는 넣지 않았습니다. 삭제가 아니라 연구 기록 보류이며, 공식 발급 근거가 확인되면 재검토합니다.</p></section>"
+  },
+  {
+    "articleKey": "reverse-1999-codes-202610",
+    "title": "리버스: 1999",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"리버스 1999 쿠폰 최신 재조사\"><div class=\"ncp-feed-stat\"><span>최신 후보</span><strong>20개</strong></div><div class=\"ncp-feed-stat\"><span>추가 보존 후보</span><strong>2개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>22개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"reverse-1999-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=kr.haoplay.game.and.reverse\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=kr.haoplay.game.and.reverse\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/Vnq1vx1cC_mnaZSXiV4x8oxxuL2YdYCpDFUstK-nhZlSMJkorBStctJ93qxNEQE14odke4YTd5URiG7erKjj%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"리버스: 1999 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026년 10월 14일 한국·글로벌 공개 자료를 다시 확인했습니다. 기존 한국 서버 후보 9개는 삭제하지 않았고, 최근 해외 코드 목록에서 반복 확인되는 글로벌 현재 후보 11개를 추가했습니다. BlueStacks·MobileMatters에 남아 있는 FaintGlimmer·SayGoodbye 2개는 교차 근거가 약해 최신 탭이 아닌 미확인 기록으로 보존합니다. 기존 원고에서 원문 최초 게시일처럼 사용하던 2026-10-08은 해당 공략의 갱신 확인일 성격이라 최초 게시일을 미확인으로 바로잡았습니다.</p>",
+    "guideHTML": "<section><h3>리버스: 1999 쿠폰 입력 방법</h3><p>게임 메인 화면의 왼쪽 메뉴에서 설정 → 계정 → Exchange Code(교환 코드)로 이동해 입력합니다. 한국 서버·글로벌 서버 코드가 서로 다를 수 있으므로 한 서버에서 실패했다고 다른 서버에서도 동일하게 실패한다고 단정하지 않습니다.</p><p>폐허속고향의노래는 기존 자료에서 2026년 10월 15일 04:59 KST까지, 회귀불가구역·성숙한이념을지닌건축가는 2026년 11월 5일까지로 안내됩니다. 종료 시각이 명확하지 않은 후보는 게임 내 입력 결과를 최종 기준으로 확인하세요.</p></section>",
+    "archiveHTML": "<section><h3>2026년 10월 14일 재조사 판정</h3><p>한국 자료의 9개 기존 후보를 유지하고 글로벌 11개 현재 후보를 추가했습니다. ModernBuildings는 2026년 10월 13일 MEmu Play 기사에서 Ver.3.8 종료까지로 안내되며, EndlessHorn·EchoStone·DaisyinRuins·EchoesofTime·DesperateCounter·Gachagaming1999·5YRBRF9 등은 10월 12일 전후의 복수 현재 목록에서 반복 확인됩니다.</p><p>RescueMedal·MothLight·SPDM도 10월 현재 목록에서 유지되는 후보입니다. FaintGlimmer·SayGoodbye는 BlueStacks·MobileMatters 목록에는 남아 있지만 최신 보수적 목록과의 교차가 약해 미확인 기록으로 보존합니다.</p></section><section><h3>날짜 정정</h3><p>기존 한국 공략은 오래된 URL·본문이 계속 갱신되는 형태입니다. 따라서 2026-10-08을 원문 최초 게시일로 사용하지 않고 갱신 확인일로만 보존했습니다. 최초 게시일이 확인되지 않은 9개 기존 행은 게시일 미확인으로 표시합니다.</p></section><section><h3>확인한 주요 출처</h3><ul><li><a href=\"https://re1999.bluepoch.com/en/home/detail.html\" rel=\"noopener noreferrer\">Bluepoch 공식 Reverse: 1999 사이트</a></li><li><a href=\"https://www.pockettactics.com/reverse-1999/codes\" rel=\"noopener noreferrer\">Pocket Tactics 2026년 10월 코드 목록</a></li><li><a href=\"https://www.game.guide/reverse-1999-codes\" rel=\"noopener noreferrer\">Game.Guide 2026년 10월 코드 추적</a></li><li><a href=\"https://www.memuplay.com/blog/reverse-1999-codes.html\" rel=\"noopener noreferrer\">MEmu Play 2026-10-13 코드 목록</a></li><li><a href=\"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html\" rel=\"noopener noreferrer\">BuffHub 10월 현재 코드 목록</a></li><li><a href=\"https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html\" rel=\"noopener noreferrer\">BlueStacks 10월 코드 목록</a></li><li><a href=\"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94\" rel=\"noopener noreferrer\">한국 서버 쿠폰 공략</a></li></ul></section>",
+    "records": [
+      {
+        "code": "폐허속고향의노래",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "2026-10-15 04:59 KST",
+        "statusLabel": "제3자 최신 후보·10월 최신 자료의 기간형 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "회귀불가구역",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "2026-11-05",
+        "statusLabel": "제3자 최신 후보·10월 최신 자료의 3.8 버전 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "성숙한이념을지닌건축가",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "2026-11-05",
+        "statusLabel": "제3자 최신 후보·10월 최신 자료의 기간형 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "gift4u",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "grandopen1999",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "1999gift",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 정정했습니다. 글로벌 최근 목록의 1999GIFT와 동일 코드로 보고 중복 행을 만들지 않습니다.</p><p>Pocket Tactics의 2026년 10월 12일 갱신 목록에서도 1999GIFT가 현재 코드로 제시됩니다. 기존 한국어 1999gift 행과 대소문자만 달라 동일 코드로 병합했습니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          },
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록의 1999GIFT",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "yyy1999ccc",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "reverseculture",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "리버스1999YouTube",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "10월 8일 갱신 제3자 공략에서 현재 목록으로 제시됐으나 공식 원문 게시일과 전체 코드의 현재 적용은 별도 확인이 필요",
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "statusLabel": "제3자 최신 후보·장기 제3자 후보",
+        "evidenceHTML": "<p>2026년 10월 8일 갱신 공략에서 입력 후보로 확인됩니다. 기간형 3개와 장기 상시 주장 코드를 분리하며 실제 게임 입력 결과를 최종 기준으로 봅니다.</p><p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+        "sources": [
+          {
+            "name": "리버스: 1999 10월 8일 쿠폰 공략",
+            "url": "https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-08"
+          },
+          {
+            "name": "Reverse 1999 coupon tracker",
+            "url": "https://www.reverse1999-simulator.com/ko/coupon",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "ModernBuildings",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+        "latest": true,
+        "latestEvidence": "2026-10-13 MEmu Play 기사와 10월 최신 코드 목록에서 현재 코드로 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "MEmu Play 2026-10-13 Reverse: 1999 코드 목록",
+            "url": "https://www.memuplay.com/blog/reverse-1999-codes.html",
+            "sourcePublishedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "Try Hard Guides 10월 현재 코드 목록",
+            "url": "https://tryhardguides.com/reverse-1999-codes-and-drops/0/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Jar of Picrasma Candy 1개, Enlighten II 10개, Sharpodonty 20,000, Moment of Dissonance 3개 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "EndlessHorn",
+        "sourcePublishedAt": null,
+        "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics 2026-10-12 갱신과 Game.Guide 2026-10-12 확인 목록에서 현재 코드로 교차 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "Game.Guide 10월 코드 추적",
+            "url": "https://www.game.guide/reverse-1999-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Delicate Insight Casket 1, Dust 10,000, Moment of Dissonance 3 보상으로 반복 안내됩니다.</p>"
+      },
+      {
+        "code": "EchoStone",
+        "sourcePublishedAt": null,
+        "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics와 Game.Guide의 2026-10-12 현재 목록에서 교차 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "Game.Guide 10월 코드 추적",
+            "url": "https://www.game.guide/reverse-1999-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Enlighten III 3, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "DaisyinRuins",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics·Game.Guide·GamsGo의 10월 현재 목록에서 반복 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamsGo 10월 코드 목록",
+            "url": "https://www.gamsgo.com/blog/reverse-1999-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Dust 20,000, Sharpodonty 20,000, Jar of Picrasma Candy 1 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "EchoesofTime",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics·GamsGo·BuffHub의 10월 현재 목록에서 반복 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "BuffHub 10월 보수적 현재 코드 목록",
+            "url": "https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, MF Polarization 2, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "RescueMedal",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "BuffHub·MobileMatters의 2026년 10월 현재 목록에서 활성 후보로 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "BuffHub 10월 보수적 현재 코드 목록",
+            "url": "https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "MobileMatters 10월 현재 코드 목록",
+            "url": "https://mobilematters.gg/redeem-codes/r1999",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Delicate Insight Casket 1, Dust 20,000, Sharpodonty 20,000 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "MothLight",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "BuffHub의 2026년 10월 현재 코드 목록에서 활성으로 제시",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "BuffHub 10월 보수적 현재 코드 목록",
+            "url": "https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "AllThings.How 9월 현재 코드 목록",
+            "url": "https://allthings.how/reverse-1999-codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-09-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Dust 10,000, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "SPDM",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "BuffHub의 2026년 10월 현재 목록과 9월 복수 목록에서 장기 활성 후보로 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "BuffHub 10월 보수적 현재 코드 목록",
+            "url": "https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "AllThings.How 9월 코드 목록",
+            "url": "https://allthings.how/reverse-1999-codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-09-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Jar of Picrasma Candy 1, Enlighten II 10, Sharpodonty 20,000 보상으로 안내됩니다.</p>"
+      },
+      {
+        "code": "DesperateCounter",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics·Dexerto·GachaPocket의 10월 현재 목록에서 교차 확인",
+        "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "Dexerto 10월 현재 코드 목록",
+            "url": "https://www.dexerto.com/codes/reverse-1999-codes-3301019/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Clear Drop 30, Dust 10,000, Moment of Dissonance 3, Insight Casket 1 보상 후보로 안내됩니다.</p>"
+      },
+      {
+        "code": "Gachagaming1999",
+        "sourcePublishedAt": null,
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics·GamsGo의 10월 현재 목록과 커뮤니티 장기 코드 기록에서 반복 확인",
+        "statusLabel": "글로벌 장기 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamsGo 10월 현재 코드 목록",
+            "url": "https://www.gamsgo.com/blog/reverse-1999-codes",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Dust 15,000, Enlighten II 3, Picrasma Candy 1, Insight Casket 1 보상으로 안내되는 장기 글로벌 코드입니다.</p>"
+      },
+      {
+        "code": "5YRBRF9",
+        "sourcePublishedAt": null,
+        "expiry": "상시 주장·공식 현재 확인 미완료",
+        "latest": true,
+        "latestEvidence": "Pocket Tactics·GamsGo·Game.Guide의 2026년 10월 현재 목록에서 반복 확인",
+        "statusLabel": "글로벌 장기 최신 후보·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Pocket Tactics 10월 현재 코드 목록",
+            "url": "https://www.pockettactics.com/reverse-1999/codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "Game.Guide 10월 코드 추적",
+            "url": "https://www.game.guide/reverse-1999-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>Dust 19,999, Sharpodonty 19,999, Fine Insight Package 3 보상으로 안내되는 장기 글로벌 코드입니다.</p>"
+      },
+      {
+        "code": "FaintGlimmer",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": false,
+        "statusLabel": "제3자 10월 목록 후보·교차확인 부족",
+        "sources": [
+          {
+            "name": "BlueStacks 2026년 10월 코드 목록",
+            "url": "https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "MobileMatters 10월 목록",
+            "url": "https://mobilematters.gg/redeem-codes/r1999",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>BlueStacks와 MobileMatters의 10월 목록에 남아 있으나 최신 보수적 목록과의 교차가 약해 최신 탭으로 승격하지 않고 보존합니다.</p>"
+      },
+      {
+        "code": "SayGoodbye",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": false,
+        "statusLabel": "제3자 10월 목록 후보·교차확인 부족",
+        "sources": [
+          {
+            "name": "BlueStacks 2026년 10월 코드 목록",
+            "url": "https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "MobileMatters 10월 목록",
+            "url": "https://mobilematters.gg/redeem-codes/r1999",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>BlueStacks와 MobileMatters의 10월 목록에 남아 있으나 최신 보수적 목록과의 교차가 약해 최신 탭으로 승격하지 않고 보존합니다.</p>"
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
+  },
+  {
+    "articleKey": "dragon-village3-codes-202610",
+    "title": "드래곤빌리지3",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"드래곤빌리지3 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재</span><strong>2개</strong></div><div class=\"ncp-feed-stat\"><span>현재 후보</span><strong>4개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>39개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"dragon-village3-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=com.highbrow.games.dvo\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.highbrow.games.dvo\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/Ub7Hbq1LusnGf9lR0Spth7mxCzByqE22z9MEBwK--PP1fuh96JazHOboiMADc7Yl1drd8axAa0kOoUyTDy0v%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"드래곤빌리지3 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026-10-14 재조사 기준 공식 현재 코드는 WEHEARDU, TOGETHER 2개입니다. DRAGON77·STLEYDV3·DV3COSER·DVRAINY7은 10월 제3자 현재 목록 또는 상충 자료가 있어 별도 후보로 두며 공식 현재 코드로 표시하지 않습니다.</p>",
+    "guideHTML": "<section><h3>입력</h3><p>게임에서 메뉴 → 설정 → 쿠폰/코드로 이동해 코드를 입력한 뒤 우편함에서 보상을 확인합니다. WEHEARDU와 TOGETHER는 공식 WithHIVE 개발자 노트에 이 입력 경로가 함께 안내됐습니다.</p><div><a href=\"https://community.withhive.com/dv3/en/board/2/4814\" rel=\"noopener noreferrer\">공식 쿠폰 공지 <span>확인 →</span></a></div></section><section><h3>구분</h3><p>공식 발급·만료가 확인된 기록과 제3자 현재 후보를 분리했습니다. 제3자 후보는 실제 계정 입력 성공 또는 공식 원문이 확인되기 전까지 사용 가능으로 단정하지 않습니다.</p></section>",
+    "archiveHTML": "<p><a href=\"https://community.withhive.com/dv3/en/board/2/4814\" rel=\"noopener noreferrer\">공식 10월 개발자 노트</a> · <a href=\"https://www.pocketgamer.com/dragon-village-3/codes/\" rel=\"noopener noreferrer\">Pocket Gamer 10월 목록</a> · <a href=\"https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803\" rel=\"noopener noreferrer\">국내 제3자 후보 목록</a> · <a href=\"https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1\" rel=\"noopener noreferrer\">일본어 후보 목록</a></p>",
+    "records": [
+      {
+        "code": "TELLUSPU",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "DEVAPICK",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "DRGNEGG1",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "DRAGONUP",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SAILINGD3NIAH",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "DRAGON77",
+        "sourcePublishedAt": "2026-10-11",
+        "latest": true,
+        "latestEvidence": "Pocket Gamer 2026-10-11 현재 목록에 있으나 공식 발급 원문과 실제 입력 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·실사용 상충",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p><p>2026-10-11 Pocket Gamer 현재 목록에서 다시 확인됐으나 공식 근거는 확인되지 않았습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Pocket Gamer · Dragon Village 3 codes",
+            "url": "https://www.pocketgamer.com/dragon-village-3/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-11",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "K7DRGNV3",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "기존 제3자 목록에는 남아 있으나 2026-10-14 재조사에서 공식 발급 원문·최근 현재 목록 교차 확인 부족",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "D3PARUX2",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "2026-10-11 Pocket Gamer 종료 목록에 포함되며 공식 발급·종료 원문 미확인",
+        "expiry": "제3자 종료 보고",
+        "statusLabel": "제3자 후보·종료 보고",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p><p>2026-10-11 Pocket Gamer 종료 목록에 포함되어 최신 후보에서 내렸습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Pocket Gamer · Dragon Village 3 codes",
+            "url": "https://www.pocketgamer.com/dragon-village-3/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-11",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "THXCHR08",
+        "sourcePublishedAt": "2026-08-19",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 공지와 만료 시각 확인",
+        "expiry": "2026-08-24 00:00 UTC",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>최근 제3자 목록에 노출된 문자열입니다. 공식 라운지·공식 카카오 채널에서 동일한 현재 발급 공지를 확인하지 못했으므로 활성 공식 쿠폰으로 단정하지 않습니다.</p><p>2026-10-14 재확인에서 공식 WithHIVE 발급·만료 근거를 추가했습니다.</p>",
+        "sources": [
+          {
+            "name": "Lv.1 Arcade · 드래곤빌리지3 후보 목록",
+            "url": "https://www.lv1arcade.com/coupons/dragonVillage/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B9%8C%EB%A6%AC%EC%A7%803",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dragon Village 3 공식 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/3031",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-08-19",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "7ROADMAP",
+        "sourcePublishedAt": "2026-06-25",
+        "latest": false,
+        "latestEvidence": "공식 개발자 노트에서 발급 및 종료 시각 확인",
+        "expiry": "2026-07-09 08:59 KST",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 개발자 노트에서 픽업 뽑기 티켓 5개·피로회복제(7일) 10개·골드 5,000,000·먹이 1,000,000 보상과 종료 시각을 함께 안내했습니다.</p>",
+        "sources": [
+          {
+            "name": "드래곤빌리지3 공식 개발자 노트",
+            "url": "https://game.naver.com/lounge/Dragon_Village3/board/detail/7845479",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-25",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "DV3START",
+        "sourcePublishedAt": "2026-05-26",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 2026-05-26 발급 이력 확인, 2026-10 제3자 목록에서는 종료로 분류",
+        "expiry": "공식 종료일 미표기·제3자 종료 보고",
+        "statusLabel": "공식 발급 이력·현재 종료 보고",
+        "evidenceHTML": "<p>공식 카카오 채널에서 글로벌 오픈 기념 코드로 다이아 300개와 픽업 뽑기 티켓 3개를 안내했습니다. 현재 공식 채널에서 유효 기간을 다시 확인하지 못해 최신 목록과 분리했습니다.</p><p>WithHIVE 공식 발급 원문을 추가 확인했습니다.</p>",
+        "sources": [
+          {
+            "name": "드래곤빌리지 공식 카카오 채널",
+            "url": "https://pf.kakao.com/_xoxbZsd/posts",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-03",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dragon Village 3 공식 글로벌 오픈 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/70",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-05-26",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "WEHEARDU",
+        "sourcePublishedAt": "2026-10-07",
+        "latest": true,
+        "latestEvidence": "공식 WithHIVE 개발자 노트에서 코드·보상·만료 시각 확인",
+        "expiry": "2026-10-21 14:59:59 UTC",
+        "statusLabel": "공식·현재",
+        "evidenceHTML": "<p>공식 개발자 노트의 감사 쿠폰입니다. 고급 뽑기 티켓 10개, 스태미나 회복 물약(7일) 10개, 골드 5,000,000 보상이며 공식 만료 시각까지 확인했습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 개발자 노트",
+            "url": "https://community.withhive.com/dv3/en/board/2/4814",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-10-07",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "TOGETHER",
+        "sourcePublishedAt": "2026-10-07",
+        "latest": true,
+        "latestEvidence": "공식 WithHIVE 개발자 노트에서 코드·보상·만료 시각 확인",
+        "expiry": "2027-10-07 14:59:59 UTC",
+        "statusLabel": "공식·현재",
+        "evidenceHTML": "<p>공식 개발자 노트의 추가 지원 쿠폰입니다. 다이아 1,500개 보상이며 공식 만료 시각까지 확인했습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 개발자 노트",
+            "url": "https://community.withhive.com/dv3/en/board/2/4814",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-10-07",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "1LOVEDV3",
+        "sourcePublishedAt": "2026-05-27",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 이력 확인",
+        "expiry": "2026-06-01 00:00 UTC",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 커뮤니티에서 다이아 100개와 피로회복제(7일) 1개 지급 코드로 안내됐으며 종료 시각이 지난 이력입니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/247",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-05-27",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DV3SUMMR",
+        "sourcePublishedAt": "2026-06-10",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 이력 확인",
+        "expiry": "공식 종료일 미확인",
+        "statusLabel": "공식 발급 이력·현재 미확인",
+        "evidenceHTML": "<p>공식 커뮤니티에서 골드 1,000,000과 타임 캡슐(7일) 100개 지급 코드로 발급된 이력이 확인됩니다. 현재 사용 가능 여부는 단정하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/632",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-10",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "0615NOTE",
+        "sourcePublishedAt": "2026-06-15",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 및 종료 조건 확인",
+        "expiry": "2026-06-25 업데이트 점검 전",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 개발자 노트 보상 코드로 발급됐으며 6월 25일 업데이트 점검 전까지 사용하도록 안내된 이력입니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 개발자 노트",
+            "url": "https://community.withhive.com/dv3/en/board/2/681",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-15",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "NOTE0615",
+        "sourcePublishedAt": "2026-06-15",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 누락 보상 코드 및 종료 조건 확인",
+        "expiry": "2026-06-25 업데이트 점검 전",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 개발자 노트의 누락 보상용 추가 코드이며 피로회복제·타임 캡슐·골드를 지급하고 6월 25일 업데이트 점검 전 종료됐습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 개발자 노트",
+            "url": "https://community.withhive.com/dv3/en/board/2/681",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-15",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "THANKYOU",
+        "sourcePublishedAt": "2026-06-23",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 및 종료 조건 확인",
+        "expiry": "2026-07-08 업데이트 점검 전",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 감사 보상 코드로 고급 소환 티켓 10개, 골드 1,000,000, 타임 캡슐·피로회복제를 지급했으며 7월 8일 업데이트 점검 전 종료됐습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 감사 공지",
+            "url": "https://community.withhive.com/dv3/en/board/13/905",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-23",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "NEWPICK7",
+        "sourcePublishedAt": "2026-07-22",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 3종 쿠폰 공지 확인",
+        "expiry": "2026-07-27 08:59:59 KST",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 3종 선물 쿠폰 중 하나로 다이아 300개 보상이며 공지된 만료 시각이 지났습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 3종 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/zh-hant/board/2/2051",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-07-22",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "UPDATE23",
+        "sourcePublishedAt": "2026-07-22",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 3종 쿠폰 공지 확인",
+        "expiry": "2026-07-27 08:59:59 KST",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 3종 선물 쿠폰 중 하나로 타임 캡슐 30개 보상이며 공지된 만료 시각이 지났습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 3종 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/zh-hant/board/2/2051",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-07-22",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "1VS1PVP1",
+        "sourcePublishedAt": "2026-07-22",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 3종 쿠폰 공지 확인",
+        "expiry": "2026-07-27 08:59:59 KST",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 3종 선물 쿠폰 중 하나로 골드 300,000 보상이며 공지된 만료 시각이 지났습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 3종 쿠폰 공지",
+            "url": "https://community.withhive.com/dv3/zh-hant/board/2/2051",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-07-22",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "SHADE907",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급·종료 조건은 확인했으나 최초 게시일은 현재 자료에서 확정하지 않음",
+        "expiry": "2026-09-16 업데이트 점검 전",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>공식 커뮤니티에서 고급 뽑기 티켓 10개, 스태미나 아이템 10개, 골드 5,000,000 보상 코드로 안내됐으며 9월 16일 점검 전 종료 조건이 확인됩니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/3649",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "LUNANOTE",
+        "sourcePublishedAt": "2026-09-18",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 개발자 노트에서 코드·보상·만료 확인",
+        "expiry": "2026-09-30 00:00 UTC",
+        "statusLabel": "공식·종료",
+        "evidenceHTML": "<p>달맞이 축제 지원 쿠폰으로 전설 성장석 선택 상자를 지급했으며 공식 만료 시각이 지났습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 개발자 노트",
+            "url": "https://community.withhive.com/dv3/en/board/2/4090",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-09-18",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "2606NOTE",
+        "sourcePublishedAt": "2026-06-02",
+        "latest": false,
+        "latestEvidence": "공식 WithHIVE 발급 이력 확인",
+        "expiry": "공식 종료일 미확인",
+        "statusLabel": "공식 발급 이력·현재 미확인",
+        "evidenceHTML": "<p>공식 공지에서 골드 5,000,000, 타임 캡슐(30일) 100개, 피로회복제(30일) 10개 보상 코드로 발급된 이력이 확인됩니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/392",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-06-02",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DVRAINY7",
+        "sourcePublishedAt": "2026-07-09",
+        "latest": true,
+        "latestEvidence": "공식 발급 이력은 확인되지만 2026-10 제3자 자료의 현재/종료 판정이 상충",
+        "expiry": "현재 사용 여부 상충",
+        "statusLabel": "공식 발급·현재 상충",
+        "evidenceHTML": "<p>공식 발급 이력이 확인되는 코드입니다. Pocket Gamer는 10월 11일 현재 코드로 표시하지만 다른 제3자 자료에는 종료 보고가 있어 공식 현재 코드로 승격하지 않습니다.</p>",
+        "sources": [
+          {
+            "name": "Dragon Village 3 공식 공지",
+            "url": "https://community.withhive.com/dv3/en/board/2/1582",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-07-09",
+            "checkedAt": "2026-10-14"
+          },
+          {
+            "name": "Pocket Gamer · Dragon Village 3 codes",
+            "url": "https://www.pocketgamer.com/dragon-village-3/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-11",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "STLEYDV3",
+        "sourcePublishedAt": "2026-10-11",
+        "latest": true,
+        "latestEvidence": "Pocket Gamer 2026-10-11 현재 코드 목록에서 확인, 공식 발급 원문 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·실사용 미확인",
+        "evidenceHTML": "<p>10월 11일 제3자 현재 코드 목록에 300 다이아와 피로회복제 보상으로 표시됩니다. 공식 발급 원문과 실제 입력 성공은 확인하지 못해 후보로 유지합니다.</p>",
+        "sources": [
+          {
+            "name": "Pocket Gamer · Dragon Village 3 codes",
+            "url": "https://www.pocketgamer.com/dragon-village-3/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-11",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DV3COSER",
+        "sourcePublishedAt": "2026-10-11",
+        "latest": true,
+        "latestEvidence": "Pocket Gamer 2026-10-11 현재 코드 목록에서 확인, 공식 발급 원문 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·실사용 미확인",
+        "evidenceHTML": "<p>10월 11일 제3자 현재 코드 목록에 300 다이아와 일반 뽑기 티켓 보상으로 표시됩니다. 공식 발급 원문과 실제 입력 성공은 확인하지 못해 후보로 유지합니다.</p>",
+        "sources": [
+          {
+            "name": "Pocket Gamer · Dragon Village 3 codes",
+            "url": "https://www.pocketgamer.com/dragon-village-3/codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-11",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "GTONEDV3",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DRGNWINS",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "LEGENDDV",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "VILGPLAY",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "TYPHSUPP",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "FLYDRGN7",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DRGNBUFF",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DV2026UP",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "DVSUMMER",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "100DV100",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "LUNAFEST",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "FULLLUNA",
+        "sourcePublishedAt": null,
+        "latest": false,
+        "latestEvidence": "일본어 공개 위키에 문자열이 남아 있으나 공식 발급 원문·현재 사용 성공 미확인",
+        "expiry": "미확인",
+        "statusLabel": "제3자 후보·현재 근거 약함",
+        "evidenceHTML": "<p>일본어 공개 위키에서 코드 문자열이 확인되지만 공식 발급 원문과 현재 사용 성공을 확인하지 못해 과거 후보로만 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "일본어 Dragon Village 3 쿠폰 위키",
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
+  },
+  {
+    "articleKey": "dark-slayer-idle-codes-202610",
+    "title": "다크슬레이어 : 방치형 RPG 키우기",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"다크슬레이어 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재 코드</span><strong>0개 확인</strong></div><div class=\"ncp-feed-stat\"><span>분류 기준</span><strong>만료 근거 우선</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>64개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"dark-slayer-idle-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=com.gamepub.zhteam.g\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.gamepub.zhteam.g\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/c3sM4fUBgY-dcn-RFA4VDtyWwf87xRFLxemfYD1q8daNUXihkzWwLvt_k8YivmyztSNV0aboKTJ3_pI6GcDK9A%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"다크슬레이어 : 방치형 RPG 키우기 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026년 10월 14일 기준 공식 Google Play은 운영 중이며 공식 게임라운지 쿠폰 보상을 안내합니다. 공식 라운지에서 현재 발급 코드 문자열은 확인하지 못했습니다. UCNGame의 2026년 10월 12일 갱신 목록은 55개 고유 문자열을 현재 코드로 제시하지만, 과거의 명시적 만료일 또는 종료 보고와 충돌하는 문자열은 최신에서 제외합니다. 확정 만료일이 있으면 그 만료연도에, 종료만 확인되고 연도를 확정할 수 없으면 원문 게시연도 또는 연도 미확인 기록에 보존합니다. 제3자의 현재 주장 자체는 삭제하지 않고 출처 근거로 유지하며 다크슬레이어2 자료는 제외합니다.</p>",
+    "guideHTML": "<section><h3>쿠폰 입력</h3><p>공개 공략 기준 메뉴·설정의 쿠폰 입력에서 등록합니다. 성공 여부는 게임 결과를 기준으로 판단합니다.</p><div><a href=\"https://game.naver.com/lounge/Ghost_Hunter/home\" rel=\"noopener noreferrer\">공식 게임라운지 <span>확인 →</span></a></div></section><section><h3>후보 해석</h3><p>제3자 최신 목록과 과거 만료 근거가 충돌하면 만료 근거를 기간 분류에 우선합니다. 제3자의 최신 주장은 삭제하지 않고 각 행의 근거에 남기며, 만료연도를 모르면 임의 연도를 만들지 않습니다.</p></section><section><h3>게임 식별</h3><p>패키지 com.gamepub.zhteam.g의 원작입니다. 2026년 서비스 중인 다크슬레이어2 프로모션은 제외합니다.</p></section>",
+    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.gamepub.zhteam.g\" rel=\"noopener noreferrer\">Google Play</a> · <a href=\"https://game.naver.com/lounge/Ghost_Hunter/home\" rel=\"noopener noreferrer\">공식 게임라운지</a> · <a href=\"https://ucngame.com/codes/dark-slayer-codes/\" rel=\"noopener noreferrer\">UCNGame</a> · <a href=\"https://www.mrguider.org/codes/dark-slayer-codes/\" rel=\"noopener noreferrer\">MrGuider</a> · <a href=\"https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv\" rel=\"noopener noreferrer\">GamePretty</a> · <a href=\"https://alwaysgame.tistory.com/entry/%EB%8B%A4%ED%81%AC-%EC%8A%AC%EB%A0%88%EC%9D%B4%EC%96%B4-%EC%BF%A0%ED%8F%B0-%EC%BD%94%EB%93%9C-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-%EC%9E%85%EB%A0%A5-%EB%B0%A9%EB%B2%95-%EB%B0%A9%EC%B9%98%ED%98%95-RPG\" rel=\"noopener noreferrer\">Alwaysgame</a> · <a href=\"https://coingos.tistory.com/690\" rel=\"noopener noreferrer\">Coingos</a> · <a href=\"https://www.mumuplayer.com/kr/blog/dark-slayer-afk-rpg-redeem-code.html\" rel=\"noopener noreferrer\">MuMu Player</a></p>",
+    "records": [
+      {
+        "code": "welcomeds",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "gogods",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "2023-12-30",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
+      },
+      {
+        "code": "loveslyer",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "sorrydss",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "2023-12-30",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
+      },
+      {
+        "code": "1130gift",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "godgame",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "betterds",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "2023-12-31",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
+      },
+      {
+        "code": "f1weekend",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
+      },
+      {
+        "code": "goodsund",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "2023-12-09",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
+      },
+      {
+        "code": "slyergift",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "godslyer",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": true,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+      },
+      {
+        "code": "sgiftsya",
+        "sourcePublishedAt": "2023-12-15",
+        "latest": false,
+        "expiry": "현재 미확인",
+        "statusLabel": "2023 공개 기록·2026 현재 미확인",
+        "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
+        "sources": [
+          {
+            "name": "다크슬레이어 방치형 RPG 쿠폰 공략",
+            "url": "https://coingos.tistory.com/690",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2023-12-15",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "dsmarsat",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-30",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "mar3fri",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-28",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "dsmarcp",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-31",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "syagiftds",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-09",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "wellsly",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-09",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "spgiftds",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-08",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "update28",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-06",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "htsatds",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-03",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "happyweek",
+        "sourcePublishedAt": null,
+        "expiry": "2024-03-02",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "withdarks",
+        "sourcePublishedAt": null,
+        "expiry": "2024-02-19",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "seollal",
+        "sourcePublishedAt": null,
+        "expiry": "2024-02-18",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "hagwsly",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "febspcds",
+        "sourcePublishedAt": null,
+        "expiry": "2024-02-29",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2024"
+      },
+      {
+        "code": "dgsunds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "firefri",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "updateds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "featggds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "thnksly",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "eowsun",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "hagtsat",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "firstfri",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "hny2024ds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "23adieu",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "firesat",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "finalfri",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "latest": true,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "12xmas25",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "eve24xmas",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "xmaspre",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "syaweeksg",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "latest": true,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "week1gift",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "drxknee",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "drxchanel",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "dscpsya",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "darkscpg",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "1211mtrw",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "nice77ds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "luckysp",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 미확인",
+        "latest": true,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "nice77day",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "goodtds",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-23",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "weekendre",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-15",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "dseventrw",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "respgift",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-23",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "iwilltry",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-22",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "thankstos",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-31",
+        "statusLabel": "제3자 현재 주장·과거 종료 상충",
+        "latest": false,
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
+        "sources": [
+          {
+            "name": "UCNGame",
+            "url": "https://ucngame.com/codes/dark-slayer-codes/",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "haveagt",
+        "sourcePublishedAt": null,
+        "expiry": "2023-12-10",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ],
+        "periodYear": "2023"
+      },
+      {
+        "code": "glsatds",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "srysorry",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "1220dsm",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "weekender",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "thankyou",
+        "sourcePublishedAt": null,
+        "expiry": "과거 종료 보고",
+        "statusLabel": "과거 기록·현재 미확인",
+        "latest": false,
+        "evidenceHTML": "<p>과거 공개 기록.</p>",
+        "sources": [
+          {
+            "name": "GamePretty",
+            "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
+            "sourcePublishedAt": null
+          }
+        ]
+      },
+      {
+        "code": "sgiftya",
+        "sourcePublishedAt": "2023-12-06",
+        "expiry": "미확인",
+        "statusLabel": "철자 상충 과거 기록",
+        "latest": false,
+        "evidenceHTML": "<p>sgiftsya·syaweeksg와 철자 상충.</p>",
+        "sources": [
+          {
+            "name": "윤소리아빠",
+            "url": "https://rageyun.tistory.com/242",
+            "sourcePublishedAt": "2023-12-06"
+          }
+        ]
+      },
+      {
+        "code": "fiweekend",
+        "sourcePublishedAt": "2023-12-05",
+        "expiry": "미확인",
+        "statusLabel": "철자 상충 과거 기록",
+        "latest": false,
+        "evidenceHTML": "<p>f1weekend와 철자 상충.</p>",
+        "sources": [
+          {
+            "name": "MuMu Player",
+            "url": "https://www.mumuplayer.com/kr/blog/dark-slayer-afk-rpg-redeem-code.html",
+            "sourcePublishedAt": "2023-12-05"
+          }
+        ]
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
   }
 ]

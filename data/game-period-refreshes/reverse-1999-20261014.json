@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "articleKey": "reverse-1999-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 9,
+  "dedupeExactSources": true,
+  "updateRecords": [
+    {
+      "code": "폐허속고향의노래",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "회귀불가구역",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "성숙한이념을지닌건축가",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일로 확인되지 않아 제거하고, 페이지 갱신 확인일로만 보존합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "gift4u",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "grandopen1999",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "1999gift",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 정정했습니다. 글로벌 최근 목록의 1999GIFT와 동일 코드로 보고 중복 행을 만들지 않습니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "yyy1999ccc",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "reverseculture",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    },
+    {
+      "code": "리버스1999YouTube",
+      "set": {"sourcePublishedAt": null},
+      "appendEvidenceHTML": "<p>기존 2026-10-08 표기는 원문 최초 게시일이 아니라 갱신 확인일로 판단해 날짜 미확인으로 정정합니다.</p>",
+      "updateSources": [
+        {"url":"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94","set":{"sourcePublishedAt":null,"updatedAt":"2026-10-08","checkedAt":"2026-10-14"}},
+        {"url":"https://www.reverse1999-simulator.com/ko/coupon","set":{"sourcePublishedAt":null,"checkedAt":"2026-10-14"}}
+      ]
+    }
+  ],
+  "mergeSources": [
+    {
+      "code": "1999gift",
+      "source": {"name":"Pocket Tactics 10월 현재 코드 목록의 1999GIFT","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+      "evidenceHTML": "<p>Pocket Tactics의 2026년 10월 12일 갱신 목록에서도 1999GIFT가 현재 코드로 제시됩니다. 기존 한국어 1999gift 행과 대소문자만 달라 동일 코드로 병합했습니다.</p>"
+    }
+  ],
+  "addRecords": [
+    {
+      "code": "ModernBuildings",
+      "sourcePublishedAt": "2026-10-13",
+      "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+      "latest": true,
+      "latestEvidence": "2026-10-13 MEmu Play 기사와 10월 최신 코드 목록에서 현재 코드로 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"MEmu Play 2026-10-13 Reverse: 1999 코드 목록","url":"https://www.memuplay.com/blog/reverse-1999-codes.html","sourcePublishedAt":"2026-10-13","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"Try Hard Guides 10월 현재 코드 목록","url":"https://tryhardguides.com/reverse-1999-codes-and-drops/0/","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Jar of Picrasma Candy 1개, Enlighten II 10개, Sharpodonty 20,000, Moment of Dissonance 3개 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "EndlessHorn",
+      "sourcePublishedAt": null,
+      "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics 2026-10-12 갱신과 Game.Guide 2026-10-12 확인 목록에서 현재 코드로 교차 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"Game.Guide 10월 코드 추적","url":"https://www.game.guide/reverse-1999-codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Delicate Insight Casket 1, Dust 10,000, Moment of Dissonance 3 보상으로 반복 안내됩니다.</p>"
+    },
+    {
+      "code": "EchoStone",
+      "sourcePublishedAt": null,
+      "expiry": "Ver.3.8 종료까지 주장·정확한 시각 미확인",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics와 Game.Guide의 2026-10-12 현재 목록에서 교차 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"Game.Guide 10월 코드 추적","url":"https://www.game.guide/reverse-1999-codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Enlighten III 3, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "DaisyinRuins",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics·Game.Guide·GamsGo의 10월 현재 목록에서 반복 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"GamsGo 10월 코드 목록","url":"https://www.gamsgo.com/blog/reverse-1999-codes","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Dust 20,000, Sharpodonty 20,000, Jar of Picrasma Candy 1 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "EchoesofTime",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics·GamsGo·BuffHub의 10월 현재 목록에서 반복 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"BuffHub 10월 보수적 현재 코드 목록","url":"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, MF Polarization 2, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "RescueMedal",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "BuffHub·MobileMatters의 2026년 10월 현재 목록에서 활성 후보로 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"BuffHub 10월 보수적 현재 코드 목록","url":"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"MobileMatters 10월 현재 코드 목록","url":"https://mobilematters.gg/redeem-codes/r1999","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Delicate Insight Casket 1, Dust 20,000, Sharpodonty 20,000 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "MothLight",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "BuffHub의 2026년 10월 현재 코드 목록에서 활성으로 제시",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"BuffHub 10월 보수적 현재 코드 목록","url":"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"AllThings.How 9월 현재 코드 목록","url":"https://allthings.how/reverse-1999-codes/","sourcePublishedAt":null,"updatedAt":"2026-09-13","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Dust 10,000, Sharpodonty 20,000, Fine Insight Package 2 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "SPDM",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "BuffHub의 2026년 10월 현재 목록과 9월 복수 목록에서 장기 활성 후보로 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"BuffHub 10월 보수적 현재 코드 목록","url":"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"AllThings.How 9월 코드 목록","url":"https://allthings.how/reverse-1999-codes/","sourcePublishedAt":null,"updatedAt":"2026-09-13","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Jar of Picrasma Candy 1, Enlighten II 10, Sharpodonty 20,000 보상으로 안내됩니다.</p>"
+    },
+    {
+      "code": "DesperateCounter",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics·Dexerto·GachaPocket의 10월 현재 목록에서 교차 확인",
+      "statusLabel": "글로벌 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"Dexerto 10월 현재 코드 목록","url":"https://www.dexerto.com/codes/reverse-1999-codes-3301019/","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Clear Drop 30, Dust 10,000, Moment of Dissonance 3, Insight Casket 1 보상 후보로 안내됩니다.</p>"
+    },
+    {
+      "code": "Gachagaming1999",
+      "sourcePublishedAt": null,
+      "expiry": "상시 주장·공식 현재 확인 미완료",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics·GamsGo의 10월 현재 목록과 커뮤니티 장기 코드 기록에서 반복 확인",
+      "statusLabel": "글로벌 장기 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"GamsGo 10월 현재 코드 목록","url":"https://www.gamsgo.com/blog/reverse-1999-codes","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Dust 15,000, Enlighten II 3, Picrasma Candy 1, Insight Casket 1 보상으로 안내되는 장기 글로벌 코드입니다.</p>"
+    },
+    {
+      "code": "5YRBRF9",
+      "sourcePublishedAt": null,
+      "expiry": "상시 주장·공식 현재 확인 미완료",
+      "latest": true,
+      "latestEvidence": "Pocket Tactics·GamsGo·Game.Guide의 2026년 10월 현재 목록에서 반복 확인",
+      "statusLabel": "글로벌 장기 최신 후보·공식 발급 원문 미확인",
+      "sources": [
+        {"name":"Pocket Tactics 10월 현재 코드 목록","url":"https://www.pockettactics.com/reverse-1999/codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"Game.Guide 10월 코드 추적","url":"https://www.game.guide/reverse-1999-codes","sourcePublishedAt":null,"updatedAt":"2026-10-12","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>Dust 19,999, Sharpodonty 19,999, Fine Insight Package 3 보상으로 안내되는 장기 글로벌 코드입니다.</p>"
+    },
+    {
+      "code": "FaintGlimmer",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 목록 후보·교차확인 부족",
+      "sources": [
+        {"name":"BlueStacks 2026년 10월 코드 목록","url":"https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"MobileMatters 10월 목록","url":"https://mobilematters.gg/redeem-codes/r1999","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>BlueStacks와 MobileMatters의 10월 목록에 남아 있으나 최신 보수적 목록과의 교차가 약해 최신 탭으로 승격하지 않고 보존합니다.</p>"
+    },
+    {
+      "code": "SayGoodbye",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 목록 후보·교차확인 부족",
+      "sources": [
+        {"name":"BlueStacks 2026년 10월 코드 목록","url":"https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"},
+        {"name":"MobileMatters 10월 목록","url":"https://mobilematters.gg/redeem-codes/r1999","sourcePublishedAt":null,"checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}
+      ],
+      "evidenceHTML": "<p>BlueStacks와 MobileMatters의 10월 목록에 남아 있으나 최신 보수적 목록과의 교차가 약해 최신 탭으로 승격하지 않고 보존합니다.</p>"
+    }
+  ],
+  "modelPatch": {
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"리버스 1999 쿠폰 최신 재조사\"><div class=\"ncp-feed-stat\"><span>최신 후보</span><strong>20개</strong></div><div class=\"ncp-feed-stat\"><span>추가 보존 후보</span><strong>2개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>22개</strong></div></div>",
+    "noticeHTML": "<p>2026년 10월 14일 한국·글로벌 공개 자료를 다시 확인했습니다. 기존 한국 서버 후보 9개는 삭제하지 않았고, 최근 해외 코드 목록에서 반복 확인되는 글로벌 현재 후보 11개를 추가했습니다. BlueStacks·MobileMatters에 남아 있는 FaintGlimmer·SayGoodbye 2개는 교차 근거가 약해 최신 탭이 아닌 미확인 기록으로 보존합니다. 기존 원고에서 원문 최초 게시일처럼 사용하던 2026-10-08은 해당 공략의 갱신 확인일 성격이라 최초 게시일을 미확인으로 바로잡았습니다.</p>",
+    "guideHTML": "<section><h3>리버스: 1999 쿠폰 입력 방법</h3><p>게임 메인 화면의 왼쪽 메뉴에서 설정 → 계정 → Exchange Code(교환 코드)로 이동해 입력합니다. 한국 서버·글로벌 서버 코드가 서로 다를 수 있으므로 한 서버에서 실패했다고 다른 서버에서도 동일하게 실패한다고 단정하지 않습니다.</p><p>폐허속고향의노래는 기존 자료에서 2026년 10월 15일 04:59 KST까지, 회귀불가구역·성숙한이념을지닌건축가는 2026년 11월 5일까지로 안내됩니다. 종료 시각이 명확하지 않은 후보는 게임 내 입력 결과를 최종 기준으로 확인하세요.</p></section>",
+    "archiveHTML": "<section><h3>2026년 10월 14일 재조사 판정</h3><p>한국 자료의 9개 기존 후보를 유지하고 글로벌 11개 현재 후보를 추가했습니다. ModernBuildings는 2026년 10월 13일 MEmu Play 기사에서 Ver.3.8 종료까지로 안내되며, EndlessHorn·EchoStone·DaisyinRuins·EchoesofTime·DesperateCounter·Gachagaming1999·5YRBRF9 등은 10월 12일 전후의 복수 현재 목록에서 반복 확인됩니다.</p><p>RescueMedal·MothLight·SPDM도 10월 현재 목록에서 유지되는 후보입니다. FaintGlimmer·SayGoodbye는 BlueStacks·MobileMatters 목록에는 남아 있지만 최신 보수적 목록과의 교차가 약해 미확인 기록으로 보존합니다.</p></section><section><h3>날짜 정정</h3><p>기존 한국 공략은 오래된 URL·본문이 계속 갱신되는 형태입니다. 따라서 2026-10-08을 원문 최초 게시일로 사용하지 않고 갱신 확인일로만 보존했습니다. 최초 게시일이 확인되지 않은 9개 기존 행은 게시일 미확인으로 표시합니다.</p></section><section><h3>확인한 주요 출처</h3><ul><li><a href=\"https://re1999.bluepoch.com/en/home/detail.html\" rel=\"noopener noreferrer\">Bluepoch 공식 Reverse: 1999 사이트</a></li><li><a href=\"https://www.pockettactics.com/reverse-1999/codes\" rel=\"noopener noreferrer\">Pocket Tactics 2026년 10월 코드 목록</a></li><li><a href=\"https://www.game.guide/reverse-1999-codes\" rel=\"noopener noreferrer\">Game.Guide 2026년 10월 코드 추적</a></li><li><a href=\"https://www.memuplay.com/blog/reverse-1999-codes.html\" rel=\"noopener noreferrer\">MEmu Play 2026-10-13 코드 목록</a></li><li><a href=\"https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html\" rel=\"noopener noreferrer\">BuffHub 10월 현재 코드 목록</a></li><li><a href=\"https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html\" rel=\"noopener noreferrer\">BlueStacks 10월 코드 목록</a></li><li><a href=\"https://game.warkingmom.com/entry/%EB%A6%AC%EB%B2%84%EC%8A%A4-1999-%EC%A4%91%EA%B5%AD-%EC%84%9C%EB%B2%84-%ED%8B%B0%EC%96%B4-%EB%93%B1%EA%B8%89%ED%91%9C-%EB%A6%AC%EC%84%B8%EB%A7%88%EB%9D%BC-%EC%B6%94%EC%B2%9C-%EA%B3%B5%EB%9E%B5-%EB%B0%8F-%EC%BF%A0%ED%8F%B0-2023%EB%85%84-10%EC%9B%94\" rel=\"noopener noreferrer\">한국 서버 쿠폰 공략</a></li></ul></section>",
+    "researchCheckedAt": "2026-10-14"
+  },
+  "articlePatch": {
+    "searchDescription": "리버스 1999 2026년 10월 쿠폰 후보 22개를 한국·글로벌로 다시 정리했습니다. 최신 후보 20개, 추가 미확인 후보 2개, 입력 방법과 기간 조건을 출처별로 확인할 수 있습니다.",
+    "references": [
+      "https://re1999.bluepoch.com/en/home/detail.html",
+      "https://www.pockettactics.com/reverse-1999/codes",
+      "https://www.game.guide/reverse-1999-codes",
+      "https://www.memuplay.com/blog/reverse-1999-codes.html",
+      "https://buffhub.com/blog/reverse-1999/reverse-1999-codes.html",
+      "https://www.bluestacks.com/blog/redeem-codes/reverse-1999-redeem-codes-en.html",
+      "https://mobilematters.gg/redeem-codes/r1999"
+    ]
+  },
+  "expectedAfterRecords": 22
+}
