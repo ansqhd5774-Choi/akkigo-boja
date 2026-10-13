@@ -20,7 +20,7 @@ const gameedu='https://game.edu.kg/ko/%EB%9A%9C%EA%B9%8C%ED%8E%AB%3A-%EC%84%9C%E
 const linegames='https://www.linegames.org/ko/%EB%9A%9C%EA%B9%8C%ED%8E%AB%3A-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C-%EC%BF%A0%ED%8F%B0/';
 const digwow='https://www.digwow.net/%EB%9A%9C%EA%B9%8C%ED%8E%AB-%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B2%8C/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C';
 const aayyy='https://www.aayyy.com/clash-of-critters/codes';
-const appIcon='https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A%3Dw240-h480';
+const appIcon='https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A=s512-rw';
 
 const featured=`<figure data-ncp-featured-image="${articleKey}" data-ncp-app-icon="true" data-ncp-app-icon-source="${googlePlay}" style="margin:0 0 24px"><a href="${googlePlay}" rel="noopener noreferrer"><img src="${appIcon}" width="512" height="512" alt="${GAME} 공식 앱 아이콘" loading="eager" decoding="async" style="display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px"/></a></figure>`;
 
