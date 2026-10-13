@@ -3,6 +3,7 @@
   "articleKey": "pixel-defenders-codes-202610",
   "checkedAt": "2026-10-14",
   "expectedBeforeRecords": 35,
+  "expectedAfterRecords": 39,
   "dedupeExactSources": true,
   "updateRecords": [
     {
@@ -188,7 +189,9 @@
     "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"픽셀 디펜더스 쿠폰 요약\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\"><span>최근 입력 후보</span><strong>15개</strong></div><div class=\"ncp-feed-stat\"><span>오늘 종료 표기</span><strong>1개</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>39개</strong></div></div>",
     "noticeHTML": "<p>2026년 10월 14일 다시 조사했습니다. 공식 Google Play의 Pixel Defenders: Merge TD Game은 ONDI TECHNOLOGY JSC 게임으로 확인되며 앱은 2026년 10월 8일 업데이트 상태입니다. 주요 제3자 목록에서는 <code>OCTCODE</code>, 서버별 <code>SERVER25</code>~<code>SERVER18</code>, <code>SERVERCODE</code>, <code>PDWELCOME</code>를 계속 확인할 수 있습니다. <code>SERVER16</code>·<code>SERVER17</code>은 표시된 종료일이 지나 최신에서 내렸고, <code>SERVER18</code>은 10월 14일 종료 표기라 오늘 종료 후보로 유지했습니다. 10월 13일 갱신된 AAYYY의 추가 문자열 4개는 다른 주요 자료와 교차 일치하지 않아 공식 코드가 아닌 제3자 입력 후보로만 보존합니다.</p>",
     "guideHTML": "<section><h3>쿠폰 입력 방법</h3><p>공개 가이드 기준으로 게임 실행 후 왼쪽 위 프로필/아바타를 열고 <strong>Gift Code</strong> 메뉴에서 코드를 입력한 뒤 보상은 우편함에서 확인합니다. 서버 번호가 붙은 코드는 해당 Global 서버 계정에만 적용된다고 보고되어 있습니다.</p></section><section><h3>확인 기준</h3><p>표시된 만료일이 지난 코드는 과거 기록으로 이동하고, 만료일 당일 코드는 종료 예정으로 따로 표시합니다. 공식 발급 원문이나 실제 계정 입력 성공이 없는 문자열은 출처가 최신이어도 <strong>제3자 후보</strong>로 유지합니다.</p></section>",
-    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&amp;id=com.ondi.fortias.defense\" rel=\"noopener noreferrer\">Google Play</a> · <a href=\"https://www.ondigames.com/\" rel=\"noopener noreferrer\">ONDI Games</a> · <a href=\"https://www.facebook.com/pixel.defenders.rpg\" rel=\"noopener noreferrer\">공식 Facebook</a> · <a href=\"https://discord.gg/FUFJGpw3xW\" rel=\"noopener noreferrer\">공식 Discord</a> · <a href=\"https://www.mrguider.org/roblox/pixel-defenders-codes/\" rel=\"noopener noreferrer\">MrGuider</a> · <a href=\"https://progamegeek.com/pixel-defenders-codes/\" rel=\"noopener noreferrer\">ProGameGeek</a> · <a href=\"https://gamevoyant.com/codes/pixel-defenders-codes\" rel=\"noopener noreferrer\">GameVoyant</a> · <a href=\"https://www.aayyy.com/pixel-defenders-merge-td-game/codes/\" rel=\"noopener noreferrer\">AAYYY</a> · Wantplay 2026-10-12 목록 존재도 추가 확인했습니다.</p>",
+    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&amp;id=com.ondi.fortias.defense\" rel=\"noopener noreferrer\">Google Play</a> · <a href=\"https://www.ondigames.com/\" rel=\"noopener noreferrer\">ONDI Games</a> · <a href=\"https://www.facebook.com/pixel.defenders.rpg\" rel=\"noopener noreferrer\">공식 Facebook</a> · <a href=\"https://discord.gg/FUFJGpw3xW\" rel=\"noopener noreferrer\">공식 Discord</a> · <a href=\"https://www.mrguider.org/roblox/pixel-defenders-codes/\" rel=\"noopener noreferrer\">MrGuider</a> · <a href=\"https://progamegeek.com/pixel-defenders-codes/\" rel=\"noopener noreferrer\">ProGameGeek</a> · <a href=\"https://gamevoyant.com/codes/pixel-defenders-codes\" rel=\"noopener noreferrer\">GameVoyant</a> · <a href=\"https://www.aayyy.com/pixel-defenders-merge-td-game/codes/\" rel=\"noopener noreferrer\">AAYYY</a> · Wantplay 2026-10-12 목록 존재도 추가 확인했습니다.</p>"
+  },
+  "articlePatch": {
     "searchDescription": "픽셀 디펜더스 쿠폰을 2026년 10월 14일 기준 재조사했습니다. 최근 입력 후보 15개, 서버별 만료 조건, 오늘 종료 코드와 전체 39개 보존 기록을 정리합니다."
   }
 }
