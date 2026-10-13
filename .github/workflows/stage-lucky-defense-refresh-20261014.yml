@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version: 24
-      - name: Apply 2026-10-14 worldwide recheck to existing article source
+      - name: Apply 2026-10-14 worldwide recheck to canonical period source
         run: node tools/stage-lucky-defense-refresh-20261014.mjs
       - name: Validate Lucky Defense source and 31-record preservation
         run: node --test tests/lucky-defense-draft.test.js
@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "418982+github-actions[bot]@users.noreply.github.com"
-          git add data/articles-supplemental.json drafts/lucky-defense-codes-202610.html akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          git add data/game-period-articles.json data/articles-supplemental.json drafts/lucky-defense-codes-202610.html akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
           if git diff --cached --quiet; then
             echo "LUCKY_DEFENSE_NO_DIFF"
             exit 0
