@@ -13,6 +13,8 @@ const mergeSource=(record,source)=>{
   record.sources=Array.isArray(record.sources)?record.sources:[];
   if(!record.sources.some(s=>sourceKey(s)===sourceKey(source)))record.sources.push(source);
 };
+const RECORD_SET_KEYS=new Set(['sourcePublishedAt','expiry','latest','latestEvidence','statusLabel']);
+const SOURCE_SET_KEYS=new Set(['name','sourcePublishedAt','updatedAt','checkedAt','referenceType']);
 
 const paths=process.argv.slice(2);
 if(!paths.length)fail('GAME_PERIOD_REFRESH_INPUT_REQUIRED');
@@ -46,6 +48,25 @@ for(const path of paths){
 
   if(patch.dedupeExactSources===true){
     for(const record of model.records)record.sources=exactUnique(record.sources||[]);
+  }
+
+  for(const item of patch.updateRecords||[]){
+    const record=model.records.find(r=>r.code===item.code);
+    if(!record)fail('GAME_PERIOD_REFRESH_UPDATE_CODE_MISSING:'+item.code);
+    for(const [key,value] of Object.entries(item.set||{})){
+      if(!RECORD_SET_KEYS.has(key))fail('GAME_PERIOD_REFRESH_RECORD_SET_KEY:'+key);
+      record[key]=value;
+    }
+    if(item.appendEvidenceHTML&&!String(record.evidenceHTML||'').includes(item.appendEvidenceHTML))record.evidenceHTML=String(record.evidenceHTML||'')+item.appendEvidenceHTML;
+    for(const sourceUpdate of item.updateSources||[]){
+      if(!sourceUpdate?.url)fail('GAME_PERIOD_REFRESH_SOURCE_UPDATE_URL_REQUIRED');
+      const source=(record.sources||[]).find(s=>s.url===sourceUpdate.url);
+      if(!source)fail('GAME_PERIOD_REFRESH_SOURCE_UPDATE_MISSING:'+item.code+':'+sourceUpdate.url);
+      for(const [key,value] of Object.entries(sourceUpdate.set||{})){
+        if(!SOURCE_SET_KEYS.has(key))fail('GAME_PERIOD_REFRESH_SOURCE_SET_KEY:'+key);
+        source[key]=value;
+      }
+    }
   }
 
   for(const item of patch.mergeSources||[]){
