@@ -56,8 +56,15 @@ byCode.LUCKY10KFANS.statusLabel='글로벌 10월 재등장 · 한국 과거 종�
 model.previewHTML='<div class="ncp-feed-preview" data-ncp-feed-preview="data-ncp-feed-preview" aria-label="운빨존많겜 쿠폰 요약"><div class="ncp-feed-stat"><span>보존 기록</span><strong>31개</strong></div><div class="ncp-feed-stat"><span>10월 글로벌 후보</span><strong>4개</strong></div><div class="ncp-feed-stat"><span>한국 공식 현재 확인</span><strong>0개</strong></div></div>';
 const note='<p data-lucky-defense-refresh="2026-10-14">2026년 10월 14일 전세계 재조사에서 Pocket Gamer의 10월 11일 글로벌 목록이 LUCKYDISCORD, LUCKYCOMMU50K, LUCKYJOIN30K, LUCKY10KFANS 4개를 현재 코드로 제시한 것을 확인했습니다. 그러나 뒤 3개는 한국 과거 종료 기록과 충돌하며, 111% 공식 재발급 공지·한국 계정 입력 성공은 확인되지 않았습니다. 따라서 4개 모두 현재 입력 후보로만 표시하고 공식 사용 가능으로 단정하지 않습니다.</p>';
 model.noticeHTML=stripRefresh(model.noticeHTML)+note;
-const refs=`<p><a href="${pocketUrl}" rel="noopener noreferrer">Pocket Gamer 2026-10-11 글로벌 현재 코드 목록</a></p><p><a href="${helpUrl}" rel="noopener noreferrer">111% 공식 쿠폰 입력 방법</a></p><p><a href="${playUrl}" rel="noopener noreferrer">한국 Google Play 운빨존많겜 공식 앱</a></p>`;
-if(!String(model.archiveHTML||'').includes(pocketUrl))model.archiveHTML=String(model.archiveHTML||'')+refs;
+let archive=String(model.archiveHTML||'');
+for(const ref of [
+  [pocketUrl,'Pocket Gamer 2026-10-11 글로벌 현재 코드 목록'],
+  [helpUrl,'111% 공식 쿠폰 입력 방법'],
+  [playUrl,'한국 Google Play 운빨존많겜 공식 앱']
+]){
+  if(!archive.includes(ref[0]))archive+=`<p><a href="${ref[0]}" rel="noopener noreferrer">${ref[1]}</a></p>`;
+}
+model.archiveHTML=archive;
 model.researchCheckedAt=checkedAt;
 
 article.source={...article.source,checkedAt,gamePeriodModel:model};
