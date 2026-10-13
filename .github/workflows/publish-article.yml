@@ -141,7 +141,15 @@ jobs:
         if: steps.requests.outputs.has_requests == 'true'
         env:
           GITHUB_OIDC_TOKEN: ${{ steps.publish-oidc.outputs.token }}
+          NAVER_CRAWL_ACCESS_TOKEN: ${{ secrets.NAVER_CRAWL_ACCESS_TOKEN }}
         run: node tools/actions-runtime.mjs publish
+      - name: Preserve search notification receipts
+        if: always() && steps.requests.outputs.has_requests == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-notifications-${{ github.run_id }}
+          path: output/search-notifications.jsonl
+          if-no-files-found: ignore
       - name: Summarize verification and deployment
         if: always()
         env:

@@ -2,6 +2,7 @@ import {readFile} from 'node:fs/promises';
 import {currentArticleCatalog} from '../src/article-catalog.js';
 import {articleSnapshot} from '../src/article-snapshot.js';
 import {validateArticleDraft} from './validate-article-draft.mjs';
+import {recordPublicationNotification} from './notify-search-publication.mjs';
 
 const token=process.env.GITHUB_OIDC_TOKEN;
 if (!token) throw new Error('GITHUB_OIDC_TOKEN_MISSING');
@@ -67,6 +68,7 @@ for (const name of names) {
   // the published Blogger URL; visual QA is run only for an explicit defect.
   console.log(JSON.stringify({articleKey:request.articleKey,status:body.status,url:body.url,postId:body.postId,publicVerified:body.publicVerified,alreadyLive:Boolean(body.alreadyLive),userReviewRequired:true,visualQa:"USER_REVIEW"}));
   console.log('BLOGGER_LIVE_USER_REVIEW_URL',body.url);
+  if(!requireUnchanged)await recordPublicationNotification(body);
   processed++;
 }
 if (!processed && !deferred.length) console.log('NO_APPROVED_REQUESTS_SKIPPED');
