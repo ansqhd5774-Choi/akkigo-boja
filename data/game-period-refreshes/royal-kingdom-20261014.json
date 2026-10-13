@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "articleKey": "royal-kingdom-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 128,
+  "dedupeExactSources": true,
+  "mergeSources": [
+    {
+      "code": "WELCOME",
+      "source": {
+        "name": "DIGWOW 로얄 킹덤 쿠폰 목록",
+        "url": "https://www.digwow.net/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-09-30",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>2026년 9월 30일 갱신된 DIGWOW 목록에서도 다시 확인됐습니다. Dream Games 공식 발급·공식 입력 기능·실제 계정 성공은 확인되지 않았습니다.</p>"
+    }
+  ],
+  "addRecords": [
+    {
+      "code": "CWjd9VVTBfyr",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames가 2026년 10월 11일 현재 코드로 표시했습니다. 해당 페이지는 Royal Kingdom·LINE·Apple과 제휴 관계가 아니라고 명시하며, Dream Games 공식 입력 시스템은 별도로 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "jFwhuoWuDiNY",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "wtyIgewUQJGV",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "DQ1E9GXPR5mS",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "TCU7A2n2ncBQ",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "XCkpqldmGRzB",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "H8KfGfW7DWe2",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "IdeGanlzbMjz",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "HpxaUAr1mDaI",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "v5hSMsdnnEjD",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "Xj8ECfoXvizN",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "yEypgALisJE8",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "m6QMWNPQOwlq",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "lDvcQGEWndA5",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "z6hBw5jmTmYl",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "gPJ0PLtcCUDI",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 10월 현재 주장 · 공식 입력 기능 미확인",
+      "sources": [{"name":"LINEGames 2026-10-11 현재 코드 목록","url":"https://www.linegames.org/en/royal-kingdom-codes","sourcePublishedAt":null,"updatedAt":"2026-10-11","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>LINEGames의 2026년 10월 11일 목록에 수록됐으나 공식 발급과 실제 입력 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "ROYALKINGDOM",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 9월 목록 · 공식 입력 기능 미확인",
+      "sources": [{"name":"DIGWOW 2026-09-30 갱신 목록","url":"https://www.digwow.net/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C","sourcePublishedAt":null,"updatedAt":"2026-09-30","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>DIGWOW의 2026년 9월 30일 갱신 목록에 표시됐습니다. 원문 최초 게시일·Dream Games 공식 발급·실제 입력 성공은 미확인입니다.</p>"
+    },
+    {
+      "code": "KINGDOM2024",
+      "sourcePublishedAt": null,
+      "expiry": "미확인",
+      "latest": false,
+      "statusLabel": "제3자 9월 목록 · 공식 입력 기능 미확인",
+      "sources": [{"name":"DIGWOW 2026-09-30 갱신 목록","url":"https://www.digwow.net/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C","sourcePublishedAt":null,"updatedAt":"2026-09-30","checkedAt":"2026-10-14","referenceType":"THIRD_PARTY_CODE_MENTION"}],
+      "evidenceHTML": "<p>DIGWOW의 2026년 9월 30일 갱신 목록에 표시됐습니다. 원문 최초 게시일·Dream Games 공식 발급·실제 입력 성공은 미확인입니다.</p>"
+    }
+  ],
+  "modelPatch": {
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"로얄 킹덤 쿠폰 재조사\"><div class=\"ncp-feed-stat\"><span>공식 사용 확인 코드</span><strong>0개</strong></div><div class=\"ncp-feed-stat\"><span>10월 제3자 현재 주장</span><strong>16개</strong></div><div class=\"ncp-feed-stat\"><span>보존 후보 기록</span><strong>146개</strong></div></div>",
+    "noticeHTML": "<p>2026년 10월 14일 전세계 공개 자료를 다시 확인했습니다. Dream Games 공식 고객지원과 현재 게임 정보에서는 쿠폰 입력 기능을 확인하지 못했고, BlueStacks의 2026년 10월 조사도 리딤 시스템이 없다고 명시합니다. 기존 128개 기록은 삭제하지 않았으며, 올바른 Dream Games 로얄 킹덤을 다루는 제3자 페이지에서 새로 확인한 문자열 18개를 미확인 후보로 추가했습니다. LINEGames의 16개는 10월 11일 현재 코드 주장이고 DIGWOW의 2개는 9월 30일 갱신 목록입니다. 페이지 갱신일을 원문 최초 게시일로 대체하지 않았습니다.</p>",
+    "guideHTML": "<section><h3>로얄 킹덤 쿠폰 입력 방법</h3><p>2026년 10월 14일 기준 Dream Games 공식 고객지원에서 쿠폰 또는 리딤코드 입력 기능을 확인하지 못했습니다. BlueStacks의 2026년 10월 조사 역시 현재 리딤 시스템이 없어 코드를 입력할 방법이 없다고 안내합니다.</p><p>일부 제3자 페이지는 프로필 또는 설정에서 Redeem Code를 선택하라고 설명하지만 공식 기능과 교차 확인되지 않았습니다. 외부 페이지에 게임 계정 비밀번호·인증번호·결제 정보를 입력하지 마세요.</p></section>",
+    "archiveHTML": "<section><h3>2026년 10월 14일 재조사 판정</h3><p><strong>공식 사용 확인 쿠폰은 0개</strong>입니다. Dream Games의 로얄 킹덤 공식 고객지원에서 리딤코드 메뉴를 확인하지 못했고, BlueStacks의 2026년 10월 조사도 현재 코드 교환 시스템이 없다고 명시합니다.</p><p>LINEGames는 2026년 10월 11일 16개 문자열을 현재 코드로 표시하지만 해당 페이지 자체가 Royal Kingdom·LINE·Apple과 제휴하지 않았다고 밝히고 있습니다. 따라서 16개 모두 공식 코드가 아닌 제3자 미확인 후보로 보존합니다.</p><p>DIGWOW의 2026년 9월 30일 갱신 목록에는 ROYALKINGDOM·WELCOME·KINGDOM2024가 표시됩니다. WELCOME은 기존 기록과 출처만 합쳤고 나머지 2개를 새 후보로 추가했습니다. 갱신일은 최초 게시일로 사용하지 않았습니다.</p></section><section><h3>동명·오식별 자료 제외</h3><p>LDPlayer의 2025년 Royal Kingdom 코드 글은 중세 전투·자원 관리 게임으로 설명해 Dream Games의 매치3 로얄 킹덤과 게임 정체성이 맞지 않아 ICESTAFF·NEBULADREAMS·LGCP4AJO7S8R을 이 글의 후보로 추가하지 않았습니다.</p><p>Teknoistan 자료는 Royalty Kingdom 2 계열로 보이는 문자열과 치트 목록이 섞여 있어 Dream Games 공식 게임 전용 쿠폰 근거로 사용하지 않았습니다.</p></section><section><h3>공식 무료 보상</h3><ul><li>생명은 시간이 지나면 회복되며 팀에 가입하면 팀원에게 생명을 요청할 수 있습니다.</li><li>코인은 지역 상자·게임 이벤트·레벨 진행·팀 활동을 통해 받을 수 있습니다.</li><li>Magic Pots 등 게임 내 기능으로 시작 파워업을 강화할 수 있습니다.</li></ul></section><section><h3>확인한 주요 출처</h3><ul><li><a href=\"https://dreamgames.helpshift.com/hc/en/6-royal-kingdom-1676903479/\" rel=\"noopener noreferrer\">Dream Games 로얄 킹덤 공식 고객지원</a></li><li><a href=\"https://www.bluestacks.com/blog/redeem-codes/royal-kingdom-redeem-codes-en.html\" rel=\"noopener noreferrer\">BlueStacks 2026년 10월 리딤 시스템 조사</a></li><li><a href=\"https://www.linegames.org/en/royal-kingdom-codes\" rel=\"noopener noreferrer\">LINEGames 2026-10-11 제3자 코드 목록</a></li><li><a href=\"https://www.digwow.net/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C\" rel=\"noopener noreferrer\">DIGWOW 2026-09-30 갱신 목록</a></li><li><a href=\"https://apps.apple.com/kr/app/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4-royal-kingdom/id1606549505\" rel=\"noopener noreferrer\">Dream Games 공식 App Store</a></li><li><a href=\"https://play.google.com/store/apps/details?id=com.dreamgames.royalkingdom\" rel=\"noopener noreferrer\">Dream Games 공식 Google Play</a></li></ul></section>",
+    "researchCheckedAt": "2026-10-14"
+  },
+  "articlePatch": {
+    "searchDescription": "로얄 킹덤 쿠폰 후보 146개를 출처별로 보존해 확인합니다. 2026년 10월 현재 Dream Games 공식 쿠폰 입력 기능과 사용 확인 코드는 확인되지 않았으며 제3자 현재 주장 16개도 미확인으로 구분합니다.",
+    "references": [
+      "https://dreamgames.helpshift.com/hc/en/6-royal-kingdom-1676903479/",
+      "https://www.bluestacks.com/blog/redeem-codes/royal-kingdom-redeem-codes-en.html",
+      "https://www.linegames.org/en/royal-kingdom-codes",
+      "https://www.digwow.net/%EB%A1%9C%EC%96%84-%ED%82%B9%EB%8D%A4/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C"
+    ]
+  },
+  "expectedAfterRecords": 146,
+  "forbidLatest": true,
+  "forbiddenCodes": [
+    "ICESTAFF",
+    "NEBULADREAMS",
+    "LGCP4AJO7S8R",
+    "GO1LRM42",
+    "1805746D",
+    "4A9OKL812M",
+    "KI89YN",
+    "DL42OMN9GOY60",
+    "ARO46352DM",
+    "4RGKMD3I05O197AY",
+    "I9R26L3DKOGM70"
+  ]
+}

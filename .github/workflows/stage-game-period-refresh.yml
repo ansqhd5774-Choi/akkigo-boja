@@ -1,0 +1,56 @@
+name: Stage Game Period Refresh
+
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - 'data/game-period-refreshes/**'
+      - 'tools/apply-game-period-refresh.mjs'
+      - '.github/workflows/stage-game-period-refresh.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stage-game-period-refresh
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  stage:
+    if: github.event.repository.private == false && github.repository == 'ansqhd5774-Choi/akkigo-boja'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - name: Apply changed declarative game refreshes
+        env:
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
+        run: |
+          mapfile -t files < <(git diff --name-only "$PUSH_BEFORE" "$PUSH_AFTER" -- data/game-period-refreshes | grep -E '^data/game-period-refreshes/[a-z0-9-]+\.json$' || true)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "GAME_PERIOD_REFRESH_NO_DATA_CHANGE"
+            exit 0
+          fi
+          node tools/apply-game-period-refresh.mjs "${files[@]}"
+      - name: Validate shared period source before commit
+        run: node tools/check-article-presentation.mjs --static
+      - name: Commit generated canonical source once
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "418982+github-actions[bot]@users.noreply.github.com"
+          git add data/game-period-articles.json data/articles.json data/articles-supplemental.json drafts akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
+          if git diff --cached --quiet; then
+            echo "GAME_PERIOD_REFRESH_NO_GENERATED_DIFF"
+            exit 0
+          fi
+          git commit -m "refresh(game): apply declarative period update"
+          git push origin HEAD:codex/blogger-worker-r1
