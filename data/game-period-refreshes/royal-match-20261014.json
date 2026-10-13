@@ -1,0 +1,408 @@
+{
+  "version": 1,
+  "articleKey": "royal-match-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 37,
+  "dedupeExactSources": true,
+  "updateRecords": [
+    {
+      "code": "RM2024",
+      "set": {
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p>"
+    },
+    {
+      "code": "RM100",
+      "set": {
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p>"
+    },
+    {
+      "code": "GIFT2024",
+      "set": {
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p>"
+    },
+    {
+      "code": "ROYAL2024",
+      "set": {
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p>"
+    },
+    {
+      "code": "MATCH2024",
+      "set": {
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p>"
+    }
+  ],
+  "mergeSources": [
+    {
+      "code": "RM2024",
+      "source": {
+        "name": "AAYYY · Royal Match Codes",
+        "url": "https://www.aayyy.com/royal-match/codes/",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>"
+    },
+    {
+      "code": "RM100",
+      "source": {
+        "name": "AAYYY · Royal Match Codes",
+        "url": "https://www.aayyy.com/royal-match/codes/",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>"
+    },
+    {
+      "code": "GIFT2024",
+      "source": {
+        "name": "AAYYY · Royal Match Codes",
+        "url": "https://www.aayyy.com/royal-match/codes/",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>"
+    },
+    {
+      "code": "ROYAL2024",
+      "source": {
+        "name": "AAYYY · Royal Match Codes",
+        "url": "https://www.aayyy.com/royal-match/codes/",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>"
+    },
+    {
+      "code": "MATCH2024",
+      "source": {
+        "name": "AAYYY · Royal Match Codes",
+        "url": "https://www.aayyy.com/royal-match/codes/",
+        "sourcePublishedAt": null,
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>"
+    }
+  ],
+  "addRecords": [
+    {
+      "code": "WELCOME",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP222",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP555",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP666",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP777",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP888",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "VIP999",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "GO2024",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "GameEDU · Royal Match 코드 목록",
+          "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-12",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "gDXjKHIgPwel",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "K4jZej2zzVyz",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "NAZMUxaRw8oh",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "XUvfFnkoCaMA",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "8Ol5CHv0BHAQ",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    },
+    {
+      "code": "2Rmreqljw04a",
+      "sourcePublishedAt": null,
+      "expiry": null,
+      "latest": true,
+      "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+      "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+      "sources": [
+        {
+          "name": "LINEGames · Royal Match Codes",
+          "url": "https://www.linegames.org/en/royal-match-codes",
+          "sourcePublishedAt": null,
+          "updatedAt": "2026-10-11",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+    }
+  ],
+  "modelPatch": {
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"로얄 매치 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재 코드</span><strong>0개 확인</strong></div><div class=\"ncp-feed-stat\"><span>제3자 현재 후보</span><strong>19개</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>51개</strong></div></div>",
+    "noticeHTML": "<p>2026년 10월 14일 다시 조사했습니다. Dream Games 공식 Google Play과 공식 도움말에서는 공용 쿠폰 코드 발급 또는 쿠폰 입력 경로를 확인하지 못했습니다. 공식 도움말은 무료 코인을 Area Chest·Bonus Level·레벨 클리어·남은 이동 수와 각종 게임 내 이벤트 보상으로 안내합니다. 반면 AAYYY는 5개, GameEDU는 8개, LINEGames는 6개 문자열을 10월 현재 목록으로 제시해 총 19개를 <strong>제3자 현재 후보</strong>로 표시합니다. 세 출처의 목록이 서로 다르고 Dream Games 공식 발급·공용 입력 경로·계정 사용 성공이 확인되지 않았으므로 공식 또는 사용 가능 확정으로 승격하지 않습니다. 이전 32개 후보 기록도 삭제하지 않고 이력으로 보존합니다.</p>",
+    "guideHTML": "<section><h3>공식 무료 보상</h3><p>Dream Games 공식 도움말은 Area Chest, Bonus Level, 일반·Hard·Super Hard·Extremely Hard 레벨 완료, 클리어 뒤 남은 이동 수, Propeller Madness·Book of Treasure·Team Battle·Dragon Nest·Train Journey·Ocean Odyssey 등 게임 내 이벤트를 무료 코인·보상 경로로 안내합니다. Weekly Mission도 미션과 보상 바를 통해 보상을 제공합니다.</p><div><a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/10-how-to-get-free-coins/\" rel=\"noopener noreferrer\">Dream Games 공식 무료 코인 안내 <span>→</span></a></div></section><section><h3>제3자 코드 해석</h3><p>AAYYY·GameEDU·LINEGames의 10월 목록은 서로 다른 문자열을 제시합니다. 특히 GameEDU와 LINEGames는 언어·확인 시점에 따라 목록 구성이 달라지므로 현재 표시 여부만으로 공식 발급이나 사용 성공을 뜻하지 않습니다. 시도할 경우 실패 가능성을 전제로 확인하세요.</p></section><section><h3>입력 메뉴가 보이지 않을 때</h3><p>공식 도움말과 스토어에서 공용 쿠폰 입력 경로가 확인되지 않았습니다. 게임에 입력 메뉴가 없다면 외부 사이트에 계정 정보나 결제 정보를 입력하지 말고 공식 게임 내 이벤트·보상과 Dream Games 도움말을 우선 확인하세요.</p></section>",
+    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.dreamgames.royalmatch\" rel=\"noopener noreferrer\">공식 Google Play</a> · <a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/10-how-to-get-free-coins/\" rel=\"noopener noreferrer\">Dream Games 무료 코인 안내</a> · <a href=\"https://www.aayyy.com/royal-match/codes/\" rel=\"noopener noreferrer\">AAYYY 10월 후보</a> · <a href=\"https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/\" rel=\"noopener noreferrer\">GameEDU 10월 후보</a> · <a href=\"https://www.linegames.org/en/royal-match-codes\" rel=\"noopener noreferrer\">LINEGames 10월 후보</a> · <a href=\"https://www.teknoistan.com/royal-match-ekim-2026-jeton-can-ve-sinirsiz-booster/\" rel=\"noopener noreferrer\">쿠폰 입력 기능 반대 사례</a></p>",
+    "researchCheckedAt": "2026-10-14"
+  },
+  "articlePatch": {
+    "searchDescription": "로얄 매치 쿠폰을 2026년 10월 14일 기준 다시 조사했습니다. Dream Games 공식 공용 코드는 0개 확인, 제3자 현재 후보 19개와 기존 이력 51개를 보존하고 공식 무료 코인·이벤트 보상 경로를 구분해 정리합니다.",
+    "references": [
+      "https://play.google.com/store/apps/details?hl=ko&id=com.dreamgames.royalmatch",
+      "https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/10-how-to-get-free-coins/",
+      "https://www.aayyy.com/royal-match/codes/",
+      "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+      "https://www.linegames.org/en/royal-match-codes",
+      "https://www.teknoistan.com/royal-match-ekim-2026-jeton-can-ve-sinirsiz-booster/"
+    ]
+  },
+  "expectedAfterRecords": 51
+}
