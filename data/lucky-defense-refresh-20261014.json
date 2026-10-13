@@ -1,0 +1,99 @@
+{
+  "articleKey": "lucky-defense-codes-202610",
+  "gameName": "운빨존많겜",
+  "checkedAt": "2026-10-14",
+  "publicUrl": "https://lsifl.blogspot.com/2026/10/2026-10_0476929638.html",
+  "postId": "408847743169518755",
+  "researchScope": ["ko", "en", "ja", "zh-CN", "zh-TW"],
+  "officialCurrentPublicCodeCount": 0,
+  "preservedRecordCount": 31,
+  "newCouponRowsAdded": 0,
+  "currentGlobalThirdPartyCandidates": [
+    {
+      "code": "LUCKYDISCORD",
+      "rewardClaim": "reward unspecified",
+      "sourcePublishedAt": "2026-10-11",
+      "sourceUrl": "https://www.pocketgamer.com/lucky-defense-omfg/codes/",
+      "status": "UNVERIFIED",
+      "region": "GLOBAL_OMFG_LUCKY_ME",
+      "koreanAccountVerified": false,
+      "officialIssueVerified": false
+    },
+    {
+      "code": "LUCKYCOMMU50K",
+      "rewardClaim": "5,000 Gems",
+      "sourcePublishedAt": "2026-10-11",
+      "sourceUrl": "https://www.pocketgamer.com/lucky-defense-omfg/codes/",
+      "status": "UNVERIFIED",
+      "region": "GLOBAL_OMFG_LUCKY_ME",
+      "koreanAccountVerified": false,
+      "officialIssueVerified": false,
+      "conflict": "Korean historical sources report 2025-07-02 expiry"
+    },
+    {
+      "code": "LUCKYJOIN30K",
+      "rewardClaim": "3,000 Diamonds",
+      "sourcePublishedAt": "2026-10-11",
+      "sourceUrl": "https://www.pocketgamer.com/lucky-defense-omfg/codes/",
+      "status": "UNVERIFIED",
+      "region": "GLOBAL_OMFG_LUCKY_ME",
+      "koreanAccountVerified": false,
+      "officialIssueVerified": false,
+      "conflict": "Korean historical sources report 2025-05-27 expiry"
+    },
+    {
+      "code": "LUCKY10KFANS",
+      "rewardClaim": "1,000 Diamonds",
+      "sourcePublishedAt": "2026-10-11",
+      "sourceUrl": "https://www.pocketgamer.com/lucky-defense-omfg/codes/",
+      "status": "UNVERIFIED",
+      "region": "GLOBAL_OMFG_LUCKY_ME",
+      "koreanAccountVerified": false,
+      "officialIssueVerified": false,
+      "conflict": "Korean historical sources report 2025-05-23 expiry"
+    }
+  ],
+  "expiredOrHistoricalDoNotPromote": [
+    {"code": "THANKS2YEARS", "reason": "Lucky Defense Team notice states 2026-05-31 23:59 KST expiry"},
+    {"code": "LUCKY2NDANNIV", "reason": "Korean source reports 2026-06-14 expiry"},
+    {"code": "LUCKYDISCORD30K", "reason": "Korean source reports 2026-04-02 23:59 expiry"}
+  ],
+  "officialReferences": [
+    {
+      "type": "COUPON_REDEMPTION_METHOD",
+      "url": "https://111percent.helpshift.com/hc/en/22-lucky-defense/faq/825-how-to-use-coupons/?p=all",
+      "sourcePublishedAt": null,
+      "note": "111% Help Center confirms Lobby top-right menu > Settings > Enter Coupon; reward appears in mailbox after reconnecting"
+    },
+    {
+      "type": "KOREAN_APP_IDENTITY",
+      "url": "https://play.google.com/store/apps/details?hl=ko&id=com.percent.aos.luckydefense",
+      "sourcePublishedAt": null,
+      "storeUpdatedAt": "2026-09-22",
+      "note": "Korean Google Play still lists the game as 운빨존많겜 by 111%"
+    }
+  ],
+  "communityEvidence": [
+    {
+      "code": "LUCKYCOMMU50K",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1lkxyi0",
+      "sourcePublishedAt": "2025-06-26",
+      "result": "multiple historical success reports; still worked 2025-07-01"
+    },
+    {
+      "code": "LUCKY10KFANS",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1kos0iq",
+      "sourcePublishedAt": "2025-05-17",
+      "result": "historical success reports and in-game notice reference"
+    },
+    {
+      "topic": "current codes",
+      "url": "https://www.reddit.com/r/luckydefense/comments/1wl02xo/any_active_codes/",
+      "sourcePublishedAt": "2026-09-19",
+      "result": "community could not confirm that suggested older codes were still active"
+    }
+  ],
+  "searchMetrics": null,
+  "result": "FOUR_GLOBAL_CURRENT_CANDIDATES_NO_CURRENT_OFFICIAL_KOREAN_CODE_CONFIRMED",
+  "datePolicy": "Source publication date, source update/check date, official issue date and expiry are kept separate. A current third-party list does not overwrite the original historical publication date of the same code."
+}
