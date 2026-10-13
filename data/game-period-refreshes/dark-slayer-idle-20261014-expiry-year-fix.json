@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "articleKey": "dark-slayer-idle-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 64,
+  "modelPatch": {
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"다크슬레이어 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재 코드</span><strong>0개 확인</strong></div><div class=\"ncp-feed-stat\"><span>분류 기준</span><strong>만료 근거 우선</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>64개</strong></div></div>",
+    "noticeHTML": "<p>2026년 10월 14일 기준 공식 Google Play은 운영 중이며 공식 게임라운지 쿠폰 보상을 안내합니다. 공식 라운지에서 현재 발급 코드 문자열은 확인하지 못했습니다. UCNGame의 2026년 10월 12일 갱신 목록은 55개 고유 문자열을 현재 코드로 제시하지만, 과거의 명시적 만료일 또는 종료 보고와 충돌하는 문자열은 최신에서 제외합니다. 확정 만료일이 있으면 그 만료연도에, 종료만 확인되고 연도를 확정할 수 없으면 원문 게시연도 또는 연도 미확인 기록에 보존합니다. 제3자의 현재 주장 자체는 삭제하지 않고 출처 근거로 유지하며 다크슬레이어2 자료는 제외합니다.</p>",
+    "guideHTML": "<section><h3>쿠폰 입력</h3><p>공개 공략 기준 메뉴·설정의 쿠폰 입력에서 등록합니다. 성공 여부는 게임 결과를 기준으로 판단합니다.</p><div><a href=\"https://game.naver.com/lounge/Ghost_Hunter/home\" rel=\"noopener noreferrer\">공식 게임라운지 <span>확인 →</span></a></div></section><section><h3>후보 해석</h3><p>제3자 최신 목록과 과거 만료 근거가 충돌하면 만료 근거를 기간 분류에 우선합니다. 제3자의 최신 주장은 삭제하지 않고 각 행의 근거에 남기며, 만료연도를 모르면 임의 연도를 만들지 않습니다.</p></section><section><h3>게임 식별</h3><p>패키지 com.gamepub.zhteam.g의 원작입니다. 2026년 서비스 중인 다크슬레이어2 프로모션은 제외합니다.</p></section>"
+  },
+  "articlePatch": {
+    "searchDescription": "다크슬레이어 방치형 RPG 키우기 쿠폰을 2026년 10월 기준 재조사했습니다. 공식 현재 코드, 제3자 최신 후보, 확정 만료연도별 과거 기록과 입력 방법을 구분해 정리합니다."
+  },
+  "expectedAfterRecords": 64
+}
