@@ -5,6 +5,7 @@ on:
     branches: [codex/blogger-worker-r1]
     paths:
       - '.github/workflows/stage-infinite-stairs-refresh-20261014.yml'
+      - 'tools/stage-infinite-stairs-refresh-20261014.mjs'
 
 permissions:
   contents: write
