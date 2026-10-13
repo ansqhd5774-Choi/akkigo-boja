@@ -6,7 +6,7 @@ on:
       verified_sha:
         value: ${{ jobs.verify.outputs.verified_sha }}
   push:
-    paths-ignore: [publish-requests/**, docs/**, '**/*.md']
+    paths-ignore: [publish-requests/**, docs/**, '**/*.md', data/game-period-refreshes/**]
   pull_request:
     paths-ignore: [publish-requests/**, docs/**, '**/*.md']
 permissions:

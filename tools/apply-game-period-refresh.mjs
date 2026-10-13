@@ -1,4 +1,4 @@
-import {existsSync,readFileSync,writeFileSync} from 'node:fs';
+import {existsSync,readFileSync,readdirSync,writeFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
@@ -7,6 +7,7 @@ const MODEL_PATH='data/game-period-articles.json';
 const CATALOG_PATHS=['data/articles.json','data/articles-supplemental.json'];
 const PATCH_RE=/^data\/game-period-refreshes\/[a-z0-9-]+\.json$/;
 const BOOTSTRAP_MODULE_RE=/^src\/game-batch-[0-9]{8}(?:-[a-z])?\.js$/;
+const LEGACY_MODULE_NAME_RE=/^game-batch-[0-9]{8}(?:-[a-z])?\.js$/;
 const load=p=>JSON.parse(readFileSync(p,'utf8'));
 const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
 const clone=v=>JSON.parse(JSON.stringify(v));
@@ -19,6 +20,47 @@ const mergeSource=(record,source)=>{
 };
 const RECORD_SET_KEYS=new Set(['sourcePublishedAt','expiry','latest','latestEvidence','statusLabel']);
 const SOURCE_SET_KEYS=new Set(['name','sourcePublishedAt','updatedAt','checkedAt','referenceType']);
+const validBootstrapArticle=(article,key)=>Boolean(article&&article.articleKey===key&&article.approvedForPublish===true&&article.post&&article.source?.gamePeriodModel?.articleKey===key&&Array.isArray(article.source.gamePeriodModel.records));
+
+let legacyArticleIndexPromise;
+async function legacyArticleIndex(){
+  if(legacyArticleIndexPromise)return legacyArticleIndexPromise;
+  legacyArticleIndexPromise=(async()=>{
+    const index=new Map();
+    for(const name of readdirSync('src').filter(name=>LEGACY_MODULE_NAME_RE.test(name)).sort()){
+      const modulePath=`src/${name}`;
+      const mod=await import(pathToFileURL(resolve(modulePath)).href);
+      const seen=new Set();
+      for(const value of Object.values(mod)){
+        if(!value||typeof value!=='object'||Array.isArray(value)||seen.has(value))continue;
+        seen.add(value);
+        if(!value.articleKey||!value.post)continue;
+        const list=index.get(value.articleKey)||[];
+        list.push({module:modulePath,article:value});
+        index.set(value.articleKey,list);
+      }
+    }
+    return index;
+  })();
+  return legacyArticleIndexPromise;
+}
+
+async function autoDiscoverLegacyArticle(articleKey){
+  const candidates=((await legacyArticleIndex()).get(articleKey)||[]).filter(({article})=>validBootstrapArticle(article,articleKey));
+  if(candidates.length===0)fail('GAME_PERIOD_REFRESH_LEGACY_SOURCE_NOT_FOUND:'+articleKey);
+  if(candidates.length>1)fail('GAME_PERIOD_REFRESH_LEGACY_SOURCE_AMBIGUOUS:'+articleKey+':'+candidates.map(x=>x.module).join(','));
+  return candidates[0].article;
+}
+
+async function explicitBootstrap(spec,articleKey){
+  if(!BOOTSTRAP_MODULE_RE.test(spec?.module||'')||!/^[A-Za-z_$][A-Za-z0-9_$]*$/.test(spec?.export||''))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_SPEC_INVALID');
+  const targetCatalog=spec.catalog||'data/articles-supplemental.json';
+  if(!CATALOG_PATHS.includes(targetCatalog))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_CATALOG_INVALID');
+  const mod=await import(pathToFileURL(resolve(spec.module)).href);
+  const sourceArticle=mod[spec.export];
+  if(!validBootstrapArticle(sourceArticle,articleKey))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_ARTICLE_INVALID');
+  return {sourceArticle,targetCatalog};
+}
 
 const paths=process.argv.slice(2);
 if(!paths.length)fail('GAME_PERIOD_REFRESH_INPUT_REQUIRED');
@@ -52,25 +94,32 @@ for(const path of paths){
     }
   };
   scanArticles();
+  if(articleHits.length>1)fail('GAME_PERIOD_REFRESH_ARTICLE_REGISTRY_MISMATCH');
 
-  if((!model||articleHits.length===0)&&patch.bootstrap){
-    const spec=patch.bootstrap;
-    if(!BOOTSTRAP_MODULE_RE.test(spec.module||'')||!/^[A-Za-z_$][A-Za-z0-9_$]*$/.test(spec.export||''))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_SPEC_INVALID');
-    const targetCatalog=spec.catalog||'data/articles-supplemental.json';
-    if(!CATALOG_PATHS.includes(targetCatalog))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_CATALOG_INVALID');
-    const mod=await import(pathToFileURL(resolve(spec.module)).href);
-    const sourceArticle=mod[spec.export];
-    if(!sourceArticle||sourceArticle.articleKey!==patch.articleKey||sourceArticle.approvedForPublish!==true||!sourceArticle.post)fail('GAME_PERIOD_REFRESH_BOOTSTRAP_ARTICLE_INVALID');
-    const sourceModel=sourceArticle.source?.gamePeriodModel;
-    if(!sourceModel||sourceModel.articleKey!==patch.articleKey||!Array.isArray(sourceModel.records))fail('GAME_PERIOD_REFRESH_BOOTSTRAP_MODEL_INVALID');
+  if(!model||articleHits.length===0){
+    let sourceArticle=null;
+    let targetCatalog='data/articles-supplemental.json';
+    let bootstrapMode='legacy-auto';
+
+    if(patch.bootstrap){
+      ({sourceArticle,targetCatalog}=await explicitBootstrap(patch.bootstrap,patch.articleKey));
+      bootstrapMode='explicit';
+    }else if(articleHits.length===1&&validBootstrapArticle(articleHits[0][1],patch.articleKey)){
+      sourceArticle=articleHits[0][1];
+      bootstrapMode='registered-article';
+    }else{
+      sourceArticle=await autoDiscoverLegacyArticle(patch.articleKey);
+    }
+
     if(!model){
-      models.push(clone(sourceModel));
+      models.push(clone(sourceArticle.source.gamePeriodModel));
       model=models.find(m=>m.articleKey===patch.articleKey);
     }
     if(articleHits.length===0){
       catalogs[targetCatalog].push(clone(sourceArticle));
       scanArticles();
     }
+    console.log('GAME_PERIOD_REFRESH_BOOTSTRAP',JSON.stringify({articleKey:patch.articleKey,mode:bootstrapMode}));
   }
 
   if(!model)fail('GAME_PERIOD_REFRESH_MODEL_MISSING');

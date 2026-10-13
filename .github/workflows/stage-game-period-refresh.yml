@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: stage-game-period-refresh
@@ -44,13 +45,25 @@ jobs:
       - name: Validate shared period source before commit
         run: node tools/check-article-presentation.mjs --static
       - name: Commit generated canonical source once
+        id: generated
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "418982+github-actions[bot]@users.noreply.github.com"
           git add data/game-period-articles.json data/articles.json data/articles-supplemental.json drafts akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
           if git diff --cached --quiet; then
             echo "GAME_PERIOD_REFRESH_NO_GENERATED_DIFF"
+            echo "generated_sha=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "refresh(game): apply declarative period update"
           git push origin HEAD:codex/blogger-worker-r1
+          generated_sha="$(git rev-parse HEAD)"
+          echo "generated_sha=$generated_sha" >> "$GITHUB_OUTPUT"
+          echo "GAME_PERIOD_REFRESH_GENERATED_SHA $generated_sha"
+      - name: Dispatch one final Verify for generated source
+        if: steps.generated.outputs.generated_sha != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run verify.yml --repo "$GITHUB_REPOSITORY" --ref codex/blogger-worker-r1
+          echo "GAME_PERIOD_REFRESH_FINAL_VERIFY_DISPATCHED ${{ steps.generated.outputs.generated_sha }}"
