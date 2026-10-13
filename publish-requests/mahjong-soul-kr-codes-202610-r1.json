@@ -1,6 +1,6 @@
 {
   "articleKey": "mahjong-soul-kr-codes-202610",
   "approved": true,
-  "requestedAt": "2026-10-12",
-  "reason": "Publish researched Mahjong Soul KR article after exact-SHA Verify and Worker deployment."
+  "requestedAt": "2026-10-13",
+  "reason": "Refresh the existing Mahjong Soul KR post in place after the 2026-10-13 recheck: preserve postId/URL, correct WKJZSH7MA5AM original source date to 2026-04-20, keep RXDPSAKMA4A3 expired by explicit deadline despite stale working lists, retain two global candidates as KR-unverified, and separate the current JP official login bonus as a regional non-code benefit."
 }
