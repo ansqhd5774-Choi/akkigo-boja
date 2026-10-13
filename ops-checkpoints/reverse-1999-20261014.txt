@@ -1,0 +1,10 @@
+REVERSE_1999_REFRESH_20261014
+articleKey=reverse-1999-codes-202610
+stagedSourceSha=5e103318f186195da54c9f0975de188d0a24eaa0
+checkedAt=2026-10-14
+preservedBefore=9
+addedCurrentGlobal=11
+addedUnverifiedArchive=2
+recordsAfter=22
+sourceDateCorrection=2026-10-08 moved from sourcePublishedAt to updatedAt for legacy Korean guide
+migration=source batch -> data/game-period-articles.json + data/articles-supplemental.json
