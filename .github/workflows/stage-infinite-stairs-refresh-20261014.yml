@@ -1,0 +1,50 @@
+name: Stage Infinite Stairs Refresh 20261014
+
+on:
+  push:
+    branches: [codex/blogger-worker-r1]
+    paths:
+      - '.github/workflows/stage-infinite-stairs-refresh-20261014.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stage-infinite-stairs-refresh-20261014
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: codex/blogger-worker-r1
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: 24
+      - name: Apply 2026-10-14 research without inventing a coupon row
+        run: node tools/stage-infinite-stairs-refresh-20261014.mjs
+      - name: Regenerate Infinite Stairs through shared period renderer
+        run: node tools/render-game-period-articles.mjs infinite-stairs-codes-202610
+      - name: Sync article source metadata after renderer
+        run: node tools/stage-infinite-stairs-refresh-20261014.mjs --after-render
+      - name: Validate preserved 49-record history
+        run: node --test tests/infinite-stairs-draft.test.js
+      - name: Validate shared presentation contract
+        run: node tools/check-article-presentation.mjs --static
+      - name: Regenerate checked-in Blogger theme source snapshots
+        run: node tools/build-theme.mjs
+      - name: Commit refreshed source and generated outputs
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "418982+github-actions[bot]@users.noreply.github.com"
+          git add data/game-period-articles.json data/articles.json drafts/infinite-stairs-global-research-20261009.json drafts/infinite-stairs-codes-202610.json drafts/infinite-stairs-codes-202610.html akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          if git diff --cached --quiet; then
+            echo "INFINITE_STAIRS_NO_DIFF"
+            exit 1
+          fi
+          git commit -m "refresh(infinite-stairs): recheck coupons on 2026-10-14"
+          git push origin HEAD:codex/blogger-worker-r1
