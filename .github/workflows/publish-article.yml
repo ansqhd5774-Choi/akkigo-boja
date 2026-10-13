@@ -41,14 +41,15 @@ jobs:
           else
             node tools/check-article-registry.mjs
           fi
-      - name: Enforce shared period renderer and preserved history before publication
-        run: node tools/check-article-presentation.mjs --static
       - name: Look up reusable full verification
         id: verification
         env:
           GH_TOKEN: ${{ github.token }}
           VERIFY_BASE_SHA: ${{ github.event.before }}
         run: node tools/verification-reuse.mjs
+      - name: Enforce shared period renderer and preserved history before publication
+        if: steps.verification.outputs.reused != 'true'
+        run: node tools/check-article-presentation.mjs --static
       - uses: pnpm/action-setup@v4
         if: steps.verification.outputs.reused != 'true'
         with:
