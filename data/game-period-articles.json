@@ -36607,7 +36607,7 @@
       {
         "code": "gogods",
         "sourcePublishedAt": "2023-12-15",
-        "latest": true,
+        "latest": false,
         "expiry": "2023-12-30",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
         "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
@@ -36625,7 +36625,8 @@
             "sourcePublishedAt": null
           }
         ],
-        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
       },
       {
         "code": "loveslyer",
@@ -36653,7 +36654,7 @@
       {
         "code": "sorrydss",
         "sourcePublishedAt": "2023-12-15",
-        "latest": true,
+        "latest": false,
         "expiry": "2023-12-30",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
         "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
@@ -36671,7 +36672,8 @@
             "sourcePublishedAt": null
           }
         ],
-        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
       },
       {
         "code": "1130gift",
@@ -36722,7 +36724,7 @@
       {
         "code": "betterds",
         "sourcePublishedAt": "2023-12-15",
-        "latest": true,
+        "latest": false,
         "expiry": "2023-12-31",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
         "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
@@ -36740,12 +36742,13 @@
             "sourcePublishedAt": null
           }
         ],
-        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
       },
       {
         "code": "f1weekend",
         "sourcePublishedAt": "2023-12-15",
-        "latest": true,
+        "latest": false,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
         "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
@@ -36763,12 +36766,13 @@
             "sourcePublishedAt": null
           }
         ],
-        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
       },
       {
         "code": "goodsund",
         "sourcePublishedAt": "2023-12-15",
-        "latest": true,
+        "latest": false,
         "expiry": "2023-12-09",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
         "evidenceHTML": "<p>2023년 12월 다크슬레이어 전용 공략에서 쿠폰 문자열과 게임 내 설정 → 쿠폰입력 경로가 기록됐습니다. 2026년 10월 현재 공식 라운지의 동일 발급 원문이나 계정 사용 성공은 확인하지 못해 과거 기록으로 분리합니다.</p>",
@@ -36786,7 +36790,8 @@
             "sourcePublishedAt": null
           }
         ],
-        "latestEvidence": "UCNGame 2026-10-12 현재 목록"
+        "latestEvidence": "UCNGame 2026-10-12 현재 목록",
+        "periodYear": "2023"
       },
       {
         "code": "slyergift",
@@ -36856,7 +36861,7 @@
         "sourcePublishedAt": null,
         "expiry": "2024-03-30",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36865,14 +36870,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "mar3fri",
         "sourcePublishedAt": null,
         "expiry": "2024-03-28",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36881,14 +36887,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "dsmarcp",
         "sourcePublishedAt": null,
         "expiry": "2024-03-31",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36897,14 +36904,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "syagiftds",
         "sourcePublishedAt": null,
         "expiry": "2024-03-09",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36913,14 +36921,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "wellsly",
         "sourcePublishedAt": null,
         "expiry": "2024-03-09",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36929,14 +36938,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "spgiftds",
         "sourcePublishedAt": null,
         "expiry": "2024-03-08",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36945,14 +36955,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "update28",
         "sourcePublishedAt": null,
         "expiry": "2024-03-06",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36961,14 +36972,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "htsatds",
         "sourcePublishedAt": null,
         "expiry": "2024-03-03",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36977,14 +36989,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "happyweek",
         "sourcePublishedAt": null,
         "expiry": "2024-03-02",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -36993,14 +37006,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "withdarks",
         "sourcePublishedAt": null,
         "expiry": "2024-02-19",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37009,14 +37023,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "seollal",
         "sourcePublishedAt": null,
         "expiry": "2024-02-18",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37025,14 +37040,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "hagwsly",
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37048,7 +37064,7 @@
         "sourcePublishedAt": null,
         "expiry": "2024-02-29",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37057,14 +37073,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2024"
       },
       {
         "code": "dgsunds",
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37080,7 +37097,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37096,7 +37113,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37112,7 +37129,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37128,7 +37145,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37144,7 +37161,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37160,7 +37177,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37176,7 +37193,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37192,7 +37209,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37208,7 +37225,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37224,7 +37241,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37256,7 +37273,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37272,7 +37289,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37288,7 +37305,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37320,7 +37337,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37336,7 +37353,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37352,7 +37369,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37368,7 +37385,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37384,7 +37401,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37400,7 +37417,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37416,7 +37433,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37448,7 +37465,7 @@
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37464,7 +37481,7 @@
         "sourcePublishedAt": null,
         "expiry": "2023-12-23",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37473,14 +37490,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "weekendre",
         "sourcePublishedAt": null,
         "expiry": "2023-12-15",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37489,14 +37507,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "dseventrw",
         "sourcePublishedAt": null,
         "expiry": "과거 종료 보고",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37512,7 +37531,7 @@
         "sourcePublishedAt": null,
         "expiry": "2023-12-23",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37521,14 +37540,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "iwilltry",
         "sourcePublishedAt": null,
         "expiry": "2023-12-22",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37537,14 +37557,15 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "thankstos",
         "sourcePublishedAt": null,
         "expiry": "2023-12-31",
         "statusLabel": "제3자 현재 주장·과거 종료 상충",
-        "latest": true,
+        "latest": false,
         "latestEvidence": "UCNGame 2026-10-12 현재 목록",
         "evidenceHTML": "<p>2026 제3자 현재 목록 수록. 공식 발급·실사용 미확인.</p>",
         "sources": [
@@ -37553,7 +37574,8 @@
             "url": "https://ucngame.com/codes/dark-slayer-codes/",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "haveagt",
@@ -37568,7 +37590,8 @@
             "url": "https://game.edu.kg/research/p/view-L2Rhcmstc2xheWVyLWFmay1ycGctY29kZXMv",
             "sourcePublishedAt": null
           }
-        ]
+        ],
+        "periodYear": "2023"
       },
       {
         "code": "glsatds",
