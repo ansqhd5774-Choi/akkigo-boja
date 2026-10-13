@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "articleKey": "kingshot-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 163,
+  "expectedAfterRecords": 166,
+  "dedupeExactSources": true,
+  "updateRecords": [
+    {
+      "code": "WELLDONE",
+      "set": {
+        "sourcePublishedAt": null,
+        "expiry": "2026-10-10",
+        "latest": false,
+        "latestEvidence": "GamesRadar+와 MrGuider의 2026년 10월 목록에서 종료 상태와 2026-10-10 마감 보고를 확인했다. 과거에 현재 후보로 수집된 기록은 보존하지만 최신 목록에서는 제외한다.",
+        "statusLabel": "종료 보고·과거 기록"
+      },
+      "appendEvidenceHTML": "<p>2026-10-14 재조사에서 GamesRadar+는 WELLDONE을 종료 목록으로 분류하고, MrGuider는 2026-10-10 23:59 UTC 종료를 기재했습니다. 기존 제3자 현재 후보 기록은 삭제하지 않고 2026년 이력으로 보존합니다.</p>"
+    },
+    {
+      "code": "KS1005",
+      "set": {
+        "sourcePublishedAt": "2026-10-05",
+        "expiry": "2026-10-08",
+        "latest": false,
+        "latestEvidence": "기존 2026-10-09 조사에서 2026-10-08 종료 보고가 있었고, 2026-10-14 재조사에서도 최신 활성 목록에 포함되지 않았다.",
+        "statusLabel": "종료 보고·2026년 기록"
+      },
+      "appendEvidenceHTML": "<p>2026-10-14 기준 최신 활성 목록에서는 제외되어 있으며 기존 2026-10-08 종료 보고를 우선해 2026년 이력으로 유지합니다.</p>"
+    },
+    {
+      "code": "Kingshot888",
+      "set": {
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다.",
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>2026-10-14 재조사에서 여러 최신 목록이 Kingshot888을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p>"
+    },
+    {
+      "code": "VIP777",
+      "set": {
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다.",
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인"
+      },
+      "appendEvidenceHTML": "<p>2026-10-14 재조사에서 여러 최신 목록이 VIP777을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p>"
+    }
+  ],
+  "mergeSources": [
+    {
+      "code": "WELLDONE",
+      "source": {
+        "name": "GamesRadar+ · Kingshot codes",
+        "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+        "sourcePublishedAt": "2026-10-13",
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>GamesRadar+ 2026-10-13 갱신 목록에서 종료 코드로 확인했습니다.</p>"
+    },
+    {
+      "code": "Kingshot888",
+      "source": {
+        "name": "GamesRadar+ · Kingshot codes",
+        "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+        "sourcePublishedAt": "2026-10-13",
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>"
+    },
+    {
+      "code": "VIP777",
+      "source": {
+        "name": "GamesRadar+ · Kingshot codes",
+        "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+        "sourcePublishedAt": "2026-10-13",
+        "updatedAt": "2026-10-13",
+        "checkedAt": "2026-10-14",
+        "referenceType": "THIRD_PARTY_CODE_MENTION"
+      },
+      "evidenceHTML": "<p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>"
+    }
+  ],
+  "addRecords": [
+    {
+      "code": "Hangul2026",
+      "sourcePublishedAt": "2026-10-09",
+      "expiry": "과거 종료 보고",
+      "latest": false,
+      "latestEvidence": "r/KingShot에 2026-10-09 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었으나 GamesRadar+ 2026-10-13 갱신에서는 종료 목록으로 이동했다.",
+      "statusLabel": "최근 종료 보고·공식 발급 원문 미확인",
+      "sources": [
+        {
+          "name": "Reddit r/KingShot · New Gift Code Hangul2026",
+          "url": "https://www.reddit.com/r/KingShot/comments/1x1grni/new_gift_code_hangul2026/",
+          "sourcePublishedAt": "2026-10-09",
+          "updatedAt": null,
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        },
+        {
+          "name": "GamesRadar+ · Kingshot codes",
+          "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+          "sourcePublishedAt": "2026-10-13",
+          "updatedAt": "2026-10-13",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-09 커뮤니티에 Kingshot 리딤 링크와 함께 공유된 코드입니다. 2026-10-13 GamesRadar+ 갱신에서는 종료 목록으로 분류되어 최신에서 제외합니다.</p>"
+    },
+    {
+      "code": "CHALLENGE26",
+      "sourcePublishedAt": "2026-10-12",
+      "expiry": "2026-10-16",
+      "latest": true,
+      "latestEvidence": "r/KingShot에 2026-10-12 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었고 GamesRadar+ 2026-10-13 갱신에서 2026-10-16 종료 예정 현재 코드로 수록됐다.",
+      "statusLabel": "현재 후보·10/16 종료 보고·실사용 미확인",
+      "sources": [
+        {
+          "name": "Reddit r/KingShot · New Gift Code CHALLENGE26",
+          "url": "https://www.reddit.com/r/KingShot/comments/1x3xt37/new_gift_code_challenge26/",
+          "sourcePublishedAt": "2026-10-12",
+          "updatedAt": null,
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        },
+        {
+          "name": "GamesRadar+ · Kingshot codes",
+          "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+          "sourcePublishedAt": "2026-10-13",
+          "updatedAt": "2026-10-13",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-12 신규 코드 공유와 2026-10-13 최신 목록을 교차 확인했습니다. 2026-10-16 종료 예정 보고가 있어 우선 입력 대상이지만 실제 계정 성공은 별도 확인이 필요합니다.</p>"
+    },
+    {
+      "code": "IG200KS",
+      "sourcePublishedAt": "2026-10-13",
+      "expiry": "2026-10-19",
+      "latest": true,
+      "latestEvidence": "GamesRadar+가 2026-10-13 새 Kingshot 코드로 추가했고 2026-10-19 종료 예정과 보상 구성을 함께 기재했다. KingShot Rewards 공개 채널에도 VALID 신규 코드로 노출됐다.",
+      "statusLabel": "최신 후보·10/19 종료 보고·실사용 미확인",
+      "sources": [
+        {
+          "name": "GamesRadar+ · Kingshot codes",
+          "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+          "sourcePublishedAt": "2026-10-13",
+          "updatedAt": "2026-10-13",
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        },
+        {
+          "name": "KingShot Rewards public channel mirror",
+          "url": "https://telemetr.io/es/channels/2890587581-ksrewards/posts",
+          "sourcePublishedAt": null,
+          "updatedAt": null,
+          "checkedAt": "2026-10-14",
+          "referenceType": "THIRD_PARTY_CODE_MENTION"
+        }
+      ],
+      "evidenceHTML": "<p>2026-10-13 새 코드로 확인된 최신 후보입니다. GamesRadar+는 2026-10-19 종료 예정과 1,000 Gems·자원·가속·스태미나·Mythic General Hero Shard 보상을 기재합니다. 실제 계정 사용 성공은 미확인입니다.</p>"
+    }
+  ],
+  "modelPatch": {
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"킹샷 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>현재 입력 후보</span><strong>4개</strong></div><div class=\"ncp-feed-stat\"><span>신규·최근 코드</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>166개</strong></div></div>",
+    "noticeHTML": "<p>2026-10-14 전세계 공개 자료를 다시 확인했습니다. 현재 우선 입력 후보는 <strong>IG200KS</strong>, <strong>CHALLENGE26</strong>, <strong>Kingshot888</strong>, <strong>VIP777</strong>입니다. <strong>Hangul2026</strong>, <strong>WELLDONE</strong>, <strong>KS1005</strong>는 최신 종료 보고를 반영해 과거 기록으로 분리했습니다. 공식 최초 발급 원문과 개별 계정 성공이 확인되지 않은 항목은 제3자·커뮤니티 근거 수준으로 표시합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
+  },
+  "articlePatch": {
+    "searchDescription": "킹샷 쿠폰 2026년 10월 최신 정리. IG200KS, CHALLENGE26, Kingshot888, VIP777 현재 후보와 Hangul2026·WELLDONE·KS1005 종료 이력, 입력 방법과 출처를 구분해 확인합니다.",
+    "references": [
+      "https://ks-giftcode.centurygame.com/",
+      "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+      "https://www.reddit.com/r/KingShot/comments/1x3xt37/new_gift_code_challenge26/",
+      "https://www.reddit.com/r/KingShot/comments/1x1grni/new_gift_code_hangul2026/"
+    ]
+  }
+}
