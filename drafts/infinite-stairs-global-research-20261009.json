@@ -1,7 +1,7 @@
 {
   "articleKey": "infinite-stairs-codes-202610",
   "gameName": "무한의 계단",
-  "checkedAt": "2026-10-09",
+  "checkedAt": "2026-10-14",
   "originalDatePolicy": "source publishedAt is original article date, not collection or game issuance date",
   "sources": {
     "old": "https://mobilegameinformation.tistory.com/196",
@@ -11,7 +11,8 @@
     "global": "https://www.digwow.net/infinite-stairs/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
     "trade": "https://www.newspim.com/news/view/20250331000149",
     "store": "https://apps.apple.com/kr/app/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/id947742764",
-    "play": "https://play.google.com/store/apps/details?id=com.nflystudio.InfiniteStaircase"
+    "play": "https://play.google.com/store/apps/details?id=com.nflystudio.InfiniteStaircase",
+    "latestMention20261011": "https://alldig.tistory.com/entry/무한의-계단-티어표-등급표-리세마라-쿠폰-코드-공략-스킬-티어-조합"
   },
   "summary": {
     "originalArticleDated": 22,
@@ -803,5 +804,19 @@
       "workingVerifiedAt": null,
       "redemptionResult": null
     }
-  ]
+  ],
+  "latestRecheck": {
+    "checkedAt": "2026-10-14",
+    "sourcePublishedAt": "2026-10-11",
+    "sourceUrl": "https://alldig.tistory.com/entry/무한의-계단-티어표-등급표-리세마라-쿠폰-코드-공략-스킬-티어-조합",
+    "referenceType": "SOURCE_TEXT_ONLY",
+    "concreteCodeObserved": false,
+    "result": "NO_CURRENT_CODE_FOUND",
+    "excludedInvalidProbes": [
+      "s6cki523bq",
+      "uwia30kjing",
+      "lz6ph653m4"
+    ],
+    "note": "쿠폰을 언급하는 제3자 글은 확인했지만 공개 검색에서 실제 코드 문자열을 확인하지 못해 쿠폰 행으로 추가하지 않음"
+  }
 }
