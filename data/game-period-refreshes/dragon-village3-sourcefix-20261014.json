@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "articleKey": "dragon-village3-codes-202610",
+  "checkedAt": "2026-10-14",
+  "expectedBeforeRecords": 39,
+  "expectedAfterRecords": 39,
+  "updateRecords": [
+    {
+      "code": "DVSUMMER",
+      "updateSources": [
+        {
+          "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+          "set": {
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "checkedAt": "2026-10-14"
+          }
+        }
+      ]
+    },
+    {
+      "code": "LUNAFEST",
+      "updateSources": [
+        {
+          "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+          "set": {
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "checkedAt": "2026-10-14"
+          }
+        }
+      ]
+    },
+    {
+      "code": "FULLLUNA",
+      "updateSources": [
+        {
+          "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+          "set": {
+            "url": "https://wikiwiki.jp/mochi0141/%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E6%83%85%E5%A0%B1",
+            "checkedAt": "2026-10-14"
+          }
+        }
+      ]
+    }
+  ]
+}
