@@ -68,7 +68,7 @@
     await Promise.all([...root.querySelectorAll('[data-ncp-home-category]')].map(async section=>{
       const category=section.dataset.ncpHomeCategory,game=category==='게임',items=[],seen=new Set();
       try{
-      const feedEntries=await (window.ncpCardFeed||window.ncpFeed)(category);
+      const feedEntries=window.ncpCardFeed?await window.ncpCardFeed(category):await window.ncpFeed(category);
       for(const entry of [...feedEntries].sort((a,b)=>(Date.parse(b.updated?.$t||b.published?.$t)||0)-(Date.parse(a.updated?.$t||a.published?.$t)||0))){
         await yieldToBrowser();
         if(!entry.category?.some(label=>label.term===category))continue;
