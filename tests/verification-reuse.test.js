@@ -14,7 +14,9 @@ test('reuse rejects different SHA, failed/queued runs, PR and foreign repository
   assert.equal(eligibleRun(run, sha, repository), true);
   for(const patch of [{head_sha: 'b'.repeat(40)}, {status: 'in_progress'}, {conclusion: 'failure'}, {event: 'pull_request'}, {head_repository: {full_name: 'other/repo'}}, {head_branch: 'other'}]) assert.equal(eligibleRun({...run, ...patch}, sha, repository), false);
 });
-test('coverage rejects skipped build and missing XML or theme checks', () => {
+test('coverage includes source, DOM, build, theme, XML and responsive layout and rejects skipped steps', () => {
+  assert.ok(requiredSteps.includes('Enforce shared period renderer, history preservation and R2 DOM'));
+  assert.ok(requiredSteps.includes('Require responsive coupon layout before verification certificate'));
   assert.equal(completeCoverage([job]), true);
   for(const name of requiredSteps) {
     assert.equal(completeCoverage([{...job, steps: job.steps.filter(s => s.name !== name)}]), false);
