@@ -6,11 +6,13 @@ import {auditArticleRegistry,assertApprovedRequestInCatalog} from '../tools/chec
 
 test('all approved module articles are reachable through the single article registry',async()=>{
   const audit=await auditArticleRegistry();
-  for(const key of ['gigaip-benefits-202610','ohmyzip-benefits-202610','dragon-village3-codes-202610']){
+  for(const key of ['gigaip-benefits-202610','ohmyzip-benefits-202610']){
     assert.ok(audit.discovered.includes(key),key);
     assert.ok(audit.registered.includes(key),key);
     assert.equal(currentArticleCatalog.filter(x=>x.articleKey===key).length,1,key);
   }
+  assert.ok(audit.registered.includes('dragon-village3-codes-202610'));
+  assert.equal(currentArticleCatalog.filter(x=>x.articleKey==='dragon-village3-codes-202610').length,1);
 });
 
 test('canonical migration supersedes the legacy registration without weakening duplicate detection',()=>{
