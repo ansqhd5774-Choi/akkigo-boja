@@ -29,7 +29,7 @@ for(const r of model.records){
     r.latestEvidence='2026-10-11 Pocket Gamer current OMFG Lucky Me code list; third-party current claim only; Korean account success and official reissue not independently verified';
     r.sources=Array.isArray(r.sources)?r.sources:[];
     if(!r.sources.some(s=>s?.url===pocketUrl))r.sources.push({
-      name:'Pocket Gamer 2026-10-11 current global list',
+      name:'Pocket Gamer 2026-10-11 글로벌 현재 코드 목록',
       url:pocketUrl,
       sourcePublishedAt:'2026-10-11',
       checkedAt,
