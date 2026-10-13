@@ -2,6 +2,7 @@ import {existsSync,readFileSync,readdirSync,writeFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {normalizeHistoricalPeriod} from '../src/game-period-policy.js';
 
 const MODEL_PATH='data/game-period-articles.json';
 const CATALOG_PATHS=['data/articles.json','data/articles-supplemental.json'];
@@ -171,6 +172,10 @@ for(const path of paths){
     model[key]=value;
   }
   model.researchCheckedAt=patch.checkedAt;
+
+  let periodNormalized=0;
+  for(const record of model.records)if(normalizeHistoricalPeriod(record,patch.checkedAt))periodNormalized++;
+  if(periodNormalized)console.log('GAME_PERIOD_REFRESH_PERIOD_NORMALIZED',JSON.stringify({articleKey:patch.articleKey,checkedAt:patch.checkedAt,count:periodNormalized}));
 
   article.source={...article.source,checkedAt:patch.checkedAt};
   if(patch.articlePatch?.searchDescription)article.post.searchDescription=patch.articlePatch.searchDescription;
