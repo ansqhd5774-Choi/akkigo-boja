@@ -7628,9 +7628,9 @@
       {
         "code": "WELLDONE",
         "sourcePublishedAt": null,
-        "expiry": "10/11 08:59",
+        "expiry": "2026-10-10",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "종료 보고·과거 기록",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7638,16 +7638,26 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>1GamesRadar+·Reddit10/11 08:59WELLDONE</p>"
+        "evidenceHTML": "<p>1GamesRadar+·Reddit10/11 08:59WELLDONE</p><p>2026-10-14 재조사에서 GamesRadar+는 WELLDONE을 종료 목록으로 분류하고, MrGuider는 2026-10-10 23:59 UTC 종료를 기재했습니다. 기존 제3자 현재 후보 기록은 삭제하지 않고 2026년 이력으로 보존합니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 종료 코드로 확인했습니다.</p>",
+        "latestEvidence": "GamesRadar+와 MrGuider의 2026년 10월 목록에서 종료 상태와 2026-10-10 마감 보고를 확인했다. 과거에 현재 후보로 수집된 기록은 보존하지만 최신 목록에서는 제외한다.",
+        "periodYear": "2026"
       },
       {
         "code": "Kingshot888",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "expiry": null,
+        "latest": true,
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7662,16 +7672,25 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>2GamesRadar+미확인Kingshot888</p>"
+        "evidenceHTML": "<p>2GamesRadar+미확인Kingshot888</p><p>2026-10-14 재조사에서 여러 최신 목록이 Kingshot888을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>",
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다."
       },
       {
         "code": "VIP777",
         "sourcePublishedAt": null,
-        "expiry": "12/31 보고",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "expiry": null,
+        "latest": true,
+        "statusLabel": "제3자 현재 교차확인·실사용 미확인",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7686,9 +7705,18 @@
             "referenceType": "THIRD_PARTY_CODE_MENTION",
             "checkedAt": "2026-10-10",
             "sourcePublishedAt": null
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>3GamesRadar+12/31 보고VIP777</p>"
+        "evidenceHTML": "<p>3GamesRadar+12/31 보고VIP777</p><p>2026-10-14 재조사에서 여러 최신 목록이 VIP777을 현재 코드로 공통 수록했습니다. 실제 계정 입력 성공을 일반화하지 않습니다.</p><p>GamesRadar+ 2026-10-13 갱신 목록에서 현재 코드로 수록되어 있습니다.</p>",
+        "latestEvidence": "GamesRadar+, Kingshot Mastery, Kingshot Wiki가 2026-10-12~13 현재 활성 코드로 공통 기재한다. 공식 최초 발급 원문과 이 계정의 실제 입력 성공은 별도 미확인이다."
       },
       {
         "code": "AKeYD8gK8",
@@ -7748,10 +7776,10 @@
       },
       {
         "code": "KS1005",
-        "sourcePublishedAt": null,
-        "expiry": "10/8 만료 제보",
+        "sourcePublishedAt": "2026-10-05",
+        "expiry": "2026-10-08",
         "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "statusLabel": "종료 보고·2026년 기록",
         "sources": [
           {
             "name": "www.gamesradar.com · 제3자 코드 목록",
@@ -7761,7 +7789,9 @@
             "sourcePublishedAt": null
           }
         ],
-        "evidenceHTML": "<p>1Reddit·GamesRadar+10/8 만료 제보KS1005</p>"
+        "evidenceHTML": "<p>1Reddit·GamesRadar+10/8 만료 제보KS1005</p><p>2026-10-14 기준 최신 활성 목록에서는 제외되어 있으며 기존 2026-10-08 종료 보고를 우선해 2026년 이력으로 유지합니다.</p>",
+        "latestEvidence": "기존 2026-10-09 조사에서 2026-10-08 종료 보고가 있었고, 2026-10-14 재조사에서도 최신 활성 목록에 포함되지 않았다.",
+        "periodYear": "2026"
       },
       {
         "code": "EXPLORETHEWORLD",
@@ -10443,13 +10473,96 @@
           }
         ],
         "evidenceHTML": "<p>157과거 기록종료·미확인WEHIT1K</p>"
+      },
+      {
+        "code": "Hangul2026",
+        "sourcePublishedAt": "2026-10-09",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "r/KingShot에 2026-10-09 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었으나 GamesRadar+ 2026-10-13 갱신에서는 종료 목록으로 이동했다.",
+        "statusLabel": "최근 종료 보고·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "Reddit r/KingShot · New Gift Code Hangul2026",
+            "url": "https://www.reddit.com/r/KingShot/comments/1x1grni/new_gift_code_hangul2026/",
+            "sourcePublishedAt": "2026-10-09",
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-09 커뮤니티에 Kingshot 리딤 링크와 함께 공유된 코드입니다. 2026-10-13 GamesRadar+ 갱신에서는 종료 목록으로 분류되어 최신에서 제외합니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "CHALLENGE26",
+        "sourcePublishedAt": "2026-10-12",
+        "expiry": "2026-10-16",
+        "latest": true,
+        "latestEvidence": "r/KingShot에 2026-10-12 kingshot.net 리딤 링크와 함께 신규 코드로 공유되었고 GamesRadar+ 2026-10-13 갱신에서 2026-10-16 종료 예정 현재 코드로 수록됐다.",
+        "statusLabel": "현재 후보·10/16 종료 보고·실사용 미확인",
+        "sources": [
+          {
+            "name": "Reddit r/KingShot · New Gift Code CHALLENGE26",
+            "url": "https://www.reddit.com/r/KingShot/comments/1x3xt37/new_gift_code_challenge26/",
+            "sourcePublishedAt": "2026-10-12",
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-12 신규 코드 공유와 2026-10-13 최신 목록을 교차 확인했습니다. 2026-10-16 종료 예정 보고가 있어 우선 입력 대상이지만 실제 계정 성공은 별도 확인이 필요합니다.</p>"
+      },
+      {
+        "code": "IG200KS",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "2026-10-19",
+        "latest": true,
+        "latestEvidence": "GamesRadar+가 2026-10-13 새 Kingshot 코드로 추가했고 2026-10-19 종료 예정과 보상 구성을 함께 기재했다. KingShot Rewards 공개 채널에도 VALID 신규 코드로 노출됐다.",
+        "statusLabel": "최신 후보·10/19 종료 보고·실사용 미확인",
+        "sources": [
+          {
+            "name": "GamesRadar+ · Kingshot codes",
+            "url": "https://www.gamesradar.com/games/strategy/kingshot-codes-gift/",
+            "sourcePublishedAt": "2026-10-13",
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "KingShot Rewards public channel mirror",
+            "url": "https://telemetr.io/es/channels/2890587581-ksrewards/posts",
+            "sourcePublishedAt": null,
+            "updatedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-13 새 코드로 확인된 최신 후보입니다. GamesRadar+는 2026-10-19 종료 예정과 1,000 Gems·자원·가속·스태미나·Mythic General Hero Shard 보상을 기재합니다. 실제 계정 사용 성공은 미확인입니다.</p>"
       }
     ],
     "featuredHTML": "<figure data-ncp-featured-image=\"kingshot\" style=\"margin:0 0 24px\" xmlns=\"http://www.w3.org/1999/xhtml\"><img src=\"https://play-lh.googleusercontent.com/cs59HOM5uSmSzgnmMyFpqYw9sMtQkYxMUTRZ1TSCZK6t6T-cjluQW_9krAcgeEozBYQWKl2DmUTeETdYtKhq=s0-br30\" alt=\"킹샷 Kingshot Google Play 공식 대표 이미지\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;height:auto;border-radius:14px\"/></figure>",
-    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"킹샷 쿠폰 요약\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\"><span>최근 입력 후보</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>추가 시도</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>163개</strong></div></div>",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"킹샷 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>현재 입력 후보</span><strong>4개</strong></div><div class=\"ncp-feed-stat\"><span>신규·최근 코드</span><strong>3개</strong></div><div class=\"ncp-feed-stat\"><span>전체 기록</span><strong>166개</strong></div></div>",
     "guideHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>킹샷 쿠폰 입력 방법</h3><h3>안드로이드</h3><ol><li>게임 왼쪽 상단 프로필 선택</li><li>설정 → Gift Code 메뉴 선택</li><li>코드 복사·붙여넣기 후 Redeem 선택</li><li>게임 내 우편함에서 보상 확인</li></ol>\n<h3>아이폰(iOS)·웹</h3><ol><li><a href=\"https://ks-giftcode.centurygame.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Century Games 공식 Gift Code Center</a> 접속</li><li>게임 프로필에서 Player ID 복사·로그인</li><li>쿠폰 코드를 붙여넣고 확인</li><li>우편함에서 결과 확인</li></ol></section>",
     "archiveHTML": "\n\n<article xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\n<p>2026년 10월 9일 기준 <strong>킹샷(Kingshot) 쿠폰</strong> 정보를 국내외 공식 이벤트 기록, 게임 커뮤니티 및 공략 매체에서 교차 조사했습니다. 최근 시도 코드 3개, 추가 후보 3개, 만료 제보 및 과거 기록 157개를 분리했습니다.</p>\n<p><strong>먼저 입력할 코드:</strong> <code>WELLDONE</code>, <code>Kingshot888</code>, <code>VIP777</code>.<br/><code>WELLDONE</code>의 매체 안내 만료는 <strong>2026년 10월 11일 오전 8시 59분(KST)</strong>입니다. 개인별 수령 성공과 서버 적용 범위는 확인되지 않았습니다.</p>\n<div><a>최신 3개</a><a>추가 후보 3개</a><a>과거 기록 157개</a><a href=\"https://ks-giftcode.centurygame.com/\" rel=\"noopener noreferrer\">공식 쿠폰 입력</a></div>\n<section><h3>킹샷 쿠폰 2026년 10월 — 최근 입력 후보</h3><p>아래는 최신 매체의 이용 가능 목록에 수록된 후보입니다. 실제 계정 입력 성공을 의미하지 않습니다.</p>\n<div aria-label=\"킹샷 최근 쿠폰 3개\"><div><span>1</span><span>GamesRadar+·Reddit</span><span>10/11 08:59</span><code>WELLDONE</code><span></span></div>\n<div><span>2</span><span>GamesRadar+</span><span>미확인</span><code>Kingshot888</code><span></span></div>\n<div><span>3</span><span>GamesRadar+</span><span>12/31 보고</span><code>VIP777</code><span></span></div></div>\n<h3>보상 안내</h3><p><code>WELLDONE</code>은 GamesRadar+ 기준 보석 1,000개, 영웅 경험치, 빵·목재·돌·철, 일반 가속 아이템으로 안내됩니다. <code>Kingshot888</code>과 <code>VIP777</code>은 보석 200개, 스킬북·골드 키 등의 보상이 보고됐습니다. 지역·수령 조건에 따라 다를 수 있습니다.</p></section>\n<section><h3>추가 입력 시도 후보</h3><p>해외 매체의 코드 발견 기록이 있으나 일회성 크리에이터 코드나 출처별 유효 상태 충돌이 있습니다.</p>\n<div aria-label=\"킹샷 추가 후보 3개\"><div><span>1</span><span>Beebom</span><span>종료·미확인</span><code>AKeYD8gK8</code><span></span></div>\n<div><span>2</span><span>TOPUPlive</span><span>종료·미확인</span><code>7VAeANrV7</code><span></span></div>\n<div><span>3</span><span>MrGuider</span><span>종료·미확인</span><code>KSPRAWNING</code><span></span></div></div>\n<p>일부 크리에이터 코드는 입력 횟수·서버·계정 등 제한으로 다른 사용자에게는 적용되지 않을 수 있습니다.</p></section>\n<section><h3>과거 만료·미확인 쿠폰 기록</h3><p><code>KS1005</code>는 2026년 10월 8일 만료됐다는 사용자 제보가 있습니다. 아래 과거 기록은 장기 추적 데이터이며 <strong>현재 사용 가능 목록이 아닙니다.</strong> 개별 발급사 출처가 확인되지 않은 기록도 포함돼 있어 직접 입력 결과는 다를 수 있습니다.</p>\n<div><div>과거 및 만료 기록 157개 펼쳐보기 (복사 가능)</div><div aria-label=\"킹샷 과거 코드 기록 157개\"><div><span>1</span><span>Reddit·GamesRadar+</span><span>10/8 만료 제보</span><code>KS1005</code><span></span></div>\n<div><span>2</span><span>과거 기록</span><span>종료·미확인</span><code>EXPLORETHEWORLD</code><span></span></div>\n<div><span>3</span><span>과거 기록</span><span>종료·미확인</span><code>MIDAUTUMN26</code><span></span></div>\n<div><span>4</span><span>과거 기록</span><span>종료·미확인</span><code>JPHolidaySEP</code><span></span></div>\n<div><span>5</span><span>과거 기록</span><span>종료·미확인</span><code>KS0919</code><span></span></div>\n<div><span>6</span><span>과거 기록</span><span>종료·미확인</span><code>KS0909</code><span></span></div>\n<div><span>7</span><span>과거 기록</span><span>종료·미확인</span><code>KS0907</code><span></span></div>\n<div><span>8</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE0904</code><span></span></div>\n<div><span>9</span><span>과거 기록</span><span>종료·미확인</span><code>CHILLWEEKEND</code><span></span></div>\n<div><span>10</span><span>과거 기록</span><span>종료·미확인</span><code>FB2500KT</code><span></span></div>\n<div><span>11</span><span>과거 기록</span><span>종료·미확인</span><code>VIP0822</code><span></span></div>\n<div><span>12</span><span>과거 기록</span><span>종료·미확인</span><code>KS0822</code><span></span></div>\n<div><span>13</span><span>과거 기록</span><span>종료·미확인</span><code>JP26SUMMER</code><span></span></div>\n<div><span>14</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE08011</code><span></span></div>\n<div><span>15</span><span>과거 기록</span><span>종료·미확인</span><code>KS0810</code><span></span></div>\n<div><span>16</span><span>과거 기록</span><span>종료·미확인</span><code>HAPPYCATDAY</code><span></span></div>\n<div><span>17</span><span>과거 기록</span><span>종료·미확인</span><code>KS0803</code><span></span></div>\n<div><span>18</span><span>과거 기록</span><span>종료·미확인</span><code>JPJULSEA26KS</code><span></span></div>\n<div><span>19</span><span>과거 기록</span><span>종료·미확인</span><code>HAPPYEMOJIDAY</code><span></span></div>\n<div><span>20</span><span>과거 기록</span><span>종료·미확인</span><code>KS0715</code><span></span></div>\n<div><span>21</span><span>과거 기록</span><span>종료·미확인</span><code>KS0713</code><span></span></div>\n<div><span>22</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE0709</code><span></span></div>\n<div><span>23</span><span>과거 기록</span><span>종료·미확인</span><code>KS0709</code><span></span></div>\n<div><span>24</span><span>과거 기록</span><span>종료·미확인</span><code>KS0706</code><span></span></div>\n<div><span>25</span><span>과거 기록</span><span>종료·미확인</span><code>0706FORU</code><span></span></div>\n<div><span>26</span><span>과거 기록</span><span>종료·미확인</span><code>DC600KTHANKS</code><span></span></div>\n<div><span>27</span><span>과거 기록</span><span>종료·미확인</span><code>BESTDAD0621</code><span></span></div>\n<div><span>28</span><span>과거 기록</span><span>종료·미확인</span><code>PICNIC2026</code><span></span></div>\n<div><span>29</span><span>과거 기록</span><span>종료·미확인</span><code>AJISAI26JP</code><span></span></div>\n<div><span>30</span><span>과거 기록</span><span>종료·미확인</span><code>KS0615</code><span></span></div>\n<div><span>31</span><span>과거 기록</span><span>종료·미확인</span><code>PROTECTNATURE</code><span></span></div>\n<div><span>32</span><span>과거 기록</span><span>종료·미확인</span><code>N4rG26aVj</code><span></span></div>\n<div><span>33</span><span>과거 기록</span><span>종료·미확인</span><code>KS0603</code><span></span></div>\n<div><span>34</span><span>과거 기록</span><span>종료·미확인</span><code>7VAEDbAV7</code><span></span></div>\n<div><span>35</span><span>과거 기록</span><span>종료·미확인</span><code>CHILDFUN2026</code><span></span></div>\n<div><span>36</span><span>과거 기록</span><span>종료·미확인</span><code>EIDALADHA0527</code><span></span></div>\n<div><span>37</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE27</code><span></span></div>\n<div><span>38</span><span>과거 기록</span><span>종료·미확인</span><code>KS0524</code><span></span></div>\n<div><span>39</span><span>과거 기록</span><span>종료·미확인</span><code>rK9e6vKXu</code><span></span></div>\n<div><span>40</span><span>과거 기록</span><span>종료·미확인</span><code>Bw8NanVq8</code><span></span></div>\n<div><span>41</span><span>과거 기록</span><span>종료·미확인</span><code>X43Q2EKBq</code><span></span></div>\n<div><span>42</span><span>과거 기록</span><span>종료·미확인</span><code>n4xeR7VGd</code><span></span></div>\n<div><span>43</span><span>과거 기록</span><span>종료·미확인</span><code>eK5B3kw7t</code><span></span></div>\n<div><span>44</span><span>과거 기록</span><span>종료·미확인</span><code>847EadKex</code><span></span></div>\n<div><span>45</span><span>과거 기록</span><span>종료·미확인</span><code>KS0518</code><span></span></div>\n<div><span>46</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE516</code><span></span></div>\n<div><span>47</span><span>과거 기록</span><span>종료·미확인</span><code>LOVEFAMILY</code><span></span></div>\n<div><span>48</span><span>과거 기록</span><span>종료·미확인</span><code>BESTMOM2026</code><span></span></div>\n<div><span>49</span><span>과거 기록</span><span>종료·미확인</span><code>Childrenday0505</code><span></span></div>\n<div><span>50</span><span>과거 기록</span><span>종료·미확인</span><code>WORKERPOWER</code><span></span></div>\n<div><span>51</span><span>과거 기록</span><span>종료·미확인</span><code>KSGW26JP</code><span></span></div>\n<div><span>52</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE9</code><span></span></div>\n<div><span>53</span><span>과거 기록</span><span>종료·미확인</span><code>KS0426</code><span></span></div>\n<div><span>54</span><span>과거 기록</span><span>종료·미확인</span><code>0425FORU</code><span></span></div>\n<div><span>55</span><span>과거 기록</span><span>종료·미확인</span><code>KS0425</code><span></span></div>\n<div><span>56</span><span>과거 기록</span><span>종료·미확인</span><code>LOVETHEPLANET</code><span></span></div>\n<div><span>57</span><span>과거 기록</span><span>종료·미확인</span><code>KS0420</code><span></span></div>\n<div><span>58</span><span>과거 기록</span><span>종료·미확인</span><code>WEEKENDPLAN</code><span></span></div>\n<div><span>59</span><span>과거 기록</span><span>종료·미확인</span><code>KS0408</code><span></span></div>\n<div><span>60</span><span>과거 기록</span><span>종료·미확인</span><code>BUNNY405</code><span></span></div>\n<div><span>61</span><span>과거 기록</span><span>종료·미확인</span><code>NOFOOLIN</code><span></span></div>\n<div><span>62</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE04</code><span></span></div>\n<div><span>63</span><span>과거 기록</span><span>종료·미확인</span><code>KS0330</code><span></span></div>\n<div><span>64</span><span>과거 기록</span><span>종료·미확인</span><code>FIREFRIDAY</code><span></span></div>\n<div><span>65</span><span>과거 기록</span><span>종료·미확인</span><code>syunnbun26jp</code><span></span></div>\n<div><span>66</span><span>과거 기록</span><span>종료·미확인</span><code>EIDMUB2026</code><span></span></div>\n<div><span>67</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTHBD</code><span></span></div>\n<div><span>68</span><span>과거 기록</span><span>종료·미확인</span><code>OFFICIALSTORE</code><span></span></div>\n<div><span>69</span><span>과거 기록</span><span>종료·미확인</span><code>KS0315</code><span></span></div>\n<div><span>70</span><span>과거 기록</span><span>종료·미확인</span><code>DC500KWEMADEIT</code><span></span></div>\n<div><span>71</span><span>과거 기록</span><span>종료·미확인</span><code>CELEBRATEHER</code><span></span></div>\n<div><span>72</span><span>과거 기록</span><span>종료·미확인</span><code>THUR0305</code><span></span></div>\n<div><span>73</span><span>과거 기록</span><span>종료·미확인</span><code>0302FORU</code><span></span></div>\n<div><span>74</span><span>과거 기록</span><span>종료·미확인</span><code>KS0302</code><span></span></div>\n<div><span>75</span><span>과거 기록</span><span>종료·미확인</span><code>ITSFRIDAY227</code><span></span></div>\n<div><span>76</span><span>과거 기록</span><span>종료·미확인</span><code>KS0225</code><span></span></div>\n<div><span>77</span><span>과거 기록</span><span>종료·미확인</span><code>RAMADAN</code><span></span></div>\n<div><span>78</span><span>과거 기록</span><span>종료·미확인</span><code>SPRINGFES217</code><span></span></div>\n<div><span>79</span><span>과거 기록</span><span>종료·미확인</span><code>LOVEKS2026</code><span></span></div>\n<div><span>80</span><span>과거 기록</span><span>종료·미확인</span><code>KS260213</code><span></span></div>\n<div><span>81</span><span>과거 기록</span><span>종료·미확인</span><code>THANKSJP26</code><span></span></div>\n<div><span>82</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSTORE210</code><span></span></div>\n<div><span>83</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFBOOST26</code><span></span></div>\n<div><span>84</span><span>과거 기록</span><span>종료·미확인</span><code>KS26TGS</code><span></span></div>\n<div><span>85</span><span>과거 기록</span><span>종료·미확인</span><code>TACODE0127</code><span></span></div>\n<div><span>86</span><span>과거 기록</span><span>종료·미확인</span><code>WEEKENDJOY</code><span></span></div>\n<div><span>87</span><span>과거 기록</span><span>종료·미확인</span><code>SAYCHEESE26</code><span></span></div>\n<div><span>88</span><span>과거 기록</span><span>종료·미확인</span><code>KINGDOMSTAR</code><span></span></div>\n<div><span>89</span><span>과거 기록</span><span>종료·미확인</span><code>ENERGY0112</code><span></span></div>\n<div><span>90</span><span>과거 기록</span><span>종료·미확인</span><code>jpseijin26</code><span></span></div>\n<div><span>91</span><span>과거 기록</span><span>종료·미확인</span><code>THURMADNESS</code><span></span></div>\n<div><span>92</span><span>과거 기록</span><span>종료·미확인</span><code>SEEYOUIN2026</code><span></span></div>\n<div><span>93</span><span>과거 기록</span><span>종료·미확인</span><code>JPX27KFOLLOW</code><span></span></div>\n<div><span>94</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTXMAS</code><span></span></div>\n<div><span>95</span><span>과거 기록</span><span>종료·미확인</span><code>THEKINGSTORE</code><span></span></div>\n<div><span>96</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOT13M</code><span></span></div>\n<div><span>97</span><span>과거 기록</span><span>종료·미확인</span><code>STORELAUNCH</code><span></span></div>\n<div><span>98</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFISBACK</code><span></span></div>\n<div><span>99</span><span>과거 기록</span><span>종료·미확인</span><code>casualgame25</code><span></span></div>\n<div><span>100</span><span>과거 기록</span><span>종료·미확인</span><code>TOGOVERNOR</code><span></span></div>\n<div><span>101</span><span>과거 기록</span><span>종료·미확인</span><code>HELLOWORLD25</code><span></span></div>\n<div><span>102</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC400K</code><span></span></div>\n<div><span>103</span><span>과거 기록</span><span>종료·미확인</span><code>pepero</code><span></span></div>\n<div><span>104</span><span>과거 기록</span><span>종료·미확인</span><code>TGIF1107</code><span></span></div>\n<div><span>105</span><span>과거 기록</span><span>종료·미확인</span><code>JackKaoAndKS</code><span></span></div>\n<div><span>106</span><span>과거 기록</span><span>종료·미확인</span><code>HALLOWEEN25</code><span></span></div>\n<div><span>107</span><span>과거 기록</span><span>종료·미확인</span><code>TRICKORTREAT</code><span></span></div>\n<div><span>108</span><span>과거 기록</span><span>종료·미확인</span><code>KS2025award</code><span></span></div>\n<div><span>109</span><span>과거 기록</span><span>종료·미확인</span><code>TGIF1016</code><span></span></div>\n<div><span>110</span><span>과거 기록</span><span>종료·미확인</span><code>BONAPPETIT</code><span></span></div>\n<div><span>111</span><span>과거 기록</span><span>종료·미확인</span><code>Hangul2025</code><span></span></div>\n<div><span>112</span><span>과거 기록</span><span>종료·미확인</span><code>Gaecheonjeol</code><span></span></div>\n<div><span>113</span><span>과거 기록</span><span>종료·미확인</span><code>tgs2025ks1st</code><span></span></div>\n<div><span>114</span><span>과거 기록</span><span>종료·미확인</span><code>COFFEEPOWER</code><span></span></div>\n<div><span>115</span><span>과거 기록</span><span>종료·미확인</span><code>1INAMILLION</code><span></span></div>\n<div><span>116</span><span>과거 기록</span><span>종료·미확인</span><code>GIVEUAGIFT</code><span></span></div>\n<div><span>117</span><span>과거 기록</span><span>종료·미확인</span><code>SORRYIMLATE</code><span></span></div>\n<div><span>118</span><span>과거 기록</span><span>종료·미확인</span><code>LETSCLEANUP</code><span></span></div>\n<div><span>119</span><span>과거 기록</span><span>종료·미확인</span><code>Y4jx5z6Ke</code><span></span></div>\n<div><span>120</span><span>과거 기록</span><span>종료·미확인</span><code>54N25Ny4q</code><span></span></div>\n<div><span>121</span><span>과거 기록</span><span>종료·미확인</span><code>G4E8Xzzwe</code><span></span></div>\n<div><span>122</span><span>과거 기록</span><span>종료·미확인</span><code>9VqM2mMVq</code><span></span></div>\n<div><span>123</span><span>과거 기록</span><span>종료·미확인</span><code>dwmjyky44</code><span></span></div>\n<div><span>124</span><span>과거 기록</span><span>종료·미확인</span><code>847QgrmKx</code><span></span></div>\n<div><span>125</span><span>과거 기록</span><span>종료·미확인</span><code>X43Gxb246</code><span></span></div>\n<div><span>126</span><span>과거 기록</span><span>종료·미확인</span><code>v4njPbB4a</code><span></span></div>\n<div><span>127</span><span>과거 기록</span><span>종료·미확인</span><code>nwkJ6AXK6</code><span></span></div>\n<div><span>128</span><span>과거 기록</span><span>종료·미확인</span><code>N4r9ezWwf</code><span></span></div>\n<div><span>129</span><span>과거 기록</span><span>종료·미확인</span><code>ITISFRIDAY</code><span></span></div>\n<div><span>130</span><span>과거 기록</span><span>종료·미확인</span><code>DAYANDNIGHT</code><span></span></div>\n<div><span>131</span><span>과거 기록</span><span>종료·미확인</span><code>TGIFTIME</code><span></span></div>\n<div><span>132</span><span>과거 기록</span><span>종료·미확인</span><code>THANKUOLIVE</code><span></span></div>\n<div><span>133</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC300K</code><span></span></div>\n<div><span>134</span><span>과거 기록</span><span>종료·미확인</span><code>looking4code</code><span></span></div>\n<div><span>135</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT777</code><span></span></div>\n<div><span>136</span><span>과거 기록</span><span>종료·미확인</span><code>FRIENDSHIP25</code><span></span></div>\n<div><span>137</span><span>과거 기록</span><span>종료·미확인</span><code>KINGSHOTGIF</code><span></span></div>\n<div><span>138</span><span>과거 기록</span><span>종료·미확인</span><code>COURAGE</code><span></span></div>\n<div><span>139</span><span>과거 기록</span><span>종료·미확인</span><code>CHOCOLATE25</code><span></span></div>\n<div><span>140</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC200K</code><span></span></div>\n<div><span>141</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB500K</code><span></span></div>\n<div><span>142</span><span>과거 기록</span><span>종료·미확인</span><code>HIDAD25</code><span></span></div>\n<div><span>143</span><span>과거 기록</span><span>종료·미확인</span><code>UFOUNDIT</code><span></span></div>\n<div><span>144</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT400</code><span></span></div>\n<div><span>145</span><span>과거 기록</span><span>종료·미확인</span><code>CHILDHOOD25</code><span></span></div>\n<div><span>146</span><span>과거 기록</span><span>종료·미확인</span><code>ACODEBURGER</code><span></span></div>\n<div><span>147</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB300K</code><span></span></div>\n<div><span>148</span><span>과거 기록</span><span>종료·미확인</span><code>FAMILY25</code><span></span></div>\n<div><span>149</span><span>과거 기록</span><span>종료·미확인</span><code>THXMOM</code><span></span></div>\n<div><span>150</span><span>과거 기록</span><span>종료·미확인</span><code>KSDC100K</code><span></span></div>\n<div><span>151</span><span>과거 기록</span><span>종료·미확인</span><code>KINGDOM200</code><span></span></div>\n<div><span>152</span><span>과거 기록</span><span>종료·미확인</span><code>WORKERS2025</code><span></span></div>\n<div><span>153</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB200K</code><span></span></div>\n<div><span>154</span><span>과거 기록</span><span>종료·미확인</span><code>EASTER2025</code><span></span></div>\n<div><span>155</span><span>과거 기록</span><span>종료·미확인</span><code>KSFB150K</code><span></span></div>\n<div><span>156</span><span>과거 기록</span><span>종료·미확인</span><code>EASTER</code><span></span></div>\n<div><span>157</span><span>과거 기록</span><span>종료·미확인</span><code>WEHIT1K</code><span></span></div></div></div></section>\n<section><h3>킹샷 쿠폰 입력 방법</h3><h3>안드로이드</h3><ol><li>게임 왼쪽 상단 프로필 선택</li><li>설정 → Gift Code 메뉴 선택</li><li>코드 복사·붙여넣기 후 Redeem 선택</li><li>게임 내 우편함에서 보상 확인</li></ol>\n<h3>아이폰(iOS)·웹</h3><ol><li><a href=\"https://ks-giftcode.centurygame.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Century Games 공식 Gift Code Center</a> 접속</li><li>게임 프로필에서 Player ID 복사·로그인</li><li>쿠폰 코드를 붙여넣고 확인</li><li>우편함에서 결과 확인</li></ol></section>\n<section><h3>쿠폰이 입력되지 않는 이유</h3><ul><li>코드 대소문자·영문 숫자·앞뒤 공백 오류</li><li>이미 수령한 계정이거나 이벤트 한도 초과</li><li>기간 만료 또는 서버·국가별 제한</li><li>매체의 게시 당시 정보와 현재 사용 조건 차이</li></ul></section>\n<section><h3>공식·해외 정보 출처</h3><ul><li><a href=\"https://www.centurygames.com/games/kingshot/\" rel=\"noopener noreferrer\">Century Games — 킹샷</a></li><li><a href=\"https://ks-giftcode.centurygame.com/\" rel=\"noopener noreferrer\">공식 쿠폰 입력 페이지</a></li><li><a href=\"https://www.gamesradar.com/games/strategy/kingshot-codes-gift/\" rel=\"noopener noreferrer\">GamesRadar+ 10월 쿠폰·보상</a></li><li><a href=\"https://www.mrguider.org/codes/kingshot-codes/\" rel=\"noopener noreferrer\">MrGuider 10월 목록</a></li><li><a href=\"https://beebom.com/kingshot-codes/\" rel=\"noopener noreferrer\">Beebom 코드 목록</a></li><li><a href=\"https://www.topuplive.com/ko/news/kingshot-gift-codes-november-2025.html\" rel=\"noopener noreferrer\">TOPUPlive 한국어판</a></li><li><a href=\"https://www.reddit.com/r/KingShot/comments/1wy4waj/new_gift_code_ks1005/\" rel=\"noopener noreferrer\">Reddit — KS1005 만료 제보</a></li><li><a href=\"https://tokyogamestation.com/kingshot_giftcode/\" rel=\"noopener noreferrer\">일본 공식 SNS 기반 기록</a></li><li><a href=\"https://kingshot.net/gift-codes\" rel=\"noopener noreferrer\">킹샷 팬 운영 과거 코드 기록</a></li></ul></section>\n<section><h3>관련 게임 쿠폰</h3><p><a href=\"https://lsifl.blogspot.com/2026/10/2026-10_0416354315.html\">화이트아웃 서바이벌</a> · <a href=\"https://lsifl.blogspot.com/2026/10/2026-10_01992004057.html\">메이플 키우기</a></p></section>\n</article>",
-    "noticeHTML": "<p>기존 원고의 수집 근거와 사용 조건을 보존했습니다. 원문 게시일이 없는 기록은 미확인으로 표시합니다.</p>"
+    "noticeHTML": "<p>2026-10-14 전세계 공개 자료를 다시 확인했습니다. 현재 우선 입력 후보는 <strong>IG200KS</strong>, <strong>CHALLENGE26</strong>, <strong>Kingshot888</strong>, <strong>VIP777</strong>입니다. <strong>Hangul2026</strong>, <strong>WELLDONE</strong>, <strong>KS1005</strong>는 최신 종료 보고를 반영해 과거 기록으로 분리했습니다. 공식 최초 발급 원문과 개별 계정 성공이 확인되지 않은 항목은 제3자·커뮤니티 근거 수준으로 표시합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
   },
   {
     "articleKey": "fc-mobile-codes-202610",
@@ -24416,46 +24529,96 @@
         "code": "RM2024",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>01AAYYY미확인RM2024</p>"
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "AAYYY · Royal Match Codes",
+            "url": "https://www.aayyy.com/royal-match/codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>01AAYYY미확인RM2024</p><p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p><p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>",
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다."
       },
       {
         "code": "RM100",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>02AAYYY미확인RM100</p>"
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "AAYYY · Royal Match Codes",
+            "url": "https://www.aayyy.com/royal-match/codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>02AAYYY미확인RM100</p><p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p><p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>",
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다."
       },
       {
         "code": "GIFT2024",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>03AAYYY미확인GIFT2024</p>"
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "AAYYY · Royal Match Codes",
+            "url": "https://www.aayyy.com/royal-match/codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>03AAYYY미확인GIFT2024</p><p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p><p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>",
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다."
       },
       {
         "code": "ROYAL2024",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>04AAYYY미확인ROYAL2024</p>"
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "AAYYY · Royal Match Codes",
+            "url": "https://www.aayyy.com/royal-match/codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>04AAYYY미확인ROYAL2024</p><p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p><p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>",
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다."
       },
       {
         "code": "MATCH2024",
         "sourcePublishedAt": null,
         "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
-        "sources": [],
-        "evidenceHTML": "<p>05AAYYY미확인MATCH2024</p>"
+        "latest": true,
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "AAYYY · Royal Match Codes",
+            "url": "https://www.aayyy.com/royal-match/codes/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>05AAYYY미확인MATCH2024</p><p>AAYYY의 2026-10-13 갱신 목록에서 현재 코드로 다시 확인했습니다. 페이지 갱신일은 원문 최초 게시일로 대체하지 않으며 Dream Games 공식 발급·입력 성공 근거가 확인되기 전까지 후보로만 표시합니다.</p><p>AAYYY 2026-10-13 갱신 목록에 같은 문자열이 있습니다. 공식 코드로 승격하지 않습니다.</p>",
+        "latestEvidence": "AAYYY가 2026-10-13 갱신한 2026년 10월 Active Royal Match Codes 목록에 이 문자열을 수록한다. Dream Games 공식 발급 원문·공용 쿠폰 입력 경로·개별 계정 사용 성공은 확인되지 않아 제3자 현재 후보로 유지한다."
       },
       {
         "code": "A1vRZpEShDcp",
@@ -24744,13 +24907,280 @@
         "statusLabel": "사용 여부 미확인",
         "sources": [],
         "evidenceHTML": "<p>37LINEGames미확인t9MT3oySOYeT</p>"
+      },
+      {
+        "code": "WELCOME",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP222",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP555",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP666",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP777",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP888",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "VIP999",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "GO2024",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "GameEDU 일본어 페이지가 2026-10-12 유효 목록으로 이 문자열을 제시한다. 언어별 페이지의 코드 구성이 서로 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "GameEDU · Royal Match 코드 목록",
+            "url": "https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-12",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "gDXjKHIgPwel",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "K4jZej2zzVyz",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "NAZMUxaRw8oh",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "XUvfFnkoCaMA",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "8Ol5CHv0BHAQ",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
+      },
+      {
+        "code": "2Rmreqljw04a",
+        "sourcePublishedAt": null,
+        "expiry": null,
+        "latest": true,
+        "latestEvidence": "LINEGames 영어 페이지가 Working 2026-10-11 목록으로 이 문자열을 제시한다. 다른 언어·시점 목록과 구성이 달라 공식 발급 또는 실제 성공으로 판단할 수 없어 제3자 현재 후보로 유지한다.",
+        "statusLabel": "제3자 현재 후보·공식 발급/입력 경로/실사용 미확인",
+        "sources": [
+          {
+            "name": "LINEGames · Royal Match Codes",
+            "url": "https://www.linegames.org/en/royal-match-codes",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-11",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2026-10-14 재조사에서 제3자 현재 목록에 노출된 문자열입니다. Dream Games 공식 발급·공용 입력 경로·실제 계정 사용 성공은 확인되지 않았습니다.</p>"
       }
     ],
     "featuredHTML": "<figure data-ncp-featured-image=\"royal-match-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://apps.apple.com/ga/app/royal-match/id1482155847?l=en-GB\" style=\"max-width:256px;margin:0 auto 18px\" xmlns=\"http://www.w3.org/1999/xhtml\"><img src=\"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b2/15/da/b215da38-b4ef-41f8-b1e9-2ccf62bb60ff/Placeholder.mill/1024x1024wd.png\" alt=\"로얄 매치 공식 앱 아이콘\" width=\"512\" height=\"512\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain\"/><figcaption><a href=\"https://apps.apple.com/ga/app/royal-match/id1482155847?l=en-GB\">공식 App Store 아이콘</a></figcaption></figure>",
-    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\"><span>공식 확인</span><strong>0개</strong></div><div class=\"ncp-feed-stat\"><span>해외 공개 문자열</span><strong>37개</strong></div><div class=\"ncp-feed-stat\"><span>입력 기능</span><strong>미확인</strong></div></div>",
-    "guideHTML": "",
-    "archiveHTML": "\n\n<article xmlns=\"http://www.w3.org/1999/xhtml\"><header><p><strong>로얄 매치(Royal Match) 2026년 10월 쿠폰 조사.</strong> 글로벌 쿠폰 사이트에서 발견한 문자열 37개를 출처별로 정리했습니다. Dream Games의 공식 발급과 게임 내 입력 기능이 확인되지 않아 실제 사용 가능한 쿠폰으로 확정할 수 없습니다.</p><p><a href=\"https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch\">공식 Google Play</a> · <a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/\">Dream Games 공식 도움말</a></p></header><h3>로얄매치 쿠폰 코드 37개</h3><p>해당 목록은 제3자 사이트가 제공한 문자열의 기록입니다. 공식 발급 증거, 만료 날짜, 실제 입력 성공은 확인되지 않았습니다. 현재 게임에서 코드 입력 기능도 확인되지 않아 복사 후 사용이 가능하다고 보장하지 않습니다.</p><div><div><span>01</span><span>AAYYY</span><span>미확인</span><code>RM2024</code><span></span></div>\n<div><span>02</span><span>AAYYY</span><span>미확인</span><code>RM100</code><span></span></div>\n<div><span>03</span><span>AAYYY</span><span>미확인</span><code>GIFT2024</code><span></span></div>\n<div><span>04</span><span>AAYYY</span><span>미확인</span><code>ROYAL2024</code><span></span></div>\n<div><span>05</span><span>AAYYY</span><span>미확인</span><code>MATCH2024</code><span></span></div>\n<div><span>06</span><span>GameEDU</span><span>미확인</span><code>A1vRZpEShDcp</code><span></span></div>\n<div><span>07</span><span>GameEDU</span><span>미확인</span><code>7hKMYEc0c14G</code><span></span></div>\n<div><span>08</span><span>GameEDU</span><span>미확인</span><code>sWeq6UrCOeV8</code><span></span></div>\n<div><span>09</span><span>GameEDU</span><span>미확인</span><code>gwx59Wx98drm</code><span></span></div>\n<div><span>10</span><span>GameEDU</span><span>미확인</span><code>juYoleybQwji</code><span></span></div>\n<div><span>11</span><span>GameEDU</span><span>미확인</span><code>1hZYIyP8QN0E</code><span></span></div>\n<div><span>12</span><span>GameEDU</span><span>미확인</span><code>74Qct2NadLhU</code><span></span></div>\n<div><span>13</span><span>GameEDU</span><span>미확인</span><code>cfLoz9pWROwf</code><span></span></div>\n<div><span>14</span><span>GameEDU</span><span>미확인</span><code>j8n771hvUPLi</code><span></span></div>\n<div><span>15</span><span>GameEDU</span><span>미확인</span><code>AeK4NcW8BFaV</code><span></span></div>\n<div><span>16</span><span>GameEDU</span><span>미확인</span><code>Pmb05MqYzXEb</code><span></span></div>\n<div><span>17</span><span>GameEDU</span><span>미확인</span><code>2yJyXrs5DsZc</code><span></span></div>\n<div><span>18</span><span>GameEDU</span><span>미확인</span><code>JrKpnVagkWHY</code><span></span></div>\n<div><span>19</span><span>GameEDU</span><span>미확인</span><code>RYjLiaF49XC6</code><span></span></div>\n<div><span>20</span><span>GameEDU</span><span>미확인</span><code>TPIH6njcFe9n</code><span></span></div>\n<div><span>21</span><span>LINEGames</span><span>미확인</span><code>uTe6a9a7lfl3</code><span></span></div>\n<div><span>22</span><span>LINEGames</span><span>미확인</span><code>QJVgFnGLW26G</code><span></span></div>\n<div><span>23</span><span>LINEGames</span><span>미확인</span><code>CAXtsyBEtfeI</code><span></span></div>\n<div><span>24</span><span>LINEGames</span><span>미확인</span><code>EWqZtYFC83Mf</code><span></span></div>\n<div><span>25</span><span>LINEGames</span><span>미확인</span><code>WOaSPOaMkF6U</code><span></span></div>\n<div><span>26</span><span>LINEGames</span><span>미확인</span><code>fU3N0tz7aYlG</code><span></span></div>\n<div><span>27</span><span>LINEGames</span><span>미확인</span><code>FCbFDsyMph8s</code><span></span></div>\n<div><span>28</span><span>LINEGames</span><span>미확인</span><code>QA2xY0SK83Fc</code><span></span></div>\n<div><span>29</span><span>LINEGames</span><span>미확인</span><code>qZluaZvn9TzS</code><span></span></div>\n<div><span>30</span><span>LINEGames</span><span>미확인</span><code>FQGU7nFApGho</code><span></span></div>\n<div><span>31</span><span>LINEGames</span><span>미확인</span><code>vvpf7RAMHLN0</code><span></span></div>\n<div><span>32</span><span>LINEGames</span><span>미확인</span><code>MuZBGYkt44wj</code><span></span></div>\n<div><span>33</span><span>LINEGames</span><span>미확인</span><code>Ca4WExFA9otG</code><span></span></div>\n<div><span>34</span><span>LINEGames</span><span>미확인</span><code>HMIbH7JFE2CJ</code><span></span></div>\n<div><span>35</span><span>LINEGames</span><span>미확인</span><code>GfyqKpEX1vBS</code><span></span></div>\n<div><span>36</span><span>LINEGames</span><span>미확인</span><code>IvvhrI6WQHoS</code><span></span></div>\n<div><span>37</span><span>LINEGames</span><span>미확인</span><code>t9MT3oySOYeT</code><span></span></div></div><h3>로얄매치 쿠폰 입력 방법</h3><p>2026년 10월 8일 기준 공식 고객센터에서 일반 쿠폰 입력 메뉴 또는 교환 웹페이지를 확인하지 못했습니다. 임의의 외부 로그인·교환 사이트에 게임 계정 정보나 비밀번호를 입력하지 마세요.</p><h3>무료 코인 받는 방법</h3><ol><li>보너스 레벨 클리어</li><li>지역 상자 열기</li><li>일반·하드·슈퍼하드·극하드 레벨 클리어</li><li>남은 이동 횟수에 따른 보상 받기</li><li>팀 배틀, Balloon Rise 등 게임 내 이벤트 참여</li></ol><h3>자주 묻는 질문</h3><h3>로얄 매치 쿠폰 코드는 어디에 입력하나요?</h3><p>공식적으로 검증된 쿠폰 입력 화면을 찾지 못했습니다.</p><h3>37개가 모두 사용할 수 있는 쿠폰인가요?</h3><p>아닙니다. 제3자 사이트에 표시된 문자열이며 발급 및 사용 성공은 검증되지 않았습니다.</p><h3>무료 코인을 받을 수 있나요?</h3><p>보너스 레벨, 지역 상자, 게임 내 이벤트 보상 등 공식 무료 획득 방법이 있습니다.</p><h3>출처</h3><ul><li><a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/21-how-can-i-obtain-and-use-coins/\">Dream Games 공식 코인 획득 안내</a></li><li><a href=\"https://www.aayyy.com/royal-match/codes/\">AAYYY 쿠폰 게시 목록</a></li><li><a href=\"https://game.edu.kg/en/royal-match/codes/?update=20260807\">GameEDU 게시 문자열</a></li><li><a href=\"https://www.linegames.org/en/royal-match-codes/\">LINEGames 게시 문자열</a></li></ul></article>",
-    "noticeHTML": "<p>기존 원고의 수집 근거와 사용 조건을 보존했습니다. 원문 게시일이 없는 기록은 미확인으로 표시합니다.</p>"
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"로얄 매치 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재 코드</span><strong>0개 확인</strong></div><div class=\"ncp-feed-stat\"><span>제3자 현재 후보</span><strong>19개</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>51개</strong></div></div>",
+    "guideHTML": "<section><h3>공식 무료 보상</h3><p>Dream Games 공식 도움말은 Area Chest, Bonus Level, 일반·Hard·Super Hard·Extremely Hard 레벨 완료, 클리어 뒤 남은 이동 수, Propeller Madness·Book of Treasure·Team Battle·Dragon Nest·Train Journey·Ocean Odyssey 등 게임 내 이벤트를 무료 코인·보상 경로로 안내합니다. Weekly Mission도 미션과 보상 바를 통해 보상을 제공합니다.</p><div><a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/10-how-to-get-free-coins/\" rel=\"noopener noreferrer\">Dream Games 공식 무료 코인 안내 <span>→</span></a></div></section><section><h3>제3자 코드 해석</h3><p>AAYYY·GameEDU·LINEGames의 10월 목록은 서로 다른 문자열을 제시합니다. 특히 GameEDU와 LINEGames는 언어·확인 시점에 따라 목록 구성이 달라지므로 현재 표시 여부만으로 공식 발급이나 사용 성공을 뜻하지 않습니다. 시도할 경우 실패 가능성을 전제로 확인하세요.</p></section><section><h3>입력 메뉴가 보이지 않을 때</h3><p>공식 도움말과 스토어에서 공용 쿠폰 입력 경로가 확인되지 않았습니다. 게임에 입력 메뉴가 없다면 외부 사이트에 계정 정보나 결제 정보를 입력하지 말고 공식 게임 내 이벤트·보상과 Dream Games 도움말을 우선 확인하세요.</p></section>",
+    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.dreamgames.royalmatch\" rel=\"noopener noreferrer\">공식 Google Play</a> · <a href=\"https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/10-how-to-get-free-coins/\" rel=\"noopener noreferrer\">Dream Games 무료 코인 안내</a> · <a href=\"https://www.aayyy.com/royal-match/codes/\" rel=\"noopener noreferrer\">AAYYY 10월 후보</a> · <a href=\"https://game.edu.kg/ja/royal-match/%E6%9C%80%E6%96%B0%E3%81%AE%E4%BA%A4%E6%8F%9B%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7/\" rel=\"noopener noreferrer\">GameEDU 10월 후보</a> · <a href=\"https://www.linegames.org/en/royal-match-codes\" rel=\"noopener noreferrer\">LINEGames 10월 후보</a> · <a href=\"https://www.teknoistan.com/royal-match-ekim-2026-jeton-can-ve-sinirsiz-booster/\" rel=\"noopener noreferrer\">쿠폰 입력 기능 반대 사례</a></p>",
+    "noticeHTML": "<p>2026년 10월 14일 다시 조사했습니다. Dream Games 공식 Google Play과 공식 도움말에서는 공용 쿠폰 코드 발급 또는 쿠폰 입력 경로를 확인하지 못했습니다. 공식 도움말은 무료 코인을 Area Chest·Bonus Level·레벨 클리어·남은 이동 수와 각종 게임 내 이벤트 보상으로 안내합니다. 반면 AAYYY는 5개, GameEDU는 8개, LINEGames는 6개 문자열을 10월 현재 목록으로 제시해 총 19개를 <strong>제3자 현재 후보</strong>로 표시합니다. 세 출처의 목록이 서로 다르고 Dream Games 공식 발급·공용 입력 경로·계정 사용 성공이 확인되지 않았으므로 공식 또는 사용 가능 확정으로 승격하지 않습니다. 이전 32개 후보 기록도 삭제하지 않고 이력으로 보존합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
   },
   {
     "articleKey": "top-force-codes-202610",
@@ -37916,6 +38346,1847 @@
             "sourcePublishedAt": "2023-12-05"
           }
         ]
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
+  },
+  {
+    "articleKey": "pixel-defenders-codes-202610",
+    "title": "픽셀 디펜더스",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"픽셀 디펜더스 쿠폰 요약\" xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"ncp-feed-stat\"><span>최근 입력 후보</span><strong>15개</strong></div><div class=\"ncp-feed-stat\"><span>오늘 종료 표기</span><strong>1개</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>39개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"pixel-defenders-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=com.ondi.fortias.defense\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.ondi.fortias.defense\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/icWo5PcneLK3ttCyUqDf55nLriIK4NZytDppG0ZbB30W7cRiUwVeS6gybOXU8WbQnALzplIt1PZad_JnAlS0%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"픽셀 디펜더스 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026년 10월 14일 다시 조사했습니다. 공식 Google Play의 Pixel Defenders: Merge TD Game은 ONDI TECHNOLOGY JSC 게임으로 확인되며 앱은 2026년 10월 8일 업데이트 상태입니다. 주요 제3자 목록에서는 <code>OCTCODE</code>, 서버별 <code>SERVER25</code>~<code>SERVER18</code>, <code>SERVERCODE</code>, <code>PDWELCOME</code>를 계속 확인할 수 있습니다. <code>SERVER16</code>·<code>SERVER17</code>은 표시된 종료일이 지나 최신에서 내렸고, <code>SERVER18</code>은 10월 14일 종료 표기라 오늘 종료 후보로 유지했습니다. 10월 13일 갱신된 AAYYY의 추가 문자열 4개는 다른 주요 자료와 교차 일치하지 않아 공식 코드가 아닌 제3자 입력 후보로만 보존합니다.</p>",
+    "guideHTML": "<section><h3>쿠폰 입력 방법</h3><p>공개 가이드 기준으로 게임 실행 후 왼쪽 위 프로필/아바타를 열고 <strong>Gift Code</strong> 메뉴에서 코드를 입력한 뒤 보상은 우편함에서 확인합니다. 서버 번호가 붙은 코드는 해당 Global 서버 계정에만 적용된다고 보고되어 있습니다.</p></section><section><h3>확인 기준</h3><p>표시된 만료일이 지난 코드는 과거 기록으로 이동하고, 만료일 당일 코드는 종료 예정으로 따로 표시합니다. 공식 발급 원문이나 실제 계정 입력 성공이 없는 문자열은 출처가 최신이어도 <strong>제3자 후보</strong>로 유지합니다.</p></section>",
+    "archiveHTML": "<p><a href=\"https://play.google.com/store/apps/details?hl=ko&amp;id=com.ondi.fortias.defense\" rel=\"noopener noreferrer\">Google Play</a> · <a href=\"https://www.ondigames.com/\" rel=\"noopener noreferrer\">ONDI Games</a> · <a href=\"https://www.facebook.com/pixel.defenders.rpg\" rel=\"noopener noreferrer\">공식 Facebook</a> · <a href=\"https://discord.gg/FUFJGpw3xW\" rel=\"noopener noreferrer\">공식 Discord</a> · <a href=\"https://www.mrguider.org/roblox/pixel-defenders-codes/\" rel=\"noopener noreferrer\">MrGuider</a> · <a href=\"https://progamegeek.com/pixel-defenders-codes/\" rel=\"noopener noreferrer\">ProGameGeek</a> · <a href=\"https://gamevoyant.com/codes/pixel-defenders-codes\" rel=\"noopener noreferrer\">GameVoyant</a> · <a href=\"https://www.aayyy.com/pixel-defenders-merge-td-game/codes/\" rel=\"noopener noreferrer\">AAYYY</a> · Wantplay 2026-10-12 목록 존재도 추가 확인했습니다.</p>",
+    "records": [
+      {
+        "code": "OCTCODE",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider 2026-10-10 갱신 및 ProGameGeek/GameVoyant 교차 확인. 2026-11-01 종료 표기이며 공식 발급 원문·개별 계정 입력 성공은 미확인.",
+        "expiry": "2026-11-01",
+        "statusLabel": "제3자 현재 후보·2026-11-01 종료 표기",
+        "evidenceHTML": "<p>보상: 빵 30, 영웅 뽑기 티켓 3, 장비 강화 스크롤 30. 조건: 전체 계정 후보. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "MIDAUTUMN",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-09",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 영웅 뽑기 티켓 10, 루비 300, 골드 30,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVERGIFT",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-09",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 300. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER25",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 25 전용, 2026-10-24 종료로 일치.",
+        "expiry": "2026-10-24",
+        "statusLabel": "제3자 서버 한정 후보·Global 25·10월24일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 25 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER24",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 24 전용, 2026-10-22 종료로 일치.",
+        "expiry": "2026-10-22",
+        "statusLabel": "제3자 서버 한정 후보·Global 24·10월22일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 24 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER23",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 23 전용, 2026-10-21 종료로 일치.",
+        "expiry": "2026-10-21",
+        "statusLabel": "제3자 서버 한정 후보·Global 23·10월21일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 23 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER22",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 22 전용, 2026-10-19 종료로 일치.",
+        "expiry": "2026-10-19",
+        "statusLabel": "제3자 서버 한정 후보·Global 22·10월19일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 22 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER21",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 21 전용, 2026-10-18 종료로 일치.",
+        "expiry": "2026-10-18",
+        "statusLabel": "제3자 서버 한정 후보·Global 21·10월18일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 21 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER20",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 20 전용, 2026-10-18 종료로 일치.",
+        "expiry": "2026-10-18",
+        "statusLabel": "제3자 서버 한정 후보·Global 20·10월18일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 20 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER19",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 19 전용, 2026-10-16 종료로 일치.",
+        "expiry": "2026-10-16",
+        "statusLabel": "제3자 서버 한정 후보·Global 19·10월16일 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 19 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER18",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 Global 18 전용, 2026-10-14 종료로 일치. 확인일과 종료일이 같아 오늘 종료 후보로 유지.",
+        "expiry": "2026-10-14",
+        "statusLabel": "제3자 서버 한정 후보·Global 18·오늘 종료 표기",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 18 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "SERVER17",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "latestEvidence": "2026-10-10 갱신 제3자 목록과 2026-10-05 상태 페이지에서 입력 후보로 남아 있으며, 표시된 종료일이 2026-10-12 이후이거나 만료일이 미확인이다. 공식 발급 원문·계정 성공은 미확인이다.",
+        "expiry": "2026-10-13",
+        "statusLabel": "과거 종료 보고·Global 17·2026-10-13 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 17 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p><p>MrGuider·ProGameGeek·GameVoyant가 2026-10-13 종료로 표기했습니다. 확인일 2026-10-14 기준 최신 목록에서 제외합니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER16",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "latestEvidence": "2026-10-10 갱신 제3자 목록과 2026-10-05 상태 페이지에서 입력 후보로 남아 있으며, 표시된 종료일이 2026-10-12 이후이거나 만료일이 미확인이다. 공식 발급 원문·계정 성공은 미확인이다.",
+        "expiry": "2026-10-12",
+        "statusLabel": "과거 종료 보고·Global 16·2026-10-12 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 16 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p><p>MrGuider·ProGameGeek가 2026-10-12 종료로 표기했습니다. 확인일 2026-10-14 기준 최신 목록에서 제외합니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER15",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-11",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 보상 세부 미확인. 조건: Global 15 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVERALL3",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-10",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 200, 골드 20,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER14",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-10",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 14 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVERALL2",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-07",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 200, 골드 20,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER13",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-07",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 13 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "ALLSERVER2",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-06",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 200, 골드 20,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER12",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-06",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 12 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "ALLSERVER1",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-03",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 200, 골드 20,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER11",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-03",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 110,000. 조건: Global 11 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVERALL",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-30",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 200, 골드 20,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVER10",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-30",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 10 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SEPCODE",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-10-01",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 빵 30, 영웅 뽑기 티켓 3, 골드 20,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "SERVERCODE",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider 2026-10-10 갱신 및 GameVoyant 2026-10-05 확인에서 만료일 미기재 상태로 계속 수록. 공식 발급 원문·현재 계정 입력 성공은 미확인.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·만료 미확인",
+        "evidenceHTML": "<p>보상: 루비 1,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "HOTFIXCODE",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-04",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 300, 골드 30,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "ALLSERVER",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-21",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 1,000, 빵 30, 골드 50,000. 조건: 전체 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "PDNEWSERVER",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-21",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 2,000, 빵 60, 골드 100,000. 조건: Global 6~9 서버. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "GACHAREWARD",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "미확인",
+        "statusLabel": "제3자 자료 상충·현재 적용 미확인",
+        "evidenceHTML": "<p>보상: 루비 500. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "PDWELCOME",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": true,
+        "latestEvidence": "MrGuider·ProGameGeek·GameVoyant에서 계속 수록되며 ProGameGeek는 Permanent로 표기. 공식 무기한 발급 원문과 개별 계정 입력 성공은 미확인.",
+        "expiry": "무기한 표기",
+        "statusLabel": "제3자 현재 후보·무기한 표기 공식 미확인",
+        "evidenceHTML": "<p>보상: 골드 20,000, 영웅 뽑기 티켓 10, 루비 300, 빵 60. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "ARENACODE",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-08-20",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 3,000, 골드 100,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "PDSERVER",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-08-20",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 빵 30, 영웅 뽑기 티켓 10, 골드 50,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "FDSERVER2",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-08-20",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 1,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "GLOBAL01",
+        "sourcePublishedAt": "2026-10-02",
+        "latest": false,
+        "expiry": "2026-09-07",
+        "statusLabel": "제3자 기록·기간 종료",
+        "evidenceHTML": "<p>보상: 루비 600, 골드 30,000. 공개 코드 목록 3곳을 교차 확인했습니다. 공식 발급 원문과 개별 계정 입력 성공은 별도 미확인입니다.</p>",
+        "sources": [
+          {
+            "name": "MrGuider · Pixel Defenders Codes",
+            "url": "https://www.mrguider.org/roblox/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "ProGameGeek · Pixel Defenders Codes",
+            "url": "https://progamegeek.com/pixel-defenders-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-04",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GameVoyant · Pixel Defenders Codes",
+            "url": "https://gamevoyant.com/codes/pixel-defenders-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-05",
+            "checkedAt": "2026-10-12"
+          }
+        ],
+        "periodYear": "2026"
+      },
+      {
+        "code": "PIXELDEFENDERS",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "AAYYY 2026-10-13 Active 목록",
+        "statusLabel": "제3자 현재 후보·공식 발급/보상 미확인",
+        "sources": [
+          {
+            "name": "AAYYY Pixel Defenders 2026-10-13 목록",
+            "url": "https://www.aayyy.com/pixel-defenders-merge-td-game/codes/",
+            "sourcePublishedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>AAYYY가 2026-10-13 Active 코드로 수록했습니다. 다른 주요 코드 목록과 교차 일치하지 않아 공식 코드로 확정하지 않고 입력 후보로만 보존합니다.</p>"
+      },
+      {
+        "code": "MERGETD2024",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "AAYYY 2026-10-13 Active 목록",
+        "statusLabel": "제3자 현재 후보·공식 발급/보상 미확인",
+        "sources": [
+          {
+            "name": "AAYYY Pixel Defenders 2026-10-13 목록",
+            "url": "https://www.aayyy.com/pixel-defenders-merge-td-game/codes/",
+            "sourcePublishedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>AAYYY가 2026-10-13 Active 코드로 수록했습니다. 연도 문자열이 포함된 범용형 후보이며 공식 발급 원문·보상·만료·현재 입력 성공은 미확인입니다.</p>"
+      },
+      {
+        "code": "WELCOMEPIXEL",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "AAYYY 2026-10-13 Active 목록",
+        "statusLabel": "제3자 현재 후보·공식 발급/보상 미확인",
+        "sources": [
+          {
+            "name": "AAYYY Pixel Defenders 2026-10-13 목록",
+            "url": "https://www.aayyy.com/pixel-defenders-merge-td-game/codes/",
+            "sourcePublishedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>AAYYY가 2026-10-13 Active 코드로 수록했습니다. WELCOME 계열 문자열이므로 범용 후보 가능성을 명시하고 공식 발급 원문·현재 입력 성공은 미확인으로 유지합니다.</p>"
+      },
+      {
+        "code": "DEFENDERS777",
+        "sourcePublishedAt": "2026-10-13",
+        "expiry": "미확인",
+        "latest": true,
+        "latestEvidence": "AAYYY 2026-10-13 Active 목록",
+        "statusLabel": "제3자 현재 후보·공식 발급/보상 미확인",
+        "sources": [
+          {
+            "name": "AAYYY Pixel Defenders 2026-10-13 목록",
+            "url": "https://www.aayyy.com/pixel-defenders-merge-td-game/codes/",
+            "sourcePublishedAt": "2026-10-13",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>AAYYY가 2026-10-13 Active 코드로 수록했습니다. 숫자 반복형 문자열이라 범용 후보 가능성이 있으며 공식 발급 원문·보상·만료·현재 입력 성공은 미확인입니다.</p>"
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
+  },
+  {
+    "articleKey": "mu-monarch-codes-202610",
+    "title": "뮤 모나크",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"뮤 모나크 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>공식 현재 코드</span><strong>1개</strong></div><div class=\"ncp-feed-stat\"><span>제3자 입력 후보</span><strong>5개</strong></div><div class=\"ncp-feed-stat\"><span>전체 보존 기록</span><strong>15개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"mu-monarch-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=com.webzen.muangel.google\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.webzen.muangel.google\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/7XtgqiXoBB1rQ13xhpvwGCFn12UzRS1Aecv8BMl6j5luWQrAJBAhYhNU1kNt1ucU5CxsFqJm_B-eiUf49-mvzMY%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"뮤 모나크 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026년 10월 14일 다시 조사했습니다. 웹젠 공식 진행중 이벤트에서 현재 공용 쿠폰 <code>ChuSeokMu</code> 1개를 확인했으며 사용 기한은 10월 21일 23:59입니다. Digwow가 같은 날 갱신한 <code>MUMONARCH1</code>·<code>MUMONARCH2</code>·<code>MUMONARCH3</code>·<code>WELCOME2024</code>·<code>MU2024</code>는 계속 노출되지만 웹젠 발급 원문과 실제 계정 성공이 확인되지 않아 제3자 입력 후보로 유지합니다. 공식 과거 쿠폰과 출처가 제한된 과거 문자열은 삭제하지 않고 종료 이력으로 보존하며, <strong>뮤 모나크2</strong> 자료는 별도 게임이므로 포함하지 않습니다.</p>",
+    "guideHTML": "<section><h3>쿠폰 입력 방법</h3><p>웹젠 공식 쿠폰 공지는 게임 화면 우측 하단 <strong>설정 &gt; 쿠폰</strong>에서 번호를 입력하는 경로를 안내합니다. 현재 공용 쿠폰 공지는 안드로이드 입력 조건을 명시하므로 해당 조건을 우선합니다.</p><div><a href=\"https://mumonarch.webzen.co.kr/board/541/detail/431966\" rel=\"noopener noreferrer\">현재 공식 쿠폰 확인 <span>→</span></a></div></section><section><h3>제3자 후보 해석</h3><p>제3자 목록에 계속 보이는 문자열은 삭제하지 않지만 공식 발급이나 현재 사용 성공으로 승격하지 않습니다. 거절될 경우 만료·계정 제한·비공식 문자열 가능성을 함께 고려하세요.</p></section><section><h3>개별 지급 쿠폰</h3><p>웹젠 이벤트 당첨자 쿠폰은 공식 커뮤니티 쪽지로 개별 발급되는 사례가 있습니다. 팥빙수 이벤트 당첨자 쿠폰은 2026-10-31까지 사용 가능하고 PC 또는 안드로이드 입력이 허용되지만, 공용 문자열이 아니므로 복사 목록에는 넣지 않습니다.</p></section>",
+    "archiveHTML": "<p><a href=\"https://mumonarch.webzen.co.kr/board/541/detail/431966\" rel=\"noopener noreferrer\">현재 공식 한가위 쿠폰</a> · <a href=\"https://mumonarch.webzen.co.kr/board/594/detail/424454\" rel=\"noopener noreferrer\">MURELIC 공식 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/594/detail/421157\" rel=\"noopener noreferrer\">COOLINGMU 공식 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/594/detail/412253\" rel=\"noopener noreferrer\">MUBLOSSOM 공식 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/594/detail/406157\" rel=\"noopener noreferrer\">Muwonder 공식 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/541/detail/402514\" rel=\"noopener noreferrer\">MUHUNTER 공식 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/594/detail/382866\" rel=\"noopener noreferrer\">MuRebirth 공식 이력</a> · <a href=\"https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/\" rel=\"noopener noreferrer\">제3자 현재 후보</a> · <a href=\"https://honeybeejoa.co.kr/bbs/board.php?bo_table=tide&amp;wr_id=1\" rel=\"noopener noreferrer\">장기 쿠폰 이력</a> · <a href=\"https://mumonarch.webzen.co.kr/board/542/detail/429011\" rel=\"noopener noreferrer\">개별 지급 쿠폰 사례</a></p>",
+    "records": [
+      {
+        "code": "ChuSeokMu",
+        "sourcePublishedAt": "2026-09-22",
+        "latest": true,
+        "latestEvidence": "웹젠 공식 진행중 이벤트에서 2026-10-14 재확인. 사용 기간은 2026-09-22 점검 후부터 2026-10-21 23:59까지이며 캐릭터당 1회, 안드로이드 입력 조건이 명시되어 있다.",
+        "expiry": "2026-10-21 23:59 KST",
+        "statusLabel": "공식 현재 쿠폰·2026-10-21 23:59 종료",
+        "evidenceHTML": "<p>고급 특권 카드 3일, 특권 카드 3일, 창조의 보석(귀속), 폭죽V 3개, EXP 물약(1일), 뮤코인(귀속) 10,000. 캐릭터당 1회, Android 사용 안내.</p><p>2026-10-14 공식 진행중 이벤트에서 다시 확인했습니다. 웹젠은 <strong>ChuSeokMu</strong>를 10월 21일 23:59까지 사용할 수 있는 한가위 쿠폰으로 안내합니다.</p>",
+        "sources": [
+          {
+            "name": "풍성한 한가위 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/541/detail/431966",
+            "referenceType": "OFFICIAL_CODE_ISSUE",
+            "sourcePublishedAt": "2026-09-22",
+            "checkedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "MUMONARCH1",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "Digwow가 2026-10-14 00:00 갱신 목록에서 사용 가능 쿠폰으로 계속 수록한다. 공식 웹젠 발급 원문·만료일·개별 계정 입력 성공은 확인되지 않아 제3자 입력 후보로 유지한다.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 발급/만료/실사용 미확인",
+        "evidenceHTML": "<p>최근 제3자 목록에서 입력 후보로 확인됩니다. 공식 Webzen 공지에서 같은 문자열의 발급 근거는 찾지 못했습니다.</p><p>Digwow가 2026-10-14 갱신 목록에서도 이 문자열을 수록했습니다. 갱신일은 출처 최초 게시일로 대체하지 않았으며, 웹젠 공식 발급 원문과 현재 계정 성공이 확인되기 전까지 후보로만 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Digwow 뮤 모나크 쿠폰 모음",
+            "url": "https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "MUMONARCH2",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "Digwow가 2026-10-14 00:00 갱신 목록에서 사용 가능 쿠폰으로 계속 수록한다. 공식 웹젠 발급 원문·만료일·개별 계정 입력 성공은 확인되지 않아 제3자 입력 후보로 유지한다.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 발급/만료/실사용 미확인",
+        "evidenceHTML": "<p>최근 제3자 목록에서 입력 후보로 확인됩니다. 공식 Webzen 공지에서 같은 문자열의 발급 근거는 찾지 못했습니다.</p><p>Digwow가 2026-10-14 갱신 목록에서도 이 문자열을 수록했습니다. 갱신일은 출처 최초 게시일로 대체하지 않았으며, 웹젠 공식 발급 원문과 현재 계정 성공이 확인되기 전까지 후보로만 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Digwow 뮤 모나크 쿠폰 모음",
+            "url": "https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "MUMONARCH3",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "Digwow가 2026-10-14 00:00 갱신 목록에서 사용 가능 쿠폰으로 계속 수록한다. 공식 웹젠 발급 원문·만료일·개별 계정 입력 성공은 확인되지 않아 제3자 입력 후보로 유지한다.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 발급/만료/실사용 미확인",
+        "evidenceHTML": "<p>최근 제3자 목록에서 입력 후보로 확인됩니다. 공식 Webzen 공지에서 같은 문자열의 발급 근거는 찾지 못했습니다.</p><p>Digwow가 2026-10-14 갱신 목록에서도 이 문자열을 수록했습니다. 갱신일은 출처 최초 게시일로 대체하지 않았으며, 웹젠 공식 발급 원문과 현재 계정 성공이 확인되기 전까지 후보로만 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Digwow 뮤 모나크 쿠폰 모음",
+            "url": "https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "WELCOME2024",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "Digwow가 2026-10-14 00:00 갱신 목록에서 사용 가능 쿠폰으로 계속 수록한다. 공식 웹젠 발급 원문·만료일·개별 계정 입력 성공은 확인되지 않아 제3자 입력 후보로 유지한다.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 발급/만료/실사용 미확인",
+        "evidenceHTML": "<p>최근 제3자 목록에서 입력 후보로 확인됩니다. 공식 Webzen 공지에서 같은 문자열의 발급 근거는 찾지 못했습니다.</p><p>Digwow가 2026-10-14 갱신 목록에서도 이 문자열을 수록했습니다. 갱신일은 출처 최초 게시일로 대체하지 않았으며, 웹젠 공식 발급 원문과 현재 계정 성공이 확인되기 전까지 후보로만 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Digwow 뮤 모나크 쿠폰 모음",
+            "url": "https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "MU2024",
+        "sourcePublishedAt": null,
+        "latest": true,
+        "latestEvidence": "Digwow가 2026-10-14 00:00 갱신 목록에서 사용 가능 쿠폰으로 계속 수록한다. 공식 웹젠 발급 원문·만료일·개별 계정 입력 성공은 확인되지 않아 제3자 입력 후보로 유지한다.",
+        "expiry": "미확인",
+        "statusLabel": "제3자 현재 후보·공식 발급/만료/실사용 미확인",
+        "evidenceHTML": "<p>최근 제3자 목록에서 입력 후보로 확인됩니다. 공식 Webzen 공지에서 같은 문자열의 발급 근거는 찾지 못했습니다.</p><p>Digwow가 2026-10-14 갱신 목록에서도 이 문자열을 수록했습니다. 갱신일은 출처 최초 게시일로 대체하지 않았으며, 웹젠 공식 발급 원문과 현재 계정 성공이 확인되기 전까지 후보로만 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Digwow 뮤 모나크 쿠폰 모음",
+            "url": "https://www.digwow.net/%EB%AE%A4-%EB%AA%A8%EB%82%98%ED%81%AC/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "updatedAt": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "code": "MURELIC",
+        "sourcePublishedAt": "2026-08-20",
+        "latest": false,
+        "expiry": "2026-09-20 23:59 KST",
+        "statusLabel": "공식 발급·기간 종료",
+        "evidenceHTML": "<p>신의 유물 업데이트 기념 공식 쿠폰으로 9월 20일에 종료됐습니다.</p>",
+        "sources": [
+          {
+            "name": "신의 유물 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/594/detail/424454",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-08-20",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "COOLINGMU",
+        "sourcePublishedAt": "2026-07-23",
+        "latest": false,
+        "expiry": "2026-08-23 23:59 KST",
+        "statusLabel": "공식 발급·기간 종료",
+        "evidenceHTML": "<p>썸머 쿠폰 공식 공지의 코드로 8월 23일에 종료됐습니다.</p>",
+        "sources": [
+          {
+            "name": "뮤 모나크 썸머 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/594/detail/421157",
+            "referenceType": "OFFICIAL_CODE_CONTEXT",
+            "sourcePublishedAt": "2026-07-23",
+            "checkedAt": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "MUBLOSSOM",
+        "sourcePublishedAt": "2026-05-21",
+        "expiry": "2026-06-21",
+        "latest": false,
+        "statusLabel": "공식 과거 쿠폰·2026-06-21 종료",
+        "sources": [
+          {
+            "name": "웹젠 · 블라썸 페스티벌 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/594/detail/412253",
+            "sourcePublishedAt": "2026-05-21",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_ISSUE"
+          }
+        ],
+        "evidenceHTML": "<p>웹젠 공식 공지에서 블라썸 페스티벌 쿠폰으로 확인했습니다. 사용 기간은 2026-05-21 점검 후부터 2026-06-21 23:59까지였으며 캐릭터당 1회, 안드로이드 조건이었습니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "Muwonder",
+        "sourcePublishedAt": "2026-04-23",
+        "expiry": "2026-05-20",
+        "latest": false,
+        "statusLabel": "공식 과거 쿠폰·2026-05-20 종료",
+        "sources": [
+          {
+            "name": "웹젠 · 봄 맞이 원더 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/594/detail/406157",
+            "sourcePublishedAt": "2026-04-23",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_ISSUE"
+          }
+        ],
+        "evidenceHTML": "<p>웹젠 공식 공지에서 봄 맞이 원더 쿠폰으로 확인했습니다. 사용 기간은 2026-04-23 점검 후부터 2026-05-20 23:59까지였습니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "MUHUNTER",
+        "sourcePublishedAt": "2026-03-24",
+        "expiry": "2026-04-23",
+        "latest": false,
+        "statusLabel": "공식 과거 쿠폰·2026-04-23 종료",
+        "sources": [
+          {
+            "name": "웹젠 · 지옥 헌터 업데이트 기념 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/541/detail/402514",
+            "sourcePublishedAt": "2026-03-24",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_ISSUE"
+          }
+        ],
+        "evidenceHTML": "<p>웹젠 공식 공지에서 지옥 헌터 업데이트 기념 쿠폰으로 확인했습니다. 사용 기간은 2026-03-24 점검 후부터 2026-04-23 23:59까지였습니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "MuRebirth",
+        "sourcePublishedAt": "2026-01-22",
+        "expiry": "2026-02-22",
+        "latest": false,
+        "statusLabel": "공식 과거 쿠폰·2026-02-22 종료",
+        "sources": [
+          {
+            "name": "웹젠 · 환생 업데이트 기념 쿠폰 안내",
+            "url": "https://mumonarch.webzen.co.kr/board/594/detail/382866",
+            "sourcePublishedAt": "2026-01-22",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_ISSUE"
+          }
+        ],
+        "evidenceHTML": "<p>웹젠 공식 공지에서 환생 업데이트 기념 쿠폰으로 확인했습니다. 사용 기간은 2026-01-22 점검 후부터 2026-02-22 23:59까지였습니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "MuEvolve",
+        "sourcePublishedAt": null,
+        "expiry": "2026-07-23",
+        "latest": false,
+        "statusLabel": "제3자 과거 기록·공식 이벤트 제목 확인·코드 문자열 직접 공식 원문 미확인",
+        "sources": [
+          {
+            "name": "웹젠 · 2차 환생 기념 쿠폰 안내 목록",
+            "url": "https://mumonarch.webzen.co.kr/board/539",
+            "sourcePublishedAt": "2026-06-23",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_EVENT_CONTEXT"
+          },
+          {
+            "name": "쿠폰몽 · 뮤 모나크 코드 이력",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=tide&wr_id=1",
+            "sourcePublishedAt": "2023-04-19",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>웹젠 공식 게시판에서 2026-06-23 ‘2차 환생 기념 쿠폰 안내’ 게시 존재는 확인했으며, 쿠폰몽 이력은 문자열을 <strong>MuEvolve</strong>, 만료일을 2026-07-23으로 기록합니다. 현재 확인 경로에서 공식 본문의 정확한 문자열을 직접 대조하지 못해 제3자 과거 기록으로 보존합니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "Mulentine",
+        "sourcePublishedAt": null,
+        "expiry": "2026-03-12",
+        "latest": false,
+        "statusLabel": "제3자 과거 기록·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "쿠폰몽 · 뮤 모나크 코드 이력",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=tide&wr_id=1",
+            "sourcePublishedAt": "2023-04-19",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>쿠폰몽 장기 이력에서 발렌타인 기념 코드 <strong>Mulentine</strong>과 2026-03-12 만료 기록을 확인했습니다. 웹젠 공식 발급 원문은 이번 재조사에서 직접 확보하지 못해 제3자 과거 기록으로 분리합니다.</p>",
+        "periodYear": "2026"
+      },
+      {
+        "code": "Goodbye2025",
+        "sourcePublishedAt": null,
+        "expiry": "2026-01-21",
+        "latest": false,
+        "statusLabel": "제3자 과거 기록·공식 발급 원문 미확인",
+        "sources": [
+          {
+            "name": "쿠폰몽 · 뮤 모나크 코드 이력",
+            "url": "https://honeybeejoa.co.kr/bbs/board.php?bo_table=tide&wr_id=1",
+            "sourcePublishedAt": "2023-04-19",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>쿠폰몽 장기 이력에서 연말 감사 코드 <strong>Goodbye2025</strong>와 2026-01-21 만료 기록을 확인했습니다. 공식 발급 원문을 직접 확보하지 못해 제3자 과거 기록으로 보존합니다.</p>",
+        "periodYear": "2026"
+      }
+    ],
+    "researchCheckedAt": "2026-10-14"
+  },
+  {
+    "articleKey": "clash-royale-codes-202610",
+    "title": "클래시 로얄",
+    "previewHTML": "<div class=\"ncp-feed-preview\" data-ncp-feed-preview=\"data-ncp-feed-preview\" aria-label=\"클래시 로얄 쿠폰 요약\"><div class=\"ncp-feed-stat\"><span>현재 Store 후보</span><strong>8개</strong></div><div class=\"ncp-feed-stat\"><span>공식 발급 근거</span><strong>2개 직접 확인</strong></div><div class=\"ncp-feed-stat\"><span>과거 종료 추가</span><strong>2개</strong></div></div>",
+    "featuredHTML": "<figure data-ncp-featured-image=\"clash-royale-codes-202610\" data-ncp-app-icon=\"true\" data-ncp-app-icon-source=\"https://play.google.com/store/apps/details?hl=ko&id=com.supercell.clashroyale\" style=\"margin:0 0 24px\"><a href=\"https://play.google.com/store/apps/details?hl=ko&id=com.supercell.clashroyale\" rel=\"noopener noreferrer\"><img src=\"https://play-lh.googleusercontent.com/z0rspJKftanEI7MA4WOdypbaaHfeKy4UjoawRGKf4Ys3v6LrrcleZWOfms7XK-J33Oqyfm3DlFd4Z_eKWafVFg%3Dw240-h480\" width=\"512\" height=\"512\" alt=\"클래시 로얄 공식 앱 아이콘\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;max-width:256px;height:auto;margin:0 auto;border-radius:14px\"/></a></figure>",
+    "noticeHTML": "<p>2026년 10월 14일 기준 HEROVALKYRIE·PRINCESSEVO!·MINIONHORDE!·ROYALEAFFAIR·FIREANDICE!!·TRUSTYTURRET·WHENHOGSFLY!·REINABARRIGA 8개가 여러 최신 자료에서 현재 Supercell Store 코드로 반복 확인됩니다. 이 중 PRINCESSEVO!와 MINIONHORDE!는 Clash Royale 공식 YouTube 게시물 제목에서 동일 문자열의 발급 근거를 직접 확인했습니다. 나머지는 현재 공식 발급 원문을 직접 확인하지 못했으므로 제3자 현재 후보로 유지합니다. FIREANDICE!!는 과거 만료·무효 보고와 현재 목록이 상충해 그 사실을 함께 표시합니다.</p><p>QR 코드·보상 링크는 Store 문자열 코드와 별도입니다. 10월 최신 자료에는 Magic Lucky Chest, 배너, 시즌 토큰 등 링크/QR형 무료 보상이 계속 확인되지만 코드 복사 항목으로 만들지 않습니다. Creator Code 역시 구매 시 크리에이터 지원용이며 무료 보상 코드와 구분합니다.</p>",
+    "guideHTML": "<section><h3>Store 코드 입력</h3><p>Supercell ID로 공식 Clash Royale Store에 로그인한 뒤 페이지 하단의 Redeem a Store Code 영역에서 문자열을 정확히 입력합니다. 느낌표가 포함된 코드는 느낌표까지 코드의 일부입니다.</p><div><a href=\"https://store.supercell.com/ko/clashroyale\" rel=\"noopener noreferrer\">공식 Supercell Store <span>열기 →</span></a></div></section><section><h3>QR·보상 링크</h3><p>QR 또는 link.clashroyale.com 보상은 문자열 쿠폰이 아닙니다. 휴대폰에서 공식 링크를 열거나 QR을 스캔해 계정에 연결하며, 2026년 10월 최신 자료에는 Magic Lucky Chest·배너·시즌 토큰 등 무료 보상이 별도로 확인됩니다. 만료가 빠르므로 실제 링크 화면의 수령 가능 여부를 최종 기준으로 봅니다.</p></section><section><h3>공식 Store 상시 혜택</h3><p>공식 Store는 구매 포인트와 로얄 패스 스탬프 카드를 운영하며, 스탬프 카드를 완료하면 로얄 와일드 상자 보상을 안내합니다. 이는 쿠폰 코드와 별도 혜택입니다.</p></section>",
+    "archiveHTML": "<p><a href=\"https://store.supercell.com/ko/clashroyale\" rel=\"noopener noreferrer\">공식 Store</a> · <a href=\"https://www.dexerto.com/gaming/clash-royale-codes-3287010/\" rel=\"noopener noreferrer\">Dexerto 10월 목록</a> · <a href=\"https://www.pockettactics.com/clash-royale/codes\" rel=\"noopener noreferrer\">Pocket Tactics 10월 확인</a> · <a href=\"https://www.gamesradar.com/games/strategy/clash-royale-codes-qr-store/\" rel=\"noopener noreferrer\">GamesRadar 코드·QR 목록</a> · <a href=\"https://supercell.com/en/games/clashroyale/blog/release-notes/new-season-shocktober/\" rel=\"noopener noreferrer\">공식 Shocktober 시즌 안내</a></p><p>과거 기록에는 2025년 배포가 확인된 BLOWTHEMAWAY와 ANGRYFURNACE를 만료 보고로 추가 보존합니다. 과거 코드도 삭제하지 않고 발급·실사용·현재 만료 여부를 분리합니다.</p>",
+    "records": [
+      {
+        "code": "HEROVALKYRIE",
+        "sourcePublishedAt": "2026-08-01",
+        "latest": true,
+        "latestEvidence": "2026-10-01 Dexerto, 2026-10-02 GamesRadar, 2026-10-09 Pocket Tactics의 10월 목록에서 계속 사용 가능 Store 코드로 제시된다. 2026-08-01 커뮤니티에서는 Supercell Store 입력 성공 보고가 확인된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "제3자 10월 현재 후보·과거 실사용 보고",
+        "evidenceHTML": "<p>Hero Valkyrie Emote. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>2026-10-14 재조사에서 여러 최신 코드 추적 자료가 HEROVALKYRIE를 현재 Store 코드로 유지합니다. 2026-08-01 실제 사용자 성공 보고도 있으나, 이번 조사에서 동일 문자열의 Supercell 공식 발급 원문은 직접 확인하지 못했습니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "PRINCESSEVO!",
+        "sourcePublishedAt": "2026-06-06",
+        "latest": true,
+        "latestEvidence": "Clash Royale 공식 YouTube가 2026-06-06 제목에 PRINCESSEVO!를 직접 게시했으며, 2026-10 최신 추적 자료에서도 현재 Store 코드로 유지된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "공식 발급 근거 확인·10월 제3자 현재 보고",
+        "evidenceHTML": "<p>Frozen & Fearless 배너 장식 + Freeze! 배너 프레임. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>공식 Clash Royale YouTube의 2026-06-06 게시물 제목에서 코드 문자열을 직접 확인했습니다. 10월 현재 사용 가능 여부는 Dexerto·Pocket Tactics·GamesRadar의 최신 목록을 함께 근거로 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Clash Royale 공식 YouTube · PRINCESSEVO!",
+            "url": "https://www.youtube.com/watch?v=44rrCUsvo68",
+            "sourcePublishedAt": "2026-06-06",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_CONTEXT"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "MINIONHORDE!",
+        "sourcePublishedAt": "2026-04-19",
+        "latest": true,
+        "latestEvidence": "Clash Royale 공식 YouTube가 2026-04-19 제목에 MINIONHORDE!를 직접 게시했으며, 2026-10 최신 추적 자료에서도 현재 Store 코드로 유지된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "공식 발급 근거 확인·10월 제3자 현재 보고",
+        "evidenceHTML": "<p>Minion Horde Emote. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>공식 Clash Royale YouTube의 2026-04-19 게시물 제목에서 코드 문자열을 직접 확인했습니다. 10월 현재 사용 가능 여부는 최신 제3자 추적 자료를 함께 근거로 표시합니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Clash Royale 공식 YouTube · MINIONHORDE!",
+            "url": "https://www.youtube.com/watch?v=yp1lXOrdZ-M",
+            "sourcePublishedAt": "2026-04-19",
+            "checkedAt": "2026-10-14",
+            "referenceType": "OFFICIAL_CODE_CONTEXT"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "ROYALEAFFAIR",
+        "sourcePublishedAt": "2026-02-09",
+        "latest": true,
+        "latestEvidence": "RoyaleAPI는 2026-02-09부터의 무료 Store 코드로 기록했고, 2026-10-01~10-09 최신 추적 자료에서도 현재 코드로 유지한다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "제3자 10월 현재 후보·과거 실사용 보고",
+        "evidenceHTML": "<p>Royale Affair Goblin Emote. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>2026-02-09 당시 실제 입력 성공 보고와 RoyaleAPI의 발급 시기 기록이 있으며, 2026년 10월 최신 목록에서도 계속 노출됩니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "FIREANDICE!!",
+        "sourcePublishedAt": "2025-12-27",
+        "latest": true,
+        "latestEvidence": "2025-12-27 RoyaleAPI 커뮤니티에서 Supercell Store 무료 배너 코드로 확인됐고, 2026-10 최신 추적 자료는 현재 코드로 계속 제시한다. 다만 과거 무효·만료 보고도 있어 상충 상태다.",
+        "expiry": "정확한 종료일 미확인·과거 만료/무효 보고와 2026-10 현재 목록 상충",
+        "statusLabel": "제3자 10월 현재 후보·과거 만료 보고 상충",
+        "evidenceHTML": "<p>Firestorm 배너 프레임 + Ember Escape 배너 장식. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>이 코드는 과거 실제 배포·사용 기록이 있으나 일부 시점의 만료/무효 보고와 2026년 10월 현재 목록이 서로 충돌합니다. 삭제하지 않고 상충 근거를 함께 보존합니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "TRUSTYTURRET",
+        "sourcePublishedAt": "2025-12-01",
+        "latest": true,
+        "latestEvidence": "2025-12-01부터 Supercell Store 입력 성공 보고가 있고, 2026-10 최신 코드 추적 자료에서도 현재 후보로 유지된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "제3자 10월 현재 후보·과거 실사용 보고",
+        "evidenceHTML": "<p>Hero Musketeer Emote. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>2025-12-01 사용자 입력 안내와 이후 성공 보고가 확인되며, 2026년 10월 최신 추적 자료에서도 계속 현재 코드로 제시됩니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "WHENHOGSFLY!",
+        "sourcePublishedAt": "2025-11-12",
+        "latest": true,
+        "latestEvidence": "2025-11-12 RoyaleAPI 커뮤니티에서 Supercell Store 무료 Royal Hogs 이모트 코드로 확인됐고, 2026-10 최신 추적 자료에서도 현재 후보로 유지된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "제3자 10월 현재 후보·과거 실사용 보고",
+        "evidenceHTML": "<p>Flying Royal Hogs Emote. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>2025-11-12 당시 입력 성공 댓글이 다수 확인되며, 2026년 10월 최신 목록에서도 현재 코드로 계속 제시됩니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "REINABARRIGA",
+        "sourcePublishedAt": "2025-10-25",
+        "latest": true,
+        "latestEvidence": "2025-10-25 Supercell Store 입력으로 Snoring Dragon 배너 세트를 받은 실사용 보고가 확인되고, 2026-10 최신 추적 자료에서도 현재 후보로 유지된다.",
+        "expiry": "정확한 종료일 미확인",
+        "statusLabel": "제3자 10월 현재 후보·과거 실사용 보고",
+        "evidenceHTML": "<p>Snoring Dragon 배너 세트. 최근 코드 추적 자료가 공식 Supercell Store에서 입력하는 코드로 안내하지만 Supercell 개별 발급 공지를 확인하지 못해 입력 후보로 표시합니다.</p><p>2025-10-25 당시 Supercell Store 입력 및 보상 수령 사례가 확인되며, 2026년 10월 최신 목록에서도 현재 코드로 유지됩니다.</p>",
+        "sources": [
+          {
+            "name": "Mobi.gg Clash Royale codes",
+            "url": "https://mobi.gg/en/tips/clash-royale-codes/",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-09-30",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "GamsGo Clash Royale codes",
+            "url": "https://www.gamsgo.com/blog/clash-royale-codes",
+            "referenceType": "THIRD_PARTY_CODE_MENTION",
+            "sourcePublishedAt": "2026-10-01",
+            "checkedAt": "2026-10-12"
+          },
+          {
+            "name": "Dexerto · Clash Royale codes October 2026",
+            "url": "https://www.dexerto.com/gaming/clash-royale-codes-3287010/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-01",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ]
+      },
+      {
+        "code": "BLOWTHEMAWAY",
+        "sourcePublishedAt": "2025-08-29",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "RoyaleAPI의 2025-08-29 시즌 75 안내에서 Supercell Store 입력 코드로 소개됐으나 2026-10 최신 자료에서는 만료 코드로 분류된다.",
+        "statusLabel": "과거 발급·현재 만료 보고",
+        "sources": [
+          {
+            "name": "RoyaleAPI · Season 75 September 2025",
+            "url": "https://royaleapi.com/blog/season-75-september-2025?lang=en",
+            "sourcePublishedAt": "2025-08-29",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar · Clash Royale codes October 2026",
+            "url": "https://www.gamesradar.com/games/strategy/clash-royale-codes-qr-store/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-02",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2025-08-29 당시 RoyaleAPI가 Supercell Store 입력 절차와 함께 배포 코드를 기록했습니다. 2026년 10월 GamesRadar는 만료 목록으로 분류합니다.</p>",
+        "periodYear": "2025"
+      },
+      {
+        "code": "ANGRYFURNACE",
+        "sourcePublishedAt": "2025-08-20",
+        "expiry": "과거 종료 보고",
+        "latest": false,
+        "latestEvidence": "2025-08-20 Supercell Store 입력 성공 보고가 다수 있었으나 2026-10 최신 자료에서는 만료 코드로 분류된다.",
+        "statusLabel": "과거 실사용·현재 만료 보고",
+        "sources": [
+          {
+            "name": "Reddit r/ClashRoyale · ANGRYFURNACE 사용 보고",
+            "url": "https://www.reddit.com/r/ClashRoyale/comments/1mvkkec",
+            "sourcePublishedAt": "2025-08-20",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          },
+          {
+            "name": "GamesRadar · Clash Royale codes October 2026",
+            "url": "https://www.gamesradar.com/games/strategy/clash-royale-codes-qr-store/",
+            "sourcePublishedAt": null,
+            "updatedAt": "2026-10-02",
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>2025-08-20 당시 다수의 사용자 입력 성공 보고가 확인됩니다. 2026년 10월 GamesRadar는 만료 목록으로 분류합니다.</p>",
+        "periodYear": "2025"
       }
     ],
     "researchCheckedAt": "2026-10-14"
