@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "articleKey": "reverse-1999-codes-202610",
+  "checkedAt": "2026-10-14",
+  "bootstrap": {
+    "module": "src/game-batch-20261012-j.js",
+    "export": "reverse1999Article",
+    "catalog": "data/articles-supplemental.json"
+  },
+  "includePatch": "data/game-period-refreshes/reverse-1999-20261014.json"
+}
