@@ -43,10 +43,11 @@ jobs:
           fi
       - name: Enforce shared period renderer and preserved history before publication
         run: node tools/check-article-presentation.mjs --static
-      - name: Look up exact SHA full verification
+      - name: Look up reusable full verification
         id: verification
         env:
           GH_TOKEN: ${{ github.token }}
+          VERIFY_BASE_SHA: ${{ github.event.before }}
         run: node tools/verification-reuse.mjs
       - uses: pnpm/action-setup@v4
         if: steps.verification.outputs.reused != 'true'
@@ -67,7 +68,7 @@ jobs:
         if: steps.verification.outputs.reused != 'true'
         run: |
           node tools/build-theme.mjs
-          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
       - name: Validate Blogger XML
         if: steps.verification.outputs.reused != 'true'
         run: node tools/validate-theme-xml.mjs
@@ -77,6 +78,7 @@ jobs:
       - name: Require verified source snapshot
         env:
           VERIFIED_SOURCE_SHA: ${{ steps.verification.outputs.verified_sha || github.sha }}
+          VERIFIED_SOURCE_MODE: ${{ steps.verification.outputs.reuse_mode }}
         run: node tools/actions-runtime.mjs verified-source
       - name: Select requests in complete push range
         id: requests

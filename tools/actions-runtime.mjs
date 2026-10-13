@@ -6,6 +6,10 @@ import {fileURLToPath} from 'node:url';
 export const workerPaths = ['src/','data/','theme/assets/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
 export const runtimeWorkerPaths = ['src/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
 export const isWorkerPath = path => workerPaths.some(p => p.endsWith('/') ? path.startsWith(p) : path === p);
+export const isPublishRequestPath = path => /^publish-requests\/[a-z0-9-]+\.json$/.test(path || '');
+export function publishRequestOnlyPaths(paths = []) {
+  return paths.length > 0 && paths.every(isPublishRequestPath);
+}
 export function assertVerifiedSource(verified, current) {
   if(verified!==current || !/^[a-f0-9]{40}$/.test(verified||''))throw Error('SOURCE_VERIFY_SHA_MISMATCH');
   return verified;
@@ -19,6 +23,14 @@ export function output(name,value) {
 }
 const git=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','ignore']}).trim();
 const gitOk=(...args)=>spawnSync('git',args,{stdio:'ignore'}).status===0;
+function assertReusableVerifiedSource(verified,current,mode) {
+  if(verified===current)return assertVerifiedSource(verified,current);
+  if(mode!=='publish-request-only' || !/^[a-f0-9]{40}$/.test(verified||'') || !/^[a-f0-9]{40}$/.test(current||''))throw Error('SOURCE_VERIFY_SHA_MISMATCH');
+  if(!gitOk('merge-base','--is-ancestor',verified,current))throw Error('SOURCE_VERIFY_BASE_NOT_ANCESTOR');
+  const paths=git('diff','--name-only',verified,current).split(/\r?\n/).filter(Boolean);
+  if(!publishRequestOnlyPaths(paths))throw Error('SOURCE_VERIFY_NON_REQUEST_DIFF');
+  return verified;
+}
 async function runs(workflow,limit) {
   const repo=process.env.GITHUB_REPOSITORY;
   if(repo!=='ansqhd5774-Choi/akkigo-boja')throw Error('REPOSITORY_TARGET_MISMATCH');
@@ -54,13 +66,9 @@ async function main(command) {
     const needed=git('diff','--name-only',before,process.env.GITHUB_SHA).split(/\r?\n/).some(isWorkerPath);
     output('worker',needed);console.log(needed?'WORKER_BUILD_REQUIRED':'WORKER_BUILD_SKIPPED');
   } else if(command==='verified-source') {
-    // Either exact-SHA complete coverage was reused or local full checks passed.
-    console.log('SOURCE_SNAPSHOT_VERIFIED '+assertVerifiedSource(process.env.VERIFIED_SOURCE_SHA,process.env.GITHUB_SHA));
+    const verified=assertReusableVerifiedSource(process.env.VERIFIED_SOURCE_SHA,process.env.GITHUB_SHA,process.env.VERIFIED_SOURCE_MODE);
+    console.log(`SOURCE_SNAPSHOT_VERIFIED ${verified}${verified===process.env.GITHUB_SHA?'':' current='+process.env.GITHUB_SHA+' mode=publish-request-only'}`);
   } else if(command==='worker') {
-    // An article snapshot match only proves the requested article payload is current.
-    // It does not prove runtime code such as src/articles.js is deployed. When the
-    // snapshot matches, require deployment coverage for the latest runtime source;
-    // otherwise require coverage for the full Worker/data source set.
     const paths=process.env.WORKER_READY==='true'?runtimeWorkerPaths:workerPaths;
     const source=git('log','-1','--format=%H','HEAD','--',...paths);
     if(source)for(const [workflow,limit,label] of [['deploy.yml',30,'WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW'],['publish-article.yml',20,'WORKER_ALREADY_DEPLOYED_BY_SUCCESSFUL_PUBLISH']]) {

@@ -51,7 +51,7 @@ jobs:
       - name: Regenerate Blogger theme and require clean diff
         run: |
           node tools/build-theme.mjs
-          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
       - name: Validate Blogger XML
         run: node tools/validate-theme-xml.mjs
       - name: Require responsive coupon layout before verification certificate

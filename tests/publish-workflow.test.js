@@ -16,15 +16,27 @@ test('발행 workflow는 소스 Verify 성공과 Worker 배포 상태를 확인�
   assert.match(yaml,/Require verified source snapshot/);
   assert.match(actionRuntime,/SOURCE_SNAPSHOT_VERIFIED/);
   assert.match(yaml,/node tools\/verification-reuse.mjs/);
+  assert.match(yaml,/VERIFY_BASE_SHA:/);
   assert.match(yaml,/steps\.verification\.outputs\.reused != 'true'/);
   assert.match(yaml,/VERIFIED_SOURCE_SHA:.*steps.verification.outputs.verified_sha/);
+  assert.match(yaml,/VERIFIED_SOURCE_MODE:.*steps.verification.outputs.reuse_mode/);
   assert.match(actionRuntime,/assertVerifiedSource/);
+  assert.match(actionRuntime,/publishRequestOnlyPaths/);
   assert.match(yaml,/Check Worker deployment readiness/);
   assert.match(actionRuntime,/WORKER_ALREADY_DEPLOYED_BY_DEPLOY_WORKFLOW/);
   assert.match(actionRuntime,/WORKER_ALREADY_DEPLOYED_BY_SUCCESSFUL_PUBLISH/);
   assert.match(yaml,/if: steps\.worker\.outputs\.deploy_needed == 'true'/);
   assert.doesNotMatch(yaml,/^-\s+run:\s+pnpm test\s*$/m);
   assert.match(yaml,/group:\s*production-worker/);
+});
+
+test('발행 요청만 추가된 커밋은 직전 검증 소스를 재사용하고 전체 검사를 다시 예약하지 않는다',()=>{
+  const yaml=readFileSync(new URL('../.github/workflows/publish-article.yml',import.meta.url),'utf8');
+  const reuse=readFileSync(new URL('../tools/verification-reuse.mjs',import.meta.url),'utf8');
+  assert.match(yaml,/VERIFY_BASE_SHA:\s*\$\{\{ github\.event\.before \}\}/);
+  assert.match(reuse,/VERIFIED_BASE_PUBLISH_REQUEST_ONLY/);
+  assert.match(reuse,/compare\/\$\{baseSha\}\.\.\.\$\{sha\}/);
+  assert.match(reuse,/publishRequestOnlyFiles/);
 });
 
 test('글 스냅샷 일치만으로 런타임 Worker 배포를 건너뛰지 않는다',()=>{
@@ -45,6 +57,14 @@ test('발행은 완전한 소스 검사를 재사용하거나 직접 수행하�
   assert.match(layout,/akkigo_blogger_r1_bundle\/theme\/blogger-theme-r1\.xml/);
   assert.match(layout,/Render shared period coupon and site fixtures at 390 and 1440/);
   assert.match(layout,/node tools\/run-layout-checks\.mjs/);
+});
+
+test('게임 기간 공통 렌더러는 카탈로그·초안·생성 테마를 한 번에 동기화한다',()=>{
+  const renderer=readFileSync(new URL('../tools/render-game-period-articles.mjs',import.meta.url),'utf8');
+  assert.match(renderer,/data\/articles\.json/);
+  assert.match(renderer,/data\/articles-supplemental\.json/);
+  assert.match(renderer,/await import\('\.\/build-theme\.mjs'\)/);
+  assert.match(renderer,/PERIOD_RENDERED_AND_THEME_SYNCED/);
 });
 
 test('Verify는 오래된 실행을 취소하고 문서 변경을 제외한다',()=>{

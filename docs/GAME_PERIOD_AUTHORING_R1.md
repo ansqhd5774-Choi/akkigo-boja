@@ -7,8 +7,8 @@
 1. 조사 결과를 `data/game-period-articles.json`의 해당 모델에 병합한다. 새 글은 articleKey/title/records/공식 대표 이미지/입력 안내를 넣고 article registry에 같은 키를 등록한다. 허브는 `data/game-period-hubs.json`에 작성한다.
 2. 각 기록에 code, sourcePublishedAt(원문 최초 게시일 또는 null), expiry, sources(원문 URL/이름/게시일), statusLabel, evidenceHTML(보상·조건)을 넣는다. 수집일·검색 결과 날짜·수정일·만료일·코드의 연도·firstSeenMonth를 원문 게시일로 대체하지 않는다. 같은 코드의 추가 출처는 기존 sources에 병합한다.
 3. `최신`은 현재 입력 대상으로 소개할 근거를 확보한 경우만 latest:true와 latestEvidence를 함께 기록한다. 실제 사용 성공 여부와 공식 사용 기한을 구분한다. 나머지는 확인된 원문 연도에 배정하며 날짜 미확인은 별도 목록이다.
-4. `node tools/render-game-period-articles.mjs`로 초안과 카탈로그를 생성한다. HTML과 CSS를 글별로 작성하거나 직접 고치지 않는다.
-5. `node tools/check-article-presentation.mjs`와 `node --test`를 통과시킨 후 기존 발행 워크플로우를 사용한다. HTML 수동 편집, 날짜별/출처별 박스, 5행 단위 목록 분할, 누락된 과거 코드, 생성 데이터 불일치는 차단된다.
+4. `node tools/render-game-period-articles.mjs <articleKey>`로 카탈로그·초안·생성 테마 XML을 한 번에 동기화한다. HTML/CSS를 글별로 직접 고치거나 게임별 일회성 stage workflow를 새로 만들지 않는다.
+5. 소스 변경 뒤 `Verify` 전체 검사는 한 번만 통과시키면 된다. 이후 `publish-requests/**`만 추가된 발행 커밋은 직전 검증 SHA를 안전하게 재사용하므로 같은 전체 테스트를 다시 돌리지 않는다. 소스·데이터·테마가 함께 바뀌면 재사용하지 않고 정상 전체 검사를 수행한다.
 
 ## 표시와 보존
 
@@ -21,7 +21,7 @@
 - 발행 전 기본 검사와 Worker 발행 직전에 공통 생성 결과를 대조한다. 허브도 같은 검사에 포함되며 예전의 고정 HTML 경로를 사용하지 않는다.
 - 기존 글 전환 요청은 existingOnly:true를 사용한다. 공개된 기존 postId/URL만 갱신하며 미발행 원고를 새 게시물로 만들지 않는다.
 
-일반 데이터 갱신은 동일 SHA 검증 결과와 LIVE 응답을 확인한다. 공통 UI 변경·실제 오류·사용자 점검 요청에는 PC·모바일 렌더링과 관련 클릭 검사를 추가한다.
+일반 데이터 갱신은 동일 검증 결과와 LIVE 응답을 확인한다. 공통 UI 변경·실제 오류·사용자 점검 요청에는 PC·모바일 렌더링과 관련 클릭 검사를 추가한다.
 
 ## 발행 보고 집계
 

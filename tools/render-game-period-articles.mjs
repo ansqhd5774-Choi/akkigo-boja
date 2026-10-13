@@ -21,6 +21,6 @@ for(const path of ['data/articles.json','data/articles-supplemental.json']){
  }
  writes.push([path,JSON.stringify(articles,null,2)+'\n']);
 }
-// Validate all selected inputs before writing, so a missing model cannot leave a partial catalog.
 for(const [path,text] of writes)writeFileSync(path,text);
-console.log('PERIOD_RENDERED',rendered);
+await import('./build-theme.mjs');
+console.log('PERIOD_RENDERED_AND_THEME_SYNCED',rendered);

@@ -1,9 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {eligibleRun, completeCoverage, requiredSteps, findVerification} from '../tools/verification-reuse.mjs';
+import {eligibleRun, completeCoverage, requiredSteps, findVerification, findReusableVerification, publishRequestOnlyFiles} from '../tools/verification-reuse.mjs';
 import {selectGames, checkGames} from '../tools/check-game-icons.mjs';
 import {expectedCertificate, matchesCertificate, parseCertificate, validEnvironment} from '../tools/verification-certificate.mjs';
 import {makeSummary} from '../tools/actions-summary.mjs';
+import {publishRequestOnlyPaths} from '../tools/actions-runtime.mjs';
 import {readFileSync} from 'node:fs';
 const sha = 'a'.repeat(40);
 const repository = 'ansqhd5774-Choi/akkigo-boja';
@@ -11,9 +12,7 @@ const run = {id: 12, head_sha: sha, status: 'completed', conclusion: 'success', 
 const job = {id: 99, name: 'verify', conclusion: 'success', steps: requiredSteps.map(name => ({name, status: 'completed', conclusion: 'success'}))};
 test('reuse rejects different SHA, failed/queued runs, PR and foreign repository', () => {
   assert.equal(eligibleRun(run, sha, repository), true);
-  for(const patch of [{head_sha: 'b'.repeat(40)}, {status: 'in_progress'}, {conclusion: 'failure'}, {event: 'pull_request'}, {head_repository: {full_name: 'other/repo'}}, {head_branch: 'other'}]) {
-    assert.equal(eligibleRun({...run, ...patch}, sha, repository), false);
-  }
+  for(const patch of [{head_sha: 'b'.repeat(40)}, {status: 'in_progress'}, {conclusion: 'failure'}, {event: 'pull_request'}, {head_repository: {full_name: 'other/repo'}}, {head_branch: 'other'}]) assert.equal(eligibleRun({...run, ...patch}, sha, repository), false);
 });
 test('coverage rejects skipped build and missing XML or theme checks', () => {
   assert.equal(completeCoverage([job]), true);
@@ -29,6 +28,27 @@ test('lookup uses latest attempt job coverage and never waits for running Verify
   assert.equal(urls.length, 3);
   assert.match(urls[0], /head_sha=/);
   assert.match(urls[1], /runs\/12\/jobs\?filter=latest/);
+});
+test('publish-request only child reuses the already verified source commit', async () => {
+  const current='c'.repeat(40);
+  const baseRun={...run,head_sha:sha};
+  const request=async url=>{
+    if(url.includes(`head_sha=${current}`))return {ok:true,json:async()=>({workflow_runs:[]})};
+    if(url.includes(`/compare/${sha}...${current}`))return {ok:true,json:async()=>({merge_base_commit:{sha},files:[{filename:'publish-requests/lucky-defense-codes-202610-r3.json',status:'added'}]})};
+    if(url.includes(`head_sha=${sha}`))return {ok:true,json:async()=>({workflow_runs:[baseRun]})};
+    if(url.includes('/jobs?'))return {ok:true,json:async()=>({jobs:[job]})};
+    if(url.includes('/logs'))return {ok:true,text:async()=> 'VERIFY_CERTIFICATE '+JSON.stringify(expectedCertificate(sha))};
+    throw Error('UNEXPECTED_URL '+url);
+  };
+  const result=await findReusableVerification({repository,sha:current,baseSha:sha,token:'fixture',request});
+  assert.deepEqual(result,{id:12,verifiedSha:sha,reason:'VERIFIED_BASE_PUBLISH_REQUEST_ONLY',mode:'publish-request-only'});
+});
+test('publish-request reuse never covers source, data or theme changes', () => {
+  assert.equal(publishRequestOnlyFiles([{filename:'publish-requests/a.json'}]), true);
+  assert.equal(publishRequestOnlyFiles([{filename:'src/worker.js'}]), false);
+  assert.equal(publishRequestOnlyFiles([{filename:'data/articles.json'}]), false);
+  assert.equal(publishRequestOnlyPaths(['publish-requests/a.json','publish-requests/b.json']), true);
+  assert.equal(publishRequestOnlyPaths(['publish-requests/a.json','theme/article-compact.css']), false);
 });
 test('certificate mismatch never authorizes reuse', () => {
   const expected = expectedCertificate(sha);

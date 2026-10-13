@@ -60,7 +60,7 @@ jobs:
         if: steps.verification.outputs.reused != 'true'
         run: |
           node tools/build-theme.mjs
-          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml
+          git diff --exit-code -- akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml
       - name: Validate Blogger XML
         if: steps.verification.outputs.reused != 'true'
         run: node tools/validate-theme-xml.mjs
