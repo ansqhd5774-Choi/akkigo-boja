@@ -1,19 +1,56 @@
 {
   "articleKey": "infinite-stairs-codes-202610",
   "checkedAt": "2026-10-14",
-  "currentVerifiedCodeCount": 0,
+  "globalLanguageScope": [
+    "ko",
+    "en",
+    "ja",
+    "zh-CN",
+    "zh-TW",
+    "th",
+    "vi",
+    "id"
+  ],
+  "currentVerifiedPublicCodeCount": 0,
   "preservedRecordCount": 49,
   "newCouponRowsAdded": 0,
+  "explicitThirdPartyCandidates": [
+    "STAIRS",
+    "INFINITY",
+    "UPDATE",
+    "GIFT"
+  ],
+  "explicitCandidateSource": {
+    "url": "https://www.digwow.net/%EB%AC%B4%ED%95%9C%EC%9D%98-%EA%B3%84%EB%8B%A8/%EC%BF%A0%ED%8F%B0-%EB%AA%A8%EC%9D%8C/",
+    "sourcePublishedAt": null,
+    "sourceUpdatedAt": "2026-10-13",
+    "officialIssueVerified": false,
+    "redemptionVerified": false,
+    "datePolicy": "2026-10-13 is the displayed update date, not a verified original publication date"
+  },
   "latestSourceMention": {
     "sourcePublishedAt": "2026-10-11",
     "url": "https://alldig.tistory.com/entry/무한의-계단-티어표-등급표-리세마라-쿠폰-코드-공략-스킬-티어-조합",
     "referenceType": "SOURCE_TEXT_ONLY",
     "concreteCodeObserved": false
   },
+  "officialIssuedBenefits": [
+    {
+      "type": "PARTICIPANT_ISSUED_COUPON",
+      "event": "2026 서울 팀 K리그 런",
+      "eventDate": "2026-03-28",
+      "benefit": "K리그×무한의계단 한정 유니폼 스킨쿠폰",
+      "publicSharedCode": false,
+      "redemptionExpiry": null,
+      "eventUrl": "https://teamkleaguerun.com/",
+      "officialCollabUrl": "https://www.kleague.com/news_view.do?category=notice&orderBy=seq&page=1&seq=94550&viewOption=album"
+    }
+  ],
   "excludedInvalidProbes": [
     "s6cki523bq",
     "uwia30kjing",
     "lz6ph653m4"
   ],
-  "result": "NO_CURRENT_CODE_FOUND"
+  "result": "NO_OFFICIAL_CURRENT_PUBLIC_CODE_CONFIRMED",
+  "note": "The four explicit strings were already present in the protected 49-record history, so they were not duplicated. A page update date is not substituted for an unknown original source publication date."
 }
