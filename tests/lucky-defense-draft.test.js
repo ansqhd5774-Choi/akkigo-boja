@@ -51,3 +51,44 @@ test('운빨존많겜 supplemental article과 공개 HTML이 일치한다',()=>{
   assert.equal(preview.includes('<script'),false);
   assert.doesNotMatch(html,/실사용 미검증|UNVERIFIED|workingVerifiedAt|verificationResult|evidenceMethod|validator|내부 운영 상태/);
 });
+
+test('운빨존많겜 2026-10-14 재조사는 글로벌 현재 후보와 한국 공식 상태를 분리한다',()=>{
+  const article=supplementalArticles.find(x=>x.articleKey==='lucky-defense-codes-202610');
+  assert.ok(article);
+  assert.equal(article.source.checkedAt,'2026-10-14');
+  const model=article.source.gamePeriodModel;
+  assert.equal(model.records.length,31);
+  assert.equal(new Set(model.records.map(x=>x.code)).size,31);
+  const latest=model.records.filter(x=>x.latest===true).map(x=>x.code).sort();
+  assert.deepEqual(latest,['LUCKY10KFANS','LUCKYCOMMU50K','LUCKYDISCORD','LUCKYJOIN30K'].sort());
+  for(const code of latest){
+    const row=model.records.find(x=>x.code===code);
+    assert.ok(row.latestEvidence);
+    assert.ok(row.sources.some(s=>s.url==='https://www.pocketgamer.com/lucky-defense-omfg/codes/' && s.sourcePublishedAt==='2026-10-11'));
+  }
+  for(const code of ['THANKS2YEARS','LUCKY2NDANNIV','LUCKYDISCORD30K']) assert.equal(model.records.find(x=>x.code===code).latest===true,false);
+  const html=article.post.content;
+  assert.match(html,/10월 글로벌 후보<\/span><strong>4개/);
+  assert.match(html,/한국 공식 현재 확인<\/span><strong>0개/);
+  assert.match(html,/Pocket Gamer 2026-10-11 글로벌 현재 코드 목록/);
+  assert.match(html,/111% 공식 쿠폰 입력 방법/);
+  assert.match(html,/한국 Google Play 운빨존많겜 공식 앱/);
+});
+
+test('운빨존많겜 전세계 재조사 원장은 날짜·지역·검증 상태를 보존한다',()=>{
+  const r=JSON.parse(readFileSync(new URL('../data/lucky-defense-refresh-20261014.json',import.meta.url),'utf8'));
+  assert.equal(r.checkedAt,'2026-10-14');
+  assert.equal(r.preservedRecordCount,31);
+  assert.equal(r.newCouponRowsAdded,0);
+  assert.equal(r.officialCurrentPublicCodeCount,0);
+  assert.equal(r.currentGlobalThirdPartyCandidates.length,4);
+  assert.deepEqual(r.currentGlobalThirdPartyCandidates.map(x=>x.code).sort(),['LUCKYDISCORD','LUCKYCOMMU50K','LUCKYJOIN30K','LUCKY10KFANS'].sort());
+  for(const x of r.currentGlobalThirdPartyCandidates){
+    assert.equal(x.status,'UNVERIFIED');
+    assert.equal(x.region,'GLOBAL_OMFG_LUCKY_ME');
+    assert.equal(x.koreanAccountVerified,false);
+    assert.equal(x.officialIssueVerified,false);
+    assert.equal(x.sourcePublishedAt,'2026-10-11');
+  }
+  assert.equal(r.searchMetrics,null);
+});
