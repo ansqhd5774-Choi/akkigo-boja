@@ -30,7 +30,6 @@ import {silverPalaceArticle} from './game-batch-20261012-k.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const canonicalArticles=[...primary,...supplemental];
-const canonicalKeys=new Set(canonicalArticles.map(article=>article.articleKey));
 const legacyArticleCatalog=[
   catHeroArticle,
   duolingoArticle,
@@ -98,13 +97,18 @@ const legacyArticleCatalog=[
   silverPalaceArticle
 ];
 
-// Once an article is migrated into the canonical JSON registry, the canonical
-// entry replaces its legacy module registration. Duplicate canonical entries
-// and duplicate non-migrated legacy entries still fail in the integrity check.
-const articleCatalogBase=[
-  ...canonicalArticles,
-  ...legacyArticleCatalog.filter(article=>!canonicalKeys.has(article.articleKey))
-];
+// Canonical JSON is the migration destination. A canonical article replaces the
+// same legacy registration, while unrelated legacy duplicates remain visible to
+// the integrity check and therefore still fail.
+export function mergeCanonicalAndLegacy(canonical=[],legacy=[]){
+  const canonicalKeys=new Set(canonical.map(article=>article?.articleKey));
+  return [
+    ...canonical,
+    ...legacy.filter(article=>!canonicalKeys.has(article?.articleKey))
+  ];
+}
+
+const articleCatalogBase=mergeCanonicalAndLegacy(canonicalArticles,legacyArticleCatalog);
 
 export const currentArticleCatalog=applyRepresentativeLogos([
   ...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),
