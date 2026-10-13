@@ -1,6 +1,6 @@
 {
   "articleKey": "infinite-stairs-codes-202610",
-  "reason": "Update existing post only: validated R2 DOM, compact info and no SEO prose. Keep all code values and existing postId/URL.",
-  "requestedAt": "2026-10-09T07:44:15.2184657+09:00",
+  "reason": "Update existing post only after 2026-10-14 recheck: preserve 49 historical records, keep current verified code count at 0, add the 2026-10-11 SOURCE_TEXT_ONLY reference without inventing a coupon row, and keep the existing postId/URL.",
+  "requestedAt": "2026-10-14T01:26:00+09:00",
   "approved": true
 }
