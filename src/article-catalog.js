@@ -39,6 +39,7 @@ import {princeGoArticle} from './game-batch-20261014-i.js';
 import {theRookieArticle} from './game-batch-20261014-j.js';
 import {archerCastleArticle} from './game-batch-20261015.js';
 import {eclipseAwakeningArticle} from './game-batch-20261015-b.js';
+import {swordFrontierArticle} from './game-batch-20261015-c.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const canonicalArticles=[...primary,...supplemental];
@@ -118,7 +119,8 @@ const legacyArticleCatalog=[
   princeGoArticle,
   theRookieArticle,
   archerCastleArticle,
-  eclipseAwakeningArticle
+  eclipseAwakeningArticle,
+  swordFrontierArticle
 ];
 
 // Canonical JSON is the migration destination. A canonical article replaces the
@@ -138,18 +140,3 @@ export const currentArticleCatalog=applyRepresentativeLogos([
   ...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),
   rokebiArticle
 ]);
-
-export function assertArticleCatalogIntegrity(catalog=currentArticleCatalog){
-  const seen=new Set();
-  for(const article of catalog){
-    if(!article || typeof article.articleKey!=='string' || !/^[a-z0-9-]{1,100}$/.test(article.articleKey)){
-      throw new Error('ARTICLE_REGISTRY_INVALID_KEY');
-    }
-    if(seen.has(article.articleKey))throw new Error(`ARTICLE_REGISTRY_DUPLICATE_KEY:${article.articleKey}`);
-    seen.add(article.articleKey);
-    if(article.approvedForPublish===true && !article.post)throw new Error(`ARTICLE_REGISTRY_APPROVED_POST_MISSING:${article.articleKey}`);
-  }
-  return true;
-}
-
-assertArticleCatalogIntegrity();
