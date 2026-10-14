@@ -140,3 +140,18 @@ export const currentArticleCatalog=applyRepresentativeLogos([
   ...articleCatalogBase.filter(x=>x.articleKey!=='rokebi-promo-202610'),
   rokebiArticle
 ]);
+
+export function assertArticleCatalogIntegrity(catalog=currentArticleCatalog){
+  const seen=new Set();
+  for(const article of catalog){
+    if(!article || typeof article.articleKey!=='string' || !/^[a-z0-9-]{1,100}$/.test(article.articleKey)){
+      throw new Error('ARTICLE_REGISTRY_INVALID_KEY');
+    }
+    if(seen.has(article.articleKey))throw new Error(`ARTICLE_REGISTRY_DUPLICATE_KEY:${article.articleKey}`);
+    seen.add(article.articleKey);
+    if(article.approvedForPublish===true && !article.post)throw new Error(`ARTICLE_REGISTRY_APPROVED_POST_MISSING:${article.articleKey}`);
+  }
+  return true;
+}
+
+assertArticleCatalogIntegrity();
