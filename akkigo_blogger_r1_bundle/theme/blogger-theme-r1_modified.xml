@@ -4652,6 +4652,11 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   const category=root.dataset.category||'게임';
   const grid=root.querySelector('.ncp-game-grid');
   const status=root.querySelector('[role="status"]');
+  const imageObserver=typeof IntersectionObserver==='function'?new IntersectionObserver(items=>{
+    for(const item of items){if(!item.isIntersecting)continue;const image=item.target;
+      image.src=image.dataset.ncpDeferredSrc;delete image.dataset.ncpDeferredSrc;imageObserver.unobserve(image);
+    }
+  },{rootMargin:'200px 0px'}):null;
 
   const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
   let heartCounts=new Map();let heartsReady=false;const heartLoad=(async()=>{try{const response=await fetch(heartEndpoint,{cache:'no-store',signal:AbortSignal.timeout(8000)});if(response.ok){heartCounts=new Map((await response.json()).hearts.map(row=>[row.gameId||row.brand,row.count]));heartsReady=true;}}catch{}})();
@@ -4688,7 +4693,8 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
         if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/1024x1024wd\.png$/, '/320x320wd.jpg').replace(/\/1920x1080ia-80\.png$/, '/320x320ia-80.jpg');
         if(iconUrl.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(iconUrl.pathname))iconUrl.pathname=iconUrl.pathname.replace(/\.png$/,'.webp');
         if(grid.children.length<2){image.loading='eager';image.fetchPriority='high';}
-        image.src=iconUrl.href;
+        if(imageObserver&&grid.children.length>=2){image.dataset.ncpDeferredSrc=iconUrl.href;imageObserver.observe(image);}
+        else image.src=iconUrl.href;
         image.addEventListener('error',()=>{
           const fallback=entry.media$thumbnail?.url;
           if(fallback&&fallback!==image.src&&new URL(fallback,location.href).protocol==='https:')image.src=fallback;
