@@ -22,24 +22,24 @@ test('game period refresh auto-discovers a legacy batch article only when canoni
   assert.match(source,/GAME_PERIOD_REFRESH_LEGACY_SOURCE_AMBIGUOUS/);
 });
 
-test('declarative refresh runs one exact Verify, waits for success, then dispatches one pinned Deploy',()=>{
+test('declarative refresh hands generated source to automatic Verify and workflow_run Deploy without duplicate dispatches',()=>{
   const stage=read('.github/workflows/stage-game-period-refresh.yml');
   const verify=read('.github/workflows/verify.yml');
   const deploy=read('.github/workflows/deploy.yml');
-  assert.match(stage,/actions:\s*write/);
-  assert.equal((stage.match(/gh workflow run verify\.yml/g)||[]).length,1);
-  assert.equal((stage.match(/gh workflow run deploy\.yml/g)||[]).length,1);
-  assert.equal((stage.match(/gh run watch/g)||[]).length,2);
-  assert.match(stage,/select\(\.head_sha == env\.GENERATED_SHA\)/);
-  assert.match(stage,/source_sha="\$GENERATED_SHA"/);
-  assert.ok(stage.indexOf('gh run watch "$run_id"') < stage.indexOf('gh workflow run deploy.yml'));
+  assert.match(stage,/git push origin HEAD:codex\/blogger-worker-r1/);
+  assert.doesNotMatch(stage,/actions:\s*write/);
+  assert.equal((stage.match(/gh workflow run verify\.yml/g)||[]).length,0);
+  assert.equal((stage.match(/gh workflow run deploy\.yml/g)||[]).length,0);
+  assert.equal((stage.match(/gh run watch/g)||[]).length,0);
+  assert.match(stage,/generated push starts Verify exactly once/);
+  assert.match(stage,/starts Deploy Worker through workflow_run/);
   assert.match(stage,/has_refresh=false/);
   assert.match(stage,/if: steps\.refresh\.outputs\.has_refresh == 'true'/);
+  assert.match(verify,/push:/);
   assert.match(verify,/data\/game-period-refreshes\/\*\*/);
-  assert.match(deploy,/source_sha:[\s\S]*Exact verified source commit to deploy/);
-  assert.match(deploy,/SOURCE_SHA:\s*\$\{\{ inputs\.source_sha \|\| github\.event\.workflow_run\.head_sha \|\| github\.sha \}\}/);
-  assert.doesNotMatch(stage,/uses:\s*\.\/\.github\/workflows\/verify\.yml/);
-  assert.doesNotMatch(stage,/uses:\s*\.\/\.github\/workflows\/deploy\.yml/);
+  assert.match(deploy,/workflow_run:/);
+  assert.match(deploy,/workflows:\s*\[Verify\]/);
+  assert.match(deploy,/github\.event\.workflow_run\.conclusion == 'success'/);
 });
 
 test('explicit deploy source identity uses checkout and remote branch instead of duplicate event SHA checks',()=>{
