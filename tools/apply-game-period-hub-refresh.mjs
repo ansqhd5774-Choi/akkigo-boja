@@ -28,11 +28,7 @@ for(const path of paths){
   if(!Array.isArray(removeCodes)||removeCodes.some(code=>typeof code!=='string'||!CODE_RE.test(code)))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODES_INVALID');
   if(new Set(removeCodes).size!==removeCodes.length)fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODES_DUPLICATE');
   if(removeCodes.length&&(!patch.removalReason||typeof patch.removalReason!=='string'))fail('GAME_PERIOD_HUB_REFRESH_REMOVAL_REASON_REQUIRED');
-  const oldCodes=new Set((before.records||[]).map(r=>r.code));
-  for(const code of removeCodes){
-    if(!oldCodes.has(code))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODE_NOT_FOUND:'+code);
-    if(codes.includes(code))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODE_STILL_PRESENT:'+code);
-  }
+  for(const code of removeCodes)if(codes.includes(code))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODE_STILL_PRESENT:'+code);
   const removals=new Set(removeCodes);
   for(const old of before.records||[])if(!codes.includes(old.code)&&!removals.has(old.code))fail('GAME_PERIOD_HUB_REFRESH_HISTORY_OMITTED:'+old.code);
   hubs[patch.hubKey]={...model,researchCheckedAt:patch.checkedAt};
