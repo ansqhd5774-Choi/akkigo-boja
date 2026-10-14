@@ -8,7 +8,7 @@ function figure(article,logo){
   const brand=logo.brand||article.post?.labels?.find(label=>label&&label!=='VPN'&&label!=='교육'&&label!=='건강'&&label!=='해외직구'&&label!=='유심·로밍')||article.post?.title||article.articleKey;
   const bg=typeof logo.displayBackground==='string'&&/^#[0-9a-f]{3,8}$/i.test(logo.displayBackground)?logo.displayBackground:'';
   if(bg){
-    return `<figure data-ncp-featured-image="${esc(article.articleKey)}" style="width:min(280px,100%);margin:0 auto 24px;padding:18px 24px;background:${bg};border-radius:14px"><img src="${esc(logo.logoUrl)}" alt="${esc(brand)} 공식 대표 로고" data-ncp-brand-logo="true" width="512" height="180" loading="eager" decoding="async" style="display:block;width:100%;height:auto;max-height:100px;object-fit:contain;margin:auto"></figure>`;
+    return `<figure data-ncp-featured-image="${esc(article.articleKey)}" style="display:flex;align-items:center;justify-content:center;width:min(280px,100%);min-height:110px;margin:0 auto 24px;padding:20px 28px;background-color:${bg};border-radius:14px;overflow:hidden"><img src="${esc(logo.logoUrl)}" alt="${esc(brand)} 공식 대표 로고" data-ncp-brand-logo="true" width="512" height="180" loading="eager" decoding="async" style="display:block;width:100%;height:auto;max-height:100px;object-fit:contain;margin:auto"></figure>`;
   }
   return `<figure data-ncp-featured-image="${esc(article.articleKey)}" style="margin:0 0 24px"><img src="${esc(logo.logoUrl)}" alt="${esc(brand)} 공식 대표 로고" data-ncp-brand-logo="true" width="512" height="512" loading="eager" decoding="async" style="display:block;width:180px;height:180px;object-fit:contain;margin:auto;border-radius:14px"></figure>`;
 }
