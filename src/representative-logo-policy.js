@@ -1,14 +1,17 @@
 import baseLogos from '../data/representative-logos.json' with {type:'json'};
 import supplementalLogos from '../data/representative-logos-supplemental.json' with {type:'json'};
+import runtimeLogos from '../data/representative-logos-runtime.json' with {type:'json'};
 
 export const LEGACY_REPRESENTATIVE_LOGO_KIND='OFFICIAL_HEADER_LOGO';
 export const REPRESENTATIVE_LOGO_KINDS=new Set(['OFFICIAL_BRAND_LOGO','OFFICIAL_SERVICE_LOGO',LEGACY_REPRESENTATIVE_LOGO_KIND]);
 const SUSPICIOUS_ASSET=/(?:^|[\/_-])(banner|promo|event|product|thumbnail|thumb)(?:[\/_.-]|$)/i;
 
 const supplementalKeys=new Set(supplementalLogos.map(item=>item.articleKey));
+const runtimeKeys=new Set(runtimeLogos.map(item=>item.articleKey));
 export const representativeLogoRegistry=[
-  ...baseLogos.filter(item=>!supplementalKeys.has(item.articleKey)),
-  ...supplementalLogos
+  ...baseLogos.filter(item=>!supplementalKeys.has(item.articleKey)&&!runtimeKeys.has(item.articleKey)),
+  ...supplementalLogos.filter(item=>!runtimeKeys.has(item.articleKey)),
+  ...runtimeLogos
 ];
 
 export function isGameArticle(article){
