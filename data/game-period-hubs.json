@@ -4,81 +4,146 @@
     "title": "제우스: 오만의 신",
     "records": [
       {
-        "code": "6RYFJ242",
-        "sourcePublishedAt": null,
-        "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "code": "DEVLIVE0911",
+        "sourcePublishedAt": "2026-09-11",
+        "expiry": "공식 종료일 미확인",
+        "latest": true,
+        "statusLabel": "공식 코드 · 사용자 1계정 성공 · 전체 적용 미확인",
+        "latestEvidence": "2026-10-05 사용자 1계정에서 등록 성공과 보상 수령을 확인했습니다. 2026-10-14 공식 9월 11일 공지를 다시 확인했으나 종료일 표기는 확인되지 않았습니다. 전체 서버·계정 적용은 미확인입니다.",
         "sources": [
           {
-            "name": "참고 출처",
-            "url": "https://pacpik.com/coupons/zeus-com2us/",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "참고 출처",
-            "url": "https://pacpik.com/coupons/zeus-com2us/",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "공식 출처",
-            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "공식 출처",
-            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "제우스 공식 쿠폰 등록",
-            "url": "https://coupon.withhive.com/2352",
-            "sourcePublishedAt": null
+            "name": "제우스 공식 9월 11일 개발자 라이브 공지",
+            "url": "https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961",
+            "sourcePublishedAt": "2026-09-11",
+            "checkedAt": "2026-10-14"
           }
         ],
-        "evidenceHTML": "<p>제우스: 오만의 신 쿠폰현재 쿠폰 2개미검증웰컴 쿠폰 보상 1개6RYFJ242게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL종료: 2026-12-31T14:59:00.000Z참고 출처미검증웰컴 쿠폰 보상 1개AVG768Y1게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL종료: 2026-12-31T14:59:00.000Z참고 출처만료 이력 2개사용기간 만료골드 250000개 · 찬란한 의상/탈것 11회 소환 선택 상자 1개 · 축성 결정 20개 · [이벤트] 강화 주문서 상자 10개 · 방어의 영약 3개 · 몬스터 사냥의 영약 3개ZEUS1002LIVE게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL종료: 2026-10-04T14:59:00.000Z공식 출처사용기간 만료골드 250000개 · 빛나는 의상/탈것 11회 소환Ⅱ 선택 상자 1개 · 오리하르콘 15개 · 특수 신탁 지령서 2개 · 사망 페널티 복구 물약 5개 · 공격의 영약 3개 · 보스 도전의 영약 3개ZEUS1002GIFT게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL종료: 2026-10-04T14:59:00.000Z공식 출처쿠폰 입력 방법제우스 공식 쿠폰 등록을 엽니다.사용 중인 서버를 선택하고 게임 설정에서 확인한 CS Code를 입력합니다.보유한 쿠폰 번호를 입력한 뒤 등록합니다. 서버와 계정을 먼저 확인하세요.게임 내 우편함에서 보상을 확인합니다. 네트워크 상태에 따라 지급이 지연될 수 있습니다.이미 사용한 쿠폰은 다시 등록할 수 없습니다. CS Code나 개인 쿠폰 번호를 댓글에 남기지 마세요.</p>"
+        "evidenceHTML": "<p>공식 개발자 라이브 쿠폰입니다. 보상: 영롱한 의상/탈것 11회 소환 선택 상자 2개, 금괴 5개, 실타래 제작 시간 가속권 24개, 영혼의 파편 5개, 무기/방어구 강화 주문서 상자 50개, 특수 신탁 지령서 1개, [이벤트] 영약 묶음 상자 5개.</p><p>사용자 1계정 등록 성공 사례는 확인됐지만 전체 서버·계정 공통 성공으로 일반화하지 않습니다.</p>"
+      },
+      {
+        "code": "ZEUS1002LIVE",
+        "sourcePublishedAt": "2026-10-02",
+        "expiry": "2026-10-04 23:59 KST 종료",
+        "latest": false,
+        "statusLabel": "공식 사용기간 종료",
+        "sources": [
+          {
+            "name": "제우스 공식 10월 2일 개발자 라이브 공지",
+            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-14"
+          }
+        ],
+        "evidenceHTML": "<p>보상: 골드 250,000, 찬란한 의상/탈것 11회 소환 선택 상자 1개, 축성 결정 20개, [이벤트] 강화 주문서 상자 10개, 방어의 영약 3개, 몬스터 사냥의 영약 3개. 공식 사용 기한은 2026-10-04 23:59 KST였습니다.</p>"
+      },
+      {
+        "code": "ZEUS1002GIFT",
+        "sourcePublishedAt": "2026-10-02",
+        "expiry": "2026-10-04 23:59 KST 종료",
+        "latest": false,
+        "statusLabel": "공식 사용기간 종료",
+        "sources": [
+          {
+            "name": "제우스 공식 10월 2일 개발자 라이브 공지",
+            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
+            "sourcePublishedAt": "2026-10-02",
+            "checkedAt": "2026-10-14"
+          }
+        ],
+        "evidenceHTML": "<p>보상: 골드 250,000, 빛나는 의상/탈것 11회 소환Ⅱ 선택 상자 1개, 오리하르콘 15개, 특수 신탁 지령서 2개, 사망 페널티 복구 물약 5개, 공격의 영약 3개, 보스 도전의 영약 3개. 공식 사용 기한은 2026-10-04 23:59 KST였습니다.</p>"
+      },
+      {
+        "code": "ZEUSDEV0828",
+        "sourcePublishedAt": "2026-08-28",
+        "expiry": "2026-08-30 23:59 KST 종료",
+        "latest": false,
+        "statusLabel": "공식 사용기간 종료",
+        "sources": [
+          {
+            "name": "제우스 공식 8월 28일 개발자 라이브 공지",
+            "url": "https://zeus.com2us.com/p/b7ee75b1-4102-4c10-90ee-5d7c31030740",
+            "sourcePublishedAt": "2026-08-28",
+            "checkedAt": "2026-10-14"
+          }
+        ],
+        "evidenceHTML": "<p>보상: 타르타로스 시간충전석 1개, 사망 페널티 복구 물약 5개, 운명의 흐름 400개, 실타래 제작 시간 가속권 8개, 빛바랜 신탁 지령서 1개, 경험치의 영약 12개, 골드 100,000. 공식 사용 기한은 2026-08-30 23:59 KST였습니다.</p>"
+      },
+      {
+        "code": "ZEUSLIVE1ST",
+        "sourcePublishedAt": "2026-08-28",
+        "expiry": "2026-08-30 23:59 KST 종료",
+        "latest": false,
+        "statusLabel": "공식 사용기간 종료",
+        "sources": [
+          {
+            "name": "제우스 공식 8월 28일 개발자 라이브 공지",
+            "url": "https://zeus.com2us.com/p/b7ee75b1-4102-4c10-90ee-5d7c31030740",
+            "sourcePublishedAt": "2026-08-28",
+            "checkedAt": "2026-10-14"
+          }
+        ],
+        "evidenceHTML": "<p>보상: 빛나는 의상/탈것 11회 소환 I 선택 상자 1개, 일반 재료 묶음 상자 20개, [이벤트] 강화 주문서 상자 10개, 축성 조각 20개, 축복받은 강화 주문서 선택 상자 1개, [이벤트] 영약 묶음 상자 12개, 골드 200,000. 공식 사용 기한은 2026-08-30 23:59 KST였습니다.</p>"
+      },
+      {
+        "code": "6RYFJ242",
+        "sourcePublishedAt": null,
+        "expiry": "제3자 표기 2026-12-31 KST · 공식 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보 · 공식 발급/실사용 미확인",
+        "latestEvidence": "2026-10-14 PacPik 현재 페이지가 사용 가능 후보로 노출합니다. 운영사 공식 발급 원문과 실제 계정 성공은 확인되지 않았습니다.",
+        "sources": [
+          {
+            "name": "PacPik 제우스 쿠폰 목록",
+            "url": "https://pacpik.com/coupons/zeus-com2us/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>제3자 페이지는 웰컴 쿠폰·1명 사용 가능·2026-12-31 KST 만료로 표시합니다. 이 조건과 만료일은 공식 원문으로 확인되지 않아 후보 정보로만 보존합니다.</p>"
       },
       {
         "code": "AVG768Y1",
         "sourcePublishedAt": null,
-        "expiry": "미확인",
-        "latest": false,
-        "statusLabel": "사용 여부 미확인",
+        "expiry": "제3자 표기 2026-12-31 KST · 공식 미확인",
+        "latest": true,
+        "statusLabel": "제3자 현재 후보 · 공식 발급/실사용 미확인",
+        "latestEvidence": "2026-10-14 PacPik 현재 페이지가 사용 가능 후보로 노출합니다. 운영사 공식 발급 원문과 실제 계정 성공은 확인되지 않았습니다.",
         "sources": [
           {
-            "name": "참고 출처",
+            "name": "PacPik 제우스 쿠폰 목록",
             "url": "https://pacpik.com/coupons/zeus-com2us/",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "참고 출처",
-            "url": "https://pacpik.com/coupons/zeus-com2us/",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "공식 출처",
-            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "공식 출처",
-            "url": "https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c",
-            "sourcePublishedAt": null
-          },
-          {
-            "name": "제우스 공식 쿠폰 등록",
-            "url": "https://coupon.withhive.com/2352",
-            "sourcePublishedAt": null
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
           }
         ],
-        "evidenceHTML": "<p>제우스: 오만의 신 쿠폰현재 쿠폰 2개미검증웰컴 쿠폰 보상 1개6RYFJ242게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL종료: 2026-12-31T14:59:00.000Z참고 출처미검증웰컴 쿠폰 보상 1개AVG768Y1게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL종료: 2026-12-31T14:59:00.000Z참고 출처만료 이력 2개사용기간 만료골드 250000개 · 찬란한 의상/탈것 11회 소환 선택 상자 1개 · 축성 결정 20개 · [이벤트] 강화 주문서 상자 10개 · 방어의 영약 3개 · 몬스터 사냥의 영약 3개ZEUS1002LIVE게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL종료: 2026-10-04T14:59:00.000Z공식 출처사용기간 만료골드 250000개 · 빛나는 의상/탈것 11회 소환Ⅱ 선택 상자 1개 · 오리하르콘 15개 · 특수 신탁 지령서 2개 · 사망 페널티 복구 물약 5개 · 공격의 영약 3개 · 보스 도전의 영약 3개ZEUS1002GIFT게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL종료: 2026-10-04T14:59:00.000Z공식 출처쿠폰 입력 방법제우스 공식 쿠폰 등록을 엽니다.사용 중인 서버를 선택하고 게임 설정에서 확인한 CS Code를 입력합니다.보유한 쿠폰 번호를 입력한 뒤 등록합니다. 서버와 계정을 먼저 확인하세요.게임 내 우편함에서 보상을 확인합니다. 네트워크 상태에 따라 지급이 지연될 수 있습니다.이미 사용한 쿠폰은 다시 등록할 수 없습니다. CS Code나 개인 쿠폰 번호를 댓글에 남기지 마세요.</p>"
+        "evidenceHTML": "<p>제3자 페이지는 웰컴 쿠폰·1명 사용 가능·2026-12-31 KST 만료로 표시합니다. 이 조건과 만료일은 공식 원문으로 확인되지 않아 후보 정보로만 보존합니다.</p>"
+      },
+      {
+        "code": "ZEUSLAUNCH0826",
+        "sourcePublishedAt": null,
+        "expiry": "미확인",
+        "latest": false,
+        "statusLabel": "팬 사이트 후보 · 공식 발급/실사용 미확인",
+        "sources": [
+          {
+            "name": "ZEUS WIKI 팬 사이트 쿠폰 표기",
+            "url": "https://zeus.waypoint.page/",
+            "sourcePublishedAt": null,
+            "checkedAt": "2026-10-14",
+            "referenceType": "THIRD_PARTY_CODE_MENTION"
+          }
+        ],
+        "evidenceHTML": "<p>비공식 팬 사이트가 정식 런칭 기념 스페셜 쿠폰으로 표기합니다. 공식 제우스 공지에서 동일 문자열을 확인하지 못했고 실제 계정 성공도 미확인이라 과거 후보로만 보존합니다.</p>"
       }
     ],
     "featuredHTML": "<figure data-ncp-featured-image=\"zeus\" style=\"margin:0 0 24px\" xmlns=\"http://www.w3.org/1999/xhtml\"><img src=\"https://zeuscommunity-fn.com2us.com/zeuscommunity/public/common/og/og_default.jpg\" alt=\"제우스: 오만의 신 공식 대표 이미지\" loading=\"eager\" decoding=\"async\" style=\"display:block;width:100%;height:auto;border-radius:14px\"/></figure>",
     "previewHTML": "",
-    "guideHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>쿠폰 입력 방법</h3><ol><li><a href=\"https://coupon.withhive.com/2352\" rel=\"noopener noreferrer\">제우스 공식 쿠폰 등록</a>을 엽니다.</li><li>사용 중인 서버를 선택하고 게임 설정에서 확인한 CS Code를 입력합니다.</li><li>보유한 쿠폰 번호를 입력한 뒤 등록합니다. 서버와 계정을 먼저 확인하세요.</li><li>게임 내 우편함에서 보상을 확인합니다. 네트워크 상태에 따라 지급이 지연될 수 있습니다.</li></ol><p>이미 사용한 쿠폰은 다시 등록할 수 없습니다. CS Code나 개인 쿠폰 번호를 댓글에 남기지 마세요.</p></section>",
-    "archiveHTML": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><div><h3>제우스: 오만의 신 쿠폰</h3><section><h3>현재 쿠폰 2개</h3><article><p>미검증</p><strong>웰컴 쿠폰 보상 1개</strong><code>6RYFJ242</code><p>게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL</p><p>종료: 2026-12-31T14:59:00.000Z</p><a href=\"https://pacpik.com/coupons/zeus-com2us/\" rel=\"noopener noreferrer\">참고 출처</a></article><article><p>미검증</p><strong>웰컴 쿠폰 보상 1개</strong><code>AVG768Y1</code><p>게임 코드 · 서버: 지역·서버 조건 원문 확인 · 입력: 공식 HIVE 쿠폰 등록 · APP · ALL</p><p>종료: 2026-12-31T14:59:00.000Z</p><a href=\"https://pacpik.com/coupons/zeus-com2us/\" rel=\"noopener noreferrer\">참고 출처</a></article></section><section><h3>만료 이력 2개</h3><article><p>사용기간 만료</p><strong>골드 250000개 · 찬란한 의상/탈것 11회 소환 선택 상자 1개 · 축성 결정 20개 · [이벤트] 강화 주문서 상자 10개 · 방어의 영약 3개 · 몬스터 사냥의 영약 3개</strong><code>ZEUS1002LIVE</code><p>게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL</p><p>종료: 2026-10-04T14:59:00.000Z</p><a href=\"https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c\" rel=\"noopener noreferrer\">공식 출처</a></article><article><p>사용기간 만료</p><strong>골드 250000개 · 빛나는 의상/탈것 11회 소환Ⅱ 선택 상자 1개 · 오리하르콘 15개 · 특수 신탁 지령서 2개 · 사망 페널티 복구 물약 5개 · 공격의 영약 3개 · 보스 도전의 영약 3개</strong><code>ZEUS1002GIFT</code><p>게임 코드 · 서버: 서버 조건 미확인 · 입력: 공식 HIVE 쿠폰 등록 · WEB · ALL</p><p>종료: 2026-10-04T14:59:00.000Z</p><a href=\"https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c\" rel=\"noopener noreferrer\">공식 출처</a></article></section></div></div><section><h3>쿠폰 입력 방법</h3><ol><li><a href=\"https://coupon.withhive.com/2352\" rel=\"noopener noreferrer\">제우스 공식 쿠폰 등록</a>을 엽니다.</li><li>사용 중인 서버를 선택하고 게임 설정에서 확인한 CS Code를 입력합니다.</li><li>보유한 쿠폰 번호를 입력한 뒤 등록합니다. 서버와 계정을 먼저 확인하세요.</li><li>게임 내 우편함에서 보상을 확인합니다. 네트워크 상태에 따라 지급이 지연될 수 있습니다.</li></ol><p>이미 사용한 쿠폰은 다시 등록할 수 없습니다. CS Code나 개인 쿠폰 번호를 댓글에 남기지 마세요.</p></section></div>",
-    "noticeHTML": "<p>기존 원고의 수집 근거와 사용 조건을 보존했습니다. 원문 게시일이 없는 기록은 미확인으로 표시합니다.</p>"
+    "guideHTML": "<section xmlns=\"http://www.w3.org/1999/xhtml\"><h3>쿠폰 입력 방법</h3><ol><li><a href=\"https://coupon.withhive.com/2352\" rel=\"noopener noreferrer\">제우스 공식 쿠폰 등록</a>을 엽니다.</li><li>사용 중인 서버를 선택하고 게임 설정에서 확인한 CS Code를 입력합니다.</li><li>쿠폰 번호를 입력하고 등록한 뒤 게임 내 우편함에서 보상을 확인합니다.</li></ol><p>CS Code와 개인 쿠폰 번호는 공개 댓글에 남기지 마세요. 한 계정의 성공 기록은 전체 계정·서버 공통 성공을 뜻하지 않습니다.</p><h3>현재 개별 발급 쿠폰</h3><p>공개 공용 문자열과 별도로 공식 콜라보 상품에서 개별 쿠폰이 발급됩니다. 컨디션 레전드 쿠폰과 새싹보리 럭키보리 쿠폰은 2026-12-03 23:59까지, 이마트24 e24 코인 쿠폰은 2026-11-25 23:59까지 사용할 수 있다고 공식 안내돼 있습니다. 상품별 개별 번호이므로 공용 복사 코드 행에는 넣지 않습니다.</p></section>",
+    "archiveHTML": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>2026-10-14 재조사 기준입니다. 9월 11일·10월 2일·8월 28일 개발자 라이브 공식 공지와 현재 제3자 코드 목록을 다시 대조했습니다. 공식 공지에 없는 후보는 공식 쿠폰으로 승격하지 않았습니다.</p><ul><li><a href=\"https://zeus.com2us.com/p/f32cc2ca-3080-4152-a064-2a3cf8529961\" rel=\"noopener noreferrer\">9월 11일 공식 개발자 라이브</a></li><li><a href=\"https://zeus.com2us.com/p/8746aaf1-3391-478d-a8bf-6a495da0801c\" rel=\"noopener noreferrer\">10월 2일 공식 개발자 라이브</a></li><li><a href=\"https://zeus.com2us.com/p/b7ee75b1-4102-4c10-90ee-5d7c31030740\" rel=\"noopener noreferrer\">8월 28일 공식 개발자 라이브</a></li><li><a href=\"https://zeus.com2us.com/p/56ce04aa-99ce-455a-ba45-84a5fc88678d\" rel=\"noopener noreferrer\">컨디션·새싹보리 공식 콜라보</a></li><li><a href=\"https://zeus.com2us.com/p/fd754e3d-ac8d-4726-b5af-142c45b79fef\" rel=\"noopener noreferrer\">이마트24 공식 콜라보</a></li><li><a href=\"https://pacpik.com/coupons/zeus-com2us/\" rel=\"noopener noreferrer\">PacPik 제3자 후보 목록</a></li><li><a href=\"https://zeus.waypoint.page/\" rel=\"noopener noreferrer\">ZEUS WIKI 비공식 후보</a></li></ul></div>",
+    "noticeHTML": "<p>2026-10-14 기준 공식 공지·제3자 후보·사용자 1계정 성공을 분리해 갱신했습니다. 공식 종료일이 확인된 코드는 과거 기록으로 이동하고, 공식 발급이나 실사용이 확인되지 않은 문자열은 제3자 후보로 표시합니다.</p>",
+    "researchCheckedAt": "2026-10-14"
   },
   "lineagem": {
     "articleKey": "lineagem",
