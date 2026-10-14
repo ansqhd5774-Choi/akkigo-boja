@@ -6,6 +6,7 @@
     "sourceUrl": "https://gigaip.net/",
     "sourceAsset": "https://gigaip.net/resources/img/top_logo.png",
     "verifiedAt": "2026-10-15",
-    "kind": "OFFICIAL_SERVICE_LOGO"
+    "kind": "OFFICIAL_SERVICE_LOGO",
+    "displayBackground": "#000000"
   }
 ]
