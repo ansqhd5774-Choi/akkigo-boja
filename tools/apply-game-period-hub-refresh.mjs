@@ -3,6 +3,7 @@ import {execFileSync} from 'node:child_process';
 
 const HUBS_PATH='data/game-period-hubs.json';
 const PATCH_RE=/^data\/game-period-hub-refreshes\/[a-z0-9-]+\.json$/;
+const CODE_RE=/^[^<>"'&\s]+$/;
 const allowed=new Set(['zeus','lineagem','wuthering']);
 const paths=process.argv.slice(2);
 const fail=m=>{throw Error(m);};
@@ -21,9 +22,15 @@ for(const path of paths){
   if(!before||!model||model.articleKey!==patch.hubKey||model.title!==before.title)fail('GAME_PERIOD_HUB_REFRESH_MODEL_INVALID');
   if(!Array.isArray(model.records))fail('GAME_PERIOD_HUB_REFRESH_RECORDS_INVALID');
   const codes=model.records.map(r=>r?.code);
-  if(codes.some(code=>typeof code!=='string'||!code||/[<>"'&\s]/.test(code)))fail('GAME_PERIOD_HUB_REFRESH_CODE_INVALID');
+  if(codes.some(code=>typeof code!=='string'||!CODE_RE.test(code)))fail('GAME_PERIOD_HUB_REFRESH_CODE_INVALID');
   if(new Set(codes).size!==codes.length)fail('GAME_PERIOD_HUB_REFRESH_DUPLICATE_CODE');
-  for(const old of before.records||[])if(!codes.includes(old.code))fail('GAME_PERIOD_HUB_REFRESH_HISTORY_OMITTED:'+old.code);
+  const removeCodes=patch.removeCodes??[];
+  if(!Array.isArray(removeCodes)||removeCodes.some(code=>typeof code!=='string'||!CODE_RE.test(code)))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODES_INVALID');
+  if(new Set(removeCodes).size!==removeCodes.length)fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODES_DUPLICATE');
+  if(removeCodes.length&&(!patch.removalReason||typeof patch.removalReason!=='string'))fail('GAME_PERIOD_HUB_REFRESH_REMOVAL_REASON_REQUIRED');
+  for(const code of removeCodes)if(codes.includes(code))fail('GAME_PERIOD_HUB_REFRESH_REMOVE_CODE_STILL_PRESENT:'+code);
+  const removals=new Set(removeCodes);
+  for(const old of before.records||[])if(!codes.includes(old.code)&&!removals.has(old.code))fail('GAME_PERIOD_HUB_REFRESH_HISTORY_OMITTED:'+old.code);
   hubs[patch.hubKey]={...model,researchCheckedAt:patch.checkedAt};
   touched.add(patch.hubKey);
 }

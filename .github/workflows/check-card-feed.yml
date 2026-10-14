@@ -5,7 +5,11 @@ permissions:
   contents: read
 jobs:
   check:
-    runs-on: ubuntu-latest
+    if: github.event.repository.private == false && github.repository == 'ansqhd5774-Choi/akkigo-boja'
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
