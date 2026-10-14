@@ -1,0 +1,6 @@
+{
+  "articleKey": "gigaip-benefits-202610",
+  "approved": true,
+  "requestedAt": "2026-10-15",
+  "reason": "Retry once after confirmed deployment of verified source d8e63df88f0e110a5ef9258442875231e0cf26a8. Previous attempt stopped before Blogger mutation due transient Worker snapshot propagation mismatch. Preserve existing postId and URL."
+}
