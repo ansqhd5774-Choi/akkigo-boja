@@ -15,7 +15,7 @@
   const timeout=ms=>AbortSignal.timeout(ms);
   const cardFeeds=new Map();
   window.ncpCardFeed=function(category){
-    if(!cardFeeds.has(category))cardFeeds.set(category,fetch(worker+'/public/card-feed?category='+encodeURIComponent(category),{signal:timeout(20000)}).then(async response=>{
+    if(!cardFeeds.has(category))cardFeeds.set(category,fetch(worker+'/public/card-feed?category='+encodeURIComponent(category)+'&format=counts',{signal:timeout(20000)}).then(async response=>{
       if(!response.ok)throw Error('CARD_FEED_HTTP');const result=await response.json();
       if(!Array.isArray(result.entries)||result.entries.length!==result.total)throw Error('CARD_FEED_INVALID');return result.entries;
     }).catch(()=>window.ncpFeed(category)));

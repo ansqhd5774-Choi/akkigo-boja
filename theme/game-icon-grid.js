@@ -27,7 +27,7 @@
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
-      const codeCount=new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
+      const codeCount=Number.isSafeInteger(entry.ncpCodeCount)&&entry.ncpCodeCount>=0?entry.ncpCodeCount:new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
       if(category==='게임'&&codeCount===0)continue;
       seen.add(name);
       const src=content.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';

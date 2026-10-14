@@ -3305,7 +3305,7 @@ body{margin:0!important;padding:0!important;background:#f4f6f8!important}.center
     <b:include data='blog' name='google-analytics'/>
 
     <script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'/>
-  <link rel='preconnect' href='https://akkigo-boja.ansqhd5774.workers.dev'/><b:if cond='data:blog.searchLabel'><link rel='preload' as='fetch' crossorigin='anonymous' expr:href='&quot;https://akkigo-boja.ansqhd5774.workers.dev/public/card-feed?category=&quot; + data:blog.searchLabel'/></b:if><b:if cond='data:view.isHomepage'><link rel='preload' as='image' href='https://akkigo-boja.ansqhd5774.workers.dev/home-hero.webp?v=brand-check-20261009' type='image/webp' fetchpriority='high'/></b:if>
+  <link rel='preconnect' href='https://akkigo-boja.ansqhd5774.workers.dev'/><b:if cond='data:blog.searchLabel'><link rel='preload' as='fetch' crossorigin='anonymous' expr:href='&quot;https://akkigo-boja.ansqhd5774.workers.dev/public/card-feed?category=&quot; + data:blog.searchLabel + &quot;&amp;format=counts&quot;'/></b:if><b:if cond='data:view.isHomepage'><link rel='preload' as='image' href='https://akkigo-boja.ansqhd5774.workers.dev/home-hero.webp?v=brand-check-20261009' type='image/webp' fetchpriority='high'/></b:if>
 <script type='text/javascript'>//<![CDATA[
 window.ncpResolveGame=(function(){const known=["원신","승리의 여신: 니케","붕괴: 스타레일","명조:워더링 웨이브","포트블록스","킹샷","블루 아카이브","메이플 키우기","화이트아웃 서바이벌","브라운더스트2","트릭컬 리바이브","시바 모험단","컴투스프로야구V26","제우스: 오만의 신","Pokémon GO","로블록스","운빨존많겜","FC 모바일"];const resolve=function resolveGame(entry,knownNames=[]){
  const title=String(entry.title?.$t||entry.title||'').trim();
@@ -4459,7 +4459,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   const timeout=ms=>AbortSignal.timeout(ms);
   const cardFeeds=new Map();
   window.ncpCardFeed=function(category){
-    if(!cardFeeds.has(category))cardFeeds.set(category,fetch(worker+'/public/card-feed?category='+encodeURIComponent(category),{signal:timeout(20000)}).then(async response=>{
+    if(!cardFeeds.has(category))cardFeeds.set(category,fetch(worker+'/public/card-feed?category='+encodeURIComponent(category)+'&format=counts',{signal:timeout(20000)}).then(async response=>{
       if(!response.ok)throw Error('CARD_FEED_HTTP');const result=await response.json();
       if(!Array.isArray(result.entries)||result.entries.length!==result.total)throw Error('CARD_FEED_INVALID');return result.entries;
     }).catch(()=>window.ncpFeed(category)));
@@ -4674,7 +4674,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
       const content=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
-      const codeCount=new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
+      const codeCount=Number.isSafeInteger(entry.ncpCodeCount)&&entry.ncpCodeCount>=0?entry.ncpCodeCount:new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
       if(category==='게임'&&codeCount===0)continue;
       seen.add(name);
       const src=content.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
@@ -4722,7 +4722,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   const root=document.getElementById('ncp-home-r4');if(!root)return;
   const status=root.querySelector('[role="status"]');
   // These are published game guides, not proof of currently redeemable coupons.
-  const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
+  const guideCodeCount=entry=>Number.isSafeInteger(entry.ncpCodeCount)&&entry.ncpCodeCount>=0?entry.ncpCodeCount:new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
   const yieldToBrowser=()=>typeof scheduler!=='undefined'&&scheduler.yield?scheduler.yield():new Promise(resolve=>setTimeout(resolve,0));
 
   const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';

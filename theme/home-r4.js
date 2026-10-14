@@ -3,7 +3,7 @@
   const root=document.getElementById('ncp-home-r4');if(!root)return;
   const status=root.querySelector('[role="status"]');
   // These are published game guides, not proof of currently redeemable coupons.
-  const guideCodeCount=entry=>new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
+  const guideCodeCount=entry=>Number.isSafeInteger(entry.ncpCodeCount)&&entry.ncpCodeCount>=0?entry.ncpCodeCount:new Set([...String(entry.content?.$t||'').matchAll(/data-ncp-copy=["']([^"']+)["']/g)].map(match=>match[1])).size;
   const yieldToBrowser=()=>typeof scheduler!=='undefined'&&scheduler.yield?scheduler.yield():new Promise(resolve=>setTimeout(resolve,0));
 
   const heartEndpoint='https://akkigo-boja.ansqhd5774.workers.dev/games/hearts';
