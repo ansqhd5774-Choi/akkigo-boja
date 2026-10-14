@@ -37,6 +37,7 @@ import {forestSighNeverlandArticle} from './game-batch-20261014-g.js';
 import {darkAngelAngelDescentArticle} from './game-batch-20261014-h.js';
 import {princeGoArticle} from './game-batch-20261014-i.js';
 import {theRookieArticle} from './game-batch-20261014-j.js';
+import {archerCastleArticle} from './game-batch-20261015.js';
 import {applyRepresentativeLogos} from './representative-logo-renderer.js';
 
 const canonicalArticles=[...primary,...supplemental];
@@ -114,7 +115,8 @@ const legacyArticleCatalog=[
   forestSighNeverlandArticle,
   darkAngelAngelDescentArticle,
   princeGoArticle,
-  theRookieArticle
+  theRookieArticle,
+  archerCastleArticle
 ];
 
 // Canonical JSON is the migration destination. A canonical article replaces the
