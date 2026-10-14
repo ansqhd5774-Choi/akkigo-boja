@@ -1,0 +1,8 @@
+{
+  "requestId": "hub-refresh-zeus-20261014-r1",
+  "type": "HUB_REFRESH",
+  "hubKeys": [
+    "zeus"
+  ],
+  "reason": "Refresh the existing Zeus October coupon article in place from the verified 2026-10-14 evidence; preserve the Blogger postId and public URL."
+}
