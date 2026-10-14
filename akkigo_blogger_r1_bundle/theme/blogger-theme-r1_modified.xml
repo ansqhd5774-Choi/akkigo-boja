@@ -4681,6 +4681,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
       image.referrerPolicy='no-referrer';
       if(src&&new URL(src,location.href).protocol==='https:'){
         const iconUrl=new URL(src,location.href);
+        if(iconUrl.href==='https://zeuscommunity-fn.com2us.com/zeuscommunity/public/common/og/og_default.jpg')iconUrl.href='https://akkigo-boja.ansqhd5774.workers.dev/cards/zeus-og-320.webp';
         if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/(?:=|%3D)[^/]*$/i, '')+'=w240-h240-rw';
         if(/^lh[0-9]+\.googleusercontent\.com$/.test(iconUrl.hostname))iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
         if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/320x320bb.jpg');
