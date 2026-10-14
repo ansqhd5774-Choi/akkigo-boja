@@ -26,17 +26,18 @@
       const card=document.createElement('a');card.className='ncp-game-card ncp-game-visual'+(category==='게임'?'':' ncp-brand-visual');if(category!=='게임'&&identity.logoShift)card.style.setProperty('--ncp-logo-shift',identity.logoShift);card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
-      const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+      const content=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
       const codeCount=new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
       if(category==='게임'&&codeCount===0)continue;
       seen.add(name);
-      const src=content.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
+      const src=content.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
       image.referrerPolicy='no-referrer';
       if(src&&new URL(src,location.href).protocol==='https:'){
         const iconUrl=new URL(src,location.href);
-        if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '=w240-h240-rw');
+        if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/(?:=|%3D)[^/]*$/i, '')+'=w240-h240-rw';
         if(/^lh[0-9]+\.googleusercontent\.com$/.test(iconUrl.hostname))iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
         if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/320x320bb.jpg');
+        if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/1024x1024wd\.png$/, '/320x320wd.jpg').replace(/\/1920x1080ia-80\.png$/, '/320x320ia-80.jpg');
         if(iconUrl.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(iconUrl.pathname))iconUrl.pathname=iconUrl.pathname.replace(/\.png$/,'.webp');
         if(grid.children.length<2){image.loading='eager';image.fetchPriority='high';}
         image.src=iconUrl.href;

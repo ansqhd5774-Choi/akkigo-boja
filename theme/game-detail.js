@@ -11,7 +11,7 @@
     const urlOf=entry=>(entry.link||[]).find(link=>link.rel==='alternate')?.href;
     const current=entries.find(entry=>{try{return new URL(urlOf(entry)).pathname===location.pathname;}catch{return false;}});
     if(!current||body.querySelector('.ncp-detail-overview'))return;
-    const parse=entry=>new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+    const parse=entry=>new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
     const count=doc=>new Set([...doc.querySelectorAll('[data-ncp-copy]')].filter(el=>!el.disabled&&!el.closest('[data-ncp-history],#ncp-expired')).map(el=>el.dataset.ncpCopy).filter(Boolean)).size;
     const source=parse(current),identity=window.ncpResolveGame(current),total=count(source);
     const overview=document.createElement('section');overview.className='ncp-detail-overview';overview.setAttribute('aria-label',identity.name+' 쿠폰 현황');
@@ -34,7 +34,7 @@
       const doc=parse(entry),codes=count(doc),url=urlOf(entry);if(!codes||!url||new URL(url).origin!==location.origin)continue;
       seen.add(game.id);const link=document.createElement('a');link.href=url;
       link.setAttribute('aria-label',game.name+' 입력 코드 '+codes+'개 보기');
-      const imageUrl=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url;
+      const imageUrl=doc.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url;
       const visual=document.createElement('span');visual.className='ncp-related-visual';
       if(imageUrl){const icon=document.createElement('img');icon.src=imageUrl;icon.alt='';icon.loading='lazy';icon.decoding='async';visual.append(icon);}else{visual.classList.add('ncp-related-placeholder');visual.textContent=game.name.slice(0,2);}
       const title=document.createElement('strong');title.textContent=game.name;

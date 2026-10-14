@@ -4447,9 +4447,9 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
   // Shared company identity for home and category cards.
   const brandLogos={"https://akkigo-boja.ansqhd5774.workers.dev/logos/tripcom-representative.png":"트립닷컴","https://akkigo-boja.ansqhd5774.workers.dev/logos/dominos-representative.png":"도미노피자","https://akkigo-boja.ansqhd5774.workers.dev/logos/hostinger-representative.png":"Hostinger","https://akkigo-boja.ansqhd5774.workers.dev/logos/spaceship-representative.png":"Spaceship","https://akkigo-boja.ansqhd5774.workers.dev/logos/namecheap-representative.png":"Namecheap","https://akkigo-boja.ansqhd5774.workers.dev/logos/cafe24-representative.png":"카페24","https://akkigo-boja.ansqhd5774.workers.dev/logos/dothome-representative.png":"닷홈","https://akkigo-boja.ansqhd5774.workers.dev/logos/whois-representative.png":"후이즈","https://akkigo-boja.ansqhd5774.workers.dev/logos/hostingkr-representative.png":"호스팅케이알","https://akkigo-boja.ansqhd5774.workers.dev/logos/geniezip-representative.png":"지니집","https://akkigo-boja.ansqhd5774.workers.dev/logos/nutrione-representative.png":"뉴트리원","https://akkigo-boja.ansqhd5774.workers.dev/logos/angukhealth-representative.png":"안국건강","https://akkigo-boja.ansqhd5774.workers.dev/logos/denps-representative.png":"덴프스","https://akkigo-boja.ansqhd5774.workers.dev/logos/ckdhcmall-representative.png":"종근당건강몰","https://akkigo-boja.ansqhd5774.workers.dev/logos/esthermall-representative.png":"에스더몰","https://akkigo-boja.ansqhd5774.workers.dev/logos/haiip-representative.png":"하이아이피","https://akkigo-boja.ansqhd5774.workers.dev/logos/coolip-representative.png":"쿨아이피","https://akkigo-boja.ansqhd5774.workers.dev/logos/momoip-representative.png":"모모아이피","https://akkigo-boja.ansqhd5774.workers.dev/logos/hackers-representative.png":"해커스공무원","https://akkigo-boja.ansqhd5774.workers.dev/logos/fastcampus-representative.png":"패스트캠퍼스","https://akkigo-boja.ansqhd5774.workers.dev/logos/gabia-representative.png":"가비아","https://akkigo-boja.ansqhd5774.workers.dev/logos/iporter-representative.png":"아이포터","https://akkigo-boja.ansqhd5774.workers.dev/logos/nygirlz-representative.png":"뉴욕걸즈","https://akkigo-boja.ansqhd5774.workers.dev/logos/malltail-representative.png":"몰테일","https://akkigo-boja.ansqhd5774.workers.dev/logos/jungkwanjang-representative.png":"정관장","https://akkigo-boja.ansqhd5774.workers.dev/logos/lactiv-representative.png":"락티브","https://akkigo-boja.ansqhd5774.workers.dev/logos/doctorlean-representative.png":"닥터린"};
   window.ncpResolveBrand=function(entry){
-    const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+    const doc=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
     const image=doc.querySelector('img');
-    const src=image?.getAttribute('src')||entry.media$thumbnail?.url||'';
+    const src=image?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'';
     let path='';try{path=new URL(src,location.href).pathname;}catch{}
     const official=brandLogos['https://akkigo-boja.ansqhd5774.workers.dev'+path];
     const name=official||image?.getAttribute('alt')?.match(/^(.+?) 공식 대표 로고$/)?.[1]||String(entry.title?.$t||'').split(/\s*(?:할인|쿠폰|프로모션|도메인|\(|\|)/)[0].trim();
@@ -4673,17 +4673,18 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
       const card=document.createElement('a');card.className='ncp-game-card ncp-game-visual'+(category==='게임'?'':' ncp-brand-visual');if(category!=='게임'&&identity.logoShift)card.style.setProperty('--ncp-logo-shift',identity.logoShift);card.href=url;card.setAttribute('aria-label',name+' 쿠폰 보기');
       const wrap=document.createElement('span');wrap.className='ncp-game-icon-wrap';
       const image=document.createElement('img');image.className='ncp-game-icon';image.alt=name;image.loading='lazy';image.decoding='async';
-      const content=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+      const content=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
       const codeCount=new Set([...content.querySelectorAll('[data-ncp-copy]')].map(el=>el.getAttribute('data-ncp-copy')).filter(Boolean)).size;
       if(category==='게임'&&codeCount===0)continue;
       seen.add(name);
-      const src=content.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
+      const src=content.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
       image.referrerPolicy='no-referrer';
       if(src&&new URL(src,location.href).protocol==='https:'){
         const iconUrl=new URL(src,location.href);
-        if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '=w240-h240-rw');
+        if(iconUrl.hostname==='play-lh.googleusercontent.com')iconUrl.pathname=iconUrl.pathname.replace(/(?:=|%3D)[^/]*$/i, '')+'=w240-h240-rw';
         if(/^lh[0-9]+\.googleusercontent\.com$/.test(iconUrl.hostname))iconUrl.pathname=iconUrl.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
         if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/320x320bb.jpg');
+        if(iconUrl.hostname.endsWith('.mzstatic.com'))iconUrl.pathname=iconUrl.pathname.replace(/\/1024x1024wd\.png$/, '/320x320wd.jpg').replace(/\/1920x1080ia-80\.png$/, '/320x320ia-80.jpg');
         if(iconUrl.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(iconUrl.pathname))iconUrl.pathname=iconUrl.pathname.replace(/\.png$/,'.webp');
         if(grid.children.length<2){image.loading='eager';image.fetchPriority='high';}
         image.src=iconUrl.href;
@@ -4741,11 +4742,11 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
     if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
     {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
-    const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
-    let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
+    const doc=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
+    let src=doc.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){
       const image=document.createElement('img');image.className='ncp-r4-cover';image.alt=name;image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';
-      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');
+      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/(?:=|%3D)[^/]*$/i, '')+'=w400-h240-rw';
       if(/^lh[0-9]+\.googleusercontent\.com$/.test(icon.hostname))icon.pathname=icon.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
       if(icon.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(icon.pathname))icon.pathname=icon.pathname.replace(/\.png$/,'.webp');
       if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/360x360bb.jpg');
@@ -4817,7 +4818,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
     const urlOf=entry=>(entry.link||[]).find(link=>link.rel==='alternate')?.href;
     const current=entries.find(entry=>{try{return new URL(urlOf(entry)).pathname===location.pathname;}catch{return false;}});
     if(!current||body.querySelector('.ncp-detail-overview'))return;
-    const parse=entry=>new DOMParser().parseFromString(entry.content?.$t||'','text/html');
+    const parse=entry=>new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
     const count=doc=>new Set([...doc.querySelectorAll('[data-ncp-copy]')].filter(el=>!el.disabled&&!el.closest('[data-ncp-history],#ncp-expired')).map(el=>el.dataset.ncpCopy).filter(Boolean)).size;
     const source=parse(current),identity=window.ncpResolveGame(current),total=count(source);
     const overview=document.createElement('section');overview.className='ncp-detail-overview';overview.setAttribute('aria-label',identity.name+' 쿠폰 현황');
@@ -4840,7 +4841,7 @@ window.ncpIcons={"gamepad-2":"<svg aria-hidden=\"true\" focusable=\"false\" xmln
       const doc=parse(entry),codes=count(doc),url=urlOf(entry);if(!codes||!url||new URL(url).origin!==location.origin)continue;
       seen.add(game.id);const link=document.createElement('a');link.href=url;
       link.setAttribute('aria-label',game.name+' 입력 코드 '+codes+'개 보기');
-      const imageUrl=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url;
+      const imageUrl=doc.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url;
       const visual=document.createElement('span');visual.className='ncp-related-visual';
       if(imageUrl){const icon=document.createElement('img');icon.src=imageUrl;icon.alt='';icon.loading='lazy';icon.decoding='async';visual.append(icon);}else{visual.classList.add('ncp-related-placeholder');visual.textContent=game.name.slice(0,2);}
       const title=document.createElement('strong');title.textContent=game.name;

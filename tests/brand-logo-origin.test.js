@@ -7,7 +7,11 @@ test('company identity uses asset-host URLs without advertising nonexistent Blog
  const registry=JSON.parse(source.match(/const brandLogos=(\{[^\n]+\});/)[1]);
  for(const url of Object.keys(registry))assert.equal(new URL(url).origin,'https://akkigo-boja.ansqhd5774.workers.dev');
  const window={};
- class DOMParser {parseFromString(src){return {querySelector:()=>({getAttribute:name=>name==='src'?src:null})};}}
+ class DOMParser {parseFromString(html){
+  assert.doesNotMatch(html,/<img[^>]*\ssrc=/i);
+  const src=html.match(/data-ncp-src="([^"]+)"/)?.[1];
+  return {querySelector:()=>({getAttribute:name=>name==='data-ncp-src'?src:null})};
+ }}
  runInNewContext(source,{window,DOMParser,URL,location:{href:'https://lsifl.blogspot.com/'},document:{readyState:'loading',addEventListener(){}},AbortSignal,Map,setTimeout,clearTimeout});
- for(const [url,name] of Object.entries(registry))assert.equal(window.ncpResolveBrand({content:{$t:url},title:{$t:'different name'}}).name,name);
+ for(const [url,name] of Object.entries(registry))assert.equal(window.ncpResolveBrand({content:{$t:`<img src="${url}">`},title:{$t:'different name'}}).name,name);
 });

@@ -24,11 +24,11 @@
     const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
     if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
     {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
-    const doc=new DOMParser().parseFromString(entry.content?.$t||'','text/html');
-    let src=doc.querySelector('img')?.getAttribute('src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
+    const doc=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
+    let src=doc.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){
       const image=document.createElement('img');image.className='ncp-r4-cover';image.alt=name;image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';
-      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/=[^/]*$/, '=w400-h240-rw');
+      const icon=new URL(src,location.href);if(icon.hostname==='play-lh.googleusercontent.com')icon.pathname=icon.pathname.replace(/(?:=|%3D)[^/]*$/i, '')+'=w400-h240-rw';
       if(/^lh[0-9]+\.googleusercontent\.com$/.test(icon.hostname))icon.pathname=icon.pathname.replace(/=[^/]*$/, '')+'=s320-rw';
       if(icon.hostname==='akkigo-boja.ansqhd5774.workers.dev'&&/^\/logos\/[^/]+-representative\.png$/.test(icon.pathname))icon.pathname=icon.pathname.replace(/\.png$/,'.webp');
       if(icon.hostname.endsWith('.mzstatic.com'))icon.pathname=icon.pathname.replace(/\/\d+x\d+bb\.(jpg|png)$/, '/360x360bb.jpg');
