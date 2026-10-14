@@ -11,11 +11,16 @@ import { buildHubDraft } from './hubs.js';
 import { publishApprovedArticle, probeExistingArticle } from './articles.js';
 import {articleSnapshot} from './article-snapshot.js';
 import { verifyGitHubOidc } from './github-oidc.js';
+import {serveRepresentativeLogo} from './representative-logo-proxy.js';
 
 export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
     const path = requestUrl.pathname.length>1 ? requestUrl.pathname.replace(/\/+$/,'') : requestUrl.pathname;
+    if(request.method==='GET'){
+      const logoResponse=await serveRepresentativeLogo(path);
+      if(logoResponse)return logoResponse;
+    }
     if(path==='/public/card-feed'&&request.method==='GET')return cardFeed(request);
     if(path==='/games/hearts'){try{return await gameHearts(request,env);}catch{return Response.json({error:'HEART_STORAGE_FAILED'},{status:503,headers:{'Access-Control-Allow-Origin':'https://lsifl.blogspot.com'}});}}
     if (path === '/coupons/catalog' && request.method === 'GET') {
