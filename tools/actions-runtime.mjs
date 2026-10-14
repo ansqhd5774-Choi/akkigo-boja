@@ -4,7 +4,10 @@ import {execFileSync, spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 export const workerPaths = ['src/','data/','theme/assets/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
-export const runtimeWorkerPaths = ['src/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
+// Article snapshots are generated from both src/ and data/. Treat data changes as runtime
+// changes too; otherwise a data-only article/logo update can be incorrectly matched to an
+// older successful Worker deployment.
+export const runtimeWorkerPaths = ['src/','data/','migrations/','wrangler.jsonc','package.json','pnpm-lock.yaml','pnpm-workspace.yaml'];
 export const isWorkerPath = path => workerPaths.some(p => p.endsWith('/') ? path.startsWith(p) : path === p);
 export const isPublishRequestPath = path => /^publish-requests\/[a-z0-9-]+\.json$/.test(path || '');
 export function publishRequestOnlyPaths(paths = []) {
