@@ -23,7 +23,7 @@
     const identity=game?window.ncpResolveGame(entry):window.ncpResolveBrand(entry);const name=identity.name;
     const article=document.createElement('article');article.className='ncp-r4-card ncp-game-visual'+(game?'':' ncp-brand-visual');
     if(!game&&identity.logoShift)article.style.setProperty('--ncp-logo-shift',identity.logoShift);
-    {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+count+'개';article.append(badge);}
+    {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent=game?'기록 '+count+'개':(count?'코드 '+count+'개':'혜택 안내');article.append(badge);}
     const doc=new DOMParser().parseFromString(String(entry.content?.$t||'').replace(/\bsrc\s*=/gi,'data-ncp-src='),'text/html');
     let src=doc.querySelector('img')?.getAttribute('data-ncp-src')||entry.media$thumbnail?.url||'https://api.iconify.design/twemoji/video-game.svg';
     if(src&&new URL(src,location.href).protocol==='https:'){

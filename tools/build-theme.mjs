@@ -1,4 +1,5 @@
 import {homeR4,categoryHeaderR4} from '../theme/home-r4.mjs';
+import {applyAdsensePolicy} from './adsense-policy-theme.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {escapeHtml as e} from '../src/coupons.js';
 import {resolveGame} from '../src/game-identity.js';
@@ -65,7 +66,7 @@ const brandFavicon="\n<!-- AKKIGO STABLE FAVICON: retain this URL across theme b
 const faviconNormalize="<script type='text/javascript'>//<![CDATA[\n(function(){var icons=document.querySelectorAll('link[rel=icon]');for(var i=0;i<icons.length;i++){if(i<icons.length-1){icons[i].remove();}}})();\n//]]></script>\n";
 const directoryBadges=await readFile(new URL('theme/directory-badges.xml',root),'utf8');
 const naverAnalytics=await readFile(new URL('theme/naver-analytics.xml',root),'utf8');
-await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+serverDirectory+naverAnalytics+directoryBadges+'</body>'));
+await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root),applyAdsensePolicy(output.replace('</head>',identityMount+brandFavicon+faviconNormalize+'</head>').replace('</body>',seoFallback+serverDirectory+naverAnalytics+directoryBadges+'</body>')));
 await writeFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1_modified.xml',root),await readFile(new URL('akkigo_blogger_r1_bundle/theme/blogger-theme-r1.xml',root)));
 console.log('R3 theme generated using native Blogger widget base.');
 

@@ -66,9 +66,9 @@
       if(category==='게임'){
         date.textContent=codeCount>0?'코드 '+codeCount+'개 · 사용 여부는 본문 확인':'쿠폰 안내';
         wrap.append(title);
-        {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);}
+        {const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent=category==='게임'?'기록 '+codeCount+'개':(codeCount?'코드 '+codeCount+'개':'혜택 안내');wrap.append(badge);}
         card.append(wrap);
-      }else{wrap.append(title);const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent='코드 '+codeCount+'개';wrap.append(badge);card.append(wrap);}
+      }else{wrap.append(title);const badge=document.createElement('span');badge.className='ncp-coupon-count';badge.textContent=category==='게임'?'기록 '+codeCount+'개':(codeCount?'코드 '+codeCount+'개':'혜택 안내');wrap.append(badge);card.append(wrap);}
       {const shell=document.createElement('div');shell.className='ncp-game-heart-shell';shell.append(card);addHeart(shell,category==='게임'?identity.id:name);grid.append(shell);}
     }
     status.textContent=grid.children.length?'':'등록된 쿠폰 안내가 없습니다.';
