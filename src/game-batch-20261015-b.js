@@ -47,7 +47,7 @@ const records=[
     evidenceHTML:'<p>공식 한글날 안내에는 히든 쿠폰이 존재한다는 힌트만 있으며 코드 문자열은 공개하지 않았습니다. leedo1009는 제3자 추정값이므로 공식 코드로 승격하지 않습니다.</p>'
   },
   {
-    code:'G4M0CBV0NE3OPLUA',sourcePublishedAt:null,latest:true,
+    code:'G4MOCBVONE3OPLUA',sourcePublishedAt:null,latest:true,
     latestEvidence:'2026-10-21 사용자 제공 게임 커뮤니티 화면에 0910ECLIPSE와 함께 16자 문자열이 게시됐다. 원문 URL과 최초 게시일, O/0 판독, 공용 발급, 실제 등록 성공, 만료일은 미확인.',
     expiry:'미확인',status:'UNVERIFIED',statusLabel:'제보 댓글 후보 · O/0·공용 여부 미확인',sources:[screenshotSource],
     evidenceHTML:'<p>2026년 10월 21일 제공된 게임 커뮤니티 화면의 문자 판독 후보입니다. 영문 O와 숫자 0은 혼동될 수 있으며, 개별 발급 1회용 코드일 가능성도 있습니다. 댓글 원문 URL, 최초 게시일, 실제 사용 성공은 확인되지 않았습니다.</p>'
